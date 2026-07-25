@@ -1,0 +1,182 @@
+{
+  "version": "0.1.0",
+  "date_maj": "2026-07-25",
+  "note": "Socle commun de méta-thèmes pour comparer les programmes. Domaines de politique publique volontairement NEUTRES (test de renversement, garde-fou n°3). Ne reprend aucun cadrage partisan. Choix éditoriaux détaillés dans choix-editoriaux.md. Une mesure peut porter plusieurs thèmes (voir champ 'themes' du modèle de mesure).",
+  "themes": [
+    {
+      "id": "institutions-democratie",
+      "label": "Institutions & démocratie",
+      "description": "Organisation des pouvoirs, participation citoyenne et intégrité de la vie publique.",
+      "criteres_de_rattachement": [
+        "Constitution, régime, séparation des pouvoirs, référendum, mode de scrutin",
+        "Décentralisation et rôle des collectivités (dimension institutionnelle)",
+        "Probité, lutte contre la corruption, conflits d'intérêts",
+        "Laïcité",
+        "Vie associative et engagement citoyen"
+      ],
+      "voir_aussi": ["justice-securite-libertes", "logement-transports-territoires"]
+    },
+    {
+      "id": "justice-securite-libertes",
+      "label": "Justice, sécurité & libertés",
+      "description": "Sécurité intérieure, chaîne pénale et garanties des libertés publiques.",
+      "criteres_de_rattachement": [
+        "Police, gendarmerie, sécurité du quotidien",
+        "Justice (moyens, organisation), prison, peines",
+        "Terrorisme, narcotrafic, criminalité organisée",
+        "Libertés publiques et droits fondamentaux (surveillance, manifestation, vie privée)"
+      ],
+      "voir_aussi": ["institutions-democratie", "immigration-asile", "culture-sport-medias"]
+    },
+    {
+      "id": "economie-travail-entreprises",
+      "label": "Économie, travail & entreprises",
+      "description": "Production, emploi, conditions de travail et régulation de l'activité économique.",
+      "criteres_de_rattachement": [
+        "Emploi, salaires, temps de travail, droit du travail, syndicats",
+        "Entreprises, gouvernance, responsabilité, propriété/actionnariat",
+        "Industrie, réindustrialisation, filières, économie circulaire",
+        "Règles du marché, concurrence, commerce"
+      ],
+      "voir_aussi": ["fiscalite-budget-finances", "ecologie-climat-energie", "numerique-technologies"]
+    },
+    {
+      "id": "fiscalite-budget-finances",
+      "label": "Fiscalité, budget & finances",
+      "description": "Prélèvements, dépense publique, dette et régulation financière.",
+      "criteres_de_rattachement": [
+        "Impôts, cotisations, niches, redistribution fiscale",
+        "Budget de l'État, dette, dépense publique",
+        "Banques, finance, épargne, régulation financière"
+      ],
+      "voir_aussi": ["economie-travail-entreprises", "protection-sociale-solidarites"]
+    },
+    {
+      "id": "protection-sociale-solidarites",
+      "label": "Protection sociale & solidarités",
+      "description": "Sécurité sociale, retraites et solidarités face aux âges et aux accidents de la vie.",
+      "criteres_de_rattachement": [
+        "Retraites",
+        "Pauvreté, minima sociaux, exclusion",
+        "Famille, enfance, protection de l'enfance",
+        "Grand âge, dépendance, deuil, isolement",
+        "Entraide et solidarités de proximité"
+      ],
+      "voir_aussi": ["sante", "egalites-discriminations", "fiscalite-budget-finances"]
+    },
+    {
+      "id": "sante",
+      "label": "Santé",
+      "description": "Système de soins, prévention et déterminants sanitaires (y compris environnementaux).",
+      "criteres_de_rattachement": [
+        "Offre de soins, hôpital, accès aux soins, professionnels de santé",
+        "Prévention, parcours de soin, santé mentale",
+        "Santé environnementale : mesure dont l'OBJECTIF premier est un résultat sanitaire humain (toxiques, polluants, perturbateurs endocriniens) — à cotaguer 'ecologie-climat-energie'"
+      ],
+      "voir_aussi": ["ecologie-climat-energie", "protection-sociale-solidarites"]
+    },
+    {
+      "id": "education-recherche-jeunesse",
+      "label": "Éducation, recherche & jeunesse",
+      "description": "Instruction, savoirs et politiques dédiées à la jeunesse.",
+      "criteres_de_rattachement": [
+        "École, collège, lycée, réussite scolaire",
+        "Enseignement supérieur, formation",
+        "Recherche scientifique",
+        "Politiques d'émancipation et d'autonomie de la jeunesse"
+      ],
+      "voir_aussi": ["culture-sport-medias", "protection-sociale-solidarites"]
+    },
+    {
+      "id": "culture-sport-medias",
+      "label": "Culture, sport & médias",
+      "description": "Création culturelle, pratique sportive et pluralisme de l'information.",
+      "criteres_de_rattachement": [
+        "Politique culturelle, arts, patrimoine, création",
+        "Sport, pratique et accès",
+        "Médias : pluralisme, indépendance, concentration, éducation aux médias"
+      ],
+      "voir_aussi": ["justice-securite-libertes", "education-recherche-jeunesse"]
+    },
+    {
+      "id": "ecologie-climat-energie",
+      "label": "Écologie, climat & énergie",
+      "description": "Climat, énergie, biodiversité et gestion des ressources naturelles.",
+      "criteres_de_rattachement": [
+        "Énergie (mix, nucléaire, renouvelables, sobriété, prix)",
+        "Climat, décarbonation, adaptation",
+        "Biodiversité (terrestre, océanique, forestière), condition animale",
+        "Eau, sols, ressources et limites planétaires"
+      ],
+      "voir_aussi": ["agriculture-alimentation", "sante", "logement-transports-territoires", "economie-travail-entreprises"]
+    },
+    {
+      "id": "agriculture-alimentation",
+      "label": "Agriculture & alimentation",
+      "description": "Modèle agricole, revenus paysans et accès à une alimentation de qualité.",
+      "criteres_de_rattachement": [
+        "Modèle agricole, pratiques, revenus agricoles, foncier agricole",
+        "Droit à l'alimentation, qualité alimentaire, souveraineté alimentaire",
+        "Pêche et sylviculture en tant qu'activités (l'écosystème relève de 'ecologie-climat-energie')"
+      ],
+      "voir_aussi": ["ecologie-climat-energie", "economie-travail-entreprises"]
+    },
+    {
+      "id": "logement-transports-territoires",
+      "label": "Logement, transports & territoires",
+      "description": "Habitat, mobilités et aménagement équilibré des territoires.",
+      "criteres_de_rattachement": [
+        "Logement, droit au logement, urbanisme, rénovation",
+        "Transports et mobilités (report modal, infrastructures)",
+        "Aménagement du territoire : villes, ruralités, Outre-mer, quartiers populaires",
+        "Organisation territoriale des services publics"
+      ],
+      "voir_aussi": ["ecologie-climat-energie", "egalites-discriminations", "institutions-democratie"]
+    },
+    {
+      "id": "egalites-discriminations",
+      "label": "Égalités & discriminations",
+      "description": "Égalité réelle et lutte contre les discriminations.",
+      "criteres_de_rattachement": [
+        "Droits des femmes, violences sexistes et sexuelles",
+        "Droits des personnes LGBTQIA+",
+        "Handicap (dimension droits et non-discrimination)",
+        "Antiracisme et lutte contre les discriminations"
+      ],
+      "voir_aussi": ["protection-sociale-solidarites", "logement-transports-territoires", "immigration-asile"]
+    },
+    {
+      "id": "immigration-asile",
+      "label": "Immigration & asile",
+      "description": "Politique migratoire, droit d'asile et intégration.",
+      "criteres_de_rattachement": [
+        "Entrée, séjour, régularisation, éloignement",
+        "Asile et protection",
+        "Intégration et accueil"
+      ],
+      "voir_aussi": ["justice-securite-libertes", "egalites-discriminations"]
+    },
+    {
+      "id": "europe-international-defense",
+      "label": "Europe, international & défense",
+      "description": "Union européenne, diplomatie, défense et relations internationales.",
+      "criteres_de_rattachement": [
+        "Union européenne (institutions, souveraineté, orientation)",
+        "Diplomatie, paix, conflits (Ukraine, Moyen-Orient…), coopération",
+        "Défense, armée, industrie de défense"
+      ],
+      "voir_aussi": ["economie-travail-entreprises", "immigration-asile"]
+    },
+    {
+      "id": "numerique-technologies",
+      "label": "Numérique & technologies",
+      "description": "Souveraineté numérique, données et technologies émergentes.",
+      "criteres_de_rattachement": [
+        "Souveraineté et infrastructures numériques",
+        "Données personnelles, plateformes, régulation",
+        "IA et technologies émergentes (dimension politique publique)"
+      ],
+      "voir_aussi": ["economie-travail-entreprises", "justice-securite-libertes", "europe-international-defense"]
+    }
+  ]
+}
