@@ -1,0 +1,77 @@
+{
+  "candidat": {
+    "id": "lfi",
+    "nom": "Jean-Luc Mélenchon",
+    "parti": "La France insoumise",
+    "programme_url": "https://melenchon2027.fr/programme2025/livre/",
+    "etat_programme": "Candidat déclaré ; programme détaillé « L'Avenir en Commun » (édition 2025, 831 mesures)",
+    "date_maj": "2025-01-28"
+  },
+  "mesures": [
+    {
+      "id": "lfi-fisc-01",
+      "candidat": "lfi",
+      "themes": ["fiscalite-budget-finances"],
+      "verbatim": "Rétablir et renforcer l'impôt de solidarité sur la fortune (ISF), incluant un volet climatique visant à taxer les gros pollueurs. Introduire une garantie d'impôt de 2 % sur le patrimoine des milliardaires, dite taxe Zucman.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Fiscalité de la fortune / du patrimoine",
+      "baseline_reel": "L'ISF a été supprimé au 1er janvier 2018 et remplacé par l'impôt sur la fortune immobilière (IFI), assis uniquement sur le patrimoine immobilier net supérieur à 1,3 M€. Aucune imposition de type « taxe Zucman » sur le patrimoine global des milliardaires n'existe.",
+      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F563"
+    },
+    {
+      "id": "lfi-fisc-02",
+      "candidat": "lfi",
+      "themes": ["fiscalite-budget-finances"],
+      "verbatim": "Supprimer la flat tax et imposer les revenus du capital comme ceux du travail.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Imposition des revenus du capital (flat tax / PFU)",
+      "baseline_reel": "Depuis 2018, les revenus du capital (dividendes, intérêts, plus-values mobilières) sont soumis par défaut au prélèvement forfaitaire unique (PFU, « flat tax ») de 30 % : 12,8 % d'impôt sur le revenu + 17,2 % de prélèvements sociaux. Le contribuable peut opter pour le barème progressif.",
+      "source_baseline": "https://entreprendre.service-public.gouv.fr/actualites/A18796"
+    },
+    {
+      "id": "lfi-fisc-03",
+      "candidat": "lfi",
+      "themes": ["fiscalite-budget-finances"],
+      "verbatim": "Rendre l'impôt sur le revenu plus progressif avec un barème à 14 tranches contre 5 aujourd'hui.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Progressivité de l'impôt sur le revenu",
+      "baseline_reel": "Le barème de l'impôt sur le revenu comporte 5 tranches (0 %, 11 %, 30 %, 41 %, 45 %). Le taux marginal maximal de 45 % s'applique à la fraction de revenu par part supérieure à 181 917 € (barème 2026).",
+      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419"
+    },
+    {
+      "id": "lfi-fisc-04",
+      "candidat": "lfi",
+      "themes": ["fiscalite-budget-finances", "economie-travail-entreprises"],
+      "verbatim": "Refonder l'impôt sur les sociétés pour établir l'égalité devant l'impôt entre PME et grands groupes, instaurer un barème progressif en fonction des bénéfices réalisés et selon leur usage et favoriser l'investissement plutôt que la distribution de dividendes.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Impôt sur les sociétés / grandes entreprises",
+      "baseline_reel": "Le taux normal de l'impôt sur les sociétés est de 25 % depuis 2022, identique quelle que soit la taille de l'entreprise. Un taux réduit de 15 % s'applique aux PME sur une première tranche de bénéfice sous conditions. Il n'existe pas de barème progressif de l'IS selon le niveau de bénéfice.",
+      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F23575"
+    },
+    {
+      "id": "lfi-fisc-05",
+      "candidat": "lfi",
+      "themes": ["fiscalite-budget-finances"],
+      "verbatim": "Réduire la TVA sur les produits de première nécessité et réinstaurer une « TVA grand luxe » pour la financer.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "TVA (taux réduits / différenciation)",
+      "baseline_reel": "La TVA comporte quatre taux : 20 % (normal), 10 % (intermédiaire), 5,5 % (réduit, appliqué à la plupart des produits alimentaires de première nécessité) et 2,1 % (super-réduit). Il n'existe pas de taux « grand luxe » spécifique.",
+      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F23567"
+    }
+  ]
+}

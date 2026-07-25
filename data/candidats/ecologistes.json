@@ -1,0 +1,77 @@
+{
+  "candidat": {
+    "id": "ecologistes",
+    "nom": "(candidat·e non désigné·e)",
+    "parti": "Les Écologistes",
+    "programme_url": "",
+    "etat_programme": "Plateforme programmatique adoptée (« Pour une prospérité écologique », juillet 2026) ; aucun·e candidat·e désigné·e pour 2027 à ce stade",
+    "date_maj": "2026-07"
+  },
+  "mesures": [
+    {
+      "id": "eco-fisc-01",
+      "candidat": "ecologistes",
+      "themes": ["fiscalite-budget-finances"],
+      "verbatim": "Rétablir la fiscalité sur la grande fortune. Mettre en place une taxe Zucman de 2 % au-delà de 100 millions d'euros de patrimoine. Étendre les conditions de l'exit tax afin de maintenir une contribution fiscale des émigrés fiscaux établissant leur domicile fiscal hors de France. Rétablir l'Impôt sur la Fortune (ISF) en lui ajoutant une composante climatique pour orienter le patrimoine vers des actifs verts.",
+      "source_url": "",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 1) ; VDEF Programme.pdf, p. 66",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Fiscalité de la fortune / du patrimoine",
+      "baseline_reel": "L'ISF a été supprimé au 1er janvier 2018 et remplacé par l'impôt sur la fortune immobilière (IFI), assis uniquement sur le patrimoine immobilier net supérieur à 1,3 M€. Aucune imposition de type « taxe Zucman » sur le patrimoine global des milliardaires n'existe.",
+      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F563"
+    },
+    {
+      "id": "eco-fisc-02",
+      "candidat": "ecologistes",
+      "themes": ["fiscalite-budget-finances"],
+      "verbatim": "Taxer plus fortement le capital que le travail. […] Augmenter le taux de CSG sur les revenus du capital de 3 points avec le maintien des exonérations pour les livrets A et Développement Durable. Augmenter la flat tax (Prélèvement Forfaitaire Unique) de 3 points.",
+      "source_url": "",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 11) ; VDEF Programme.pdf, p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Imposition des revenus du capital (flat tax / PFU)",
+      "baseline_reel": "Depuis 2018, les revenus du capital sont soumis par défaut au prélèvement forfaitaire unique (PFU, « flat tax ») de 30 % : 12,8 % d'impôt sur le revenu + 17,2 % de prélèvements sociaux. Le contribuable peut opter pour le barème progressif.",
+      "source_baseline": "https://entreprendre.service-public.gouv.fr/actualites/A18796"
+    },
+    {
+      "id": "eco-fisc-03",
+      "candidat": "ecologistes",
+      "themes": ["fiscalite-budget-finances"],
+      "verbatim": "Réformer l'impôt sur le revenu pour préserver la qualité de vie des classes populaires et des classes moyennes. Diminuer l'impôt sur le revenu pour les plus tranches les plus basses. Créer une nouvelle tranche à 60 % au-delà de 250 000€ annuels. Plafonner le montant total des niches fiscales par foyer.",
+      "source_url": "",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 12) ; VDEF Programme.pdf, p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Progressivité de l'impôt sur le revenu",
+      "baseline_reel": "Le barème de l'impôt sur le revenu comporte 5 tranches (0 %, 11 %, 30 %, 41 %, 45 %). Le taux marginal maximal de 45 % s'applique à la fraction de revenu par part supérieure à 181 917 € (barème 2026).",
+      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419"
+    },
+    {
+      "id": "eco-fisc-04",
+      "candidat": "ecologistes",
+      "themes": ["fiscalite-budget-finances", "economie-travail-entreprises"],
+      "verbatim": "Augmenter la fiscalité sur les grandes entreprises. Adopter un impôt minimal sur les bénéfices des sociétés dont le chiffre d'affaires dépasse un milliard d'euros à proportion de l'activité réalisée en France. Moduler le taux d'imposition selon l'affectation des bénéfices afin d'encourager le réinvestissement productif de long terme et de dissuader le rachat d'actions.",
+      "source_url": "",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 3) ; VDEF Programme.pdf, p. 66",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Impôt sur les sociétés / grandes entreprises",
+      "baseline_reel": "Le taux normal de l'impôt sur les sociétés est de 25 % depuis 2022, identique quelle que soit la taille de l'entreprise. Un taux réduit de 15 % s'applique aux PME sur une première tranche de bénéfice sous conditions. Il n'existe pas de barème modulé selon l'usage des bénéfices.",
+      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F23575"
+    },
+    {
+      "id": "eco-fisc-05",
+      "candidat": "ecologistes",
+      "themes": ["fiscalite-budget-finances", "ecologie-climat-energie"],
+      "verbatim": "Adopter une TVA verte différenciée selon l'impact environnemental et sanitaire des produits. Diminuer les taux des biens de première nécessité et des produits respectant l'environnement (produits biologiques, réparation de l'électroménager, des cycles, des chaussures, des vêtements, transports publics…). Augmenter les taux de TVA des produits de luxe ou nocifs pour la santé et l'environnement : produits ultra-transformés, restauration à emporter, hôtellerie de luxe, vols domestiques, rénovation non énergétique…",
+      "source_url": "",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 6) ; VDEF Programme.pdf, p. 67",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur",
+      "axe_comparaison": "TVA (taux réduits / différenciation)",
+      "baseline_reel": "La TVA comporte quatre taux : 20 % (normal), 10 % (intermédiaire), 5,5 % (réduit, produits de première nécessité) et 2,1 % (super-réduit). Il n'existe pas de modulation généralisée de la TVA selon l'impact environnemental ou sanitaire des produits.",
+      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F23567"
+    }
+  ]
+}
