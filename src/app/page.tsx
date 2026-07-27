@@ -1,11 +1,18 @@
 import Comparateur from "@/components/Comparateur";
-import { getAxes, getCandidats, getMesures, getThemesCouverts } from "@/lib/data";
+import {
+  getAxes,
+  getCandidats,
+  getMesures,
+  getThematiqueIndex,
+  getThemesCouverts,
+} from "@/lib/data";
 
 export default function HomePage() {
   const themes = getThemesCouverts();
   const axes = getAxes();
   const candidats = getCandidats();
   const mesures = getMesures();
+  const thematiques = getThematiqueIndex();
 
   return (
     <div className="space-y-8">
@@ -26,7 +33,13 @@ export default function HomePage() {
         </p>
       </section>
 
-      <Comparateur themes={themes} axes={axes} candidats={candidats} mesures={mesures} />
+      <Comparateur
+        themes={themes}
+        axes={axes}
+        candidats={candidats}
+        mesures={mesures}
+        thematiques={thematiques}
+      />
     </div>
   );
 }

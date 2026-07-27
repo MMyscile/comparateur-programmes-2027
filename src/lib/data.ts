@@ -1,6 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { Axe, Candidat, CandidatFile, Mesure, Taxonomie, Theme } from "./types";
+import type {
+  Axe,
+  Candidat,
+  CandidatFile,
+  Mesure,
+  Taxonomie,
+  Theme,
+  ThematiqueInfo,
+} from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 
@@ -34,8 +42,22 @@ export function getMesures(): Mesure[] {
   return getCandidatFiles().flatMap((f) => f.mesures);
 }
 
-/** Thèmes réellement couverts par au moins une mesure (V1 : seuls ceux-là sont exposés). */
+/** Index plat thématique -> { label, méta parent }. */
+export function getThematiqueIndex(): Record<string, ThematiqueInfo> {
+  const index: Record<string, ThematiqueInfo> = {};
+  for (const t of getTaxonomie().themes) {
+    for (const th of t.thematiques ?? []) {
+      index[th.id] = { label: th.label, meta: t.id };
+    }
+  }
+  return index;
+}
+
+/** Méta-thèmes réellement couverts (via le méta parent des thématiques utilisées). */
 export function getThemesCouverts(): Theme[] {
-  const ids = new Set(getMesures().flatMap((m) => m.themes));
-  return getTaxonomie().themes.filter((t) => ids.has(t.id));
+  const index = getThematiqueIndex();
+  const metas = new Set(
+    getMesures().flatMap((m) => m.thematiques.map((th) => index[th]?.meta).filter(Boolean))
+  );
+  return getTaxonomie().themes.filter((t) => metas.has(t.id));
 }

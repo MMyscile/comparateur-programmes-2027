@@ -12,7 +12,9 @@
       "id": "lfi-fisc-fortune",
       "candidat": "lfi",
       "axe": "fisc-fortune",
-      "themes": ["fiscalite-budget-finances"],
+      "thematiques": [
+        "capital-patrimoine"
+      ],
       "verbatim": "Rétablir et renforcer l'impôt de solidarité sur la fortune (ISF), incluant un volet climatique visant à taxer les gros pollueurs. Introduire une garantie d'impôt de 2 % sur le patrimoine des milliardaires, dite taxe Zucman.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
       "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
@@ -23,7 +25,9 @@
       "id": "lfi-fisc-capital",
       "candidat": "lfi",
       "axe": "fisc-capital",
-      "themes": ["fiscalite-budget-finances"],
+      "thematiques": [
+        "capital-patrimoine"
+      ],
       "verbatim": "Supprimer la flat tax et imposer les revenus du capital comme ceux du travail.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
       "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
@@ -34,7 +38,9 @@
       "id": "lfi-fisc-ir",
       "candidat": "lfi",
       "axe": "fisc-ir",
-      "themes": ["fiscalite-budget-finances"],
+      "thematiques": [
+        "impots-menages"
+      ],
       "verbatim": "Rendre l'impôt sur le revenu plus progressif avec un barème à 14 tranches contre 5 aujourd'hui.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
       "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
@@ -45,7 +51,10 @@
       "id": "lfi-fisc-is",
       "candidat": "lfi",
       "axe": "fisc-is",
-      "themes": ["fiscalite-budget-finances", "economie-travail-entreprises"],
+      "thematiques": [
+        "fiscalite-entreprises",
+        "entreprises"
+      ],
       "verbatim": "Refonder l'impôt sur les sociétés pour établir l'égalité devant l'impôt entre PME et grands groupes, instaurer un barème progressif en fonction des bénéfices réalisés et selon leur usage et favoriser l'investissement plutôt que la distribution de dividendes.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
       "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
@@ -56,7 +65,9 @@
       "id": "lfi-fisc-tva",
       "candidat": "lfi",
       "axe": "fisc-tva",
-      "themes": ["fiscalite-budget-finances"],
+      "thematiques": [
+        "tva-consommation"
+      ],
       "verbatim": "Réduire la TVA sur les produits de première nécessité et réinstaurer une « TVA grand luxe » pour la financer.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
       "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
@@ -67,7 +78,9 @@
       "id": "lfi-police-01",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Refonder les activités de police pour garantir le droit à la sûreté.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -78,7 +91,9 @@
       "id": "lfi-police-02",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Intégrer au service public certaines fonctions de sécurité aujourd'hui privées, comme le gardiennage des services publics.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -89,7 +104,9 @@
       "id": "lfi-police-03",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Porter à deux ans la formation des élèves gardiens de la paix, réviser son contenu, et réouvrir des écoles nationales pour les activités de police.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -100,7 +117,9 @@
       "id": "lfi-police-04",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Abroger les lois sécuritaires inefficaces et renforcer les logiques de prévention, notamment les moyens humains de la prévention spécialisée dans les départements.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -111,7 +130,9 @@
       "id": "lfi-police-05",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Interdire les tasers, les grenades de désencerclement, les « lanceurs de balles de défense 40 » (Flash-Ball) pour favoriser une stratégie de maintien de l'ordre basée sur la désescalade.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -122,7 +143,9 @@
       "id": "lfi-police-06",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Interdire les techniques d'immobilisation létales : le plaquage ventral, le pliage ventral et la clé d'étranglement.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -133,7 +156,9 @@
       "id": "lfi-police-07",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Interdire la technique de la « nasse » (ou « encerclement ») en manifestation, sauf en cas de mise en danger pour les personnes.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -144,7 +169,9 @@
       "id": "lfi-police-08",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Donner plus de moyens au Défenseur des droits.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -155,7 +182,9 @@
       "id": "lfi-police-09",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Rétablir le code de déontologie de la police de 1986.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -166,7 +195,9 @@
       "id": "lfi-police-10",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Abroger la loi Cazeneuve sur le refus d'obtempérer, dite « permis de tuer ».",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -177,7 +208,9 @@
       "id": "lfi-police-11",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Créer une commission « Vérité et Justice » sur les violences policières ayant entraîné la mort ou la mutilation de citoyens pour en établir toutes les responsabilités.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -188,7 +221,9 @@
       "id": "lfi-police-12",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Supprimer l'Inspection générale de la Police nationale (IGPN) et l'Inspection générale de la Gendarmerie nationale (IGGN) et les remplacer par une autorité indépendante incluant des magistrats, des universitaires, des citoyens, rattachée au Défenseur des droits, et lui octroyant une capacité de sanctions disciplinaires propre sur les agents fautifs.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
       "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine",
@@ -199,7 +234,9 @@
       "id": "lfi-police-13",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Rétablir la police de proximité et démanteler les BAC (brigades anticriminalité) et les BRAV-M (Brigades de répression des actions violentes motorisées).",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s8",
       "rubrique_origine": "Chapitre 7.8 — Une police de proximité au service de la sûreté des citoyens",
@@ -210,7 +247,9 @@
       "id": "lfi-police-14",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Construire de nouveaux centres d'activités de police de proximité.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s8",
       "rubrique_origine": "Chapitre 7.8 — Une police de proximité au service de la sûreté des citoyens",
@@ -221,7 +260,9 @@
       "id": "lfi-police-15",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Intégrer les effectifs de police municipale à la nouvelle police de proximité après une formation de quelques mois, la répartir en fonction de la taille de la population et des besoins objectifs, et la placer sous l'autorité fonctionnelle du maire et l'autorité hiérarchique du préfet.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s8",
       "rubrique_origine": "Chapitre 7.8 — Une police de proximité au service de la sûreté des citoyens",
@@ -232,7 +273,9 @@
       "id": "lfi-police-16",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Titulariser et former les policiers adjoints qui le souhaitent.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s8",
       "rubrique_origine": "Chapitre 7.8 — Une police de proximité au service de la sûreté des citoyens",
@@ -243,7 +286,9 @@
       "id": "lfi-police-17",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "En finir avec la politique du chiffre et les primes aux résultats.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s8",
       "rubrique_origine": "Chapitre 7.8 — Une police de proximité au service de la sûreté des citoyens",
@@ -254,7 +299,11 @@
       "id": "lfi-police-18",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes", "numerique-technologies"],
+      "thematiques": [
+        "police-maintien-ordre",
+        "libertes-surveillance",
+        "donnees-vie-privee"
+      ],
       "verbatim": "Interdire dans la loi tout usage des technologies de reconnaissance faciale dans les espaces et établissements publics sur le territoire français, ainsi que leur expérimentation.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s8",
       "rubrique_origine": "Chapitre 7.8 — Une police de proximité au service de la sûreté des citoyens",
@@ -265,7 +314,9 @@
       "id": "lfi-police-19",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Augmenter les effectifs en charge de la délinquance financière, du trafic d'êtres humains et du démantèlement des réseaux mafieux et doubler les effectifs de la police technique et scientifique.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s8",
       "rubrique_origine": "Chapitre 7.8 — Une police de proximité au service de la sûreté des citoyens",
@@ -276,7 +327,9 @@
       "id": "lfi-police-20",
       "candidat": "lfi",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Développer les moyens humains pour le recueil de plainte et l'accompagnement des plaignants.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s8",
       "rubrique_origine": "Chapitre 7.8 — Une police de proximité au service de la sûreté des citoyens",
@@ -287,7 +340,10 @@
       "id": "lfi-just-justice-synth",
       "candidat": "lfi",
       "axe": "just-justice",
-      "themes": ["justice-securite-libertes", "ecologie-climat-energie"],
+      "thematiques": [
+        "justice-penale",
+        "justice-environnementale"
+      ],
       "synthese": true,
       "verbatim": "Planifier des moyens pour la justice et recruter davantage de fonctionnaires : magistrats, greffiers, agents de la protection judiciaire de la jeunesse. Assurer un meilleur accès de toutes et tous à la justice, en augmentant notamment l'aide juridictionnelle et en veillant au retour des tribunaux de proximité. Rétablir pleinement les jurés populaires. Renforcer l'indépendance de la justice vis-à-vis de l'exécutif : interdire les instructions individuelles et les remontées d'information individuelles. Donner les moyens d'une justice pénale environnementale efficace.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s6",
@@ -299,7 +355,9 @@
       "id": "lfi-just-prison-synth",
       "candidat": "lfi",
       "axe": "just-prison",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "prison-peines"
+      ],
       "synthese": true,
       "verbatim": "Respecter la dignité et les droits des personnes privées de liberté : en finir avec la surpopulation carcérale par la mise en place d'un mécanisme contraignant de régulation carcérale et assurer aux personnes détenues les moyens de se réinsérer dans notre société.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s7",
@@ -311,7 +369,10 @@
       "id": "lfi-just-terrorisme-synth",
       "candidat": "lfi",
       "axe": "just-terrorisme",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "terrorisme-renseignement",
+        "libertes-surveillance"
+      ],
       "synthese": true,
       "verbatim": "Élaborer une nouvelle stratégie antiterroriste. Renforcer les moyens humains du renseignement en revenant sur la fusion de la direction de la surveillance du territoire (DST) et des renseignements généraux (RG) et privilégier l'infiltration humaine plutôt que le mirage du tout-technologique. Revenir sur toutes les dispositions liberticides qui ont instauré un état d'urgence permanent. Garantir le contrôle par le juge judiciaire des opérations de lutte contre le terrorisme.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s2",
@@ -323,7 +384,10 @@
       "id": "lfi-just-drogues-synth",
       "candidat": "lfi",
       "axe": "just-drogues",
-      "themes": ["justice-securite-libertes", "sante"],
+      "thematiques": [
+        "drogues-stupefiants",
+        "addictions"
+      ],
       "synthese": true,
       "verbatim": "Légaliser et encadrer par un monopole d'État la consommation, la production et la vente de cannabis à des fins récréatives dans des conditions permettant de lutter contre l'addiction. S'attaquer aux causes des addictions, pour engager une politique de réduction des risques plutôt que de continuer une politique de répression des consommateurs. Confier le pilotage de la politique de lutte contre les drogues au ministère de la Santé et non plus de l'Intérieur.",
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre15/s3",

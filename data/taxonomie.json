@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
-  "date_maj": "2026-07-25",
-  "note": "Socle commun de méta-thèmes pour comparer les programmes. Domaines de politique publique volontairement NEUTRES (test de renversement, garde-fou n°3). Ne reprend aucun cadrage partisan. Choix éditoriaux détaillés dans choix-editoriaux.md. Une mesure peut porter plusieurs thèmes (voir champ 'themes' du modèle de mesure).",
+  "version": "0.2.0",
+  "date_maj": "2026-07-27",
+  "note": "Taxonomie à 2 niveaux : méta-thèmes (domaines larges, NEUTRES — test de renversement, garde-fou n°3) et THÉMATIQUES (sous-sujets fins). Les mesures sont taguées au niveau des thématiques (champ 'thematiques'), pas des méta-thèmes : une mesure porte un tag par thématique qui la concerne. Le méta-thème d'une mesure se déduit du méta parent de ses thématiques. Les thématiques ne sont renseignées que pour les métas déjà couverts.",
   "themes": [
     {
       "id": "institutions-democratie",
@@ -26,7 +26,15 @@
         "Terrorisme, narcotrafic, criminalité organisée",
         "Libertés publiques et droits fondamentaux (surveillance, manifestation, vie privée)"
       ],
-      "voir_aussi": ["institutions-democratie", "immigration-asile", "culture-sport-medias"]
+      "voir_aussi": ["institutions-democratie", "immigration-asile", "culture-sport-medias"],
+      "thematiques": [
+        { "id": "police-maintien-ordre", "label": "Police & maintien de l'ordre" },
+        { "id": "justice-penale", "label": "Justice & chaîne pénale" },
+        { "id": "prison-peines", "label": "Prison & peines" },
+        { "id": "terrorisme-renseignement", "label": "Terrorisme & renseignement" },
+        { "id": "libertes-surveillance", "label": "Libertés publiques & surveillance" },
+        { "id": "drogues-stupefiants", "label": "Drogues & stupéfiants" }
+      ]
     },
     {
       "id": "economie-travail-entreprises",
@@ -38,7 +46,10 @@
         "Industrie, réindustrialisation, filières, économie circulaire",
         "Règles du marché, concurrence, commerce"
       ],
-      "voir_aussi": ["fiscalite-budget-finances", "ecologie-climat-energie", "numerique-technologies"]
+      "voir_aussi": ["fiscalite-budget-finances", "ecologie-climat-energie", "numerique-technologies"],
+      "thematiques": [
+        { "id": "entreprises", "label": "Entreprises & compétitivité" }
+      ]
     },
     {
       "id": "fiscalite-budget-finances",
@@ -49,7 +60,13 @@
         "Budget de l'État, dette, dépense publique",
         "Banques, finance, épargne, régulation financière"
       ],
-      "voir_aussi": ["economie-travail-entreprises", "protection-sociale-solidarites"]
+      "voir_aussi": ["economie-travail-entreprises", "protection-sociale-solidarites"],
+      "thematiques": [
+        { "id": "impots-menages", "label": "Impôts des ménages" },
+        { "id": "capital-patrimoine", "label": "Capital & patrimoine" },
+        { "id": "fiscalite-entreprises", "label": "Fiscalité des entreprises" },
+        { "id": "tva-consommation", "label": "TVA & consommation" }
+      ]
     },
     {
       "id": "protection-sociale-solidarites",
@@ -73,7 +90,11 @@
         "Prévention, parcours de soin, santé mentale",
         "Santé environnementale : mesure dont l'OBJECTIF premier est un résultat sanitaire humain (toxiques, polluants, perturbateurs endocriniens) — à cotaguer 'ecologie-climat-energie'"
       ],
-      "voir_aussi": ["ecologie-climat-energie", "protection-sociale-solidarites"]
+      "voir_aussi": ["ecologie-climat-energie", "protection-sociale-solidarites"],
+      "thematiques": [
+        { "id": "addictions", "label": "Addictions" },
+        { "id": "sante-mentale", "label": "Santé mentale" }
+      ]
     },
     {
       "id": "education-recherche-jeunesse",
@@ -108,7 +129,12 @@
         "Biodiversité (terrestre, océanique, forestière), condition animale",
         "Eau, sols, ressources et limites planétaires"
       ],
-      "voir_aussi": ["agriculture-alimentation", "sante", "logement-transports-territoires", "economie-travail-entreprises"]
+      "voir_aussi": ["agriculture-alimentation", "sante", "logement-transports-territoires", "economie-travail-entreprises"],
+      "thematiques": [
+        { "id": "fiscalite-verte", "label": "Fiscalité verte" },
+        { "id": "climat-adaptation", "label": "Climat & adaptation" },
+        { "id": "justice-environnementale", "label": "Justice environnementale" }
+      ]
     },
     {
       "id": "agriculture-alimentation",
@@ -143,7 +169,11 @@
         "Handicap (dimension droits et non-discrimination)",
         "Antiracisme et lutte contre les discriminations"
       ],
-      "voir_aussi": ["protection-sociale-solidarites", "logement-transports-territoires", "immigration-asile"]
+      "voir_aussi": ["protection-sociale-solidarites", "logement-transports-territoires", "immigration-asile"],
+      "thematiques": [
+        { "id": "violences-sexistes", "label": "Violences sexistes & sexuelles" },
+        { "id": "lutte-discriminations", "label": "Lutte contre les discriminations" }
+      ]
     },
     {
       "id": "immigration-asile",
@@ -165,7 +195,10 @@
         "Diplomatie, paix, conflits (Ukraine, Moyen-Orient…), coopération",
         "Défense, armée, industrie de défense"
       ],
-      "voir_aussi": ["economie-travail-entreprises", "immigration-asile"]
+      "voir_aussi": ["economie-travail-entreprises", "immigration-asile"],
+      "thematiques": [
+        { "id": "cooperation-europeenne", "label": "Coopération européenne" }
+      ]
     },
     {
       "id": "numerique-technologies",
@@ -176,7 +209,11 @@
         "Données personnelles, plateformes, régulation",
         "IA et technologies émergentes (dimension politique publique)"
       ],
-      "voir_aussi": ["economie-travail-entreprises", "justice-securite-libertes", "europe-international-defense"]
+      "voir_aussi": ["economie-travail-entreprises", "justice-securite-libertes", "europe-international-defense"],
+      "thematiques": [
+        { "id": "donnees-vie-privee", "label": "Données & vie privée" },
+        { "id": "cybersecurite", "label": "Cybersécurité" }
+      ]
     }
   ]
 }

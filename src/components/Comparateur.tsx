@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Axe, Candidat, Mesure, Theme } from "@/lib/types";
+import type { Axe, Candidat, Mesure, Theme, ThematiqueInfo } from "@/lib/types";
 
 /**
  * Garde-fou n°4 — bouton de correction. Sans backend : on ouvre une issue
@@ -26,9 +26,10 @@ interface Props {
   axes: Axe[];
   candidats: Candidat[];
   mesures: Mesure[];
+  thematiques: Record<string, ThematiqueInfo>;
 }
 
-export default function Comparateur({ themes, axes, candidats, mesures }: Props) {
+export default function Comparateur({ themes, axes, candidats, mesures, thematiques }: Props) {
   const [themeId, setThemeId] = useState<string>("all");
   const [candidatId, setCandidatId] = useState<string>("all");
 
@@ -39,15 +40,15 @@ export default function Comparateur({ themes, axes, candidats, mesures }: Props)
     [axes]
   );
 
-  // Filtrage côté client : par thème (= tag) et par candidat.
+  // Filtrage côté client : par méta-thème (via le parent des thématiques) et par candidat.
   const visibles = useMemo(
     () =>
       mesures.filter(
         (m) =>
-          (themeId === "all" || m.themes.includes(themeId)) &&
+          (themeId === "all" || m.thematiques.some((th) => thematiques[th]?.meta === themeId)) &&
           (candidatId === "all" || m.candidat === candidatId)
       ),
-    [mesures, themeId, candidatId]
+    [mesures, themeId, candidatId, thematiques]
   );
 
   // Regroupement : axe -> candidat -> propositions.
@@ -115,6 +116,14 @@ export default function Comparateur({ themes, axes, candidats, mesures }: Props)
         </p>
       </div>
 
+      {themeId !== "all" && !axes.some((a) => a.theme === themeId) && (
+        <p className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm text-blue-900">
+          Filtré sur <strong>{themeLabel.get(themeId) ?? themeId}</strong> : ce méta-thème n&apos;a
+          pas encore d&apos;axe propre. Les propositions concernées s&apos;affichent sous l&apos;axe
+          où elles figurent dans le programme (souvent un autre méta-thème).
+        </p>
+      )}
+
       {sections.size === 0 && (
         <p className="rounded-lg border border-slate-200 bg-white p-6 text-slate-500">
           Aucune proposition ne correspond à ce filtre.
@@ -179,19 +188,17 @@ export default function Comparateur({ themes, axes, candidats, mesures }: Props)
                                   </blockquote>
 
                                   <div className="mt-2 flex flex-wrap gap-1">
-                                    {m.themes.map((t, i) => (
-                                      <button
+                                    {m.thematiques.map((t, i) => (
+                                      <span
                                         key={t}
-                                        onClick={() => setThemeId(t)}
-                                        title="Filtrer sur ce thème"
-                                        className={`rounded-full px-2 py-0.5 text-xs transition hover:ring-1 hover:ring-slate-400 ${
+                                        className={`rounded-full px-2 py-0.5 text-xs ${
                                           i === 0
                                             ? "bg-slate-800 text-white"
                                             : "bg-slate-100 text-slate-600"
                                         }`}
                                       >
-                                        {themeLabel.get(t) ?? t}
-                                      </button>
+                                        {thematiques[t]?.label ?? t}
+                                      </span>
                                     ))}
                                   </div>
 
@@ -212,7 +219,7 @@ export default function Comparateur({ themes, axes, candidats, mesures }: Props)
                                       rel="noreferrer"
                                       className="text-slate-400 underline hover:text-slate-600"
                                     >
-                                      Signaler
+                                      Signaler une erreur de classement
                                     </a>
                                   </div>
                                 </li>

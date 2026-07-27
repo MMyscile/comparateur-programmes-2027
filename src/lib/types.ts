@@ -5,7 +5,8 @@ export interface Mesure {
   id: string;
   candidat: string;
   axe: string;
-  themes: string[];
+  /** Tags fins : une thématique par sujet concerné (la 1ère = principale). */
+  thematiques: string[];
   verbatim: string;
   source_url: string;
   rubrique_origine: string;
@@ -40,12 +41,24 @@ export interface CandidatFile {
   mesures: Mesure[];
 }
 
+export interface Thematique {
+  id: string;
+  label: string;
+}
+
 export interface Theme {
   id: string;
   label: string;
   description: string;
   criteres_de_rattachement?: string[];
   voir_aussi?: string[];
+  thematiques?: Thematique[];
+}
+
+/** Index plat d'une thématique : son libellé et son méta-thème parent. */
+export interface ThematiqueInfo {
+  label: string;
+  meta: string;
 }
 
 export interface Taxonomie {

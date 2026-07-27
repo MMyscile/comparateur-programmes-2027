@@ -84,6 +84,23 @@ export default function MethodologiePage() {
                     ))}
                   </ul>
                 )}
+                {t.thematiques && t.thematiques.length > 0 && (
+                  <div className="mt-3">
+                    <p className="text-xs font-medium text-slate-500">
+                      Thématiques (tags des mesures) :
+                    </p>
+                    <div className="mt-1 flex flex-wrap gap-1">
+                      {t.thematiques.map((th) => (
+                        <span
+                          key={th.id}
+                          className="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-600"
+                        >
+                          {th.label}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}

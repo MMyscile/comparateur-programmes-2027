@@ -12,7 +12,9 @@
       "id": "eco-fisc-fortune",
       "candidat": "ecologistes",
       "axe": "fisc-fortune",
-      "themes": ["fiscalite-budget-finances"],
+      "thematiques": [
+        "capital-patrimoine"
+      ],
       "verbatim": "Rétablir la fiscalité sur la grande fortune. Mettre en place une taxe Zucman de 2 % au-delà de 100 millions d'euros de patrimoine. Étendre les conditions de l'exit tax afin de maintenir une contribution fiscale des émigrés fiscaux établissant leur domicile fiscal hors de France. Rétablir l'Impôt sur la Fortune (ISF) en lui ajoutant une composante climatique pour orienter le patrimoine vers des actifs verts.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
       "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 1) ; p. 66",
@@ -23,7 +25,9 @@
       "id": "eco-fisc-capital",
       "candidat": "ecologistes",
       "axe": "fisc-capital",
-      "themes": ["fiscalite-budget-finances"],
+      "thematiques": [
+        "capital-patrimoine"
+      ],
       "verbatim": "Taxer plus fortement le capital que le travail. […] Augmenter le taux de CSG sur les revenus du capital de 3 points avec le maintien des exonérations pour les livrets A et Développement Durable. Augmenter la flat tax (Prélèvement Forfaitaire Unique) de 3 points.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
       "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 11) ; p. 68",
@@ -34,7 +38,9 @@
       "id": "eco-fisc-ir",
       "candidat": "ecologistes",
       "axe": "fisc-ir",
-      "themes": ["fiscalite-budget-finances"],
+      "thematiques": [
+        "impots-menages"
+      ],
       "verbatim": "Réformer l'impôt sur le revenu pour préserver la qualité de vie des classes populaires et des classes moyennes. Diminuer l'impôt sur le revenu pour les plus tranches les plus basses. Créer une nouvelle tranche à 60 % au-delà de 250 000€ annuels. Plafonner le montant total des niches fiscales par foyer.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
       "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 12) ; p. 68",
@@ -45,7 +51,10 @@
       "id": "eco-fisc-is",
       "candidat": "ecologistes",
       "axe": "fisc-is",
-      "themes": ["fiscalite-budget-finances", "economie-travail-entreprises"],
+      "thematiques": [
+        "fiscalite-entreprises",
+        "entreprises"
+      ],
       "verbatim": "Augmenter la fiscalité sur les grandes entreprises. Adopter un impôt minimal sur les bénéfices des sociétés dont le chiffre d'affaires dépasse un milliard d'euros à proportion de l'activité réalisée en France. Moduler le taux d'imposition selon l'affectation des bénéfices afin d'encourager le réinvestissement productif de long terme et de dissuader le rachat d'actions.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
       "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 3) ; p. 66",
@@ -56,7 +65,10 @@
       "id": "eco-fisc-tva",
       "candidat": "ecologistes",
       "axe": "fisc-tva",
-      "themes": ["fiscalite-budget-finances", "ecologie-climat-energie"],
+      "thematiques": [
+        "tva-consommation",
+        "fiscalite-verte"
+      ],
       "verbatim": "Adopter une TVA verte différenciée selon l'impact environnemental et sanitaire des produits. Diminuer les taux des biens de première nécessité et des produits respectant l'environnement (produits biologiques, réparation de l'électroménager, des cycles, des chaussures, des vêtements, transports publics…). Augmenter les taux de TVA des produits de luxe ou nocifs pour la santé et l'environnement : produits ultra-transformés, restauration à emporter, hôtellerie de luxe, vols domestiques, rénovation non énergétique…",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=67",
       "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 6) ; p. 67",
@@ -67,7 +79,9 @@
       "id": "eco-police-1",
       "candidat": "ecologistes",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Créer une police nationale de proximité visant à rétablir un lien quotidien et permanent avec la population et à sortir de la politique bureaucratique du chiffre.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=164",
       "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 1) ; p. 164",
@@ -78,7 +92,9 @@
       "id": "eco-police-2",
       "candidat": "ecologistes",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Améliorer la formation et les conditions de travail des policier·es. Revoir et allonger la formation initiale et continue et les conditions de travail des policier·es en incluant des stages dans d'autres pays européens et les apports des sciences sociales (histoire, sociologie de la délinquance…). Encadrer les premières affectations pour éviter que les jeunes policiers aient à exercer systématiquement dans les territoires les plus en tension. Mettre en place un plan de prévention de la souffrance au travail et un dispositif d'écoute. Protéger les lanceur·euses d'alerte au sein des forces de l'ordre.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
       "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 2) ; p. 165",
@@ -89,7 +105,9 @@
       "id": "eco-police-3",
       "candidat": "ecologistes",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Adopter une nouvelle doctrine de maintien de l'ordre. Fonder l'action des forces de sécurité sur le dialogue avec les organisations, la désescalade et un usage de la force strictement nécessaire et proportionné. Interdire les lanceurs de balles de défense (LBD40) et les grenades mutilantes. Démanteler les unités de type BRAV-M. Abroger les dispositions de la loi Cazeneuve sur l'ouverture du feu pour que cessent les morts pour refus d'obtempérer et que soit respectée la condition d'absolue nécessité. Rendre effectif le rôle des équipes de liaison et d'information (ELI) dans les manifestations.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
       "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 3) ; p. 165",
@@ -100,7 +118,11 @@
       "id": "eco-police-4",
       "candidat": "ecologistes",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes", "numerique-technologies"],
+      "thematiques": [
+        "police-maintien-ordre",
+        "libertes-surveillance",
+        "donnees-vie-privee"
+      ],
       "verbatim": "Abroger les lois et dispositifs liberticides. Abroger les dispositions liberticides des lois Sécurité globale, Séparatisme et de celle instaurant l'état d'urgence permanent. Supprimer les fichiers qui portent atteinte aux libertés individuelles et collectives en particulier ceux qui intègrent des mentions de l'appartenance syndicale, des convictions religieuses et des opinions ou activités politiques. Abroger les perquisitions administratives, les restrictions administratives à la liberté d'aller et venir, les mesures de surveillance en dehors d'un suivi judiciaire. Mettre fin aux dispositifs d'amendes forfaitaires délictuelles. Autoriser la CNIL à vérifier en permanence le respect du contenu et de l'usage des fichiers utilisés par les forces de l'ordre.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
       "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 4) ; p. 165",
@@ -111,7 +133,10 @@
       "id": "eco-police-5",
       "candidat": "ecologistes",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre",
+        "libertes-surveillance"
+      ],
       "verbatim": "Encadrer la vidéosurveillance et renforcer la présence humaine. Interdire la reconnaissance faciale et évaluer de manière indépendante les dispositifs de vidéosurveillance en lien avec la Défenseure des droits. Mettre la priorité sur le renforcement des effectifs de terrain, formés à la médiation et à la prévention.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
       "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 5) ; p. 165",
@@ -122,7 +147,9 @@
       "id": "eco-police-6",
       "candidat": "ecologistes",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Remplacer l'Inspection Générale de la Police Nationale (IGPN) et l'Inspection Générale de la Gendarmerie Nationale (IGGN) par un nouvel organisme indépendant rattaché à la Défenseure des droits. Cette institution sera compétente pour l'ensemble des forces de sécurité, y compris les polices municipales, et assurera la transparence des décisions rendues.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
       "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 6) ; p. 165",
@@ -133,7 +160,9 @@
       "id": "eco-police-7",
       "candidat": "ecologistes",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes"],
+      "thematiques": [
+        "police-maintien-ordre"
+      ],
       "verbatim": "Faire respecter les règles de transparence et de neutralité policières. Assurer le respect du port du matricule (RIO) et l'usage par les agent·es des caméras embarquées. Garantir l'interdiction effective du port d'insignes à caractère politique sur les uniformes des agent·es et dans leurs locaux. Sanctionner toute dissimulation du visage qui ne serait pas strictement justifiée.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
       "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 7) ; p. 165",
@@ -144,7 +173,10 @@
       "id": "eco-police-8",
       "candidat": "ecologistes",
       "axe": "just-police",
-      "themes": ["justice-securite-libertes", "numerique-technologies"],
+      "thematiques": [
+        "police-maintien-ordre",
+        "cybersecurite"
+      ],
       "verbatim": "Augmenter les moyens pour lutter contre la cybercriminalité afin de protéger les entreprises, les collectivités et les administrations. Doter l'Agence Nationale de la Sécurité des Systèmes d'Information (ANSSI) de moyens suffisants pour prévenir et protéger ces organisations face aux cyberattaques.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
       "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 8) ; p. 165",
@@ -155,7 +187,10 @@
       "id": "eco-just-justice-synth",
       "candidat": "ecologistes",
       "axe": "just-justice",
-      "themes": ["justice-securite-libertes", "egalites-discriminations"],
+      "thematiques": [
+        "justice-penale",
+        "violences-sexistes"
+      ],
       "synthese": true,
       "verbatim": "Assurer l'indépendance du parquet. Créer 9000 postes de magistrats sur dix ans ainsi que 10 000 postes de greffiers et 7000 postes attachés de justice. Revaloriser les métiers et les salaires les plus bas pour atteindre la moyenne des pays européens. Réaffirmer le principe de la primauté de l'éducatif sur le répressif pour les mineur·es délinquants. Abroger la loi Attal de 2025. Indexer les amendes sur le revenu pour les crimes et délits les plus graves. Intégrer pleinement les violences sexistes et sexuelles et notamment le crime d'inceste.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=166",
@@ -167,7 +202,11 @@
       "id": "eco-just-prison-synth",
       "candidat": "ecologistes",
       "axe": "just-prison",
-      "themes": ["justice-securite-libertes", "sante", "ecologie-climat-energie"],
+      "thematiques": [
+        "prison-peines",
+        "sante-mentale",
+        "climat-adaptation"
+      ],
       "synthese": true,
       "verbatim": "Limiter la surpopulation carcérale par un numerus clausus, à 100 % des capacités dans tous les établissements pénitentiaires (actuellement 133 %). Adopter un moratoire sur la construction de nouvelles places de prison. Développer la probation, les placements extérieurs et la semi-liberté. Renforcer les SPIP. Engager un plan de rénovation et d'adaptation des lieux de détention aux changements climatiques. Renforcer l'accès aux soins, y compris de santé mentale.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=170",
@@ -179,7 +218,11 @@
       "id": "eco-just-terrorisme-synth",
       "candidat": "ecologistes",
       "axe": "just-terrorisme",
-      "themes": ["justice-securite-libertes", "europe-international-defense", "egalites-discriminations"],
+      "thematiques": [
+        "terrorisme-renseignement",
+        "cooperation-europeenne",
+        "lutte-discriminations"
+      ],
       "synthese": true,
       "verbatim": "Établir un plan de prévention spécifiquement adapté aux zones où les recruteurs sont les plus actifs. Améliorer la réponse pénale contre les recruteurs jihadistes et l'extrême droite violente. Mieux prendre en compte la menace d'extrême droite par un effort mêlant renseignement, analyse et recherche académique. Accroître la coopération européenne en matière de renseignement par des bases de données partagées et des opérations communes. La dépendance de la France et des Européens aux renseignements et outils américains dans le domaine de la lutte contre le terrorisme doit cesser.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=181",
@@ -191,7 +234,10 @@
       "id": "eco-just-drogues-synth",
       "candidat": "ecologistes",
       "axe": "just-drogues",
-      "themes": ["justice-securite-libertes", "sante"],
+      "thematiques": [
+        "drogues-stupefiants",
+        "addictions"
+      ],
       "synthese": true,
       "verbatim": "Renforcer les moyens financiers et cyber de la police et de la justice contre les narcotrafiquants. Privilégier le démantèlement des réseaux organisés et la saisie des avoirs criminels au nombre d'interpellations. Légaliser et encadrer la production, la vente et la consommation de cannabis. Réserver la distribution à des structures à but non lucratif dont les professionnel·les sont formés à la réduction des risques. Adopter une approche de santé publique inspirée du modèle portugais en dépénalisant l'usage, la détention de petites quantités pour consommation personnelle (sans légaliser la production ni le trafic).",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=183",
