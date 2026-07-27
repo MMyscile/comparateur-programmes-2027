@@ -26,8 +26,12 @@
 ## Backlog / veille
 
 - ⏸ **Surveiller l'arrivée de nouveaux programmes** (autres candidats 2027) et les passer au même socle.
-- ⬜ **Amorcer le code Next.js** (App Router, SSG) une fois assez de mesures réelles dans le JSON — pas avant.
-- ⬜ **Recherche/filtre par tag** (demande utilisateur explicite) — l'utilisateur doit pouvoir lister les mesures d'un thème donné en filtrant sur `themes.includes(tag)` côté client. Suppose un tagging systématique et complet de chaque mesure (déjà appliqué au pilote justice).
+- ✅ **Site Next.js V1 amorcé** (App Router, TS strict, Tailwind, export statique). Charge les JSON, comparaison par thème → axe, filtres candidat/thème + **recherche par tag** (clic sur étiquette), page Méthodologie (garde-fou n°2), liens sources + baseline, bouton de correction. `npm run dev` / `npm run build`.
+- ✅ **Modèle v0.2 « une mesure = une proposition »** — grain corrigé (fini les synthèses qui trahissaient la fidélité). Nouveau `data/axes.json` (axe = unité de comparaison, porte la baseline + synthèse d'écart). Axe **Police détaillé** (8 points EELV + 20 LFI). CLAUDE.md mis à jour.
+- ⬜ **Créer l'agent `extracteur`** (`.claude/agents/extracteur.md`) — rôle : appliquer `PROCESS-extraction.md` à une source → propositions verbatim + tags proposés + liens, en **brouillon à valider** (ne décide pas, ne publie pas).
+- 🔄 **Détailler point par point les 4 axes justice restants** (justice, prison, terrorisme, drogues) — actuellement en `synthese: true` (étiqueté « détail à venir » dans l'UI). **Premier job de l'agent `extracteur`.**
+- ⬜ **Repo GitHub + brancher le bouton de correction** — remplacer `OWNER` dans `src/components/Comparateur.tsx` (`REPO_ISSUES`) par le vrai dépôt une fois publié (garde-fou n°4).
+- ⬜ **Déployer sur Vercel** (statique, gratuit) une fois le repo publié.
 - ⬜ **Versionner en tags datés** (ex. `taxonomie-v0.1`, `pilote-fiscalite`) selon le cadrage « versions, pas flux ».
 
 ## Fait

@@ -50,24 +50,47 @@ les choix éditoriaux. Toute fonctionnalité doit servir la traçabilité et la 
 Unité = **le programme de campagne présidentielle d'un candidat** (jamais le corpus général du parti,
 jamais les législatives).
 
-Mesure (proposition) :
+**Grain (modèle v0.2) :** une **Mesure = UNE proposition** recopiée mot-pour-mot (jamais une
+synthèse de plusieurs points — la synthèse trahit la fidélité, garde-fou n°1). Les propositions
+sont regroupées par **Axe** (l'unité de comparaison éditoriale, plus fine que le méta-thème). La
+baseline « ce qui est fait » vit sur l'**axe** (une seule réalité partagée entre candidats),
+pas sur chaque proposition.
+
+Mesure (proposition) — `data/candidats/*.json` :
 ```json
 {
   "id": "string",
   "candidat": "id-candidat",
+  "axe": "id-axe (voir data/axes.json)",
   "themes": ["id-theme", "..."],
-  "verbatim": "texte mot-pour-mot de la proposition",
-  "source_url": "https://...",
-  "rubrique_origine": "nom de la rubrique dans le programme source",
+  "verbatim": "texte mot-pour-mot de la proposition (jamais un résumé)",
+  "source_url": "https://... (avec #page=N si PDF)",
+  "rubrique_origine": "chapitre/section + page dans le programme source",
   "date_publication": "AAAA-MM-JJ",
   "etat_maturite": "mur | ebauche | perime | pas-encore",
+  "synthese": "true (optionnel) = résumé d'axe en attente du détail point par point"
+}
+```
+
+Axe (unité de comparaison) — `data/axes.json` :
+```json
+{
+  "id": "string",
+  "theme": "id-theme",
+  "label": "intitulé de l'axe",
+  "ordre": 1,
   "baseline_reel": "état actuel chiffré et sourçable",
-  "source_baseline": "https://... (INSEE, budget, loi votée)"
+  "source_baseline": "https://... (INSEE, budget, loi votée)",
+  "ecart_synthese": "résumé éditorial de l'écart entre candidats"
 }
 ```
 
 Candidat : `{ id, nom, parti, programme_url, etat_programme, date_maj }`
-Taxonomie : liste de thèmes `{ id, label, description, criteres_de_rattachement }`
+Taxonomie : liste de thèmes `{ id, label, description, criteres_de_rattachement, voir_aussi }`
+
+> **Source faisant foi vs miroir** : `source_url` pointe toujours vers l'original publié par le
+> candidat (URL ou PDF `#page=N`). Le `.md` dans `data/sources/` n'est qu'un miroir de travail,
+> jamais la source citée.
 
 ## Garde-fous (à respecter dans le code ET le contenu)
 
