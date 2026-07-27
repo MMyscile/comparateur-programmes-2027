@@ -10,8 +10,9 @@
 ## À faire — court terme
 
 - ⬜ **S'assurer du choix éditorial** — revoir et valider les décisions de rattachement (cf. `data/choix-editoriaux.md`) ; en particulier repasser le mapping *provisoire* des sous-sections LFI de la matrice v0.2 en classification propre **multi-étiquetée**.
-- ⬜ **Trouver l'URL publique du programme Écologistes** (aujourd'hui `source_url` vide dans `data/candidats/ecologistes.json` ; le programme n'existe que sous forme de PDF local).
-- ⬜ **Étendre le pilote fiscalité** aux mesures non traitées (fraude, dette, collectivités, succession…) ou passer à un 2ᵉ méta-thème pilote.
+- ✅ **URL publique du programme Écologistes trouvée** — `source_url` renseignés dans `data/candidats/ecologistes.json` avec fragment `#page=N` (pagination physique = pagination imprimée, vérifiée). Réserve : le PDF est derrière un challenge Cloudflare (accès automatisé bloqué, OK depuis un navigateur humain).
+- ✅ **2ᵉ méta-thème pilote « Justice, sécurité & libertés »** — chaîne rejouée sur un thème clivant/asymétrique (`data/pilote-justice-securite.md` ; 5 mesures ajoutées par candidat). A prouvé : l'axe rend visible une divergence de *cadrage* à substance identique (drogues : santé vs sécurité) ; multi-étiquetage enfin exercé (4/10 mesures cotaguées).
+- ⬜ **Étendre le pilote fiscalité** aux mesures non traitées (fraude, dette, collectivités, succession…).
 - ⬜ **Baseline « ce qui est fait »** — pour chaque mesure du pilote : état actuel chiffré et sourcé (INSEE, budget, loi votée), jamais de qualificatif politique.
 - ⬜ **Fixer l'unité de comparaison** — trancher : programme de candidat vs plateforme de parti. Écologistes = plateforme sans candidat·e désigné·e ; LFI = candidat déclaré (Mélenchon). À documenter dans le cadrage.
 
@@ -26,6 +27,7 @@
 
 - ⏸ **Surveiller l'arrivée de nouveaux programmes** (autres candidats 2027) et les passer au même socle.
 - ⬜ **Amorcer le code Next.js** (App Router, SSG) une fois assez de mesures réelles dans le JSON — pas avant.
+- ⬜ **Recherche/filtre par tag** (demande utilisateur explicite) — l'utilisateur doit pouvoir lister les mesures d'un thème donné en filtrant sur `themes.includes(tag)` côté client. Suppose un tagging systématique et complet de chaque mesure (déjà appliqué au pilote justice).
 - ⬜ **Versionner en tags datés** (ex. `taxonomie-v0.1`, `pilote-fiscalite`) selon le cadrage « versions, pas flux ».
 
 ## Fait

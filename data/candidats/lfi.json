@@ -72,6 +72,71 @@
       "axe_comparaison": "TVA (taux réduits / différenciation)",
       "baseline_reel": "La TVA comporte quatre taux : 20 % (normal), 10 % (intermédiaire), 5,5 % (réduit, appliqué à la plupart des produits alimentaires de première nécessité) et 2,1 % (super-réduit). Il n'existe pas de taux « grand luxe » spécifique.",
       "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F23567"
+    },
+    {
+      "id": "lfi-just-01",
+      "candidat": "lfi",
+      "themes": ["justice-securite-libertes"],
+      "verbatim": "Refonder les activités de police pour garantir le droit à la sûreté. Porter à deux ans la formation des élèves gardiens de la paix. Interdire les tasers, les grenades de désencerclement, les « lanceurs de balles de défense 40 » (Flash-Ball) pour favoriser une stratégie de maintien de l'ordre basée sur la désescalade. Abroger la loi Cazeneuve sur le refus d'obtempérer, dite « permis de tuer ». Supprimer l'Inspection générale de la Police nationale (IGPN) et l'Inspection générale de la Gendarmerie nationale (IGGN) et les remplacer par une autorité indépendante incluant des magistrats, des universitaires, des citoyens, rattachée au Défenseur des droits. Rétablir la police de proximité et démanteler les BAC et les BRAV-M. Interdire dans la loi tout usage des technologies de reconnaissance faciale dans les espaces et établissements publics.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s3",
+      "rubrique_origine": "Chapitre 4.3 — Refonder une police républicaine (et 7.8 — Une police de proximité au service de la sûreté des citoyens)",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Police (doctrine, maintien de l'ordre, contrôle)",
+      "baseline_reel": "L'IGPN et l'IGGN sont des services de contrôle interne rattachés à la police et à la gendarmerie nationales, sous l'autorité du ministère de l'Intérieur (et non à une autorité indépendante) ; leur directeur est nommé par le ministre. Le lanceur de balles de défense (LBD 40) et certaines grenades restent en dotation pour le maintien de l'ordre. La loi n° 2017-258 du 28 février 2017 relative à la sécurité publique a créé un cadre commun d'usage des armes par les forces de l'ordre, incluant les situations de refus d'obtempérer.",
+      "source_baseline": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000034104023"
+    },
+    {
+      "id": "lfi-just-02",
+      "candidat": "lfi",
+      "themes": ["justice-securite-libertes", "ecologie-climat-energie"],
+      "verbatim": "Planifier des moyens pour la justice et recruter davantage de fonctionnaires : magistrats, greffiers, agents de la protection judiciaire de la jeunesse. Assurer un meilleur accès de toutes et tous à la justice, en augmentant notamment l'aide juridictionnelle et en veillant au retour des tribunaux de proximité. Rétablir pleinement les jurés populaires. Renforcer l'indépendance de la justice vis-à-vis de l'exécutif : interdire les instructions individuelles et les remontées d'information individuelles. Donner les moyens d'une justice pénale environnementale efficace, punir les pollutions industrielles et appliquer strictement le principe pollueur-payeur.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s6",
+      "rubrique_origine": "Chapitre 7.6 — La justice au nom du peuple (et 7.7 — Une politique de justice efficace)",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Justice (moyens, indépendance, fonctionnement)",
+      "baseline_reel": "Selon la CEPEJ (Conseil de l'Europe, données 2024), la France compte 11,3 magistrats pour 100 000 habitants contre une médiane européenne de 21,9 (et 3,2 procureurs contre 11,2). Le budget de la justice y est de 77,2 € par habitant contre une médiane européenne de 85,4 €. Le parquet demeure hiérarchiquement rattaché au garde des Sceaux ; les instructions individuelles dans les affaires particulières sont interdites depuis la loi du 25 juillet 2013.",
+      "source_baseline": "https://www.actu-juridique.fr/justice/rapport-cepej-la-france-toujours-en-dessous-de-la-moyenne-europeenne/"
+    },
+    {
+      "id": "lfi-just-03",
+      "candidat": "lfi",
+      "themes": ["justice-securite-libertes"],
+      "verbatim": "Respecter la dignité et les droits des personnes privées de liberté : en finir avec la surpopulation carcérale par la mise en place d'un mécanisme contraignant de régulation carcérale et assurer aux personnes détenues les moyens de se réinsérer dans notre société.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre7/s7",
+      "rubrique_origine": "Chapitre 7.7 — Une politique de justice efficace",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Prison, peines & surpopulation carcérale",
+      "baseline_reel": "Au 1er juin 2026, les prisons françaises comptaient 88 829 personnes détenues pour une densité carcérale globale de 140,5 % (173,2 % en maison d'arrêt), environ 7 608 détenus dormant sur un matelas au sol. La France a été condamnée par la CEDH (arrêt J.M.B. et autres c. France, 30 janvier 2020) pour ses conditions de détention ; il n'existe pas de mécanisme contraignant de régulation carcérale.",
+      "source_baseline": "https://www.franceinfo.fr/societe/justice/prisons-avec-86-645-detenus-en-france-au-1er-fevrier-2026-la-surpopulation-carcerale-s-eleve-a-136-en-moyenne-un-nouveau-record_7840730.html"
+    },
+    {
+      "id": "lfi-just-04",
+      "candidat": "lfi",
+      "themes": ["justice-securite-libertes"],
+      "verbatim": "Élaborer une nouvelle stratégie antiterroriste. Renforcer les moyens humains du renseignement en revenant sur la fusion de la direction de la surveillance du territoire (DST) et des renseignements généraux (RG) et privilégier l'infiltration humaine plutôt que le mirage du tout-technologique. Revenir sur toutes les dispositions liberticides qui ont instauré un état d'urgence permanent. Garantir le contrôle par le juge judiciaire des opérations de lutte contre le terrorisme.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre4/s2",
+      "rubrique_origine": "Chapitre 4.2 — Sortir de l'état d'urgence permanent",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Terrorisme, état d'urgence & surveillance/libertés",
+      "baseline_reel": "L'état d'urgence déclaré après les attentats du 13 novembre 2015 a pris fin le 1er novembre 2017. La loi n° 2017-1510 du 30 octobre 2017 (dite SILT) a fait entrer dans le droit commun, pour la seule prévention du terrorisme, plusieurs mesures administratives inspirées de l'état d'urgence : périmètres de protection, fermeture de lieux de culte, mesures individuelles de contrôle administratif et de surveillance (MICAS) et visites domiciliaires.",
+      "source_baseline": "https://www.senat.fr/rap/r18-220/r18-2206.html"
+    },
+    {
+      "id": "lfi-just-05",
+      "candidat": "lfi",
+      "themes": ["justice-securite-libertes", "sante"],
+      "verbatim": "Légaliser et encadrer par un monopole d'État la consommation, la production et la vente de cannabis à des fins récréatives dans des conditions permettant de lutter contre l'addiction. S'attaquer aux causes des addictions, pour engager une politique de réduction des risques plutôt que de continuer une politique de répression des consommateurs. Confier le pilotage de la politique de lutte contre les drogues au ministère de la Santé et non plus de l'Intérieur.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre15/s3",
+      "rubrique_origine": "Chapitre 15.3 — Addictions et drogues : il faut changer de stratégie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur",
+      "axe_comparaison": "Drogues / cannabis (stratégie)",
+      "baseline_reel": "L'usage de stupéfiants, dont le cannabis récréatif, est un délit (art. L.3421-1 du code de la santé publique). Depuis septembre 2020, il peut être sanctionné par une amende forfaitaire délictuelle de 200 €. La production et la vente restent pénalement réprimées. La politique de lutte contre les drogues est pilotée par la MILDECA, rattachée au Premier ministre (et non au ministère de la Santé).",
+      "source_baseline": "https://www.drogues.gouv.fr/en-matiere-de-stupefiants"
     }
   ]
 }
