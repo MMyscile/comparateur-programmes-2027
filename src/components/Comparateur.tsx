@@ -7,7 +7,7 @@ import type { Axe, Candidat, Mesure, Theme, ThematiqueInfo } from "@/lib/types";
  * Garde-fou n°4 — bouton de correction. Sans backend : on ouvre une issue
  * GitHub pré-remplie sur le dépôt public.
  */
-const REPO_ISSUES = "https://github.com/MidenZer0/comparateur-programmes-2027/issues/new";
+const REPO_ISSUES = "https://github.com/MMyscile/comparateur-programmes-2027/issues/new";
 
 const COULEUR_CANDIDAT: Record<string, string> = {
   ecologistes: "border-eelv/50",
