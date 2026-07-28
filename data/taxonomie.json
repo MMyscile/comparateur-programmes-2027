@@ -14,7 +14,10 @@
         "Laïcité",
         "Vie associative et engagement citoyen"
       ],
-      "voir_aussi": ["justice-securite-libertes", "logement-transports-territoires"]
+      "voir_aussi": [
+        "justice-securite-libertes",
+        "logement-transports-territoires"
+      ]
     },
     {
       "id": "justice-securite-libertes",
@@ -26,14 +29,40 @@
         "Terrorisme, narcotrafic, criminalité organisée",
         "Libertés publiques et droits fondamentaux (surveillance, manifestation, vie privée)"
       ],
-      "voir_aussi": ["institutions-democratie", "immigration-asile", "culture-sport-medias"],
+      "voir_aussi": [
+        "institutions-democratie",
+        "immigration-asile",
+        "culture-sport-medias"
+      ],
       "thematiques": [
-        { "id": "police-maintien-ordre", "label": "Police & maintien de l'ordre" },
-        { "id": "justice-penale", "label": "Justice & chaîne pénale" },
-        { "id": "prison-peines", "label": "Prison & peines" },
-        { "id": "terrorisme-renseignement", "label": "Terrorisme & renseignement" },
-        { "id": "libertes-surveillance", "label": "Libertés publiques & surveillance" },
-        { "id": "drogues-stupefiants", "label": "Drogues & stupéfiants" }
+        {
+          "id": "police-maintien-ordre",
+          "label": "Police & maintien de l'ordre"
+        },
+        {
+          "id": "justice-penale",
+          "label": "Justice & chaîne pénale"
+        },
+        {
+          "id": "justice-civile",
+          "label": "Justice civile & accès au droit"
+        },
+        {
+          "id": "prison-peines",
+          "label": "Prison & peines"
+        },
+        {
+          "id": "terrorisme-renseignement",
+          "label": "Terrorisme & renseignement"
+        },
+        {
+          "id": "libertes-surveillance",
+          "label": "Libertés publiques & surveillance"
+        },
+        {
+          "id": "drogues-stupefiants",
+          "label": "Drogues & stupéfiants"
+        }
       ]
     },
     {
@@ -46,9 +75,16 @@
         "Industrie, réindustrialisation, filières, économie circulaire",
         "Règles du marché, concurrence, commerce"
       ],
-      "voir_aussi": ["fiscalite-budget-finances", "ecologie-climat-energie", "numerique-technologies"],
+      "voir_aussi": [
+        "fiscalite-budget-finances",
+        "ecologie-climat-energie",
+        "numerique-technologies"
+      ],
       "thematiques": [
-        { "id": "entreprises", "label": "Entreprises & compétitivité" }
+        {
+          "id": "entreprises",
+          "label": "Entreprises & compétitivité"
+        }
       ]
     },
     {
@@ -60,12 +96,27 @@
         "Budget de l'État, dette, dépense publique",
         "Banques, finance, épargne, régulation financière"
       ],
-      "voir_aussi": ["economie-travail-entreprises", "protection-sociale-solidarites"],
+      "voir_aussi": [
+        "economie-travail-entreprises",
+        "protection-sociale-solidarites"
+      ],
       "thematiques": [
-        { "id": "impots-menages", "label": "Impôts des ménages" },
-        { "id": "capital-patrimoine", "label": "Capital & patrimoine" },
-        { "id": "fiscalite-entreprises", "label": "Fiscalité des entreprises" },
-        { "id": "tva-consommation", "label": "TVA & consommation" }
+        {
+          "id": "impots-menages",
+          "label": "Impôts des ménages"
+        },
+        {
+          "id": "capital-patrimoine",
+          "label": "Capital & patrimoine"
+        },
+        {
+          "id": "fiscalite-entreprises",
+          "label": "Fiscalité des entreprises"
+        },
+        {
+          "id": "tva-consommation",
+          "label": "TVA & consommation"
+        }
       ]
     },
     {
@@ -79,7 +130,11 @@
         "Grand âge, dépendance, deuil, isolement",
         "Entraide et solidarités de proximité"
       ],
-      "voir_aussi": ["sante", "egalites-discriminations", "fiscalite-budget-finances"]
+      "voir_aussi": [
+        "sante",
+        "egalites-discriminations",
+        "fiscalite-budget-finances"
+      ]
     },
     {
       "id": "sante",
@@ -90,10 +145,19 @@
         "Prévention, parcours de soin, santé mentale",
         "Santé environnementale : mesure dont l'OBJECTIF premier est un résultat sanitaire humain (toxiques, polluants, perturbateurs endocriniens) — à cotaguer 'ecologie-climat-energie'"
       ],
-      "voir_aussi": ["ecologie-climat-energie", "protection-sociale-solidarites"],
+      "voir_aussi": [
+        "ecologie-climat-energie",
+        "protection-sociale-solidarites"
+      ],
       "thematiques": [
-        { "id": "addictions", "label": "Addictions" },
-        { "id": "sante-mentale", "label": "Santé mentale" }
+        {
+          "id": "addictions",
+          "label": "Addictions"
+        },
+        {
+          "id": "sante-mentale",
+          "label": "Santé mentale"
+        }
       ]
     },
     {
@@ -106,7 +170,10 @@
         "Recherche scientifique",
         "Politiques d'émancipation et d'autonomie de la jeunesse"
       ],
-      "voir_aussi": ["culture-sport-medias", "protection-sociale-solidarites"]
+      "voir_aussi": [
+        "culture-sport-medias",
+        "protection-sociale-solidarites"
+      ]
     },
     {
       "id": "culture-sport-medias",
@@ -117,7 +184,10 @@
         "Sport, pratique et accès",
         "Médias : pluralisme, indépendance, concentration, éducation aux médias"
       ],
-      "voir_aussi": ["justice-securite-libertes", "education-recherche-jeunesse"]
+      "voir_aussi": [
+        "justice-securite-libertes",
+        "education-recherche-jeunesse"
+      ]
     },
     {
       "id": "ecologie-climat-energie",
@@ -129,11 +199,25 @@
         "Biodiversité (terrestre, océanique, forestière), condition animale",
         "Eau, sols, ressources et limites planétaires"
       ],
-      "voir_aussi": ["agriculture-alimentation", "sante", "logement-transports-territoires", "economie-travail-entreprises"],
+      "voir_aussi": [
+        "agriculture-alimentation",
+        "sante",
+        "logement-transports-territoires",
+        "economie-travail-entreprises"
+      ],
       "thematiques": [
-        { "id": "fiscalite-verte", "label": "Fiscalité verte" },
-        { "id": "climat-adaptation", "label": "Climat & adaptation" },
-        { "id": "justice-environnementale", "label": "Justice environnementale" }
+        {
+          "id": "fiscalite-verte",
+          "label": "Fiscalité verte"
+        },
+        {
+          "id": "climat-adaptation",
+          "label": "Climat & adaptation"
+        },
+        {
+          "id": "justice-environnementale",
+          "label": "Justice environnementale"
+        }
       ]
     },
     {
@@ -145,7 +229,10 @@
         "Droit à l'alimentation, qualité alimentaire, souveraineté alimentaire",
         "Pêche et sylviculture en tant qu'activités (l'écosystème relève de 'ecologie-climat-energie')"
       ],
-      "voir_aussi": ["ecologie-climat-energie", "economie-travail-entreprises"]
+      "voir_aussi": [
+        "ecologie-climat-energie",
+        "economie-travail-entreprises"
+      ]
     },
     {
       "id": "logement-transports-territoires",
@@ -157,7 +244,11 @@
         "Aménagement du territoire : villes, ruralités, Outre-mer, quartiers populaires",
         "Organisation territoriale des services publics"
       ],
-      "voir_aussi": ["ecologie-climat-energie", "egalites-discriminations", "institutions-democratie"]
+      "voir_aussi": [
+        "ecologie-climat-energie",
+        "egalites-discriminations",
+        "institutions-democratie"
+      ]
     },
     {
       "id": "egalites-discriminations",
@@ -169,10 +260,20 @@
         "Handicap (dimension droits et non-discrimination)",
         "Antiracisme et lutte contre les discriminations"
       ],
-      "voir_aussi": ["protection-sociale-solidarites", "logement-transports-territoires", "immigration-asile"],
+      "voir_aussi": [
+        "protection-sociale-solidarites",
+        "logement-transports-territoires",
+        "immigration-asile"
+      ],
       "thematiques": [
-        { "id": "violences-sexistes", "label": "Violences sexistes & sexuelles" },
-        { "id": "lutte-discriminations", "label": "Lutte contre les discriminations" }
+        {
+          "id": "violences-sexistes",
+          "label": "Violences sexistes & sexuelles"
+        },
+        {
+          "id": "lutte-discriminations",
+          "label": "Lutte contre les discriminations"
+        }
       ]
     },
     {
@@ -184,7 +285,10 @@
         "Asile et protection",
         "Intégration et accueil"
       ],
-      "voir_aussi": ["justice-securite-libertes", "egalites-discriminations"]
+      "voir_aussi": [
+        "justice-securite-libertes",
+        "egalites-discriminations"
+      ]
     },
     {
       "id": "europe-international-defense",
@@ -195,9 +299,15 @@
         "Diplomatie, paix, conflits (Ukraine, Moyen-Orient…), coopération",
         "Défense, armée, industrie de défense"
       ],
-      "voir_aussi": ["economie-travail-entreprises", "immigration-asile"],
+      "voir_aussi": [
+        "economie-travail-entreprises",
+        "immigration-asile"
+      ],
       "thematiques": [
-        { "id": "cooperation-europeenne", "label": "Coopération européenne" }
+        {
+          "id": "cooperation-europeenne",
+          "label": "Coopération européenne"
+        }
       ]
     },
     {
@@ -209,10 +319,20 @@
         "Données personnelles, plateformes, régulation",
         "IA et technologies émergentes (dimension politique publique)"
       ],
-      "voir_aussi": ["economie-travail-entreprises", "justice-securite-libertes", "europe-international-defense"],
+      "voir_aussi": [
+        "economie-travail-entreprises",
+        "justice-securite-libertes",
+        "europe-international-defense"
+      ],
       "thematiques": [
-        { "id": "donnees-vie-privee", "label": "Données & vie privée" },
-        { "id": "cybersecurite", "label": "Cybersécurité" }
+        {
+          "id": "donnees-vie-privee",
+          "label": "Données & vie privée"
+        },
+        {
+          "id": "cybersecurite",
+          "label": "Cybersécurité"
+        }
       ]
     }
   ]

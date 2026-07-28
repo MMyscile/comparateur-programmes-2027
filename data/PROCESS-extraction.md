@@ -54,6 +54,9 @@ Pièges techniques côté site web :
   b) une **API** (`/wp-json/…` pour WordPress) ;
   c) en dernier recours, rendu JS via `chrome --headless --dump-dom --virtual-time-budget=9000 URL`.
 - **PDF scanné (image)** : nécessite un OCR → plus lent et moins fiable. Le signaler à l'utilisateur.
+- **Puces fusionnées (piège melenchon2027.fr)** : certaines pages collent deux propositions dans un
+  même paragraphe avec un « • » littéral comme séparateur. Vérifier les lignes extraites contenant
+  « • » et découper une mesure par segment (en le consignant au rapport).
 - **PDF multi-colonnes** : `pdftotext -layout` place les colonnes côte à côte → l'ordre de lecture
   est mélangé. Voir §2.
 
@@ -65,6 +68,12 @@ C'est le point le plus risqué. Règle : le texte doit finir dans l'**ordre où 
 - Repère fiable : la **numérotation des propositions** (1, 2, 3…). Si les propositions sont
   numérotées et se suivent, on peut réordonner sans ambiguïté (cas du programme Écologistes,
   colonnes gauche puis droite).
+- **Acquis PDF Écologistes (VDEF)** : (a) `pdftotext` **sans** `-layout` restitue l'ordre de lecture
+  des deux colonnes quand les propositions sont numérotées — plus sûr que `-layout` pour découper ;
+  (b) badges `[EUROPE]` récurrents devant certaines propositions : traiter comme le numéro
+  (hors verbatim, reporté en `rubrique_origine`) ; (c) numéros parfois dupliqués (ch. 57 : deux
+  « 4 ») → consigner dans `rubrique_origine` ; (d) une proposition peut être coupée en deux blocs
+  par la mise en page (bas de colonne + rejet en pied de page) → recoller et le consigner au rapport.
 - **Si le document n'est PAS numéroté** et que les colonnes s'entrelacent : ne pas deviner.
   Options : extraire chaque colonne par zone géométrique
   (`pdftotext -x <X> -y <Y> -W <largeur> -H <hauteur> page.pdf`), page par page ;
@@ -91,7 +100,8 @@ Règles de fidélité (NON NÉGOCIABLES) :
 - **Ordre = ordre de la source.**
 - Transformations autorisées (aucune ne retire de contenu) : décodage des caractères,
   normalisation des espaces, suppression des lignes strictement identiques consécutives
-  (artefacts de balisage / en-têtes de page répétés).
+  (artefacts de balisage / en-têtes de page répétés), ajout d'un point final quand la
+  proposition source n'a pas de ponctuation terminale (convention du corpus).
 
 ## Étape 4 — Contrôle qualité de fidélité (OBLIGATOIRE)
 
@@ -101,25 +111,34 @@ Règles de fidélité (NON NÉGOCIABLES) :
 
 ## Étape 5 — Structurer les mesures en JSON
 
+> **Schéma faisant foi : `src/lib/types.ts`** (vérifié par le typage au build) ;
+> exemple réel : `data/candidats/lfi.json`. Le bloc ci-dessous est un rappel,
+> pas une référence — en cas de doute ou de conflit, `types.ts` gagne.
+
 Créer `data/candidats/<id>.json` : un objet `candidat` + un tableau `mesures`.
-Schéma d'une mesure (cf. CLAUDE.md) :
+Schéma d'une mesure (modèle v0.2) :
 ```json
 {
-  "id": "<id>-<theme>-NN",
+  "id": "<id>-<axe>-NN",
   "candidat": "<id>",
-  "themes": ["<id-theme de data/taxonomie.json>", "…"],
+  "axe": "<id-axe de data/axes.json — l'unité de comparaison ; proposer l'axe en brouillon s'il n'existe pas>",
+  "thematiques": ["<id-thematique de data/taxonomie.json (niveau FIN, pas le méta-thème ; la 1ère = principale)>", "…"],
   "verbatim": "texte mot-pour-mot ; élisions marquées par […]",
-  "source_url": "https://… (ou vide si PDF sans URL publique)",
+  "source_url": "https://… (avec #page=N si PDF)",
   "rubrique_origine": "Chapitre X — Titre (proposition N) ; réf. page",
   "date_publication": "AAAA-MM-JJ ou AAAA-MM",
-  "etat_maturite": "mur | ebauche | perime | pas-encore",
-  "baseline_reel": "état actuel chiffré et sourçable (voir étape 6)",
-  "source_baseline": "https://… (INSEE, budget, loi, service-public/impots.gouv)"
+  "etat_maturite": "mur | ebauche | perime | pas-encore"
 }
 ```
 
-## Étape 6 — Baseline « ce qui est fait »
+⚠️ Ne **jamais** produire `synthese: true` en sortie d'extraction : ce champ est un marqueur
+de dette (résumé d'axe en attente de détail), pas un format de livraison. Une extraction
+livre du point-par-point verbatim, ou signale qu'elle n'y arrive pas.
 
+## Étape 6 — Baseline « ce qui est fait » (portée par l'AXE, pas la mesure)
+
+- La baseline vit dans `data/axes.json` (`baseline_reel` + `source_baseline`) : une seule
+  réalité partagée entre les candidats d'un même axe. Ne jamais la dupliquer sur les mesures.
 - Uniquement du **chiffrable et sourçable** : INSEE, budget de l'État, loi votée,
   `service-public.gouv.fr`, `impots.gouv.fr`. **Jamais** de qualificatif politique.
 - Vérifier les chiffres susceptibles d'avoir changé (barèmes, taux) via une recherche web datée.
@@ -127,7 +146,8 @@ Schéma d'une mesure (cf. CLAUDE.md) :
 
 ## Étape 7 — Classer dans le socle
 
-- Rattacher chaque mesure aux `themes` de `data/taxonomie.json` (**multi-étiquetage autorisé**).
+- Rattacher chaque mesure aux `thematiques` (niveau fin) de `data/taxonomie.json`
+  (**multi-étiquetage autorisé** ; le méta-thème se déduit du parent de la thématique).
 - Respecter `data/choix-editoriaux.md` et le **test de renversement** : le classement doit tenir
   même si l'étiquette du parti est masquée.
 

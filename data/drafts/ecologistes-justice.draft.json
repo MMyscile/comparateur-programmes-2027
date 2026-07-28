@@ -1,188 +1,9 @@
 {
-  "candidat": {
-    "id": "ecologistes",
-    "nom": "(candidat·e non désigné·e)",
-    "parti": "Les Écologistes",
-    "programme_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf",
-    "etat_programme": "Plateforme programmatique adoptée (« Pour une prospérité écologique », juillet 2026) ; aucun·e candidat·e désigné·e pour 2027 à ce stade",
-    "date_maj": "2026-07"
-  },
+  "brouillon": true,
+  "note": "BROUILLON À VALIDER — détail point par point des 4 axes justice (just-justice, just-prison, just-terrorisme, just-drogues). Remplace, après validation, les 4 mesures synthese:true de data/candidats/ecologistes.json (eco-just-*-synth). Voir data/drafts/justice.rapport.md.",
+  "candidat": "ecologistes",
+  "date_extraction": "2026-07-28",
   "mesures": [
-    {
-      "id": "eco-fisc-fortune",
-      "candidat": "ecologistes",
-      "axe": "fisc-fortune",
-      "thematiques": [
-        "capital-patrimoine"
-      ],
-      "verbatim": "Rétablir la fiscalité sur la grande fortune. Mettre en place une taxe Zucman de 2 % au-delà de 100 millions d'euros de patrimoine. Étendre les conditions de l'exit tax afin de maintenir une contribution fiscale des émigrés fiscaux établissant leur domicile fiscal hors de France. Rétablir l'Impôt sur la Fortune (ISF) en lui ajoutant une composante climatique pour orienter le patrimoine vers des actifs verts.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
-      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 1) ; p. 66",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-fisc-capital",
-      "candidat": "ecologistes",
-      "axe": "fisc-capital",
-      "thematiques": [
-        "capital-patrimoine"
-      ],
-      "verbatim": "Taxer plus fortement le capital que le travail. […] Augmenter le taux de CSG sur les revenus du capital de 3 points avec le maintien des exonérations pour les livrets A et Développement Durable. Augmenter la flat tax (Prélèvement Forfaitaire Unique) de 3 points.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
-      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 11) ; p. 68",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-fisc-ir",
-      "candidat": "ecologistes",
-      "axe": "fisc-ir",
-      "thematiques": [
-        "impots-menages"
-      ],
-      "verbatim": "Réformer l'impôt sur le revenu pour préserver la qualité de vie des classes populaires et des classes moyennes. Diminuer l'impôt sur le revenu pour les plus tranches les plus basses. Créer une nouvelle tranche à 60 % au-delà de 250 000€ annuels. Plafonner le montant total des niches fiscales par foyer.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
-      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 12) ; p. 68",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-fisc-is",
-      "candidat": "ecologistes",
-      "axe": "fisc-is",
-      "thematiques": [
-        "fiscalite-entreprises",
-        "entreprises"
-      ],
-      "verbatim": "Augmenter la fiscalité sur les grandes entreprises. Adopter un impôt minimal sur les bénéfices des sociétés dont le chiffre d'affaires dépasse un milliard d'euros à proportion de l'activité réalisée en France. Moduler le taux d'imposition selon l'affectation des bénéfices afin d'encourager le réinvestissement productif de long terme et de dissuader le rachat d'actions.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
-      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 3) ; p. 66",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-fisc-tva",
-      "candidat": "ecologistes",
-      "axe": "fisc-tva",
-      "thematiques": [
-        "tva-consommation",
-        "fiscalite-verte"
-      ],
-      "verbatim": "Adopter une TVA verte différenciée selon l'impact environnemental et sanitaire des produits. Diminuer les taux des biens de première nécessité et des produits respectant l'environnement (produits biologiques, réparation de l'électroménager, des cycles, des chaussures, des vêtements, transports publics…). Augmenter les taux de TVA des produits de luxe ou nocifs pour la santé et l'environnement : produits ultra-transformés, restauration à emporter, hôtellerie de luxe, vols domestiques, rénovation non énergétique…",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=67",
-      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 6) ; p. 67",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-police-1",
-      "candidat": "ecologistes",
-      "axe": "just-police",
-      "thematiques": [
-        "police-maintien-ordre"
-      ],
-      "verbatim": "Créer une police nationale de proximité visant à rétablir un lien quotidien et permanent avec la population et à sortir de la politique bureaucratique du chiffre.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=164",
-      "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 1) ; p. 164",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-police-2",
-      "candidat": "ecologistes",
-      "axe": "just-police",
-      "thematiques": [
-        "police-maintien-ordre"
-      ],
-      "verbatim": "Améliorer la formation et les conditions de travail des policier·es. Revoir et allonger la formation initiale et continue et les conditions de travail des policier·es en incluant des stages dans d'autres pays européens et les apports des sciences sociales (histoire, sociologie de la délinquance…). Encadrer les premières affectations pour éviter que les jeunes policiers aient à exercer systématiquement dans les territoires les plus en tension. Mettre en place un plan de prévention de la souffrance au travail et un dispositif d'écoute. Protéger les lanceur·euses d'alerte au sein des forces de l'ordre.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
-      "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 2) ; p. 165",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-police-3",
-      "candidat": "ecologistes",
-      "axe": "just-police",
-      "thematiques": [
-        "police-maintien-ordre"
-      ],
-      "verbatim": "Adopter une nouvelle doctrine de maintien de l'ordre. Fonder l'action des forces de sécurité sur le dialogue avec les organisations, la désescalade et un usage de la force strictement nécessaire et proportionné. Interdire les lanceurs de balles de défense (LBD40) et les grenades mutilantes. Démanteler les unités de type BRAV-M. Abroger les dispositions de la loi Cazeneuve sur l'ouverture du feu pour que cessent les morts pour refus d'obtempérer et que soit respectée la condition d'absolue nécessité. Rendre effectif le rôle des équipes de liaison et d'information (ELI) dans les manifestations.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
-      "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 3) ; p. 165",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-police-4",
-      "candidat": "ecologistes",
-      "axe": "just-police",
-      "thematiques": [
-        "police-maintien-ordre",
-        "libertes-surveillance",
-        "donnees-vie-privee"
-      ],
-      "verbatim": "Abroger les lois et dispositifs liberticides. Abroger les dispositions liberticides des lois Sécurité globale, Séparatisme et de celle instaurant l'état d'urgence permanent. Supprimer les fichiers qui portent atteinte aux libertés individuelles et collectives en particulier ceux qui intègrent des mentions de l'appartenance syndicale, des convictions religieuses et des opinions ou activités politiques. Abroger les perquisitions administratives, les restrictions administratives à la liberté d'aller et venir, les mesures de surveillance en dehors d'un suivi judiciaire. Mettre fin aux dispositifs d'amendes forfaitaires délictuelles. Autoriser la CNIL à vérifier en permanence le respect du contenu et de l'usage des fichiers utilisés par les forces de l'ordre.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
-      "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 4) ; p. 165",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-police-5",
-      "candidat": "ecologistes",
-      "axe": "just-police",
-      "thematiques": [
-        "police-maintien-ordre",
-        "libertes-surveillance"
-      ],
-      "verbatim": "Encadrer la vidéosurveillance et renforcer la présence humaine. Interdire la reconnaissance faciale et évaluer de manière indépendante les dispositifs de vidéosurveillance en lien avec la Défenseure des droits. Mettre la priorité sur le renforcement des effectifs de terrain, formés à la médiation et à la prévention.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
-      "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 5) ; p. 165",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-police-6",
-      "candidat": "ecologistes",
-      "axe": "just-police",
-      "thematiques": [
-        "police-maintien-ordre"
-      ],
-      "verbatim": "Remplacer l'Inspection Générale de la Police Nationale (IGPN) et l'Inspection Générale de la Gendarmerie Nationale (IGGN) par un nouvel organisme indépendant rattaché à la Défenseure des droits. Cette institution sera compétente pour l'ensemble des forces de sécurité, y compris les polices municipales, et assurera la transparence des décisions rendues.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
-      "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 6) ; p. 165",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-police-7",
-      "candidat": "ecologistes",
-      "axe": "just-police",
-      "thematiques": [
-        "police-maintien-ordre"
-      ],
-      "verbatim": "Faire respecter les règles de transparence et de neutralité policières. Assurer le respect du port du matricule (RIO) et l'usage par les agent·es des caméras embarquées. Garantir l'interdiction effective du port d'insignes à caractère politique sur les uniformes des agent·es et dans leurs locaux. Sanctionner toute dissimulation du visage qui ne serait pas strictement justifiée.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
-      "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 7) ; p. 165",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
-    {
-      "id": "eco-police-8",
-      "candidat": "ecologistes",
-      "axe": "just-police",
-      "thematiques": [
-        "police-maintien-ordre",
-        "cybersecurite"
-      ],
-      "verbatim": "Augmenter les moyens pour lutter contre la cybercriminalité afin de protéger les entreprises, les collectivités et les administrations. Doter l'Agence Nationale de la Sécurité des Systèmes d'Information (ANSSI) de moyens suffisants pour prévenir et protéger ces organisations face aux cyberattaques.",
-      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=165",
-      "rubrique_origine": "Chapitre 50 — Refonder une police Républicaine (point 8) ; p. 165",
-      "date_publication": "2026-07",
-      "etat_maturite": "mur"
-    },
     {
       "id": "eco-justice-01",
       "candidat": "ecologistes",
@@ -295,8 +116,7 @@
       "candidat": "ecologistes",
       "axe": "just-justice",
       "thematiques": [
-        "justice-penale",
-        "justice-civile"
+        "justice-penale"
       ],
       "verbatim": "Améliorer l’aide juridictionnelle. Ouvrir l’aide juridictionnelle pour des phases de pré-contentieux. Augmenter ses moyens. Simplifier l’accès au droit par le regroupement des Centres départementaux et des Maisons du droit et de la justice. Créer de nouveaux points d’accès dans les zones isolées pour mieux soutenir les personnes faisant face à un problème juridique et les victimes.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=169",
@@ -336,7 +156,7 @@
       "candidat": "ecologistes",
       "axe": "just-justice",
       "thematiques": [
-        "justice-civile"
+        "justice-penale"
       ],
       "verbatim": "Professionnaliser la juridiction prud’homale. Remplacer le système actuel d’une juridiction 100 % paritaire par un échevinage avec un bureau de jugement composé d’un·e magistrat·e professionnel·le et de deux assesseur·es issu·es du monde du travail désignés par les organisations syndicales et patronales. Cet échevinage devrait être mis en place en première instance et en appel. Instaurer un ministère public au sein des conseils de Prud’hommes.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=169",
@@ -349,7 +169,7 @@
       "candidat": "ecologistes",
       "axe": "just-justice",
       "thematiques": [
-        "justice-civile"
+        "justice-penale"
       ],
       "verbatim": "Simplifier les procédures de recours devant les organismes de Sécurité sociale. Mieux informer les assuré·es sur leurs droits et leurs voies de recours. Fixer un délai maximal incitant les institutions à développer les médiations et les compromis à l’amiable.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=169",

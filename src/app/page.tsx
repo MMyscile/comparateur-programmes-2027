@@ -23,8 +23,8 @@ export default function HomePage() {
         <p className="max-w-3xl text-slate-600">
           Chaque proposition est mise en regard de{" "}
           <strong>ce qui est fait aujourd&apos;hui</strong> (chiffré et sourcé), pour transformer les
-          slogans en écarts au réel. Filtrez par candidat ou par thème, et cliquez une étiquette pour
-          retrouver toutes les mesures qui la portent.
+          slogans en écarts au réel. Cochez les thématiques qui vous intéressent pour ne voir que les
+          propositions concernées, et filtrez par candidat.
         </p>
         <p className="max-w-3xl rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900">
           <strong>Version 0.1 — preuve de moteur.</strong> Seuls {themes.length} méta-thèmes sont

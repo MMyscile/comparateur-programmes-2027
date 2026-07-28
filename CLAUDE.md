@@ -62,7 +62,7 @@ Mesure (proposition) — `data/candidats/*.json` :
   "id": "string",
   "candidat": "id-candidat",
   "axe": "id-axe (voir data/axes.json)",
-  "themes": ["id-theme", "..."],
+  "thematiques": ["id-thematique (niveau fin de data/taxonomie.json, la 1re = principale)", "..."],
   "verbatim": "texte mot-pour-mot de la proposition (jamais un résumé)",
   "source_url": "https://... (avec #page=N si PDF)",
   "rubrique_origine": "chapitre/section + page dans le programme source",

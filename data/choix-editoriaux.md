@@ -107,3 +107,25 @@ Correspondance chapitres source → méta-thèmes (preuve de couverture). À mai
 
 > Parenthèses = rattachement partiel (le chapitre source couvre plusieurs domaines).
 > Les 66 chapitres Écologistes sont tous couverts ; les 18 chapitres LFI aussi (certains éclatés sur plusieurs domaines). Les mentions « transversal/dispersé » signalent des **vides de structure** côté LFI — information utile, pas une erreur.
+
+## Thématique « Justice civile & accès au droit » (`justice-civile`) — ajoutée 2026-07-28
+
+**Critère de rattachement** : organisation et moyens de la justice **non pénale** — justice civile,
+prud'homale et sociale (contentieux du travail, de la Sécurité sociale), aide juridictionnelle et
+accès au droit. La chaîne pénale (poursuites, jugement pénal, parquet) reste sous `justice-penale`.
+
+**Pourquoi** : lors du détail des axes justice (extraction 2026-07-28), des mesures EELV sur les
+prud'hommes et le contentieux de la Sécurité sociale étaient taguées `justice-penale` faute de
+thématique adaptée — un filtre « justice pénale » affichait du droit du travail. Constat consigné
+au §4.7 de `data/drafts/justice.rapport.md`.
+
+**Test de renversement** : le critère (pénal vs civil/social) est une distinction juridique
+standard, indépendante de l'étiquette partisane.
+
+## Cas-frontière tabac (`lfi-drogues-07`) — tranché 2026-07-28
+
+Mesure LFI « trafic de cigarettes / jeunesse zéro tabac » (chapitre 15.3 « Addictions et drogues »).
+Cotag `addictions` (principal — le fond : le tabac n'est pas un stupéfiant) + `drogues-stupefiants`
+(rattachement au chapitre source, et cohérence avec l'axe `just-drogues` où la mesure s'affiche).
+Sans le second tag, la mesure était invisible sous le filtre « Drogues & stupéfiants » alors
+qu'elle vit dans l'axe drogues — paradoxe corrigé par le multi-étiquetage.

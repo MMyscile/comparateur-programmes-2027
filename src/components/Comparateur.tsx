@@ -1,13 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Axe, Candidat, Mesure, Theme, ThematiqueInfo } from "@/lib/types";
 
 /**
  * Garde-fou n°4 — bouton de correction. Sans backend : on ouvre une issue
- * GitHub pré-remplie. Remplacer OWNER par le dépôt réel une fois publié.
+ * GitHub pré-remplie sur le dépôt public.
  */
-const REPO_ISSUES = "https://github.com/OWNER/comparateur-programmes-2027/issues/new";
+const REPO_ISSUES = "https://github.com/MidenZer0/comparateur-programmes-2027/issues/new";
 
 const COULEUR_CANDIDAT: Record<string, string> = {
   ecologistes: "border-eelv/50",
@@ -30,25 +30,76 @@ interface Props {
 }
 
 export default function Comparateur({ themes, axes, candidats, mesures, thematiques }: Props) {
-  const [themeId, setThemeId] = useState<string>("all");
+  const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
   const [candidatId, setCandidatId] = useState<string>("all");
+  const [panneauOuvert, setPanneauOuvert] = useState(false);
+
+  // Filtres partageables via l'URL (?t=tag1,tag2&c=candidat). Site statique :
+  // lecture au montage côté client, écriture via replaceState (pas de re-render Next).
+  const premierRendu = useRef(true);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const t = params.get("t");
+    if (t) {
+      const valides = t.split(",").filter((id) => thematiques[id]);
+      if (valides.length > 0) setSelectedTags(new Set(valides));
+    }
+    const c = params.get("c");
+    if (c && candidats.some((cand) => cand.id === c)) setCandidatId(c);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (premierRendu.current) {
+      premierRendu.current = false;
+      return;
+    }
+    const params = new URLSearchParams(window.location.search);
+    if (selectedTags.size > 0) params.set("t", [...selectedTags].join(","));
+    else params.delete("t");
+    if (candidatId !== "all") params.set("c", candidatId);
+    else params.delete("c");
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  }, [selectedTags, candidatId]);
 
   const themeLabel = useMemo(() => new Map(themes.map((t) => [t.id, t.label])), [themes]);
-  const candidatById = useMemo(() => new Map(candidats.map((c) => [c.id, c])), [candidats]);
   const axesTries = useMemo(
     () => [...axes].sort((a, b) => (a.ordre ?? 0) - (b.ordre ?? 0)),
     [axes]
   );
 
-  // Filtrage côté client : par méta-thème (via le parent des thématiques) et par candidat.
+  // Thématiques réellement utilisées, groupées par méta-thème (pour le filtre).
+  const groupesTags = useMemo(() => {
+    const used = new Set(mesures.flatMap((m) => m.thematiques));
+    return themes
+      .map((t) => ({ meta: t, tags: (t.thematiques ?? []).filter((th) => used.has(th.id)) }))
+      .filter((g) => g.tags.length > 0);
+  }, [themes, mesures]);
+
+  // Compteur de facettes : nb de propositions par thématique, dans le périmètre
+  // du candidat sélectionné (indépendant des thématiques cochées).
+  const compteParTag = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const m of mesures) {
+      if (candidatId !== "all" && m.candidat !== candidatId) continue;
+      for (const t of m.thematiques) map.set(t, (map.get(t) ?? 0) + 1);
+    }
+    return map;
+  }, [mesures, candidatId]);
+
+  const tagFilterActif = selectedTags.size > 0;
+
+  // Filtrage côté client : par thématiques cochées (union) et par candidat.
   const visibles = useMemo(
     () =>
       mesures.filter(
         (m) =>
-          (themeId === "all" || m.thematiques.some((th) => thematiques[th]?.meta === themeId)) &&
+          (!tagFilterActif || m.thematiques.some((t) => selectedTags.has(t))) &&
           (candidatId === "all" || m.candidat === candidatId)
       ),
-    [mesures, themeId, candidatId, thematiques]
+    [mesures, selectedTags, tagFilterActif, candidatId]
   );
 
   // Regroupement : axe -> candidat -> propositions.
@@ -63,7 +114,6 @@ export default function Comparateur({ themes, axes, candidats, mesures, thematiq
     return map;
   }, [visibles]);
 
-  // Axes visibles, regroupés par thème et ordonnés.
   const sections = useMemo(() => {
     const parTheme = new Map<string, Axe[]>();
     for (const axe of axesTries) {
@@ -74,59 +124,145 @@ export default function Comparateur({ themes, axes, candidats, mesures, thematiq
     return parTheme;
   }, [axesTries, parAxe]);
 
+  function toggleTag(id: string) {
+    setSelectedTags((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
+  function toggleMeta(tags: { id: string }[], toutCoche: boolean) {
+    setSelectedTags((prev) => {
+      const next = new Set(prev);
+      for (const th of tags) {
+        if (toutCoche) next.delete(th.id);
+        else next.add(th.id);
+      }
+      return next;
+    });
+  }
+
   const totalVisible = visibles.length;
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-wrap items-end gap-4 rounded-lg border border-slate-200 bg-white p-4">
-        <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Thème</span>
-          <select
-            className="rounded border border-slate-300 px-2 py-1"
-            value={themeId}
-            onChange={(e) => setThemeId(e.target.value)}
+      <div className="sticky top-0 z-20 space-y-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <button
+            onClick={() => setPanneauOuvert((o) => !o)}
+            aria-expanded={panneauOuvert}
+            className="flex items-center gap-2 rounded border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
           >
-            <option value="all">Tous les thèmes</option>
-            {themes.map((t) => (
-              <option key={t.id} value={t.id}>
-                {t.label}
-              </option>
-            ))}
-          </select>
-        </label>
+            Filtrer par thématique
+            {tagFilterActif && (
+              <span className="rounded-full bg-slate-800 px-1.5 text-xs text-white">
+                {selectedTags.size}
+              </span>
+            )}
+            <span aria-hidden>{panneauOuvert ? "▴" : "▾"}</span>
+          </button>
+          <div className="flex items-center gap-2 text-sm">
+            <span id="label-candidat" className="font-medium text-slate-700">Candidat</span>
+            <div role="group" aria-labelledby="label-candidat" className="inline-flex overflow-hidden rounded border border-slate-300">
+              {[{ id: "all", parti: "Tous" }, ...candidats].map((c) => (
+                <button
+                  key={c.id}
+                  onClick={() => setCandidatId(c.id)}
+                  aria-pressed={candidatId === c.id}
+                  className={`border-l border-slate-300 px-3 py-1.5 first:border-l-0 ${
+                    candidatId === c.id
+                      ? "bg-slate-800 font-medium text-white"
+                      : "bg-white text-slate-700 hover:bg-slate-50"
+                  }`}
+                >
+                  {c.parti}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
 
-        <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Candidat</span>
-          <select
-            className="rounded border border-slate-300 px-2 py-1"
-            value={candidatId}
-            onChange={(e) => setCandidatId(e.target.value)}
-          >
-            <option value="all">Tous les candidats</option>
-            {candidats.map((c) => (
-              <option key={c.id} value={c.id}>
-                {c.parti}
-              </option>
+        {tagFilterActif && (
+          <div className="flex flex-wrap items-center gap-2">
+            {[...selectedTags].map((t) => (
+              <button
+                key={t}
+                onClick={() => toggleTag(t)}
+                className="flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-0.5 text-xs text-slate-700 hover:bg-slate-200"
+              >
+                {thematiques[t]?.label ?? t}
+                <span aria-hidden className="text-slate-400">×</span>
+                <span className="sr-only">— retirer ce filtre</span>
+              </button>
             ))}
-          </select>
-        </label>
+            <button
+              onClick={() => setSelectedTags(new Set())}
+              className="text-xs text-blue-700 underline"
+            >
+              Tout effacer
+            </button>
+          </div>
+        )}
 
-        <p className="ml-auto text-sm text-slate-500">
-          {totalVisible} proposition{totalVisible > 1 ? "s" : ""}
+        {panneauOuvert && (
+          <div className="grid max-h-[60vh] gap-4 overflow-y-auto sm:grid-cols-2 lg:grid-cols-3">
+            {groupesTags.map(({ meta, tags }) => {
+              const toutCoche = tags.every((th) => selectedTags.has(th.id));
+              const partiel = !toutCoche && tags.some((th) => selectedTags.has(th.id));
+              return (
+                <fieldset key={meta.id} className="rounded-md border border-slate-100 p-3">
+                  <legend className="px-1">
+                    <label className="flex cursor-pointer items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      <input
+                        type="checkbox"
+                        checked={toutCoche}
+                        ref={(el) => {
+                          if (el) el.indeterminate = partiel;
+                        }}
+                        onChange={() => toggleMeta(tags, toutCoche)}
+                      />
+                      {meta.label}
+                    </label>
+                  </legend>
+                  <div className="mt-1 space-y-1">
+                    {tags.map((th) => {
+                      const n = compteParTag.get(th.id) ?? 0;
+                      return (
+                        <label
+                          key={th.id}
+                          className={`flex cursor-pointer items-center gap-2 text-sm ${
+                            n === 0 ? "text-slate-400" : "text-slate-700"
+                          }`}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selectedTags.has(th.id)}
+                            onChange={() => toggleTag(th.id)}
+                          />
+                          {th.label}
+                          <span className="text-xs text-slate-400">({n})</span>
+                        </label>
+                      );
+                    })}
+                  </div>
+                </fieldset>
+              );
+            })}
+          </div>
+        )}
+
+        <p aria-live="polite" className="text-sm text-slate-500">
+          {totalVisible} proposition{totalVisible > 1 ? "s" : ""} affichée
+          {totalVisible > 1 ? "s" : ""}
+          {tagFilterActif ? " (filtre actif)" : ""}.
         </p>
       </div>
 
-      {themeId !== "all" && !axes.some((a) => a.theme === themeId) && (
-        <p className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm text-blue-900">
-          Filtré sur <strong>{themeLabel.get(themeId) ?? themeId}</strong> : ce méta-thème n&apos;a
-          pas encore d&apos;axe propre. Les propositions concernées s&apos;affichent sous l&apos;axe
-          où elles figurent dans le programme (souvent un autre méta-thème).
-        </p>
-      )}
-
       {sections.size === 0 && (
         <p className="rounded-lg border border-slate-200 bg-white p-6 text-slate-500">
-          Aucune proposition ne correspond à ce filtre.
+          Aucune proposition ne correspond aux thématiques sélectionnées.
         </p>
       )}
 
@@ -171,7 +307,10 @@ export default function Comparateur({ themes, axes, candidats, mesures, thematiq
 
                             <ul className="mt-3 space-y-3">
                               {props.map((m) => (
-                                <li key={m.id} className="border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                                <li
+                                  key={m.id}
+                                  className="border-t border-slate-100 pt-3 first:border-0 first:pt-0"
+                                >
                                   <div className="mb-1 flex flex-wrap items-center gap-2">
                                     <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-500">
                                       {ETAT_LABEL[m.etat_maturite] ?? m.etat_maturite}
@@ -188,18 +327,30 @@ export default function Comparateur({ themes, axes, candidats, mesures, thematiq
                                   </blockquote>
 
                                   <div className="mt-2 flex flex-wrap gap-1">
-                                    {m.thematiques.map((t, i) => (
-                                      <span
-                                        key={t}
-                                        className={`rounded-full px-2 py-0.5 text-xs ${
-                                          i === 0
-                                            ? "bg-slate-800 text-white"
-                                            : "bg-slate-100 text-slate-600"
-                                        }`}
-                                      >
-                                        {thematiques[t]?.label ?? t}
-                                      </span>
-                                    ))}
+                                    {m.thematiques.map((t, i) => {
+                                      const actif = selectedTags.has(t);
+                                      return (
+                                        <button
+                                          key={t}
+                                          onClick={() => toggleTag(t)}
+                                          aria-pressed={actif}
+                                          title={
+                                            actif
+                                              ? "Retirer cette thématique du filtre"
+                                              : "Filtrer sur cette thématique"
+                                          }
+                                          className={`rounded-full px-2 py-0.5 text-xs ${
+                                            actif
+                                              ? "bg-blue-700 text-white ring-1 ring-blue-700 ring-offset-1"
+                                              : i === 0
+                                                ? "bg-slate-800 text-white hover:bg-slate-600"
+                                                : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                                          }`}
+                                        >
+                                          {thematiques[t]?.label ?? t}
+                                        </button>
+                                      );
+                                    })}
                                   </div>
 
                                   <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs">
