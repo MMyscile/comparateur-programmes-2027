@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import { getChoixEditoriaux, getTaxonomie, getThemesCouverts } from "@/lib/data";
+import Link from "next/link";
+import { Markdown, PROSE } from "@/components/Markdown";
+import { getRegleMapping, getTaxonomie, getThemesCouverts } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Méthodologie — Comparateur de programmes 2027",
@@ -9,30 +9,10 @@ export const metadata: Metadata = {
     "Taxonomie, critères de rattachement et choix éditoriaux assumés. La règle de classement est publique (garde-fou n°2).",
 };
 
-const PROSE =
-  "prose prose-sm prose-slate max-w-none prose-headings:font-semibold prose-h2:text-base prose-h3:text-sm";
-
-function Md({ children }: { children: string }) {
-  return (
-    <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
-      components={{
-        table: ({ node: _node, ...props }) => (
-          <div className="overflow-x-auto">
-            <table {...props} />
-          </div>
-        ),
-      }}
-    >
-      {children}
-    </ReactMarkdown>
-  );
-}
-
 export default function MethodologiePage() {
   const taxo = getTaxonomie();
   const couverts = new Set(getThemesCouverts().map((t) => t.id));
-  const choixEditoriaux = getChoixEditoriaux();
+  const regleMapping = getRegleMapping();
 
   return (
     <div className="space-y-8">
@@ -42,6 +22,14 @@ export default function MethodologiePage() {
           Comparer, c&apos;est cadrer. Il n&apos;existe pas de manière neutre de comparer des
           programmes : le choix des thèmes, du grain et du classement est un acte éditorial. Ce site
           ne prétend pas à l&apos;objectivité — il vise une <strong>honnêteté traçable</strong>.
+        </p>
+        <p className="max-w-3xl text-sm text-slate-500">
+          Cette page explique <em>comment</em> le site est fabriqué. Pour le <em>pourquoi</em> —
+          l&apos;origine du projet, qui l&apos;écrit, le rôle de l&apos;IA — voir la page{" "}
+          <Link href="/a-propos" className="underline">
+            À propos
+          </Link>
+          .
         </p>
       </section>
 
@@ -53,8 +41,8 @@ export default function MethodologiePage() {
             d&apos;origine. Jamais de mesure sans source.
           </li>
           <li>
-            <strong>Règle de mapping publiée</strong> — la taxonomie et ses critères sont sur cette
-            page.
+            <strong>Règle de classement publiée</strong> — la taxonomie, ses critères et la façon
+            de classer sont expliqués sur cette page.
           </li>
           <li>
             <strong>Test de renversement</strong> — un classement doit tenir même si l&apos;étiquette
@@ -131,56 +119,10 @@ export default function MethodologiePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-lg font-semibold">Choix éditoriaux (règle de mapping)</h2>
-        <p className="max-w-3xl text-sm text-slate-500">
-          Les décisions de classement derrière la taxonomie, reproduites telles quelles depuis{" "}
-          <a
-            className="underline decoration-slate-300 underline-offset-2 hover:text-slate-700"
-            href="https://github.com/MMyscile/comparateur-programmes-2027/blob/main/data/choix-editoriaux.md"
-          >
-            data/choix-editoriaux.md
-          </a>{" "}
-          (historique complet dans git). Chaque choix est réversible : la ligne « Pour revenir
-          dessus » dit quoi éditer.
-        </p>
+        <h2 className="text-lg font-semibold">Comment les propositions sont classées</h2>
         <div className={`${PROSE} max-w-3xl`}>
-          <Md>{choixEditoriaux.intro}</Md>
+          <Markdown>{regleMapping}</Markdown>
         </div>
-        {choixEditoriaux.sections.map((section) =>
-          section.titre.startsWith("Principes") ? (
-            <div key={section.titre} className="max-w-3xl space-y-2">
-              <h3 className="font-medium">{section.titre}</h3>
-              <div className={PROSE}>
-                <Md>{section.contenu}</Md>
-              </div>
-            </div>
-          ) : (
-            <div key={section.titre} className="max-w-3xl space-y-2">
-              {section.sousSections.length > 0 && (
-                <h3 className="font-medium">{section.titre}</h3>
-              )}
-              {(section.sousSections.length > 0
-                ? section.sousSections
-                : [section]
-              ).map((bloc) => (
-                <details
-                  key={bloc.titre}
-                  className="group rounded-lg border border-slate-200 bg-white p-4"
-                >
-                  <summary className="cursor-pointer list-none text-sm font-medium text-slate-800 marker:content-none">
-                    <span className="mr-2 inline-block text-slate-400 transition-transform group-open:rotate-90">
-                      ▸
-                    </span>
-                    {bloc.titre.replace(/`/g, "")}
-                  </summary>
-                  <div className={`${PROSE} mt-2 border-t border-slate-100 pt-2`}>
-                    <Md>{bloc.contenu}</Md>
-                  </div>
-                </details>
-              ))}
-            </div>
-          ),
-        )}
       </section>
     </div>
   );

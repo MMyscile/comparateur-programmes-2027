@@ -24,10 +24,11 @@
 - ✅ **URL publique du programme Écologistes trouvée** — `source_url` renseignés dans `data/candidats/ecologistes.json` avec fragment `#page=N` (pagination physique = pagination imprimée, vérifiée). Réserve : le PDF est derrière un challenge Cloudflare (accès automatisé bloqué, OK depuis un navigateur humain).
 - ✅ **2ᵉ méta-thème pilote « Justice, sécurité & libertés »** — chaîne rejouée sur un thème clivant/asymétrique (`data/pilote-justice-securite.md` ; 5 mesures ajoutées par candidat). A prouvé : l'axe rend visible une divergence de *cadrage* à substance identique (drogues : santé vs sécurité) ; multi-étiquetage enfin exercé (4/10 mesures cotaguées).
 
-- ⬜ 🟠 **Refonte : scinder Méthodologie en deux pages tournées vers le lecteur** (cadrage validé avec l'éditeur le 2026-07-29) — la page actuelle est une explication technique qui concerne l'éditeur, pas le lecteur. Cible :
-  - **Nouvelle page « À propos »** — le récit du projet, écrit en « je » anonyme (« l'éditeur de ce site », pas de nom). *Pourquoi* : lire les programmes est difficile — ils sont denses, nombreux, publiés seulement quelques mois avant l'élection, et leurs mesures ne sont pas rangées sous des thématiques générales comparables ; d'une difficulté personnelle de lecture est née une solution citoyenne : juxtaposer les programmes thème par thème pour aider à choisir sur les mesures qui s'opposent. *Comment* : expliquer clairement le rôle de l'IA (extraction et analyse des données assistées — projet d'une personne seule, impossible sans, vu le volume) et le rôle de l'éditeur humain (décisions éditoriales, arbitrages, contrôles qualité).
-  - **Page « Méthodologie » recentrée** — comment on classe (version publique de la règle : `data/regle-mapping.md`), les garde-fous, la taxonomie détaillée.
-  - Ajouter « À propos » à la navigation.
+- ✅ **Refonte : Méthodologie scindée en deux pages tournées vers le lecteur** (2026-07-29, cadrage validé par l'éditeur le jour même) —
+  - **Page « À propos »** (`data/a-propos.md`, « je » anonyme) : pourquoi le site existe (programmes denses/nombreux/tardifs/mal rangés → d'une difficulté personnelle à une solution citoyenne), qui écrit, « un avis assumé — pourquoi s'y fier quand même » (biais exposés, critiquables, corrigeables), rôle de l'IA explicité (dépouillement assisté, décisions humaines), état du site (v0.1 preuve de moteur).
+  - **Page « Méthodologie » recentrée lecteur** : garde-fous, taxonomie, version publique de la règle de classement (`data/regle-mapping.md` — la règle en clair, le test du parti masqué, 2 cas racontés, lien vers le journal). Jargon retiré (« règle de classement », plus « mapping »).
+  - **Préambule + lexique en tête du journal** (`data/choix-editoriaux.md`) : dit ce qu'est le document (registre brut, non réécrit, historique git), aiguille les lecteurs « démarche » vers À propos/Méthodologie, lexique des termes internes (cotag, axe, LFI 5.2, identifiants…).
+  - « À propos » ajouté à la navigation et au pied de page. Contenus éditoriaux dans `data/*.md` (source unique, rendus au build via composant partagé `src/components/Markdown.tsx`).
 
 ## À faire — moyen terme
 

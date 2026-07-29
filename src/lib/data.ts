@@ -21,41 +21,26 @@ export function getTaxonomie(): Taxonomie {
   return readJSON<Taxonomie>("taxonomie.json");
 }
 
-export interface SectionChoixEditoriaux {
-  titre: string;
-  contenu: string;
-  sousSections: { titre: string; contenu: string }[];
-}
-
-export interface ChoixEditoriaux {
-  intro: string;
-  sections: SectionChoixEditoriaux[];
-}
-
 /**
- * Contenu de data/choix-editoriaux.md (règle de mapping, garde-fou n°2),
- * découpé par sections `##` et sous-sections `###` pour que la page
- * Méthodologie puisse replier les décisions détaillées.
+ * Lit un contenu éditorial markdown de data/, sans son titre `#` ni son bloc
+ * de citation d'en-tête (notes pour le dépôt, pas pour le site) — la page
+ * qui l'affiche fournit les siens.
  */
-export function getChoixEditoriaux(): ChoixEditoriaux {
-  const raw = fs.readFileSync(path.join(DATA_DIR, "choix-editoriaux.md"), "utf-8");
-  const nettoie = (s: string) => s.replace(/\n---\s*$/, "").trim();
-  const [intro, ...blocs] = raw.replace(/^# .*\n/, "").split(/\n## /);
-  return {
-    intro: nettoie(intro),
-    sections: blocs.map((bloc) => {
-      const [tete, ...sous] = bloc.split(/\n### /);
-      const [titre, ...corps] = tete.split("\n");
-      return {
-        titre: titre.trim(),
-        contenu: nettoie(corps.join("\n")),
-        sousSections: sous.map((s) => {
-          const [sousTitre, ...sousCorps] = s.split("\n");
-          return { titre: sousTitre.trim(), contenu: nettoie(sousCorps.join("\n")) };
-        }),
-      };
-    }),
-  };
+function readMarkdownEditorial(relPath: string): string {
+  return fs
+    .readFileSync(path.join(DATA_DIR, relPath), "utf-8")
+    .replace(/^# .*\n/, "")
+    .replace(/^(\s*>.*\n)+/, "");
+}
+
+/** Version publique de la règle de classement (garde-fou n°2). */
+export function getRegleMapping(): string {
+  return readMarkdownEditorial("regle-mapping.md");
+}
+
+/** Récit du projet pour la page À propos. */
+export function getAPropos(): string {
+  return readMarkdownEditorial("a-propos.md");
 }
 
 export function getAxes(): Axe[] {

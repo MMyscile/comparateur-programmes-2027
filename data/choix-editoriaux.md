@@ -1,10 +1,38 @@
 # Choix éditoriaux du socle de méta-thèmes
 
+## Avant de lire — à qui s'adresse ce document
+
+Ce document est le **registre de travail brut** des décisions de classement du
+[comparateur de programmes 2027](https://comparateur-programmes-2027.vercel.app) : chaque
+décision y est consignée telle qu'elle a été prise, datée, avec les alternatives écartées.
+Il est publié tel quel, sans réécriture — l'historique complet de ses modifications est
+conservé par git.
+
+Si vous cherchez à **comprendre la démarche** du site, ce n'est pas la bonne porte d'entrée :
+lisez plutôt les pages [À propos](https://comparateur-programmes-2027.vercel.app/a-propos) et
+[Méthodologie](https://comparateur-programmes-2027.vercel.app/methodologie), écrites pour ça.
+Ce document sert à **vérifier** : contrôler qu'une décision de classement a bien été prise
+comme la règle publiée le prétend.
+
+Lexique des termes techniques récurrents :
+
+- **mesure** : une proposition d'un programme, recopiée mot pour mot ;
+- **axe** : l'unité de comparaison du site (ex. « TVA ») — regroupe les mesures comparables des candidats ;
+- **méta-thème**, puis **thématique** : les deux niveaux de la grille de classement (le rayon, puis l'étagère) ;
+- **cotag / multi-étiquetage** : une mesure rangée sous plusieurs thématiques à la fois ;
+- **baseline** : « ce qui est fait aujourd'hui », l'état actuel chiffré et sourcé d'un axe ;
+- **test de renversement** : un classement doit rester défendable une fois le nom du parti masqué ;
+- **LFI 5.2, ch. 17…** : renvois aux chapitres et sections des programmes sources ;
+- **`lfi-drogues-07`** et codes similaires : identifiants internes des mesures dans les données du site ;
+- **CLAUDE.md, `taxonomie.json`…** : fichiers internes du dépôt (cadrage du projet, données).
+
+---
+
 > Ce fichier documente les décisions de cadrage derrière `taxonomie.json`.
 > Objectif : **honnêteté traçable** (CLAUDE.md), pas neutralité impossible.
 > Chaque choix est réversible — la colonne « Pour revenir dessus » dit quoi éditer.
 >
-> Dernière mise à jour : 2026-07-25 · Taxonomie v0.1.0
+> Dernière mise à jour : 2026-07-29 (préambule) · Taxonomie v0.2.0
 
 ## Principes qui gouvernent tous les choix
 

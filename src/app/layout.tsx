@@ -24,6 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/methodologie" className="text-slate-600 hover:text-slate-900">
                 Méthodologie
               </Link>
+              <Link href="/a-propos" className="text-slate-600 hover:text-slate-900">
+                À propos
+              </Link>
             </nav>
           </div>
         </header>
@@ -32,7 +35,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <p>
             Ce site <strong>assume une posture d&apos;éditeur</strong> : il ne prétend pas comparer de
             façon neutre. Le choix des thèmes, du grain et du classement est un acte éditorial,
-            exposé sur la page <Link href="/methodologie" className="underline">Méthodologie</Link>.
+            expliqué sur les pages <Link href="/a-propos" className="underline">À propos</Link> et{" "}
+            <Link href="/methodologie" className="underline">Méthodologie</Link>.
             Chaque mesure renvoie à sa source d&apos;origine et à « ce qui est fait » chiffré et
             sourcé.
           </p>
