@@ -16,3 +16,4 @@ npm-debug.log*
 # Éditeurs
 .vscode/
 .idea/
+.vercel

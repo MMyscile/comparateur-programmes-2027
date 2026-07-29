@@ -9,6 +9,26 @@ export const metadata: Metadata = {
     "Taxonomie, critères de rattachement et choix éditoriaux assumés. La règle de classement est publique (garde-fou n°2).",
 };
 
+const PROSE =
+  "prose prose-sm prose-slate max-w-none prose-headings:font-semibold prose-h2:text-base prose-h3:text-sm";
+
+function Md({ children }: { children: string }) {
+  return (
+    <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      components={{
+        table: ({ node: _node, ...props }) => (
+          <div className="overflow-x-auto">
+            <table {...props} />
+          </div>
+        ),
+      }}
+    >
+      {children}
+    </ReactMarkdown>
+  );
+}
+
 export default function MethodologiePage() {
   const taxo = getTaxonomie();
   const couverts = new Set(getThemesCouverts().map((t) => t.id));
@@ -123,20 +143,44 @@ export default function MethodologiePage() {
           (historique complet dans git). Chaque choix est réversible : la ligne « Pour revenir
           dessus » dit quoi éditer.
         </p>
-        <div className="prose prose-sm prose-slate max-w-3xl prose-headings:font-semibold prose-h2:text-base prose-h3:text-sm">
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            components={{
-              table: ({ node: _node, ...props }) => (
-                <div className="overflow-x-auto">
-                  <table {...props} />
-                </div>
-              ),
-            }}
-          >
-            {choixEditoriaux}
-          </ReactMarkdown>
+        <div className={`${PROSE} max-w-3xl`}>
+          <Md>{choixEditoriaux.intro}</Md>
         </div>
+        {choixEditoriaux.sections.map((section) =>
+          section.titre.startsWith("Principes") ? (
+            <div key={section.titre} className="max-w-3xl space-y-2">
+              <h3 className="font-medium">{section.titre}</h3>
+              <div className={PROSE}>
+                <Md>{section.contenu}</Md>
+              </div>
+            </div>
+          ) : (
+            <div key={section.titre} className="max-w-3xl space-y-2">
+              {section.sousSections.length > 0 && (
+                <h3 className="font-medium">{section.titre}</h3>
+              )}
+              {(section.sousSections.length > 0
+                ? section.sousSections
+                : [section]
+              ).map((bloc) => (
+                <details
+                  key={bloc.titre}
+                  className="group rounded-lg border border-slate-200 bg-white p-4"
+                >
+                  <summary className="cursor-pointer list-none text-sm font-medium text-slate-800 marker:content-none">
+                    <span className="mr-2 inline-block text-slate-400 transition-transform group-open:rotate-90">
+                      ▸
+                    </span>
+                    {bloc.titre.replace(/`/g, "")}
+                  </summary>
+                  <div className={`${PROSE} mt-2 border-t border-slate-100 pt-2`}>
+                    <Md>{bloc.contenu}</Md>
+                  </div>
+                </details>
+              ))}
+            </div>
+          ),
+        )}
       </section>
     </div>
   );

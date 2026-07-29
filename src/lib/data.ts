@@ -21,13 +21,41 @@ export function getTaxonomie(): Taxonomie {
   return readJSON<Taxonomie>("taxonomie.json");
 }
 
+export interface SectionChoixEditoriaux {
+  titre: string;
+  contenu: string;
+  sousSections: { titre: string; contenu: string }[];
+}
+
+export interface ChoixEditoriaux {
+  intro: string;
+  sections: SectionChoixEditoriaux[];
+}
+
 /**
  * Contenu de data/choix-editoriaux.md (règle de mapping, garde-fou n°2),
- * sans son titre de niveau 1 (la page fournit le sien).
+ * découpé par sections `##` et sous-sections `###` pour que la page
+ * Méthodologie puisse replier les décisions détaillées.
  */
-export function getChoixEditoriaux(): string {
+export function getChoixEditoriaux(): ChoixEditoriaux {
   const raw = fs.readFileSync(path.join(DATA_DIR, "choix-editoriaux.md"), "utf-8");
-  return raw.replace(/^# .*\n/, "");
+  const nettoie = (s: string) => s.replace(/\n---\s*$/, "").trim();
+  const [intro, ...blocs] = raw.replace(/^# .*\n/, "").split(/\n## /);
+  return {
+    intro: nettoie(intro),
+    sections: blocs.map((bloc) => {
+      const [tete, ...sous] = bloc.split(/\n### /);
+      const [titre, ...corps] = tete.split("\n");
+      return {
+        titre: titre.trim(),
+        contenu: nettoie(corps.join("\n")),
+        sousSections: sous.map((s) => {
+          const [sousTitre, ...sousCorps] = s.split("\n");
+          return { titre: sousTitre.trim(), contenu: nettoie(sousCorps.join("\n")) };
+        }),
+      };
+    }),
+  };
 }
 
 export function getAxes(): Axe[] {
