@@ -1,6 +1,6 @@
 {
   "version": "0.2.0",
-  "date_maj": "2026-07-27",
+  "date_maj": "2026-07-28",
   "note": "Taxonomie à 2 niveaux : méta-thèmes (domaines larges, NEUTRES — test de renversement, garde-fou n°3) et THÉMATIQUES (sous-sujets fins). Les mesures sont taguées au niveau des thématiques (champ 'thematiques'), pas des méta-thèmes : une mesure porte un tag par thématique qui la concerne. Le méta-thème d'une mesure se déduit du méta parent de ses thématiques. Les thématiques ne sont renseignées que pour les métas déjà couverts.",
   "themes": [
     {
@@ -227,11 +227,18 @@
       "criteres_de_rattachement": [
         "Modèle agricole, pratiques, revenus agricoles, foncier agricole",
         "Droit à l'alimentation, qualité alimentaire, souveraineté alimentaire",
-        "Pêche et sylviculture en tant qu'activités (l'écosystème relève de 'ecologie-climat-energie')"
+        "Pêche et sylviculture en tant qu'activités (l'écosystème relève de 'ecologie-climat-energie')",
+        "Condition animale (élevage, pratiques, bien-être) — la protection des espèces sauvages relève de 'ecologie-climat-energie'"
       ],
       "voir_aussi": [
         "ecologie-climat-energie",
         "economie-travail-entreprises"
+      ],
+      "thematiques": [
+        {
+          "id": "condition-animale",
+          "label": "Condition animale & bien-être animal"
+        }
       ]
     },
     {

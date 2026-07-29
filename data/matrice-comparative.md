@@ -54,7 +54,7 @@ d'un côté ou de l'autre. La différence est **organisationnelle**, pas une dif
 
 1. **Couverture : symétrique.** 15/15 des deux côtés. L'histoire d'« asymétries de couverture » de la v0.1 était fausse — corrigée ici.
 2. **Organisation : asymétrique.** Chez LFI, des domaines entiers (numérique, agriculture, logement) ne sont pas des chapitres mais des sous-sections nichées dans des chapitres à visée narrative. Chez EELV, chaque domaine a son chapitre. C'est une différence de *mise en avant*, pas de contenu.
-3. **Le mapping des sous-sections LFI vers les thèmes est provisoire** (rattachement principal). La classification fine et multi-étiquetée est l'étape éditoriale suivante (cf. `choix-editoriaux.md`).
+3. **Le mapping des sous-sections LFI vers les thèmes est provisoire** (rattachement principal). ~~La classification fine et multi-étiquetée est l'étape éditoriale suivante~~ → faite le 2026-07-28 : voir `data/rattachements-lfi.md` (qui corrige aussi un oubli : 9.3 n'apparaissait dans aucune colonne ci-dessus).
 4. **À ne pas conclure.** « ● » = présence, pas ambition/qualité/chiffrage. La comparaison de fond (proposition vs baseline réel) reste à faire, mesure par mesure.
 
 ## Historique

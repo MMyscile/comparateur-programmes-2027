@@ -81,11 +81,37 @@
 - **Pourquoi.** Sépare le levier économique du levier de protection. Cas typique de cotag.
 - **Pour revenir dessus.** Fusionner le traitement dans un seul thème.
 
+### 12. Petite enfance → `protection-sociale-solidarites` (2026-07-28)
+- **Décision.** Accueil 0-3 ans (crèches, modes de garde) classé en protection sociale, cotag éducation.
+- **Alternative.** Éducation (continuité du parcours éducatif — c'était la proposition initiale).
+- **Pourquoi.** Le mode de garde est traité comme une prestation familiale (logique CAF), pas comme un cycle scolaire.
+- **Pour revenir dessus.** Inverser principal/cotag sur les rattachements concernés (LFI 5.2).
+
+### 13. Condition animale → `agriculture-alimentation` + thématique `condition-animale` (2026-07-28)
+- **Décision.** Élevage et bien-être animal en Agriculture (application de la décision n°11 : l'élevage est une activité), cotag écologie ; thématique fine `condition-animale` créée dans `taxonomie.json`.
+- **Alternative.** Écologie (fidèle au cadrage « harmonie avec la nature » de la source LFI) ; la protection des espèces **sauvages** y reste.
+- **Pourquoi.** Sur pièces (LFI 14.5) : 6 mesures sur 8 portent sur les pratiques d'élevage.
+- **Pour revenir dessus.** Déplacer la thématique `condition-animale` vers `ecologie-climat-energie`.
+
+### 14. Service citoyen / conscription → `education-recherche-jeunesse` (2026-07-28)
+- **Décision.** Dispositifs de service citoyen des jeunes (LFI 5.7) classés Jeunesse, cotag défense quand une formation militaire ou des réserves sont impliquées.
+- **Alternative.** Défense (conscription) ou sécurité civile (justice-sécurité).
+- **Pourquoi.** L'objet premier est un dispositif jeunesse (formation, permis, mise à niveau, remplacement du SNU).
+- **Pour revenir dessus.** Déplacer le critère vers `europe-international-defense`.
+
+### 15. Espace : international par défaut, recherche au cas par cas (2026-07-28)
+- **Décision.** La politique spatiale se classe `europe-international-defense` quand la dimension internationale/souveraineté domine (traités, armement, coopérations) ; une mesure **sans** dimension internationale (ex. moyens du CNES) se classe `education-recherche-jeunesse`. Règle appliquée au grain mesure.
+- **Pourquoi.** C'est le contenu de la mesure qui décide, pas le chapitre source.
+- **Pour revenir dessus.** Fixer un principal unique pour tout le spatial.
+
 ---
 
 ## Rattachements sources (traçabilité)
 
 Correspondance chapitres source → méta-thèmes (preuve de couverture). À maintenir quand une source est ajoutée.
+
+> Pour LFI, le grain fin (89 sous-sections, multi-étiqueté) est dans `data/rattachements-lfi.md`
+> (2026-07-28) ; le tableau ci-dessous reste la vue agrégée par chapitre.
 
 | Méta-thème | Écologistes (ch.) | LFI — L'Avenir en Commun 2025 (ch.) |
 |---|---|---|
@@ -117,7 +143,7 @@ accès au droit. La chaîne pénale (poursuites, jugement pénal, parquet) reste
 **Pourquoi** : lors du détail des axes justice (extraction 2026-07-28), des mesures EELV sur les
 prud'hommes et le contentieux de la Sécurité sociale étaient taguées `justice-penale` faute de
 thématique adaptée — un filtre « justice pénale » affichait du droit du travail. Constat consigné
-au §4.7 de `data/drafts/justice.rapport.md`.
+au §4.7 de `data/rapports/justice.rapport.md`.
 
 **Test de renversement** : le critère (pénal vs civil/social) est une distinction juridique
 standard, indépendante de l'étiquette partisane.

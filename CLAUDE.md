@@ -48,7 +48,10 @@ les choix éditoriaux. Toute fonctionnalité doit servir la traçabilité et la 
 ## Modèle de données
 
 Unité = **le programme de campagne présidentielle d'un candidat** (jamais le corpus général du parti,
-jamais les législatives).
+jamais les législatives). Tranché le 2026-07-28 : une plateforme de parti compte comme programme du
+candidat quand un·e candidat·e désigné·e la porte (cas Écologistes : Marine Tondelier, désignée le
+08/12/2025, sous réserve de la primaire de la gauche unie du 11/10/2026 — réserve documentée dans
+`etat_programme`).
 
 **Grain (modèle v0.2) :** une **Mesure = UNE proposition** recopiée mot-pour-mot (jamais une
 synthèse de plusieurs points — la synthèse trahit la fidélité, garde-fou n°1). Les propositions
