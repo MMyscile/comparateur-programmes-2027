@@ -26,7 +26,7 @@
 
 ## À faire — moyen terme
 
-- ⬜ 🟢 **Déployer sur Vercel** (statique, gratuit) — dès que le repo est publié.
+- ✅ **Déployé sur Vercel** (2026-07-29) — production : https://comparateur-programmes-2027.vercel.app (compte `midenzer0`, projet connecté au repo GitHub : chaque push sur `main` redéploie automatiquement).
 - ✅ **Page publique « règle de mapping »** (2026-07-29, garde-fou n°2) — `data/choix-editoriaux.md` est rendu tel quel (source unique, chargé au build) en bas de la page Méthodologie via `react-markdown` + `remark-gfm` + `@tailwindcss/typography`, avec lien vers le fichier sur GitHub pour l'historique.
 - ⬜ 🟢 **Classification fine** des 66 chapitres EELV et 89 sous-sections LFI → méta-thèmes (multi-étiquetée), alimentant `data/candidats/*.json`.
 - ⬜ 🟢 **Normaliser le programme Écologistes** en markdown (même squelette que LFI) — **seulement si** le besoin se confirme au-delà des extractions ciblées. Corrige aussi le trou de traçabilité (EELV n'existe qu'en PDF dans le dépôt) et le problème d'ordre de lecture 2 colonnes.
