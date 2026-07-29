@@ -30,10 +30,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
         <footer className="mx-auto max-w-5xl px-4 py-10 text-xs leading-relaxed text-slate-500">
           <p>
-            Ce site <strong>assume une posture d'éditeur</strong> : il ne prétend pas comparer de
+            Ce site <strong>assume une posture d&apos;éditeur</strong> : il ne prétend pas comparer de
             façon neutre. Le choix des thèmes, du grain et du classement est un acte éditorial,
             exposé sur la page <Link href="/methodologie" className="underline">Méthodologie</Link>.
-            Chaque mesure renvoie à sa source d'origine et à « ce qui est fait » chiffré et sourcé.
+            Chaque mesure renvoie à sa source d&apos;origine et à « ce qui est fait » chiffré et
+            sourcé.
           </p>
         </footer>
       </body>

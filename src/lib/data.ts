@@ -21,6 +21,15 @@ export function getTaxonomie(): Taxonomie {
   return readJSON<Taxonomie>("taxonomie.json");
 }
 
+/**
+ * Contenu de data/choix-editoriaux.md (règle de mapping, garde-fou n°2),
+ * sans son titre de niveau 1 (la page fournit le sien).
+ */
+export function getChoixEditoriaux(): string {
+  const raw = fs.readFileSync(path.join(DATA_DIR, "choix-editoriaux.md"), "utf-8");
+  return raw.replace(/^# .*\n/, "");
+}
+
 export function getAxes(): Axe[] {
   const { axes } = readJSON<{ axes: Axe[] }>("axes.json");
   return axes;

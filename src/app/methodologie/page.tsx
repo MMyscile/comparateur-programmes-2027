@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { getTaxonomie, getThemesCouverts } from "@/lib/data";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { getChoixEditoriaux, getTaxonomie, getThemesCouverts } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Méthodologie — Comparateur de programmes 2027",
@@ -10,6 +12,7 @@ export const metadata: Metadata = {
 export default function MethodologiePage() {
   const taxo = getTaxonomie();
   const couverts = new Set(getThemesCouverts().map((t) => t.id));
+  const choixEditoriaux = getChoixEditoriaux();
 
   return (
     <div className="space-y-8">
@@ -104,6 +107,35 @@ export default function MethodologiePage() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-lg font-semibold">Choix éditoriaux (règle de mapping)</h2>
+        <p className="max-w-3xl text-sm text-slate-500">
+          Les décisions de classement derrière la taxonomie, reproduites telles quelles depuis{" "}
+          <a
+            className="underline decoration-slate-300 underline-offset-2 hover:text-slate-700"
+            href="https://github.com/MMyscile/comparateur-programmes-2027/blob/main/data/choix-editoriaux.md"
+          >
+            data/choix-editoriaux.md
+          </a>{" "}
+          (historique complet dans git). Chaque choix est réversible : la ligne « Pour revenir
+          dessus » dit quoi éditer.
+        </p>
+        <div className="prose prose-sm prose-slate max-w-3xl prose-headings:font-semibold prose-h2:text-base prose-h3:text-sm">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              table: ({ node: _node, ...props }) => (
+                <div className="overflow-x-auto">
+                  <table {...props} />
+                </div>
+              ),
+            }}
+          >
+            {choixEditoriaux}
+          </ReactMarkdown>
         </div>
       </section>
     </div>
