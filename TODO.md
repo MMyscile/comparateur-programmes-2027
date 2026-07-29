@@ -24,6 +24,11 @@
 - ✅ **URL publique du programme Écologistes trouvée** — `source_url` renseignés dans `data/candidats/ecologistes.json` avec fragment `#page=N` (pagination physique = pagination imprimée, vérifiée). Réserve : le PDF est derrière un challenge Cloudflare (accès automatisé bloqué, OK depuis un navigateur humain).
 - ✅ **2ᵉ méta-thème pilote « Justice, sécurité & libertés »** — chaîne rejouée sur un thème clivant/asymétrique (`data/pilote-justice-securite.md` ; 5 mesures ajoutées par candidat). A prouvé : l'axe rend visible une divergence de *cadrage* à substance identique (drogues : santé vs sécurité) ; multi-étiquetage enfin exercé (4/10 mesures cotaguées).
 
+- ⬜ 🟠 **Refonte : scinder Méthodologie en deux pages tournées vers le lecteur** (cadrage validé avec l'éditeur le 2026-07-29) — la page actuelle est une explication technique qui concerne l'éditeur, pas le lecteur. Cible :
+  - **Nouvelle page « À propos »** — le récit du projet, écrit en « je » anonyme (« l'éditeur de ce site », pas de nom). *Pourquoi* : lire les programmes est difficile — ils sont denses, nombreux, publiés seulement quelques mois avant l'élection, et leurs mesures ne sont pas rangées sous des thématiques générales comparables ; d'une difficulté personnelle de lecture est née une solution citoyenne : juxtaposer les programmes thème par thème pour aider à choisir sur les mesures qui s'opposent. *Comment* : expliquer clairement le rôle de l'IA (extraction et analyse des données assistées — projet d'une personne seule, impossible sans, vu le volume) et le rôle de l'éditeur humain (décisions éditoriales, arbitrages, contrôles qualité).
+  - **Page « Méthodologie » recentrée** — comment on classe (version publique de la règle : `data/regle-mapping.md`), les garde-fous, la taxonomie détaillée.
+  - Ajouter « À propos » à la navigation.
+
 ## À faire — moyen terme
 
 - ✅ **Déployé sur Vercel** (2026-07-29) — production : https://comparateur-programmes-2027.vercel.app (compte `midenzer0`, projet connecté au repo GitHub : chaque push sur `main` redéploie automatiquement).
