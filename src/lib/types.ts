@@ -23,7 +23,8 @@ export interface Axe {
   label: string;
   ordre?: number;
   baseline_reel: string;
-  source_baseline: string;
+  /** Une URL, ou une liste d'URLs quand la baseline affirme plusieurs faits (un lien par fait). */
+  source_baseline: string | string[];
   ecart_synthese: string;
 }
 

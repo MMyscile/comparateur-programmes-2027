@@ -387,14 +387,20 @@ export default function Comparateur({ themes, axes, candidats, mesures, thematiq
                     Ce qui est fait aujourd&apos;hui
                   </p>
                   <p className="mt-1 text-sm text-slate-700">{axe.baseline_reel}</p>
-                  <a
-                    href={axe.source_baseline}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-1 inline-block text-xs text-blue-700 underline"
-                  >
-                    Référence
-                  </a>
+                  {(Array.isArray(axe.source_baseline)
+                    ? axe.source_baseline
+                    : [axe.source_baseline]
+                  ).map((url, i, tab) => (
+                    <a
+                      key={url}
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mr-3 mt-1 inline-block text-xs text-blue-700 underline"
+                    >
+                      {tab.length > 1 ? `Référence ${i + 1}` : "Référence"}
+                    </a>
+                  ))}
                 </div>
               </article>
             );

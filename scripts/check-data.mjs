@@ -33,8 +33,12 @@ const ETATS = new Set(["mur", "ebauche", "perime", "pas-encore"]);
 for (const a of axes) {
   const f = `data/axes.json [${a.id}]`;
   if (!themesIds.has(a.theme)) err(f, `theme inconnu : "${a.theme}"`);
-  for (const champ of ["label", "baseline_reel", "source_baseline", "ecart_synthese"])
+  for (const champ of ["label", "baseline_reel", "ecart_synthese"])
     if (!a[champ]) err(f, `champ manquant ou vide : ${champ}`);
+  // source_baseline : une URL (string) ou une liste d'URLs — un lien par fait affirmé.
+  const sources = Array.isArray(a.source_baseline) ? a.source_baseline : [a.source_baseline];
+  if (sources.length === 0 || sources.some((s) => typeof s !== "string" || !s.startsWith("http")))
+    err(f, "source_baseline : URL(s) http(s) requise(s), champ manquant, vide ou invalide");
 }
 
 // --- Mesures (candidats + brouillons) -------------------------------------

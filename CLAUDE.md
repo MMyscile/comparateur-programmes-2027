@@ -83,7 +83,7 @@ Axe (unité de comparaison) — `data/axes.json` :
   "label": "intitulé de l'axe",
   "ordre": 1,
   "baseline_reel": "état actuel chiffré et sourçable",
-  "source_baseline": "https://... (INSEE, budget, loi votée)",
+  "source_baseline": "https://... (INSEE, budget, loi votée) — ou liste d'URLs : un lien par fait affirmé dans la baseline",
   "ecart_synthese": "résumé éditorial de l'écart entre candidats"
 }
 ```
