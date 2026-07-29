@@ -655,6 +655,361 @@
       "rubrique_origine": "Chapitre 58 — Lutter contre le narcotrafic (proposition 6) ; p. 184",
       "date_publication": "2026-07",
       "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-succession-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-succession",
+      "thematiques": [
+        "capital-patrimoine",
+        "impots-menages"
+      ],
+      "verbatim": "Simplifier et rendre progressif la fiscalité sur l’héritage. Mettre en place un barème de taxation progressif unique en ajoutant deux tranches pour les ménages faisant partie du 1 % le plus riche au-delà de 4 millions d’euros et le 0,1 % le plus riche au-delà de 13 millions d’euros. Supprimer l’abattement spécifique aux assurances-vies et la niche Copé sur la plus-value de cession des filiales. Plafonner l’abattement Dutreil à 50 % au-delà de 50 millions d’euros et en réformer l’assiette et la durée de conservation des titres.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 2) ; p. 66",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-fraude-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion",
+        "fiscalite-entreprises"
+      ],
+      "verbatim": "Renforcer les moyens de lutte contre la fraude, l’évasion fiscale et les paradis fiscaux qui mine le consentement à l’impôt. Soutenir le processus de négociation engagé aux Nations unies pour une Convention-cadre sur la coopération fiscale internationale en défendant un taux minimum d’imposition de 25 % sans dérogations pour les multinationales. Augmenter les capacités d’enquête, de contrôle et de coopération internationale de l’administration fiscale. Généraliser la transparence sur les bénéficiaires effectifs. Supprimer les scores de risque qui ciblent les personnes pauvres. Engager un réexamen systématique des 125 conventions fiscales bilatérales afin d’identifier celles qui limitent abusivement les droits d’imposition des pays partenaires afin de contribuer à une véritable justice fiscale internationale. Supprimer les clauses visant à exempter d’impôts les investissements fossiles ou extractivistes (en particulier minier).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=67",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 8) ; p. 67",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-fraude-2",
+      "candidat": "ecologistes",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion",
+        "fiscalite-entreprises"
+      ],
+      "verbatim": "Augmenter la fiscalité sur les grandes entreprises. […] Renforcer les obligations déclaratives des multinationales en particulier l’activité et les bénéfices pays par pays en particulier pour les holdings. […] Réformer la surtaxe sur l’IS afin d’éviter l’optimisation fiscale.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 3 — extrait) ; p. 66",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-numerique-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-numerique",
+      "thematiques": [
+        "fiscalite-entreprises"
+      ],
+      "verbatim": "Augmenter la fiscalité sur les grandes entreprises. […] Relever la taxe sur les services numériques (TSN) de 3 à 5 % et abaisser le seuil d’assujettissement à 5 milliards de chiffre d’affaire pour intégrer les plateformes de e-commerce et l’étendre aux entreprises qui gèrent des data centers.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 3 — extrait) ; p. 66",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-dette-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-dette",
+      "thematiques": [
+        "dette-budget",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Adopter un « pacte fiscal vert » 2027-2032 : une loi de programmation des finances publiques permettant de concilier la transition écologique, nos engagements européens – y compris sur les dépenses militaires – et l’amélioration des services publics. Renégocier la trajectoire de diminution des déficits publics dans le cadre du Semestre européen afin de proposer une trajectoire budgétaire qui préserve l’emploi. Envisager des recettes complémentaires pour compenser la diminution à terme des recettes issues de la consommation fossile. Créer des bons spéciaux permettant de mobiliser l’épargne française pour des emprunts publics avec des ressources fléchées.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 4) ; p. 66",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte"
+      ],
+      "verbatim": "Adopter une fiscalité environnementale cohérente. […] Créer un nouveau fonds d’investissement « France Verte 2040 ». […] Diminuer les niches fiscales fossiles en transformant les taux réduits sur les produits fossiles en aides forfaitaires (biocarburants, kérosène sur les vols intérieurs…). Étendre la taxe incitative relative à l’utilisation de l’énergie renouvelable dans les transports (TIRUERT) au transport maritime et aux carburants synthétiques. Déclencher le malus poids à 1300kg pour les véhicules thermiques et 1600kg pour les véhicules électriques (hors familles nombreuses). Subordonner les aides aux entreprises de plus de 250 salarié·es au respect de plans de transition. Créer une taxe sur les bouteilles en plastique.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 5 — extrait) ; p. 66",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-superprofits-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-superprofits",
+      "thematiques": [
+        "fiscalite-entreprises",
+        "fiscalite-verte"
+      ],
+      "verbatim": "Adopter une fiscalité environnementale cohérente. […] Adopter une taxe exceptionnelle sur les superprofits de l’industrie pétrogazière et du commerce maritime.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=66",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 5 — extrait) ; p. 66",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-niches-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-niches",
+      "thematiques": [
+        "niches-depenses-fiscales",
+        "dette-budget"
+      ],
+      "verbatim": "Mieux maîtriser les dépenses publiques inutiles et fossiles. Diminuer et conditionner les subventions à l’enseignement privé. Recentrer et verdir le Crédit Impôt Recherche sur les PME et ETI. Mutualiser les achats publics. Supprimer les niches fiscales défavorables au climat. Réformer les barèmes kilométriques et le régime fiscal des voitures de fonction. Supprimer l’abattement fiscal de 10 % pour les retraités. Revoir les modalités coûteuses et inutiles de la politique d’immigration (OQTF non exécutées, centres de rétention).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=67",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 7) ; p. 67",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-secu-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-secu",
+      "thematiques": [
+        "cotisations-secu",
+        "impots-menages"
+      ],
+      "verbatim": "Équilibrer le budget de la Sécurité Sociale. Supprimer le déficit de l’assurance-maladie sans pénaliser ni les soignant·es ni les malades en rendant progressive la Contribution Sociale Généralisée (CSG) et en l’augmentant d’un point pour assurer l’équilibre à moyen terme de la Caisse Nationale d’Assurance Maladie (CNAM). Développer la prévention en santé notamment en augmentant les taxes sur l’alcool, le tabac, le sucre et les produits transformés. Sous-indexer les plus hautes retraites. Renégocier le prix des médicaments les plus coûteux en particulier les anticancéreux dont le coût pourrait exploser dans les prochaines années. Affecter une partie des droits de succession à la branche autonomie pour la financer.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=67",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 9) ; p. 67",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-secu-2",
+      "candidat": "ecologistes",
+      "axe": "fisc-secu",
+      "thematiques": [
+        "cotisations-secu"
+      ],
+      "verbatim": "Rationaliser les exonérations de cotisations sociales. Nominaliser et désindexer leur montant. Supprimer les exonérations de cotisations inutiles car supérieures à 1,6 smic ou concernant les heures supplémentaires. Conditionner les cotisations restantes à une augmentation de salaires pour celles et ceux gagnant moins de 2000€ dans les deux ans suivant l’embauche et aux branches qui revalorisent leurs grilles de rémunération.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=67",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 10) ; p. 67",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-regulation-1",
+      "candidat": "ecologistes",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance",
+        "capital-patrimoine"
+      ],
+      "verbatim": "Taxer plus fortement le capital que le travail. […] Augmenter la taxe sur les transactions financières à 0,7 %. Étendre son assiette à un plus grand nombre d’instruments spéculatifs. Abaisser le seuil de capitalisation. Élargir la coopération européenne pour éviter la concurrence entre places financières. Développer les outils de contrôle des flux financiers transfrontaliers.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 11 — extrait) ; p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-fraude-3",
+      "candidat": "ecologistes",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion",
+        "banques-finance"
+      ],
+      "verbatim": "Taxer plus fortement le capital que le travail. […] Mettre en place un registre européen des actifs financiers.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 11 — extrait) ; p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-capital-c1",
+      "candidat": "ecologistes",
+      "axe": "fisc-capital",
+      "thematiques": [
+        "capital-patrimoine"
+      ],
+      "verbatim": "Taxer plus fortement le capital que le travail. […] Taxer progressivement les plus-values en fonction de la durée de détention des titres de propriété.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 11 — extrait) ; p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-foyer-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-foyer",
+      "thematiques": [
+        "impots-menages"
+      ],
+      "verbatim": "Réformer l’impôt sur le revenu pour préserver la qualité de vie des classes populaires et des classes moyennes. […] Défiscaliser les pensions alimentaires pour les personnes qui les reçoivent.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 12 — extrait) ; p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-fonciere-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-fonciere",
+      "thematiques": [
+        "impots-menages",
+        "capital-patrimoine",
+        "finances-locales"
+      ],
+      "verbatim": "Réformer l’impôt sur le revenu pour préserver la qualité de vie des classes populaires et des classes moyennes. […] Calculer la taxe foncière sur le patrimoine net d’emprunt (classes populaires et moyennes payent trop alors qu’endettés).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 12 — extrait) ; p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-niches-2",
+      "candidat": "ecologistes",
+      "axe": "fisc-niches",
+      "thematiques": [
+        "niches-depenses-fiscales",
+        "impots-menages"
+      ],
+      "verbatim": "Réformer l’impôt sur le revenu pour préserver la qualité de vie des classes populaires et des classes moyennes. […] Limiter l’ensemble des avantages fiscaux à deux logements par déclaration fiscale.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 12 — extrait) ; p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-dette-2",
+      "candidat": "ecologistes",
+      "axe": "fisc-dette",
+      "thematiques": [
+        "dette-budget"
+      ],
+      "verbatim": "Stabiliser le niveau de la dette publique. Assurer une trajectoire stable et prévisible en privilégiant une logique de justice fiscale qui améliore la progressivité de l’impôt. Désindexer les obligations françaises en réduisant la part des titres de dette indexés sur l’inflation (Inflation-Linked Bonds) qui fait supporter par l’État le risque inflationniste. Renforcer la part des créanciers nationaux et européens afin de limiter l’impact de logiques spéculatives de forces réactionnaires.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 13) ; p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-collectivites-1",
+      "candidat": "ecologistes",
+      "axe": "fisc-collectivites",
+      "thematiques": [
+        "finances-locales"
+      ],
+      "verbatim": "Sécuriser les ressources fiscales des collectivités par une loi organique garantissant la compensation financière intégrale des transferts de compétence, un mécanisme transparent et évolutif de répartition et d’évolution de la Dotation Globale de Financement (DGF) et un pouvoir de taux plus important. Organiser une conférence financière avec les collectivités pour définir une trajectoire budgétaire pluriannuelle. Supprimer le prélèvement sur ressources des collectivités territoriales dit « DILICO ». 1/ Faire évoluer les ressources des Départements en leur permettant de moduler les droits de mutations à titre onéreux (DMTO). Créer en concertation avec l’ADF un financement sécurisé comprenant une « dotation action sociale » fondée sur le nombre d’allocataires afin de sécuriser ces prestations. Nationaliser le versement du RSA mais maintenir l’accompagnement social au niveau des Départements. Créer un fonds de péréquation pour le financement de la protection de l’enfance. 2/ Transformer le financement des régions sur la base d’une fraction de la TVA et de l’impôt sur les sociétés en rapport avec les compétences des régions. 3/ Rétablir la CVAE (Cotisation sur la Valeur Ajoutée des Entreprises) pour un financement autonome des collectivités locales. 4/ Augmenter le pouvoir de taux de la taxe sur les surfaces commerciales (TASCOM) [cf également nos propositions sur la politique fiscale en matière foncière 10-5].",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=68",
+      "rubrique_origine": "Chapitre 17 — Refonder le pacte fiscal (proposition 14) ; p. 68",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-climat-1",
+      "candidat": "ecologistes",
+      "axe": "fin-climat",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Contraindre les acteurs financiers et bancaires à respecter les Accords de Paris. Rendre obligatoire la publication de plans de transition alignés avec les Accords de Paris et visant la réduction de 50 % la part des actifs fossiles dans les portefeuilles d’investissement d’ici 2030 et de 90 % d’ici 2040 (banques, fonds de placements, capital risque). Appliquer le devoir de vigilance et le droit commun de la responsabilité pour engager la responsabilité des banques commerciales et des agences de crédit export si des projets fossiles incompatibles avec les objectifs climatiques sont accordés.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=70",
+      "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 1) ; p. 70",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-regulation-2",
+      "candidat": "ecologistes",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Réformer le secteur bancaire et financier. Séparer les banques de dépôt et les activités spéculatives des banques cotées pour prévenir les crises systémiques et in fine le renflouement par l’Etat. Interdire aux banques qui détiennent l’épargne des ménages de pratiquer des activités spéculatives risquées (trading pour compte propre, produits dérivés complexes). Poursuivre la dissociation juridique et capitalistique des banques de détail des activités de marché dans les banques cotées. Exiger pour les sociétés d’investissement et de marché un ratio de fonds propres significativement plus élevé. Rendre transparent le contenu des titres financiers (homogénéité des produits). Encadrer strictement la titrisation. Réglementer l’usure et interdire les Ocabsa (obligations convertibles en actions). Engager un nouveau cycle de négociation « Bâle V » intégrant les risques systémiques liés au réchauffement climatique et pénalisant les distorsions de concurrence des pays comme les Etats-Unis qui ont avantagé leurs acteurs financiers par des modifications réglementaires.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=70",
+      "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 2) ; p. 70",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-banques-publiques-1",
+      "candidat": "ecologistes",
+      "axe": "fin-banques-publiques",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Adopter un Community Reinvestment act français puis européen pour imposer aux banques physiques et numériques de réinvestir une partie de l’épargne collectée sur une région donnée dans l’économie réelle de cette région. Missionner les régulateurs (Banque de France, Autorité des Marchés Financiers…) pour évaluer et noter l’investissement réel des établissements dans le financement des ménages et des entreprises. Intégrer cette évaluation des décisions de supervision lors des fusions, acquisitions ou extensions d’activité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=70",
+      "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 3) ; p. 70",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-banques-publiques-2",
+      "candidat": "ecologistes",
+      "axe": "fin-banques-publiques",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Orienter le pôle public bancaire (Caisse des dépôts, BPI…) vers la transition sociale et écologique Prioriser les projets d’investissements locaux dans les énergies renouvelables et les entreprises responsables (ESS, entreprises à impact…). Créer un fonds pour soutenir les salarié·es cherchant à reprendre leurs entreprises. Réformer le cadre de gestion des risques plus contraignants pour les banques publiques que pour les banques privées alors qu’elles sont garanties par la puissance publique.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=70",
+      "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 4) ; p. 70",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-monnaie-1",
+      "candidat": "ecologistes",
+      "axe": "fin-monnaie-bce",
+      "thematiques": [
+        "banques-finance",
+        "cooperation-europeenne",
+        "donnees-vie-privee"
+      ],
+      "verbatim": "Soutenir la mise en œuvre de l’euro numérique pour préserver la souveraineté européenne et protéger la vie privée. Exclure les partenariats avec des opérateurs financiers et technologiques extra-européens. Conserver l’émission et l’utilisation de l’argent liquide qui est une solution technique robuste et préservant la vie privée. Encourager le développement d’initiatives bancaires souveraines à l’échelle européenne sur le modèle du réseau CB en France ou Wero/ EuroPA en Europe pour ne pas dépendre des systèmes américains Visa et Mastercard.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=71",
+      "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 5, badge [EUROPE]) ; p. 71",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-monnaie-2",
+      "candidat": "ecologistes",
+      "axe": "fin-monnaie-bce",
+      "thematiques": [
+        "banques-finance",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Rendre la Banque Centrale Européenne plus verte et plus démocratique. Accorder le droit aux parlementaires des Etats-membres d’auditionner des membres du bureau de la BCE. Créer un organisme consultatif prévoyant la représentation des syndicats et du patronat à Francfort. Promouvoir l’intégration systématique des enjeux climatiques et environnementaux dans le cadre d’analyse et la mise en œuvre de la politique monétaire. Pénaliser les « actifs bruns » en excluant notamment les projets fossiles des garanties d’emprunt. Appliquer le risque climatique dans l’ensemble du collatéral placé par les banques commerciales auprès de la BCE.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=71",
+      "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 6, badge [EUROPE]) ; p. 71",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-regulation-3",
+      "candidat": "ecologistes",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Unifier le marchés des capitaux (UMC) pour renforcer l’intégration des économies européennes. Préserver les acteurs bancaires et financiers de petite taille afin de ne pas privilégier les plus gros acteurs et de créer des rentes. Transférer davantage de pouvoir de régulation à l’Autorité européenne des marchés financiers et adopter un nouveau règlement (dont l’alignement des régimes de l’insolvabilité).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=71",
+      "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 7, badge [EUROPE]) ; p. 71",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fin-regulation-4",
+      "candidat": "ecologistes",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Encadrer les géants de la fintech et des cryptomonnaies. Soumettre les plateformes financières numériques privées et les émetteurs de cryptoactifs aux mêmes obligations prudentielles que les banques : transparence, fonds propres, protection des consommateurs. Renforcer la régulation des crypto-monnaies pour lutter contre le blanchiment d’argent (LCB-FT) en attribuant à l’Autorité européenne des marchés financiers (ESMA) l’exclusivité de la délivrance des licences pour les cryptomonnaies. Obliger les émetteurs de stablecoins ou d’autres monnaies à détenir la majorité des actifs sous-jacents en dépôt auprès de la BCE et/ou en actifs liquides de haute qualité et limiter les avoirs à 20 000€.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=71",
+      "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 8, badge [EUROPE]) ; p. 71",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
     }
   ]
 }

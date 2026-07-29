@@ -98,6 +98,231 @@
       "baseline_reel": "L'usage de stupéfiants, dont le cannabis récréatif, est un délit (art. L.3421-1 du code de la santé publique). Depuis septembre 2020, il peut être sanctionné par une amende forfaitaire délictuelle de 200 €. La production et la vente restent pénalement réprimées. La politique de lutte contre les drogues est pilotée par la MILDECA, rattachée au Premier ministre (et non au ministère de la Santé).",
       "source_baseline": "https://www.drogues.gouv.fr/en-matiere-de-stupefiants",
       "ecart_synthese": "Substance convergente (les deux légalisent le cannabis, logique de réduction des risques), cadrage opposé : LFI le range en santé publique (monopole d'État, pilotage Santé) ; EELV sous « Lutter contre le narcotrafic » (sécuritaire) tout en dépénalisant (modèle portugais)."
+    },
+    {
+      "id": "fisc-succession",
+      "theme": "fiscalite-budget-finances",
+      "label": "Succession, donation & héritage",
+      "ordre": 6,
+      "baseline_reel": "En ligne directe, chaque enfant bénéficie d'un abattement de 100 000 € par parent sur sa part d'héritage (art. 779 du CGI), puis d'un barème progressif de 5 % à 45 % (art. 777 du CGI). La loi de finances pour 2026 n'a pas modifié ces paramètres. Les droits de mutation à titre gratuit (successions et donations) ont rapporté environ 21 Md€ en 2025 (DGFiP).",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026292566",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191748/",
+        "https://www.impots.gouv.fr/actualite/bulletin-dgfip-statistiques-ndeg43-les-recettes-fiscales-collectees-par-la-dgfip"
+      ],
+      "ecart_synthese": "Convergence sur plus de progressivité, instruments différents : LFI intègre l'ensemble des dons et héritages reçus tout au long de la vie pour taxer les plus hauts patrimoines ; les Écologistes créent deux tranches au-delà de 4 et 13 M€ et suppriment l'abattement de l'assurance-vie."
+    },
+    {
+      "id": "fisc-fonciere",
+      "theme": "fiscalite-budget-finances",
+      "label": "Fiscalité foncière des ménages",
+      "ordre": 7,
+      "baseline_reel": "La taxe foncière sur les propriétés bâties est calculée sur 50 % de la valeur locative cadastrale du bien (et non sur le patrimoine net de dettes), multipliée par les taux votés par les collectivités. La révision des valeurs locatives des locaux d'habitation, qui datent de 1970, a été reportée : son intégration est prévue dans les impositions de 2028.",
+      "source_baseline": [
+        "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-impots-locaux/taxe-fonciere-mode-de-calcul-et-reductions",
+        "https://questions.assemblee-nationale.fr/q17/17-410QE.htm"
+      ],
+      "ecart_synthese": "Même diagnostic — une taxe aveugle aux capacités réelles — mais corrections différentes : barème progressif chez LFI, assiette nette d'emprunt chez les Écologistes."
+    },
+    {
+      "id": "fisc-foyer",
+      "theme": "fiscalite-budget-finances",
+      "label": "Fiscalité du foyer (quotients, pensions alimentaires)",
+      "ordre": 8,
+      "baseline_reel": "Les couples mariés ou pacsés sont soumis à une imposition commune obligatoire (art. 6 du CGI), le « quotient conjugal ». L'avantage fiscal du quotient familial est plafonné à 1 807 € par demi-part pour l'imposition des revenus de 2025. Les pensions alimentaires reçues sont imposables entre les mains du bénéficiaire.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046197457",
+        "https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407",
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F3170"
+      ],
+      "ecart_synthese": "LFI supprime le quotient conjugal au nom de l'égalité entre les femmes et les hommes ; les Écologistes défiscalisent les pensions alimentaires reçues. Deux angles différents du même objet « foyer fiscal »."
+    },
+    {
+      "id": "fisc-niches",
+      "theme": "fiscalite-budget-finances",
+      "label": "Niches fiscales & dépenses fiscales",
+      "ordre": 9,
+      "baseline_reel": "Le tome II « Voies et moyens » annexé au projet de loi de finances pour 2026 recense 465 dépenses fiscales (« niches »), pour un coût total chiffré à 89,4 Md€ en 2025.",
+      "source_baseline": [
+        "https://www.assemblee-nationale.fr/dyn/dyn/contenu/visualisation/1087933/file/Voies_et_moyens_Tome_2_2026.pdf",
+        "https://www.ccomptes.fr/sites/default/files/2026-04/NEB-2026-Depenses-fiscales.pdf"
+      ],
+      "ecart_synthese": "Accord sur le tri des niches ; le critère diverge : justice sociale et efficacité chez LFI, climat chez les Écologistes (niches fossiles, barèmes kilométriques, crédit impôt recherche recentré)."
+    },
+    {
+      "id": "fisc-secu",
+      "theme": "fiscalite-budget-finances",
+      "label": "Financement de la Sécurité sociale (CSG, cotisations)",
+      "ordre": 10,
+      "baseline_reel": "La CSG sur les revenus d'activité est un prélèvement proportionnel de 9,2 %, sans barème progressif (la LFSS pour 2026 a porté la CSG sur la plupart des revenus du capital à 10,6 %). L'ensemble des exonérations de cotisations sociales représente plus de 88 Md€ en 2025, en majorité compensées à la Sécurité sociale par l'État (annexe 4 du PLFSS 2026).",
+      "source_baseline": [
+        "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
+        "https://boss.gouv.fr/portail/accueil/regles-dassujettissement/contribution-sociale-generalisee.html",
+        "https://www.securite-sociale.fr/files/live/sites/SSFR/files/medias/PLFSS/2026/PLFSS2026-Annexe4-20251014-183718-59-11_avec%20couverture.pdf"
+      ],
+      "ecart_synthese": "Les deux programmes rendent la CSG progressive — LFI par 14 tranches, les Écologistes en l'augmentant d'un point pour équilibrer l'assurance-maladie ; ils divergent sur le reste : sortie de la dette Covid et péréquation interentreprises chez LFI, rationalisation des exonérations existantes chez les Écologistes."
+    },
+    {
+      "id": "fisc-verte",
+      "theme": "fiscalite-budget-finances",
+      "label": "Fiscalité environnementale",
+      "ordre": 11,
+      "baseline_reel": "Le « budget vert » annexé au PLF 2026 chiffre à 8,1 Md€ les dépenses de l'État défavorables à l'environnement, dont les taux réduits de taxation des carburants. Le malus au poids (taxe sur la masse en ordre de marche) se déclenche à 1 500 kg depuis le 1er janvier 2026. La TIRUERT (taxe incitative à l'incorporation d'énergie renouvelable dans les transports) s'applique jusqu'à fin 2026, avant remplacement par l'IRICC en 2027.",
+      "source_baseline": [
+        "https://www.budget.gouv.fr/reperes/budget_vert/articles/plf-2026-6e-edition-budget-vert",
+        "https://www.service-public.gouv.fr/simulateur/calcul/TaxeAuPoids",
+        "https://www.douane.gouv.fr/professionnels/energie/tiruert-taxe-incitative-relative-lutilisation-de-lenergie-renouvelable-dans"
+      ],
+      "ecart_synthese": "Axe porté par les seuls Écologistes à ce stade (transformation des taux réduits fossiles en aides forfaitaires, fonds « France Verte 2040 », extension de la TIRUERT) — aucune mesure LFI captée sur la fiscalité environnementale comme instrument."
+    },
+    {
+      "id": "fisc-numerique",
+      "theme": "fiscalite-budget-finances",
+      "label": "Taxation du numérique",
+      "ordre": 12,
+      "baseline_reel": "La taxe sur les services numériques (créée par la loi du 24 juillet 2019) s'applique au taux de 3 % aux entreprises réalisant plus de 750 M€ de recettes numériques mondiales, dont plus de 25 M€ en France (art. L. 453-45 et suivants du Code des impositions sur les biens et services).",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000048626177/",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038811588"
+      ],
+      "ecart_synthese": "Écologistes seuls : TSN relevée de 3 à 5 %, seuil abaissé à 5 Md€ pour intégrer le e-commerce, extension aux data centers. Aucune mesure LFI captée."
+    },
+    {
+      "id": "fisc-superprofits",
+      "theme": "fiscalite-budget-finances",
+      "label": "Taxation des superprofits",
+      "ordre": 13,
+      "baseline_reel": "Il n'existe pas de taxe permanente sur les « superprofits ». Des dispositifs temporaires se sont succédé : contribution sur la rente inframarginale des producteurs d'électricité (loi de finances pour 2023), contribution exceptionnelle sur les bénéfices des grandes entreprises créée par la loi de finances pour 2025 et prolongée d'un an par la loi de finances pour 2026 (chiffre d'affaires supérieur à 1,5 Md€). La loi de finances pour 2026 a par ailleurs créé une taxe de 20 % sur les actifs non professionnels des holdings patrimoniales (art. 7).",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000046845692",
+        "https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/loi-de-finances-2026-ce-qui-change-pour-les-entreprises",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155"
+      ],
+      "ecart_synthese": "Permanent contre exceptionnel : LFI veut une taxe pérenne étendue à tous les secteurs ; les Écologistes une taxe exceptionnelle ciblée sur l'industrie pétrogazière et le commerce maritime."
+    },
+    {
+      "id": "fisc-fraude",
+      "theme": "fiscalite-budget-finances",
+      "label": "Fraude & évasion fiscales",
+      "ordre": 14,
+      "baseline_reel": "En 2025, le contrôle fiscal a notifié 17,1 Md€ de droits et pénalités, dont 11,4 Md€ effectivement encaissés (DGFiP). La convention judiciaire d'intérêt public (CJIP), qui permet à une entreprise de transiger sans reconnaissance de culpabilité, a été créée par la loi « Sapin 2 » du 9 décembre 2016. Le « verrou de Bercy » (monopole de l'administration pour engager les poursuites pénales fiscales) a été assoupli par la loi du 23 octobre 2018, qui rend automatique la transmission au parquet des dossiers dépassant 100 000 € de droits éludés assortis des majorations les plus lourdes.",
+      "source_baseline": [
+        "https://www.economie.gouv.fr/actualites/lutte-contre-la-fraude-un-controle-fiscal-toujours-plus-efficace-en-2025",
+        "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000033558671",
+        "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037518803"
+      ],
+      "ecart_synthese": "Priorité affichée des deux côtés. LFI muscle la répression nationale (impôt universel sur les bénéfices, exit tax rétablie, fin de la CJIP, sanctions des cols blancs) ; les Écologistes jouent l'échelle internationale (taux minimum de 25 % défendu à l'ONU, registre européen des actifs, déclarations pays par pays)."
+    },
+    {
+      "id": "fisc-aides-entreprises",
+      "theme": "fiscalite-budget-finances",
+      "label": "Aides publiques aux entreprises (transparence, conditions)",
+      "ordre": 15,
+      "baseline_reel": "La commission d'enquête du Sénat sur les aides publiques aux grandes entreprises (rapport du 8 juillet 2025) évalue les aides publiques aux entreprises à environ 211 Md€ par an (année 2023, périmètre incluant subventions, dépenses fiscales et exonérations de cotisations). Elle constate l'absence de recensement consolidé et d'évaluation systématique de ces aides.",
+      "source_baseline": [
+        "https://www.senat.fr/notice-rapport/2024/r24-808-1-notice.html",
+        "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence"
+      ],
+      "ecart_synthese": "LFI seule à ce stade : publication obligatoire des aides perçues par les entreprises. (La conditionnalité écologiste des aides vit dans l'axe fiscalité environnementale.)"
+    },
+    {
+      "id": "fisc-dette",
+      "theme": "fiscalite-budget-finances",
+      "label": "Dette publique & règles budgétaires",
+      "ordre": 16,
+      "baseline_reel": "La dette publique atteint 3 536,1 Md€ fin mars 2026, soit 117,5 % du PIB (115,7 % fin 2025 — INSEE). La charge budgétaire de la dette de l'État est prévue à 59,3 Md€ par la loi de finances pour 2026, ce qui en fait le premier poste du budget de l'État. Le financement monétaire des États par la banque centrale est interdit par l'article 123 du traité sur le fonctionnement de l'Union européenne.",
+      "source_baseline": [
+        "https://www.insee.fr/fr/statistiques/9010340",
+        "https://www.senat.fr/rap/l25-139-312/l25-139-312_mono.html",
+        "https://eur-lex.europa.eu/eli/treaty/tfeu_2016/art_123/oj/eng"
+      ],
+      "ecart_synthese": "Cadrages opposés : LFI veut soustraire la dette aux marchés financiers (rachat par la BCE, circuit du Trésor, audit citoyen de la part illégitime) ; les Écologistes assument une trajectoire négociée et prévisible (« pacte fiscal vert » 2027-2032, stabilisation du ratio). Point de contact : les deux veulent réduire ou supprimer les titres indexés sur l'inflation."
+    },
+    {
+      "id": "fisc-collectivites",
+      "theme": "fiscalite-budget-finances",
+      "label": "Finances des collectivités locales",
+      "ordre": 17,
+      "baseline_reel": "La loi de finances pour 2026 fixe la dotation globale de fonctionnement (DGF) à 32,6 Md€, dont 5,2 Md€ issus de la rebudgétisation de l'ancienne TVA affectée aux régions : à périmètre constant, la DGF est gelée à 27,4 Md€, comme en 2025. La CVAE, en extinction progressive, doit disparaître en 2030 : la loi de finances pour 2026 n'a pas avancé ce calendrier.",
+      "source_baseline": [
+        "https://www.senat.fr/rap/l25-139-325/l25-139-32516.html",
+        "https://www.legifiscal.fr/actualites-fiscales/4401-plf-2026-49-3-baisse-cvae-2026.html",
+        "https://www.fipeco.fr/commentaire/La%20suppression%20de%20la%20cotisation%20sur%20la%20valeur%20ajout%C3%A9e"
+      ],
+      "ecart_synthese": "LFI redistribue l'existant (rééquilibrage de la DGF, fonds pour les communes rurales) ; les Écologistes sécurisent la ressource par une loi organique (compensation intégrale des transferts, répartition transparente, pouvoir de taux)."
+    },
+    {
+      "id": "fisc-patrimoine-public",
+      "theme": "fiscalite-budget-finances",
+      "label": "Patrimoine public & privatisations",
+      "ordre": 18,
+      "baseline_reel": "Le portefeuille de l'Agence des participations de l'État était valorisé à 209,1 Md€ à la mi-2025, répartis sur 86 entreprises. La Française des Jeux a été privatisée en novembre 2019 (l'État passant de 72 % à environ 20 % du capital, en application de la loi PACTE) et les sociétés d'autoroutes historiques ont été totalement privatisées en 2006.",
+      "source_baseline": [
+        "https://www.economie.gouv.fr/files/files/directions_services/agence-participations-etat/Documents/Rapports-de-l-Etat-actionnaire/2025/REA%202025.pdf",
+        "https://questions.assemblee-nationale.fr/q17/17-4889QE.htm",
+        "https://www.senat.fr/rap/r19-709-1/r19-709-17.html"
+      ],
+      "ecart_synthese": "Axe porté par LFI seule (retour sur les privatisations, droit de réquisition, moratoire sur les PPP, pôles publics stratégiques) — aucune mesure écologiste captée sur ce sujet."
+    },
+    {
+      "id": "fin-regulation",
+      "theme": "fiscalite-budget-finances",
+      "label": "Régulation bancaire & financière",
+      "ordre": 19,
+      "baseline_reel": "La loi bancaire du 26 juillet 2013 n'a pas séparé banques de dépôt et banques d'affaires : elle impose seulement de filialiser certaines activités spéculatives. La taxe sur les transactions financières française s'applique au taux de 0,4 % depuis le 1er avril 2025 (0,3 % auparavant) aux acquisitions d'actions de sociétés françaises capitalisant plus d'un milliard d'euros (art. 235 ter ZD du CGI).",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000027754539",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051764916"
+      ],
+      "ecart_synthese": "Accord de principe sur la séparation des activités bancaires et le renforcement de la TTF (0,7 % chez les Écologistes, « taxe réelle » chez LFI) ; LFI va plus loin nationalement (contrôle des capitaux, interdiction de produits dérivés) quand les Écologistes régulent à l'échelon européen (union des marchés de capitaux, AEMF, fintech et cryptoactifs)."
+    },
+    {
+      "id": "fin-banques-publiques",
+      "theme": "fiscalite-budget-finances",
+      "label": "Pôle public bancaire & orientation du crédit",
+      "ordre": 20,
+      "baseline_reel": "Il existe des institutions financières publiques distinctes : la Caisse des dépôts et consignations, « groupe public au service de l'intérêt général » (art. L. 518-2 du Code monétaire et financier), et Bpifrance, banque publique d'investissement créée par la loi du 31 décembre 2012 et détenue à parité par l'État et la CDC. Aucun texte ne les regroupe en un pôle public bancaire unique.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019300481",
+        "https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000026503648/"
+      ],
+      "ecart_synthese": "Les Écologistes partent de l'existant (orienter CDC/BPI vers la transition, Community Reinvestment Act à la française) ; LFI veut créer un pôle public bancaire unifié et socialiser certaines banques de détail."
+    },
+    {
+      "id": "fin-climat",
+      "theme": "fiscalite-budget-finances",
+      "label": "Finance & climat",
+      "ordre": 21,
+      "baseline_reel": "L'article 29 de la loi énergie-climat du 8 novembre 2019 impose aux acteurs financiers une obligation de transparence sur les risques climat et biodiversité de leurs portefeuilles, sans obligation de réduire leurs actifs fossiles. La loi du 27 mars 2017 sur le devoir de vigilance impose aux plus grandes sociétés un plan de prévention des atteintes aux droits humains et à l'environnement dans leur chaîne de valeur.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000039355992",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000034290626/"
+      ],
+      "ecart_synthese": "Même levier — contraindre la finance sur ses actifs fossiles — mais mécanique différente : banques de désinvestissement et pénalisation de la détention d'actifs nocifs chez LFI ; plans de transition obligatoires alignés sur l'Accord de Paris (-50 % d'actifs fossiles en 2030, -90 % en 2040) chez les Écologistes."
+    },
+    {
+      "id": "fin-monnaie-bce",
+      "theme": "fiscalite-budget-finances",
+      "label": "Monnaie & banque centrale",
+      "ordre": 22,
+      "baseline_reel": "L'euro numérique n'existe pas encore : après une phase de préparation (2023-2025), la BCE a décidé le 30 octobre 2025 d'engager la phase suivante du projet, visant un pilote mi-2027 et une éventuelle première émission en 2029, sous réserve de l'adoption du règlement européen ; aucune décision d'émission n'a été prise. L'objectif principal assigné à la BCE par les traités est la stabilité des prix (art. 127 TFUE).",
+      "source_baseline": [
+        "https://ecb.europa.eu/press/pr/date/2025/html/ecb.pr251030~8c5b5beef0.fr.html",
+        "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12012E/TXT:en:PDF"
+      ],
+      "ecart_synthese": "Écologistes seuls sur l'institution : euro numérique souverain et protecteur de la vie privée, BCE « plus verte et plus démocratique ». Les mesures BCE de LFI visent la dette (voir axe Dette publique), pas l'institution monétaire."
+    },
+    {
+      "id": "fin-definanciarisation",
+      "theme": "fiscalite-budget-finances",
+      "label": "Encadrement des dividendes & de la gouvernance actionnariale",
+      "ordre": 23,
+      "baseline_reel": "Le droit des sociétés autorise la distribution de dividendes au-delà du bénéfice de l'exercice, par prélèvement sur les réserves disponibles (art. L. 232-11 du Code de commerce). La définition du licenciement pour motif économique (art. L. 1233-3 du Code du travail) repose sur des indicateurs comme la baisse du chiffre d'affaires ou les pertes d'exploitation et ne comporte aucun critère lié au versement de dividendes.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006229026",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036762081"
+      ],
+      "ecart_synthese": "Axe porté par LFI seule (dividendes plafonnés au bénéfice, interdiction des licenciements boursiers, fin de la cotation continue) — aucune mesure écologiste captée sur ce sujet."
     }
   ]
 }

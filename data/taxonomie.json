@@ -116,6 +116,34 @@
         {
           "id": "tva-consommation",
           "label": "TVA & consommation"
+        },
+        {
+          "id": "fraude-evasion",
+          "label": "Fraude & évasion fiscales"
+        },
+        {
+          "id": "dette-budget",
+          "label": "Budget, dette & dépense publique"
+        },
+        {
+          "id": "finances-locales",
+          "label": "Finances des collectivités"
+        },
+        {
+          "id": "banques-finance",
+          "label": "Banques & régulation financière"
+        },
+        {
+          "id": "cotisations-secu",
+          "label": "Cotisations & financement de la Sécurité sociale"
+        },
+        {
+          "id": "niches-depenses-fiscales",
+          "label": "Niches & dépenses fiscales"
+        },
+        {
+          "id": "patrimoine-public",
+          "label": "Patrimoine public & privatisations"
         }
       ]
     },

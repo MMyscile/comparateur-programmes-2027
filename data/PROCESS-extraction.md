@@ -73,7 +73,13 @@ C'est le point le plus risqué. Règle : le texte doit finir dans l'**ordre où 
   (b) badges `[EUROPE]` récurrents devant certaines propositions : traiter comme le numéro
   (hors verbatim, reporté en `rubrique_origine`) ; (c) numéros parfois dupliqués (ch. 57 : deux
   « 4 ») → consigner dans `rubrique_origine` ; (d) une proposition peut être coupée en deux blocs
-  par la mise en page (bas de colonne + rejet en pied de page) → recoller et le consigner au rapport.
+  par la mise en page (bas de colonne + rejet en pied de page) → recoller et le consigner au rapport ;
+  (e) `pdftotext` sans `-layout` **supprime le trait d'union des mots composés coupés en fin de
+  ligne** (« Inflation-Linked » → « InflationLinked ») tout en joignant correctement les césures
+  simples → contrôler les lignes se terminant par « - » dans la sortie `-layout` pour distinguer
+  césure (joindre sans trait d'union) et mot composé (conserver le trait d'union) ;
+  (f) `pdftotext -raw` est inutilisable comme extraction primaire sur ce PDF (perte d'espaces
+  inter-mots par kerning) mais sert de deuxième référence de QC après neutralisation des espaces.
 - **Si le document n'est PAS numéroté** et que les colonnes s'entrelacent : ne pas deviner.
   Options : extraire chaque colonne par zone géométrique
   (`pdftotext -x <X> -y <Y> -W <largeur> -H <hauteur> page.pdf`), page par page ;

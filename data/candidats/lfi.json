@@ -726,6 +726,592 @@
       "rubrique_origine": "Chapitre 15.3 — Addictions et drogues : il faut changer de stratégie",
       "date_publication": "2025-01-28",
       "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-patrimoine-01",
+      "candidat": "lfi",
+      "axe": "fisc-patrimoine-public",
+      "thematiques": [
+        "patrimoine-public"
+      ],
+      "verbatim": "Revenir sur les privatisations (aéroports, autoroutes, Française des Jeux, etc.).",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre2/s2",
+      "rubrique_origine": "Chapitre 2.2 — Mettre fin au pillage économique de la Nation",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-patrimoine-02",
+      "candidat": "lfi",
+      "axe": "fisc-patrimoine-public",
+      "thematiques": [
+        "patrimoine-public",
+        "entreprises"
+      ],
+      "verbatim": "Rendre effectif le droit de réquisition des usines et entreprises d’intérêt général par l’État.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre2/s2",
+      "rubrique_origine": "Chapitre 2.2 — Mettre fin au pillage économique de la Nation",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-patrimoine-03",
+      "candidat": "lfi",
+      "axe": "fisc-patrimoine-public",
+      "thematiques": [
+        "patrimoine-public",
+        "dette-budget"
+      ],
+      "verbatim": "Décréter un moratoire sur les partenariats publics-privés (PPP), auditer ceux en cours et abroger les dispositions législatives les permettant.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre2/s2",
+      "rubrique_origine": "Chapitre 2.2 — Mettre fin au pillage économique de la Nation",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-patrimoine-04",
+      "candidat": "lfi",
+      "axe": "fisc-patrimoine-public",
+      "thematiques": [
+        "patrimoine-public",
+        "justice-penale"
+      ],
+      "verbatim": "Poursuivre les atteintes au patrimoine industriel français faisant partie des « intérêts fondamentaux de la Nation », comme le prévoit le Code pénal.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre2/s2",
+      "rubrique_origine": "Chapitre 2.2 — Mettre fin au pillage économique de la Nation",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-patrimoine-05",
+      "candidat": "lfi",
+      "axe": "fisc-patrimoine-public",
+      "thematiques": [
+        "patrimoine-public",
+        "entreprises"
+      ],
+      "verbatim": "Constituer des pôles publics dans les secteurs stratégiques : médicaments, transports et mobilité, banque, énergie, armement.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre2/s2",
+      "rubrique_origine": "Chapitre 2.2 — Mettre fin au pillage économique de la Nation",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-collectivites-01",
+      "candidat": "lfi",
+      "axe": "fisc-collectivites",
+      "thematiques": [
+        "finances-locales"
+      ],
+      "verbatim": "Rééquilibrer la dotation globale de fonctionnement versée aux communes pour lutter contre les inégalités territoriales et l’indexer sur l’inflation.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre3/s2",
+      "rubrique_origine": "Chapitre 3.2 — Une République affirmant le rôle central des communes",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-collectivites-02",
+      "candidat": "lfi",
+      "axe": "fisc-collectivites",
+      "thematiques": [
+        "finances-locales"
+      ],
+      "verbatim": "Augmenter l’enveloppe budgétaire des communes rurales par la création d’un fonds de soutien communal notamment pour recruter et revaloriser les agents.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre3/s2",
+      "rubrique_origine": "Chapitre 3.2 — Une République affirmant le rôle central des communes",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-regulation-01",
+      "candidat": "lfi",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Instaurer une taxe réelle sur les transactions financières.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s1",
+      "rubrique_origine": "Chapitre 6.1 — Mettre au pas la finance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-regulation-02",
+      "candidat": "lfi",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Séparer les banques d’affaires et de détail.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s1",
+      "rubrique_origine": "Chapitre 6.1 — Mettre au pas la finance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-regulation-03",
+      "candidat": "lfi",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Contrôler les mouvements de capitaux.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s1",
+      "rubrique_origine": "Chapitre 6.1 — Mettre au pas la finance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-regulation-04",
+      "candidat": "lfi",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Identifier et interdire les produits dérivés de la finance toxiques et inutiles, limiter les effets de levier et les rendements actionnariaux exorbitants, taxer les rachats d’action.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s1",
+      "rubrique_origine": "Chapitre 6.1 — Mettre au pas la finance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-regulation-05",
+      "candidat": "lfi",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance",
+        "entreprises"
+      ],
+      "verbatim": "Limiter les LBO (rachat d’une entreprise par une société qui recourt à l’emprunt) aux seules procédures de reprise des entreprises par les salariés.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s1",
+      "rubrique_origine": "Chapitre 6.1 — Mettre au pas la finance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-banques-publiques-01",
+      "candidat": "lfi",
+      "axe": "fin-banques-publiques",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Créer un pôle public bancaire.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s2",
+      "rubrique_origine": "Chapitre 6.2 — Pour des banques au service de l’intérêt général",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-banques-publiques-02",
+      "candidat": "lfi",
+      "axe": "fin-banques-publiques",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Socialiser certaines banques de détail (une fois les activités d’affaires des banques séparées des activités de détail) et les intégrer au pôle public bancaire, en vue de financer les très petites entreprises (TPE) sur des critères sociaux et écologiques et d’alimenter le budget public.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s2",
+      "rubrique_origine": "Chapitre 6.2 — Pour des banques au service de l’intérêt général",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-regulation-06",
+      "candidat": "lfi",
+      "axe": "fin-regulation",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Réaliser un audit du coût économique, social et écologique des banques et de la finance sur la société.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s2",
+      "rubrique_origine": "Chapitre 6.2 — Pour des banques au service de l’intérêt général",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-climat-01",
+      "candidat": "lfi",
+      "axe": "fin-climat",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Créer des banques de désinvestissement afin de regrouper les actifs écologiquement nocifs et absorber les pertes économiques liées à l’arrêt des activités polluantes.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s2",
+      "rubrique_origine": "Chapitre 6.2 — Pour des banques au service de l’intérêt général",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-climat-02",
+      "candidat": "lfi",
+      "axe": "fin-climat",
+      "thematiques": [
+        "banques-finance"
+      ],
+      "verbatim": "Dépolluer les flux financiers, en pénalisant la détention et l’usage d’actifs financiers nocifs climatiquement et écologiquement et en renchérissant le crédit pour les entreprises dont la comptabilité carbone n’est pas en conformité avec l’Accord de Paris.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s2",
+      "rubrique_origine": "Chapitre 6.2 — Pour des banques au service de l’intérêt général",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-secu-01",
+      "candidat": "lfi",
+      "axe": "fisc-secu",
+      "thematiques": [
+        "cotisations-secu",
+        "fiscalite-entreprises"
+      ],
+      "verbatim": "Créer une caisse de péréquation interentreprises financée grâce à un barème progressif pour mutualiser la contribution sociale entre petites et grandes entreprises.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s2",
+      "rubrique_origine": "Chapitre 6.2 — Pour des banques au service de l’intérêt général",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-is-c01",
+      "candidat": "lfi",
+      "axe": "fisc-is",
+      "thematiques": [
+        "fiscalite-entreprises",
+        "entreprises"
+      ],
+      "verbatim": "Moduler l’impôt sur les sociétés selon l’usage des bénéfices pour encourager l’investissement en France et pénaliser le versement de dividendes.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s3",
+      "rubrique_origine": "Chapitre 6.3 — Définanciariser l’économie réelle",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-definanciarisation-02",
+      "candidat": "lfi",
+      "axe": "fin-definanciarisation",
+      "thematiques": [
+        "banques-finance",
+        "entreprises"
+      ],
+      "verbatim": "Interdire aux entreprises de distribuer un montant de dividendes supérieur à leurs bénéfices.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s3",
+      "rubrique_origine": "Chapitre 6.3 — Définanciariser l’économie réelle",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-definanciarisation-03",
+      "candidat": "lfi",
+      "axe": "fin-definanciarisation",
+      "thematiques": [
+        "banques-finance",
+        "entreprises"
+      ],
+      "verbatim": "Mettre fin à la cotation continue des entreprises en Bourse et moduler les droits de vote des actionnaires selon la durée d’engagement dans l’entreprise.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s3",
+      "rubrique_origine": "Chapitre 6.3 — Définanciariser l’économie réelle",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fin-definanciarisation-04",
+      "candidat": "lfi",
+      "axe": "fin-definanciarisation",
+      "thematiques": [
+        "banques-finance",
+        "entreprises"
+      ],
+      "verbatim": "Interdire les licenciements boursiers et économiques par les entreprises qui versent des dividendes ou bénéficient des aides de l’État.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s3",
+      "rubrique_origine": "Chapitre 6.3 — Définanciariser l’économie réelle",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-dette-01",
+      "candidat": "lfi",
+      "axe": "fisc-dette",
+      "thematiques": [
+        "dette-budget",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Exiger de l’Union européenne que la Banque centrale européenne (BCE) transforme la part de dette des États qu’elle possède en dettes perpétuelles à taux nul.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s4",
+      "rubrique_origine": "Chapitre 6.4 — Refuser le chantage : annuler la dette publique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-dette-02",
+      "candidat": "lfi",
+      "axe": "fisc-dette",
+      "thematiques": [
+        "dette-budget",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Faire racheter par la BCE la dette publique qui circule sur les marchés financiers sans passer par les banques privées et mettre en place une autorisation de découvert des États auprès de la BCE, afin de sortir le financement de l’État de la main des marchés financiers.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s4",
+      "rubrique_origine": "Chapitre 6.4 — Refuser le chantage : annuler la dette publique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-dette-03",
+      "candidat": "lfi",
+      "axe": "fisc-dette",
+      "thematiques": [
+        "dette-budget",
+        "banques-finance"
+      ],
+      "verbatim": "Réinstaurer un circuit du Trésor pour sortir la dette publique de la main des marchés financiers en rendant obligatoire la détention d’une part minimum de leurs fonds propres en bons du trésor français par les établissements bancaires exerçant en France.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s4",
+      "rubrique_origine": "Chapitre 6.4 — Refuser le chantage : annuler la dette publique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-dette-04",
+      "candidat": "lfi",
+      "axe": "fisc-dette",
+      "thematiques": [
+        "dette-budget"
+      ],
+      "verbatim": "Réaliser un audit citoyen de la dette publique pour déterminer la part illégitime et préparer un réaménagement négocié de la dette publique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s4",
+      "rubrique_origine": "Chapitre 6.4 — Refuser le chantage : annuler la dette publique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-dette-05",
+      "candidat": "lfi",
+      "axe": "fisc-dette",
+      "thematiques": [
+        "dette-budget"
+      ],
+      "verbatim": "Mettre fin à l’émission de titres de dette souveraine indexées sur l’inflation (OATi) qui ne servent qu’à enrichir les créanciers de l’État et pèsent sur nos comptes publics.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s4",
+      "rubrique_origine": "Chapitre 6.4 — Refuser le chantage : annuler la dette publique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-secu-02",
+      "candidat": "lfi",
+      "axe": "fisc-secu",
+      "thematiques": [
+        "cotisations-secu",
+        "dette-budget"
+      ],
+      "verbatim": "Retirer la dette Covid des comptes de la Sécurité sociale, réformer la Caisse d’amortissement de la dette sociale, qui prive la Sécurité sociale de 18 milliards d’euros par an.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s4",
+      "rubrique_origine": "Chapitre 6.4 — Refuser le chantage : annuler la dette publique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-dette-06",
+      "candidat": "lfi",
+      "axe": "fisc-dette",
+      "thematiques": [
+        "dette-budget",
+        "entreprises"
+      ],
+      "verbatim": "Mettre en place une caisse de défaisance pour reprendre les dettes privées asphyxiantes des TPE/PME contractées pendant la pandémie et les dettes agricoles des convertis au 100 % bio.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s4",
+      "rubrique_origine": "Chapitre 6.4 — Refuser le chantage : annuler la dette publique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-secu-03",
+      "candidat": "lfi",
+      "axe": "fisc-secu",
+      "thematiques": [
+        "cotisations-secu",
+        "impots-menages"
+      ],
+      "verbatim": "Rendre la CSG progressive avec 14 tranches.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-succession-01",
+      "candidat": "lfi",
+      "axe": "fisc-succession",
+      "thematiques": [
+        "capital-patrimoine",
+        "impots-menages"
+      ],
+      "verbatim": "Augmenter les droits de succession sur les plus hauts patrimoines en comptabilisant l’ensemble des dons et héritages reçus tout au long de la vie et créer un héritage maximal de 12 millions d’euros (soit 100 fois le patrimoine net médian).",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-niches-01",
+      "candidat": "lfi",
+      "axe": "fisc-niches",
+      "thematiques": [
+        "niches-depenses-fiscales",
+        "impots-menages"
+      ],
+      "verbatim": "Évaluer chacune des niches fiscales et supprimer les niches injustes, inefficaces socialement ou nuisibles écologiquement ; pour les niches restantes, transformer les « réductions d’impôts » en « crédits d’impôts » afin que chacun puisse bénéficier de ces incitations financières à égalité, quels que soient ses revenus.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-fraude-01",
+      "candidat": "lfi",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion",
+        "fiscalite-entreprises",
+        "impots-menages"
+      ],
+      "verbatim": "Instaurer un impôt universel sur les entreprises (basant leur taxation sur l’activité effectivement réalisée en France) et sur les revenus des particuliers pour lutter contre l’évasion fiscale.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-fraude-02",
+      "candidat": "lfi",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion",
+        "capital-patrimoine"
+      ],
+      "verbatim": "Rétablir l’exit tax supprimée par Emmanuel Macron.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-superprofits-01",
+      "candidat": "lfi",
+      "axe": "fisc-superprofits",
+      "thematiques": [
+        "fiscalite-entreprises"
+      ],
+      "verbatim": "Établir une taxe permanente sur les superprofits étendue à l’ensemble des secteurs d’activité, pas uniquement au secteur énergétique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-fonciere-01",
+      "candidat": "lfi",
+      "axe": "fisc-fonciere",
+      "thematiques": [
+        "impots-menages",
+        "capital-patrimoine",
+        "finances-locales"
+      ],
+      "verbatim": "Refonder la taxe foncière pour la rendre progressive et que chacun paie à hauteur de son patrimoine total réel.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-foyer-01",
+      "candidat": "lfi",
+      "axe": "fisc-foyer",
+      "thematiques": [
+        "impots-menages"
+      ],
+      "verbatim": "Mettre fin au quotient conjugal, système patriarcal favorisant les inégalités salariales entre les femmes et les hommes, remplacer l’injuste quotient familial fiscal actuel par un crédit d’impôt par enfant que pourraient toucher toutes les familles.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-fraude-03",
+      "candidat": "lfi",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion"
+      ],
+      "verbatim": "Faire de la lutte contre la fraude et l’évasion fiscales une priorité : tous les moyens humains et financiers nécessaires doivent être débloqués et la France prendra des décisions unilatérales en cas de blocage des négociations européennes ou internationales.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-fraude-04",
+      "candidat": "lfi",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion",
+        "justice-penale"
+      ],
+      "verbatim": "Mettre fin à la convention judiciaire d’intérêt public qui permet aux entreprises de négocier leur sanction financière en cas de fraude fiscale.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-fraude-05",
+      "candidat": "lfi",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion",
+        "justice-penale"
+      ],
+      "verbatim": "Augmenter les poursuites judiciaires et durcir les sanctions à l’encontre des criminels en col blanc, reconnus coupables de fraude fiscale.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-fraude-06",
+      "candidat": "lfi",
+      "axe": "fisc-fraude",
+      "thematiques": [
+        "fraude-evasion",
+        "banques-finance"
+      ],
+      "verbatim": "Mettre fin aux pratiques frauduleuses d’arbitrage de dividendes.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-aides-01",
+      "candidat": "lfi",
+      "axe": "fisc-aides-entreprises",
+      "thematiques": [
+        "entreprises"
+      ],
+      "verbatim": "Rendre obligatoire pour les entreprises la publication des aides publiques qu’elles perçoivent.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-patrimoine-06",
+      "candidat": "lfi",
+      "axe": "fisc-patrimoine-public",
+      "thematiques": [
+        "patrimoine-public",
+        "justice-penale"
+      ],
+      "verbatim": "Créer une mission spéciale dressant le bilan des faveurs fiscales, des privatisations et des abandons de fleurons comme Alstom, Alcatel, EADS depuis trois décennies, permettre la mise en examen et la détention préventive des suspects.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre6/s5",
+      "rubrique_origine": "Chapitre 6.5 — Faire la révolution fiscale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
     }
   ]
 }
