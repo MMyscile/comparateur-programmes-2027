@@ -68,3 +68,11 @@ export interface Taxonomie {
   note: string;
   themes: Theme[];
 }
+
+/** Entrée du glossaire : un terme technique et sa définition courte (surcouche du verbatim). */
+export interface TermeGlossaire {
+  terme: string;
+  definition: string;
+  /** Optionnel : source de la définition (traçabilité). */
+  source_url?: string;
+}

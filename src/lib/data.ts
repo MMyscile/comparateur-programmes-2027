@@ -6,6 +6,7 @@ import type {
   CandidatFile,
   Mesure,
   Taxonomie,
+  TermeGlossaire,
   Theme,
   ThematiqueInfo,
 } from "./types";
@@ -15,6 +16,10 @@ const DATA_DIR = path.join(process.cwd(), "data");
 function readJSON<T>(relPath: string): T {
   const full = path.join(DATA_DIR, relPath);
   return JSON.parse(fs.readFileSync(full, "utf-8")) as T;
+}
+
+export function getGlossaire(): TermeGlossaire[] {
+  return readJSON<{ termes: TermeGlossaire[] }>("glossaire.json").termes;
 }
 
 export function getTaxonomie(): Taxonomie {

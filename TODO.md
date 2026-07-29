@@ -34,12 +34,11 @@
 
 ## À faire — moyen terme
 
-- ⬜ 🟠 **Glossaire au survol des termes techniques** — certaines mesures emploient un vocabulaire spécialisé qu'un lecteur ordinaire ne connaît pas (ex. « numerus clausus » dans la mesure Écologistes du sous-thème *Prison & peines*). Cible : au survol/focus du terme dans le verbatim, un petit overlay affiche une définition **courte et simple**. Points de cadrage :
-  - **Ne pas toucher au verbatim (garde-fou n°1).** Le texte mot-pour-mot reste intact ; le glossaire est une surcouche non destructive (le terme est juste stylé + déclencheur d'overlay), jamais une réécriture de la citation.
-  - **Définitions neutres (même discipline que la baseline).** Pédagogiques, sans qualificatif politique ni prise de position ; idéalement sourcées ou au moins vérifiables. Le choix des termes « compliqués » et leur définition est un acte éditorial → à consigner comme les autres.
-  - **Accessibilité obligatoire.** Le survol seul ne suffit pas : prévoir déclenchement au focus clavier et au tap mobile (pas de hover sur mobile). Overlay non bloquant (pas de dialog modal — cf. règle des dialogs).
-  - **Données.** Un `data/glossaire.json` (terme → définition courte [+ source]) versionné, détection des occurrences dans les verbatims côté client (attention casse, termes multi-mots, faux positifs). Intégrer au `check-data`.
-  - Reste 100 % statique / client, pas de backend.
+- 🔄 🟠 **Glossaire au survol des termes techniques** — prototype livré le 2026-07-29 sur un terme (« numerus clausus », mesure `eco-prison-01`). Mécanique en place et validée (build statique OK, verbatim intact, accessibilité focus/`aria-describedby` vérifiée en navigateur) :
+  - **Surcouche non destructive (garde-fou n°1)** — `src/components/Verbatim.tsx` repère les termes dans le verbatim sans modifier le texte (le terme est stylé + déclencheur d'infobulle). Chaîne source intacte dans les données.
+  - **Infobulle accessible** — s'ouvre au survol, au focus clavier ET au tap (bouton épinglable), se ferme à Échap ; `role="tooltip"` + `aria-describedby`. Non bloquante (pas de dialog modal).
+  - **Données** — `data/glossaire.json` (terme → définition [+ `source_url` optionnel]), détection côté client (casse ignorée, termes multi-mots, plus longs d'abord). Validé par `check-data` (champs requis, doublons, URL).
+  - **Reste à faire** : (a) **sourcer** la définition « numerus clausus » (`source_url`, actuellement absente — traçabilité) et la faire relire par l'éditeur (voix + neutralité) ; (b) recenser et définir les autres termes techniques des verbatims ; (c) décider si une occurrence répétée du même terme doit toutes les surligner ou seulement la 1re.
 
 - ✅ **Déployé sur Vercel** (2026-07-29) — production : https://comparateur-programmes-2027.vercel.app (compte `midenzer0`, projet connecté au repo GitHub : chaque push sur `main` redéploie automatiquement).
 - ✅ **Page publique « règle de mapping »** (2026-07-29, garde-fou n°2) — `data/choix-editoriaux.md` est rendu tel quel (source unique, chargé au build) en bas de la page Méthodologie via `react-markdown` + `remark-gfm` + `@tailwindcss/typography`, avec lien vers le fichier sur GitHub pour l'historique.

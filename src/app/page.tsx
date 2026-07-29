@@ -2,6 +2,7 @@ import Comparateur from "@/components/Comparateur";
 import {
   getAxes,
   getCandidats,
+  getGlossaire,
   getMesures,
   getThematiqueIndex,
   getThemesCouverts,
@@ -13,6 +14,7 @@ export default function HomePage() {
   const candidats = getCandidats();
   const mesures = getMesures();
   const thematiques = getThematiqueIndex();
+  const glossaire = getGlossaire();
 
   return (
     <div className="space-y-8">
@@ -39,6 +41,7 @@ export default function HomePage() {
         candidats={candidats}
         mesures={mesures}
         thematiques={thematiques}
+        glossaire={glossaire}
       />
     </div>
   );

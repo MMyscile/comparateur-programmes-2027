@@ -92,6 +92,22 @@ if (existsSync(dossierDrafts)) {
   }
 }
 
+// --- Glossaire ------------------------------------------------------------
+if (existsSync(join(racine, "data/glossaire.json"))) {
+  const termes = lire("data/glossaire.json").termes ?? [];
+  const vus = new Set();
+  for (const t of termes) {
+    const f = `data/glossaire.json [${t.terme ?? "sans terme"}]`;
+    if (!t.terme) err(f, "champ manquant ou vide : terme");
+    if (!t.definition) err(f, "champ manquant ou vide : definition");
+    const cle = (t.terme ?? "").toLowerCase();
+    if (vus.has(cle)) err(f, "terme en double");
+    vus.add(cle);
+    if (t.source_url != null && (typeof t.source_url !== "string" || !t.source_url.startsWith("http")))
+      err(f, "source_url : URL http(s) attendue si présente");
+  }
+}
+
 // --- Verdict --------------------------------------------------------------
 if (erreurs.length > 0) {
   console.error(`✗ check-data : ${erreurs.length} erreur(s)\n`);

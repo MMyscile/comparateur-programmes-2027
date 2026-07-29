@@ -1,0 +1,9 @@
+{
+  "_note": "Glossaire des termes techniques rencontrés dans les verbatims. Le terme est repéré dans le texte affiché sans jamais le modifier (garde-fou n°1) : la définition est une surcouche. Définitions neutres et pédagogiques, jamais de qualificatif politique (même discipline que la baseline). source_url optionnel mais recommandé (traçabilité).",
+  "termes": [
+    {
+      "terme": "numerus clausus",
+      "definition": "Nombre maximal de places fixé à l'avance. Appliqué aux prisons, il plafonne le nombre de personnes détenues : une fois la limite atteinte, une nouvelle entrée suppose une sortie."
+    }
+  ]
+}

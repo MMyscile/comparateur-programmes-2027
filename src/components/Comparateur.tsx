@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { Axe, Candidat, Mesure, Theme, ThematiqueInfo } from "@/lib/types";
+import type { Axe, Candidat, Mesure, TermeGlossaire, Theme, ThematiqueInfo } from "@/lib/types";
+import Verbatim from "./Verbatim";
 
 /**
  * Garde-fou n°4 — bouton de correction. Sans backend : on ouvre une issue
@@ -27,9 +28,17 @@ interface Props {
   candidats: Candidat[];
   mesures: Mesure[];
   thematiques: Record<string, ThematiqueInfo>;
+  glossaire: TermeGlossaire[];
 }
 
-export default function Comparateur({ themes, axes, candidats, mesures, thematiques }: Props) {
+export default function Comparateur({
+  themes,
+  axes,
+  candidats,
+  mesures,
+  thematiques,
+  glossaire,
+}: Props) {
   const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
   const [candidatId, setCandidatId] = useState<string>("all");
   const [panneauOuvert, setPanneauOuvert] = useState(false);
@@ -323,7 +332,7 @@ export default function Comparateur({ themes, axes, candidats, mesures, thematiq
                                   </div>
 
                                   <blockquote className="text-sm leading-relaxed text-slate-700">
-                                    « {m.verbatim} »
+                                    « <Verbatim texte={m.verbatim} glossaire={glossaire} /> »
                                   </blockquote>
 
                                   <div className="mt-2 flex flex-wrap gap-1">
