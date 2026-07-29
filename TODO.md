@@ -34,6 +34,13 @@
 
 ## À faire — moyen terme
 
+- ⬜ 🟠 **Glossaire au survol des termes techniques** — certaines mesures emploient un vocabulaire spécialisé qu'un lecteur ordinaire ne connaît pas (ex. « numerus clausus » dans la mesure Écologistes du sous-thème *Prison & peines*). Cible : au survol/focus du terme dans le verbatim, un petit overlay affiche une définition **courte et simple**. Points de cadrage :
+  - **Ne pas toucher au verbatim (garde-fou n°1).** Le texte mot-pour-mot reste intact ; le glossaire est une surcouche non destructive (le terme est juste stylé + déclencheur d'overlay), jamais une réécriture de la citation.
+  - **Définitions neutres (même discipline que la baseline).** Pédagogiques, sans qualificatif politique ni prise de position ; idéalement sourcées ou au moins vérifiables. Le choix des termes « compliqués » et leur définition est un acte éditorial → à consigner comme les autres.
+  - **Accessibilité obligatoire.** Le survol seul ne suffit pas : prévoir déclenchement au focus clavier et au tap mobile (pas de hover sur mobile). Overlay non bloquant (pas de dialog modal — cf. règle des dialogs).
+  - **Données.** Un `data/glossaire.json` (terme → définition courte [+ source]) versionné, détection des occurrences dans les verbatims côté client (attention casse, termes multi-mots, faux positifs). Intégrer au `check-data`.
+  - Reste 100 % statique / client, pas de backend.
+
 - ✅ **Déployé sur Vercel** (2026-07-29) — production : https://comparateur-programmes-2027.vercel.app (compte `midenzer0`, projet connecté au repo GitHub : chaque push sur `main` redéploie automatiquement).
 - ✅ **Page publique « règle de mapping »** (2026-07-29, garde-fou n°2) — `data/choix-editoriaux.md` est rendu tel quel (source unique, chargé au build) en bas de la page Méthodologie via `react-markdown` + `remark-gfm` + `@tailwindcss/typography`, avec lien vers le fichier sur GitHub pour l'historique.
 - ⬜ 🟢 **Classification fine** des 66 chapitres EELV et 89 sous-sections LFI → méta-thèmes (multi-étiquetée), alimentant `data/candidats/*.json`.
