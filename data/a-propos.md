@@ -18,9 +18,7 @@ pas sur les slogans.
 
 ## Qui écrit ici
 
-Un citoyen, seul. Je ne signe pas de mon nom : ce site ne demande pas de me croire sur parole,
-il donne les moyens de vérifier (voir ci-dessous). Je préfère que le débat porte sur les mesures
-et les sources plutôt que sur ma personne.
+Un citoyen, seul. Le site est publié sans nom d'auteur.
 
 ## Un avis assumé — et pourquoi vous pouvez quand même vous y fier
 

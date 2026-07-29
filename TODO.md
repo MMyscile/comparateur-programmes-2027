@@ -30,6 +30,8 @@
   - **Préambule + lexique en tête du journal** (`data/choix-editoriaux.md`) : dit ce qu'est le document (registre brut, non réécrit, historique git), aiguille les lecteurs « démarche » vers À propos/Méthodologie, lexique des termes internes (cotag, axe, LFI 5.2, identifiants…).
   - « À propos » ajouté à la navigation et au pied de page. Contenus éditoriaux dans `data/*.md` (source unique, rendus au build via composant partagé `src/components/Markdown.tsx`).
 
+- ⬜ 🟠 **Réécrire les textes éditoriaux dans la voix de l'éditeur** — le fond des textes publiés le 29/07 est validé, mais la forme est celle d'une IA, pas celle de Michaël. À reprendre par lui, directement dans les fichiers (le site suit au build) : `data/a-propos.md`, `data/regle-mapping.md`, préambule de `data/choix-editoriaux.md`. Règle apprise au passage : pas d'auto-justification (ex. de l'anonymat) — énoncer, ne pas plaider.
+
 ## À faire — moyen terme
 
 - ✅ **Déployé sur Vercel** (2026-07-29) — production : https://comparateur-programmes-2027.vercel.app (compte `midenzer0`, projet connecté au repo GitHub : chaque push sur `main` redéploie automatiquement).
