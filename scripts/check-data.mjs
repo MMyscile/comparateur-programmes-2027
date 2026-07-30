@@ -39,6 +39,9 @@ for (const a of axes) {
   const sources = Array.isArray(a.source_baseline) ? a.source_baseline : [a.source_baseline];
   if (sources.length === 0 || sources.some((s) => typeof s !== "string" || !s.startsWith("http")))
     err(f, "source_baseline : URL(s) http(s) requise(s), champ manquant, vide ou invalide");
+  // baseline_verifiee (optionnel) : date AAAA-MM-JJ du dernier passage du vérificateur.
+  if (a.baseline_verifiee != null && !/^\d{4}-\d{2}-\d{2}$/.test(a.baseline_verifiee))
+    err(f, `baseline_verifiee : date AAAA-MM-JJ attendue (reçu : "${a.baseline_verifiee}")`);
 }
 
 // --- Mesures (candidats + brouillons) -------------------------------------

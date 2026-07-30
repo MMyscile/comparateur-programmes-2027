@@ -26,6 +26,8 @@ export interface Axe {
   /** Une URL, ou une liste d'URLs quand la baseline affirme plusieurs faits (un lien par fait). */
   source_baseline: string | string[];
   ecart_synthese: string;
+  /** Date (AAAA-MM-JJ) du dernier passage de l'agent verificateur-sources sur cette baseline. Absent = jamais vérifié. */
+  baseline_verifiee?: string;
 }
 
 export interface Candidat {

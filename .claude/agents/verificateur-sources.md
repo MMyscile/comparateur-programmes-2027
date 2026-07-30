@@ -69,6 +69,14 @@ Un rapport `data/rapports/verification-baselines-AAAA-MM-JJ.md` avec, pour chaqu
 
 Termine par un tableau récapitulatif verdict par axe et la liste des faits restés invérifiables.
 
+> **Suivi de couverture.** L'état « vérifié / à re-vérifier / jamais vérifié » vit sur chaque axe de
+> `data/axes.json` via le champ `baseline_verifiee` (date AAAA-MM-JJ), interrogeable par
+> `npm run etat-sources`. Quand l'éditeur applique ton rapport, il pose/actualise cette date sur les
+> axes traités. Après une nouvelle loi de finances / LFSS, il met à jour `DERNIER_EVENEMENT` dans
+> `scripts/etat-sources.mjs` : tous les axes vérifiés avant sont alors signalés « à re-vérifier » —
+> c'est le déclencheur de ton prochain passage. Ton périmètre par défaut = ce que cette commande
+> liste comme non à jour.
+
 ## Interdits stricts
 
 - **Ne jamais modifier** `data/axes.json`, `data/candidats/*.json`, `data/taxonomie.json` ni le

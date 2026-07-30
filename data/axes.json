@@ -14,7 +14,8 @@
         "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542687",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155"
       ],
-      "ecart_synthese": "Convergence forte : les deux rétablissent l'ISF + taxe Zucman de 2 % + volet climatique. Seuil affiché différent (EELV : 100 M€ ; LFI : milliardaires)."
+      "ecart_synthese": "Convergence forte : les deux rétablissent l'ISF + taxe Zucman de 2 % + volet climatique. Seuil affiché différent (EELV : 100 M€ ; LFI : milliardaires).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-capital",
@@ -27,7 +28,8 @@
         "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
         "https://entreprendre.service-public.gouv.fr/actualites/A18796"
       ],
-      "ecart_synthese": "Divergence de méthode : LFI supprime la flat tax (retour au barème) ; EELV la conserve mais l'augmente de 3 points (→ 33 %)."
+      "ecart_synthese": "Divergence de méthode : LFI supprime la flat tax (retour au barème) ; EELV la conserve mais l'augmente de 3 points (→ 33 %).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-ir",
@@ -39,7 +41,8 @@
         "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
         "https://www.service-public.gouv.fr/particuliers/actualites/A18045"
       ],
-      "ecart_synthese": "Même objectif (plus de progressivité), leviers différents : EELV ajoute une tranche à 60 % au-delà de 250 000 € ; LFI refait tout le barème (14 tranches)."
+      "ecart_synthese": "Même objectif (plus de progressivité), leviers différents : EELV ajoute une tranche à 60 % au-delà de 250 000 € ; LFI refait tout le barème (14 tranches).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-is",
@@ -52,7 +55,8 @@
         "https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/loi-de-finances-2026-ce-qui-change-pour-les-entreprises",
         "https://bofip.impots.gouv.fr/bofip/14607-PGP.html/identifiant=BOI-IS-AUT-60-20250917"
       ],
-      "ecart_synthese": "Convergence : progressivité/modulation de l'IS, anti-dividendes. EELV cible les très grands groupes (CA > 1 Md€) + assiette « activité en France »."
+      "ecart_synthese": "Convergence : progressivité/modulation de l'IS, anti-dividendes. EELV cible les très grands groupes (CA > 1 Md€) + assiette « activité en France ».",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-tva",
@@ -61,7 +65,8 @@
       "ordre": 5,
       "baseline_reel": "La TVA comporte quatre taux : 20 % (normal), 10 % (intermédiaire), 5,5 % (réduit, produits de première nécessité) et 2,1 % (super-réduit). Il n'existe pas de taux « grand luxe » spécifique ni de modulation généralisée selon l'impact environnemental ou sanitaire.",
       "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F23567",
-      "ecart_synthese": "Convergence sur baisse « première nécessité » + hausse « luxe ». EELV ajoute un critère environnemental et sanitaire ; LFI reste sur l'axe social (luxe)."
+      "ecart_synthese": "Convergence sur baisse « première nécessité » + hausse « luxe ». EELV ajoute un critère environnemental et sanitaire ; LFI reste sur l'axe social (luxe).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "just-police",
@@ -73,7 +78,8 @@
         "https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/linspection-generale-de-police-nationale-igpn",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000034104023"
       ],
-      "ecart_synthese": "Convergence quasi totale (LBD, BRAV-M, loi Cazeneuve, IGPN indépendante). LFI démantèle aussi les BAC et rétablit explicitement la police de proximité."
+      "ecart_synthese": "Convergence quasi totale (LBD, BRAV-M, loi Cazeneuve, IGPN indépendante). LFI démantèle aussi les BAC et rétablit explicitement la police de proximité.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "just-justice",
@@ -85,7 +91,8 @@
         "https://www.justice.gouv.fr/actualites/espace-presse/publication-du-rapport-2024-commission-europeenne-levaluation-systemes-judiciaires",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000027751362"
       ],
-      "ecart_synthese": "Convergence sur le diagnostic (justice sous-dotée, indépendance à renforcer). EELV chiffre (9000 magistrats / 10 000 greffiers) et cible des lois nommées ; LFI reste sur les principes (jurés populaires, instructions individuelles)."
+      "ecart_synthese": "Convergence sur le diagnostic (justice sous-dotée, indépendance à renforcer). EELV chiffre (9000 magistrats / 10 000 greffiers) et cible des lois nommées ; LFI reste sur les principes (jurés populaires, instructions individuelles).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "just-prison",
@@ -98,7 +105,8 @@
         "https://juricaf.org/arret/CONSEILDELEUROPE-COUREUROPEENNEDESDROITSDELHOMME-20200130-001200446",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049621747"
       ],
-      "ecart_synthese": "Même objectif (désengorger, réinsérer). Les deux convergent vers un plafond contraignant (LFI « mécanisme de régulation carcérale » ; EELV « numerus clausus » à 100 %) et un moratoire / des alternatives à l'incarcération."
+      "ecart_synthese": "Même objectif (désengorger, réinsérer). Les deux convergent vers un plafond contraignant (LFI « mécanisme de régulation carcérale » ; EELV « numerus clausus » à 100 %) et un moratoire / des alternatives à l'incarcération.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "just-terrorisme",
@@ -111,7 +119,8 @@
         "https://www.senat.fr/rap/r18-220/r18-2206.html",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043876100"
       ],
-      "ecart_synthese": "Divergence de posture : LFI aborde le sujet par les libertés (« sortir de l'état d'urgence permanent », primat du juge judiciaire) ; EELV par l'efficacité et l'échelle européenne (coopération UE, autonomie vis-à-vis des USA) et cible aussi l'extrême droite."
+      "ecart_synthese": "Divergence de posture : LFI aborde le sujet par les libertés (« sortir de l'état d'urgence permanent », primat du juge judiciaire) ; EELV par l'efficacité et l'échelle européenne (coopération UE, autonomie vis-à-vis des USA) et cible aussi l'extrême droite.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "just-drogues",
@@ -124,7 +133,8 @@
         "https://www.justice.gouv.fr/actualites/espace-presse/generalisation-du-dispositif-damende-forfaitaire-delictuelle",
         "https://www.drogues.gouv.fr/en-matiere-de-stupefiants"
       ],
-      "ecart_synthese": "Substance convergente (les deux légalisent le cannabis, logique de réduction des risques), cadrage opposé : LFI le range en santé publique (monopole d'État, pilotage Santé) ; EELV sous « Lutter contre le narcotrafic » (sécuritaire) tout en dépénalisant (modèle portugais)."
+      "ecart_synthese": "Substance convergente (les deux légalisent le cannabis, logique de réduction des risques), cadrage opposé : LFI le range en santé publique (monopole d'État, pilotage Santé) ; EELV sous « Lutter contre le narcotrafic » (sécuritaire) tout en dépénalisant (modèle portugais).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-succession",
@@ -137,7 +147,8 @@
         "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191748/",
         "https://www.impots.gouv.fr/actualite/bulletin-dgfip-statistiques-ndeg43-les-recettes-fiscales-collectees-par-la-dgfip"
       ],
-      "ecart_synthese": "Convergence sur plus de progressivité, instruments différents : LFI intègre l'ensemble des dons et héritages reçus tout au long de la vie pour taxer les plus hauts patrimoines ; les Écologistes créent deux tranches au-delà de 4 et 13 M€ et suppriment l'abattement de l'assurance-vie."
+      "ecart_synthese": "Convergence sur plus de progressivité, instruments différents : LFI intègre l'ensemble des dons et héritages reçus tout au long de la vie pour taxer les plus hauts patrimoines ; les Écologistes créent deux tranches au-delà de 4 et 13 M€ et suppriment l'abattement de l'assurance-vie.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-fonciere",
@@ -149,7 +160,8 @@
         "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-impots-locaux/taxe-fonciere-mode-de-calcul-et-reductions",
         "https://questions.assemblee-nationale.fr/q17/17-410QE.htm"
       ],
-      "ecart_synthese": "Même diagnostic — une taxe aveugle aux capacités réelles — mais corrections différentes : barème progressif chez LFI, assiette nette d'emprunt chez les Écologistes."
+      "ecart_synthese": "Même diagnostic — une taxe aveugle aux capacités réelles — mais corrections différentes : barème progressif chez LFI, assiette nette d'emprunt chez les Écologistes.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-foyer",
@@ -162,7 +174,8 @@
         "https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407",
         "https://www.service-public.gouv.fr/particuliers/vosdroits/F3170"
       ],
-      "ecart_synthese": "LFI supprime le quotient conjugal au nom de l'égalité entre les femmes et les hommes ; les Écologistes défiscalisent les pensions alimentaires reçues. Deux angles différents du même objet « foyer fiscal »."
+      "ecart_synthese": "LFI supprime le quotient conjugal au nom de l'égalité entre les femmes et les hommes ; les Écologistes défiscalisent les pensions alimentaires reçues. Deux angles différents du même objet « foyer fiscal ».",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-niches",
@@ -174,7 +187,8 @@
         "https://www.assemblee-nationale.fr/dyn/dyn/contenu/visualisation/1087933/file/Voies_et_moyens_Tome_2_2026.pdf",
         "https://www.ccomptes.fr/sites/default/files/2026-04/NEB-2026-Depenses-fiscales.pdf"
       ],
-      "ecart_synthese": "Accord sur le tri des niches ; le critère diverge : justice sociale et efficacité chez LFI, climat chez les Écologistes (niches fossiles, barèmes kilométriques, crédit impôt recherche recentré)."
+      "ecart_synthese": "Accord sur le tri des niches ; le critère diverge : justice sociale et efficacité chez LFI, climat chez les Écologistes (niches fossiles, barèmes kilométriques, crédit impôt recherche recentré).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-secu",
@@ -187,7 +201,8 @@
         "https://boss.gouv.fr/portail/accueil/regles-dassujettissement/contribution-sociale-generalisee.html",
         "https://www.securite-sociale.fr/files/live/sites/SSFR/files/medias/PLFSS/2026/PLFSS2026-Annexe4-20251014-183718-59-11_avec%20couverture.pdf"
       ],
-      "ecart_synthese": "Les deux programmes rendent la CSG progressive — LFI par 14 tranches, les Écologistes en l'augmentant d'un point pour équilibrer l'assurance-maladie ; ils divergent sur le reste : sortie de la dette Covid et péréquation interentreprises chez LFI, rationalisation des exonérations existantes chez les Écologistes."
+      "ecart_synthese": "Les deux programmes rendent la CSG progressive — LFI par 14 tranches, les Écologistes en l'augmentant d'un point pour équilibrer l'assurance-maladie ; ils divergent sur le reste : sortie de la dette Covid et péréquation interentreprises chez LFI, rationalisation des exonérations existantes chez les Écologistes.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-verte",
@@ -200,7 +215,8 @@
         "https://www.service-public.gouv.fr/simulateur/calcul/TaxeAuPoids",
         "https://www.douane.gouv.fr/professionnels/energie/tiruert-taxe-incitative-relative-lutilisation-de-lenergie-renouvelable-dans"
       ],
-      "ecart_synthese": "Axe porté par les seuls Écologistes à ce stade (transformation des taux réduits fossiles en aides forfaitaires, fonds « France Verte 2040 », extension de la TIRUERT) — aucune mesure LFI captée sur la fiscalité environnementale comme instrument."
+      "ecart_synthese": "Axe porté par les seuls Écologistes à ce stade (transformation des taux réduits fossiles en aides forfaitaires, fonds « France Verte 2040 », extension de la TIRUERT) — aucune mesure LFI captée sur la fiscalité environnementale comme instrument.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-numerique",
@@ -212,7 +228,8 @@
         "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000048626177/",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038811588"
       ],
-      "ecart_synthese": "Écologistes seuls : TSN relevée de 3 à 5 %, seuil abaissé à 5 Md€ pour intégrer le e-commerce, extension aux data centers. Aucune mesure LFI captée."
+      "ecart_synthese": "Écologistes seuls : TSN relevée de 3 à 5 %, seuil abaissé à 5 Md€ pour intégrer le e-commerce, extension aux data centers. Aucune mesure LFI captée.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-superprofits",
@@ -225,7 +242,8 @@
         "https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/loi-de-finances-2026-ce-qui-change-pour-les-entreprises",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155"
       ],
-      "ecart_synthese": "Permanent contre exceptionnel : LFI veut une taxe pérenne étendue à tous les secteurs ; les Écologistes une taxe exceptionnelle ciblée sur l'industrie pétrogazière et le commerce maritime."
+      "ecart_synthese": "Permanent contre exceptionnel : LFI veut une taxe pérenne étendue à tous les secteurs ; les Écologistes une taxe exceptionnelle ciblée sur l'industrie pétrogazière et le commerce maritime.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-fraude",
@@ -238,7 +256,8 @@
         "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000033558671",
         "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037518803"
       ],
-      "ecart_synthese": "Priorité affichée des deux côtés. LFI muscle la répression nationale (impôt universel sur les bénéfices, exit tax rétablie, fin de la CJIP, sanctions des cols blancs) ; les Écologistes jouent l'échelle internationale (taux minimum de 25 % défendu à l'ONU, registre européen des actifs, déclarations pays par pays)."
+      "ecart_synthese": "Priorité affichée des deux côtés. LFI muscle la répression nationale (impôt universel sur les bénéfices, exit tax rétablie, fin de la CJIP, sanctions des cols blancs) ; les Écologistes jouent l'échelle internationale (taux minimum de 25 % défendu à l'ONU, registre européen des actifs, déclarations pays par pays).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-aides-entreprises",
@@ -250,7 +269,8 @@
         "https://www.senat.fr/notice-rapport/2024/r24-808-1-notice.html",
         "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence"
       ],
-      "ecart_synthese": "LFI seule à ce stade : publication obligatoire des aides perçues par les entreprises. (La conditionnalité écologiste des aides vit dans l'axe fiscalité environnementale.)"
+      "ecart_synthese": "LFI seule à ce stade : publication obligatoire des aides perçues par les entreprises. (La conditionnalité écologiste des aides vit dans l'axe fiscalité environnementale.)",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-dette",
@@ -263,7 +283,8 @@
         "https://www.senat.fr/rap/l25-139-312/l25-139-312_mono.html",
         "https://eur-lex.europa.eu/eli/treaty/tfeu_2016/art_123/oj/eng"
       ],
-      "ecart_synthese": "Cadrages opposés : LFI veut soustraire la dette aux marchés financiers (rachat par la BCE, circuit du Trésor, audit citoyen de la part illégitime) ; les Écologistes assument une trajectoire négociée et prévisible (« pacte fiscal vert » 2027-2032, stabilisation du ratio). Point de contact : les deux veulent réduire ou supprimer les titres indexés sur l'inflation."
+      "ecart_synthese": "Cadrages opposés : LFI veut soustraire la dette aux marchés financiers (rachat par la BCE, circuit du Trésor, audit citoyen de la part illégitime) ; les Écologistes assument une trajectoire négociée et prévisible (« pacte fiscal vert » 2027-2032, stabilisation du ratio). Point de contact : les deux veulent réduire ou supprimer les titres indexés sur l'inflation.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-collectivites",
@@ -276,7 +297,8 @@
         "https://www.legifiscal.fr/actualites-fiscales/4401-plf-2026-49-3-baisse-cvae-2026.html",
         "https://www.fipeco.fr/commentaire/La%20suppression%20de%20la%20cotisation%20sur%20la%20valeur%20ajout%C3%A9e"
       ],
-      "ecart_synthese": "LFI redistribue l'existant (rééquilibrage de la DGF, fonds pour les communes rurales) ; les Écologistes sécurisent la ressource par une loi organique (compensation intégrale des transferts, répartition transparente, pouvoir de taux)."
+      "ecart_synthese": "LFI redistribue l'existant (rééquilibrage de la DGF, fonds pour les communes rurales) ; les Écologistes sécurisent la ressource par une loi organique (compensation intégrale des transferts, répartition transparente, pouvoir de taux).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fisc-patrimoine-public",
@@ -289,7 +311,8 @@
         "https://questions.assemblee-nationale.fr/q17/17-4889QE.htm",
         "https://www.senat.fr/rap/r19-709-1/r19-709-17.html"
       ],
-      "ecart_synthese": "Axe porté par LFI seule (retour sur les privatisations, droit de réquisition, moratoire sur les PPP, pôles publics stratégiques) — aucune mesure écologiste captée sur ce sujet."
+      "ecart_synthese": "Axe porté par LFI seule (retour sur les privatisations, droit de réquisition, moratoire sur les PPP, pôles publics stratégiques) — aucune mesure écologiste captée sur ce sujet.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fin-regulation",
@@ -301,7 +324,8 @@
         "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000027754539",
         "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051764916"
       ],
-      "ecart_synthese": "Accord de principe sur la séparation des activités bancaires et le renforcement de la TTF (0,7 % chez les Écologistes, « taxe réelle » chez LFI) ; LFI va plus loin nationalement (contrôle des capitaux, interdiction de produits dérivés) quand les Écologistes régulent à l'échelon européen (union des marchés de capitaux, AEMF, fintech et cryptoactifs)."
+      "ecart_synthese": "Accord de principe sur la séparation des activités bancaires et le renforcement de la TTF (0,7 % chez les Écologistes, « taxe réelle » chez LFI) ; LFI va plus loin nationalement (contrôle des capitaux, interdiction de produits dérivés) quand les Écologistes régulent à l'échelon européen (union des marchés de capitaux, AEMF, fintech et cryptoactifs).",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fin-banques-publiques",
@@ -313,7 +337,8 @@
         "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019300481",
         "https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000026503648/"
       ],
-      "ecart_synthese": "Les Écologistes partent de l'existant (orienter CDC/BPI vers la transition, Community Reinvestment Act à la française) ; LFI veut créer un pôle public bancaire unifié et socialiser certaines banques de détail."
+      "ecart_synthese": "Les Écologistes partent de l'existant (orienter CDC/BPI vers la transition, Community Reinvestment Act à la française) ; LFI veut créer un pôle public bancaire unifié et socialiser certaines banques de détail.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fin-climat",
@@ -325,7 +350,8 @@
         "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000039355992",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000034290626/"
       ],
-      "ecart_synthese": "Même levier — contraindre la finance sur ses actifs fossiles — mais mécanique différente : banques de désinvestissement et pénalisation de la détention d'actifs nocifs chez LFI ; plans de transition obligatoires alignés sur l'Accord de Paris (-50 % d'actifs fossiles en 2030, -90 % en 2040) chez les Écologistes."
+      "ecart_synthese": "Même levier — contraindre la finance sur ses actifs fossiles — mais mécanique différente : banques de désinvestissement et pénalisation de la détention d'actifs nocifs chez LFI ; plans de transition obligatoires alignés sur l'Accord de Paris (-50 % d'actifs fossiles en 2030, -90 % en 2040) chez les Écologistes.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fin-monnaie-bce",
@@ -337,7 +363,8 @@
         "https://ecb.europa.eu/press/pr/date/2025/html/ecb.pr251030~8c5b5beef0.fr.html",
         "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12012E/TXT:en:PDF"
       ],
-      "ecart_synthese": "Écologistes seuls sur l'institution : euro numérique souverain et protecteur de la vie privée, BCE « plus verte et plus démocratique ». Les mesures BCE de LFI visent la dette (voir axe Dette publique), pas l'institution monétaire."
+      "ecart_synthese": "Écologistes seuls sur l'institution : euro numérique souverain et protecteur de la vie privée, BCE « plus verte et plus démocratique ». Les mesures BCE de LFI visent la dette (voir axe Dette publique), pas l'institution monétaire.",
+      "baseline_verifiee": "2026-07-29"
     },
     {
       "id": "fin-definanciarisation",
@@ -349,7 +376,8 @@
         "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006229026",
         "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036762081"
       ],
-      "ecart_synthese": "Axe porté par LFI seule (dividendes plafonnés au bénéfice, interdiction des licenciements boursiers, fin de la cotation continue) — aucune mesure écologiste captée sur ce sujet."
+      "ecart_synthese": "Axe porté par LFI seule (dividendes plafonnés au bénéfice, interdiction des licenciements boursiers, fin de la cotation continue) — aucune mesure écologiste captée sur ce sujet.",
+      "baseline_verifiee": "2026-07-29"
     }
   ]
 }
