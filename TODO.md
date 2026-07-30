@@ -32,18 +32,51 @@
 
 - ⬜ 🟠 **Réécrire les textes éditoriaux dans la voix de l'éditeur** — le fond des textes publiés le 29/07 est validé, mais la forme est celle d'une IA, pas celle de Michaël. À reprendre par lui, directement dans les fichiers (le site suit au build) : `data/a-propos.md`, `data/regle-mapping.md`, préambule de `data/choix-editoriaux.md`. Règle apprise au passage : pas d'auto-justification (ex. de l'anonymat) — énoncer, ne pas plaider.
 
+## Plan d'attaque — V1 complète sur les 2 programmes (LFI + EELV)
+
+> Objectif : couvrir les **15 méta-thèmes pour les 2 programmes déjà en base**, avec la rigueur des pilotes (fiscalité, justice). Ce n'est PAS encore « éclairer le vote » (cadrage V1) mais **prouver le moteur complet** sur 2 programmes. L'ajout d'autres candidats = versions ultérieures.
+>
+> **État : 2/15 méta-thèmes faits** (171 mesures). **Fondations prêtes** : les 2 programmes normalisés en `.md`, 3 agents projet (`extracteur`, `verificateur-sources`, `glossaire`), suivi `npm run etat-sources`, glossaire + matcher, déploiement Vercel auto.
+
+**Boucle par méta-thème** (chaîne éprouvée, à répéter pour chacun des 13 restants) :
+1. `extracteur` sur le méta-thème, les 2 programmes, depuis les `.md` → brouillons `data/drafts/`.
+2. **Arbitrage éditeur** : cas-frontières, cotags, nouveaux axes (en questions fermées).
+3. Fusion brouillons → `data/candidats/*.json` ; brouillons supprimés.
+4. `verificateur-sources` sur les baselines des nouveaux axes → stamper `baseline_verifiee`.
+5. `glossaire` sur les nouveaux verbatims → arbitrer / intégrer.
+6. `check-data` + build + QC navigateur + commit + **tag daté** (versions, pas flux).
+
+**Ordre proposé** (choix éditeur 30/07 : commencer par Écologie) :
+1. ⬜ 🟠 Écologie, climat & énergie (EELV ch 1,4-10 / LFI 12-14) — **prochain, à lancer**
+2. ⬜ Protection sociale & solidarités (EELV 31-37,39 / LFI 7)
+3. ⬜ Économie, travail & entreprises (EELV 13-16,19,20 / LFI 2,8,9)
+4. ⬜ Santé (EELV 28-30 / LFI 15)
+5. ⬜ Éducation, recherche & jeunesse (EELV 23-25 / LFI 5) — ⚠️ ch23 EELV à relire d'abord
+6. ⬜ Europe, international & défense (EELV 60-66 / LFI 16-18)
+7. ⬜ Logement, transports & territoires (EELV 2,3,22,44-46 / LFI transversal)
+8. ⬜ Égalités & discriminations (EELV 38,40-43 / LFI ch10 partiel)
+9. ⬜ Institutions & démocratie (EELV 47-49,54,59 / LFI 1, ch3 partiel)
+10. ⬜ Culture, sport & médias (EELV 26,27,55 / LFI 11)
+11. ⬜ Agriculture & alimentation (EELV 11,12 / LFI dispersé ch9/12)
+12. ⬜ Immigration & asile (EELV 56 / LFI ch10 partiel)
+13. ⬜ Numérique & technologies (EELV 21 / LFI transversal)
+
+**Points de vigilance** : LFI dispersé/transversal sur logement et numérique → repérage transversal, pas lecture de chapitre. Reliquats à réabsorber au bon chantier (LFI 6.3 → économie ; ch 3.2 LFI hors finances locales → institutions). Après le 11/10/2026 (primaire gauche unie) : acter le statut candidat.
+
+**Définition de « fini » (V1, 2 programmes)** : les 15 méta-thèmes renseignés pour LFI et EELV ; chaque mesure sourcée ; chaque axe avec `baseline_verifiee` ; glossaire couvrant le vocabulaire des verbatims ; pages À propos + Méthodologie réécrites dans la voix de l'éditeur ; contextualisation du glossaire livrée ; tag de version daté (ex. `v1-2-programmes`).
+
 ## À faire — moyen terme
 
-- 🔄 🟠 **Glossaire au survol des termes techniques** — prototype livré le 2026-07-29 sur un terme (« numerus clausus », mesure `eco-prison-01`, désormais sourcé Sénat le 30/07). Agent projet `glossaire` créé le 30/07 (`.claude/agents/glossaire.md`) : propose des définitions neutres et sourcées des termes des verbatims, ne modifie jamais `glossaire.json`, ne committe pas → l'éditeur arbitre et intègre. 1er run lancé en tâche de fond (rapport attendu : `data/rapports/glossaire-propositions-2026-07-30.md`). À relancer après chaque nouvelle extraction de mesures. ✅ Matcher `Verbatim.tsx` durci le 30/07 (frontières de mot Unicode `\p{L}/\p{N}`, flag `u`) — les collisions de sous-chaîne ne sont plus un risque. **État au 30/07** : **36 termes intégrés** (numerus clausus + 23 concepts + 12 du lot 2). Décisions éditeur actées : sigles déjà développés dans leur phrase = non repris ; dispositifs nommés = tout inclure ; ❓ = sourcer les 9. **5 termes en attente d'arbitrage éditeur** (l'agent a signalé un risque sémantique non anticipé) : `Séparatisme` (mot courant → l'infobulle se déclencherait à tort sur toute occurrence future ; recommandation : écarter), `Sécurité globale` (générique), `Bâle V` (cycle prospectif, intégrable), et 2 restés ❓ faute de source institutionnelle : `superprofits` (n'existe qu'en travaux parlementaires) et `Community Reinvestment Act` (loi US). Rapport : `data/rapports/glossaire-propositions-2026-07-30.md`. Mécanique en place et validée (build statique OK, verbatim intact, accessibilité focus/`aria-describedby` vérifiée en navigateur) :
+- 🔄 🟠 **Glossaire au survol des termes techniques** — prototype livré le 2026-07-29 sur un terme (« numerus clausus », mesure `eco-prison-01`, désormais sourcé Sénat le 30/07). Agent projet `glossaire` créé le 30/07 (`.claude/agents/glossaire.md`) : propose des définitions neutres et sourcées des termes des verbatims, ne modifie jamais `glossaire.json`, ne committe pas → l'éditeur arbitre et intègre. 1er run lancé en tâche de fond (rapport attendu : `data/rapports/glossaire-propositions-2026-07-30.md`). À relancer après chaque nouvelle extraction de mesures. ✅ Matcher `Verbatim.tsx` durci le 30/07 (frontières de mot Unicode `\p{L}/\p{N}`, flag `u`) — les collisions de sous-chaîne ne sont plus un risque. **État au 30/07** : **39 termes intégrés** (numerus clausus + 23 concepts + 12 du lot 2 + Bâle V, superprofits [source Sénat], Community Reinvestment Act [source Réserve fédérale US]). Décisions éditeur actées : sigles déjà développés dans leur phrase = non repris ; dispositifs nommés = tout inclure ; ❓ = sourcés. **2 termes en attente** : `Séparatisme` et `Sécurité globale` — mots à sens contextuel (ici = lois de 2021, ailleurs sens courant), qui nécessitent la contextualisation ci-dessous avant intégration. Rapport : `data/rapports/glossaire-propositions-2026-07-30.md`. Mécanique en place et validée (build statique OK, verbatim intact, accessibilité focus/`aria-describedby` vérifiée en navigateur) :
   - **Surcouche non destructive (garde-fou n°1)** — `src/components/Verbatim.tsx` repère les termes dans le verbatim sans modifier le texte (le terme est stylé + déclencheur d'infobulle). Chaîne source intacte dans les données.
   - **Infobulle accessible** — s'ouvre au survol, au focus clavier ET au tap (bouton épinglable), se ferme à Échap ; `role="tooltip"` + `aria-describedby`. Non bloquante (pas de dialog modal).
   - **Données** — `data/glossaire.json` (terme → définition [+ `source_url` optionnel]), détection côté client (casse ignorée, termes multi-mots, plus longs d'abord). Validé par `check-data` (champs requis, doublons, URL).
-  - **Reste à faire** : (a) **sourcer** la définition « numerus clausus » (`source_url`, actuellement absente — traçabilité) et la faire relire par l'éditeur (voix + neutralité) ; (b) recenser et définir les autres termes techniques des verbatims ; (c) décider si une occurrence répétée du même terme doit toutes les surligner ou seulement la 1re.
+  - **⬜ 🟠 Exception contextuelle (contextualisation)** — cadré avec l'éditeur le 30/07. Ajouter au glossaire un champ optionnel de **portée** (`contextes` : liste d'ids de mesures) : une entrée est soit globale (défaut, comme aujourd'hui), soit limitée aux mesures listées. Le composant `Verbatim` reçoit l'id de la mesure et ne surligne le terme que dans sa portée. But : intégrer sans contresens les mots à sens contextuel (`Séparatisme`, `Sécurité globale` = lois de 2021 ici, mot courant ailleurs). À la livraison : intégrer ces deux termes avec portée = `eco-police-4`. Chantier : `types.ts` (champ `contextes?`), `Comparateur` (passer `m.id` à `Verbatim`), `Verbatim` (filtrer le glossaire par contexte), `check-data` (valider). À décider aussi : une occurrence répétée d'un même terme se surligne-t-elle partout ou une seule fois ?
 
 - ✅ **Déployé sur Vercel** (2026-07-29) — production : https://comparateur-programmes-2027.vercel.app (compte `midenzer0`, projet connecté au repo GitHub : chaque push sur `main` redéploie automatiquement).
 - ✅ **Page publique « règle de mapping »** (2026-07-29, garde-fou n°2) — `data/choix-editoriaux.md` est rendu tel quel (source unique, chargé au build) en bas de la page Méthodologie via `react-markdown` + `remark-gfm` + `@tailwindcss/typography`, avec lien vers le fichier sur GitHub pour l'historique.
 - ⬜ 🟢 **Classification fine** des 66 chapitres EELV et 89 sous-sections LFI → méta-thèmes (multi-étiquetée), alimentant `data/candidats/*.json`.
-- 🔄 🟠 **Normaliser le programme Écologistes en markdown** (lancé le 2026-07-30, agent en tâche de fond) — besoin confirmé : on passe des extractions ciblées à l'exhaustif (13 méta-thèmes restants). Reverse-engineering fait : PDF 208 p. converti (`pdftotext` sans `-layout`), carte des 66 chapitres en 8 parties, coquille source repérée (chapitre Outre-mer numéroté 45, pas de 46), pièges documentés. Livrable attendu : `data/sources/ecologistes-programme-2026.md` (squelette LFI) + rapport QC `data/rapports/normalisation-eelv-2026-07-30.md`. **QC éditeur à faire à la sortie** avant de s'en servir comme source d'extraction. Ferme le trou de traçabilité (EELV n'existait qu'en PDF) et l'asymétrie de lecture 2 colonnes.
+- ✅ **Programme Écologistes normalisé en markdown** (2026-07-30, agent en tâche de fond) — `data/sources/ecologistes-programme-2026.md` (~58 800 mots : avant-propos + 8 parties + 66 chapitres + 551 propositions), squelette LFI. QC agent (étape 4) au vert : comparaison token-par-token vs `layout.txt` = 0 mot inventé / 0 perte ; 14/14 échantillons fidèles. Rapport : `data/rapports/normalisation-eelv-2026-07-30.md`. Coquille ch46 (Outre-mer numéroté 45) signalée. Ferme le trou de traçabilité (EELV n'existait qu'en PDF) et l'ordre de lecture 2 colonnes. **Relecture éditeur ciblée à faire** : ch23 reconstruit à la main (grille 3 colonnes, pages ~89-91) ; anomalies source conservées telles quelles (ch4 saute la prop 6 ; ch57 a deux « 4 » ; ch11 props 8-9 quasi identiques = doublon probable du PDF) ; badges `[EUROPE]` à sortir en `rubrique_origine` au stade JSON.
 - ⬜ 🟠 **Boucle d'extraction par méta-thème** — après le `.md` EELV, commencer par **Écologie, climat & énergie** (choix éditeur 30/07). Chaîne éprouvée : agent `extracteur` → brouillons → arbitrages éditeur (cas-frontières/cotags) → fusion dans `data/candidats/*` → `verificateur-sources` sur les nouvelles baselines → `check-data` + build + commit + tag daté. 13 méta-thèmes restants au total (2/15 traités : fiscalité, justice).
 - ⬜ 🟢 **Versionner en tags datés** (ex. `justice-detaillee-2026-07`) selon le cadrage « versions, pas flux » — commencer au prochain commit.
 
