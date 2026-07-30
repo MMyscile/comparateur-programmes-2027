@@ -5,6 +5,121 @@
       "terme": "numerus clausus",
       "definition": "Nombre maximal de places fixé à l'avance. Appliqué aux prisons, il plafonne le nombre de personnes détenues : une fois la limite atteinte, une nouvelle entrée suppose une sortie.",
       "source_url": "https://www.senat.fr/questions/base/2006/qSEQ06020924S.html"
+    },
+    {
+      "terme": "flat tax",
+      "definition": "Surnom du prélèvement forfaitaire unique (PFU) : un impôt à taux fixe (31,4 % depuis le 1er janvier 2026 : 12,8 % d'impôt sur le revenu et 18,6 % de prélèvements sociaux) appliqué depuis 2018 aux revenus du capital (intérêts, dividendes, plus-values), quel que soit le niveau de revenu.",
+      "source_url": "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/comment-fonctionne-le-prelevement"
+    },
+    {
+      "terme": "exit tax",
+      "definition": "Imposition des plus-values « latentes » (gains théoriques non encore réalisés) sur les titres détenus par une personne qui transfère son domicile fiscal hors de France, sous conditions de durée de résidence et de montant.",
+      "source_url": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax"
+    },
+    {
+      "terme": "taxe Zucman",
+      "definition": "Projet d'impôt « plancher » du nom de l'économiste Gabriel Zucman : il vise à ce que les patrimoines supérieurs à 100 millions d'euros acquittent chaque année au moins 2 % de leur valeur en impôts, en versant la différence si les impôts déjà payés sont inférieurs à ce seuil.",
+      "source_url": "https://www.vie-publique.fr/loi/297460-impot-plancher-2-sur-le-patrimoine-des-ultrariches-proposition-de-loi"
+    },
+    {
+      "terme": "quotient conjugal",
+      "definition": "Règle de calcul de l'impôt sur le revenu attribuant deux parts fiscales à un couple marié ou pacsé : leurs revenus sont additionnés puis, en l'absence d'enfant, la moyenne est soumise au barème progressif.",
+      "source_url": "https://www.vie-publique.fr/en-bref/272018-quotient-familial-quotient-conjugal-et-impot-sur-le-revenu"
+    },
+    {
+      "terme": "quotient familial",
+      "definition": "Dispositif divisant le revenu imposable d'un foyer par un nombre de « parts » qui dépend de sa composition (couple, enfants) afin d'ajuster le montant de l'impôt à la situation familiale.",
+      "source_url": "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/quotient-familial-et-impot-sur-le-revenu-comment-ca-marche"
+    },
+    {
+      "terme": "niches fiscales",
+      "definition": "Nom courant des « dépenses fiscales » : avantages dérogatoires prévus par la loi (réductions et crédits d'impôt, taux réduits, exonérations) destinés à encourager certains comportements ou à soutenir certains secteurs.",
+      "source_url": "https://www.vie-publique.fr/en-bref/293910-budget-le-cout-des-niches-fiscales-evalue-813-milliards"
+    },
+    {
+      "terme": "CSG",
+      "definition": "Contribution sociale généralisée : prélèvement qui finance la protection sociale (maladie, famille…) et s'applique à la plupart des revenus — d'activité, de remplacement, du patrimoine et des placements.",
+      "source_url": "https://www.vie-publique.fr/fiches/21973-quest-ce-que-la-csg-contribution-sociale-generalisee"
+    },
+    {
+      "terme": "péréquation",
+      "definition": "Mécanisme de redistribution visant à réduire les écarts de ressources entre entités d'une même catégorie (le plus souvent des collectivités territoriales) en prélevant sur les mieux dotées au profit des moins dotées.",
+      "source_url": "https://www.collectivites-locales.gouv.fr/gerer-les-finances-publiques-locales/execution-des-recettes-et-des-depenses-locales/recettes-locales/perequation/perequation-horizontale"
+    },
+    {
+      "terme": "dotation globale de fonctionnement",
+      "definition": "Principal concours financier de l'État au budget de fonctionnement des collectivités territoriales ; son montant est fixé chaque année par la loi de finances et son emploi est libre.",
+      "source_url": "https://www.collectivites-locales.gouv.fr/gerer-les-finances-publiques-locales/execution-des-recettes-et-des-depenses-locales/recettes-locales/dotations/dotation-globale-de-fonctionnement/presentation-de-la-dotation-globale-de-fonctionnement"
+    },
+    {
+      "terme": "Semestre européen",
+      "definition": "Cycle annuel de coordination des politiques économiques et budgétaires des États de l'Union européenne, à l'issue duquel la Commission adresse à chaque pays des recommandations.",
+      "source_url": "https://www.consilium.europa.eu/fr/policies/european-semester/"
+    },
+    {
+      "terme": "titrisation",
+      "definition": "Technique financière consistant à transformer des créances (souvent des crédits bancaires) en titres négociables, ensuite vendus à des investisseurs.",
+      "source_url": "https://www.banque-france.fr/fr/publications-et-statistiques/publications/titrisation"
+    },
+    {
+      "terme": "devoir de vigilance",
+      "definition": "Obligation, pour les très grandes entreprises, d'établir et de mettre en œuvre un « plan de vigilance » identifiant et prévenant les atteintes aux droits humains et à l'environnement liées à leurs activités, filiales et sous-traitants (loi de 2017).",
+      "source_url": "https://www.vie-publique.fr/loi/20976-devoir-de-vigilance-des-societes-meres-et-des-entreprises-donneuses-dor"
+    },
+    {
+      "terme": "convention judiciaire d'intérêt public",
+      "definition": "Accord passé entre le procureur et une entreprise mise en cause (corruption, fraude fiscale, atteinte à l'environnement…) qui, sans reconnaissance de culpabilité ni procès, met fin aux poursuites en échange d'une amende et de mesures de mise en conformité.",
+      "source_url": "https://www.justice.gouv.fr/documentation/ressources/conventions-judiciaires-dinteret-public"
+    },
+    {
+      "terme": "verrou de Bercy",
+      "definition": "Règle selon laquelle, pour l'essentiel, seule l'administration fiscale (Bercy) pouvait déclencher des poursuites pénales pour fraude fiscale, après avis d'une commission ; ce monopole a été assoupli en 2019.",
+      "source_url": "https://www.senat.fr/salle-de-presse/201805/infractions-financieres-et-suppression-du-verrou-de-bercy.html"
+    },
+    {
+      "terme": "correctionnalisation",
+      "definition": "Fait de poursuivre des faits susceptibles d'être qualifiés de crime (jugé en cour d'assises) sous une qualification de délit, afin qu'ils soient jugés plus rapidement par un tribunal correctionnel.",
+      "source_url": "https://www.senat.fr/questions/base/2017/qSEQ170325527.html"
+    },
+    {
+      "terme": "comparution immédiate",
+      "definition": "Procédure permettant au procureur de faire juger un prévenu par le tribunal correctionnel dès la fin de sa garde à vue, pour des délits ne nécessitant pas d'investigations supplémentaires.",
+      "source_url": "https://www.vie-publique.fr/eclairage/297540-comparution-immediate-procedure-penale-rapide-justice-expeditive"
+    },
+    {
+      "terme": "justice restaurative",
+      "definition": "Dispositif complémentaire au procès pénal proposant, de façon volontaire et encadrée par un tiers formé, un dialogue entre victimes et auteurs d'infractions sur les conséquences des faits.",
+      "source_url": "https://www.justice.gouv.fr/actualites/actualite/quest-ce-que-justice-restaurative"
+    },
+    {
+      "terme": "échevinage",
+      "definition": "Organisation d'un tribunal associant, dans la même formation de jugement, un ou des magistrats professionnels et des juges non professionnels (citoyens ou représentants de professions).",
+      "source_url": "https://www.senat.fr/rap/r01-345/r01-34576.html"
+    },
+    {
+      "terme": "aide juridictionnelle",
+      "definition": "Prise en charge par l'État de tout ou partie des frais de justice et des honoraires d'avocat pour les personnes dont les revenus sont insuffisants.",
+      "source_url": "https://www.justice.gouv.fr/actualites/actualite/reforme-laide-juridictionnelle-aide-plus-accessible"
+    },
+    {
+      "terme": "probation",
+      "definition": "Suivi des personnes condamnées en dehors de la prison (« milieu ouvert »), assuré par les services pénitentiaires d'insertion et de probation, visant la réinsertion et la prévention de la récidive.",
+      "source_url": "https://www.justice.gouv.fr/justice-france/prise-charge-personnes-condamnees-ou-prevenues/suivi-milieu-ouvert"
+    },
+    {
+      "terme": "JIRS",
+      "definition": "Juridictions interrégionales spécialisées : tribunaux compétents pour les affaires les plus complexes de criminalité organisée et de délinquance financière.",
+      "source_url": "https://www.justice.gouv.fr/justice-france/lorganisation-cours-tribunaux/lordre-judiciaire/juridictions-penales-specialisees"
+    },
+    {
+      "terme": "OQTF",
+      "definition": "Obligation de quitter le territoire français : décision administrative par laquelle le préfet ordonne à un étranger en situation irrégulière de quitter la France, avec ou sans délai de départ.",
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F18362"
+    },
+    {
+      "terme": "CNIL",
+      "definition": "Commission nationale de l'informatique et des libertés : autorité administrative indépendante chargée de veiller à la protection des données personnelles et au respect de la vie privée dans les fichiers publics et privés.",
+      "source_url": "https://www.cnil.fr/fr/definition/commission-nationale-de-linformatique-et-des-libertes-cnil"
     }
   ]
 }

@@ -85,7 +85,15 @@ export default function Verbatim({
     const motifs = [...glossaire]
       .sort((a, b) => b.terme.length - a.terme.length)
       .map((t) => escapeRegExp(t.terme));
-    return { regex: new RegExp(`(${motifs.join("|")})`, "gi"), index: idx };
+    // Frontières de mot Unicode (\p{L}/\p{N}) : évite de surligner un terme à
+    // l'intérieur d'un autre mot (« probation » dans « approbation », « CSG »
+    // dans un sigle plus long…). Lookbehind/lookahead = largeur nulle, donc le
+    // split ne renvoie que le groupe capturé.
+    const regex = new RegExp(
+      `(?<![\\p{L}\\p{N}])(${motifs.join("|")})(?![\\p{L}\\p{N}])`,
+      "giu"
+    );
+    return { regex, index: idx };
   }, [glossaire]);
 
   if (!regex) return <>{texte}</>;
