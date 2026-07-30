@@ -3,7 +3,8 @@
   "termes": [
     {
       "terme": "numerus clausus",
-      "definition": "Nombre maximal de places fixé à l'avance. Appliqué aux prisons, il plafonne le nombre de personnes détenues : une fois la limite atteinte, une nouvelle entrée suppose une sortie."
+      "definition": "Nombre maximal de places fixé à l'avance. Appliqué aux prisons, il plafonne le nombre de personnes détenues : une fois la limite atteinte, une nouvelle entrée suppose une sortie.",
+      "source_url": "https://www.senat.fr/questions/base/2006/qSEQ06020924S.html"
     }
   ]
 }
