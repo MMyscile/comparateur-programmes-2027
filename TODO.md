@@ -39,8 +39,14 @@
 
 ### ⚠️ Avertissements avant toute manipulation
 
-1. **`data/drafts/` n'est PAS suivi par git** (12 fichiers, ~250 mesures et 5 rapports). Un `git clean`
-   ou une suppression les perd définitivement — il faudrait relancer 5 passes d'agent. Ne pas nettoyer.
+1. **`data/drafts/` n'est PAS suivi sur `main`** (12 fichiers, ~250 mesures et 5 rapports) : un
+   `git clean` les efface de l'arbre de travail. Ils sont **sauvegardés sur la branche
+   `wip/ecologie-brouillons`** (commit `769e3f8`, poussée sur GitHub) — donc récupérables :
+   `git checkout wip/ecologie-brouillons -- data/drafts && git reset data/drafts`.
+   ⚠️ Cette branche **ne doit pas être mergée dans `main`** : son build échoue par construction
+   (voir point 2), et les brouillons ont vocation à être fusionnés puis supprimés, pas versionnés.
+   ⚠️ Passer de cette branche à `main` **retire les brouillons de l'arbre de travail** (git les
+   considère comme suivis d'un côté, absents de l'autre) — les restaurer avec la commande ci-dessus.
 2. **`npm run build` échoue en local tant que les brouillons sont là** : `check-data` tourne en
    `prebuild` et sort 419 erreurs, **toutes situées dans `data/drafts/`** (axes et thématiques pas
    encore créés — c'est normal et attendu). Les données publiées sont saines. Pour vérifier un build :
