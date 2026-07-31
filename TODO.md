@@ -32,6 +32,93 @@
 
 - ⬜ 🟠 **Réécrire les textes éditoriaux dans la voix de l'éditeur** — le fond des textes publiés le 29/07 est validé, mais la forme est celle d'une IA, pas celle de Michaël. À reprendre par lui, directement dans les fichiers (le site suit au build) : `data/a-propos.md`, `data/regle-mapping.md`, préambule de `data/choix-editoriaux.md`. Règle apprise au passage : pas d'auto-justification (ex. de l'anonymat) — énoncer, ne pas plaider.
 
+## 🔴 REPRISE — état exact du chantier Écologie au 2026-07-31 (fin de séance)
+
+> À lire en premier pour reprendre. Rédigé avant une remise à zéro du contexte : rien de ce qui suit
+> n'existe ailleurs que dans ce fichier, `data/choix-editoriaux.md` et `data/attente.json`.
+
+### ⚠️ Avertissements avant toute manipulation
+
+1. **`data/drafts/` n'est PAS suivi par git** (12 fichiers, ~250 mesures et 5 rapports). Un `git clean`
+   ou une suppression les perd définitivement — il faudrait relancer 5 passes d'agent. Ne pas nettoyer.
+2. **`npm run build` échoue en local tant que les brouillons sont là** : `check-data` tourne en
+   `prebuild` et sort 419 erreurs, **toutes situées dans `data/drafts/`** (axes et thématiques pas
+   encore créés — c'est normal et attendu). Les données publiées sont saines. Pour vérifier un build :
+   écarter temporairement `data/drafts/`, builder, remettre. Vérifié le 31/07 : l'arbre committé build.
+3. **Ne pas committer les brouillons en l'état** — le déploiement Vercel casserait.
+
+### Ce qui est fait
+
+- **5 passes d'extraction rendues**, toutes avec QC de fidélité au vert :
+  | brouillon | contenu | QC |
+  |---|---|---|
+  | `ecologie.rapport.md` + 2 drafts | périmètre initial, 181 mesures (EELV 65 / LFI 116) | LFI 116/116, EELV 65/65 |
+  | `ecologie-complement.*` | 68 mesures (EELV 32 / LFI 36) — comble 7 axes déséquilibrés par le découpage | 36/36 et 32/32 |
+  | `ecologie-industrie.*` | LFI ch. 9.2, 4 mesures + 11 reliquats Économie | 4/4 exhaustif |
+  | `fisc-verte.rapport.md` + draft | 8 mesures douanières/fiscales sur l'axe **existant** `fisc-verte` | 8/8 exhaustif |
+  | `fisc-verte-micro.*` | 5 mesures (chapitres jamais ouverts) | 5/5 exhaustif |
+- **2 commits** : `5b7339d` (glossaire, portée contextuelle, 41 termes) et `121bee2` (décisions 16-26
+  + `npm run attente`). Rien n'est poussé.
+- **26 décisions éditoriales** dans `data/choix-editoriaux.md`, dont 11 prises le 31/07.
+
+### Les 4 règles générales posées le 31/07 (elles tranchent la suite)
+
+- **n° 16** — le sens de la mesure prime, **jamais** l'équilibre du nombre de mesures entre programmes.
+  Exception : un déséquilibre venu de *notre propre découpage d'extraction* est un artefact, corrigé
+  par une passe complémentaire (3 ont été déclenchées à ce titre), jamais par un choix de classement.
+- **n° 17** — **test de la baseline** : on crée un axe si et seulement si on peut lui écrire UNE
+  baseline chiffrable et sourçable.
+- **n° 24** — la **rubrique d'origine** est une pièce à verser au dossier : deux propositions décrivant
+  le même dispositif ne sont pas la même mesure si le programme les range dans deux chapitres avec
+  deux motifs différents.
+- **n° 25** — **créer plutôt qu'attendre** : une mesure *déjà extraite* se classe toujours, quitte à
+  créer l'axe ou le tag manquant. Le reliquat ne vaut que pour ce qui est *repéré mais non extrait*.
+
+### PROCHAINE ACTION (méthode validée par l'éditeur)
+
+Passer les **~28 arbitrages restants** au filtre des règles 16, 17, 24 et 25 :
+inscrire au journal celles que les règles tranchent **en nommant la règle invoquée** (pour que ce
+soit vérifiable), et ne remonter à l'éditeur que celles que les règles ne règlent pas ou sur
+lesquelles elles se contredisent.
+
+Où sont ces arbitrages :
+- `data/drafts/ecologie-complement.rapport.md` §6.2 → Q1, Q2, Q4, Q6, Q7, Q8, Q9, Q10, Q14 (les autres sont tranchées) ; §6.1 → 3 anomalies de source
+- `data/drafts/ecologie-industrie.rapport.md` §5 → Q2, Q3, Q4, Q5, Q7 (Q1 et Q6 tranchées)
+- `data/drafts/fisc-verte.rapport.md` §7 et `fisc-verte-micro.rapport.md` §7 → Q1 à Q8 et Q1 à Q7
+
+### Puis la fusion — à créer au moment de fusionner
+
+**Axes** (le bloc copiable des 20 axes du périmètre initial est au §3.b de `ecologie.rapport.md`) :
+- les 3 axes eau : `eco-eau-ressource`, `eco-eau-service`, `eco-eau-outremer` (le 9/0 d'`eco-eau-outremer`
+  est un **silence réel** — ch. 46 EELV lu intégralement, décision n° 21)
+- axe **« Décarbonation de l'industrie »** (nouveau, décision par test de baseline) — `eco-investissement`
+  redevient strictement le financement
+- axe **« Prévention & santé publique »** sous `sante` (nouveau, pour l'antibiorésistance)
+- axe **« Souveraineté productive & relocalisation »** sous `economie-travail-entreprises` (nouveau,
+  pour LFI 9.2 contrôle des investissements étrangers + EELV 20-3)
+- condition animale **scindée en 2 axes** (décision n° 18) : élevage/aquaculture/abattage/transport sous
+  Agriculture ; chasse/corrida/animaux de compagnie/personnalité juridique/expérimentation sous Écologie
+- axe **pesticides sous Agriculture** (décision n° 19), cotags `biodiversite` + `eau`
+
+**Thématiques** — les 21 proposées au §5 de `ecologie.rapport.md`, plus :
+`collectivites-territoriales` (sous `institutions-democratie`, qui n'en a aucune),
+`commerce-exterieur` (sous `europe-international-defense`),
+`recherche` et `formation` (sous `education-recherche-jeunesse`, qui n'en a aucune ;
+« formation professionnelle » écarté car il désigne en France un domaine précis).
+
+**À faire aussi pendant la fusion** :
+- verser les **reliquats dans `data/attente.json`** (nature `reliquat`, verbatim obligatoire) — c'est
+  le seul moment où l'état final est connu, un reliquat se définissant par ce qui n'a pas été fusionné.
+  Les verbatims sont dans les §4/§7 des 5 rapports.
+- déplacer les rapports de `data/drafts/` vers `data/rapports/`, supprimer les `*.draft.json`.
+
+**Ensuite** : `verificateur-sources` sur les nouvelles baselines (dont **`fisc-verte`, dont la baseline
+ne couvre plus 10 des 13 mesures et l'`ecart_synthese` devient faux** — entrée `avant-publication` dans
+`npm run attente`), puis agent `glossaire` sur les nouveaux verbatims, puis `check-data` + build + QC
+navigateur + commit + **tag daté**.
+
+---
+
 ## Plan d'attaque — V1 complète sur les 2 programmes (LFI + EELV)
 
 > Objectif : couvrir les **15 méta-thèmes pour les 2 programmes déjà en base**, avec la rigueur des pilotes (fiscalité, justice). Ce n'est PAS encore « éclairer le vote » (cadrage V1) mais **prouver le moteur complet** sur 2 programmes. L'ajout d'autres candidats = versions ultérieures.
@@ -47,7 +134,7 @@
 6. `check-data` + build + QC navigateur + commit + **tag daté** (versions, pas flux).
 
 **Ordre proposé** (choix éditeur 30/07 : commencer par Écologie) :
-1. ⬜ 🟠 Écologie, climat & énergie (EELV ch 1,4-10 / LFI 12-14) — **prochain, à lancer**
+1. 🔄 🔴 Écologie, climat & énergie — **EN COURS, extraction finie, arbitrages en cours** (voir « Reprise » ci-dessous)
 2. ⬜ Protection sociale & solidarités (EELV 31-37,39 / LFI 7)
 3. ⬜ Économie, travail & entreprises (EELV 13-16,19,20 / LFI 2,8,9)
 4. ⬜ Santé (EELV 28-30 / LFI 15)
