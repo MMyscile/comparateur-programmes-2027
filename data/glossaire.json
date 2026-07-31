@@ -195,6 +195,18 @@
       "terme": "Community Reinvestment Act",
       "definition": "Loi fédérale américaine de 1977 incitant les banques à répondre aux besoins de crédit de l'ensemble des territoires où elles collectent des dépôts, y compris les quartiers à revenus modestes.",
       "source_url": "https://www.federalreserve.gov/consumerscommunities/cra_about.htm"
+    },
+    {
+      "terme": "Sécurité globale",
+      "definition": "Nom usuel de la loi du 25 mai 2021 « pour une sécurité globale préservant les libertés », portant notamment sur les polices municipales, la sécurité privée et l'usage des caméras et images par les forces de l'ordre.",
+      "source_url": "https://www.vie-publique.fr/loi/277157-loi-pour-une-securite-globale-preservant-les-libertes",
+      "contextes": ["eco-police-4"]
+    },
+    {
+      "terme": "Séparatisme",
+      "definition": "Nom usuel de la loi du 24 août 2021 « confortant le respect des principes de la République », qui renforce les obligations de neutralité du service public et le contrôle des associations et des lieux de culte.",
+      "source_url": "https://www.vie-publique.fr/loi/277621-loi-separatisme-respect-des-principes-de-la-republique-24-aout-2021",
+      "contextes": ["eco-police-4"]
     }
   ]
 }

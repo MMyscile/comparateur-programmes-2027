@@ -77,4 +77,14 @@ export interface TermeGlossaire {
   definition: string;
   /** Optionnel : source de la définition (traçabilité). */
   source_url?: string;
+  /**
+   * Portée de l'entrée. Absent (défaut) = globale : le terme est repéré dans tous
+   * les verbatims. Présent = liste d'ids de mesures où la définition s'applique ;
+   * ailleurs, le terme n'est pas surligné.
+   *
+   * Sert aux mots à sens contextuel : « Séparatisme » ou « Sécurité globale »
+   * désignent les lois de 2021 dans la mesure citée, mais restent des mots
+   * courants ailleurs — les surligner partout produirait un contresens.
+   */
+  contextes?: string[];
 }

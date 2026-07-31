@@ -70,19 +70,26 @@ function TermeInfobulle({ terme, entree }: { terme: string; entree: TermeGlossai
 /**
  * Rend un verbatim en repérant les termes du glossaire (surcouche non
  * destructive : le texte affiché reste identique au JSON, garde-fou n°1).
+ *
+ * `mesureId` sert à filtrer les entrées à portée limitée (champ `contextes`) :
+ * un terme à sens contextuel n'est surligné que dans les mesures qui le listent.
  */
 export default function Verbatim({
   texte,
   glossaire,
+  mesureId,
 }: {
   texte: string;
   glossaire: TermeGlossaire[];
+  mesureId: string;
 }) {
   const { regex, index } = useMemo(() => {
-    if (glossaire.length === 0) return { regex: null, index: new Map<string, TermeGlossaire>() };
-    const idx = new Map(glossaire.map((t) => [t.terme.toLowerCase(), t]));
+    // Entrée globale (pas de `contextes`) ou entrée dont la portée couvre cette mesure.
+    const applicables = glossaire.filter((t) => !t.contextes || t.contextes.includes(mesureId));
+    if (applicables.length === 0) return { regex: null, index: new Map<string, TermeGlossaire>() };
+    const idx = new Map(applicables.map((t) => [t.terme.toLowerCase(), t]));
     // Termes les plus longs d'abord (préfère « numerus clausus » à un mot isolé).
-    const motifs = [...glossaire]
+    const motifs = [...applicables]
       .sort((a, b) => b.terme.length - a.terme.length)
       .map((t) => escapeRegExp(t.terme));
     // Frontières de mot Unicode (\p{L}/\p{N}) : évite de surligner un terme à
@@ -94,7 +101,7 @@ export default function Verbatim({
       "giu"
     );
     return { regex, index: idx };
-  }, [glossaire]);
+  }, [glossaire, mesureId]);
 
   if (!regex) return <>{texte}</>;
 

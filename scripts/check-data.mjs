@@ -108,6 +108,17 @@ if (existsSync(join(racine, "data/glossaire.json"))) {
     vus.add(cle);
     if (t.source_url != null && (typeof t.source_url !== "string" || !t.source_url.startsWith("http")))
       err(f, "source_url : URL http(s) attendue si présente");
+    // contextes (optionnel) : portée de l'entrée = ids de mesures existantes.
+    // Une portée qui pointe vers une mesure disparue rendrait le terme invisible
+    // sans erreur visible — d'où la vérification référentielle.
+    if (t.contextes != null) {
+      if (!Array.isArray(t.contextes) || t.contextes.length === 0)
+        err(f, "contextes : liste non vide d'ids de mesures attendue si présent (absent = portée globale)");
+      else
+        for (const id of t.contextes)
+          if (typeof id !== "string" || !tousIds.has(id))
+            err(f, `contextes : mesure inconnue "${id}"`);
+    }
   }
 }
 

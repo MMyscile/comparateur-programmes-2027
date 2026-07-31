@@ -332,7 +332,7 @@ export default function Comparateur({
                                   </div>
 
                                   <blockquote className="text-sm leading-relaxed text-slate-700">
-                                    « <Verbatim texte={m.verbatim} glossaire={glossaire} /> »
+                                    « <Verbatim texte={m.verbatim} glossaire={glossaire} mesureId={m.id} /> »
                                   </blockquote>
 
                                   <div className="mt-2 flex flex-wrap gap-1">
