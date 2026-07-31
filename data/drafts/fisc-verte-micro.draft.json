@@ -1,0 +1,101 @@
+{
+  "_draft": {
+    "statut": "BROUILLON — à relire et valider par l'éditeur avant fusion dans data/candidats/<id>.json",
+    "chantier": "Axe EXISTANT « fisc-verte » (Fiscalité environnementale) — MICRO-PASSE de complétude : les 5 propositions de fiscalité / protection commerciale écologiques repérées au §3.3.B de data/drafts/fisc-verte.rapport.md, dans des chapitres qu'aucun chantier n'avait ouverts",
+    "produit_le": "2026-07-31",
+    "rapport": "data/drafts/fisc-verte-micro.rapport.md",
+    "lots_precedents": "data/drafts/fisc-verte-complement.draft.json (8 mesures) et data/drafts/{lfi,ecologistes}-ecologie*.draft.json — ce lot ne les modifie pas et n'en reprend aucune mesure",
+    "avertissement_axes": "AUCUN axe nouveau, AUCUNE modification de data/axes.json. L'axe 'fisc-verte' existe déjà (ordre 11, baseline vérifiée le 2026-07-29). ⚠️ Rappel du lot précédent : sa baseline ne couvre pas le volet douanier/MACF, et son 'ecart_synthese' (« aucune mesure LFI captée ») devient faux à la fusion.",
+    "avertissement_thematiques": "Valeurs renvoyant à des thématiques DÉCIDÉES mais pas encore présentes dans data/taxonomie.json (fichier non modifié par ce lot) : 'commerce-exterieur' et 'collectivites-territoriales' (créées par la décision n° 23 de data/choix-editoriaux.md, à ajouter à la taxonomie au moment de la fusion), et 'climat-attenuation' (proposée au §5 de data/drafts/ecologie.rapport.md, non encore tranchée). Existantes et inchangées : 'fiscalite-verte', 'entreprises', 'cooperation-europeenne', 'fraude-evasion', 'finances-locales', 'dette-budget'.",
+    "candidats": [
+      "ecologistes",
+      "lfi"
+    ],
+    "source_lue": "Archives brutes uniquement : data/sources/raw/ecologistes_vdef-programme_pdf.tar.gz → « VDEF Programme.pdf » p. 63, 64, 88, 190 (ordre de lecture reconstruit par coordonnées, pdftotext -bbox-layout — JAMAIS pdftotext sans -layout sur ce PDF) ; data/sources/raw/lfi-melenchon2027-2025_html.tar.gz → lfi_sub/chapitre17_s1.html.",
+    "perimetre": "Écologistes ch. 16 prop. 3 et 7, ch. 22 prop. 7, ch. 60 prop. 5 ; LFI 17.1 bloc 1. LFI 16.5 réexaminée et confirmée hors périmètre (4 propositions institutionnelles). Balayage rouvert sur les deux programmes : reliquats au §4 du rapport.",
+    "volume": 5,
+    "choix_editoriaux_appliques": "data/choix-editoriaux.md relu : décisions n° 22 (regroupement douane/fiscalité écologiques sur fisc-verte), n° 23 (création de 'commerce-exterieur' et 'collectivites-territoriales'), n° 24 (deux propositions du même dispositif ne sont pas la même mesure ; la taxe kilométrique LFI 9.2 est renvoyée en reliquat Économie, ce qui retire lfi-fisc-verte-03 du lot précédent) et n° 16 (le sens de la mesure prime sur l'équilibre des colonnes)."
+  },
+  "mesures": [
+    {
+      "id": "eco-fisc-verte-4",
+      "candidat": "ecologistes",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur",
+        "fraude-evasion",
+        "entreprises"
+      ],
+      "verbatim": "Lutter contre les pratiques déloyales dans le commerce. Mettre fin au dumping fiscal et environnemental de l’e-commerce (exonération des droits de douanes pour les colis, sous-déclaration de la valeur des marchandises, contournement de la TVA, explosion des coûts logistiques…) par un système d’amende et une responsabilisation des plateformes. Rétablir les 1000 postes d’agents supprimés dans les 15 dernières années à la Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF) et les postes dans les douanes.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=63",
+      "rubrique_origine": "Chapitre 16 — Changer les règles du marché (proposition 3) ; p. 63",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-5",
+      "candidat": "ecologistes",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur",
+        "climat-attenuation",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Intégrer l’urgence écologique dans les traités d’investissement et de commerce. Organiser un retrait coordonné des traités d’investissement qui protègent les investissements fossiles. Négocier des accords pour neutraliser les clauses de survie notamment pour la sortie du Traité sur la charte de l’énergie. Ne pas ratifier les accords européens en attente qui affectent le climat et la biodiversité notamment les traités avec le Canada (CETA) le Vietnam, Singapour, le Chili, le Mexique, le Mercosur, l’Indonésie et le Japon. Dans les futurs traités, introduire des clauses miroirs sur le climat et les droits humains, des clauses d’exclusion explicite des investissements fossiles (carve-out) et prévoir des sanctions en cas de non-respect de ces exigences. Introduire des mécanismes publics de règlement des différends via une Cour multilatérale des investissement et refuser les tribunaux d’arbitrage pouvant contester des mesures réglementaires de désinvestissement ou d’interdiction de nouveaux projets d’exploitation de ressources fossiles.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=64",
+      "rubrique_origine": "Chapitre 16 — Changer les règles du marché (proposition 7, badge [EUROPE]) ; p. 64",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-6",
+      "candidat": "ecologistes",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "finances-locales",
+        "collectivites-territoriales",
+        "climat-attenuation"
+      ],
+      "verbatim": "Soutenir fiscalement les collectivités qui ont des politiques de préservation de leur environnement. Transférer une part de la Contribution Climat Énergie vers les collectivités disposant d’un Plan Climat Air-Énergie Territorial (PCAET) ambitieux. Revisiter la taxe sur les ordures ménagères notamment pour les professionnels afin d’élargir leur collecte et la rendre plus efficace. Augmenter le versement mobilité dont le montant est insuffisant au regard des besoins.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=88",
+      "rubrique_origine": "Chapitre 22 — Décentraliser les services publics (proposition 7) ; p. 88",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-7",
+      "candidat": "ecologistes",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur",
+        "cooperation-europeenne",
+        "dette-budget",
+        "climat-attenuation"
+      ],
+      "verbatim": "Augmenter les moyens budgétaires de l’Union Européenne pour atteindre 2 % du PIB européen en 2035 et 5 % du PIB en 2050. Augmenter les ressources fiscales propres dédiées au budget communautaire via un renforcement du mécanisme d’ajustement carbone aux frontières (MACF), une taxation des grandes entreprises technologiques, une taxe sur les déchets électroniques et la mise en commun d’une taxe sur les entreprises réalisant plus de 100 millions de chiffre d’affaire. Créer un emprunt commun pour des investissements de long terme (Grands Travaux Européens Écologiques comme l’intégration ferroviaire, énergétique et numérique ; l’adaptation des régions les plus exposées au réchauffement climatique ; le doublement des moyens de la recherche scientifique et d’innovation).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=190",
+      "rubrique_origine": "Chapitre 60 — Avancer vers une Europe fédérale (proposition 5) ; p. 190",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-verte-07",
+      "candidat": "lfi",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Utiliser le droit de veto de la France, par exemple pour refuser tous les nouveaux accords de libre-échange (avec le Mercosur, y compris révisé, le Chili, le Mexique, l’Inde, l’Indonésie, le Kenya, l’Australie, les Philippines, la Thaïlande, etc.) et tout nouvel élargissement sans harmonisation sociale, fiscale et environnementale préalable.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre17/s1",
+      "rubrique_origine": "Chapitre 17.1 — Utiliser tous les leviers d’action face aux institutions européennes",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    }
+  ]
+}

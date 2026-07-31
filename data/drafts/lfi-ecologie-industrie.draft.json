@@ -1,0 +1,76 @@
+{
+  "_draft": {
+    "statut": "BROUILLON — à relire et valider par l'éditeur avant fusion dans data/candidats/<id>.json",
+    "chantier": "Méta-thème « Écologie, climat & énergie » — 3ᵉ passe (comblement du trou LFI ch. 9.2, volet écologique de la politique industrielle)",
+    "produit_le": "2026-07-31",
+    "rapport": "data/drafts/ecologie-industrie.rapport.md",
+    "lots_precedents": "data/drafts/lfi-ecologie.draft.json + data/drafts/lfi-ecologie-complement.draft.json (à fusionner avec celui-ci)",
+    "avertissement_axes": "Les valeurs du champ 'axe' renvoient à des axes PROPOSÉS, absents de data/axes.json à ce jour (bloc copiable dans data/drafts/ecologie.rapport.md, §3).",
+    "avertissement_thematiques": "Certaines valeurs du champ 'thematiques' renvoient à des thématiques PROPOSÉES, absentes de data/taxonomie.json à ce jour (liste dans data/drafts/ecologie.rapport.md, §5).",
+    "candidat": "lfi",
+    "source_lue": "data/sources/raw/lfi-melenchon2027-2025_html.tar.gz → lfi_sub/chapitre9_s2.html (archive brute) ; miroir de travail : data/sources/lfi-avenir-en-commun-2025.md — source faisant foi : melenchon2027.fr",
+    "perimetre": "Section 9.2 uniquement, volet écologique (4 propositions extraites sur 15 ; les 11 autres sont listées en reliquats Économie dans le rapport, §4)",
+    "volume": 4
+  },
+  "mesures": [
+    {
+      "id": "lfi-investissement-04",
+      "candidat": "lfi",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises"
+      ],
+      "verbatim": "Utiliser systématiquement le régime de contrôle public des investissements étrangers dans les secteurs où c’est possible (défense, santé, produits agricoles, recyclage de matières critiques, réseaux de transport) et élargir le décret qui le permet à tous les secteurs cruciaux de la bifurcation écologique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s2",
+      "rubrique_origine": "Chapitre 9.2 — Réindustrialiser et relocaliser pour assurer notre indépendance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-investissement-05",
+      "candidat": "lfi",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises",
+        "energie-production"
+      ],
+      "verbatim": "Engager un plan de reconstruction industrielle pour mettre fin à la dépendance de la France dans les domaines stratégiques (semi-conducteurs, médicaments, etc.) et pour soutenir la bifurcation écologique (recyclage des batteries, aciers nécessaires aux énergies renouvelables, aluminium, etc.)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s2",
+      "rubrique_origine": "Chapitre 9.2 — Réindustrialiser et relocaliser pour assurer notre indépendance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-investissement-06",
+      "candidat": "lfi",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises",
+        "dette-budget"
+      ],
+      "verbatim": "Réviser le Code des marchés publics pour favoriser les entreprises sociales et solidaires, écologiques et locales.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s2",
+      "rubrique_origine": "Chapitre 9.2 — Réindustrialiser et relocaliser pour assurer notre indépendance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-investissement-07",
+      "candidat": "lfi",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises",
+        "dette-budget"
+      ],
+      "verbatim": "Conditionner toute aide d’État aux grandes entreprises à des objectifs sociaux, écologiques et fiscaux contraignants et exiger le remboursement des aides en cas de non respect des contreparties.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s2",
+      "rubrique_origine": "Chapitre 9.2 — Réindustrialiser et relocaliser pour assurer notre indépendance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    }
+  ]
+}

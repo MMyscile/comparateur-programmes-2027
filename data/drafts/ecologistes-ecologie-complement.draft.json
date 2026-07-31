@@ -1,0 +1,470 @@
+{
+  "_draft": {
+    "statut": "BROUILLON — à relire et valider par l'éditeur avant fusion dans data/candidats/<id>.json",
+    "chantier": "Méta-thème « Écologie, climat & énergie » — PASSE COMPLÉMENTAIRE (rééquilibrage des 7 axes déséquilibrés du 1er lot)",
+    "produit_le": "2026-07-31",
+    "rapport": "data/drafts/ecologie-complement.rapport.md",
+    "lot_precedent": "data/drafts/ecologistes-ecologie.draft.json (à fusionner avec celui-ci)",
+    "avertissement_axes": "Les valeurs du champ 'axe' renvoient à des axes PROPOSÉS, absents de data/axes.json à ce jour (bloc copiable dans data/drafts/ecologie.rapport.md, §3).",
+    "avertissement_thematiques": "Certaines valeurs du champ 'thematiques' renvoient à des thématiques PROPOSÉES, absentes de data/taxonomie.json à ce jour (liste dans data/drafts/ecologie.rapport.md, §5).",
+    "candidat": "ecologistes",
+    "source_lue": "data/sources/ecologistes-programme-2026.md (miroir) — source faisant foi : PDF « VDEF Programme.pdf » (lesecologistes.fr)",
+    "perimetre": "Chapitres 2 (propositions 8-10), 11 (proposition 8), 12 (propositions 8-9), 19, 20 (volet transition : propositions 1, 2, 4, 5) et 28",
+    "volume": 32
+  },
+  "mesures": [
+    {
+      "id": "eco-renovation-02",
+      "candidat": "ecologistes",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "logement"
+      ],
+      "verbatim": "Sortir un million de personnes chaque année de la précarité énergétique en atteignant 500 000 rénovations performantes par an via MaPrimeRénov’. Prendre en charge directement le coût des rénovations pour les propriétaires à faible revenu en simplifiant les démarches, en créant un guichet unique d’accompagnement. Augmenter le plafond et élargir les conditions d’octroi de l’Éco-prêt à taux zéro pour les classes moyennes. Développer le « prêt avance rénovation » permettant un prêt hypothécaire finançant le reste à charge et récupérable lors de la vente future du logement ou lors de la succession. Préciser le diagnostic de performance énergétique (DPE) en développant l’étiquette « confort d’été » et en vérifiant que la norme Bâtiment Basse Consommation (BBC) implique une consommation inférieure au maximum de la classe A. Maintenir l'interdiction de la remise en location des logements classés F en 2028 et E en 2034 et n’envisager des exceptions pour les petits propriétaires que sous réserve d’une baisse de loyer temporaire de 30 % et d’un engagement à réaliser des travaux de rénovation dans les deux ans.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=21",
+      "rubrique_origine": "Chapitre 2 — Pouvoir se loger décemment (proposition 8) ; p. 21",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-renovation-03",
+      "candidat": "ecologistes",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "logement",
+        "climat-attenuation"
+      ],
+      "verbatim": "En finir avec les chauffages au fioul en 2032. Viser le changement de système de chauffage de 300 000 ménages par an. Accompagner le changement des chaudières à gaz pour 25 % des ménages en 2032. Remplacer par des pompes à chaleur ou le raccordement à des réseaux de chaleur.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=21",
+      "rubrique_origine": "Chapitre 2 — Pouvoir se loger décemment (proposition 9) ; p. 21",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-renovation-04",
+      "candidat": "ecologistes",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "emploi-travail",
+        "logement"
+      ],
+      "verbatim": "Soutenir et accompagner la reconversion de la filière du bâtiment vers la construction et la rénovation visant la haute qualité environnementale via notamment des matériaux biosourcés ou géosourcés. Rénover les formations initiales et continues. Soutenir la mise en réseau des artisans au niveau local pour renforcer des démarches qualité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=21",
+      "rubrique_origine": "Chapitre 2 — Pouvoir se loger décemment (proposition 10) ; p. 21",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-01",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Réglementer l’écoconception pour allonger la durée des objets et permettre des usages successifs. Rendre les objets du quotidien (machine à laver, téléphone, voitures…) démontables, réparables. Définir un stock et une durée minimale de disponibilité des pièces détachées. Rendre obligatoire un taux minimal de matières premières recyclées et recyclables. Standardiser la documentation et l’information technique permettant la réparabilité. Expérimenter la publication d’un « coût total de possession » par produit ajoutant la consommation et les réparations au prix d’achat. Créer une fiscalité incitative sur le cycle de vie des objets. Augmenter le montant du bonus réparation. Rendre gratuite la labellisation pour les réparateurs. Etendre les indices de durabilité à d’autres objets que les téléviseurs et les lave-linges et en faire une condition de mise sur le marché en imposant une note minimale. Rendre obligatoire la réparabilité des batteries de véhicules électriques et la disponibilité de pièces détachées pendant 20 ans.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=73",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 1) ; p. 73",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-02",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Rendre obligatoire l’écoconception de service numérique pour réduire l’impact environnemental d’un service tout au long de son cycle de vie. Renforcer les exigences du Référentiel Général de l’Ecoconception de Services Numériques (RGESN). Interdire l’obsolescence logicielle programmée. Imposer une durée minimale de mise à disposition du système d’exploitation, des pilotes de périphérique, des mises à jour après la fin de la commercialisation (10 ans pour les téléphones et tablettes ; 15 ans pour les ordinateurs ; 20 ans pour les véhicules). Rendre obligatoire la dissociation entre les mises à jour logicielles collectives (préservation de la sécurité) des mises à jour évolutives afin de pouvoir les refuser si elles diminuent les performances de l’appareil. Élargir le droit d’agir des associations environnementales aux infractions d’obsolescence programmée.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=73",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 2) ; p. 73",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-03",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "sobriete-efficacite"
+      ],
+      "verbatim": "Développer un numérique low tech et sobre en énergie. Investir dans la recherche-développement sur les low tech. Soutenir les entreprises et les associations de réemploi et de mutualisation d’équipement. Interdire effectivement la sérialisation (part-pairing) consistant à assurer le monopole de la réparation aux producteurs sous prétexte de propriété intellectuelle et étendre la durée de la garantie à 10 ans. Généraliser le Passeport Numérique des Produits documentant leur durabilité et leur réparabilité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=73",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 3) ; p. 73",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-04",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Préserver les gisements réemployables. Intégrer systématiquement une phase de pré-tri « réemploi » dans les déchetteries afin d’identifier, d’orienter et de préserver les produits et composants réemployables. Créer un cadastre des gisements issus des entreprises, administrations et des chantiers permettant de partager l’accès. Garantir un accès équitable aux gisements pour éviter la captation par des acteurs dominants et préserver l’accès aux entreprises de l’Économie Sociale et Solidaire. Contribuer à la viabilité économique du recyclage en France ou dans un renforcement de la coopération européenne (par exemple pour le raffinage du cuivre).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=73",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 4) ; p. 73-74 ; proposition coupée par un saut de page dans le PDF, recollée",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-publicite-01",
+      "candidat": "ecologistes",
+      "axe": "eco-publicite",
+      "thematiques": [
+        "publicite-consommation",
+        "climat-attenuation"
+      ],
+      "verbatim": "Encadrer strictement la publicité. Transférer les missions de l’Autorité de Régulation Professionnelle de la Publicité (ARPP) composés de représentants d’entreprises à l’Autorité de Régulation de la Communication Audiovisuelle et Numérique (ARCOM) en renforçant le pouvoir de sanction en cas d’infraction (envisager en particulier un contrôle a priori des publicités en cas d’infraction sur une durée donnée). Intégrer une mention obligatoire incitant à la sobriété et au réemploi sur les produits neufs. Généraliser l’information environnementale utile et vérifiable des consommateurs Interdire la publicité toxique pour les produits fossiles (aviation, voitures thermiques…) ou malsains (aliments ultra-transformés, alcool…). Interdire les écrans publicitaires numériques. Appliquer l’encadrement de la publicité aux influenceurs, aux placements de produits et aux contenus sponsorisés sur les réseaux sociaux. Intégrer dans la future directive Digital Fairness Act l’encadrement de la publicité ciblée en ligne. Interdire les pratiques incitant à la surconsommation (prix barrés, gaming publicitaire…).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=74",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 5) ; p. 74",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-05",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "climat-attenuation"
+      ],
+      "verbatim": "Réduire la part des ordures ménagères et améliorer le traitement des déchets. Généraliser et améliorer la qualité du tri à la source pour les déchets alimentaires pour diminuer la part à traiter. Rendre obligatoire les consignes pour réemploi pour les contenants en aluminium et les bouteilles en verre. Limiter l’incinération et l’enfouissement des déchets par une fermeture progressive des installations. Dans ce délai de transition, améliorer les taux de captage du méthane dans les installations de stockage des déchets non dangereux (ISDND).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=74",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 6) ; p. 74",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-emplois-transition-01",
+      "candidat": "ecologistes",
+      "axe": "eco-emplois-transition",
+      "thematiques": [
+        "emploi-travail",
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Promouvoir les métiers de l’économie circulaire pour faire face à la pénurie de réparateurs et de technicien·nes qualifié·es. Lancer une campagne de communication nationale pour promouvoir l’importance des métiers de la réparation (financée par les éco-organismes). Créer un fonds pour prendre en charge des formations qualifiantes et certifiantes dans chaque région. Intégrer les enjeux et les compétences liées à la circularité dans les formations existantes (CAP, BEP, BTS, écoles d’ingénieurs, de design..).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=74",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 7) ; p. 74",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-06",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Réformer le cadre de la Responsabilité Élargie des Producteurs (REP) qui crée un conflit d’intérêt entre un modèle économique fondé sur le renouvellement des produits et l’objectif de réemploi et de réparation. Donner un avis conforme aux parties prenantes (producteurs, réemployeurs, recycleurs, consommateurs, associations environnementales) dans la définition des objectifs, les écomodulations et les cahiers des charges de chaque filière et appliquer des sanctions automatiques par une autorité indépendante en cas de manquement Fixer d’avantages d’écomodulations dans la partie écoconception. Maintenir les éco-organismes dans leur rôle de collecte des éco-contributions. Confier à l’ADEME la gestion des fonds dédiés au réemploi et à la réparation. Exiger la mise en place de malus quand les indices de réparabilité ou de durabilité ne sont pas respectés.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=74",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 8) ; p. 74",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-07",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "publicite-consommation"
+      ],
+      "verbatim": "Appliquer de manière stricte la loi contre la fast fashion. Définir le seuil de nouvelles références à 5000 nouveaux modèles annuels. Refuser la distinction entre fast fashion et ultra fast fashion. Vérifier l’interdiction de la publicité et la promotion des entreprises concernées. Adopter un malus progressif en fonction de l’impact environnemental. Sanctionner les contournements éventuels de la loi.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=75",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 9) ; p. 75",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-08",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Intégrer la standardisation dans l’écoconception européenne. Adopter une ambition haute de standardisation dans le règlement ESPR (Ecodesign for sustainable products regulation). Établir des référentiels européens de process du réemploi. Intégrer les objectifs de réemploi et de réparabilité dans toute révision de directive européenne et marché public européen. Publier un tableau de bord européen permettant de comparer les empreintes matières et les taux de réemploi/réparation par filière et par pays. Corriger les asymétries de concurrences qui favorisent des produits neufs à bas coût en instaurant une préférence européenne sur le réemploi et un alignement de la fiscalité sur la durée d’usage. Faire évoluer la directive-cadre Déchets en directive-cadre Ressources pour répondre au problème le plus en amont possible.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=75",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 10, badge [EUROPE]) ; p. 75",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-investissement-01",
+      "candidat": "ecologistes",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises"
+      ],
+      "verbatim": "Créer un fonds souverain assis sur un « livret industrie » rémunéré au même taux garanti que le livret A et ciblé vers des entreprises françaises produisant la majeure partie de leur valeur ajoutée en Europe et se dotant d’un horizon d’investissement long. Conditionner ses investissements au respect de critères de performance environnementale et sociale.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 1) ; p. 77",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-investissement-02",
+      "candidat": "ecologistes",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises",
+        "emploi-travail"
+      ],
+      "verbatim": "Organiser un Grenelle de l’industrie en vue d’une loi d’orientation et de programmation industrielle visant une nouvelle industrialisation des filières dans le respect des limites planétaires. Planifier la transformation industrielle en concertation avec les territoires pour garantir un redéploiement équilibré et efficace des activités de production et de la Gestion Prévisionnelle de l’Emploi et des Compétences (GPEC) à la hauteur des besoins. Donner les moyens aux régions de soutenir le développement de tissus industriels et de filières par des infrastructures adaptées et la simplification administrative.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 2) ; p. 77",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-investissement-03",
+      "candidat": "ecologistes",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "sobriete-efficacite",
+        "entreprises"
+      ],
+      "verbatim": "Développer la sobriété compétitive des productions industrielles. Diminuer l’impact environnemental des modes de production en soutenant les procédés d’électrification (pompes à chaleur, chaudières industrielles, compression mécanique de vapeur…) via les Certificats d’Economie d’Energie. Soutenir le développement des des low tech. Mutualiser et massifier certains investissements stratégiques bas carbone pour en diminuer le coût et obtenir des garanties publiques car l’amortissement se ferait à long terme en particulier pour le passage à l’hydrogène décarboné par électrolyse.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 4) ; p. 77",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-investissement-04",
+      "candidat": "ecologistes",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "energie-production",
+        "entreprises"
+      ],
+      "verbatim": "Soutenir l’électrification des procédés industriels. Conditionner les aides aux entreprises à des contrats de transition visant l’électrification de la production et une amélioration des conditions de travail des salarié·es. Simplifier et amplifier les aides pour les achats de fours électriques (métallurgie) et de pompes à chaleur, chaudières électriques industrielles et compresseurs mécaniques de vapeur (CMV). Prévoir des clauses de remboursement en cas de délocalisation. Garantir un prix de l’électricité décarboné compétitif pour la décarbonation des industries fortement exposée à la concurrence internationale en établissant un « contrat pour différence » (CPD). Favoriser le déploiement de l’hydrogène bas carbone lorsque pertinent.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 5) ; p. 77",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-01",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale"
+      ],
+      "verbatim": "Interdire l’ensemble des polluants éternels (PFAS) et des perturbateurs endocriniens en application du principe de précaution, - interdiction immédiate pour la nourriture, le textile et les produits de beauté et sous 18 mois pour les autres. Adopter un régime d’exception de 5 à 10 ans au cas par cas pour les usages essentiels définis dans le protocole de Montréal (situations critiques pour la santé et la sécurité sans alternatives comme pour les protections des pompiers ou les dispositifs médicaux). Dépolluer les sites pollués aux PFAS. Adopter des valeurs limites de rejet.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=107",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 1) ; p. 107",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-02",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Orienter des programmes de recherche indépendants pour préciser l’impact sanitaire des toxiques et trouver des alternatives (nanoparticules, plastifiants, mercure, HAP…). Mener des programmes spécifiques sur les effets des toxiques sur les populations vulnérables (perturbateurs endocriniens, infertilité, SOPK…).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 2) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-03",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "justice-environnementale"
+      ],
+      "verbatim": "Faire appliquer systématiquement le principe pollueur-payeur pour que les industriels contribuent à la dépollution des nappes et des sols impactés et à la recherche sur les alternatives aux produits polluants. Élargir la responsabilité des producteurs (REP) et créer des redevances pour faire payer les coûts de dépollution par les entreprises concernées. Améliorer le contrôle des filières REP par les autorités. Intégrer des sanctions plus fermes en cas de non-respect des objectifs.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 3) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-04",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques",
+        "mobilites"
+      ],
+      "verbatim": "Améliorer la qualité de l’air en modifiant les conditions des ZFE (Zones à Faibles Émissions). Développer les Zones à Trafic Limité. Développer une offre de transports collectifs alternative et des parkings en périphérie, soutenir financièrement le changement de véhicule et mettre en place progressivement des moyens de contrôle. Accorder des dérogations pour les petits rouleurs et les professionnels sans alternative. Revoir les vignettes Crit’air pour qu’elles intègrent le poids des véhicules. Installer des détecteurs de prévention et d’information sur la qualité de l’air intérieure dans tous les bâtiments publics.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 4) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-05",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale",
+        "justice-environnementale"
+      ],
+      "verbatim": "Adopter un plan de désintoxication des territoires les plus exposés pour dépolluer, accélérer la reconversion économique dans les bassins industriels, ports et vallées logistiques. Améliorer la dépollution des sols et des eaux et l’indemnisation des victimes du chlordécone en augmentant les montants et en élargissant les critères d’éligibilité du FIVP (Fonds d’indemnisation des victimes des pesticides). Renforcer les droits des riverains et des soignant·es par la création de dispositifs d’alerte et d’accès à l’information environnementale, la reconnaissance du droit à l’expertise indépendante et la protection des professionnels de santé signalant des atteintes à l’environnement ou à la santé publique.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 5) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-06",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques",
+        "eau"
+      ],
+      "verbatim": "Adopter un plan global de réduction de l’antibiorésistance afin de réduire de 30 % l’usage des antibiotiques critiques en santé humaine et animale et éviter l’émergence et la propagation des bactéries résistantes. Promouvoir un usage raisonné des antibiotiques par la publication annuelle des consommations par établissements de santé, par un meilleur ciblage des antibiotiques critiques aux infections graves et documentées et un déploiement des tests rapides. Réduire de moitié les rejets dans l’environnement par la modernisation des stations d’épuration pour éliminer les résidus d’antibiotiques et les gènes de résistances et l’interdiction des rejets d’effluents hospitaliers et pharmaceutiques non traités dans les réseaux d’assainissement. Responsabiliser les laboratoires pharmaceutiques par une meilleure traçabilité dans les chaînes de production et une meilleure labellisation.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 6) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-07",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale"
+      ],
+      "verbatim": "Créer une autorité de sécurité industrielle écologique et sociale visant à unifier les compétences aujourd’hui dispersées (inspection des installations, santé publique, conditions de travail, protection civile) afin de garantir une approche intégrée des risques industriels. Elle disposerait de pouvoirs et de moyens pour prévenir les accidents majeurs, réduire les émissions toxiques et faire respecter le droit à la sûreté des travailleurs et des riverains.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 7) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-08",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Augmenter la protection des Installations classées pour la protection de l’environnement (ICPE). Augmenter le nombre d’inspecteurs et le seuil de l’amende maximale pour les ICPE à 500 000€ (contre 15 000€ actuellement). Étendre les règles des ICPE aux sites d’habitat mobile et précaire en particulier les aires d’accueil des gens du voyage. Contrôler systématiquement les sorties d’exploitation avec des frais à la charge de l’exploitant pour éviter de laisser des sites pollués après une activité industrielle.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 8) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-09",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Assurer un droit au silence. S’assurer du respect de la directive européenne de 2002 visant à prévenir et réduire les effets du bruit dans l’environnement. Créer un observatoire du bruit dans chaque région. Accompagner les collectivités pour la mise en place de Plans de Prévention du Bruit dans l’Environnement et faire du calme un objectif d’aménagement urbain à part entière en développant des zones de calme. Améliorer la connaissance du bruit dans les locaux intérieurs – en particulier les cantines scolaires et les crèches.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 9) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-10",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Soutenir une révision du règlement européen de régulation des toxiques REACH en intégrant notamment le plomb comme substance soumise à autorisation. Fonder la réglementation des substances toxiques sur une évaluation indépendante des risques sanitaires et non plus sur les analyses fournies par les industriels. Elargir le champ d’application aux polymères. Accélérer les délais d’identification des substances extrêmement préoccupantes et les assortir de restrictions systématiques. Renforcer les moyens de l’Agence Européenne des Produits Chimiques (ECHA).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 10, badge [EUROPE]) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-11",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "dechets-economie-circulaire",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Interdire l’exportation de déchets toxiques de substances dangereuses, de CO2 liquéfié et de pesticides dont l’usage est interdit en Europe. Interdire l’importation de déchets toxiques sauf pour ceux dont le retraitement n’existe qu’en Europe.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 11, badge [EUROPE]) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-09",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "pollutions-toxiques",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Sortir du plastique à usage unique en 2040 avec une trajectoire de réduction de la production et de la consommation. Soutenir les négociations pour un traité international de réduction à la source. Créer un régime d’exception au cas par cas dans le domaine médical ou en l’absence d’alternatives. Adopter un calendrier d’arrêt du plastique par secteur d’activité et un régime de sanction dissuasive. Interdire l’utilisation des polymères halogénés (PVC, polymères fluorés) dont la combustion est la plus nocive dès 2028 dans les produits à emballage ménagers et les produits à usage unique. Rendre obligatoire le système de consigne pour les plastiques.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 12, badge [EUROPE]) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-10",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "climat-attenuation"
+      ],
+      "verbatim": "Adopter un plan de réduction progressive de la consommation de produits animaux issue de l’agro-industrie. Atteindre une réduction de 50% de la consommation de protéines animales en 2050. Augmenter les objectifs de consommation de protéines végétales et soutenir la production de légumineuses (soja, lentille, pois chiches).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=46",
+      "rubrique_origine": "Chapitre 11 — Créer un droit à l’alimentation de qualité (proposition 8) ; p. 46",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-11",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "climat-attenuation"
+      ],
+      "verbatim": "Mettre en place un plan de transition de l’élevage. Accompagner la réduction planifiée et progressive des cheptels bovins. Aider à la reconversion des éleveur·ses par le rachat de leurs dettes, des prêts à taux zéro et des accompagnements techniques. Soutenir les élevages herbagers et de plein air et relocaliser l’alimentation animale en remplaçant les tourteaux de soja importés par de l’herbe et des légumineuses. Réviser nos politiques de gestion des épizooties pour les adapter aux enjeux du changement climatique et de la dégradation des écosystèmes. Interdire les mégaporcheries, les mégapoulaillers et les autres mégafermes d’élevage. [cf aussi la proposition pour l’amélioration des conditions de vie des animaux d’élevage 8-2]",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=49",
+      "rubrique_origine": "Chapitre 12 — Transformer notre modèle agricole (proposition 8) ; p. 49-50 ; proposition coupée par un saut de page dans le PDF, recollée",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-12",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "biodiversite"
+      ],
+      "verbatim": "Renforcer les systèmes pastoraux extensifs. Intégrer dans le maintien des activités pastorales des objectifs de préservation de la biodiversité et de respect des impacts sur l’eau et les sols. Renforcer les soutiens aux pâturages en particulier les prairies permanentes. Permettre la cohabitation entre le pastoralisme et les grands prédateurs comme le loup en accompagnant davantage les éleveur·ses humainement et financièrement y compris dans les nouvelles zones de colonisation en plaine. Accompagner le déploiement du sylvopastoralisme notamment dans les territoires exposées aux incendies.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=50",
+      "rubrique_origine": "Chapitre 12 — Transformer notre modèle agricole (proposition 9) ; p. 50",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    }
+  ]
+}

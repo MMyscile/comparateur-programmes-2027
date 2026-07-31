@@ -1,0 +1,510 @@
+{
+  "_draft": {
+    "statut": "BROUILLON — à relire et valider par l'éditeur avant fusion dans data/candidats/<id>.json",
+    "chantier": "Méta-thème « Écologie, climat & énergie » — PASSE COMPLÉMENTAIRE (rééquilibrage des 7 axes déséquilibrés du 1er lot)",
+    "produit_le": "2026-07-31",
+    "rapport": "data/drafts/ecologie-complement.rapport.md",
+    "lot_precedent": "data/drafts/lfi-ecologie.draft.json (à fusionner avec celui-ci)",
+    "avertissement_axes": "Les valeurs du champ 'axe' renvoient à des axes PROPOSÉS, absents de data/axes.json à ce jour (bloc copiable dans data/drafts/ecologie.rapport.md, §3).",
+    "avertissement_thematiques": "Certaines valeurs du champ 'thematiques' renvoient à des thématiques PROPOSÉES, absentes de data/taxonomie.json à ce jour (liste dans data/drafts/ecologie.rapport.md, §5).",
+    "candidat": "lfi",
+    "source_lue": "data/sources/lfi-avenir-en-commun-2025.md (miroir) — source faisant foi : melenchon2027.fr",
+    "perimetre": "Sections 9.3, 16.6, 18.1 et 18.2",
+    "volume": 36
+  },
+  "mesures": [
+    {
+      "id": "lfi-ocean-02",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "biodiversite"
+      ],
+      "verbatim": "Œuvrer à la création d’un droit international de la biodiversité marine, notamment dans les grands fonds.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-03",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral"
+      ],
+      "verbatim": "Faire de la France le leader mondial de la recherche et de l’éducation dans le secteur maritime.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-04",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "peche-aquaculture"
+      ],
+      "verbatim": "Créer un lycée de la mer dans chaque département maritime (y compris dans les Outre-mer)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-05",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "peche-aquaculture",
+        "emploi-travail"
+      ],
+      "verbatim": "Développer la formation professionnelle dans le domaine des nouvelles techniques de pêche, d’aquaculture et d’algoculture durables au service de la bifurcation écologique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-06",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral"
+      ],
+      "verbatim": "Proposer la construction de la première station sous-marine permanente sur le modèle de la station spatiale internationale.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-07",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "peche-aquaculture",
+        "ocean-littoral"
+      ],
+      "verbatim": "Gérer durablement la ressource via la pêche artisanale, lutter contre les pratiques de pêche illégales et refuser la marchandisation de la politique commune des pêches au niveau européen.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-08",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "peche-aquaculture",
+        "ocean-littoral"
+      ],
+      "verbatim": "Éradiquer les pratiques de pêche dangereuses, empêcher la réautorisation de la pêche électrique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-09",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "biodiversite"
+      ],
+      "verbatim": "Créer des aires marines protégées en haute-mer et augmenter leur niveau de protection.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-10",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "biodiversite"
+      ],
+      "verbatim": "Défendre un moratoire sur les forages en Méditerranée et sur l’extraction minière en eaux profondes comme demandé par l’Union internationale pour la conservation de la nature (UICN)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-11",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral"
+      ],
+      "verbatim": "Encadrer le prélèvement de sable marin pour le secteur de la construction et lutter contre l’extraction illicite à l’échelle nationale et internationale.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-12",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "climat-attenuation"
+      ],
+      "verbatim": "Lutter contre l’acidification des océans et la multiplication des « zones mortes » dépourvues d’oxygène.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-13",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral"
+      ],
+      "verbatim": "Obtenir la reconnaissance internationale de l’espace maritime français.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-14",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral"
+      ],
+      "verbatim": "Augmenter les moyens de surveillance, de protection et de sécurisation effective de notre domaine maritime et de ses axes stratégiques.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s1",
+      "rubrique_origine": "Chapitre 18.1 — Protéger les mers et océans",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-15",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "energie-production",
+        "ocean-littoral"
+      ],
+      "verbatim": "Développer les énergies marines renouvelables (EMR), comme l’hydrolien, dans le cadre du plan de transition énergétique et d’une maîtrise publique des installations et réseaux tout en veillant à concilier les usages en mer.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s2",
+      "rubrique_origine": "Chapitre 18.2 — Être à la hauteur de la responsabilité maritime française",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-16",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "energie-production",
+        "ocean-littoral"
+      ],
+      "verbatim": "Mettre en œuvre un plan d’urgence pour l’éolien maritime d’un point de vue énergétique et industriel, garantir le développement de la filière au besoin par la nationalisation des activités de General electric (ex Alstom) et Siemens-Gamesa (ex Areva)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s2",
+      "rubrique_origine": "Chapitre 18.2 — Être à la hauteur de la responsabilité maritime française",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-17",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "climat-attenuation"
+      ],
+      "verbatim": "Mettre en place un plan de décarbonation de la marine marchande, renforcer le développement de la propulsion vélique et des propulsions moins polluantes.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s2",
+      "rubrique_origine": "Chapitre 18.2 — Être à la hauteur de la responsabilité maritime française",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-18",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "emploi-travail"
+      ],
+      "verbatim": "Défendre l’emploi maritime et industriel français contre la concurrence déloyale et le dumping (construction et entretien des parcs éolien maritime, marine marchande, etc)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s2",
+      "rubrique_origine": "Chapitre 18.2 — Être à la hauteur de la responsabilité maritime française",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-19",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "climat-attenuation"
+      ],
+      "verbatim": "Relancer les ports français et moderniser les infrastructures portuaires dans une logique multimodale mer-rail-fluvial, de décarbonation et de soutien aux énergies renouvelables.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s2",
+      "rubrique_origine": "Chapitre 18.2 — Être à la hauteur de la responsabilité maritime française",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-20",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral"
+      ],
+      "verbatim": "Engager la construction de navires de souveraineté scientifique, militaire et d’approvisionnement stratégique et renforcer la formation de marins français.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s2",
+      "rubrique_origine": "Chapitre 18.2 — Être à la hauteur de la responsabilité maritime française (proposition coupée par la source : deux propositions publiées dans un même bloc, séparées par un « • » littéral — segment 1/2)",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-21",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "biodiversite"
+      ],
+      "verbatim": "Demeurer une puissance polaire : augmenter les moyens de l’Institut polaire Paul-Émile Victor, faire aboutir la reconstruction des stations de recherche en Antarctique, se doter d’un brise-glace en soutien à la recherche océanographique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s2",
+      "rubrique_origine": "Chapitre 18.2 — Être à la hauteur de la responsabilité maritime française (proposition coupée par la source : deux propositions publiées dans un même bloc, séparées par un « • » littéral — segment 2/2)",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-adaptation-04",
+      "candidat": "lfi",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation"
+      ],
+      "verbatim": "Engager un plan global de rénovation de nos infrastructures pour les adapter au changement climatique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s3",
+      "rubrique_origine": "Chapitre 9.3 — Lancer des grands chantiers écologiques, créateurs d’emplois",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-22",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Lancer un plan de dépollution de la Méditerranée et de nos façades maritimes et fonds marins dans l’océan Atlantique, la mer du Nord, l’océan Indien, et l’océan Pacifique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s3",
+      "rubrique_origine": "Chapitre 9.3 — Lancer des grands chantiers écologiques, créateurs d’emplois",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-09",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Rénover l’intégralité des réseaux d’eau et d’assainissement pour limiter les fuites.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s3",
+      "rubrique_origine": "Chapitre 9.3 — Lancer des grands chantiers écologiques, créateurs d’emplois",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-investissement-03",
+      "candidat": "lfi",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "sobriete-efficacite",
+        "energie-production"
+      ],
+      "verbatim": "Investir dans l’efficacité et la sobriété énergétiques, ainsi que dans les projets énergétiques innovants comme les énergies marines renouvelables.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s3",
+      "rubrique_origine": "Chapitre 9.3 — Lancer des grands chantiers écologiques, créateurs d’emplois",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-06",
+      "candidat": "lfi",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production"
+      ],
+      "verbatim": "Accélérer la modernisation du réseau de lignes à haute tension et leur enfouissement.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s3",
+      "rubrique_origine": "Chapitre 9.3 — Lancer des grands chantiers écologiques, créateurs d’emplois",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-adaptation-05",
+      "candidat": "lfi",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation"
+      ],
+      "verbatim": "Réaliser un diagnostic national des ouvrages d’art (ponts, viaducs, digues, barrages) et les consolider.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s3",
+      "rubrique_origine": "Chapitre 9.3 — Lancer des grands chantiers écologiques, créateurs d’emplois",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-17",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "entreprises"
+      ],
+      "verbatim": "Reconstituer de manière durable nos capacités productives de bois et les fixer au plus près des massifs forestiers : sciage, menuiserie (meubles, charpentes, constructions écologiques), production de panneaux, cartons et pâtes à papier.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s3",
+      "rubrique_origine": "Chapitre 9.3 — Lancer des grands chantiers écologiques, créateurs d’emplois",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-renovation-08",
+      "candidat": "lfi",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "forets"
+      ],
+      "verbatim": "Développer une filière d’écoconstruction en matériaux biosourcés (dont bois, terre, paille)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s3",
+      "rubrique_origine": "Chapitre 9.3 — Lancer des grands chantiers écologiques, créateurs d’emplois",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-biodiversite-05",
+      "candidat": "lfi",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "justice-environnementale",
+        "biodiversite"
+      ],
+      "verbatim": "Reconnaître un crime d’écocide.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre16/s6",
+      "rubrique_origine": "Chapitre 16.6 — Étendre les protections du droit international aux biens communs planétaires",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-biodiversite-06",
+      "candidat": "lfi",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "justice-environnementale",
+        "climat-attenuation"
+      ],
+      "verbatim": "Soutenir la création d’un tribunal international de justice climatique et environnementale.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre16/s6",
+      "rubrique_origine": "Chapitre 16.6 — Étendre les protections du droit international aux biens communs planétaires",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-biodiversite-07",
+      "candidat": "lfi",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "justice-environnementale",
+        "entreprises"
+      ],
+      "verbatim": "Soutenir activement les négociations en cours d’un traité contraignant les multinationales à respecter les droits humains et l’environnement.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre16/s6",
+      "rubrique_origine": "Chapitre 16.6 — Étendre les protections du droit international aux biens communs planétaires",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-dechets-07",
+      "candidat": "lfi",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Soutenir activement les négociations en cours d’un traité international de lutte contre les plastiques.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre16/s6",
+      "rubrique_origine": "Chapitre 16.6 — Étendre les protections du droit international aux biens communs planétaires",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-10",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Faire de la question de l’eau, de sa protection et de son accès pour tous un enjeu prioritaire de la politique internationale et de coopération de la France.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre16/s6",
+      "rubrique_origine": "Chapitre 16.6 — Étendre les protections du droit international aux biens communs planétaires",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-23",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "biodiversite"
+      ],
+      "verbatim": "Jouer un rôle actif dans les négociations pour un traité international de protection des grands fonds marins et dans la mise en œuvre du traité pour la protection de la haute mer.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre16/s6",
+      "rubrique_origine": "Chapitre 16.6 — Étendre les protections du droit international aux biens communs planétaires",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-biodiversite-08",
+      "candidat": "lfi",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite",
+        "ocean-littoral"
+      ],
+      "verbatim": "Défendre la gestion des pôles arctique et antarctique comme des biens communs de l’humanité, protégés des activités militaires et économiques qui pourraient détruire leurs écosystèmes par le pillage de leurs ressources.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre16/s6",
+      "rubrique_origine": "Chapitre 16.6 — Étendre les protections du droit international aux biens communs planétaires",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-adaptation-06",
+      "candidat": "lfi",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "securite-civile",
+        "climat-adaptation"
+      ],
+      "verbatim": "Constituer un détachement de Casques bleus de l’ONU pour faire face aux catastrophes naturelles.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre16/s6",
+      "rubrique_origine": "Chapitre 16.6 — Étendre les protections du droit international aux biens communs planétaires",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    }
+  ]
+}

@@ -1,0 +1,1592 @@
+{
+  "_draft": {
+    "statut": "BROUILLON — à relire et valider par l'éditeur avant fusion dans data/candidats/<id>.json",
+    "chantier": "Méta-thème « Écologie, climat & énergie » (ecologie-climat-energie)",
+    "produit_le": "2026-07-31",
+    "rapport": "data/drafts/ecologie.rapport.md",
+    "avertissement_axes": "Les valeurs du champ 'axe' renvoient à des axes PROPOSÉS, absents de data/axes.json à ce jour (bloc copiable dans le rapport, §3).",
+    "avertissement_thematiques": "Certaines valeurs du champ 'thematiques' renvoient à des thématiques PROPOSÉES, absentes de data/taxonomie.json à ce jour (liste dans le rapport, §5).",
+    "candidat": "lfi",
+    "source_lue": "data/sources/lfi-avenir-en-commun-2025.md (miroir) — source faisant foi : melenchon2027.fr",
+    "perimetre": "Chapitres 12, 13 et 14",
+    "volume": 116
+  },
+  "mesures": [
+    {
+      "id": "lfi-planification-01",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation",
+        "biodiversite"
+      ],
+      "verbatim": "Inscrire dans la Constitution le principe de la « règle verte », selon laquelle on ne prélève pas davantage à la nature que ce qu’elle est en état de reconstituer.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-02",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation"
+      ],
+      "verbatim": "Adopter des lois cadres instaurant une planification écologique et démocratique coordonnant les niveaux national et local.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-03",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation",
+        "biodiversite",
+        "forets"
+      ],
+      "verbatim": "Donner les moyens humains et financiers à l’État et ses opérateurs publics (comme le Cerema, l’Office national des forêts, l’Office français de la biodiversité ou Météo France) pour mener à bien leur rôle de planification.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-04",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation"
+      ],
+      "verbatim": "Créer un Conseil à la planification écologique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-05",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation"
+      ],
+      "verbatim": "Relever les ambitions climatiques de la France avec pour objectif une baisse de 65 % des émissions en 2030 (au lieu de 50 % actuellement) et rendre public un bilan annuel.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-06",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises"
+      ],
+      "verbatim": "Obliger les entreprises à mettre en œuvre une comptabilité carbone pour les émissions directes et indirectes certifiée par un organisme public agréé en commençant par les secteurs les plus émetteurs de gaz à effet de serre (GES) – énergie, transport, bâtiment, industrie lourde – puis selon la taille des entreprises, accompagnée d’une trajectoire de baisse de leurs émissions.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-07",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "justice-environnementale",
+        "climat-attenuation"
+      ],
+      "verbatim": "Instaurer un crime climatique de dissimulation et de tromperie sur les émissions carbone des entreprises.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-08",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "biodiversite",
+        "dette-budget"
+      ],
+      "verbatim": "Inscrire dans les comptes publics un diagnostic régulier de l’état des écosystèmes, avec des indicateurs biophysiques et économiques permettant d’évaluer les coûts nécessaires pour restaurer leurs capacités.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-09",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation"
+      ],
+      "verbatim": "Développer un outil national inspiré de Copernicus pour suivre en temps réel les données clés sur l’économie et l’environnement, en compilant des images satellites, des mesures terrestres et maritimes, des informations sur les actifs industriels énergétiques et leurs impacts, etc.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-10",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation",
+        "biodiversite"
+      ],
+      "verbatim": "Instaurer un moratoire sur les grands projets inutiles et écocidaires, les réévaluer au regard de la règle verte et de leur impact sur la biosphère.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s1",
+      "rubrique_origine": "Chapitre 12.1 — La bifurcation écologique pour une société de l’harmonie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-11",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation"
+      ],
+      "verbatim": "Impliquer pleinement les communes dans les décisions et la mise en œuvre des investissements de la planification écologique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s2",
+      "rubrique_origine": "Chapitre 12.2 — L’organisation de l’État au service de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-12",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "biodiversite",
+        "eau"
+      ],
+      "verbatim": "Mettre en place des défenseurs de la nature chargés de l’eau, l’air, la forêt, la végétalisation et la perméabilité des sols au niveau communal.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s2",
+      "rubrique_origine": "Chapitre 12.2 — L’organisation de l’État au service de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-13",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation"
+      ],
+      "verbatim": "Mettre en place des assemblées citoyennes régionales pour débattre des projets d’aménagement et d’investissement en lien avec la planification écologique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s2",
+      "rubrique_origine": "Chapitre 12.2 — L’organisation de l’État au service de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-14",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation"
+      ],
+      "verbatim": "Renforcer les moyens humains et financiers de l’ingénierie des territoires pour appuyer les collectivités dans une planification écologique régénérative (restauration du cycle de l’eau, énergies renouvelables)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s2",
+      "rubrique_origine": "Chapitre 12.2 — L’organisation de l’État au service de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-planification-15",
+      "candidat": "lfi",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation",
+        "energie-production",
+        "biodiversite"
+      ],
+      "verbatim": "Faire des Outre-mer des territoires pilotes de la planification écologique et des circuits courts : autonomie énergétique et 100 % renouvelable, autosuffisance alimentaire, politique maritime, protection de la biodiversité.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s3",
+      "rubrique_origine": "Chapitre 12.3 — Les Outre-mer, avant-postes de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-01",
+      "candidat": "lfi",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production"
+      ],
+      "verbatim": "Promouvoir des plans d’autonomie énergétique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s3",
+      "rubrique_origine": "Chapitre 12.3 — Les Outre-mer, avant-postes de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-02",
+      "candidat": "lfi",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production",
+        "sobriete-efficacite"
+      ],
+      "verbatim": "Planifier le passage à 100 % d’énergies renouvelables avec un double mot d’ordre : sobriété et efficacité énergétique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-03",
+      "candidat": "lfi",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production",
+        "climat-attenuation",
+        "niches-depenses-fiscales"
+      ],
+      "verbatim": "Sortir des énergies carbonées : arrêter les subventions aux énergies fossiles, y compris à l’étranger.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-04",
+      "candidat": "lfi",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production"
+      ],
+      "verbatim": "Planifier le déploiement de technologies capables de réguler et gérer les pics et les creux de production et de consommation d’énergie : stations de transfert d’énergie par pompage (STEP), développement du « véhicule au réseau » pour les voitures électriques, etc.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-05",
+      "candidat": "lfi",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production"
+      ],
+      "verbatim": "Favoriser partout sur le territoire le recours aux diverses sources d’énergie les plus adaptées aux conditions météorologiques et géographiques (pour lutter contre la méthanisation à outrance notamment)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-nucleaire-01",
+      "candidat": "lfi",
+      "axe": "eco-nucleaire",
+      "thematiques": [
+        "nucleaire",
+        "energie-production"
+      ],
+      "verbatim": "Sortir du nucléaire : abandonner les projets d’EPR (European Pressurized Reactor – Réacteur pressurisé européen), planifier le démantèlement, la réhabilitation et la reconversion des sites nucléaires et de l’ensemble de leur bassin de vie.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-nucleaire-02",
+      "candidat": "lfi",
+      "axe": "eco-nucleaire",
+      "thematiques": [
+        "nucleaire",
+        "emploi-travail"
+      ],
+      "verbatim": "Mettre en place une convention collective unique pour les travailleurs du nucléaire et arrêter l’utilisation massive de la sous-traitance, tout en garantissant leur reconversion au fur et à mesure des fermetures de centrales.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-nucleaire-03",
+      "candidat": "lfi",
+      "axe": "eco-nucleaire",
+      "thematiques": [
+        "nucleaire"
+      ],
+      "verbatim": "Abroger la loi qui a fusionné l’Autorité de sûreté nucléaire (ASN) et l’Institut de radioprotection et de sûreté nucléaire (IRSN) et garantir leurs moyens.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-prix-01",
+      "candidat": "lfi",
+      "axe": "eco-energie-prix",
+      "thematiques": [
+        "energie-prix-marche"
+      ],
+      "verbatim": "Remettre en place des tarifs réglementés de l’énergie calculés à partir des coûts de production, pour les particuliers comme pour les entreprises, les collectivités locales et les bailleurs sociaux et y inclure des objectifs sociaux, comme la gratuité des premières quantités indispensables à une vie digne.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-prix-02",
+      "candidat": "lfi",
+      "axe": "eco-energie-prix",
+      "thematiques": [
+        "energie-prix-marche",
+        "patrimoine-public"
+      ],
+      "verbatim": "Annuler la libéralisation du marché de l’électricité et du gaz : stopper la privatisation des barrages hydroélectriques, créer un pôle public de l’énergie en lien avec des coopératives locales en renationalisant EDF et Engie.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-energie-prix-03",
+      "candidat": "lfi",
+      "axe": "eco-energie-prix",
+      "thematiques": [
+        "energie-prix-marche"
+      ],
+      "verbatim": "Annuler les hausses du tarif du gaz depuis 2017.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-renovation-01",
+      "candidat": "lfi",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "logement"
+      ],
+      "verbatim": "Refaire l’isolation d’au moins 700 000 logements par an.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-renovation-02",
+      "candidat": "lfi",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "logement"
+      ],
+      "verbatim": "Mettre fin aux situations de précarité énergétique : privilégier les rénovations complètes, interdire réellement la location des passoires thermiques, renforcer les programmes de détection des passoires énergétiques, cibler les aides à la rénovation en fonction des revenus des ménages.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-renovation-03",
+      "candidat": "lfi",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "logement",
+        "climat-attenuation"
+      ],
+      "verbatim": "Remplacer progressivement tous les logements chauffés au fioul par des chauffages qui produisent moins d’émissions de gaz à effet de serre comme des pompes à chaleur.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-renovation-04",
+      "candidat": "lfi",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "logement"
+      ],
+      "verbatim": "Conditionner l’obtention de labels écologiques à des résultats énergétiques concrets et vérifiés pour les bâtiments neufs comme pour les rénovations thermiques.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-renovation-05",
+      "candidat": "lfi",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "emploi-travail"
+      ],
+      "verbatim": "Se donner les moyens : former les professionnels, mettre en place un « guichet unique » public pour les propriétaires devant faire cette rénovation.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-renovation-06",
+      "candidat": "lfi",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "forets"
+      ],
+      "verbatim": "Réduire l’impact écologique des travaux : développer l’éco construction avec des matériaux bioclimatiques (bois/terre/paille)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-renovation-07",
+      "candidat": "lfi",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite"
+      ],
+      "verbatim": "Optimiser les usages de l’énergie dans le secteur tertiaire : extinctions nocturnes des bâtiments, équipement LED obligatoires, extinction du chauffage et des répartiteurs informatiques lorsque les bureaux sont inoccupés, etc.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
+      "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-adaptation-01",
+      "candidat": "lfi",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation",
+        "securite-civile"
+      ],
+      "verbatim": "Renforcer la résilience des territoires ultramarins face aux risques naturels majeurs en améliorant les dispositifs de prévention, de gestion de crise et de réparation, avec des solutions innovantes et des moyens adaptés aux besoins des populations.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s3",
+      "rubrique_origine": "Chapitre 12.3 — Les Outre-mer, avant-postes de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-adaptation-02",
+      "candidat": "lfi",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation",
+        "eau"
+      ],
+      "verbatim": "Veiller à l’actualisation régulière et ambitieuse des plans de prévention des risques naturels d’inondation (PPRi) et des plans de gestion des risques d’inondation (PGRI)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-adaptation-03",
+      "candidat": "lfi",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation",
+        "securite-civile",
+        "forets"
+      ],
+      "verbatim": "Renforcer les moyens humains et matériels de lutte contre les feux de forêt.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-01",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Redécouper les Régions à partir des bassins versants et leur confier l’eau comme première responsabilité.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s2",
+      "rubrique_origine": "Chapitre 12.2 — L’organisation de l’État au service de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-02",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Consacrer une « règle bleue » qui applique le principe de la « règle verte » (ne pas prendre à la nature davantage qu’elle ne peut reconstituer) à l’eau pour son usage et pour la protection de sa qualité.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-03",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Inscrire l’eau comme bien commun et la protection de l’ensemble de son cycle, y compris les nappes phréatiques, les rivières et les fleuves, dans la Constitution.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-04",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau",
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Renforcer les effectifs de la police de l’eau et des inspecteurs de l’environnement présents sur tous les territoires pour contrôler plus strictement le captage par les industries d’eau en bouteille et par le secteur agricole, surveiller le débit des forages déclarés, fermer les forages illégaux, et empêcher toute pollution industrielle ou agricole.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-05",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Mettre fin au déclassement des cours d’eau et rétablir les cours d’eau déclassés.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-06",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Atteindre le très bon état écologique et chimique de tous les cours d’eau (fleuves, rivières, ruisseaux) et réserves souterraines.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-07",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau",
+        "foncier-agricole"
+      ],
+      "verbatim": "Instaurer un moratoire sur le déploiement des méga-bassines.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-08",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Décider démocratiquement d’un nouveau partage sobre de l’eau entre ses usages agricoles, énergétiques, industriels, de transport et de potabilisation en sanctuarisant les débits biologiques et les zones humides.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-ressource-09",
+      "candidat": "lfi",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Redonner des moyens humains et financiers aux agences de l’eau tout en revoyant leur fonctionnement ainsi que celui de leur comité de bassin pour que soit garantie la place des citoyens et des associations.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-01",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Inscrire l’accès à l’eau, son assainissement et le droit à l’hygiène comme droit humain fondamental.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-02",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Réprimer plus durement les coupures d’eau illégales.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-03",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau",
+        "patrimoine-public"
+      ],
+      "verbatim": "Créer un haut-commissariat à l’eau pour organiser une gestion 100 % publique de l’eau, articulée autour de régies publiques locales ouvertes aux citoyens.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-04",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Renforcer la participation des citoyens et des associations dans les syndicats d’assainissement existants et œuvrer à la création de régies publiques et citoyennes locales de l’assainissement, en lien avec les régies publiques de l’eau en attendant leur création.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-05",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Lancer un vaste plan d’investissement dans le renouvellement des canalisations, accélérer les travaux déjà engagés en Outre-mer.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-06",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Rendre effectif le droit à l’eau et à l’assainissement par la gratuité des mètres cubes indispensables à la vie digne et par la suppression de l’abonnement.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-07",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Instaurer une tarification progressive et différenciée selon les usages.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-service-08",
+      "candidat": "lfi",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Mailler le territoire de fontaines à eau, de douches et de sanitaires publics et gratuits.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s2",
+      "rubrique_origine": "Chapitre 14.2 — L’eau, enjeu central pour l’Humanité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-01",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Garantir l’accès à l’eau courante potable à tous les habitants des Outre-mer, quoi qu’il en coûte.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-02",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Rétablir une distribution d’eau de bonne qualité et en volume suffisant dans les territoires d’Outre-mer où le service public de l’eau est défaillant.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-03",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Financer par l’État des travaux urgents de remplacement des canalisations, notamment en Guadeloupe, sur l’adduction d’eau potable et l’assainissement.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-04",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Adopter la régie comme mode de gestion de l’eau et de l’assainissement et prévoir des sanctions conséquentes lorsque les délégataires, concessionnaires et fermiers ne remplissent pas leurs obligations contractuelles, notamment en matière d’entretien des réseaux.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-05",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Déclencher, en cas de pénurie, un plan visant à la distribution de bouteilles d’eau (plan ORSEC-eau) et plafonner leur prix dans tous les endroits où le service public de l’eau potable et de l’assainissement est défaillant.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-06",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Annuler la dette citoyenne résultant du problème de facturation des anciens opérateurs et/ou résultant d’impayés pour service non rendu et cesser le recouvrement forcé de celle-ci.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-07",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Garantir que ni la dette existante, ni les investissements à venir des opérateurs de l’eau, ne seront répercutés sur la facture des usagers de l’eau.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-08",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Mettre en œuvre un plan d’urgence pour résoudre la crise de l’eau à Mayotte.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-eau-outremer-09",
+      "candidat": "lfi",
+      "axe": "eco-eau-outremer",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "En Guadeloupe et en Martinique, reconnaître le statut de crise sanitaire et écologique concernant l’eau potable et son assainissement, la contamination au chlordécone, et les effets cocktails avec d’autres substances dont les conséquences sont inconnues.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s3",
+      "rubrique_origine": "Chapitre 14.3 — Le droit à l’eau dans les Outre-mer",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-biodiversite-01",
+      "candidat": "lfi",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite"
+      ],
+      "verbatim": "Protéger la biodiversité exceptionnelle des Outre-mer.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s3",
+      "rubrique_origine": "Chapitre 12.3 — Les Outre-mer, avant-postes de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-biodiversite-02",
+      "candidat": "lfi",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite"
+      ],
+      "verbatim": "Interdire les dépôts de brevets sur des organismes vivants pour empêcher l’appropriation d’espèces animales et végétales par des entreprises privées.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s6",
+      "rubrique_origine": "Chapitre 14.6 — Sauver l’écosystème et la biodiversité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-biodiversite-03",
+      "candidat": "lfi",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite",
+        "pesticides-intrants"
+      ],
+      "verbatim": "À l’échelle globale : refuser les organismes génétiquement modifiés (OGM), mettre fin aux accords commerciaux internationaux dont les conséquences affectent le climat et la biodiversité.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s6",
+      "rubrique_origine": "Chapitre 14.6 — Sauver l’écosystème et la biodiversité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-biodiversite-04",
+      "candidat": "lfi",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite",
+        "pesticides-intrants",
+        "sols-artificialisation"
+      ],
+      "verbatim": "En France, protéger concrètement les habitats et les espèces : bannir les pesticides en commençant par les interdire autour des zones habitées, lutter contre l’artificialisation des sols en empêchant notamment la multiplication des entrepôts géants, gérer durablement l’eau (dépollution et régies publiques)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s6",
+      "rubrique_origine": "Chapitre 14.6 — Sauver l’écosystème et la biodiversité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-ocean-01",
+      "candidat": "lfi",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "biodiversite"
+      ],
+      "verbatim": "Soutenir les accords internationaux organisant la gestion des biens communs planétaires (traité sur la haute-mer, moratoire sur l’exploitation minière des grands fonds marins, traité sur l’interdiction des plastiques)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s6",
+      "rubrique_origine": "Chapitre 14.6 — Sauver l’écosystème et la biodiversité",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-01",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "biodiversite"
+      ],
+      "verbatim": "Interdire les coupes rases sauf en cas d’impasse sanitaire avérée.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-02",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "patrimoine-public"
+      ],
+      "verbatim": "Augmenter les moyens humains et financiers de l’Office national des forêts et stopper sa privatisation pour lui permettre d’assurer ses missions y compris d’accueil du public.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-03",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets"
+      ],
+      "verbatim": "Inciter à la création de coopératives de petits producteurs et au groupement de la gestion de parcelles forestières privées.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-04",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "emploi-travail"
+      ],
+      "verbatim": "Améliorer les conditions de travail des forestiers : interdire le travail détaché, augmenter les salaires des forestiers, préserver le droit à la retraite anticipée.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-05",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "patrimoine-public"
+      ],
+      "verbatim": "Augmenter la part des forêts publiques notamment par la création d’un droit de préemption publique avec des budgets suffisants et la réquisition des parcelles abandonnées.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-06",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "climat-attenuation"
+      ],
+      "verbatim": "Adapter la politique forestière nationale au changement climatique en imposant, comme conditions aux aides publiques, l’augmentation ou a minima le maintien du stockage de carbone, ainsi que la préservation des écosystèmes.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-07",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "sols-artificialisation"
+      ],
+      "verbatim": "Interdire le dessouchage, dans un but de préservation des sols forestiers, de leur puits carbone et de la biodiversité.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-08",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "biodiversite"
+      ],
+      "verbatim": "Rendre transparentes les autorisations de coupes afin de faciliter le recours de tiers en cas d’incompatibilité avec les objectifs climatiques et de biodiversité auxquels la France s’est engagée.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-09",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "climat-adaptation"
+      ],
+      "verbatim": "Favoriser la diversification en essences et en âges pour des forêts résilientes au changement climatique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-10",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "entreprises"
+      ],
+      "verbatim": "Reconstruire tout le secteur de la transformation du bois avec l’objectif de diversifier les essences et de développer les circuits courts, en mettant en place une formation professionnelle publique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-11",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "entreprises"
+      ],
+      "verbatim": "Rétablir des scieries et encadrer les exportations de bois.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-12",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "energie-production"
+      ],
+      "verbatim": "Encadrer l’usage du bois dans la production d’énergie et favoriser son usage durable dans la construction.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-13",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "biodiversite"
+      ],
+      "verbatim": "Laisser au niveau national 25 % de la surface de la forêt française en libre évolution.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-14",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets"
+      ],
+      "verbatim": "Rompre avec les accords commerciaux participant de l’augmentation de la déforestation importée.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-15",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets"
+      ],
+      "verbatim": "Assurer une traçabilité complète des importations afin de bannir de la commande publique celles liées à la déforestation et contraindre les entreprises à exclure ces produits de leurs approvisionnements.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-forets-16",
+      "candidat": "lfi",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "biodiversite"
+      ],
+      "verbatim": "Accroître la coopération internationale afin de lutter contre les pratiques illégales qui détruisent les forêts (trafic de bois, orpaillage et mines)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s4",
+      "rubrique_origine": "Chapitre 14.4 — Défendre la forêt, poumon de la planète",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-pesticides-01",
+      "candidat": "lfi",
+      "axe": "eco-pesticides",
+      "thematiques": [
+        "pesticides-intrants",
+        "biodiversite"
+      ],
+      "verbatim": "Planifier la réduction progressive des doses d’engrais et de pesticides, interdire immédiatement les plus dangereux (glyphosate, néonicotinoïdes) et l’importation de productions qui en contiennent.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s5",
+      "rubrique_origine": "Chapitre 13.5 — Souveraineté alimentaire et révolution agricole : pour une agriculture écologique et paysanne",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-sols-01",
+      "candidat": "lfi",
+      "axe": "eco-sols",
+      "thematiques": [
+        "sols-artificialisation"
+      ],
+      "verbatim": "Stopper l’étalement urbain : rapprocher les bassins de vie et les bassins d’emploi.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s2",
+      "rubrique_origine": "Chapitre 12.2 — L’organisation de l’État au service de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-sols-02",
+      "candidat": "lfi",
+      "axe": "eco-sols",
+      "thematiques": [
+        "sols-artificialisation",
+        "foncier-agricole",
+        "forets"
+      ],
+      "verbatim": "Mettre en place un plan de protection généralisée du foncier agricole, forestier et naturel en vue de mettre en œuvre le « zéro artificialisation nette » des sols dès 2027 en hexagone.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s5",
+      "rubrique_origine": "Chapitre 13.5 — Souveraineté alimentaire et révolution agricole : pour une agriculture écologique et paysanne [proposition coupée en deux blocs dans la source, recollée]",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-dechets-01",
+      "candidat": "lfi",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Abolir l’obsolescence programmée et allonger les durées de garantie légale des produits :",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-dechets-02",
+      "candidat": "lfi",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Contre la surproduction de déchets : interdire immédiatement et réellement les plastiques à usage unique, remettre en place la consigne pour les bouteilles et bocaux en verre, rendre obligatoires le recyclage, le compostage ou l’incinération (dans cet ordre de priorité), généraliser, financer et accélérer la mise en place de filières de réemploi et de substitution aux matériaux d’origine fossile.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-dechets-03",
+      "candidat": "lfi",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "emploi-travail"
+      ],
+      "verbatim": "Créer un service public de la réparation et du réemploi, avec la mise en place de formations pour certains métiers (notamment électricité, électronique, bâtiment, textile)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-dechets-04",
+      "candidat": "lfi",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Rendre obligatoire l’écoconception des produits afin de limiter l’utilisation de ressources non renouvelables et ouvrir des formations obligatoires dédiées au low-tech et à l’écoconception dans toutes les écoles publiques d’ingénieurs et de design.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-dechets-05",
+      "candidat": "lfi",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Généraliser au plus vite l’indice de durabilité des produits (possibilité d’être réparé, durée de vie, etc.), rendre obligatoire la disponibilité et l’encadrement du prix des pièces de rechange et empêcher la mise sur le marché de celles qui auraient un score de durabilité insuffisant.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-dechets-06",
+      "candidat": "lfi",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Créer un réseau national de déchèteries/recyclage.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-publicite-01",
+      "candidat": "lfi",
+      "axe": "eco-publicite",
+      "thematiques": [
+        "publicite-consommation"
+      ],
+      "verbatim": "Faire reculer la publicité dans l’espace public, interdire le dépôt de prospectus publicitaires commerciaux dans les boîtes aux lettres, les panneaux publicitaires numériques et le démarchage téléphonique commercial.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-publicite-02",
+      "candidat": "lfi",
+      "axe": "eco-publicite",
+      "thematiques": [
+        "publicite-consommation",
+        "climat-attenuation"
+      ],
+      "verbatim": "Interdire la publicité des produits et services les plus émetteurs de gaz à effet de serre sur tous les supports publicitaires.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-publicite-03",
+      "candidat": "lfi",
+      "axe": "eco-publicite",
+      "thematiques": [
+        "publicite-consommation"
+      ],
+      "verbatim": "Diminuer les possibilités de diffusion de publicité à la télévision.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-publicite-04",
+      "candidat": "lfi",
+      "axe": "eco-publicite",
+      "thematiques": [
+        "publicite-consommation",
+        "climat-attenuation"
+      ],
+      "verbatim": "Interdire toute allégation pouvant donner l’impression d’une absence d’impact sur le climat de certains produits comme les mentions « neutres en carbone » sur les étiquettes des produits ou dans la publicité.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s4",
+      "rubrique_origine": "Chapitre 13.4 — Consommer autrement, une France « zéro déchet »",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-investissement-01",
+      "candidat": "lfi",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "dette-budget"
+      ],
+      "verbatim": "Lancer un plan massif de 200 milliards d’euros d’investissements écologiquement et socialement utiles.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s1",
+      "rubrique_origine": "Chapitre 13.1 — Investir pour lancer la bifurcation de notre économie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-investissement-02",
+      "candidat": "lfi",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "energie-production",
+        "patrimoine-public"
+      ],
+      "verbatim": "Utiliser cet argent pour investir et rétablir des pôles publics dans l’énergie, les transports et la santé afin de réindustrialiser le pays par des plans de filières au service de la bifurcation écologique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s1",
+      "rubrique_origine": "Chapitre 13.1 — Investir pour lancer la bifurcation de notre économie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-emplois-transition-01",
+      "candidat": "lfi",
+      "axe": "eco-emplois-transition",
+      "thematiques": [
+        "emploi-travail",
+        "energie-production"
+      ],
+      "verbatim": "Développer l’offre locale de formation aux métiers de la bifurcation écologique (électricité et déploiement d’énergies renouvelables, utilisation de matériaux biosourcées locaux, foresterie et pêche durables)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s3",
+      "rubrique_origine": "Chapitre 12.3 — Les Outre-mer, avant-postes de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-emplois-transition-02",
+      "candidat": "lfi",
+      "axe": "eco-emplois-transition",
+      "thematiques": [
+        "emploi-travail"
+      ],
+      "verbatim": "Instaurer la possibilité de souscrire à un contrat de bifurcation écologique garantissant les droits sociaux, la formation, et la rémunération, pour assurer un cadre protecteur pour les salariés en cas de reconversion d’une entreprise.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s1",
+      "rubrique_origine": "Chapitre 13.1 — Investir pour lancer la bifurcation de notre économie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-emplois-transition-03",
+      "candidat": "lfi",
+      "axe": "eco-emplois-transition",
+      "thematiques": [
+        "emploi-travail",
+        "entreprises"
+      ],
+      "verbatim": "Créer un droit de reprise d’activité préférentiel pour les salariés dans un but écologique en cas de cession ou de fermeture d’entreprise.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s1",
+      "rubrique_origine": "Chapitre 13.1 — Investir pour lancer la bifurcation de notre économie",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-condition-animale-01",
+      "candidat": "lfi",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Interdire les fermes-usines.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s5",
+      "rubrique_origine": "Chapitre 14.5 — Rompre avec la maltraitance animale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-condition-animale-02",
+      "candidat": "lfi",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Limiter les temps de transport des animaux vivants.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s5",
+      "rubrique_origine": "Chapitre 14.5 — Rompre avec la maltraitance animale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-condition-animale-03",
+      "candidat": "lfi",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Interdire les pratiques cruelles : poules et lapins en batterie, broyage des poussins, ablation de la queue, etc.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s5",
+      "rubrique_origine": "Chapitre 14.5 — Rompre avec la maltraitance animale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-condition-animale-04",
+      "candidat": "lfi",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Interdire l’élevage d’animaux, même domestiques, pour la fourrure, et interdire tout commerce de fourrure.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s5",
+      "rubrique_origine": "Chapitre 14.5 — Rompre avec la maltraitance animale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-condition-animale-05",
+      "candidat": "lfi",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Déterminer de nouvelles normes pour améliorer les conditions d’élevage : accès à l’air libre, pâturage, densité, surface minimale.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s5",
+      "rubrique_origine": "Chapitre 14.5 — Rompre avec la maltraitance animale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-condition-animale-06",
+      "candidat": "lfi",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Orienter la recherche vers des méthodes substitutives et éthiques qui permettraient de ne plus expérimenter sur les animaux.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s5",
+      "rubrique_origine": "Chapitre 14.5 — Rompre avec la maltraitance animale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-condition-animale-07",
+      "candidat": "lfi",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "biodiversite"
+      ],
+      "verbatim": "Interdire les pratiques de chasse et de « loisirs » cruelles pour les animaux (déterrage, chasses à courre, corrida, exploitation des animaux sauvages dans les cirques et les delphinariums, etc.)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s5",
+      "rubrique_origine": "Chapitre 14.5 — Rompre avec la maltraitance animale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-condition-animale-08",
+      "candidat": "lfi",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "peche-aquaculture"
+      ],
+      "verbatim": "Instaurer un moratoire sur les élevages de saumon et interdire les élevages de céphalopodes avant qu’ils ne se développent en France.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s5",
+      "rubrique_origine": "Chapitre 14.5 — Rompre avec la maltraitance animale",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-toxiques-01",
+      "candidat": "lfi",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques",
+        "justice-environnementale"
+      ],
+      "verbatim": "Aider les victimes des pollutions et les lanceurs d’alerte sur la base d’un fonds abondé par les consommations polluantes.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s1",
+      "rubrique_origine": "Chapitre 14.1 — Pollutions : désempoisonner le monde",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-toxiques-02",
+      "candidat": "lfi",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale"
+      ],
+      "verbatim": "Redonner à l’État et aux collectivités locales les moyens humains et financiers pour appliquer le triptyque « surveiller, contrôler, sanctionner » et réguler face au libre marché.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s1",
+      "rubrique_origine": "Chapitre 14.1 — Pollutions : désempoisonner le monde",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-toxiques-03",
+      "candidat": "lfi",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "justice-environnementale"
+      ],
+      "verbatim": "Revenir sur les affaiblissements des normes environnementales et des mécanismes de participation publique décidés lors du précédent quinquennat (décrets permettant aux préfets de déroger aux normes environnementales, par exemple)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s1",
+      "rubrique_origine": "Chapitre 14.1 — Pollutions : désempoisonner le monde",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-toxiques-04",
+      "candidat": "lfi",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Établir un plan d’urgence pour la dépollution rapide des régions durablement polluées en France, dont en priorité la Guadeloupe et la Martinique victimes du chlordécone et créer un fonds d’indemnisation spécifique des victimes, offrant une réparation intégrale pour toutes les victimes de maladies liées au chlordécone, qu’elles soient professionnelles ou environnementales.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s1",
+      "rubrique_origine": "Chapitre 14.1 — Pollutions : désempoisonner le monde",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-toxiques-05",
+      "candidat": "lfi",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques",
+        "nucleaire"
+      ],
+      "verbatim": "Prendre en charge et indemniser les victimes, y compris indirectes, des essais nucléaires français et reconnaître leurs dommages environnementaux, en particulier en Polynésie.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s1",
+      "rubrique_origine": "Chapitre 14.1 — Pollutions : désempoisonner le monde",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-toxiques-06",
+      "candidat": "lfi",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale"
+      ],
+      "verbatim": "Gérer les risques industriels avec la création d’une autorité de sûreté indépendante des risques industriels, augmenter le nombre d’inspecteurs des Installations classées pour la protection de l’environnement (ICPE) et augmenter le seuil de l’amende maximale pour les ICPE à 500 000 euros (contre 15 000 euros actuellement)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s1",
+      "rubrique_origine": "Chapitre 14.1 — Pollutions : désempoisonner le monde",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-toxiques-07",
+      "candidat": "lfi",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale"
+      ],
+      "verbatim": "Arrêter les activités dangereuses pour la santé et l’environnement, interdire les produits chimiques les plus nocifs – comme les engrais à base de nitrate d’ammonium – et les polluants éternels, planifier la reconversion des travailleurs vers des secteurs d’activité utiles (énergie, assainissement et gestion des déchets)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre14/s1",
+      "rubrique_origine": "Chapitre 14.1 — Pollutions : désempoisonner le monde",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    }
+  ]
+}

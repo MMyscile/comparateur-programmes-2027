@@ -1,0 +1,141 @@
+{
+  "_draft": {
+    "statut": "BROUILLON — à relire et valider par l'éditeur avant fusion dans data/candidats/<id>.json",
+    "chantier": "Axe EXISTANT « fisc-verte » (Fiscalité environnementale) — passe courte de comblement : fiscalité et protection commerciale à motif écologique, mises en reliquat par les 3 passes du chantier Écologie",
+    "produit_le": "2026-07-31",
+    "rapport": "data/drafts/fisc-verte.rapport.md",
+    "lots_precedents": "data/drafts/{lfi,ecologistes}-ecologie*.draft.json — ce lot ne les modifie pas et n'en reprend aucune mesure",
+    "avertissement_axes": "AUCUN axe nouveau. L'axe 'fisc-verte' existe déjà dans data/axes.json (ordre 11, baseline vérifiée le 2026-07-29) et n'a pas été modifié. ⚠️ Sa baseline ne couvre pas le volet douanier/MACF que ce lot fait entrer : pistes au §5 du rapport, à faire vérifier par verificateur-sources.",
+    "avertissement_thematiques": "Certaines valeurs du champ 'thematiques' renvoient à des thématiques PROPOSÉES, absentes de data/taxonomie.json : 'climat-attenuation' et 'mobilites' (proposées au §5 de data/drafts/ecologie.rapport.md) et 'commerce-exterieur' (NOUVELLE proposition de ce lot, sous le méta-thème europe-international-defense — cf. §4 du rapport). Existantes et inchangées : 'fiscalite-verte', 'entreprises', 'cooperation-europeenne', 'niches-depenses-fiscales'.",
+    "candidats": [
+      "ecologistes",
+      "lfi"
+    ],
+    "source_lue": "Archives brutes (lot < 10 mesures, cf. enrichissement §6.1 du rapport industrie) : data/sources/raw/lfi-melenchon2027-2025_html.tar.gz → lfi_sub/chapitre{9_s2,12_s3,13_s5}.html ; data/sources/raw/ecologistes_vdef-programme_pdf.tar.gz → « VDEF Programme.pdf » p. 78. Miroirs .md utilisés en contrôle croisé uniquement.",
+    "perimetre": "Écologistes ch. 20 propositions 7 et 8 ; LFI 9.2 (blocs 6, 7, 8, 9), 12.3 (bloc 2), 13.5 (bloc 8). Reliquats balayés et candidats écartés listés au §3 du rapport.",
+    "volume": 8
+  },
+  "mesures": [
+    {
+      "id": "eco-fisc-verte-2",
+      "candidat": "ecologistes",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur",
+        "entreprises",
+        "climat-attenuation",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Étendre les protections réglementaires et douanières dans les industries stratégiques comme les semi-conducteurs, les médicaments, les technologies de pointe, les batteries et les voitures électriques, les panneaux solaires, l’éolien, la réparation, l’industrie textile, de la chimie, la production des matériaux (acier bas-carbone, papier) et le raffinage des minerais… Conditionner les investissements de plus de 100 millions d’euros en Europe à des transferts de technologie, la création de coentreprises européennes, des quotas d’embauche d’européens, l’investissement en recherche développement et un plan de décarbonation.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=78",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 7, badge [EUROPE]) ; p. 78",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-3",
+      "candidat": "ecologistes",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur",
+        "climat-attenuation",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Améliorer le protectionnisme écologique et social aux frontières de l’Europe. Adopter des clauses de sauvegarde pour accélérer le développement d’une industrie décarbonée face à la redirection des flux commerciaux chinois vers l’Union européenne (sur le modèle des mesures pour l’acier). Envisager l’hypothèse de dévaluer l’euro vis-à-vis de la monnaie chinoise (le renminbi). Étendre le périmètre et accélérer la mise en œuvre du Mécanisme d’ajustement carbone aux frontières (MACF). Dénoncer puis renégocier l’accord du 27 juillet 2025 entre les Etats-Unis et l’UE sur les droits de douane afin d’imposer une réciprocité douanière.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=78",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 8, badge [EUROPE]) ; p. 78",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-verte-01",
+      "candidat": "lfi",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur"
+      ],
+      "verbatim": "Faire l’inventaire et l’évaluation des accords déjà appliqués et imposer le respect des normes sociales et écologiques pour la commercialisation des produits importés en France.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s2",
+      "rubrique_origine": "Chapitre 9.2 — Réindustrialiser et relocaliser pour assurer notre indépendance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-verte-02",
+      "candidat": "lfi",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur",
+        "climat-attenuation"
+      ],
+      "verbatim": "Instaurer des droits de douane sur des critères écologiques (émissions carbone, pollutions, empreinte hydrique, par exemple)",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s2",
+      "rubrique_origine": "Chapitre 9.2 — Réindustrialiser et relocaliser pour assurer notre indépendance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-verte-03",
+      "candidat": "lfi",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur"
+      ],
+      "verbatim": "Instaurer une taxe kilométrique aux frontières de la France pour dissuader les délocalisations et l’importation de produits trop éloignés.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s2",
+      "rubrique_origine": "Chapitre 9.2 — Réindustrialiser et relocaliser pour assurer notre indépendance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-verte-04",
+      "candidat": "lfi",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur",
+        "climat-attenuation"
+      ],
+      "verbatim": "Instaurer un bouclier douanier via une taxe kilométrique en faveur des productions locales à faible empreinte écologique.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre12/s3",
+      "rubrique_origine": "Chapitre 12.3 — Les Outre-mer, avant-postes de la planification écologique",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-verte-05",
+      "candidat": "lfi",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "commerce-exterieur"
+      ],
+      "verbatim": "Instaurer un protectionnisme écologique en fonction des conditions de production et de rémunération du travail agricole : appliquer la clause de sauvegarde pour interdire l’importation de produits mettant en cause une norme sanitaire nationale et garantir un prix minimum d’entrée face à la concurrence déloyale.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s5",
+      "rubrique_origine": "Chapitre 13.5 — Souveraineté alimentaire et révolution agricole : pour une agriculture écologique et paysanne",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "lfi-fisc-verte-06",
+      "candidat": "lfi",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "niches-depenses-fiscales",
+        "mobilites",
+        "commerce-exterieur"
+      ],
+      "verbatim": "Mettre fin aux niches fiscales sur le kérosène pour limiter le dumping du e-commerce depuis l’étranger.",
+      "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre9/s2",
+      "rubrique_origine": "Chapitre 9.2 — Réindustrialiser et relocaliser pour assurer notre indépendance",
+      "date_publication": "2025-01-28",
+      "etat_maturite": "mur"
+    }
+  ]
+}
