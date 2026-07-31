@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "check-data": "node scripts/check-data.mjs",
-    "etat-sources": "node scripts/etat-sources.mjs"
+    "etat-sources": "node scripts/etat-sources.mjs",
+    "attente": "node scripts/attente.mjs"
   },
   "dependencies": {
     "next": "^15.5.21",

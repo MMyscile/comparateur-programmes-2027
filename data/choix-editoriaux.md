@@ -183,3 +183,187 @@ Cotag `addictions` (principal — le fond : le tabac n'est pas un stupéfiant) +
 (rattachement au chapitre source, et cohérence avec l'axe `just-drogues` où la mesure s'affiche).
 Sans le second tag, la mesure était invisible sous le filtre « Drogues & stupéfiants » alors
 qu'elle vit dans l'axe drogues — paradoxe corrigé par le multi-étiquetage.
+
+---
+
+# Chantier « Écologie, climat & énergie » — arbitrages du 2026-07-31
+
+> Décisions prises pendant l'intégration du 3ᵉ méta-thème (LFI + Écologistes). Contexte :
+> quatre passes d'extraction successives (périmètre initial, complément, industrie, fiscalité
+> environnementale). Les rapports correspondants vivent dans `data/drafts/*.rapport.md` puis
+> `data/rapports/` après fusion.
+
+## 16. Le sens de la mesure prime, jamais l'équilibre entre programmes (2026-07-31)
+
+- **Décision.** Un choix de classement ne se justifie **jamais** par le nombre de mesures qu'il
+  laisserait au programme d'en face. Seuls comptent l'objet de politique publique de la mesure et
+  les précédents de ce journal. Si un programme est muet là où l'autre est prolixe, c'est un
+  **résultat** de la comparaison.
+- **Alternative écartée.** Ajuster le découpage des axes pour équilibrer les colonnes.
+- **Pourquoi.** Une grille qui épouse le contenu des programmes en présence bougerait à chaque
+  nouveau candidat, et les versions datées cesseraient d'être comparables entre elles. C'est aussi
+  une violation du test de renversement : le classement doit tenir sans regarder qui propose quoi.
+- **Exception, à ne pas confondre.** Un déséquilibre qui vient de **notre propre découpage
+  d'extraction** (un chapitre non confié à l'agent) est un artefact : il se corrige par une passe
+  complémentaire, pas par un choix de classement. Trois passes de complément ont été déclenchées
+  à ce titre pendant ce chantier.
+- **Pour revenir dessus.** Assumer que la grille s'adapte au corpus disponible.
+
+## 17. Test de la baseline pour créer (ou fusionner) un axe (2026-07-31)
+
+- **Décision.** On crée un axe distinct si — et seulement si — on peut lui écrire **une** baseline
+  chiffrable et sourçable. Si le regroupement envisagé en exigerait plusieurs sans recouvrement,
+  c'est qu'il s'agit de plusieurs axes ; si deux axes partageraient la même baseline, c'est qu'ils
+  n'en font qu'un.
+- **Pourquoi.** L'axe porte la baseline (modèle v0.2). Le test rend la décision vérifiable au lieu
+  de reposer sur l'intuition, et il découle directement du garde-fou n° 5.
+- **Applications de ce chantier.** Eau scindée en 3 axes (état écologique des cours d'eau / taux de
+  fuite des réseaux / situation ultramarine = trois réalités mesurées séparément) ; axe
+  « Décarbonation de l'industrie » séparé de « Financement de la transition » (émissions du secteur
+  industriel et contrats de transition vs volume d'investissement climat) ; antibiorésistance
+  renvoyée au chantier Santé (consommation d'antibiotiques et taux de résistance = baseline sans
+  recouvrement avec les seuils de qualité de l'air et le régime ICPE de l'axe toxiques).
+- **Publié.** Ce test est désormais énoncé dans la version publique de la règle de classement
+  (`data/regle-mapping.md`), avec l'exemple de l'eau.
+
+## 18. Condition animale — révision de la décision n° 13, scindée au grain mesure (2026-07-31)
+
+- **Décision.** L'axe unique `agri-condition-animale` est **scindé en deux** : les mesures portant
+  sur l'élevage, l'aquaculture, l'abattage et le transport d'animaux restent sous
+  `agriculture-alimentation` ; celles portant sur la chasse, la corrida, les animaux de compagnie,
+  la personnalité juridique de l'animal et l'expérimentation animale passent sous
+  `ecologie-climat-energie`.
+- **Alternative écartée.** Garder un axe unique, d'un côté ou de l'autre.
+- **Pourquoi.** La décision n° 13 avait été prise **sur le seul corpus LFI** (« 6 mesures sur 8
+  portent sur les pratiques d'élevage », LFI 14.5). L'arrivée d'Écologistes ch. 8 a déplacé la base
+  factuelle : sur les 20 mesures de l'axe complet, environ 60 % relèvent de l'élevage et 30 % n'ont
+  aucun rapport avec l'agriculture (EHPAD, expérimentation, statut juridique). Application de la
+  décision n° 15 : c'est le contenu de la mesure qui décide, pas le chapitre source.
+- **Pour revenir dessus.** Refusionner les deux axes et choisir un méta-thème unique.
+
+## 19. Pesticides → `agriculture-alimentation` (2026-07-31)
+
+- **Décision.** L'axe pesticides est rangé sous Agriculture & alimentation, cotags écologie
+  (`biodiversite`, `eau`) pour rester visible sous le filtre Écologie.
+- **Pourquoi.** Réguler les doses de pesticides, c'est réguler une **pratique agricole** —
+  application directe de la décision n° 11 (l'activité relève d'Agriculture) et cohérence avec le
+  traitement de l'élevage. Baseline attendue : le plan Écophyto, copiloté Agriculture/Écologie.
+- **À noter.** Écologistes range sa proposition dans un chapitre *biodiversité*, LFI dans un
+  chapitre *agriculture* : même objet, deux cadrages — divergence à documenter dans
+  `ecart_synthese`, comme les drogues (santé vs sécurité) au pilote Justice.
+
+## 20. Justice environnementale regroupée sur `just-justice` (2026-07-31)
+
+- **Décision.** La mesure LFI « crime climatique de dissimulation » rejoint l'axe existant
+  `just-justice`, où vivent déjà les 3 mesures de justice environnementale (`lfi-justice-12`,
+  `eco-justice-08`, `eco-justice-11`). Un cotag écologie est ajouté **aux quatre**.
+- **Alternative écartée.** La classer sur `eco-planification` (défaut proposé par l'agent).
+- **Pourquoi.** Les trois mesures existantes étaient jusqu'ici invisibles depuis la page Écologie —
+  angle mort corrigé au passage. Surtout, disperser des objets voisins sur deux axes **selon le
+  candidat** échouerait au test de renversement.
+- **Pour revenir dessus.** Créer un axe « justice environnementale » sous Écologie et y déplacer les quatre.
+
+## 21. Silences réels vs artefacts de découpage — l'eau en Outre-mer (2026-07-31)
+
+- **Décision.** L'axe `eco-eau-outremer` est conservé bien qu'aucune mesure Écologistes ne s'y
+  range (9 LFI / 0 EELV).
+- **Pourquoi.** Le chapitre 46 d'Écologistes (Outre-mer) a été **lu intégralement** : il ne contient
+  aucune proposition dédiée à l'eau. Le déséquilibre est donc un **silence réel** — LFI consacre une
+  sous-section au sujet, Écologistes traite l'Outre-mer comme un chapitre de territoire. Le
+  redistribuer ferait disparaître une information. Application de la décision n° 16.
+- **Chantier ouvert.** Le site ne distingue pas encore, dans une cellule vide, le silence réel de
+  l'extraction non faite. Marqueur axe × candidat à concevoir (voir `TODO.md`).
+
+## 22. Douane et fiscalité écologiques regroupées sur `fisc-verte` (2026-07-31)
+
+- **Décision.** Les propositions de protection commerciale à motif écologique des deux programmes
+  (Écologistes 20-7/20-8, LFI 9.2 et 12.3) sont extraites sur l'axe **existant** `fisc-verte`,
+  et non dispersées en reliquats.
+- **Pourquoi.** Trois passes successives les avaient mises en reliquat chacune pour de bonnes
+  raisons locales ; le résultat était qu'un sujet traité par les **deux** candidats n'avait aucun
+  lieu de comparaison. L'axe passe de 1 candidat à 2.
+- **Conséquence à traiter.** La baseline de `fisc-verte` (budget vert, malus au poids, TIRUERT) ne
+  couvre plus l'axe élargi, et son `ecart_synthese` devient faux. À reprendre par
+  `verificateur-sources` avant publication.
+
+## 23. Thématiques créées pendant ce chantier (2026-07-31)
+
+- `collectivites-territoriales` sous `institutions-democratie` — ce méta-thème n'avait **aucune**
+  thématique. Sert au tag institutionnel des mesures de gouvernance locale de la planification
+  écologique, et resservira au chantier Institutions (reliquats du ch. 12.2 de LFI).
+- `commerce-exterieur` sous `europe-international-defense` — aucune étagère n'existait pour la
+  douane, alors que la majorité des mesures de `fisc-verte` sont douanières. (L'axe compte
+  13 mesures après la micro-passe du 31/07 : 7 Écologistes / 6 LFI.)
+
+## Cas-frontières tranchés au fil du chantier (2026-07-31)
+
+| Mesure | Décision | Motif |
+|---|---|---|
+| EELV 1-12 (marché carbone ETS2, fonds social climat) | axe `eco-energie-prix`, cotag `fiscalite-verte` | l'ETS2 touche le prix payé pour se chauffer et se déplacer |
+| EELV 1-5 (Certificats d'économie d'énergie) | axe `eco-renovation`, cotag `energie-prix-marche` | les CEE financent d'abord des travaux de rénovation |
+| EELV 10-5 (taxe foncière / THRS, EPFL) | axe `eco-sols`, cotags `finances-locales` + `impots-menages` | objectif affiché = préserver les terres agricoles ; l'outil est fiscal |
+| EELV 10-3 et 10-4 (SAFER, accaparement des terres) | axe `eco-sols`, thématique principale `foncier-agricole` | indissociables du bloc foncier du même chapitre (ZAN, loi foncière) |
+| LFI 12.2 (redécoupage par bassins versants) | axe `eco-eau-ressource`, cotag `collectivites-territoriales` | l'objet visé est la gestion de l'eau ; le redécoupage en est l'instrument |
+| LFI 12.2 (communes, assemblées citoyennes, ingénierie territoriale) | axe `eco-planification`, cotag `collectivites-territoriales` | le chapitre s'intitule « L'organisation de l'État au service de la planification écologique » : leur objet **est** la planification |
+| EELV 4-7/4-8 + LFI 14.4 (sécurité civile, pompiers, feux) | axe `eco-adaptation`, cotag `securite-civile` | motif explicite dans les deux programmes : intensification des risques climatiques |
+| EELV 4-9 (tourisme durable, surtourisme) | axe `eco-adaptation`, cotags `mobilites` + `logement` | même forme que la mesure « territoires montagnards » déjà sur l'axe : une activité économique à réorganiser à cause du climat. Sortir l'une imposerait de sortir l'autre |
+| EELV 28-4 (ZFE, Crit'Air) | axe `sante-toxiques`, cotag `mobilites` | objet affiché = qualité de l'air. **Vigilance** : LFI a la position inverse (moratoire), en reliquat Transports — les deux positions ne se rencontreront qu'au chantier Transports, à réunir alors sur un axe commun |
+| EELV 28-6 (antibiorésistance) | **axe « Prévention & santé publique » créé sous `sante`** | baseline sans recouvrement avec l'axe toxiques (décision n° 17). D'abord mise en reliquat, puis classée en application de la décision n° 25 : elle était déjà extraite |
+| LFI 9.3-9 et 13.3 (écoconstruction) | les **deux** publiées | deux propositions réellement publiées dans deux chapitres ; n'en garder qu'une serait une synthèse (garde-fou n° 1) |
+| LFI 9.2 (contrôle des investissements étrangers) et EELV 20-3 (entreprises stratégiques) | **axe « Souveraineté productive & relocalisation » créé sous `economie-travail-entreprises`**, les deux mesures dessus, cotag écologie | objet premier = souveraineté économique, l'écologie n'y est qu'un périmètre. Traitées identiquement des deux côtés (test de renversement). D'abord mises toutes deux en reliquat, puis classées en application de la décision n° 25 |
+| `eco-publicite` | axe distinct de `eco-dechets` | l'objet est la demande, pas le traitement du déchet |
+| Label de l'axe `eco-planification` | « planification écologique » **conservé** | terme employé par l'administration (SGPE) et par les deux programmes, pas seulement par un parti. À reproposer si de nouveaux programmes le rendent marqué |
+
+## 24. La rubrique d'origine est une pièce à verser au dossier (2026-07-31)
+
+- **Décision.** Avant d'arbitrer un cas-frontière, on regarde **où le programme a lui-même rangé la
+  proposition** et **quel motif il lui donne**. Ce n'est pas décisif — la décision n° 15 reste :
+  c'est le contenu de la mesure qui décide, pas le chapitre source — mais c'est un indice fort de
+  l'intention de l'auteur, et il doit être consulté d'emblée plutôt qu'après coup.
+- **Cas qui a motivé la règle.** LFI propose deux fois une « taxe kilométrique aux frontières » :
+  une fois au ch. 9.2 (« Réindustrialiser et relocaliser »), motif = dissuader les délocalisations ;
+  une fois au ch. 12.3 (« Les Outre-mer, avant-postes de la planification écologique »), motif =
+  « productions locales à faible empreinte écologique ». Le programme les distingue lui-même :
+  la seconde va sur `fisc-verte`, la première en reliquat Économie. Les réunir aurait été corriger
+  le programme, pas le restituer.
+- **Règle pratique.** Deux propositions décrivant le même dispositif ne sont pas forcément la même
+  mesure : comparer leurs chapitres et leurs motifs écrits avant de les regrouper.
+- **Publié.** Énoncé dans la version publique de la règle de classement (`data/regle-mapping.md`).
+
+## 25. Créer plutôt qu'attendre — une mesure extraite se classe toujours (2026-07-31)
+
+- **Décision.** Une proposition **déjà extraite** est toujours classée, quitte à créer l'axe ou la
+  thématique qui manque, y compris s'ils relèvent d'un chantier non démarré. On ne la laisse jamais
+  sans rattachement en attendant le chantier compétent.
+- **Frontière.** La règle porte sur ce qu'on a **en main**. Une proposition seulement *repérée*
+  dans un chapitre hors périmètre (non extraite) reste un reliquat : la classer supposerait de
+  découper des axes sur un corpus qu'on n'a pas lu. Le reliquat n'est donc plus un fourre-tout,
+  il a un sens précis — « repéré, pas extrait ».
+- **Pourquoi.** Le multi-étiquetage est une règle publiée (« une mesure peut porter plusieurs
+  étiquettes ») : refuser un tag parce que son chantier n'a pas commencé revient à ne pas
+  appliquer une règle qu'on affiche. Et une thématique mal taillée se renomme mécaniquement,
+  alors qu'une mesure non classée disparaît du site sans que rien ne le signale.
+- **Conséquences immédiates.** Deux décisions prises plus tôt le même jour ont été révisées :
+  l'antibiorésistance (Écologistes 28-6) et les deux mesures de souveraineté productive
+  (LFI 9.2 / Écologistes 20-3) sont classées sur des axes créés pour elles, au lieu d'être
+  renvoyées en reliquat.
+- **Garantie associée.** Cette règle ne tient que si l'on revient effectivement sur ce qui est
+  provisoire. D'où la liste d'attente `data/attente.json` (décision n° 26).
+
+## 26. Liste d'attente unique, avec déclencheur (2026-07-31)
+
+- **Décision.** Un fichier versionné `data/attente.json` recense **deux natures d'entrées** :
+  les **reliquats** (propositions repérées, non extraites, avec verbatim et chantier de
+  destination) et les **à-revoir** (décisions déjà prises sur une base qui peut bouger). Chaque
+  entrée porte un **déclencheur** : ce qui la rend exigible (« le chantier Transports démarre »,
+  « un nouveau candidat est ajouté », « après la primaire du 11/10/2026 »). Validé par
+  `check-data` ; `npm run attente` affiche ce qui est dû.
+- **Pourquoi.** Deux angles morts symétriques, tous deux non outillés jusqu'ici :
+  1. **Les reliquats** vivaient en prose dans de longs rapports. 52 propositions étaient parquées
+     sans qu'aucun script ne les suive, et aucun chantier ne les récupère automatiquement.
+  2. **Les décisions à réexaminer** n'avaient que les lignes « Pour revenir dessus » de ce journal,
+     qui disent *comment* revenir mais jamais *quand*. Démonstration le jour même : la décision
+     n° 13 (condition animale) n'a été révisée que parce qu'on est tombé dessus par hasard en
+     préparant un arbitrage — sa base factuelle s'était écroulée à l'arrivée du 2ᵉ programme, et
+     rien ne l'avait signalé. Avec dix candidats, ce hasard ne se reproduira pas.
+- **Pour revenir dessus.** Revenir aux rapports en prose comme seule mémoire.

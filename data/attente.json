@@ -1,0 +1,117 @@
+{
+  "note": "Liste d'attente unique du projet (décision éditoriale n° 26). Deux natures d'entrées : 'reliquat' = proposition repérée dans un chapitre hors périmètre, non extraite, à traiter au chantier de destination ; 'a-revoir' = décision déjà prise sur une base qui peut bouger. Chaque entrée porte un déclencheur : ce qui la rend exigible. `npm run attente` affiche ce qui est dû.",
+  "declencheurs": {
+    "chantier": "L'ouverture du chantier d'un méta-thème rend exigibles les entrées qui le visent.",
+    "nouveau-candidat": "L'ajout d'un programme au corpus.",
+    "avant-publication": "À traiter avant de publier l'incrément en cours.",
+    "date": "Une date calendaire (champ `date_echeance`)."
+  },
+  "entrees": [
+    {
+      "id": "revoir-condition-animale",
+      "nature": "a-revoir",
+      "objet": "Proportion élevage / hors-élevage de l'axe condition animale",
+      "detail": "La décision n° 13 a été prise sur le seul corpus LFI (6 mesures sur 8 portant sur l'élevage), puis révisée par la décision n° 18 à l'arrivée d'Écologistes (60 % élevage sur 20 mesures). Le partage entre l'axe Agriculture et l'axe Écologie repose sur cette proportion : elle bougera encore.",
+      "declencheur": "nouveau-candidat",
+      "reference": "data/choix-editoriaux.md, décisions 13 et 18",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-label-eco-planification",
+      "nature": "a-revoir",
+      "objet": "Label de l'axe eco-planification (« planification écologique »)",
+      "detail": "Terme conservé parce qu'employé par l'administration (SGPE) et par les deux programmes en base, donc non marqué. À reproposer s'il devient un marqueur partisan discriminant entre candidats.",
+      "declencheur": "nouveau-candidat",
+      "reference": "data/choix-editoriaux.md, tableau des cas-frontières du 2026-07-31",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-thematiques-education",
+      "nature": "a-revoir",
+      "objet": "Découpage des thématiques du méta-thème Éducation, recherche & jeunesse",
+      "detail": "Les thématiques `recherche` et `formation` ont été créées sur un échantillon de 2 mesures (recherche maritime, lycée de la mer), alors que le méta-thème n'en avait aucune. À réexaminer avec tout le corpus sous les yeux. « formation professionnelle » a été écarté comme intitulé : en France il désigne un domaine précis (apprentissage, formation continue) qui ne couvre pas la formation initiale.",
+      "declencheur": "chantier",
+      "chantier": "education-recherche-jeunesse",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-thematiques-institutions",
+      "nature": "a-revoir",
+      "objet": "Découpage des thématiques du méta-thème Institutions & démocratie",
+      "detail": "La thématique `collectivites-territoriales` a été créée seule, sur les mesures de gouvernance locale de la planification écologique ; le méta-thème n'en avait aucune. Les reliquats du ch. 12.2 de LFI (eurorégions, droit à la différenciation, recomposition des assemblées régionales) l'attendent.",
+      "declencheur": "chantier",
+      "chantier": "institutions-democratie",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-thematique-commerce-exterieur",
+      "nature": "a-revoir",
+      "objet": "Thématique commerce-exterieur",
+      "detail": "Créée sous `europe-international-defense` pour les mesures douanières de l'axe fisc-verte, alors que le méta-thème n'avait pas d'étagère pour la douane. À réexaminer quand le chantier définira sa grille.",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-axe-prevention-sante",
+      "nature": "a-revoir",
+      "objet": "Axe « Prévention & santé publique », créé pour une seule mesure",
+      "detail": "Créé sous `sante` pour accueillir Écologistes 28-6 (antibiorésistance) en application de la décision n° 25, plutôt que de la laisser sans rattachement. Découpage à refondre avec le corpus santé complet.",
+      "declencheur": "chantier",
+      "chantier": "sante",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-axe-souverainete-productive",
+      "nature": "a-revoir",
+      "objet": "Axe « Souveraineté productive & relocalisation », créé pour deux mesures",
+      "detail": "Créé sous `economie-travail-entreprises` pour LFI 9.2 (contrôle des investissements étrangers) et Écologistes 20-3 (entreprises stratégiques à verdir), en application de la décision n° 25. Les 11 reliquats Économie du ch. 9.2 de LFI le rejoindront probablement.",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-zfe-positions-opposees",
+      "nature": "a-revoir",
+      "objet": "Réunir les positions opposées sur les ZFE sur un même axe",
+      "detail": "Écologistes 28-4 (refonte des ZFE et vignettes Crit'Air) est sur `sante-toxiques`, motif qualité de l'air. LFI a la position inverse (moratoire sur les ZFE), en reliquat Transports. Tant que les deux ne sont pas sur le même axe, le lecteur peut conclure à tort qu'un seul candidat se prononce.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-baseline-fisc-verte",
+      "nature": "a-revoir",
+      "objet": "Baseline et ecart_synthese de l'axe fisc-verte",
+      "detail": "L'axe est passé de 1 à 13 mesures, majoritairement douanières. Sa baseline (budget vert, malus au poids, TIRUERT) ne couvre aucun fait pour 10 des 13 mesures, et son ecart_synthese (« aucune mesure LFI captée ») devient factuellement faux à la fusion. 8 pistes sourçables proposées dans data/rapports/fisc-verte.rapport.md, non vérifiées.",
+      "declencheur": "avant-publication",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-eco-pesticides-base-mince",
+      "nature": "a-revoir",
+      "objet": "L'axe pesticides repose sur 1 mesure par candidat",
+      "detail": "Base très mince des deux côtés. Écologistes ch. 12 prop. 7 (dépendance aux intrants), 12 (LMR, effet cocktail) et 13 (nouveaux OGM) n'ont pas été extraites : elles sont hors périmètre du chantier Écologie.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-cellule-vide-axe-candidat",
+      "nature": "a-revoir",
+      "objet": "Distinguer à l'affichage le silence réel de l'extraction non faite",
+      "detail": "Sur un axe où un candidat n'a aucune mesure, le site affiche une cellule vide sans rien dire. Trois situations indistinguables pour le lecteur : le candidat ne traite pas le sujet (information réelle, cas de eco-eau-outremer), l'extraction n'a pas encore eu lieu, ou il le traite sous un autre axe. Marqueur axe × candidat à concevoir.",
+      "declencheur": "avant-publication",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-statut-candidat-ecologistes",
+      "nature": "a-revoir",
+      "objet": "Statut de candidat de Marine Tondelier après la primaire de la gauche unie",
+      "detail": "Désignée par son parti le 08/12/2025 (86 %), sous réserve de la primaire du 11/10/2026. La réserve est documentée dans le champ etat_programme de data/candidats/ecologistes.json et doit être actée après le scrutin.",
+      "declencheur": "date",
+      "date_echeance": "2026-10-11",
+      "date_inscription": "2026-07-31"
+    }
+  ]
+}

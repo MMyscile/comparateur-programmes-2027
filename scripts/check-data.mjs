@@ -122,6 +122,37 @@ if (existsSync(join(racine, "data/glossaire.json"))) {
   }
 }
 
+// --- Liste d'attente (data/attente.json) ----------------------------------
+// Reliquats et décisions à réexaminer (décision éditoriale n° 26). Le risque qu'on couvre ici :
+// une entrée dont le déclencheur pointe vers un méta-thème inexistant ne serait jamais affichée
+// par `npm run attente` — elle disparaîtrait sans erreur visible, ce qui est précisément le
+// travers que cette liste corrige.
+if (existsSync(join(racine, "data/attente.json"))) {
+  const entrees = lire("data/attente.json").entrees ?? [];
+  const DECLENCHEURS = new Set(["chantier", "nouveau-candidat", "avant-publication", "date"]);
+  const NATURES = new Set(["reliquat", "a-revoir"]);
+  const idsVus = new Set();
+  for (const e of entrees) {
+    const f = `data/attente.json [${e.id ?? "sans id"}]`;
+    for (const champ of ["id", "nature", "objet", "declencheur", "date_inscription"])
+      if (!e[champ]) err(f, `champ manquant ou vide : ${champ}`);
+    if (e.id && idsVus.has(e.id)) err(f, "id en double");
+    idsVus.add(e.id);
+    if (e.nature && !NATURES.has(e.nature)) err(f, `nature invalide : "${e.nature}"`);
+    if (e.declencheur && !DECLENCHEURS.has(e.declencheur))
+      err(f, `declencheur invalide : "${e.declencheur}"`);
+    if (e.declencheur === "chantier" && !themesIds.has(e.chantier))
+      err(f, `chantier inconnu ou manquant : "${e.chantier}" (méta-thème de data/taxonomie.json attendu)`);
+    if (e.declencheur === "date" && !/^\d{4}-\d{2}-\d{2}$/.test(e.date_echeance ?? ""))
+      err(f, "date_echeance : date AAAA-MM-JJ requise quand declencheur = date");
+    if (e.date_inscription && !/^\d{4}-\d{2}-\d{2}$/.test(e.date_inscription))
+      err(f, `date_inscription : date AAAA-MM-JJ attendue (reçu : "${e.date_inscription}")`);
+    // Un reliquat sans verbatim obligerait à rouvrir la source : c'est ce qu'on veut éviter.
+    if (e.nature === "reliquat" && !e.verbatim)
+      err(f, "verbatim requis pour un reliquat (sinon il faut relire la source du programme)");
+  }
+}
+
 // --- Verdict --------------------------------------------------------------
 if (erreurs.length > 0) {
   console.error(`✗ check-data : ${erreurs.length} erreur(s)\n`);
