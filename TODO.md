@@ -106,7 +106,14 @@ cohérence chiffre ↔ source) est à ajouter — même geste que `npm run verif
 1. `extracteur` sur le méta-thème, les 2 programmes, depuis les `.md` → brouillons `data/drafts/`.
 2. **Arbitrage éditeur** : cas-frontières, cotags, nouveaux axes (en questions fermées).
 3. Fusion brouillons → `data/candidats/*.json` ; brouillons supprimés.
-4. `verificateur-sources` sur les baselines des nouveaux axes → stamper `baseline_verifiee`.
+4. `verificateur-sources` sur les baselines des nouveaux axes, puis
+   **`npm run appliquer-baselines -- <rapport.md>`** : le script parse le rapport et écrit
+   `baseline_reel` / `source_baseline` / `baseline_verifiee` sans recopie à la main (une passe =
+   ~10 textes de 1 000 signes et ~70 URLs, la recopie y introduit des écarts silencieux).
+   `--essai` pour voir sans écrire ; il refuse d'écraser une baseline existante différente sans
+   `--remplacer=<id>`, ce qui protège les corrections éditoriales d'un rejeu de rapport.
+   ⚠️ Le script ne teste pas les URLs : le faire à part (le balayage du 02/08 a trouvé 2 liens
+   morts sur des axes pourtant stampés « vérifiés »).
 5. `glossaire` sur les nouveaux verbatims → arbitrer / intégrer.
 6. `check-data` + build + QC navigateur + commit + **tag daté** (versions, pas flux).
 
