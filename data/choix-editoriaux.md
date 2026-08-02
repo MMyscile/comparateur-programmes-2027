@@ -116,6 +116,7 @@ Lexique des termes techniques récurrents :
 - **Pour revenir dessus.** Inverser principal/cotag sur les rattachements concernés (LFI 5.2).
 
 ### 13. Condition animale → `agriculture-alimentation` + thématique `condition-animale` (2026-07-28)
+> ⚠️ **Révisée par la décision n° 18** (2026-07-31) : l'axe est scindé en deux. Lire les deux.
 - **Décision.** Élevage et bien-être animal en Agriculture (application de la décision n°11 : l'élevage est une activité), cotag écologie ; thématique fine `condition-animale` créée dans `taxonomie.json`.
 - **Alternative.** Écologie (fidèle au cadrage « harmonie avec la nature » de la source LFI) ; la protection des espèces **sauvages** y reste.
 - **Pourquoi.** Sur pièces (LFI 14.5) : 6 mesures sur 8 portent sur les pratiques d'élevage.
@@ -254,6 +255,9 @@ qu'elle vit dans l'axe drogues — paradoxe corrigé par le multi-étiquetage.
 
 ## 20. Justice environnementale regroupée sur `just-justice` (2026-07-31)
 
+> ⚠️ **Révisée par la décision n° 29** le jour même : le bloc passe de 4 à 7 mesures et part sur un
+> axe dédié sous Écologie — la porte de sortie que cette décision-ci avait elle-même écrite.
+
 - **Décision.** La mesure LFI « crime climatique de dissimulation » rejoint l'axe existant
   `just-justice`, où vivent déjà les 3 mesures de justice environnementale (`lfi-justice-12`,
   `eco-justice-08`, `eco-justice-11`). Un cotag écologie est ajouté **aux quatre**.
@@ -275,6 +279,9 @@ qu'elle vit dans l'axe drogues — paradoxe corrigé par le multi-étiquetage.
   l'extraction non faite. Marqueur axe × candidat à concevoir (voir `TODO.md`).
 
 ## 22. Douane et fiscalité écologiques regroupées sur `fisc-verte` (2026-07-31)
+
+> ⚠️ **Complétée par la décision n° 28** le jour même : ce qu'elle tranchait tient (la douane
+> écologique ne retourne pas en reliquat), mais les 13 mesures sont réparties sur **deux** axes.
 
 - **Décision.** Les propositions de protection commerciale à motif écologique des deux programmes
   (Écologistes 20-7/20-8, LFI 9.2 et 12.3) sont extraites sur l'axe **existant** `fisc-verte`,
@@ -367,3 +374,142 @@ qu'elle vit dans l'axe drogues — paradoxe corrigé par le multi-étiquetage.
      préparant un arbitrage — sa base factuelle s'était écroulée à l'arrivée du 2ᵉ programme, et
      rien ne l'avait signalé. Avec dix candidats, ce hasard ne se reproduira pas.
 - **Pour revenir dessus.** Revenir aux rapports en prose comme seule mémoire.
+
+## 27. Les arbitrages restants du chantier Écologie, passés au filtre des règles 16, 17, 24 et 25 (2026-07-31)
+
+> Les quatre rapports d'extraction du chantier laissaient **28 questions ouvertes**. Elles ont été
+> reprises une par une et confrontées aux règles générales posées le même jour. Celles que les règles
+> tranchent sont ci-dessous **avec la règle invoquée**, pour que chaque ligne soit vérifiable par un
+> lecteur qui ne referait pas le raisonnement. Trois ne sont pas tranchables ainsi — les règles se
+> taisent, ou elles contredisent une décision antérieure : elles sont listées au §27.e et attendent
+> l'éditeur. Les questions sont numérotées comme dans les rapports (`data/drafts/*.rapport.md`,
+> déplacés dans `data/rapports/` après fusion).
+
+### 27.a Passe complémentaire — anomalies de source (§6.1)
+
+| Anomalie | Décision | Règle invoquée |
+|---|---|---|
+| LFI 18.2 : deux propositions dans un seul bloc HTML, séparées par `\x0b` + « • » | **Découpage confirmé** en `lfi-ocean-20` et `lfi-ocean-21` ; le fait est consigné dans leur `rubrique_origine`. La section 18.2 compte donc 6 blocs mais 7 propositions | modèle v0.2 (« une mesure = une proposition ») ; les laisser réunies serait une synthèse (garde-fou n° 1). La n° 24 confirme : le programme leur donne deux objets distincts (navires de souveraineté / puissance polaire) |
+| EELV ch. 11 : propositions 8 (p. 46) et 9 (p. 47) au texte identique à deux détails typographiques près | **Une seule extraite** (prop. 8). Duplication de la source, à cheval sur un saut de page, consignée comme telle | n° 24 *a contrario* : même chapitre, même motif, même texte — rien ne les distingue, ce n'est pas deux propositions. Extraire les deux créerait une mesure fantôme |
+| EELV : renvois internes dans le verbatim (ch. 12 prop. 8 : « [cf aussi la proposition […] 8-2] ») | **Conservés dans le verbatim** | fidélité (garde-fou n° 1) : c'est du texte écrit par les auteurs de la proposition, pas une étiquette de mise en page. À distinguer des badges `[EUROPE]`, remontés au §27.e |
+
+### 27.b Passe complémentaire — questions de classement (§6.2)
+
+| # | Décision | Règle invoquée |
+|---|---|---|
+| Q1 | **Oui** — EELV 2-10 et 20-2 restent sur leur axe sectoriel ; seule 19-7, entièrement consacrée aux métiers, va sur `eco-emplois-transition` | précédents du 1er lot (`lfi-renovation-05`, `lfi-forets-10` : la formation embarquée dans une mesure sectorielle y reste). **n° 16** : l'argument « répondre Non porterait l'axe à 3/3 » est un argument d'équilibre — écarté, le précédent tient seul |
+| Q2 | **Oui** — EELV 28-12 (plastique à usage unique, consigne) sur `eco-dechets`, cotag `pollutions-toxiques` conservé ; 28-11 (export de déchets toxiques) reste sur `sante-toxiques` | **n° 24** : la rubrique est santé, mais le motif écrit et l'instrument sont déchets/consigne. Test de renversement : `lfi-dechets-02` en est le pendant mot pour mot |
+| Q4 | **Oui** — LFI 18.2 (ports, emploi maritime, navires) reste sur `eco-ocean` | test de renversement : EELV ch. 6 « Prendre soin des océans **et de ses artisans** » a été traité ainsi au 1er lot. Le refuser à l'un en l'accordant à l'autre serait un classement par candidat |
+| Q6 | **Non** (le défaut du rapport est renversé) — LFI 16.6-1 (crime d'écocide) et 16.6-2 (tribunal international de justice climatique) ne vont **pas** sur `eco-biodiversite` : elles rejoignent le bloc « justice environnementale » | **n° 20** (ne pas disperser des objets voisins sur deux axes) + **n° 24** (rubrique 16.6 « Étendre les protections du droit international aux biens communs planétaires »). La destination exacte du bloc — `just-justice` ou axe dédié — est remontée au §27.e |
+| Q7 | **Suit le bloc** — LFI 16.6-5 (traité contraignant les multinationales sur les droits humains et l'environnement) va où vont Q6 | **n° 24** (même rubrique, même instrument : du droit international contraignant) + **n° 25** (elle est extraite, elle se classe). Réserve assumée : c'est la plus faible du bloc côté écologie — inscrite à `data/attente.json` |
+| Q8 | **Oui** — LFI 16.6-10 (Casques bleus pour les catastrophes naturelles) sur `eco-adaptation`, cotag `securite-civile` | précédent déjà au journal (EELV 4-7/4-8 + LFI 14.4 : la sécurité civile reste sur `eco-adaptation` quand le motif écrit est le risque climatique) |
+| Q9 | **Oui** — les 9 propositions de LFI 9.3 sont dispersées sur leur axe d'objet | modèle v0.2 : l'axe est l'objet de politique publique. **n° 16** : les grouper sur `eco-investissement` reviendrait à choisir un classement pour étoffer une colonne |
+| Q10 | **Oui** — LFI 9.3-7 (diagnostic des ouvrages d'art) sur `eco-adaptation`, cotag `mobilites` | **n° 24** : la rubrique dit le motif — « Lancer des grands chantiers écologiques, créateurs d'emplois » — et digues et barrages relèvent de la prévention des risques. Réserve ponts/viaducs inscrite à `data/attente.json` (chantier Transports) |
+| Q14 | **Oui** — EELV 11-8 (réduction de la consommation de produits animaux) sur le volet **agricole** de la condition animale, **et création de la thématique `alimentation`** sous `agriculture-alimentation` | **n° 18** (l'élevage reste sous Agriculture) + **n° 24** (l'introduction du ch. 8 cite la proposition explicitement) + **n° 25** : « quitte à créer le tag manquant ». Corrige l'angle mort signalé au §7.3 du rapport — sa dimension alimentaire n'était filtrable nulle part |
+
+### 27.c Passe industrie — LFI ch. 9.2 (§5)
+
+| # | Décision | Règle invoquée |
+|---|---|---|
+| Q2 | **Oui** — `lfi-investissement-06` (Code des marchés publics : entreprises sociales, écologiques et locales) reste sur `eco-investissement` | **n° 25** : elle est extraite, elle se classe, et aucun axe ne la reçoit mieux. Sa jumelle « critères de localisation » est en reliquat Économie : les réunir est inscrit à `data/attente.json` |
+| Q3 | **Oui** — `lfi-investissement-07` (conditionner les aides d'État) reste sur `eco-investissement` | **n° 16** : deux mesures Écologistes portant le même instrument (`eco-investissement-01`, `-04`) y sont déjà ; les séparer supprimerait le lieu où les deux programmes se répondent |
+| Q4 | **Oui** — la réquisition d'intérêt général (9.2 n° 14) reste en reliquat Économie | **n° 24** : aucune finalité écologique écrite, contrairement à `lfi-emplois-transition-03` (« dans un but écologique »). **n° 16** : l'argument « l'axe passerait à 1/4 » est écarté. Frontière de la **n° 25** : repérée, non extraite |
+| Q5 | **Oui** — « Relocaliser les productions essentielles » (9.2 n° 1) reste en reliquat Économie | **n° 24** : motif écrit = indépendance nationale, sans mention écologique. À noter pour la suite : l'axe « Souveraineté productive & relocalisation » existe désormais et cette proposition en est la candidate n° 1 — mais la **frontière de la n° 25** tient (repérée, non extraite), et la classer seule préempterait le découpage d'un chapitre dont 10 autres propositions attendent le chantier Économie |
+| Q7 | **Non** — `lfi-investissement-04` prend `entreprises` en thématique **principale**, `climat-attenuation` en cotag | elle part sur « Souveraineté productive & relocalisation », dont le journal a déjà écrit que l'objet premier est la souveraineté économique. **n° 15** : l'objet décide. L'objection « sinon elle disparaît du filtre Écologie » tombe — le cotag l'y maintient |
+
+### 27.d Passes fiscalité verte et micro-passe (§7 des deux rapports)
+
+| # | Décision | Règle invoquée |
+|---|---|---|
+| FV-Q1 | **Oui** — `lfi-fisc-verte-06` (niches sur le kérosène) sur `fisc-verte`, avec `eco-fisc-verte-1` déjà là. Les deux mesures de **tri général** des niches (`eco-fisc-niches-1`, `lfi-fisc-niches-01`) restent, elles, sur `fisc-niches` | **n° 17** : la baseline de `fisc-verte` nomme précisément le fait mesuré (« 8,1 Md€ de dépenses défavorables à l'environnement, **dont les taux réduits de taxation des carburants** ») ; celle de `fisc-niches` mesure le **stock** de 465 niches, ce que visent les deux mesures de tri. Symétrie préservée : la paire kérosène n'est pas séparée |
+| FV-Q2 | **Oui** — `lfi-fisc-verte-05` (protectionnisme écologique agricole) sur `fisc-verte` | **n° 25** + seul endroit où les deux programmes se répondent sur cet instrument. Réserve « ses critères écrits sont sanitaires et sociaux » inscrite à `data/attente.json` (chantier Agriculture) |
+| FV-Q3 | **Déjà tranchée « Non »** par la décision n° 24 : `lfi-fisc-verte-03` (taxe kilométrique du ch. 9.2) sort de l'axe. ⚠️ **Le brouillon la contient encore : à retirer au moment de la fusion** et à verser en reliquat Économie | n° 24 |
+| FV-Q4 | **Oui** — `eco-fisc-verte-2` (EELV 20-7) sur `fisc-verte` | déjà couverte par la **décision n° 22**, qui nomme explicitement Écologistes 20-7 |
+| FV-Q5 | **Non** — `lfi-fisc-verte-01` prend `commerce-exterieur` en principale et `fiscalite-verte` en cotag ; même renversement pour les autres mesures purement douanières signalées au §8.1 du rapport de micro-passe | la condition posée par le rapport (« possible seulement si la thématique est créée ») est levée : `commerce-exterieur` a été créée par la **décision n° 23**. **n° 15** : l'objet décide |
+| FV-Q6 | **Oui** — cotag `fiscalite-verte` sur les 4 mesures déjà en base (`eco-fisc-niches-1`, `eco-fisc-tva`, `lfi-fisc-niches-01`, `lfi-fisc-fortune`), **sans les déplacer** | procédé déjà retenu deux fois : EELV 1-12, puis les 4 mesures de justice environnementale (**n° 20**). Rendre visible sous un filtre ne demande pas de déplacer un axe |
+| FV-Q7 | **Remontée à l'éditeur** — cf. §27.e | **n° 17** contre décision n° 22 |
+| FV-Q8 | **Sans objet** — la micro-passe demandée a eu lieu | — |
+| µ-Q1 | **Oui** — le Crédit impôt recherche (EELV 25-8 et LFI 5.5) est traité **ensemble** sur `fisc-aides-entreprises` au chantier compétent ; aucune des deux n'entre ici | frontière de la **n° 25** (repérées, non extraites) + **n° 16** : séparer par candidat deux propositions portant le même instrument est un classement qui dépend de qui propose |
+| µ-Q2 | **Oui** — les 4 propositions de fiscalité des transports d'EELV (ch. 3) restent au chantier Mobilités | frontière de la **n° 25** ; l'instrument dominant de chaque proposition est l'interdiction ou la planification modale, pas l'impôt. Réserve sur la fiscalité aérienne (prolongement direct d'`eco-fisc-verte-1`) inscrite à `data/attente.json` |
+| µ-Q3 | **Oui** — LFI 17.2 bloc 1 (« Abroger les accords de libre-échange en vigueur ») reste **hors** de l'axe | **n° 24**, appliquée à la lettre : la rubrique donne le motif — « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme » —, là où Écologistes motive sa proposition jumelle par « le climat et la biodiversité ». Deux motifs, deux mesures. **Conséquence assumée et à écrire** : le lecteur verra une proposition Écologistes sur les traités sans réponse LFI **alors que LFI en a une**. Ce n'est **pas** un silence réel au sens de la n° 21 : à dire dans l'`ecart_synthese` et inscrit à `data/attente.json` |
+| µ-Q4 | **Oui** — `eco-fisc-verte-7` (ressources propres de l'UE) sur `fisc-verte` | **n° 16** : le MACF y est l'instrument nommé, comme dans `eco-fisc-verte-3` ; deux propositions MACF sur deux axes différents ne se compareraient nulle part |
+| µ-Q5 | **Oui** — `eco-fisc-verte-6` (Contribution Climat Énergie aux collectivités) sur `fisc-verte`, cotag `finances-locales` | **n° 17** : le fait qui la mesure est l'état de la composante carbone des accises, pas la DGF — la baseline de `fisc-collectivites` ne dit rien d'elle |
+| µ-Q6 | **Oui** — `eco-fisc-verte-5` (traités de commerce et d'investissement) sur `fisc-verte` | l'axe accueille déjà de la protection commerciale non fiscale (`lfi-fisc-verte-01`) et c'est le vis-à-vis de `lfi-fisc-verte-07`. Cette réponse **nourrit** la question du §27.e : l'axe n'est plus fiscal |
+| µ-Q7 | **Sans objet** — déjà inscrit à `data/attente.json` (`revoir-baseline-fisc-verte`, déclencheur `avant-publication`) | n° 26 |
+
+### 27.e Les trois questions que les règles ne tranchaient pas — arbitrées par l'éditeur le 31/07
+
+Elles sont devenues les décisions **n° 28** (scission de `fisc-verte`), **n° 29** (axe
+« Justice environnementale ») et **n° 30** (badges `[EUROPE]`) ci-dessous.
+
+## 28. `fisc-verte` scindé en deux axes (2026-07-31)
+
+- **Décision.** L'axe est scindé : **« Fiscalité environnementale »** (`fisc-verte`, id conservé —
+  niches sur le kérosène, Contribution Climat Énergie) et **« Commerce extérieur & protection
+  écologique aux frontières »** (axe nouveau — MACF, droits de douane écologiques, clauses miroirs,
+  traités de commerce, protectionnisme écologique agricole).
+- **Règle invoquée : n° 17.** Les deux moitiés n'ont aucune baseline commune : le budget vert, le
+  malus au poids et la TIRUERT d'un côté ; le MACF, les droits de douane et les clauses miroirs de
+  l'autre. 10 des 13 mesures relevaient de la seconde et n'étaient couvertes par aucun fait de la
+  baseline en place. Deux baselines sans recouvrement = deux axes.
+- **Ce que la décision n° 22 tranchait, et qui n'est pas remis en cause.** Elle disait : *ne pas
+  laisser la protection commerciale écologique en reliquat*, parce qu'un sujet traité par les deux
+  candidats n'avait alors aucun lieu de comparaison. Ce motif est tenu — les deux axes ont chacun
+  deux colonnes (≈ 2/1 et ≈ 5/5), rien ne retourne en reliquat. Elle avait choisi le seul axe qui
+  existait à ce moment-là, et signalait elle-même que la baseline ne suivait plus.
+- **Méta-thème du nouvel axe : `europe-international-defense`**, cotags `fiscalite-verte` et
+  écologie pour qu'il reste visible sous le filtre Écologie. Même forme que la décision n° 19
+  (les pesticides sous Agriculture, cotags écologie) : l'objet décide du rangement, les cotags
+  font la visibilité. Le libellé « Fiscalité environnementale », devenu inexact pour 10 mesures
+  sur 13, redevient exact pour les 3 qui restent.
+- **Pour revenir dessus.** Refusionner les deux axes et écrire une baseline qui affirme des faits
+  sans lien de mesure entre eux.
+
+## 29. Axe « Justice environnementale » créé sous Écologie — révision de la décision n° 20 (2026-07-31)
+
+- **Décision.** Les mesures de justice environnementale quittent `just-justice` pour un axe dédié
+  sous `ecologie-climat-energie`, cotag justice. Y entrent les 4 mesures déjà en base
+  (`lfi-justice-12`, `eco-justice-08`, `eco-justice-11`, le crime climatique de dissimulation) et
+  celles arbitrées au §27.b : LFI 16.6-1 (écocide), 16.6-2 (tribunal international de justice
+  climatique), 16.6-5 (traité contraignant les multinationales).
+- **Règle invoquée : n° 17.** La baseline de `just-justice` parle de magistrats pour
+  100 000 habitants et de budget de la justice : elle ne mesure rien de ce bloc. La baseline du
+  nouvel axe est distincte et sourçable (pôles régionaux environnementaux créés par la loi du
+  24 décembre 2020, contentieux de l'environnement, CJIP environnementales).
+- **Pourquoi maintenant.** La décision n° 20 avait regroupé sur `just-justice` quand le bloc
+  comptait 4 mesures, et avait écrit sa propre porte de sortie : « créer un axe justice
+  environnementale sous Écologie et y déplacer les quatre ». Le bloc passe à 7 : la base factuelle
+  a bougé, exactement comme pour la décision n° 13 révisée par la n° 18. Ce que la n° 20 protégeait
+  — ne pas disperser des objets voisins selon le candidat — est mieux servi par un axe qui les
+  tient tous que par un axe qui n'en mesure aucun.
+- **Rangement sous Écologie et non sous Justice** : la thématique `justice-environnementale` est
+  déjà rangée sous `ecologie-climat-energie` dans la taxonomie ; l'inverse créerait deux vérités
+  contradictoires dans la même grille.
+- **Pour revenir dessus.** Redissoudre l'axe dans `just-justice` et assumer la baseline muette.
+
+## 30. Badges `[EUROPE]` : hors du verbatim, et un cotag jugé au fond — des deux côtés (2026-07-31)
+
+- **Décision, en trois temps.**
+  1. Le badge `[EUROPE]` **reste hors du verbatim** et est consigné dans `rubrique_origine`, à côté
+     du chapitre et de la page (« proposition 7, badge [EUROPE] »). Il concerne 46 propositions
+     d'Écologistes. *Vérifié à la fusion du 01/08 : c'était déjà la pratique dans les 5 mesures
+     publiées comme dans les 12 mesures des brouillons — la décision entérine l'existant au lieu de
+     le corriger. Le miroir `.md`, lui, conserve le badge en ligne, ce qui est correct : c'est un
+     miroir de la source, pas une donnée du site.*
+  2. Une mesure qui **relève d'une politique européenne** porte le cotag `cooperation-europeenne`.
+     Le critère est le **fond de la mesure**, pas la présence du badge : le badge est un indice
+     fort côté Écologistes (application de la n° 24 — la source dit où elle range et pourquoi),
+     jamais une preuve suffisante ni nécessaire.
+  3. Le **même critère est repassé sur le corpus LFI**, qui n'étiquette pas ses propositions :
+     le cotag est ajouté là où il manque.
+- **Pourquoi le point 3 n'est pas optionnel.** Sans lui, 46 mesures d'un seul programme
+  remonteraient sous le filtre Europe, et le lecteur conclurait qu'un candidat porte l'échelon
+  européen et l'autre pas — alors que LFI y consacre un chapitre entier (17, « Utiliser tous les
+  leviers d'action face aux institutions européennes » et « Désobéir… »). Ce serait un écart
+  fabriqué par la mise en page d'un programme, pas par les programmes : **n° 16**, et test de
+  renversement.
+- **Alternative écartée.** Un champ de modèle `portee` (européen / national / international) :
+  filtrable et propre, mais renseigné chez le candidat qui étiquette et vide chez l'autre —
+  le même artefact, inscrit cette fois dans le modèle de données.
+- **Pour revenir dessus.** Réintégrer le badge dans le verbatim, en assumant que le lecteur lit
+  « [EUROPE] » comme un mot de la proposition.

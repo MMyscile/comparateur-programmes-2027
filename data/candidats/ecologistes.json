@@ -279,10 +279,10 @@
     {
       "id": "eco-justice-08",
       "candidat": "ecologistes",
-      "axe": "just-justice",
+      "axe": "eco-justice-environnementale",
       "thematiques": [
-        "justice-penale",
-        "justice-environnementale"
+        "justice-environnementale",
+        "justice-penale"
       ],
       "verbatim": "Développer les moyens de la justice environnementale par la création d’un référé unique environnemental et d’un référé en matière d’information. Renforcer les pôles régionaux composés de juges spécialisés en matière environnementale. Redéployer des mécanismes de participation du public (effet suspensif des référés, recours à la double juridiction…). Transposer la directive européenne sur la criminalité environnementale qui étoffe les sanctions et améliore la coopération entre Etats membres.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=169",
@@ -320,10 +320,10 @@
     {
       "id": "eco-justice-11",
       "candidat": "ecologistes",
-      "axe": "just-justice",
+      "axe": "eco-justice-environnementale",
       "thematiques": [
-        "justice-penale",
-        "justice-environnementale"
+        "justice-environnementale",
+        "justice-penale"
       ],
       "verbatim": "Supprimer la convention judiciaire d’intérêt public (CJIP) qui permet de payer plutôt que d’avoir un procès – en particulier en matière environnementale.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=169",
@@ -758,7 +758,8 @@
       "axe": "fisc-niches",
       "thematiques": [
         "niches-depenses-fiscales",
-        "dette-budget"
+        "dette-budget",
+        "fiscalite-verte"
       ],
       "verbatim": "Mieux maîtriser les dépenses publiques inutiles et fossiles. Diminuer et conditionner les subventions à l’enseignement privé. Recentrer et verdir le Crédit Impôt Recherche sur les PME et ETI. Mutualiser les achats publics. Supprimer les niches fiscales défavorables au climat. Réformer les barèmes kilométriques et le régime fiscal des voitures de fonction. Supprimer l’abattement fiscal de 10 % pour les retraités. Revoir les modalités coûteuses et inutiles de la politique d’immigration (OQTF non exécutées, centres de rétention).",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=67",
@@ -1008,6 +1009,1465 @@
       "verbatim": "Encadrer les géants de la fintech et des cryptomonnaies. Soumettre les plateformes financières numériques privées et les émetteurs de cryptoactifs aux mêmes obligations prudentielles que les banques : transparence, fonds propres, protection des consommateurs. Renforcer la régulation des crypto-monnaies pour lutter contre le blanchiment d’argent (LCB-FT) en attribuant à l’Autorité européenne des marchés financiers (ESMA) l’exclusivité de la délivrance des licences pour les cryptomonnaies. Obliger les émetteurs de stablecoins ou d’autres monnaies à détenir la majorité des actifs sous-jacents en dépôt auprès de la BCE et/ou en actifs liquides de haute qualité et limiter les avoirs à 20 000€.",
       "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=71",
       "rubrique_origine": "Chapitre 18 — Mettre la finance au service de l’économie réelle (proposition 8, badge [EUROPE]) ; p. 71",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-renovation-02",
+      "candidat": "ecologistes",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "logement"
+      ],
+      "verbatim": "Sortir un million de personnes chaque année de la précarité énergétique en atteignant 500 000 rénovations performantes par an via MaPrimeRénov’. Prendre en charge directement le coût des rénovations pour les propriétaires à faible revenu en simplifiant les démarches, en créant un guichet unique d’accompagnement. Augmenter le plafond et élargir les conditions d’octroi de l’Éco-prêt à taux zéro pour les classes moyennes. Développer le « prêt avance rénovation » permettant un prêt hypothécaire finançant le reste à charge et récupérable lors de la vente future du logement ou lors de la succession. Préciser le diagnostic de performance énergétique (DPE) en développant l’étiquette « confort d’été » et en vérifiant que la norme Bâtiment Basse Consommation (BBC) implique une consommation inférieure au maximum de la classe A. Maintenir l'interdiction de la remise en location des logements classés F en 2028 et E en 2034 et n’envisager des exceptions pour les petits propriétaires que sous réserve d’une baisse de loyer temporaire de 30 % et d’un engagement à réaliser des travaux de rénovation dans les deux ans.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=21",
+      "rubrique_origine": "Chapitre 2 — Pouvoir se loger décemment (proposition 8) ; p. 21",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-renovation-03",
+      "candidat": "ecologistes",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "logement",
+        "climat-attenuation"
+      ],
+      "verbatim": "En finir avec les chauffages au fioul en 2032. Viser le changement de système de chauffage de 300 000 ménages par an. Accompagner le changement des chaudières à gaz pour 25 % des ménages en 2032. Remplacer par des pompes à chaleur ou le raccordement à des réseaux de chaleur.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=21",
+      "rubrique_origine": "Chapitre 2 — Pouvoir se loger décemment (proposition 9) ; p. 21",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-renovation-04",
+      "candidat": "ecologistes",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "emploi-travail",
+        "logement"
+      ],
+      "verbatim": "Soutenir et accompagner la reconversion de la filière du bâtiment vers la construction et la rénovation visant la haute qualité environnementale via notamment des matériaux biosourcés ou géosourcés. Rénover les formations initiales et continues. Soutenir la mise en réseau des artisans au niveau local pour renforcer des démarches qualité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=21",
+      "rubrique_origine": "Chapitre 2 — Pouvoir se loger décemment (proposition 10) ; p. 21",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-01",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Réglementer l’écoconception pour allonger la durée des objets et permettre des usages successifs. Rendre les objets du quotidien (machine à laver, téléphone, voitures…) démontables, réparables. Définir un stock et une durée minimale de disponibilité des pièces détachées. Rendre obligatoire un taux minimal de matières premières recyclées et recyclables. Standardiser la documentation et l’information technique permettant la réparabilité. Expérimenter la publication d’un « coût total de possession » par produit ajoutant la consommation et les réparations au prix d’achat. Créer une fiscalité incitative sur le cycle de vie des objets. Augmenter le montant du bonus réparation. Rendre gratuite la labellisation pour les réparateurs. Etendre les indices de durabilité à d’autres objets que les téléviseurs et les lave-linges et en faire une condition de mise sur le marché en imposant une note minimale. Rendre obligatoire la réparabilité des batteries de véhicules électriques et la disponibilité de pièces détachées pendant 20 ans.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=73",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 1) ; p. 73",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-02",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Rendre obligatoire l’écoconception de service numérique pour réduire l’impact environnemental d’un service tout au long de son cycle de vie. Renforcer les exigences du Référentiel Général de l’Ecoconception de Services Numériques (RGESN). Interdire l’obsolescence logicielle programmée. Imposer une durée minimale de mise à disposition du système d’exploitation, des pilotes de périphérique, des mises à jour après la fin de la commercialisation (10 ans pour les téléphones et tablettes ; 15 ans pour les ordinateurs ; 20 ans pour les véhicules). Rendre obligatoire la dissociation entre les mises à jour logicielles collectives (préservation de la sécurité) des mises à jour évolutives afin de pouvoir les refuser si elles diminuent les performances de l’appareil. Élargir le droit d’agir des associations environnementales aux infractions d’obsolescence programmée.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=73",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 2) ; p. 73",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-03",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "sobriete-efficacite"
+      ],
+      "verbatim": "Développer un numérique low tech et sobre en énergie. Investir dans la recherche-développement sur les low tech. Soutenir les entreprises et les associations de réemploi et de mutualisation d’équipement. Interdire effectivement la sérialisation (part-pairing) consistant à assurer le monopole de la réparation aux producteurs sous prétexte de propriété intellectuelle et étendre la durée de la garantie à 10 ans. Généraliser le Passeport Numérique des Produits documentant leur durabilité et leur réparabilité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=73",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 3) ; p. 73",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-04",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Préserver les gisements réemployables. Intégrer systématiquement une phase de pré-tri « réemploi » dans les déchetteries afin d’identifier, d’orienter et de préserver les produits et composants réemployables. Créer un cadastre des gisements issus des entreprises, administrations et des chantiers permettant de partager l’accès. Garantir un accès équitable aux gisements pour éviter la captation par des acteurs dominants et préserver l’accès aux entreprises de l’Économie Sociale et Solidaire. Contribuer à la viabilité économique du recyclage en France ou dans un renforcement de la coopération européenne (par exemple pour le raffinage du cuivre).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=73",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 4) ; p. 73-74 ; proposition coupée par un saut de page dans le PDF, recollée",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-publicite-01",
+      "candidat": "ecologistes",
+      "axe": "eco-publicite",
+      "thematiques": [
+        "publicite-consommation",
+        "climat-attenuation"
+      ],
+      "verbatim": "Encadrer strictement la publicité. Transférer les missions de l’Autorité de Régulation Professionnelle de la Publicité (ARPP) composés de représentants d’entreprises à l’Autorité de Régulation de la Communication Audiovisuelle et Numérique (ARCOM) en renforçant le pouvoir de sanction en cas d’infraction (envisager en particulier un contrôle a priori des publicités en cas d’infraction sur une durée donnée). Intégrer une mention obligatoire incitant à la sobriété et au réemploi sur les produits neufs. Généraliser l’information environnementale utile et vérifiable des consommateurs Interdire la publicité toxique pour les produits fossiles (aviation, voitures thermiques…) ou malsains (aliments ultra-transformés, alcool…). Interdire les écrans publicitaires numériques. Appliquer l’encadrement de la publicité aux influenceurs, aux placements de produits et aux contenus sponsorisés sur les réseaux sociaux. Intégrer dans la future directive Digital Fairness Act l’encadrement de la publicité ciblée en ligne. Interdire les pratiques incitant à la surconsommation (prix barrés, gaming publicitaire…).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=74",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 5) ; p. 74",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-05",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "climat-attenuation"
+      ],
+      "verbatim": "Réduire la part des ordures ménagères et améliorer le traitement des déchets. Généraliser et améliorer la qualité du tri à la source pour les déchets alimentaires pour diminuer la part à traiter. Rendre obligatoire les consignes pour réemploi pour les contenants en aluminium et les bouteilles en verre. Limiter l’incinération et l’enfouissement des déchets par une fermeture progressive des installations. Dans ce délai de transition, améliorer les taux de captage du méthane dans les installations de stockage des déchets non dangereux (ISDND).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=74",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 6) ; p. 74",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-emplois-transition-01",
+      "candidat": "ecologistes",
+      "axe": "eco-emplois-transition",
+      "thematiques": [
+        "emploi-travail",
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Promouvoir les métiers de l’économie circulaire pour faire face à la pénurie de réparateurs et de technicien·nes qualifié·es. Lancer une campagne de communication nationale pour promouvoir l’importance des métiers de la réparation (financée par les éco-organismes). Créer un fonds pour prendre en charge des formations qualifiantes et certifiantes dans chaque région. Intégrer les enjeux et les compétences liées à la circularité dans les formations existantes (CAP, BEP, BTS, écoles d’ingénieurs, de design..).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=74",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 7) ; p. 74",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-06",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire"
+      ],
+      "verbatim": "Réformer le cadre de la Responsabilité Élargie des Producteurs (REP) qui crée un conflit d’intérêt entre un modèle économique fondé sur le renouvellement des produits et l’objectif de réemploi et de réparation. Donner un avis conforme aux parties prenantes (producteurs, réemployeurs, recycleurs, consommateurs, associations environnementales) dans la définition des objectifs, les écomodulations et les cahiers des charges de chaque filière et appliquer des sanctions automatiques par une autorité indépendante en cas de manquement Fixer d’avantages d’écomodulations dans la partie écoconception. Maintenir les éco-organismes dans leur rôle de collecte des éco-contributions. Confier à l’ADEME la gestion des fonds dédiés au réemploi et à la réparation. Exiger la mise en place de malus quand les indices de réparabilité ou de durabilité ne sont pas respectés.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=74",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 8) ; p. 74",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-07",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "publicite-consommation"
+      ],
+      "verbatim": "Appliquer de manière stricte la loi contre la fast fashion. Définir le seuil de nouvelles références à 5000 nouveaux modèles annuels. Refuser la distinction entre fast fashion et ultra fast fashion. Vérifier l’interdiction de la publicité et la promotion des entreprises concernées. Adopter un malus progressif en fonction de l’impact environnemental. Sanctionner les contournements éventuels de la loi.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=75",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 9) ; p. 75",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-08",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Intégrer la standardisation dans l’écoconception européenne. Adopter une ambition haute de standardisation dans le règlement ESPR (Ecodesign for sustainable products regulation). Établir des référentiels européens de process du réemploi. Intégrer les objectifs de réemploi et de réparabilité dans toute révision de directive européenne et marché public européen. Publier un tableau de bord européen permettant de comparer les empreintes matières et les taux de réemploi/réparation par filière et par pays. Corriger les asymétries de concurrences qui favorisent des produits neufs à bas coût en instaurant une préférence européenne sur le réemploi et un alignement de la fiscalité sur la durée d’usage. Faire évoluer la directive-cadre Déchets en directive-cadre Ressources pour répondre au problème le plus en amont possible.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=75",
+      "rubrique_origine": "Chapitre 19 — Prioriser l’économie circulaire (proposition 10, badge [EUROPE]) ; p. 75",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-investissement-01",
+      "candidat": "ecologistes",
+      "axe": "eco-investissement",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises"
+      ],
+      "verbatim": "Créer un fonds souverain assis sur un « livret industrie » rémunéré au même taux garanti que le livret A et ciblé vers des entreprises françaises produisant la majeure partie de leur valeur ajoutée en Europe et se dotant d’un horizon d’investissement long. Conditionner ses investissements au respect de critères de performance environnementale et sociale.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 1) ; p. 77",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-investissement-02",
+      "candidat": "ecologistes",
+      "axe": "eco-industrie-decarbonation",
+      "thematiques": [
+        "climat-attenuation",
+        "entreprises",
+        "emploi-travail"
+      ],
+      "verbatim": "Organiser un Grenelle de l’industrie en vue d’une loi d’orientation et de programmation industrielle visant une nouvelle industrialisation des filières dans le respect des limites planétaires. Planifier la transformation industrielle en concertation avec les territoires pour garantir un redéploiement équilibré et efficace des activités de production et de la Gestion Prévisionnelle de l’Emploi et des Compétences (GPEC) à la hauteur des besoins. Donner les moyens aux régions de soutenir le développement de tissus industriels et de filières par des infrastructures adaptées et la simplification administrative.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 2) ; p. 77",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-investissement-03",
+      "candidat": "ecologistes",
+      "axe": "eco-industrie-decarbonation",
+      "thematiques": [
+        "climat-attenuation",
+        "sobriete-efficacite",
+        "entreprises"
+      ],
+      "verbatim": "Développer la sobriété compétitive des productions industrielles. Diminuer l’impact environnemental des modes de production en soutenant les procédés d’électrification (pompes à chaleur, chaudières industrielles, compression mécanique de vapeur…) via les Certificats d’Economie d’Energie. Soutenir le développement des des low tech. Mutualiser et massifier certains investissements stratégiques bas carbone pour en diminuer le coût et obtenir des garanties publiques car l’amortissement se ferait à long terme en particulier pour le passage à l’hydrogène décarboné par électrolyse.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 4) ; p. 77",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-investissement-04",
+      "candidat": "ecologistes",
+      "axe": "eco-industrie-decarbonation",
+      "thematiques": [
+        "climat-attenuation",
+        "energie-production",
+        "entreprises"
+      ],
+      "verbatim": "Soutenir l’électrification des procédés industriels. Conditionner les aides aux entreprises à des contrats de transition visant l’électrification de la production et une amélioration des conditions de travail des salarié·es. Simplifier et amplifier les aides pour les achats de fours électriques (métallurgie) et de pompes à chaleur, chaudières électriques industrielles et compresseurs mécaniques de vapeur (CMV). Prévoir des clauses de remboursement en cas de délocalisation. Garantir un prix de l’électricité décarboné compétitif pour la décarbonation des industries fortement exposée à la concurrence internationale en établissant un « contrat pour différence » (CPD). Favoriser le déploiement de l’hydrogène bas carbone lorsque pertinent.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 5) ; p. 77",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-01",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale"
+      ],
+      "verbatim": "Interdire l’ensemble des polluants éternels (PFAS) et des perturbateurs endocriniens en application du principe de précaution, - interdiction immédiate pour la nourriture, le textile et les produits de beauté et sous 18 mois pour les autres. Adopter un régime d’exception de 5 à 10 ans au cas par cas pour les usages essentiels définis dans le protocole de Montréal (situations critiques pour la santé et la sécurité sans alternatives comme pour les protections des pompiers ou les dispositifs médicaux). Dépolluer les sites pollués aux PFAS. Adopter des valeurs limites de rejet.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=107",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 1) ; p. 107",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-02",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Orienter des programmes de recherche indépendants pour préciser l’impact sanitaire des toxiques et trouver des alternatives (nanoparticules, plastifiants, mercure, HAP…). Mener des programmes spécifiques sur les effets des toxiques sur les populations vulnérables (perturbateurs endocriniens, infertilité, SOPK…).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 2) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-03",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "justice-environnementale"
+      ],
+      "verbatim": "Faire appliquer systématiquement le principe pollueur-payeur pour que les industriels contribuent à la dépollution des nappes et des sols impactés et à la recherche sur les alternatives aux produits polluants. Élargir la responsabilité des producteurs (REP) et créer des redevances pour faire payer les coûts de dépollution par les entreprises concernées. Améliorer le contrôle des filières REP par les autorités. Intégrer des sanctions plus fermes en cas de non-respect des objectifs.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 3) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-04",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques",
+        "mobilites"
+      ],
+      "verbatim": "Améliorer la qualité de l’air en modifiant les conditions des ZFE (Zones à Faibles Émissions). Développer les Zones à Trafic Limité. Développer une offre de transports collectifs alternative et des parkings en périphérie, soutenir financièrement le changement de véhicule et mettre en place progressivement des moyens de contrôle. Accorder des dérogations pour les petits rouleurs et les professionnels sans alternative. Revoir les vignettes Crit’air pour qu’elles intègrent le poids des véhicules. Installer des détecteurs de prévention et d’information sur la qualité de l’air intérieure dans tous les bâtiments publics.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 4) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-05",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale",
+        "justice-environnementale"
+      ],
+      "verbatim": "Adopter un plan de désintoxication des territoires les plus exposés pour dépolluer, accélérer la reconversion économique dans les bassins industriels, ports et vallées logistiques. Améliorer la dépollution des sols et des eaux et l’indemnisation des victimes du chlordécone en augmentant les montants et en élargissant les critères d’éligibilité du FIVP (Fonds d’indemnisation des victimes des pesticides). Renforcer les droits des riverains et des soignant·es par la création de dispositifs d’alerte et d’accès à l’information environnementale, la reconnaissance du droit à l’expertise indépendante et la protection des professionnels de santé signalant des atteintes à l’environnement ou à la santé publique.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 5) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-06",
+      "candidat": "ecologistes",
+      "axe": "sante-prevention",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques",
+        "eau"
+      ],
+      "verbatim": "Adopter un plan global de réduction de l’antibiorésistance afin de réduire de 30 % l’usage des antibiotiques critiques en santé humaine et animale et éviter l’émergence et la propagation des bactéries résistantes. Promouvoir un usage raisonné des antibiotiques par la publication annuelle des consommations par établissements de santé, par un meilleur ciblage des antibiotiques critiques aux infections graves et documentées et un déploiement des tests rapides. Réduire de moitié les rejets dans l’environnement par la modernisation des stations d’épuration pour éliminer les résidus d’antibiotiques et les gènes de résistances et l’interdiction des rejets d’effluents hospitaliers et pharmaceutiques non traités dans les réseaux d’assainissement. Responsabiliser les laboratoires pharmaceutiques par une meilleure traçabilité dans les chaînes de production et une meilleure labellisation.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=108",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 6) ; p. 108",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-07",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "sante-environnementale"
+      ],
+      "verbatim": "Créer une autorité de sécurité industrielle écologique et sociale visant à unifier les compétences aujourd’hui dispersées (inspection des installations, santé publique, conditions de travail, protection civile) afin de garantir une approche intégrée des risques industriels. Elle disposerait de pouvoirs et de moyens pour prévenir les accidents majeurs, réduire les émissions toxiques et faire respecter le droit à la sûreté des travailleurs et des riverains.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 7) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-08",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Augmenter la protection des Installations classées pour la protection de l’environnement (ICPE). Augmenter le nombre d’inspecteurs et le seuil de l’amende maximale pour les ICPE à 500 000€ (contre 15 000€ actuellement). Étendre les règles des ICPE aux sites d’habitat mobile et précaire en particulier les aires d’accueil des gens du voyage. Contrôler systématiquement les sorties d’exploitation avec des frais à la charge de l’exploitant pour éviter de laisser des sites pollués après une activité industrielle.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 8) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-09",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "sante-environnementale",
+        "pollutions-toxiques"
+      ],
+      "verbatim": "Assurer un droit au silence. S’assurer du respect de la directive européenne de 2002 visant à prévenir et réduire les effets du bruit dans l’environnement. Créer un observatoire du bruit dans chaque région. Accompagner les collectivités pour la mise en place de Plans de Prévention du Bruit dans l’Environnement et faire du calme un objectif d’aménagement urbain à part entière en développant des zones de calme. Améliorer la connaissance du bruit dans les locaux intérieurs – en particulier les cantines scolaires et les crèches.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 9) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-10",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Soutenir une révision du règlement européen de régulation des toxiques REACH en intégrant notamment le plomb comme substance soumise à autorisation. Fonder la réglementation des substances toxiques sur une évaluation indépendante des risques sanitaires et non plus sur les analyses fournies par les industriels. Elargir le champ d’application aux polymères. Accélérer les délais d’identification des substances extrêmement préoccupantes et les assortir de restrictions systématiques. Renforcer les moyens de l’Agence Européenne des Produits Chimiques (ECHA).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 10, badge [EUROPE]) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-toxiques-11",
+      "candidat": "ecologistes",
+      "axe": "sante-toxiques",
+      "thematiques": [
+        "pollutions-toxiques",
+        "dechets-economie-circulaire",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Interdire l’exportation de déchets toxiques de substances dangereuses, de CO2 liquéfié et de pesticides dont l’usage est interdit en Europe. Interdire l’importation de déchets toxiques sauf pour ceux dont le retraitement n’existe qu’en Europe.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 11, badge [EUROPE]) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-dechets-09",
+      "candidat": "ecologistes",
+      "axe": "eco-dechets",
+      "thematiques": [
+        "dechets-economie-circulaire",
+        "pollutions-toxiques",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Sortir du plastique à usage unique en 2040 avec une trajectoire de réduction de la production et de la consommation. Soutenir les négociations pour un traité international de réduction à la source. Créer un régime d’exception au cas par cas dans le domaine médical ou en l’absence d’alternatives. Adopter un calendrier d’arrêt du plastique par secteur d’activité et un régime de sanction dissuasive. Interdire l’utilisation des polymères halogénés (PVC, polymères fluorés) dont la combustion est la plus nocive dès 2028 dans les produits à emballage ménagers et les produits à usage unique. Rendre obligatoire le système de consigne pour les plastiques.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=109",
+      "rubrique_origine": "Chapitre 28 — Sortir de la civilisation des toxiques (proposition 12, badge [EUROPE]) ; p. 109",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-10",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "climat-attenuation",
+        "alimentation"
+      ],
+      "verbatim": "Adopter un plan de réduction progressive de la consommation de produits animaux issue de l’agro-industrie. Atteindre une réduction de 50% de la consommation de protéines animales en 2050. Augmenter les objectifs de consommation de protéines végétales et soutenir la production de légumineuses (soja, lentille, pois chiches).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=46",
+      "rubrique_origine": "Chapitre 11 — Créer un droit à l’alimentation de qualité (proposition 8) ; p. 46",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-11",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "climat-attenuation"
+      ],
+      "verbatim": "Mettre en place un plan de transition de l’élevage. Accompagner la réduction planifiée et progressive des cheptels bovins. Aider à la reconversion des éleveur·ses par le rachat de leurs dettes, des prêts à taux zéro et des accompagnements techniques. Soutenir les élevages herbagers et de plein air et relocaliser l’alimentation animale en remplaçant les tourteaux de soja importés par de l’herbe et des légumineuses. Réviser nos politiques de gestion des épizooties pour les adapter aux enjeux du changement climatique et de la dégradation des écosystèmes. Interdire les mégaporcheries, les mégapoulaillers et les autres mégafermes d’élevage. [cf aussi la proposition pour l’amélioration des conditions de vie des animaux d’élevage 8-2]",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=49",
+      "rubrique_origine": "Chapitre 12 — Transformer notre modèle agricole (proposition 8) ; p. 49-50 ; proposition coupée par un saut de page dans le PDF, recollée",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-12",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "biodiversite"
+      ],
+      "verbatim": "Renforcer les systèmes pastoraux extensifs. Intégrer dans le maintien des activités pastorales des objectifs de préservation de la biodiversité et de respect des impacts sur l’eau et les sols. Renforcer les soutiens aux pâturages en particulier les prairies permanentes. Permettre la cohabitation entre le pastoralisme et les grands prédateurs comme le loup en accompagnant davantage les éleveur·ses humainement et financièrement y compris dans les nouvelles zones de colonisation en plaine. Accompagner le déploiement du sylvopastoralisme notamment dans les territoires exposées aux incendies.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=50",
+      "rubrique_origine": "Chapitre 12 — Transformer notre modèle agricole (proposition 9) ; p. 50",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-planification-01",
+      "candidat": "ecologistes",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation",
+        "energie-production"
+      ],
+      "verbatim": "Planifier les investissements nécessaires à l’atteinte de la neutralité carbone en 2050. Adopter une loi de programmation climatique (dite « loi énergie-climat ») comprenant la sobriété, l’efficacité et les énergies renouvelables (EnR). Modifier les objectifs et les moyens financiers de la troisième Planification Pluriannuelle de l’Énergie (PPE3) pour que la part des ENR atteigne 44 % de la consommation finale brute d’électricité en 2030. Accélérer la conversion de la dernière centrale à charbon à Saint-Avold.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=16",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 1) ; p. 16",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-planification-02",
+      "candidat": "ecologistes",
+      "axe": "eco-planification",
+      "thematiques": [
+        "climat-attenuation",
+        "biodiversite"
+      ],
+      "verbatim": "Créer une planification écologique cohérente pour concilier les trajectoires environnementales (transition énergétique, protection de la biodiversité) et économique (emploi, production, dépendance stratégique). Construire une quatrième Stratégie Nationale Bas Carbone (SNBC-4) ambitieuse ramenant la France sur la trajectoire des engagements pris lors des Accords de Paris. Adopter une Stratégie Nationale Basse Empreinte Matières (SNBEL) avec un objectif « empreinte matières » permettant de réguler l’extraction de ressources (sables, métaux…). Donner les moyens aux services et aux agences de l’État en particulier l’Office français de la biodiversité (OFB), l’Office national des Forêts (ONF), l’ADEME, Météo France et le CEREMA. Élargir le mandat du Haut Conseil pour le Climat à la préservation de la biodiversité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=30",
+      "rubrique_origine": "Chapitre 5 — Restaurer la biodiversité terrestre (proposition 4) ; p. 30",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-energie-01",
+      "candidat": "ecologistes",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production",
+        "climat-attenuation"
+      ],
+      "verbatim": "Amplifier l’électrification des usages qui n’est pas assez rapide pour atteindre la neutralité carbone. Orienter systématiquement la commande publique et les investissements vers la sobriété et l’électrification des bâtiments, des transports et de l’industrie [cf proposition 20-5]. Mieux informer la population et les entreprises du calendrier de sortie des énergies fossiles. Accélérer la décarbonation de l’industrie lourde et faire de l’électrification un levier de compétitivité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=16",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 2) ; p. 16",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-energie-02",
+      "candidat": "ecologistes",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production"
+      ],
+      "verbatim": "Rendre les infrastructures électriques plus robustes. Planifier l’adaptation et la rénovation du réseau électrique pour qu’il soit interconnecté et pilotable à partir de différentes sources d’énergies. Inciter à consommer de l’électricité en heures creuses pour coïncider avec le pic de production solaire. Accélérer le stockage de l’énergie. Développer des mécanismes de flexibilité et de stockage mixte en développant des batteries, la recharge des véhicules électriques pendant la nuit et les stations de transfert d’énergie par pompage (STEP). Amplifier le soutien aux énergies renouvelables thermique et de récupération (centrales au gaz renouvelable obtenu par méthanisation et de méthanation, géothermie, solaire thermique, bois-énergie vertueux…) en particulier pour passer les pointes hivernales.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=16",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 4) ; p. 16",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-energie-03",
+      "candidat": "ecologistes",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production",
+        "entreprises"
+      ],
+      "verbatim": "Structurer et amplifier les filières françaises et européennes de production d’énergies renouvelables. Soutenir fiscalement et réglementairement ces entreprises de la fabrication des composants à la maintenance dans les secteurs stratégiques des parcs éoliens offshore et terrestre, du solaire au sol et de toiture, de la géothermie, du biogaz, des pompes à chaleur (en quantités) et des énergies hydrauliques. Proposer un prêt à taux zéro de la Caisse des Dépôts et Consignations pour les nouveaux projets individuels et collectifs à hauteur de 60 % des devis. Intégrer des mécanismes de partage de la valeur au niveau local (financement participatif, développement du territoire…). Maîtriser le recours aux bioénergies qui sont en concurrence avec d’autres usages en particulier l’alimentation humaine et animale, la santé des sols et la protection de la biodiversité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=17",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 6) ; p. 17",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-energie-04",
+      "candidat": "ecologistes",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production",
+        "sobriete-efficacite"
+      ],
+      "verbatim": "Accélérer l’extension des réseaux de froid et de chaleur. Doter le fonds chaleur de moyens suffisants afin de pouvoir financer le stock de projets en cours dans les territoires et favoriser leur extension au service du logement collectif et des équipements. Rendre les logements et bâtiments tertiaires neufs compatibles et « prêts au raccordement ».",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=17",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 9) ; p. 17",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-energie-05",
+      "candidat": "ecologistes",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production"
+      ],
+      "verbatim": "Soutenir le déploiement de 10 000 communautés énergétiques renouvelables portés par des forces citoyennes ou des collectivités locales pour garantir une énergie locale, solidaire et décentralisée. Créer un cadre juridique et financier facilitateur pour permettre aux habitants, entreprises et collectivités de produire, consommer et partager leur propre énergie renouvelable.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=17",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 10) ; p. 17",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-energie-06",
+      "candidat": "ecologistes",
+      "axe": "eco-energie-mix",
+      "thematiques": [
+        "energie-production",
+        "climat-attenuation"
+      ],
+      "verbatim": "Planifier et financer la fermeture des infrastructures fossiles. Adopter un plan de démantèlement du réseau de distribution de gaz fossile. Reconvertir et dépolluer les stations essences.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=18",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 11) ; p. 18",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-nucleaire-01",
+      "candidat": "ecologistes",
+      "axe": "eco-nucleaire",
+      "thematiques": [
+        "nucleaire",
+        "energie-production"
+      ],
+      "verbatim": "Planifier la sortie du nucléaire. Mettre fin aux nouveaux programmes EPR-2 et SMR extrêmement dispendieux. Planifier l’arrêt progressif du parc constitué de centrales vieillissantes dont la mise hors service doit être étalée sur une vingtaine d’années. Conduire les études pour évaluer les possibilités de prolongation de certaines d’entre elles sous condition stricte de sûreté afin d’éviter l’effet falaise c’est-à-dire une rupture brutale de production et d’approvisionnement. Commander et publier un rapport sur l’ensemble des coûts financiers réels de la filière nucléaire (approvisionnements, investissements en France et à l’étranger, déchets, retraitements, démantèlements…).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=17",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 7) ; p. 17",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-nucleaire-02",
+      "candidat": "ecologistes",
+      "axe": "eco-nucleaire",
+      "thematiques": [
+        "nucleaire"
+      ],
+      "verbatim": "Limiter les risques de dangerosité du nucléaire existant. Revenir sur la fusion de l’Institut de radioprotection et de sûreté nucléaire (IRSN) et l’Autorité de sûreté nucléaire (ASN). Adopter un moratoire sur le projet CIGEO en attendant de mettre sérieusement à l’étude le stockage en sub-surface. Sécuriser les stocks de déchets existants y compris les « matières radioactives » non réutilisées qui ne sont pas considérées comme des déchets. Mettre fin à la sous-traitance pour garantir la sûreté des centrales. Mettre en place une convention collective unique pour les travailleurs du nucléaire. Préserver les savoir-faire et les compétences de la filière et accompagner les salarié·es concerné·es par des contrats collectifs de sécurisation des parcours professionnels et un droit à la reconversion.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=17",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 8) ; p. 17",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-energie-prix-01",
+      "candidat": "ecologistes",
+      "axe": "eco-energie-prix",
+      "thematiques": [
+        "energie-prix-marche",
+        "fiscalite-verte"
+      ],
+      "verbatim": "Découpler le prix de l’électricité du prix des énergies fossiles. Diminuer la fiscalité sur l’électricité en unifiant le socle de l’accise pour le gaz et l’électricité en diminuant la TVA sur l’abonnement électrique. Supprimer progressivement les niches fiscales qui favorisent les énergies fossiles. Refondre le tarif bleu. Réduire la part fixe de l’abonnement et développer une tarification progressive. Développer les « contrats pour différence » pour stabiliser les prix et redistribuer les surplus éventuels aux consommateurs d’électricité.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=16",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 3) ; p. 16",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-energie-prix-02",
+      "candidat": "ecologistes",
+      "axe": "eco-energie-prix",
+      "thematiques": [
+        "fiscalite-verte",
+        "climat-attenuation",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Refuser l’extension du marché carbone aux particuliers. Renégocier la directive ETS2 (Emissions Trading Schemes) tant qu’elle inclut les logements et les transports des ménages. Abonder un « fonds social pour le climat » pour contribuer aux stratégies nationales de transition écologique via une fiscalité sur les entreprises fossiles et les ménages les plus émetteurs en carbone.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=18",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 12, badge [EUROPE]) ; p. 18",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-renovation-01",
+      "candidat": "ecologistes",
+      "axe": "eco-renovation",
+      "thematiques": [
+        "sobriete-efficacite",
+        "energie-prix-marche"
+      ],
+      "verbatim": "Réformer le dispositif des Certificats d’Economie d’Energie (CEE) pour le rendre plus juste, plus transparent et plus efficace. Organiser un débat parlementaire une fois par mandature sur la part d’économies d’énergie et la part dédiée aux ménages modestes et de classe moyenne. Étendre le dispositif aux secteurs qui bénéficient des aides CEE sans y contribuer (industrie, Bâtiment et Travaux Publics….). Mettre un terme à la distribution d’aides CEE aux entreprises pour des actions rentables sans rapport avec ces objectifs. Transformer les CEE précarité en Certificat Carbone précarité pour récompenser les actes de décarbonation. Renforcer la lutte contre la fraude en s’appuyant sur des enquêteurs nationaux et des contrôleurs territoriaux.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=16",
+      "rubrique_origine": "Chapitre 1 — Gagner la bataille du climat (proposition 5) ; p. 16",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-adaptation-01",
+      "candidat": "ecologistes",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation"
+      ],
+      "verbatim": "Doter de 7 milliards d’euros par an d'ici 2032 le Plan national d’adaptation au changement climatique pour affronter les risques climatiques et protéger efficacement la population. Empêcher la mal-adaptation. Lutter contre les feux de forêts et les inondations. Adapter les infrastructures et la protection des personnes et de leurs biens. Rafraîchir les bâtiments publics (hôpitaux, EHPAD, établissements de santé, crèches, écoles et établissements éducatifs) par la rénovation et l’installation de climatiseurs dans les principaux lieux de vie. Créer un droit opposable à des protections solaires aux fenêtres et en leur absence bénéficier d’une réduction de loyer automatique.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=27",
+      "rubrique_origine": "Chapitre 4 — Adapter la France à +4°C (proposition 1) ; p. 27",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-adaptation-02",
+      "candidat": "ecologistes",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation"
+      ],
+      "verbatim": "Réviser les Plans de Prévention des Risques (PPR) sur la base de la Trajectoire d’Adaptation au Changement Climatique. Généraliser des PPR aléas ruissellement. Interdire la construction neuve sur les territoires les plus exposés au risque de catastrophe naturelle. Intégrer l’amélioration de la résilience après une inondation ou une catastrophe en construisant mieux (build back better). Développer l’information des populations. Rendre obligatoire la prise en compte d’une trajectoire de réchauffement à +4°C en 2100 dans tous les plans environnementaux et projets d’investissement des collectivités et entreprises privées et publiques. Sécuriser l’adaptation du réseau routier, des ponts et du réseau ferroviaire.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=27",
+      "rubrique_origine": "Chapitre 4 — Adapter la France à +4°C (proposition 2) ; p. 27",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-adaptation-03",
+      "candidat": "ecologistes",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation",
+        "banques-finance"
+      ],
+      "verbatim": "Créer une Caisse Nationale de Sécurité Climatique qui socialise et unifie la couverture des risques climatiques pour les résidences principales des ménages. Créer une caisse nationale de gestion des risques climatiques gouvernée par l’État, les collectivités territoriales avec une représentation des assurances et mutuelles. Intégrer le Fonds Barnier et le Fonds national d’érosion du trait de côte. Intégrer le risque retrait-gonflement d’argiles (RGA). Remplacer la garantie Cat-Nat (catastrophe naturelle) par une cotisation climatique obligatoire avec un volet universel couvrant les dommages et les frais de nettoyage et un volet à destination des propriétaires et financé par une surprime afin de racheter les résidences principales qui vont être submergées.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=27",
+      "rubrique_origine": "Chapitre 4 — Adapter la France à +4°C (proposition 3) ; p. 27",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-adaptation-04",
+      "candidat": "ecologistes",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation",
+        "ocean-littoral"
+      ],
+      "verbatim": "Contenir l’érosion des littoraux dans l’Hexagone et dans les territoires dits d’Outre-mer. Anticiper sur l’évolution du trait de côte afin d’adapter les Plans Locaux d’Urbanisme (PLU). Protéger les dunes et restaurer les zones humides. Réviser la loi Littoral pour faire rendre plus exigeantes les règles de construction le long de la bande littorale.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=27",
+      "rubrique_origine": "Chapitre 4 — Adapter la France à +4°C (proposition 4) ; p. 27",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-adaptation-05",
+      "candidat": "ecologistes",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation"
+      ],
+      "verbatim": "Accompagner la transformation des territoires montagnards dont l’économie est organisée autour de pratiques impactées par le dérèglement climatique. Délibérer sur le devenir écologique, économique et social de ces territoires et de leurs travailleur·ses en faisant évoluer la réglementation comme la capacité à utiliser les terrains utilisés par les pistes de ski tout au long de l'année et les investissements dans les contrats de plan Etat-Région.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=27",
+      "rubrique_origine": "Chapitre 4 — Adapter la France à +4°C (proposition 5) ; p. 27",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-adaptation-06",
+      "candidat": "ecologistes",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation",
+        "securite-civile"
+      ],
+      "verbatim": "Adapter les missions et les moyens de la sécurité civile à la nouvelle donne climatique. Faire évoluer les missions des pompiers vers la prévention, l’anticipation et la résilience territoriale. Donner les moyens aux Services Départementaux d’Incendies et de Secours (SDIS) d’anticiper les risques (débroussaillement stratégique, zones tampons…), de sensibiliser les populations et d’affiner leurs plans d’intervention. Doubler les moyens matériels de la sécurité civile avec une flotte aérienne renforcée (Canadair, Dash, hélicoptères lourds), des unités spécialisées interrégionales et des stocks stratégiques de matériel. Pouvoir affronter plusieurs méga-incendies simultanés sur plusieurs régions.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=28",
+      "rubrique_origine": "Chapitre 4 — Adapter la France à +4°C (proposition 7) ; p. 28",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-adaptation-07",
+      "candidat": "ecologistes",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "securite-civile",
+        "climat-adaptation"
+      ],
+      "verbatim": "Créer un véritable statut modernisé du pompier volontaire avec une rémunération revalorisée et une protection sociale renforcée. Ouvrir des possibilités de validation universitaire et professionnelle des compétences.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=28",
+      "rubrique_origine": "Chapitre 4 — Adapter la France à +4°C (proposition 8) ; p. 28",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-adaptation-08",
+      "candidat": "ecologistes",
+      "axe": "eco-adaptation",
+      "thematiques": [
+        "climat-adaptation",
+        "climat-attenuation"
+      ],
+      "verbatim": "Inciter à des formes de tourisme durable, décarboné, inter et intra-régional, pourvoyeur d’emplois et de revenus stables, par des politiques d’accès au territoire et d’aménagement développant les transports collectifs, les mobilités douces et la valorisation des patrimoines naturels, culturels et humains. Lutter contre les impacts négatifs du surtourisme par la co-construction de l’accueil touristique avec les habitant·es et en s’appuyant sur les pouvoirs donnés aux maires et aux intercommunalités de réguler le logement touristique.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=28",
+      "rubrique_origine": "Chapitre 4 — Adapter la France à +4°C (proposition 9) ; p. 28",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-ressource-01",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau",
+        "foncier-agricole"
+      ],
+      "verbatim": "Décréter un moratoire sur tous les projets de méga-bassines. Conditionner tout projet de retenue artificielle dont l’eau serait pompée dans les nappes phréatiques et dans les rivières et fleuves à une trajectoire de réduction de la consommation d’eau ou à un projet agroécologique maîtrisé (maraîchage, fruits locaux…) Ralentir le cycle de l’eau en soutenant les démarches favorisant l’infiltration et le stockage de l’eau dans les sols : zones humides, reméandrage des cours d’eau… pour limiter le ruissellement. Soutenir la reconversion des cultures nécessitant le plus d’irrigation.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=41",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 1) ; p. 41",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-ressource-02",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau",
+        "entreprises"
+      ],
+      "verbatim": "Réviser les procédures réglementaires d’autorisation des grandes entreprises de production d’eau en bouteille pour renforcer les exigences sanitaires et environnementales. Limiter la privatisation des sources à but industriel.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=41",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 3) ; p. 41",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-ressource-03",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau",
+        "pesticides-intrants"
+      ],
+      "verbatim": "Atteindre un très bon état écologique et chimique de tous les cours d’eau (fleuves, rivières, ruisseaux) et des réserves souterraines par des plans de sortie des pesticides, de réduction des déchets et engrais azotés et de dépollution. Former les élus locaux à leur responsabilité pénale en ce qui concerne la qualité de l’eau. Mettre aux normes toutes les centrales de méthanisation qui rejettent des jus ou qui ont des bacs de rétention ouverts aux pluies. Augmenter la Redevance pour Pollution Diffuse de 20 % pour diminuer l’usage des engrais azotés.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=41",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 5) ; p. 41",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-ressource-04",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau",
+        "pesticides-intrants"
+      ],
+      "verbatim": "Renforcer la protection des aires d’alimentation de captage d’eau (AAC) où l’eau de pluie s’infiltre. Rendre obligatoire leur délimitation par les collectivités locales. Identifier les zones les plus contributives à l’intérieur de ces aires pour y contrôler plus spécifiquement les interdictions de pesticides. Renforcer le pouvoir du préfet sur ces zones.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=41",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 6) ; p. 41",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-ressource-05",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau",
+        "sols-artificialisation"
+      ],
+      "verbatim": "Préserver la ressource en eau potable par un soutien financier à la désimperméabilisation des sols (parkings, établissements scolaires…). Installer des récupérateurs d’eau dans les bâtiments publics sans les raccorder au réseau d’eau potable. Adopter un programme de réduction graduelle de la consommation des canons à neige. Interdire toute nouvelle retenue d’eau pour cet usage.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=42",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 8) ; p. 42",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-ressource-06",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-ressource",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Améliorer la gouvernance de l’eau. Changer les modes de nomination des membres des comités de bassin et des commissions locales de l’eau pour supprimer la mainmise du préfet. Intégrer une représentation de l’intérêt des écosystèmes. Prévoir la participation des citoyen·nes qui ne fond pas partie d’associations d’usagers. Améliorer les capacités d’initiatives de ces instances. Unifier les systèmes d’information sur l’eau entre les différentes agences de l’eau et le ministère de l’environnement.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=42",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 9) ; p. 42",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-service-01",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Rendre applicable le droit à l’eau potable en imposant aux collectivités territoriales l’adoption de régies publiques de l’eau, la gratuité des premiers mètres cubes d’eau, et des formes de tarification progressive et différentielle selon les usages. Intégrer ce droit à une stratégie plus globale de partage de l’eau avec les paysan·nes et les industriels.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=41",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 2) ; p. 41",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-service-02",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau",
+        "sante-environnementale"
+      ],
+      "verbatim": "Interdire l’usage de plomb laminé et du chlorure de vinyle monomère (CVM) en France. Réformer le constat de risque d’exposition au plomb (CREP) dans les logements pour l’étendre aux eaux, aux tuyaux et aux sols des jardins. Mener des campagnes ciblées de dépistage. Soutenir techniquement et financièrement les opérations de décontamination.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=41",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 4) ; p. 41",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-eau-service-03",
+      "candidat": "ecologistes",
+      "axe": "eco-eau-service",
+      "thematiques": [
+        "eau"
+      ],
+      "verbatim": "Développer les travaux de rénovation des canalisations notamment dans les territoires dits d’Outre-mer, pour la gestion des eaux usées et la limitation des fuites. Définir des objectifs partagés entre les agences de l’eau, les structures intercommunales et l’État.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=42",
+      "rubrique_origine": "Chapitre 9 — Sanctuariser l’accès à l’eau potable (proposition 7) ; p. 42",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-biodiversite-01",
+      "candidat": "ecologistes",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite"
+      ],
+      "verbatim": "Adopter et financer une stratégie de restauration de la biodiversité avec une attention particulière à la protection des pollinisateurs. Intégrer un volet spécifique pour protéger la vie dite « sauvage »et assurer son équilibre avec les activités humaines. Permettre un accès équitable à la nature pour toutes et tous et à ses bénéfices sur le bien-être. Protéger l’intégrité physique des animaux sauvages en faisant respecter les mesures de conservation des espèces protégées et en ouvrant des centres de soin dédiés. Protéger leurs habitats naturels dans et hors des zones de protection renforcées.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=30",
+      "rubrique_origine": "Chapitre 5 — Restaurer la biodiversité terrestre (proposition 2) ; p. 30",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-biodiversite-02",
+      "candidat": "ecologistes",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite",
+        "foncier-agricole"
+      ],
+      "verbatim": "Protéger et développer les continuités écologiques et en particulier les haies. Préserver rigoureusement les haies existantes. Lancer un grand plan de plantation de haies (objectif d’un gain net de 60000 km d’ici 2030). Développer la certification « Label Haie » pour ouvrir le droit à des paiements pour services environnementaux ou des aides fiscales. Revaloriser le « bonus Haie » de la politique agricole commune. Reconstituer des haltes migratoires pour les oiseaux. Reconstituer un maillage bocager notamment par le démembrement des grandes parcelles agricoles intensives.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=30",
+      "rubrique_origine": "Chapitre 5 — Restaurer la biodiversité terrestre (proposition 3) ; p. 30",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-biodiversite-03",
+      "candidat": "ecologistes",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite"
+      ],
+      "verbatim": "Défendre, étendre et financer les parcs nationaux et les réserves naturelles régionales qu’ils soient terrestres ou maritimes. Associer les habitant·es à la gestion de ces espaces et à la protection de leurs territoires. Affecter l’entièreté de la taxe espace naturel sensible à la protection de la biodiversité. Interdire la construction de parcs éoliens ou solaires dans ces zones.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=30",
+      "rubrique_origine": "Chapitre 5 — Restaurer la biodiversité terrestre (proposition 5) ; p. 30",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-biodiversite-04",
+      "candidat": "ecologistes",
+      "axe": "eco-biodiversite",
+      "thematiques": [
+        "biodiversite",
+        "eau"
+      ],
+      "verbatim": "Mieux protéger les zones humides. Abandonner les projets menaçants comme en Camargue afin de préserver la biodiversité, les équilibres écologiques et les fonctions naturelles essentielles de ces territoires. Renforcer l’ambition des mesures de protection. Étendre les zones protégées par la convention de Ramsar.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=30",
+      "rubrique_origine": "Chapitre 5 — Restaurer la biodiversité terrestre (proposition 6) ; p. 30",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-01",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "biodiversite"
+      ],
+      "verbatim": "Protéger strictement 10 % des zones maritimes et des fonds marins d’ici 2030 c’est-à-dire sans aucune activité extractive ni destructrice. Renforcer la protection de 30 % de nos zones maritimes via des Aires Marines Protégées (AMP) en adoptant une définition plus stricte des activités autorisées et en définissant des zones de non-prélèvement (« no take zones »). Fonder les critères de protection sur le consensus scientifique et en particulier les recommandations de l’Union Internationale pour la protection de la nature (UICN). Compléter la protection de nos eaux par une interdiction totale du chalutage dans les 3 milles nautiques en encadrant très strictement les dérogations. Limiter strictement l’artificialisation et les pollutions d’origine terrestre.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=32",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 1) ; p. 32",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-02",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "peche-aquaculture"
+      ],
+      "verbatim": "Développer des alternatives au chalutage de fond et pélagique. Adopter un plan de transition des flottilles pour éviter la surpêche des chaluts et la destruction des écosystèmes marins. Organiser et cofinancer le changement des pratiques vers des arts dormants (lignes, filets, casiers) à faible impact environnemental et forte valeur ajoutée. Interdire les navires-usines et les bateaux de plus de 25 mètres de la bande côtière des 12 milles nautiques. Flécher la moitié des subventions vers les pêcheries durables (impact sur les écosystèmes, consommation d’énergie) et la moitié vers la protection et la restauration des écosystèmes marins. Remplacer les exonérations fiscales sur le carburant bénéficiant aux pêches industrielles en une subvention fixe et égale par bateau.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=32",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 2) ; p. 32",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-03",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "peche-aquaculture",
+        "ocean-littoral"
+      ],
+      "verbatim": "Soutenir la pêche artisanale et les écosystèmes. Rediriger progressivement les subventions et les quotas destinées aux méthodes de pêche destructrices vers la pêche durable. Orienter en priorité les aides vers la transition des pratiques et la protection des écosystèmes marins. Prévoir un plan spécifique d’accompagnement des pêcheurs dans les territoires dits d’Outre-mer qui intègre la question de la lutte contre la pêche illégale (INN). Refondre la gouvernance de la pêche en créant des instances démocratiques représentant la diversité des pêcheurs et des corps de métiers ainsi que l’ensemble des acteurs concernés par l’état de santé de l’océan.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=32",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 3) ; p. 32",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-04",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "peche-aquaculture",
+        "emploi-travail"
+      ],
+      "verbatim": "Mieux reconnaître la pénibilité du travail de la mer. Mieux prendre en compte des horaires atypiques, la précision des critères de pénibilité au niveau de la branche (froid, répétition des gestes), et la possibilité de validation de trimestres de retraite sous un statut de mentorat pour transmettre les compétences. Revaloriser le statut des marins et la place des femmes dans ce milieu proportionnellement très masculin.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=32",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 4) ; p. 32",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-05",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral"
+      ],
+      "verbatim": "Renforcer et subventionner la recherche sur la protection des mondes océaniques pour mieux protéger la biodiversité et soutenir les activités humaines non extractives. Augmenter les moyens et améliorer les conditions de travail à l’IFREMER et à l’Institut de Recherche pour le Développement (IRD).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=32",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 5) ; p. 32",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-06",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral"
+      ],
+      "verbatim": "Faire respecter le droit international par la marine française (statut des eaux internationales, sauvegarde de la vie humaine en mer, moratoire sur l’extraction minière en eaux profondes). Soutenir l’adoption d’un moratoire international sur l’exploitation minière des fonds marins au sein de l’Autorité internationale des fonds marins. Explorer la possibilité de donner une personnalité juridique aux mers et aux océans.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=33",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 6) ; p. 33",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-07",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "peche-aquaculture",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "S’opposer au démantèlement des objectifs sociaux et environnementaux de la politique commune de la pêche (PCP). Accompagner sa mise en œuvre au niveau national pour garantir une protection des habitants et une répartition équitable des possibilités de pêche en particulier l’attribution de quotas à la petite pêche côtière.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=33",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 7, badge [EUROPE]) ; p. 33",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-08",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "peche-aquaculture",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Interdire les pêches destructrices en particulier les dispositifs de concentration de poissons et les navires usines. Interdire l’importation de produits de pêche ne respectant pas les normes de qualité européennes. Accélérer l’interdiction du chalutage de fond dans les Aires Maritimes Protégées.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=33",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 8, badge [EUROPE]) ; p. 33",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-ocean-09",
+      "candidat": "ecologistes",
+      "axe": "eco-ocean",
+      "thematiques": [
+        "ocean-littoral",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Adopter un plan de protection des écosystèmes de la Méditerranée avec l’ensemble des pays riverains en particulier une interdiction des forages pétroliers et l’extraction en eaux profondes. Renégocier les accords de pêche avec les pays tiers pour une répartition juste des quotas de pêche dans une démarche responsable au vu de l’évolution des espèces.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=33",
+      "rubrique_origine": "Chapitre 6 — Prendre soin des océans et de ses artisans (proposition 9, badge [EUROPE]) ; p. 33",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-forets-01",
+      "candidat": "ecologistes",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "biodiversite"
+      ],
+      "verbatim": "Renforcer le service public forestier. Protéger la forêt en priorisant le mandat de protection de la biodiversité donné à l’Office National des Forêts (ONF), en rétablissant les milliers de postes supprimés, en le dotant des moyens de fonctionner, et en garantissant la diversité des essences. Lui donner un statut d’Établissement Public Administratif pour subordonner la dimension économique aux objectifs écologiques. Renforcer les moyens du Centre national de la propriété forestière (CNPF) pour assurer la coordination des politiques forestières auprès des propriétaires privés. Développer les moyens d’observation des forêts pour mieux détecter les situations à risque et mettre en place un programme national de recherche sur la sylviculture et la gestion des forêts irrégulières.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=35",
+      "rubrique_origine": "Chapitre 7 — Protéger nos forêts et l’économie sylvicole (proposition 1) ; p. 35",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-forets-02",
+      "candidat": "ecologistes",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "biodiversite"
+      ],
+      "verbatim": "Promouvoir la gestion durable des forêts par la diversification du couvert forestier (essences adaptées au changement climatique, protection des jeunes pousses, introduction de bocages forestiers et de forêts mosaïques…). Créer et maintenir une trame « vieux bois » dans les forêts anciennes. Soutenir et développer les expérimentations de forêts en libre évolution avec ou sans protection prophylactique contre les épidémies. Supprimer les avantages fiscaux pour les forêts en dépérissement et les monocultures de résineux.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=35",
+      "rubrique_origine": "Chapitre 7 — Protéger nos forêts et l’économie sylvicole (proposition 2) ; p. 35",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-forets-03",
+      "candidat": "ecologistes",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "energie-production"
+      ],
+      "verbatim": "Prioriser la consommation de bois vers le bois d’œuvre (bâtiment, charpente, menuiserie) puis le réemploi et enfin le bois énergie puisque l’approvisionnement ne suit pas la demande. Selon cette logique, réagencer les incitations fiscales et les subventions. Agir sur la sobriété des infrastructures. Interdire les coupes rases dans les vieilles forêts et les limiter à un hectare dans les plantations excepté pour raisons sanitaires et progression de la biodiversité. Interdire les exportations de chêne brut et les bois précieux en dehors de l’Union Européenne.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=35",
+      "rubrique_origine": "Chapitre 7 — Protéger nos forêts et l’économie sylvicole (proposition 3) ; p. 35",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-forets-04",
+      "candidat": "ecologistes",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "entreprises"
+      ],
+      "verbatim": "Développer la filière sylvicole française. Développer les labels de qualité (ex : Bois des Alpes) et du label bas carbone par la commande publique et par une fiscalité incitative. Améliorer la prise en compte de la biodiversité dans les qualifications. Renforcer les mesures d’adaptation et de gestion des forêts publiques et privées (via le prochain Programme national de la forêt et du bois). Protéger les salaires et les conditions de travail des acteurs forestiers et des opérateurs sylvicoles. Développer la formation des maîtres d’œuvre et d’ouvrage à l’utilisation du bois en construction. Encourager les ORE (Obligations réelles environnementales).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=35",
+      "rubrique_origine": "Chapitre 7 — Protéger nos forêts et l’économie sylvicole (proposition 4) ; p. 35",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-forets-05",
+      "candidat": "ecologistes",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets"
+      ],
+      "verbatim": "Adopter un statut de « commun forestier » pour développer la gestion forestière par des communautés d’usagers soucieux de préserver la biodiversité et les services écosystémiques. Mobiliser l’épargne populaire. Interdire la détention spéculative des forêts notamment via des acteurs financiers. Limiter la surface pouvant être détenue par une seule personne. Accompagner la restructuration des parcelles forestières par le droit de préemption. Lancer une campagne pour inviter les propriétaires inactifs à céder leurs petites parcelles dans des structures à but non lucratif.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=35",
+      "rubrique_origine": "Chapitre 7 — Protéger nos forêts et l’économie sylvicole (proposition 5) ; p. 35",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-forets-06",
+      "candidat": "ecologistes",
+      "axe": "eco-forets",
+      "thematiques": [
+        "forets",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Faire appliquer immédiatement les règlements visant à empêcher la déforestation et la dégradation des forêts (RDUE), qui vise à empêcher la mise sur le marché européen de produits contribuant à la déforestation ou à la dégradation des forêts.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=35",
+      "rubrique_origine": "Chapitre 7 — Protéger nos forêts et l’économie sylvicole (proposition 6, badge [EUROPE]) ; p. 35",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-pesticides-01",
+      "candidat": "ecologistes",
+      "axe": "agri-pesticides",
+      "thematiques": [
+        "pesticides-intrants",
+        "biodiversite",
+        "sante-environnementale"
+      ],
+      "verbatim": "Planifier une sortie progressive des pesticides de synthèse et des engrais azotés à l’horizon 2050. Diffuser les pratiques agroécologiques et renforcer les programmes de recherche agroécologique. Interdire immédiatement les pesticides cancérigènes, mutagènes, toxiques (CMR) et les pesticides volatiles comme le prosulfocarbe qui sont les plus dangereux pour la biodiversité et la santé humaine. Empêcher toute tentative de réintroduction des néonicotinoïdes. Agrandir l’espace de protection entre traitements et habitations et mieux contrôler la législation. Soutenir les changements de pratique dans l’agriculture en rétablissant le plan Ecophyto et son ancien indicateur (NODU). Renforcer l’autorité et les moyens de l’ANSES pour délivrer les autorisations de mise sur le marché ou de retrait en toute indépendance.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=29",
+      "rubrique_origine": "Chapitre 5 — Restaurer la biodiversité terrestre (proposition 1) ; p. 29",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-sols-01",
+      "candidat": "ecologistes",
+      "axe": "eco-sols",
+      "thematiques": [
+        "sols-artificialisation"
+      ],
+      "verbatim": "Renforcer la trajectoire de la Zéro Artificialisation Nette (ZAN) pour préserver les sols, en adoptant un objectif maximal d’artificialisation pour la période 2031-2041 tenant compte de l’équité territoriale – pour préserver les petites villes et villages loin des métropoles – et de la différence de coût d’aménagement entre terrain nu et foncier artificialisé. Intégrer des sanctions en cas de non-respect du ZAN. Inciter à intensifier l’usage du bâti existant par la mutualisation, l’hybridation et la réversibilité des bâtiments afin d’en optimiser l’usage.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=44",
+      "rubrique_origine": "Chapitre 10 — Préserver la terre (proposition 1) ; p. 44",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-sols-02",
+      "candidat": "ecologistes",
+      "axe": "eco-sols",
+      "thematiques": [
+        "sols-artificialisation",
+        "foncier-agricole"
+      ],
+      "verbatim": "Proposer une grande loi foncière incluant une redistribution ou une préservation de l’usage agricole des terres lors des transmissions foncières, la prévention contre l’accaparement des terres, la préservation de la qualité des sols pour renforcer leurs stocks de carbone organique, la lutte contre l’érosion. Encadrer systématiquement les prix de vente du foncier en rapport à la moyenne des prix sur la zone.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=44",
+      "rubrique_origine": "Chapitre 10 — Préserver la terre (proposition 2) ; p. 44",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-sols-03",
+      "candidat": "ecologistes",
+      "axe": "eco-sols",
+      "thematiques": [
+        "foncier-agricole",
+        "sols-artificialisation"
+      ],
+      "verbatim": "Démocratiser la politique foncière. Créer une commission foncière départementale. Mieux réguler les SAFER en renforçant la représentation des diverses parties prenantes. Élargir les office foncier solidaire (OFS) en améliorant le bail à domaine congéable. Redistribuer les terres dans les territoires d’outre mer pour lutter contre les inégalités d’accès aux moyens de production agricoles héritées de la colonisation et l’artificialisation des sols.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=44",
+      "rubrique_origine": "Chapitre 10 — Préserver la terre (proposition 3) ; p. 44",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-sols-04",
+      "candidat": "ecologistes",
+      "axe": "eco-sols",
+      "thematiques": [
+        "foncier-agricole"
+      ],
+      "verbatim": "Favoriser la reprise des fermes par des agriculteur·trices. Interdire l’accaparement spéculatif de terres par des fonds de pension, des investisseurs financiers ou sous la forme de holding.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=44",
+      "rubrique_origine": "Chapitre 10 — Préserver la terre (proposition 4) ; p. 44",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-sols-05",
+      "candidat": "ecologistes",
+      "axe": "eco-sols",
+      "thematiques": [
+        "sols-artificialisation",
+        "finances-locales",
+        "impots-menages"
+      ],
+      "verbatim": "Donner les moyens aux collectivités locales de préserver les terres agricoles et le droit au logement. Découpler la taxe foncière de la taxe d’habitation sur les résidences secondaires (THRS). Créer une taxe additionnelle à la THRS, majorant celle-ci jusqu’à +25 %, au profit des Établissements publics fonciers locaux (EPFL). Augmenter la taxe sur la revente de terrains afin de limiter la spéculation (taxe sur les plus-value des terrains nus devenus constructibles).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=44",
+      "rubrique_origine": "Chapitre 10 — Préserver la terre (proposition 5) ; p. 44",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-sols-06",
+      "candidat": "ecologistes",
+      "axe": "eco-sols",
+      "thematiques": [
+        "sols-artificialisation",
+        "entreprises"
+      ],
+      "verbatim": "Réaliser un diagnostic préalable des ressources naturelles avant implantation industrielle (respect du ZAN, émissions carbones…). Privilégier la réimplantation d’activités de production et sa logistique à la logistique du commerce international et ses entrepôts géants. Engager un plan de remise en état des friches industrielles pour éviter la consommation de foncier agricole et naturel.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=44",
+      "rubrique_origine": "Chapitre 10 — Préserver la terre (proposition 6) ; p. 44",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-01",
+      "candidat": "ecologistes",
+      "axe": "eco-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "biodiversite"
+      ],
+      "verbatim": "Adopter une journée sans chasse un jour par semaine et pendant des jours fériés et les vacances scolaires pour mieux partager l’accès à la nature. Interdire les pratiques de chasse cruelle (chasse à courre, chasse close, piège à colle et déterrage) ou d’animaux figurant sur la liste rouge de l’UICN. Rééquilibrer la composition du Conseil national et des conseils départementaux de la chasse et de la faune sauvage en augmentant le nombre de sièges attribués aux scientifiques et aux représentants des associations de protection de la nature. Intégrer des modules présentant l’impact de la chasse sur la biodiversité dans la formation du permis de chasser.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=36",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 1) ; p. 36",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-02",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Améliorer les conditions d’élevage. Interdire les fermes usines et l’élevage en cage. Améliorer les conditions d’abattage pour le bien-être des travailleur·ses et des animaux et renforcer leurs contrôles. Interdire les mutilations (bec de poules, queue de porcelets…) Créer un maillage renforcé d’abattoirs de proximité pour assurer de moindres transports pour les animaux et la maîtrise de tout le cycle de production par les éleveurs. [cf aussi les propositions sur la transition de l’élevage et les systèmes pastoraux 12-8 et 12-9].",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=37",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 2) ; p. 37",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-03",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "peche-aquaculture"
+      ],
+      "verbatim": "Sortir de l’aquaculture non durable. Introduire des règles pour le bien-être des animaux en aquaculture. Mettre en place un moratoire sur les fermes aquacoles de saumons en circuit fermé. Autoriser sur les littoraux uniquement les projets aquacoles d’algoculture et de coquillages.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=37",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 3) ; p. 37",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-04",
+      "candidat": "ecologistes",
+      "axe": "eco-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Interdire les pratiques cruelles pour les animaux : corrida, combats de coq, gavage, étourdissement des porcs au CO2… Interdire les écoles taurines. Interdire la vente et l’exportation du commerce des fourrures animales et des trophées de chasse. Interdire le broyage des poussins mâles et des canards femelles dans les filières à viande. Appliquer la loi de 2021 sur la fin de la présence des animaux sauvages dans les cirques itinérants en 2028. Étendre les droits des associations à se constituer partie civile.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=37",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 4) ; p. 37",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-05",
+      "candidat": "ecologistes",
+      "axe": "agri-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Limiter au maximum le transport d’animaux vivants à des fins économiques. Limiter le transport d’animaux à huit heures. Interdire le transport pour les catégories d’animaux vulnérables (nourrissons, animaux non sevrés, animaux en fin de gestation) et lorsque les conditions climatiques ne sont pas adéquates (sauf au sein d’une même exploitation). Interdire les exportations d’animaux d’élevage vivants hors de l’Union européenne.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=37",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 5) ; p. 37",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-06",
+      "candidat": "ecologistes",
+      "axe": "eco-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Lutter contre l’abandon des animaux domestiques par des campagnes de sensibilisation. Étendre le permis de détention des tortues à l’ensemble des animaux de compagnie. Développer les campagnes de stérilisation pour les animaux détenus par les personnes physiques privées comme pour les chats errants. Publier la liste des espèces autorisées à être détenues par des particuliers. Soutenir l’accès au vétérinaire pour les animaux détenus par des personnes à faible revenu.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=37",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 6) ; p. 37",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-07",
+      "candidat": "ecologistes",
+      "axe": "eco-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Autoriser la présence des animaux dits « de compagnie » dans les hébergements d’urgence et les transports en commun. Créer les conditions effectives d’accueil dans les EHPAD afin de ne pas séparer les aîné·es de leurs compagnons en application de la loi « Bien vieillir » de 2024.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=37",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 7) ; p. 37",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-08",
+      "candidat": "ecologistes",
+      "axe": "eco-condition-animale",
+      "thematiques": [
+        "condition-animale",
+        "biodiversite"
+      ],
+      "verbatim": "Définir une personnalité juridique pour les animaux. Reconnaître des droits différenciés en fonction des animaux dits « domestiques » et « sauvages ». Créer un secrétariat d’Etat à la condition animale.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=37",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 8) ; p. 37",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-condition-animale-09",
+      "candidat": "ecologistes",
+      "axe": "eco-condition-animale",
+      "thematiques": [
+        "condition-animale"
+      ],
+      "verbatim": "Développer les alternatives à l’expérimentation animale. Faire la transparence sur les comités d’éthique autorisant les projets en réformant leur composition, en développant la présence d’expert·es aux compétences et expériences variées (scientifiques, éthique, associatives…) et en rendant public un rapport d’évaluation annuelle. Financer les méthodes alternatives.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=37",
+      "rubrique_origine": "Chapitre 8 — Améliorer la condition animale (proposition 9) ; p. 37",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-2",
+      "candidat": "ecologistes",
+      "axe": "commerce-protection-ecologique",
+      "thematiques": [
+        "commerce-exterieur",
+        "fiscalite-verte",
+        "entreprises",
+        "climat-attenuation",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Étendre les protections réglementaires et douanières dans les industries stratégiques comme les semi-conducteurs, les médicaments, les technologies de pointe, les batteries et les voitures électriques, les panneaux solaires, l’éolien, la réparation, l’industrie textile, de la chimie, la production des matériaux (acier bas-carbone, papier) et le raffinage des minerais… Conditionner les investissements de plus de 100 millions d’euros en Europe à des transferts de technologie, la création de coentreprises européennes, des quotas d’embauche d’européens, l’investissement en recherche développement et un plan de décarbonation.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=78",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 7, badge [EUROPE]) ; p. 78",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-3",
+      "candidat": "ecologistes",
+      "axe": "commerce-protection-ecologique",
+      "thematiques": [
+        "commerce-exterieur",
+        "fiscalite-verte",
+        "climat-attenuation",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Améliorer le protectionnisme écologique et social aux frontières de l’Europe. Adopter des clauses de sauvegarde pour accélérer le développement d’une industrie décarbonée face à la redirection des flux commerciaux chinois vers l’Union européenne (sur le modèle des mesures pour l’acier). Envisager l’hypothèse de dévaluer l’euro vis-à-vis de la monnaie chinoise (le renminbi). Étendre le périmètre et accélérer la mise en œuvre du Mécanisme d’ajustement carbone aux frontières (MACF). Dénoncer puis renégocier l’accord du 27 juillet 2025 entre les Etats-Unis et l’UE sur les droits de douane afin d’imposer une réciprocité douanière.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=78",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 8, badge [EUROPE]) ; p. 78",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-4",
+      "candidat": "ecologistes",
+      "axe": "commerce-protection-ecologique",
+      "thematiques": [
+        "commerce-exterieur",
+        "fiscalite-verte",
+        "fraude-evasion",
+        "entreprises"
+      ],
+      "verbatim": "Lutter contre les pratiques déloyales dans le commerce. Mettre fin au dumping fiscal et environnemental de l’e-commerce (exonération des droits de douanes pour les colis, sous-déclaration de la valeur des marchandises, contournement de la TVA, explosion des coûts logistiques…) par un système d’amende et une responsabilisation des plateformes. Rétablir les 1000 postes d’agents supprimés dans les 15 dernières années à la Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF) et les postes dans les douanes.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=63",
+      "rubrique_origine": "Chapitre 16 — Changer les règles du marché (proposition 3) ; p. 63",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-5",
+      "candidat": "ecologistes",
+      "axe": "commerce-protection-ecologique",
+      "thematiques": [
+        "commerce-exterieur",
+        "fiscalite-verte",
+        "climat-attenuation",
+        "cooperation-europeenne"
+      ],
+      "verbatim": "Intégrer l’urgence écologique dans les traités d’investissement et de commerce. Organiser un retrait coordonné des traités d’investissement qui protègent les investissements fossiles. Négocier des accords pour neutraliser les clauses de survie notamment pour la sortie du Traité sur la charte de l’énergie. Ne pas ratifier les accords européens en attente qui affectent le climat et la biodiversité notamment les traités avec le Canada (CETA) le Vietnam, Singapour, le Chili, le Mexique, le Mercosur, l’Indonésie et le Japon. Dans les futurs traités, introduire des clauses miroirs sur le climat et les droits humains, des clauses d’exclusion explicite des investissements fossiles (carve-out) et prévoir des sanctions en cas de non-respect de ces exigences. Introduire des mécanismes publics de règlement des différends via une Cour multilatérale des investissement et refuser les tribunaux d’arbitrage pouvant contester des mesures réglementaires de désinvestissement ou d’interdiction de nouveaux projets d’exploitation de ressources fossiles.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=64",
+      "rubrique_origine": "Chapitre 16 — Changer les règles du marché (proposition 7, badge [EUROPE]) ; p. 64",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-6",
+      "candidat": "ecologistes",
+      "axe": "fisc-verte",
+      "thematiques": [
+        "fiscalite-verte",
+        "finances-locales",
+        "collectivites-territoriales",
+        "climat-attenuation"
+      ],
+      "verbatim": "Soutenir fiscalement les collectivités qui ont des politiques de préservation de leur environnement. Transférer une part de la Contribution Climat Énergie vers les collectivités disposant d’un Plan Climat Air-Énergie Territorial (PCAET) ambitieux. Revisiter la taxe sur les ordures ménagères notamment pour les professionnels afin d’élargir leur collecte et la rendre plus efficace. Augmenter le versement mobilité dont le montant est insuffisant au regard des besoins.",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=88",
+      "rubrique_origine": "Chapitre 22 — Décentraliser les services publics (proposition 7) ; p. 88",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-fisc-verte-7",
+      "candidat": "ecologistes",
+      "axe": "commerce-protection-ecologique",
+      "thematiques": [
+        "commerce-exterieur",
+        "fiscalite-verte",
+        "cooperation-europeenne",
+        "dette-budget",
+        "climat-attenuation"
+      ],
+      "verbatim": "Augmenter les moyens budgétaires de l’Union Européenne pour atteindre 2 % du PIB européen en 2035 et 5 % du PIB en 2050. Augmenter les ressources fiscales propres dédiées au budget communautaire via un renforcement du mécanisme d’ajustement carbone aux frontières (MACF), une taxation des grandes entreprises technologiques, une taxe sur les déchets électroniques et la mise en commun d’une taxe sur les entreprises réalisant plus de 100 millions de chiffre d’affaire. Créer un emprunt commun pour des investissements de long terme (Grands Travaux Européens Écologiques comme l’intégration ferroviaire, énergétique et numérique ; l’adaptation des régions les plus exposées au réchauffement climatique ; le doublement des moyens de la recherche scientifique et d’innovation).",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=190",
+      "rubrique_origine": "Chapitre 60 — Avancer vers une Europe fédérale (proposition 5) ; p. 190",
+      "date_publication": "2026-07",
+      "etat_maturite": "mur"
+    },
+    {
+      "id": "eco-souverainete-01",
+      "candidat": "ecologistes",
+      "axe": "econ-souverainete-productive",
+      "thematiques": [
+        "entreprises",
+        "climat-attenuation",
+        "emploi-travail"
+      ],
+      "verbatim": "Protéger les entreprises industrielles stratégiques d’intérêt national Soutenir leur implantation en France et leurs investissements pour verdir leur production et éviter des délocalisations des émissions. En cas de nécessité, passer sous gestion publique exceptionnelle. Renforcer les outils juridiques comme le décret Montebourg permettant d’intervenir dans la reprise des entreprises. Instituter un droit de préemption sur les machines outils et les autres actifs nécessaires à l’activité en cas de fermeture d’usine permettant aux collecrtivités territoriales de relancer l’activité avec la participation des salarié.es",
+      "source_url": "https://lesecologistes.fr/document/5ZhR2m5t2ZaGKqIdD1bJaD/vdef-programme-1.pdf#page=77",
+      "rubrique_origine": "Chapitre 20 — Planifier une nouvelle industrialisation (proposition 3) ; p. 77",
       "date_publication": "2026-07",
       "etat_maturite": "mur"
     }

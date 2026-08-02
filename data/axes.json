@@ -1,6 +1,6 @@
 {
   "version": "0.2.0",
-  "date_maj": "2026-07-27",
+  "date_maj": "2026-08-02",
   "note": "Un axe = l'unité de comparaison éditoriale (plus fine que le méta-thème). Il porte la baseline « ce qui est fait » (une seule réalité par axe, partagée entre candidats) et une synthèse d'écart. Les propositions des candidats vivent dans data/candidats/*.json et pointent vers un axe via le champ 'axe'.",
   "axes": [
     {
@@ -51,7 +51,7 @@
       "ordre": 4,
       "baseline_reel": "Le taux normal de l'impôt sur les sociétés est de 25 % depuis 2022 ; un taux réduit de 15 % s'applique aux PME sur une première tranche de bénéfice (42 500 €) sous conditions. La contribution exceptionnelle sur les bénéfices des grandes entreprises, prolongée par la loi de finances pour 2026 (art. 4), porte le taux effectif à 30,1 % au-delà de 1,5 Md€ de chiffre d'affaires et 35,3 % au-delà de 3 Md€. Hors cette surtaxe temporaire, il n'existe pas de barème progressif de l'IS selon le niveau de bénéfice.",
       "source_baseline": [
-        "https://www.service-public.gouv.fr/particuliers/vosdroits/F23575",
+        "https://entreprendre.service-public.gouv.fr/vosdroits/F23575",
         "https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/loi-de-finances-2026-ce-qui-change-pour-les-entreprises",
         "https://bofip.impots.gouv.fr/bofip/14607-PGP.html/identifiant=BOI-IS-AUT-60-20250917"
       ],
@@ -209,14 +209,17 @@
       "theme": "fiscalite-budget-finances",
       "label": "Fiscalité environnementale",
       "ordre": 11,
-      "baseline_reel": "Le « budget vert » annexé au PLF 2026 chiffre à 8,1 Md€ les dépenses de l'État défavorables à l'environnement, dont les taux réduits de taxation des carburants. Le malus au poids (taxe sur la masse en ordre de marche) se déclenche à 1 500 kg depuis le 1er janvier 2026. La TIRUERT (taxe incitative à l'incorporation d'énergie renouvelable dans les transports) s'applique jusqu'à fin 2026, avant remplacement par l'IRICC en 2027.",
+      "baseline_reel": "Le rapport sur l'impact environnemental du budget de l'État annexé au PLF 2026 chiffre à 8,1 Md€ les dépenses défavorables à l'environnement, contre 40,5 Md€ de dépenses favorables. Les produits énergétiques consommés pour la navigation aérienne commerciale sont taxés à 0 €/MWh (art. L. 312-48 du code des impositions sur les biens et services) : la directive européenne 2003/96/CE impose cette exonération pour l'aviation autre que de tourisme privé, tout en autorisant les États à la limiter aux vols internationaux et intracommunautaires — faculté que la France n'exerce pas. La composante carbone de l'accise sur les énergies est figée à 44,60 €/tCO₂ depuis 2018 et couvre environ 41 % des émissions françaises. Les intercommunalités de plus de 20 000 habitants doivent adopter un plan climat-air-énergie territorial (art. L. 229-26 du code de l'environnement). Le malus au poids se déclenche à 1 500 kg depuis le 1er janvier 2026, avec exonération des véhicules électriques.",
       "source_baseline": [
         "https://www.budget.gouv.fr/reperes/budget_vert/articles/plf-2026-6e-edition-budget-vert",
-        "https://www.service-public.gouv.fr/simulateur/calcul/TaxeAuPoids",
-        "https://www.douane.gouv.fr/professionnels/energie/tiruert-taxe-incitative-relative-lutilisation-de-lenergie-renouvelable-dans"
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053562489",
+        "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32003L0096",
+        "https://www.statistiques.developpement-durable.gouv.fr/edition-numerique/chiffres-cles-du-climat/fr/19-la-tarification-du-carbone-dans",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046193825",
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F35950"
       ],
-      "ecart_synthese": "Axe porté par les seuls Écologistes à ce stade (transformation des taux réduits fossiles en aides forfaitaires, fonds « France Verte 2040 », extension de la TIRUERT) — aucune mesure LFI captée sur la fiscalité environnementale comme instrument.",
-      "baseline_verifiee": "2026-07-29"
+      "ecart_synthese": "Axe resserré à la fiscalité proprement dite après la scission de la décision n° 28 : le volet douanier vit désormais sur « Commerce extérieur & protection écologique aux frontières ». Les deux programmes visent la même niche — le kérosène —, les Écologistes avec un motif climatique explicite, LFI avec un motif commercial (limiter le dumping du e-commerce). Les Écologistes y ajoutent l'affectation d'une taxe environnementale aux collectivités qui conduisent une politique de préservation.",
+      "baseline_verifiee": "2026-08-02"
     },
     {
       "id": "fisc-numerique",
@@ -378,6 +381,444 @@
       ],
       "ecart_synthese": "Axe porté par LFI seule (dividendes plafonnés au bénéfice, interdiction des licenciements boursiers, fin de la cotation continue) — aucune mesure écologiste captée sur ce sujet.",
       "baseline_verifiee": "2026-07-29"
+    },
+    {
+      "id": "eco-planification",
+      "theme": "ecologie-climat-energie",
+      "label": "Planification écologique & objectifs climatiques",
+      "ordre": 24,
+      "baseline_reel": "La trajectoire climatique en vigueur est fixée par la stratégie nationale bas-carbone SNBC-3, adoptée par le décret n° 2026-636 du 16 juillet 2026 : baisse de moitié des émissions brutes en 2030 par rapport à 1990, neutralité carbone en 2050, et budgets carbone plafonnés à 342 Mt CO2e par an en moyenne sur 2024-2028, 262 Mt sur 2029-2033 et 194 Mt sur 2034-2038. Les émissions de la France sont estimées à 359,4 Mt CO2e en 2025, soit −2,1 % sur un an et −34,3 % depuis 1990, alors que l'atteinte de la cible 2030 suppose environ −5 % par an d'ici 2030 (estimation ministérielle du 16 juin 2026). L'article L. 100-1 A du code de l'énergie prévoit depuis 2019 une loi de programmation quinquennale sur l'énergie et le climat, qui devait être adoptée avant le 1er juillet 2023 : elle ne l'a pas été, la proposition de loi de programmation énergétique déposée au Sénat n'ayant pas achevé sa navette, et la programmation pluriannuelle de l'énergie 2026-2035 a finalement été arrêtée par décret le 12 février 2026. La coordination interministérielle est assurée par le secrétariat général à la planification écologique, placé auprès du Premier ministre par le décret n° 2022-990 du 7 juillet 2022.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054440907",
+        "https://www.ecologie.gouv.fr/presse/baisse-emissions-gaz-effet-serre-se-poursuit-2024-2025-france-doit-accelerer-sa",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043976321",
+        "https://www.senat.fr/dossier-legislatif/ppl23-555.html",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053464980",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046026058"
+      ],
+      "ecart_synthese": "LFI construit un appareil d'État : règle verte dans la Constitution, Conseil à la planification, lois-cadres, moyens des opérateurs, indicateurs biophysiques dans les comptes publics, moratoire sur les grands projets, assemblées citoyennes régionales. Les Écologistes s'en tiennent à deux propositions de cadrage (loi de programmation climatique, mise en cohérence des trajectoires). L'écart porte moins sur l'objectif que sur l'outillage institutionnel.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-energie-mix",
+      "theme": "ecologie-climat-energie",
+      "label": "Mix énergétique & énergies renouvelables",
+      "ordre": 25,
+      "baseline_reel": "Les énergies renouvelables représentent 23,0 % de la consommation finale brute d'énergie en 2024 (résultat provisoire), pour un objectif de 33 % en 2030. Sur le seul système électrique, la production métropolitaine a atteint 547,5 TWh en 2025, dont 95,2 % d'électricité bas-carbone : les filières renouvelables en ont fourni 27,0 % et le nucléaire 373,0 TWh. Le parc de production installé atteignait 164,5 GW fin 2025, dont 30,4 GW de solaire (+5,9 GW en un an, la filière ayant dépassé l'hydraulique, 25,7 GW) et 23,9 GW d'éolien terrestre (+0,9 GW, troisième année consécutive de ralentissement). La trajectoire du mix pour 2026-2035 est fixée par la programmation pluriannuelle de l'énergie adoptée par le décret n° 2026-76 du 12 février 2026.",
+      "source_baseline": [
+        "https://www.statistiques.developpement-durable.gouv.fr/edition-numerique/chiffres-cles-energies-renouvelables/fr/partie4-suivi-des-objectifs-de-la-france",
+        "https://assets.rte-france.com/prod/public/2026-02/Bilan-electrique-2025-principaux-resultats.pdf",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053464980"
+      ],
+      "ecart_synthese": "Les deux planifient le développement des renouvelables. LFI vise explicitement 100 % d'énergies renouvelables et l'arrêt des subventions aux fossiles, y compris à l'étranger ; les Écologistes insistent sur l'électrification des usages, la robustesse et le pilotage du réseau, les filières industrielles et les communautés énergétiques citoyennes, et datent la sortie du gaz par un plan de démantèlement du réseau de distribution.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-nucleaire",
+      "theme": "ecologie-climat-energie",
+      "label": "Nucléaire : sortie, sûreté, déchets",
+      "ordre": 26,
+      "baseline_reel": "Le parc nucléaire représentait 63,0 GW de capacité installée fin 2025, EPR de Flamanville 3 (1,6 GW, couplé au réseau en décembre 2024) inclus, et a produit 373,0 TWh en 2025, soit environ 68 % des 547,5 TWh produits en France métropolitaine. L'objectif de ramener la part du nucléaire à 50 % de la production d'électricité en 2035 et le plafond de capacité de 63,2 GW, tous deux issus de la loi du 17 août 2015, ont été supprimés par la loi n° 2023-491 du 22 juin 2023 relative à l'accélération des procédures de construction de nouvelles installations nucléaires. L'Autorité de sûreté nucléaire (ASN) et l'Institut de radioprotection et de sûreté nucléaire (IRSN) ont fusionné le 1er janvier 2025 au sein de l'Autorité de sûreté nucléaire et de radioprotection (ASNR), en application de la loi n° 2024-450 du 21 mai 2024. Sur les déchets, la France recensait environ 1,85 million de m³ de déchets radioactifs au 31 décembre 2023, dont 4 550 m³ de haute activité ; le projet de stockage géologique profond Cigéo a reçu un avis favorable sous conditions de l'ASNR le 25 novembre 2025 et son enquête publique s'est tenue du 18 mai au 16 juillet 2026, le décret d'autorisation de création restant à prendre. La Cour des comptes a évalué en janvier 2025 le coût à terminaison de l'EPR de Flamanville 3 à 23,7 Md€ (valeur 2023).",
+      "source_baseline": [
+        "https://assets.rte-france.com/prod/public/2026-02/Bilan-electrique-2025-principaux-resultats.pdf",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047715784",
+        "https://www.asnr.fr/actualites/creation-de-lautorite-de-surete-nucleaire-et-de-radioprotection-asnr",
+        "https://inventaire.andra.fr/sites/default/files/pdf/andra_inventaire_national_essentiel_2025_web.pdf",
+        "https://www.asnr.fr/actualites/lasnr-publie-son-avis-sur-la-demande-dautorisation-de-creation-de-cigeo",
+        "https://www.ain.gouv.fr/Publications/Enquetes-publiques/Projet-CIGEO-dossier-de-demande-d-autorisation-de-creation-DAC",
+        "https://www.ccomptes.fr/sites/default/files/2025-01/20250114-La-filiere-EPR%20-une-dynamique-nouvelle-des-risques-persistants.pdf"
+      ],
+      "ecart_synthese": "Convergence nette et rare : les deux programmes planifient la sortie du nucléaire et veulent revenir sur la fusion de l'ASN et de l'IRSN. La divergence est de grain : LFI ajoute le statut des travailleurs et la fin de la sous-traitance massive, les Écologistes nomment les programmes à arrêter (EPR-2, SMR).",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-energie-prix",
+      "theme": "ecologie-climat-energie",
+      "label": "Prix de l'énergie, marché & service public de l'énergie",
+      "ordre": 27,
+      "baseline_reel": "L'accès régulé à l'électricité nucléaire historique (ARENH), qui permettait aux fournisseurs alternatifs d'acheter à EDF jusqu'à 100 TWh par an à 42 €/MWh, s'appliquait jusqu'au 31 décembre 2025 ; il est remplacé depuis le 1er janvier 2026 par le versement nucléaire universel, codifié aux articles L. 337-3 et suivants du code de l'énergie, qui applique de plein droit une réduction sur les factures lorsque les revenus tirés du nucléaire dépassent un seuil fixé par arrêté. Les tarifs réglementés de vente d'électricité subsistent : la Commission de régulation de l'énergie a proposé une hausse moyenne de 2,5 % TTC au 1er août 2026, portant la facture annuelle type de 1 046 à 1 072 € pour une consommation de 4,5 MWh, l'accise sur l'électricité passant dans le même temps de 30,85 à 30,62 €/MWh. Les tarifs réglementés de vente de gaz naturel pour les particuliers ont en revanche été supprimés le 30 juin 2023 ; la CRE publie depuis un simple prix repère mensuel, sans valeur contraignante. EDF est détenue à 100 % par l'État et qualifiée de société anonyme d'intérêt national par la loi n° 2024-330 du 11 avril 2024, tandis que la loi n° 2026-554 du 29 juin 2026 a supprimé le régime de concession hydraulique au profit d'un régime d'autorisation pour les installations de plus de 4 500 kW. Enfin, l'extension du marché carbone européen aux bâtiments et au transport routier (SEQE-UE 2) a été reportée de 2027 à 2028 ; la France doit percevoir 9,7 Md€ au titre du Fonds social pour le climat sur 2026-2032.",
+      "source_baseline": [
+        "https://www.cre.fr/electricite/marche-de-gros-de-lelectricite/acces-regule-a-lelectricite-nucleaire-historique-arenh.html",
+        "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000051213805",
+        "https://www.cre.fr/actualites/toute-lactualite/la-cre-propose-une-evolution-du-niveau-moyen-des-tarifs-reglementes-de-vente-de-lelectricite-de-25-ttc-au-1er-aout-2026.html",
+        "https://www.cre.fr/consommateurs/prix-reperes-et-references/prix-repere-de-vente-de-gaz-naturel-a-destination-des-clients-residentiels.html",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049405323",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054340720",
+        "https://www.ecologie.gouv.fr/politiques-publiques/marches-du-carbone-seqe-ue-2"
+      ],
+      "ecart_synthese": "LFI s'attaque au marché lui-même : annuler la libéralisation, créer un pôle public, recalculer les tarifs réglementés sur les coûts de production, annuler les hausses du gaz depuis 2017. Les Écologistes agissent sur les prix relatifs (découplage du prix de l'électricité et des fossiles, unification de l'accise) et refusent l'extension du marché carbone aux ménages (directive ETS2).",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-renovation",
+      "theme": "ecologie-climat-energie",
+      "label": "Rénovation énergétique & sobriété des bâtiments",
+      "ordre": 28,
+      "baseline_reel": "Au 1er janvier 2025, la France comptait 3,9 millions de passoires énergétiques (étiquettes F et G) parmi 30,9 millions de résidences principales, soit 12,7 % du parc ; un arrêté du 13 août 2025 a abaissé au 1er janvier 2026 le facteur de conversion de l'électricité en énergie primaire de 2,3 à 1,9 dans le calcul du DPE, ce qui modifie l'étiquette de logements chauffés à l'électricité sans travaux. En 2025, l'Anah a distribué 4,39 Md€ d'aides à l'habitat (+16 % sur un an) et financé 120 305 rénovations d'ampleur, soit près de 40 % des rénovations énergétiques qu'elle finance. La location des logements classés G est interdite depuis le 1er janvier 2025 pour les baux conclus, renouvelés ou tacitement reconduits, interdiction étendue aux logements F au 1er janvier 2028 et aux logements E au 1er janvier 2034 (calendrier décalé outre-mer). Le dispositif des certificats d'économies d'énergie est entré le 1er janvier 2026 dans sa sixième période, courant jusqu'au 31 décembre 2030 (décret n° 2025-1048 du 30 octobre 2025). Enfin, 3,1 millions de ménages, soit 10,1 %, étaient en situation de précarité énergétique en 2023 selon l'indicateur de taux d'effort énergétique.",
+      "source_baseline": [
+        "https://www.statistiques.developpement-durable.gouv.fr/le-parc-de-logements-par-classe-de-performance-energetique-au-1er-janvier-2025",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052134589",
+        "https://www.anah.gouv.fr/anatheque/les-chiffres-cles-2025",
+        "https://www.service-public.fr/particuliers/actualites/A17975",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052486193",
+        "https://www.precarite-energie.org/wp-content/uploads/2025/11/onpe-tableau-de-bord-v12-compressed.pdf"
+      ],
+      "ecart_synthese": "Les deux chiffrent leur cible : 700 000 logements isolés par an pour LFI, 500 000 rénovations performantes et un million de personnes sorties de la précarité énergétique par an pour les Écologistes. LFI mise sur le service public (guichet unique, formation des professionnels, interdiction effective de louer des passoires) ; les Écologistes passent par les dispositifs existants (MaPrimeRénov', réforme des Certificats d'économie d'énergie, reconversion de la filière du bâtiment).",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-adaptation",
+      "theme": "ecologie-climat-energie",
+      "label": "Adaptation au changement climatique & risques naturels",
+      "ordre": 29,
+      "baseline_reel": "Le troisième plan national d'adaptation au changement climatique (PNACC-3) a été publié le 10 mars 2025 : il comporte 52 mesures et retient comme référence la trajectoire de réchauffement pour l'adaptation au changement climatique (TRACC), soit +4 °C en moyenne en France métropolitaine à la fin du siècle. Le régime d'indemnisation des catastrophes naturelles est financé par une surprime obligatoire ajoutée aux contrats d'assurance de dommages aux biens, fixée à 20 % des primes du contrat depuis le 1er janvier 2025 (art. A. 125-2 du code des assurances). Le fonds de prévention des risques naturels majeurs, dit fonds Barnier, est doté de plus de 200 M€ par an, montant fixé chaque année par le Parlement en loi de finances.",
+      "source_baseline": [
+        "https://www.ecologie.gouv.fr/dossiers/france-sadapte/3e-plan-national-dadaptation-changement-climatique",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006785980/",
+        "https://www.ecologie.gouv.fr/politiques-publiques/financement-prevention-risques-naturels-hydrauliques"
+      ],
+      "ecart_synthese": "Les Écologistes chiffrent l'effort (7 Md€ par an pour le plan national d'adaptation) et créent un assureur public du risque climatique (Caisse nationale de sécurité climatique) ; LFI raisonne en infrastructures (diagnostic des ouvrages d'art, plans de prévention des risques d'inondation, feux de forêt) et porte le sujet à l'international (détachement de Casques bleus). Les deux traitent la sécurité civile, les Écologistes par le statut du pompier volontaire.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-eau-ressource",
+      "theme": "ecologie-climat-energie",
+      "label": "Eau : partage de la ressource, qualité des milieux & gouvernance des bassins",
+      "ordre": 30,
+      "baseline_reel": "La directive-cadre européenne sur l'eau (2000/60/CE) fixe un objectif de « bon état » des masses d'eau — le « très bon état » en étant la classe supérieure. En 2022, 44 % des masses d'eau de surface françaises étaient en bon ou très bon état écologique (41 % en 2010) et 68 % en bon état chimique. En 2023, 29,4 milliards de m³ d'eau douce ont été prélevés en France : 45 % pour le refroidissement des centrales électriques, 20 % pour l'alimentation des canaux, 18 % pour l'eau potable et 10 % pour l'agriculture ; rapportée à l'eau consommée, c'est-à-dire non restituée au milieu, l'agriculture représente 61 % du total. Le plan d'action gouvernemental du 30 mars 2023 (53 mesures) fixe un objectif de − 10 % d'eau prélevée d'ici 2030. La gestion reste organisée par bassin : le comité de bassin associe 40 % d'élus, 20 % d'usagers non économiques et associations, 20 % d'usagers économiques et 20 % de représentants de l'État (art. L. 213-8 du code de l'environnement), et le 12e programme des agences de l'eau (2025-2030) est plafonné à 13,98 Md€ d'autorisations d'engagement. Sur les 16 réserves de substitution autorisées dans le bassin de la Sèvre Niortaise-Mignon, 4 — dont Sainte-Soline — ont été jugées illégales le 18 décembre 2024 par la cour administrative d'appel de Bordeaux, faute de dérogation « espèces protégées ».",
+      "source_baseline": [
+        "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32000L0060",
+        "https://www.statistiques.developpement-durable.gouv.fr/eaux-superficielles-et-souterraines-en-france-etat-des-connaissances-en-2025",
+        "https://www.statistiques.developpement-durable.gouv.fr/les-prelevements-deau-douce-par-usage-en-france-en-2023",
+        "https://www.ecologie.gouv.fr/politiques-publiques/plan-daction-gestion-resiliente-concertee-leau",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042657673/",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051698998",
+        "https://bordeaux.cour-administrative-appel.fr/decisions-de-justice/dernieres-decisions/contentieux-des-bassines-dans-le-bassin-de-la-sevre-niortaise-mignon-quatre-reserves-dont-celle-de-sainte-soline-sont-illegales-en-l-absence-de"
+      ],
+      "ecart_synthese": "Objectif commun formulé presque mot pour mot — le très bon état écologique et chimique de tous les cours d'eau — et moratoire commun sur les méga-bassines. LFI institutionnalise : règle bleue, eau dans la Constitution, redécoupage des régions à partir des bassins versants, renforcement de la police de l'eau. Les Écologistes agissent sur les aires d'alimentation de captage, la désimperméabilisation des sols et les modes de nomination dans les comités de bassin.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-eau-service",
+      "theme": "ecologie-climat-energie",
+      "label": "Droit à l'eau : gestion publique, tarification & assainissement",
+      "ordre": 31,
+      "baseline_reel": "Le droit d'accéder à l'eau potable « dans des conditions économiquement acceptables par tous » est inscrit à l'article L. 210-1 du code de l'environnement. Les coupures d'eau pour impayés sont déjà interdites toute l'année dans la résidence principale (art. L. 115-3 du code de l'action sociale et des familles), et le code général des collectivités territoriales autorise depuis 2019 une tarification progressive pouvant « inclure une première tranche de consommation gratuite » (art. L. 2224-12-4), sans l'imposer. La gestion déléguée à un opérateur privé reste majoritaire pour l'eau potable : 52 % des usagers en relèvent en 2024, contre 38 % en assainissement collectif. Le prix moyen du service d'eau et d'assainissement collectif atteint 4,89 €/m³ TTC au 1er janvier 2025, abonnement compris, pour une consommation de référence de 120 m³ (4,69 €/m³ un an plus tôt). Le rendement moyen des réseaux d'eau potable est de 79,2 % en 2024 — près d'un litre sur cinq perdu par fuites — pour un taux de renouvellement des canalisations de 0,61 % par an en eau potable et 0,41 % en assainissement.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046783899",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046194366",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041410387/",
+        "https://www.services.eaufrance.fr/cms/uploads/Rapport_SISPEA_2024_resume_e9750182ae.pdf",
+        "https://www.services.eaufrance.fr/rapport-national"
+      ],
+      "ecart_synthese": "Les deux veulent la régie publique et la gratuité des mètres cubes vitaux. LFI développe le volet social et l'infrastructure (haut-commissariat à l'eau, tarification progressive, suppression de l'abonnement, fontaines et sanitaires publics, répression des coupures illégales) ; les Écologistes ajoutent le volet sanitaire des canalisations (plomb, chlorure de vinyle monomère).",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-eau-outremer",
+      "theme": "ecologie-climat-energie",
+      "label": "Eau et assainissement dans les Outre-mer",
+      "ordre": 32,
+      "baseline_reel": "Le plan « eau DOM » (Pedom), lancé en 2016, a mobilisé 889 M€ dans six collectivités (Guadeloupe, Guyane, Martinique, Mayotte, La Réunion, Saint-Martin) ; la Cour des comptes chiffrait en mars 2025 à 2,3 Md€ le besoin d'investissement restant et relevait des difficultés persistantes. En Guadeloupe, où la loi du 29 avril 2021 a transféré l'eau et l'assainissement à un syndicat mixte unique (SMGEAG) au 1er septembre 2021, le rendement du réseau d'eau potable exploité en régie était de 29,2 % en 2022 — environ sept litres sur dix perdus — et les « tours d'eau », coupures alternées, sont devenus un mode de gestion à part entière. En Martinique, le réseau de 3 800 km produit 40 millions de m³ pour 23 millions consommés, soit environ 42 % de pertes, et 45 % de la population seulement est raccordée à l'assainissement collectif. À Mayotte, le rendement du réseau était de 74,3 % en 2020, 18 % de la population est raccordée à une station d'épuration et 205 cas de choléra ont été confirmés entre le 18 mars et le 25 juin 2024 ; la loi de programmation du 11 août 2025 pour la refondation de Mayotte programme 730 M€ d'autorisations d'engagement pour l'eau et l'assainissement sur 2025-2031.",
+      "source_baseline": [
+        "https://www.ccomptes.fr/sites/default/files/2025-03/20250312-Gestion-de-l-eau-et-de-l-assainissement-outre-mer.pdf",
+        "https://www.ccomptes.fr/fr/publications/la-gestion-de-leau-potable-et-de-lassainissement-en-outre-mer",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043458617/",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052075903/"
+      ],
+      "ecart_synthese": "LFI consacre une sous-section entière à la crise de l'eau ultramarine : canalisations, passage en régie, dette des usagers, plan ORSEC-eau, reconnaissance d'un état de crise en Guadeloupe et en Martinique, plan d'urgence à Mayotte. Le chapitre Outre-mer des Écologistes, lu intégralement, ne contient aucune proposition dédiée à l'eau : c'est un silence réel, pas un défaut d'extraction (décision n° 21).",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-biodiversite",
+      "theme": "ecologie-climat-energie",
+      "label": "Biodiversité terrestre & espaces protégés",
+      "ordre": 33,
+      "baseline_reel": "Les aires protégées couvrent environ 33 % du territoire terrestre et maritime français, objectif de 30 % atteint dès 2022 ; mais les zones de protection forte, où les activités humaines sont absentes ou fortement limitées, n'en représentent que 5,9 % au 1er janvier 2026 (637 300 km², dont 77 % du volet marin dans les Terres australes et antarctiques), pour un objectif de 10 % en 2030 fixé par la stratégie nationale pour les aires protégées. La France compte 11 parcs nationaux et 57 sites Ramsar couvrant plus de 3,9 millions d'hectares (février 2026). Le linéaire de haies, estimé à 1,55 million de kilomètres par l'IGN, a reculé de 23 500 km par an entre 2017 et 2021 ; le « pacte en faveur de la haie », présenté le 29 septembre 2023 et doté de 110 M€ dès 2024, vise un gain net de 50 000 km d'ici 2030. Le règlement européen sur la restauration de la nature (UE) 2024/1991, adopté le 24 juin 2024, impose des mesures de restauration sur au moins 20 % des zones terrestres et marines de l'Union d'ici 2030 ; la France doit transmettre son plan national « Agir pour restaurer la nature » à la Commission européenne en septembre 2026.",
+      "source_baseline": [
+        "https://www.statistiques.developpement-durable.gouv.fr/les-territoires-francais-couverts-par-les-dispositifs-de-protection-forte-de-la-biodiversite-au-1er",
+        "https://www.ecologie.gouv.fr/politiques-publiques/aires-protegees-france",
+        "https://www.ecologie.gouv.fr/politiques-publiques/protection-milieux-humides",
+        "https://agriculture.gouv.fr/la-haie-levier-de-la-planification-ecologique",
+        "https://agriculture.gouv.fr/pacte-en-faveur-de-la-haie",
+        "https://eur-lex.europa.eu/eli/reg/2024/1991/oj?locale=fr",
+        "https://www.ecologie.gouv.fr/presse/france-prepare-son-plan-national-agir-restaurer-nature-invite-francais-participer-son"
+      ],
+      "ecart_synthese": "Les Écologistes travaillent le territoire national — haies et continuités écologiques, zones humides, parcs nationaux et réserves régionales, stratégie de restauration. LFI porte surtout l'échelon international et juridique : pôles arctique et antarctique comme biens communs, interdiction des brevets sur le vivant, refus des OGM, biodiversité ultramarine.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-ocean",
+      "theme": "ecologie-climat-energie",
+      "label": "Océans, littoraux & fonds marins",
+      "ordre": 34,
+      "baseline_reel": "Les espaces maritimes sous souveraineté ou juridiction française couvrent 10,19 millions de km² (10,91 millions avec les extensions de plateau continental en vigueur), soit le deuxième domaine maritime mondial, situé à 97 % outre-mer, pour 20 000 km de littoral. Les aires marines protégées couvrent environ 33 % de ces espaces, mais la protection forte marine n'atteint que 4,99 % au 1er janvier 2026, dont 77 % dans les seules Terres australes et antarctiques françaises. Environ 50 % des volumes de poissons débarqués en France hexagonale en 2024 proviennent de populations exploitées durablement (44 % pour les débarquements 2023) ; l'usage du courant électrique pour la pêche est interdit dans les eaux de l'Union depuis l'expiration, le 30 juin 2021, de la dérogation transitoire au chalut à impulsions. Le traité sur la haute mer (BBNJ), adopté le 19 juin 2023 et ratifié par la France le 5 février 2025, est entré en vigueur le 17 janvier 2026. À l'échelle internationale, l'Autorité internationale des fonds marins n'a toujours pas adopté le code minier qui autoriserait l'exploitation des grands fonds : les négociations sur le règlement d'exploitation se poursuivaient sans conclusion lors de la 31e session de son Conseil, en mars 2026.",
+      "source_baseline": [
+        "https://limitesmaritimes.gouv.fr/sites/default/files/2023-03/Superficies_espaces_maritimes_Fr_230126.pdf",
+        "https://www.statistiques.developpement-durable.gouv.fr/edition-numerique/chiffres-cles-mer-littoral/elements-contexte",
+        "https://www.statistiques.developpement-durable.gouv.fr/les-territoires-francais-couverts-par-les-dispositifs-de-protection-forte-de-la-biodiversite-au-1er",
+        "https://www.ecologie.gouv.fr/politiques-publiques/aires-protegees-france",
+        "https://www.ifremer.fr/fr/bilan-2025-de-l-etat-des-populations-de-poissons-peches-en-france",
+        "https://eur-lex.europa.eu/eli/reg/2019/1241/oj",
+        "https://www.mer.gouv.fr/laccord-des-nations-unies-sur-la-haute-mer-bbnj",
+        "https://isa.org.jm/news/the-council-of-the-international-seabed-authority-advanced-negotiations-on-the-mining-code/",
+        "https://isa.org.jm/the-mining-code/"
+      ],
+      "ecart_synthese": "Volume très inégal : LFI traite la mer comme une politique publique complète (recherche et formation maritimes, ports, marine marchande, énergies marines, souveraineté du domaine, dépollution, traité sur la haute mer), les Écologistes se concentrent sur la protection des écosystèmes et la transition des flottilles. Convergence explicite sur la pêche artisanale et contre les pratiques de pêche destructrices.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-forets",
+      "theme": "ecologie-climat-energie",
+      "label": "Forêts & filière bois",
+      "ordre": 35,
+      "baseline_reel": "La forêt métropolitaine couvre 17,6 millions d'hectares, soit 32 % du territoire, et progresse d'environ 90 000 ha par an ; les trois quarts appartiennent à des propriétaires privés, le quart restant étant constitué de forêts domaniales et communales gérées par l'Office national des forêts, dont le Gouvernement a annulé pour 2025 les 95 suppressions de postes prévues par le contrat État-ONF. La capacité d'absorption de carbone de ces forêts a fortement diminué : 39 MtCO₂ par an en moyenne sur 2015-2023 contre 63 MtCO₂ par an sur 2005-2013, la mortalité des arbres ayant plus que doublé en dix ans, à 16,7 millions de m³ par an. La récolte de bois commercialisé s'établit à 38,1 millions de m³ en 2024, dont 18,3 Mm³ de bois d'œuvre, 10,0 Mm³ de bois d'industrie et 9,7 Mm³ de bois énergie. Les coupes rases ne sont pas interdites : le code forestier impose seulement, au-delà d'un seuil fixé par le préfet, de reconstituer le peuplement dans les cinq ans (art. L. 124-6). Le règlement européen contre la déforestation importée (UE) 2023/1115 n'est toujours pas applicable : le règlement (UE) 2025/2650 du 23 décembre 2025 a repoussé son application au 30 décembre 2026 pour les grandes entreprises et au 30 juin 2027 pour les petites.",
+      "source_baseline": [
+        "https://www.ign.fr/institut/espace-presse/decouvrez-les-resultats-2025-de-linventaire-forestier-national",
+        "https://www.ign.fr/mag/foret-privee-vs-foret-publique-qui-appartient-la-foret-francaise",
+        "https://www.senat.fr/questions/base/2024/qSEQ241001958.html",
+        "https://www.agreste.agriculture.gouv.fr/agreste-web/download/publication/publie/Chd2517/cd2025-17_BoisSciages2024.pdf",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025245853",
+        "https://www.douane.gouv.fr/actualites/lutte-contre-la-deforestation-report-de-la-mise-en-application-du-reglement-ue-20231115"
+      ],
+      "ecart_synthese": "LFI reconstruit une filière (scieries, coopératives de petits producteurs, moyens de l'ONF, conditions de travail des forestiers, encadrement des exportations) et interdit des pratiques (coupes rases, dessouchage) ; les Écologistes hiérarchisent les usages du bois (œuvre, puis réemploi, puis énergie) et proposent un statut de « commun forestier ». Convergence sur la diversification des essences et sur la déforestation importée.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "agri-pesticides",
+      "theme": "agriculture-alimentation",
+      "label": "Pesticides & intrants agricoles",
+      "ordre": 36,
+      "baseline_reel": "La stratégie Écophyto 2030, publiée le 6 mai 2024, vise une réduction de 50 % de l'usage et des risques des produits phytopharmaceutiques d'ici 2030 par rapport à la moyenne 2011-2013 ; elle est suivie par l'indicateur européen HRI1, complété par le NODU, dont la valeur 2023 s'établit à 51, soit − 49 % par rapport à la période de référence. En 2024, 42 928 tonnes de substances actives hors biocontrôle ont été vendues en France (+ 3,6 % sur un an, − 19,8 % par rapport à la référence 2015-2017), dont 8 269 tonnes de glyphosate (+ 22,5 %), après le renouvellement pour dix ans de l'autorisation européenne du glyphosate en novembre 2023 ; les ventes de substances classées CMR1 ont reculé de 97,9 % par rapport à la période de référence. L'usage des produits contenant des néonicotinoïdes est interdit en France depuis le 1er septembre 2018 (art. L. 253-8 du code rural) : la loi du 11 août 2025 dite « Duplomb » prévoyait de rouvrir une dérogation par décret, disposition censurée le 7 août 2025 par le Conseil constitutionnel au nom du droit de vivre dans un environnement équilibré et respectueux de la santé.",
+      "source_baseline": [
+        "https://agriculture.gouv.fr/les-indicateurs-de-suivi-de-la-strategie-ecophyto-2030",
+        "https://www.ecologie.gouv.fr/actualites/publication-ventes-produits-phytopharmaceutiques",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037562348",
+        "https://www.conseil-constitutionnel.fr/actualites/communique/decision-n-2025-891-dc-du-7-aout-2025-communique-de-presse"
+      ],
+      "ecart_synthese": "Même objet, deux grains : LFI planifie la réduction progressive des doses et interdit immédiatement les plus dangereux ; les Écologistes datent une sortie complète des pesticides de synthèse et des engrais azotés (2050) et misent sur la diffusion des pratiques alternatives. Une proposition de chaque côté : la base est mince pour les deux.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-sols",
+      "theme": "ecologie-climat-energie",
+      "label": "Sols, artificialisation & foncier",
+      "ordre": 37,
+      "baseline_reel": "La loi Climat et résilience d'août 2021 fixe l'objectif de « zéro artificialisation nette » des sols en 2050 et, comme jalon intermédiaire, la réduction de moitié de la consommation d'espaces naturels, agricoles et forestiers (ENAF) entre 2021 et 2031 par rapport à la décennie précédente, où environ 24 000 hectares étaient consommés chaque année. Cette consommation s'établit à 15 119 hectares en 2024, contre 29 470 hectares en 2011, soit une baisse de 49 % ; l'habitat en représente les deux tiers. La proposition de loi TRACE, qui supprimerait le jalon de 2031, a été adoptée par le Sénat le 18 mars 2025 mais n'a pas été examinée par l'Assemblée nationale : elle n'est pas en vigueur. Le prix des terres agricoles n'est pas encadré : le ministère de l'Agriculture publie chaque année un barème indicatif de leur valeur vénale moyenne, qui constitue seulement un élément d'appréciation pour le juge (art. L. 312-4 du code rural). Les SAFER disposent en revanche d'un droit de préemption sur les ventes de biens à vocation agricole (art. L. 143-1 du même code).",
+      "source_baseline": [
+        "https://www.ecologie.gouv.fr/politiques-publiques/artificialisation-sols",
+        "https://www.cerema.fr/fr/actualites/quelle-consommation-espace-naturels-agricoles-forestiers",
+        "https://artificialisation.developpement-durable.gouv.fr/",
+        "https://www.senat.fr/dossier-legislatif/ppl24-124.html",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034243971",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052153430",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042655873"
+      ],
+      "ecart_synthese": "Les Écologistes tiennent le foncier par le droit : trajectoire ZAN renforcée, grande loi foncière, régulation des SAFER, commission foncière départementale, découplage de la taxe foncière. LFI s'en tient à deux principes — stopper l'étalement urbain, protéger le foncier agricole, forestier et naturel.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-dechets",
+      "theme": "ecologie-climat-energie",
+      "label": "Déchets, réemploi & durabilité des produits",
+      "ordre": 38,
+      "baseline_reel": "En 2023, le service public de gestion des déchets a collecté 37,8 millions de tonnes de déchets ménagers et assimilés, soit 559 kg par habitant, en baisse de 8,7 % par habitant depuis 2021 ; le tri à la source des biodéchets, qui représentent un tiers des déchets non triés, est obligatoire pour tous les professionnels et les particuliers depuis le 1er janvier 2024, et la responsabilité élargie des producteurs couvre 19 filières, dont 8 créées par la loi anti-gaspillage de 2020. L'obsolescence programmée est un délit défini à l'article L. 441-2 du code de la consommation ; la garantie légale de conformité est de deux ans et n'est prolongée que de six mois en cas de réparation (art. L. 217-13). L'indice de réparabilité s'applique depuis le 1er janvier 2021 à six catégories d'équipements électriques et électroniques ; l'indice de durabilité l'a remplacé pour les téléviseurs le 8 janvier 2025 et pour les lave-linge le 8 avril 2025. Côté numérique, l'écoconception repose sur un référentiel général publié le 17 mai 2024 par l'Arcep, l'Arcom et l'ADEME, qui énonce 78 critères. La loi anti-gaspillage fixe la fin de la mise sur le marché des emballages en plastique à usage unique d'ici 2040, avec des jalons intermédiaires (− 20 % d'emballages plastique à usage unique en 2025, − 50 % de bouteilles en plastique en 2030) ; au niveau international, la cinquième session de négociation d'un traité sur les plastiques s'est achevée sans accord à Busan fin 2024 et a été reprise à Genève du 5 au 14 août 2025. Enfin, la loi n° 2026-602 du 8 juillet 2026 encadre la « mode ultra-express » : malus de 0,25 € à 12 € par article à compter du 1er septembre 2026, porté de 1 € à 20 € en 2030, et interdiction de publicité, y compris pour les influenceurs, à compter du 1er janvier 2027.",
+      "source_baseline": [
+        "https://librairie.ademe.fr/economie-circulaire-et-dechets/8644-la-collecte-des-dechets-par-le-service-public-en-france.html",
+        "https://www.ecologie.gouv.fr/biodechets",
+        "https://www.ecologie.gouv.fr/politiques-publiques/cadre-general-filieres-responsabilite-elargie-producteurs",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032225325/",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044142545/2024-12-18",
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F11094",
+        "https://www.ecologie.gouv.fr/dossiers/comment-consommer-plus-durablement/prendre-compte-indices-reparabilite-durabilite",
+        "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/environnement-rgesn-170524.html",
+        "https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/",
+        "https://www.ecologie.gouv.fr/loi-anti-gaspillage-economie-circulaire",
+        "https://www.mer.gouv.fr/traite-mondial-contre-la-pollution-plastique-reprise-de-la-cinquieme-session-de-negociations",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054399113",
+        "https://www.ecologie.gouv.fr/politiques-publiques/reduire-limpact-environnemental-lindustrie-textile-loi-du-8-juillet-2026"
+      ],
+      "ecart_synthese": "Convergence forte sur l'écoconception, la durabilité des produits et la fin du plastique à usage unique. LFI crée du service public (réparation et réemploi, réseau national de déchèteries) et légifère sur l'obsolescence programmée ; les Écologistes réforment les dispositifs existants (responsabilité élargie des producteurs, tri, fast fashion, standardisation européenne) et étendent le sujet au numérique.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-publicite",
+      "theme": "ecologie-climat-energie",
+      "label": "Publicité, greenwashing & sobriété de la consommation",
+      "ordre": 39,
+      "baseline_reel": "La publicité pour les énergies fossiles est interdite depuis le 22 août 2022 (art. 7 de la loi Climat et résilience), sous peine de 20 000 € d'amende pour une personne physique et 100 000 € pour une personne morale. Les allégations de type « neutre en carbone » ne sont pas interdites mais conditionnées depuis le 1er janvier 2023 à la publication d'un bilan d'émissions du produit sur son cycle de vie (décret n° 2022-539) ; la directive (UE) 2024/825, applicable au 27 septembre 2026, range parmi les pratiques trompeuses en toutes circonstances les allégations de neutralité fondées sur la compensation d'émissions. L'expérimentation « Oui Pub » sur les imprimés publicitaires s'est tenue du 1er mai 2022 au 30 avril 2025 dans 14 territoires (2 623 449 habitants) et n'a pas été généralisée : le « Stop Pub » s'applique de nouveau partout depuis le 1er mai 2025. À compter du 11 août 2026, le démarchage téléphonique est interdit sans consentement préalable du consommateur (loi n° 2025-594 du 30 juin 2025). L'Autorité de régulation professionnelle de la publicité est une association loi 1901 indépendante des pouvoirs publics, sans dotation ni subvention publique, qui exerce un contrôle a priori des publicités audiovisuelles.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000043956984",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045570611",
+        "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024L0825",
+        "https://www.ecologie.gouv.fr/politiques-publiques/lexperimentation-oui-pub",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221441/2026-08-11",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054483939",
+        "https://www.inc-conso.fr/content/autorite-de-regulation-professionnelle-de-la-publicite-arpp"
+      ],
+      "ecart_synthese": "LFI multiplie les interdictions : prospectus en boîte aux lettres, publicité pour les produits les plus émetteurs, réduction de la publicité télévisée, allégations de neutralité carbone. Les Écologistes portent une réforme institutionnelle — transférer les missions de l'autorité d'autorégulation professionnelle à une autorité publique.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-investissement",
+      "theme": "ecologie-climat-energie",
+      "label": "Financement de la transition écologique",
+      "ordre": 40,
+      "baseline_reel": "Le rapport sur l'impact environnemental du budget de l'État annexé au projet de loi de finances pour 2026 (« budget vert », 6e édition) recense 40,5 Md€ de dépenses de l'État favorables à l'environnement, contre 38,4 Md€ en loi de finances initiale 2025 et 34,9 Md€ exécutés en 2024 ; l'ensemble des dépenses favorables et mixtes atteint 45,8 Md€, tandis que 8,1 Md€ de dépenses ont un impact défavorable sur au moins un axe environnemental. Ces dépenses excèdent les recettes environnementales affectées à l'État, prévues à 30,1 Md€ en 2026. Le rapport remis au Premier ministre par Jean Pisani-Ferry et Selma Mahfouz en mai 2023 évaluait pour sa part à environ 66 Md€ par an à l'horizon 2030, soit 2,3 points de PIB, le supplément d'investissement — public et privé — nécessaire par rapport à un scénario sans action climatique.",
+      "source_baseline": [
+        "https://www.assemblee-nationale.fr/dyn/dyn/contenu/visualisation/1089981/file/4-BV_PLF%202026%20VF2-1.pdf",
+        "https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/2023-incidences-economiques-rapport-pisani-5juin.pdf"
+      ],
+      "ecart_synthese": "LFI chiffre (200 Md€ d'investissements) et conditionne (aides d'État, code des marchés publics, pôles publics dans l'énergie et les transports). Les Écologistes n'ont sur cet axe qu'un véhicule de financement — un fonds souverain adossé à un « livret industrie » —, leur matière industrielle vivant sur l'axe décarbonation de l'industrie.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-emplois-transition",
+      "theme": "ecologie-climat-energie",
+      "label": "Emplois, formation & reconversions de la transition",
+      "ordre": 41,
+      "baseline_reel": "En 2024, 361 000 personnes, soit 1,2 % de la population en emploi, exerçaient en France un métier à finalité environnementale, c'est-à-dire un métier dont la vocation est de mesurer, prévenir, maîtriser ou corriger les impacts sur l'environnement. Le dispositif de droit commun de reconversion est la « période de reconversion », créée par l'article 11 de la loi n° 2025-989 du 24 octobre 2025 et entrée en vigueur le 1er janvier 2026 : elle permet à un salarié de suivre une formation certifiante en vue d'une mobilité professionnelle interne ou externe, et se substitue aux dispositifs antérieurs de transitions collectives et de reconversion ou promotion par alternance, qui continuent de s'appliquer aux actions engagées avant cette date.",
+      "source_baseline": [
+        "https://www.statistiques.developpement-durable.gouv.fr/emplois-et-metiers-de-leconomie-verte-synthese-des-connaissances-en-2024",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052430940"
+      ],
+      "ecart_synthese": "LFI outille le parcours du salarié : contrat de bifurcation écologique, droit de reprise préférentiel, offre locale de formation aux métiers de la transition. Les Écologistes n'ont qu'une proposition, sur les métiers de l'économie circulaire. Le déséquilibre est établi comme réel : les trois chapitres susceptibles de le combler ont été lus.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "agri-condition-animale",
+      "theme": "agriculture-alimentation",
+      "label": "Condition animale : élevage, aquaculture, transport & abattage",
+      "ordre": 42,
+      "baseline_reel": "L'animal est reconnu « être vivant doué de sensibilité » par l'article 515-14 du code civil depuis 2015, tout en restant soumis au régime des biens. Il n'existe pas de définition juridique de la « ferme-usine » : depuis le décret n° 2024-529 du 10 juin 2024, l'autorisation environnementale n'est requise qu'au-delà de 85 000 emplacements pour les poulets, 60 000 pour les poules, 3 000 porcs de production et 900 truies. Depuis la loi EGalim de 2018, la mise en production de tout bâtiment nouveau ou réaménagé de poules pondeuses en cage est interdite, sans remettre en cause les élevages existants ; en 2024, sur 49,2 millions de poules pondeuses, près des trois quarts sont élevées en systèmes alternatifs (14 % en bio, plus de 36 % en plein air, 21 % au sol). La mise à mort des poussins mâles des lignées de ponte est interdite depuis fin 2022, avec des exceptions prévues par le décret n° 2022-137. Le transport reste régi par le règlement (CE) n° 1/2005 (9 h + 1 h + 9 h pour les animaux non sevrés, 14 h + 1 h + 14 h pour les bovins, ovins et caprins, 24 h pour les porcs), la proposition de révision présentée par la Commission le 7 décembre 2023 n'ayant pas été adoptée ; l'élevage pour la fourrure est interdit depuis la loi du 30 novembre 2021.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030250342",
+        "https://www.legifrance.gouv.fr/eli/decret/2024/6/10/TRED2405486D/jo/texte",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053430367",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044489018",
+        "https://agreste.agriculture.gouv.fr/agreste-web/download/publication/publie/GraFra2025Chap12.10/GraphAgri2025_aviculture-oeufs-foie-gras-cuniculture.pdf",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045124750",
+        "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32005R0001",
+        "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:52023PC0770",
+        "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000044387614"
+      ],
+      "ecart_synthese": "Colonnes de taille égale et convergence sur l'essentiel : fermes-usines, élevage en cage, durée de transport, conditions d'abattage. Les Écologistes ajoutent le levier de la demande (réduction planifiée de la consommation de produits animaux, transition des cheptels, systèmes pastoraux) là où LFI reste sur les pratiques d'élevage.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-condition-animale",
+      "theme": "ecologie-climat-energie",
+      "label": "Condition animale : chasse, spectacles, compagnie & expérimentation",
+      "ordre": 43,
+      "baseline_reel": "L'article 515-14 du code civil qualifie les animaux d'« êtres vivants doués de sensibilité » tout en les soumettant au régime des biens : ils n'ont pas de personnalité juridique. Environ un million de personnes valident chaque année leur permis de chasser ; les jours de chasse sont fixés département par département par arrêté préfectoral (art. R. 424-1 du code de l'environnement), et la chasse à courre comme la vénerie sous terre restent légales sous le régime de l'arrêté du 18 mars 1982. L'article 521-1 du code pénal, qui punit les actes de cruauté envers les animaux, ne s'applique ni aux courses de taureaux ni aux combats de coqs là où une tradition locale ininterrompue est établie, exception jugée conforme à la Constitution en 2012. La loi du 30 novembre 2021 interdit les spectacles de cétacés cinq ans après sa promulgation (fin 2026) et la détention comme les spectacles d'animaux non domestiques dans les cirques itinérants sept ans après (fin 2028). En 2023, 2 046 754 utilisations d'animaux à des fins scientifiques ont été recensées en France, en baisse de 3,8 % sur un an.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030250342",
+        "https://ofb.gouv.fr/la-chasse-un-loisir-encadre",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006838138",
+        "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000677032",
+        "https://www.conseil-constitutionnel.fr/decision/2012/2012271QPC.htm",
+        "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000044387610",
+        "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-04/enqu-te-2023-utilisation-des-animaux-des-fins-scientifiques-36640.pdf"
+      ],
+      "ecart_synthese": "Les Écologistes couvrent tout le champ non agricole — chasse, corrida et spectacles, animaux de compagnie, abandon, personnalité juridique de l'animal, alternatives à l'expérimentation. LFI n'y a que deux propositions, sur la chasse cruelle et sur les méthodes substitutives à l'expérimentation. La personnalité juridique de l'animal n'a aucun vis-à-vis.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-justice-environnementale",
+      "theme": "ecologie-climat-energie",
+      "label": "Justice environnementale",
+      "ordre": 44,
+      "baseline_reel": "La loi Climat et résilience du 22 août 2021 a créé un délit d'écocide — et non un crime — à l'article L. 231-3 du code de l'environnement, puni de 10 ans d'emprisonnement et 4,5 M€ d'amende, montant pouvant être porté au décuple de l'avantage tiré de l'infraction. Depuis le 1er avril 2021, un tribunal judiciaire par ressort de cour d'appel est spécialisé en matière d'atteintes à l'environnement (art. 706-2-3 du code de procédure pénale). La convention judiciaire d'intérêt public environnementale, créée par la même loi du 24 décembre 2020, a donné lieu à plus de 40 conventions conclues entre janvier 2022 et juin 2026. La directive (UE) 2024/1203 sur la protection de l'environnement par le droit pénal devait être transposée au plus tard le 21 mai 2026. Au niveau international, le Statut de Rome ne retient que quatre crimes et ne contient pas l'écocide ; une proposition d'amendement en ce sens a été déposée auprès du dépositaire de l'ONU le 4 avril 2025 par cinq États.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043961215",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043258442",
+        "https://www.ecologie.gouv.fr/politiques-publiques/convention-judiciaire-dinteret-public-cjip",
+        "https://eur-lex.europa.eu/eli/dir/2024/1203/oj",
+        "https://legal.un.org/icc/statute/french/rome_statute(f",
+        "https://treaties.un.org/doc/Publication/CN/2025/CN.162.2025-Frn.pdf"
+      ],
+      "ecart_synthese": "LFI crée des incriminations — crime d'écocide, crime climatique de dissimulation sur les émissions des entreprises — et porte une juridiction internationale (tribunal de justice climatique, traité contraignant les multinationales). Les Écologistes travaillent la procédure interne : référé environnemental, et suppression de la convention judiciaire d'intérêt public, que LFI ne mentionne pas. Les deux veulent des moyens pour la justice pénale environnementale.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "eco-industrie-decarbonation",
+      "theme": "ecologie-climat-energie",
+      "label": "Décarbonation de l'industrie",
+      "ordre": 45,
+      "baseline_reel": "L'industrie a émis 113 millions de tonnes équivalent CO2 en 2024, soit 28 % des émissions nationales, un niveau inférieur de 51 % à celui de 1990. En 2025, l'industrie manufacturière a constitué la principale contribution à la baisse des émissions françaises, sous l'effet conjoint d'efforts de décarbonation et de baisses de production. Le soutien public passe par le plan France 2030 : l'appel d'offres « Grands projets industriels de décarbonation », opéré par l'ADEME, a été rouvert du 7 mai au 7 septembre 2026 pour financer l'efficacité énergétique, l'électrification des procédés et la capture de CO2 sur des activités industrielles existantes.",
+      "source_baseline": [
+        "https://www.statistiques.developpement-durable.gouv.fr/industrie-et-environnement-en-france-etat-des-connaissances-en-2025",
+        "https://www.ecologie.gouv.fr/presse/baisse-emissions-gaz-effet-serre-se-poursuit-2024-2025-france-doit-accelerer-sa",
+        "https://www.entreprises.gouv.fr/espace-entreprises/appels-a-projets-et-appels-a-manifestation-d-interet/grands-projets-0"
+      ],
+      "ecart_synthese": "Les Écologistes détaillent les procédés : électrification, hydrogène par électrolyse, Certificats d'économie d'énergie, contrats pour différence sur le prix de l'électricité, sobriété compétitive, Grenelle et loi de programmation industrielle. LFI tient le sujet en une proposition de plan de reconstruction industrielle. L'asymétrie est d'architecture de programme : les deux chapitres industriels ont été lus.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "sante-toxiques",
+      "theme": "sante",
+      "label": "Pollutions, toxiques & risques industriels",
+      "ordre": 46,
+      "baseline_reel": "La loi n° 2025-188 du 27 février 2025 interdit depuis le 1er janvier 2026 les cosmétiques, farts et textiles d'habillement contenant des PFAS (extension à tous les textiles en 2030) et crée une redevance de 100 € par 100 g de PFAS rejetés au-delà de 100 g par an. Le plafond de l'amende administrative applicable aux installations classées est de 45 000 € depuis la loi du 23 octobre 2023, avec une astreinte pouvant atteindre 4 500 € par jour ; en 2024, l'inspection des installations classées a effectué 24 514 visites sur un parc de 18 963 sites autorisés, 22 920 enregistrés et 1 299 établissements Seveso. Santé publique France attribue 40 000 décès par an à l'exposition aux particules fines PM2,5 (estimation 2021, période 2016-2019) ; les zones à faibles émissions restent en vigueur, le Conseil constitutionnel ayant censuré le 21 mai 2026 l'article de la loi de simplification de la vie économique qui les supprimait. Aux Antilles, l'étude Kannari 2 mesure du chlordécone dans le sang de 81,3 % des adultes en Guadeloupe et 85,5 % en Martinique, et le fonds d'indemnisation des victimes de pesticides a enregistré 978 demandes en 2024, dont 51 déposées aux Antilles.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051260902",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048248715",
+        "https://www.ecologie.gouv.fr/presse/bilan-laction-linspection-installations-classees-lannee-2024",
+        "https://www.santepubliquefrance.fr/presse/2021/pollution-de-l-air-ambiant-nouvelles-estimations-de-son-impact-sur-la-sante-des-francais",
+        "https://www.conseil-constitutionnel.fr/decision/2026/2026903DC.htm",
+        "https://www.santepubliquefrance.fr/etudes-et-enquetes/kannari-2-exposition-de-la-population-antillaise-au-chlordecone-et-a-dautres-polluants",
+        "https://fonds-indemnisation-pesticides.fr/wp-content/uploads/2025/08/Rapport-dactivite-2024.pdf"
+      ],
+      "ecart_synthese": "Convergence sur le principe pollueur-payeur et sur l'interdiction des substances les plus nocives. Les Écologistes nomment les substances et les cadres (PFAS, perturbateurs endocriniens, plomb, règlement REACH) et traitent la qualité de l'air par les zones à faibles émissions ; LFI met l'accent sur les moyens de contrôle et de police, l'indemnisation des victimes et des essais nucléaires, et la dépollution des territoires.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "sante-prevention",
+      "theme": "sante",
+      "label": "Prévention & santé publique",
+      "ordre": 47,
+      "baseline_reel": "En 2024, la consommation d'antibiotiques en ville s'établit à 22,1 doses définies journalières pour 1 000 habitants et par jour, en hausse de 5,4 % sur un an, et les prescriptions dépassent 860 pour 1 000 habitants : la France se situe au 2ᵉ rang européen, pour un objectif national fixé à 650 prescriptions pour 1 000 habitants en 2027. En santé animale, l'indicateur d'exposition aux antibiotiques est de 0,307 en 2024, contre une cible de 0,3 fixée par le plan Écoantibio 3 (2023-2028), après une baisse de 49 % depuis 2011 ; les antibiotiques critiques (fluoroquinolones, céphalosporines de 3ᵉ et 4ᵉ générations) représentent 1,2 % de l'exposition totale des animaux. L'action publique est portée par une feuille de route interministérielle 2024-2034 « Une seule santé », qui articule Écoantibio 3 pour l'animal, la stratégie nationale de prévention des infections pour l'humain et un volet environnement, après une première feuille de route adoptée en 2016 et évaluée en mai 2022.",
+      "source_baseline": [
+        "https://www.santepubliquefrance.fr/presse/2025/les-prescriptions-et-la-consommation-d-antibiotiques-en-secteur-de-ville-augmentent-en-2024",
+        "https://www.anses.fr/system/files/dp-atb-2025.pdf",
+        "https://www.ecologie.gouv.fr/politiques-publiques/lantibioresistance"
+      ],
+      "ecart_synthese": "Axe créé pour une proposition écologiste de réduction de l'antibiorésistance (décision n° 25 : une mesure extraite se classe toujours). Aucune proposition LFI n'est captée à ce stade — le chantier Santé n'ayant pas été ouvert, l'absence ne peut pas être lue comme un silence du programme.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "econ-souverainete-productive",
+      "theme": "economie-travail-entreprises",
+      "label": "Souveraineté productive & relocalisation",
+      "ordre": 48,
+      "baseline_reel": "Les investissements étrangers dans les activités sensibles sont soumis à autorisation préalable du ministre chargé de l'économie (art. L. 151-3 du code monétaire et financier) ; le décret n° 2023-1293 du 28 décembre 2023 a élargi la liste des secteurs concernés, notamment à l'extraction et à la transformation des matières premières critiques et à la photonique, et pérennisé le seuil de 10 % des droits de vote pour les sociétés cotées. En 2024, 392 dossiers ont été déposés (309 en 2023) et 182 autorisations délivrées, dont 54 % assorties de conditions. En cas de projet de fermeture d'un établissement avec licenciement collectif, la loi du 29 mars 2014 oblige l'employeur à informer des repreneurs potentiels, à produire un document de présentation du site et à examiner les offres reçues (art. L. 1233-57-9 et suivants du code du travail). Le déficit du commerce extérieur de biens s'élève à 69,2 Md€ en 2025, en amélioration de 10,0 Md€ sur un an mais encore 11,1 Md€ au-dessous du niveau de 2019.",
+      "source_baseline": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048706234",
+        "https://www.tresor.economie.gouv.fr/Articles/2025/07/30/publication-du-rapport-annuel-sur-le-controle-ief-en-2024",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000028812176/",
+        "https://www.douane.gouv.fr/actualites/resultats-du-commerce-exterieur-de-la-france-pour-le-mois-de-decembre-et-pour-lannee"
+      ],
+      "ecart_synthese": "Même objet, deux instruments : LFI élargit le régime de contrôle public des investissements étrangers à tous les secteurs de la bifurcation écologique ; les Écologistes renforcent les outils de reprise et de préemption (décret Montebourg, machines-outils, gestion publique exceptionnelle). L'écologie n'y est un motif que par extension — d'où le rattachement à l'économie et le cotag climat.",
+      "baseline_verifiee": "2026-08-02"
+    },
+    {
+      "id": "commerce-protection-ecologique",
+      "theme": "europe-international-defense",
+      "label": "Commerce extérieur & protection écologique aux frontières",
+      "ordre": 49,
+      "baseline_reel": "Les droits de douane et les accords commerciaux relèvent de la compétence exclusive de l'Union européenne (art. 3 du traité sur le fonctionnement de l'UE) : ils se décident à la frontière européenne, pas à la frontière nationale. Le mécanisme d'ajustement carbone aux frontières (règlement (UE) 2023/956) est entré dans sa phase définitive le 1er janvier 2026 sur six catégories de produits — acier, ciment, aluminium, engrais azotés, hydrogène, électricité importée —, avec une dispense en dessous de 50 tonnes importées par an et un premier achat de certificats en février 2027. Depuis le 1er juillet 2026, les colis d'une valeur inférieure ou égale à 150 € importés de pays tiers ne sont plus exonérés de droits de douane et supportent un droit forfaitaire provisoire de 3 € par catégorie d'articles. L'accord UE-Mercosur, signé le 17 janvier 2026 après décision du Conseil du 9 janvier, est en application provisoire depuis le 1er mai 2026. L'accord UE-Canada (CETA) est appliqué provisoirement depuis le 21 septembre 2017 ; en France, le Sénat a rejeté le 21 mars 2024 l'article autorisant sa ratification.",
+      "source_baseline": [
+        "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:12016E003",
+        "https://www.ecologie.gouv.fr/politiques-publiques/mecanisme-dajustement-carbone-aux-frontieres-macf",
+        "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32023R0956",
+        "https://presse.economie.gouv.fr/?p=180373",
+        "https://france.representation.ec.europa.eu/informations/accord-commercial-ue-mercosur-distinguer-le-vrai-du-faux-2026-04-27_fr",
+        "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32017D0038",
+        "https://www.senat.fr/dossier-legislatif/pjl18-694.html",
+        "https://www.senat.fr/scrutin-public/dossiers/pjl18-694_scr.html"
+      ],
+      "ecart_synthese": "Les deux conditionnent l'accès au marché à des critères écologiques, mais pas à la même frontière : LFI raisonne en frontière nationale (droits de douane sur critères écologiques, taxe kilométrique, veto français sur les nouveaux accords, normes imposées aux produits importés), les Écologistes en frontière européenne (mécanisme d'ajustement carbone, clauses de sauvegarde, protections douanières sectorielles, retrait coordonné des traités d'investissement). À signaler au lecteur : LFI propose aussi d'abroger les accords de libre-échange en vigueur, mais son programme range cette proposition dans la désobéissance aux règles européennes, sans motif écologique écrit — elle ne figure donc pas sur cet axe (décision n° 27, µ-Q3).",
+      "baseline_verifiee": "2026-08-02"
     }
   ]
 }

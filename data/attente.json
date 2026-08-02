@@ -82,8 +82,8 @@
     {
       "id": "revoir-baseline-fisc-verte",
       "nature": "a-revoir",
-      "objet": "Baseline et ecart_synthese de l'axe fisc-verte",
-      "detail": "L'axe est passé de 1 à 13 mesures, majoritairement douanières. Sa baseline (budget vert, malus au poids, TIRUERT) ne couvre aucun fait pour 10 des 13 mesures, et son ecart_synthese (« aucune mesure LFI captée ») devient factuellement faux à la fusion. 8 pistes sourçables proposées dans data/rapports/fisc-verte.rapport.md, non vérifiées.",
+      "objet": "Baselines et ecart_synthese des deux axes issus de la scission de fisc-verte",
+      "detail": "Décision n° 28 : l'axe est scindé en « Fiscalité environnementale » (fisc-verte, id conservé) et « Commerce extérieur & protection écologique aux frontières » (axe nouveau). La baseline stampée baseline_verifiee: 2026-07-29 (budget vert, malus au poids, TIRUERT) ne vaut que pour le premier et doit être resserrée ; le second n'en a aucune (pistes non vérifiées aux §6.a des rapports fisc-verte : MACF, droits de douane, clauses miroirs, Contribution Climat Énergie, ressources propres de l'UE). Les deux ecart_synthese sont à réécrire — celui de fisc-verte affirme encore qu'aucune mesure LFI n'est captée. Travail de l'agent verificateur-sources avant publication.",
       "declencheur": "avant-publication",
       "date_inscription": "2026-07-31"
     },
@@ -112,6 +112,666 @@
       "declencheur": "date",
       "date_echeance": "2026-10-11",
       "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-traite-multinationales-16-6-5",
+      "nature": "a-revoir",
+      "objet": "LFI 16.6-5 (traité contraignant les multinationales) rangée avec le bloc justice environnementale",
+      "detail": "Classée avec l'écocide et le tribunal international de justice climatique (décision n° 27, Q7 de la passe complémentaire) au motif de la rubrique commune 16.6 et de l'instrument commun (droit international contraignant). C'est la plus faible du bloc côté écologie : son objet est la responsabilité des multinationales en matière de droits humains autant que d'environnement. À réexaminer quand le chantier Europe, international & défense ouvrira son propre découpage.",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-ouvrages-art-ponts-viaducs",
+      "nature": "a-revoir",
+      "objet": "LFI 9.3-7 (diagnostic des ouvrages d'art) classée sur eco-adaptation",
+      "detail": "Mesure hybride : digues et barrages relèvent de la prévention des risques climatiques, ponts et viaducs des infrastructures de transport. Classée sur eco-adaptation par application de la décision n° 24 (rubrique 9.3 « Lancer des grands chantiers écologiques »), cotag mobilites. À réexaminer quand un axe infrastructures existera.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-marches-publics-jumelle-localisation",
+      "nature": "a-revoir",
+      "objet": "lfi-investissement-06 (Code des marchés publics) séparée de sa jumelle « critères de localisation »",
+      "detail": "Les deux propositions de LFI 9.2 portent sur les critères de la commande publique : celle qui nomme un critère écologique est extraite sur eco-investissement, celle qui ne parle que de localisation est en reliquat Économie. Au chantier Économie, décider si elles doivent se retrouver sur un même axe.",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-fisc-verte-05-criteres-agricoles",
+      "nature": "a-revoir",
+      "objet": "lfi-fisc-verte-05 (protectionnisme écologique agricole) classée sur fisc-verte",
+      "detail": "Elle nomme le « protectionnisme écologique » et partage l'instrument (clause de sauvegarde) d'eco-fisc-verte-3, mais ses critères écrits sont sanitaires et sociaux (conditions de production, rémunération du travail agricole, norme sanitaire nationale). Le chantier Agriculture la réclamera.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-fiscalite-aerienne-partagee",
+      "nature": "a-revoir",
+      "objet": "La fiscalité aérienne est partagée entre l'axe fisc-verte et le chantier Mobilités",
+      "detail": "eco-fisc-verte-1 et lfi-fisc-verte-06 (niches sur le kérosène) sont sur fisc-verte, mais Écologistes ch. 3 prop. 9 (TSBA, TVA sur les billets, sortie de la Convention de Chicago) reste au chantier Mobilités parce que son instrument dominant est l'interdiction de vols. Au chantier Mobilités, vérifier que le lecteur ne voit pas deux traitements du même sujet à deux endroits.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-faux-silence-traites-libre-echange",
+      "nature": "a-revoir",
+      "objet": "LFI 17.2 (abroger les accords de libre-échange) laissée hors de fisc-verte",
+      "detail": "Application de la décision n° 24 : la rubrique de LFI donne un motif de désobéissance européenne, celle d'Écologistes (eco-fisc-verte-5) un motif de climat et de biodiversité. Conséquence à assumer : l'axe montre une proposition Écologistes sur les traités de commerce sans réponse LFI, alors que LFI en a une. Ce n'est pas un silence réel au sens de la décision n° 21 — à écrire dans l'ecart_synthese de l'axe et à réexaminer au chantier Europe.",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "revoir-cotag-europeen-corpus-lfi",
+      "nature": "a-revoir",
+      "objet": "Asymétrie du cotag européen entre les deux corpus (20 Écologistes / 4 LFI)",
+      "detail": "Décision n° 30, point 3, appliquée à la fusion du 01/08 : le corpus LFI publié a été passé au critère de fond. Un seul ajout justifié (lfi-ocean-07, « la politique commune des pêches au niveau européen », pendant exact d'eco-ocean-07). Deux candidates écartées et le motif consigné : lfi-nucleaire-01 (faux positif — « European Pressurized Reactor » est le développement d'un sigle) et lfi-fisc-fraude-03 (l'Europe y est nommée comme blocage à contourner par des décisions unilatérales, pas comme échelon de la politique proposée). Reste 20 mesures Écologistes cotaguées contre 4 LFI : l'écart s'explique surtout par le fait que les chapitres européens de LFI (16 et 17) ne sont pas encore dans le corpus. À revérifier quand le chantier Europe les aura extraits — c'est là seulement qu'on saura si l'asymétrie est réelle.",
+      "declencheur": "chantier",
+      "date_inscription": "2026-07-31",
+      "chantier": "europe-international-defense"
+    },
+    {
+      "id": "revoir-axe-commerce-protection-ecologique",
+      "nature": "a-revoir",
+      "objet": "Axe « Commerce extérieur & protection écologique aux frontières », rangé sous Europe",
+      "detail": "Créé par la décision n° 28 sous europe-international-defense, cotags fiscalite-verte et écologie, sur le modèle de la décision n° 19 (pesticides sous Agriculture). Le chantier Europe, international & défense n'a pas encore ouvert son découpage : vérifier alors que cet axe s'y insère et que son libellé tient face au reste du commerce extérieur (accords de libre-échange, OMC), dont plusieurs propositions sont en reliquat.",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-07-31"
+    },
+    {
+      "id": "reliquat-creer-une-agence-pour-les-relocalisations-dependant",
+      "nature": "reliquat",
+      "objet": "Créer une Agence pour les relocalisations dépendant du Conseil à la planification écologiq…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Économie / industrie.",
+      "verbatim": "Créer une Agence pour les relocalisations dépendant du Conseil à la planification écologique, chargée de recenser les secteurs industriels indispensables à la souveraineté nationale et à la bifurcation écologique, et d'établir un plan de relocalisation pour chaque filière ou production stratégique identifiée.",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-mettre-en-place-une-logistique-verte-rompre",
+      "nature": "reliquat",
+      "objet": "Mettre en place une logistique verte : rompre avec les flux tendus, développer les modes d…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Transports / logistique.",
+      "verbatim": "Mettre en place une logistique verte : rompre avec les flux tendus, développer les modes de transport propres et structurer une logistique territoriale, notamment en renforçant le rôle du train, du fluvial et en mutualisant les flux du dernier kilomètre.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-supprimer-les-regions-transfrontalieres-ou-euroregions",
+      "nature": "reliquat",
+      "objet": "Supprimer les régions transfrontalières (ou eurorégions)",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Institutions & démocratie.",
+      "verbatim": "Supprimer les régions transfrontalières (ou eurorégions)",
+      "declencheur": "chantier",
+      "chantier": "institutions-democratie",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-interdire-le-droit-a-la-differenciation",
+      "nature": "reliquat",
+      "objet": "Interdire le « droit à la différenciation",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Institutions & démocratie.",
+      "verbatim": "Interdire le « droit à la différenciation",
+      "declencheur": "chantier",
+      "chantier": "institutions-democratie",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-reserver-le-statut-de-collectivite-unique-aux",
+      "nature": "reliquat",
+      "objet": "Réserver le statut de collectivité unique aux territoires insulaires et des Outre-mer.",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Institutions & démocratie.",
+      "verbatim": "Réserver le statut de collectivité unique aux territoires insulaires et des Outre-mer.",
+      "declencheur": "chantier",
+      "chantier": "institutions-democratie",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-recomposer-les-assemblees-regionales-a-partir-des",
+      "nature": "reliquat",
+      "objet": "Recomposer les assemblées régionales à partir des élections des conseillers départementaux…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Institutions & démocratie.",
+      "verbatim": "Recomposer les assemblées régionales à partir des élections des conseillers départementaux.",
+      "declencheur": "chantier",
+      "chantier": "institutions-democratie",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-appliquer-une-preference-commerciale-pour-les-produits",
+      "nature": "reliquat",
+      "objet": "Appliquer une préférence commerciale pour les produits ultramarins vers l'Hexagone et l'Eu…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Europe / international.",
+      "verbatim": "Appliquer une préférence commerciale pour les produits ultramarins vers l'Hexagone et l'Europe et nouer des partenariats commerciaux équilibrés avec les voisins régionaux.",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-tendre-vers-l-autosuffisance-alimentaire-grace-a",
+      "nature": "reliquat",
+      "objet": "Tendre vers l'autosuffisance alimentaire grâce à l'agriculture paysanne écologique et des …",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Agriculture & alimentation.",
+      "verbatim": "Tendre vers l'autosuffisance alimentaire grâce à l'agriculture paysanne écologique et des filières agroalimentaires locales.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-annuler-les-cadeaux-fiscaux-accordes-sans-contrepartie",
+      "nature": "reliquat",
+      "objet": "Annuler les cadeaux fiscaux accordés sans contrepartie aux plus grandes entreprises ces di…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Agriculture & alimentation.",
+      "verbatim": "Annuler les cadeaux fiscaux accordés sans contrepartie aux plus grandes entreprises ces dix dernières années.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-creer-un-pole-public-des-transports-et",
+      "nature": "reliquat",
+      "objet": "Créer un pôle public des transports et de la mobilité.",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Créer un pôle public des transports et de la mobilité.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-renationaliser-la-sncf-et-refuser-la-mise",
+      "nature": "reliquat",
+      "objet": "Renationaliser la SNCF et refuser la mise en concurrence des lignes de transport.",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Renationaliser la SNCF et refuser la mise en concurrence des lignes de transport.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-refuser-la-suppression-des-lignes-ferroviaires-du",
+      "nature": "reliquat",
+      "objet": "Refuser la suppression des lignes ferroviaires du quotidien et en réouvrir, augmenter le n…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Refuser la suppression des lignes ferroviaires du quotidien et en réouvrir, augmenter le nombre de trains et garantir des tarifs accessibles, maintenir des guichets physiques dans les gares.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-creer-une-commission-d-enquete-sur-le",
+      "nature": "reliquat",
+      "objet": "Créer une commission d'enquête sur le chantier ferroviaire du Lyon-Turin, projet écocidair…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Créer une commission d'enquête sur le chantier ferroviaire du Lyon-Turin, projet écocidaire au coût démesuré.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-revenir-sur-la-liquidation-de-fret-sncf",
+      "nature": "reliquat",
+      "objet": "Revenir sur la liquidation de Fret SNCF poussée par la Commission européenne et mise en pl…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Revenir sur la liquidation de Fret SNCF poussée par la Commission européenne et mise en place par le gouvernement ; défendre l'opérateur public et développer massivement le fret ferroviaire en rendant obligatoire le raccordement des plateformes logistiques.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-developper-les-transports-publics-a-la-demande",
+      "nature": "reliquat",
+      "objet": "Développer les transports publics à la demande hors des zones denses de transport public.",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Développer les transports publics à la demande hors des zones denses de transport public.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-supprimer-les-lignes-aeriennes-quand-l-alternative",
+      "nature": "reliquat",
+      "objet": "Supprimer les lignes aériennes quand l'alternative en train est inférieure à quatre heures…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Supprimer les lignes aériennes quand l'alternative en train est inférieure à quatre heures.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-repenser-la-mobilite-individuelle-en-developpant-les",
+      "nature": "reliquat",
+      "objet": "Repenser la mobilité individuelle en développant les usages partagés de la voiture et les …",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Repenser la mobilité individuelle en développant les usages partagés de la voiture et les mobilités douces (comme le vélo)",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-limiter-la-taille-le-poids-et-les",
+      "nature": "reliquat",
+      "objet": "Limiter la taille, le poids et les dimensions des SUV autorisés à la vente et développer l…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Limiter la taille, le poids et les dimensions des SUV autorisés à la vente et développer la construction française de véhicules électriques légers.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-decreter-un-moratoire-sur-les-zones-a",
+      "nature": "reliquat",
+      "objet": "Décréter un moratoire sur les zones à faibles émissions (ZFE) dans leur conception actuell…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Décréter un moratoire sur les zones à faibles émissions (ZFE) dans leur conception actuelle, dont les critères induisent des inégalités sociales et une trop grande tolérance à l'égard de certains véhicules, notamment les SUV, qualifiés à tort de non-polluants.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-garantir-l-acces-aux-reseaux-dans-les",
+      "nature": "reliquat",
+      "objet": "Garantir l'accès aux réseaux dans les territoires peu dotés en transports collectifs par l…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Garantir l'accès aux réseaux dans les territoires peu dotés en transports collectifs par le soutien aux garages solidaires et une aide suffisante à la réparation dans le cadre du contrôle technique.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-adopter-un-plan-de-developpement-du-ferroutage",
+      "nature": "reliquat",
+      "objet": "Adopter un plan de développement du ferroutage et de report modal (cabotage maritime, fluv…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Adopter un plan de développement du ferroutage et de report modal (cabotage maritime, fluvial et dirigeable)",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-renationaliser-les-autoroutes-en-revenant-sur-les",
+      "nature": "reliquat",
+      "objet": "Renationaliser les autoroutes, en revenant sur les hausses de prix passées, ainsi que les …",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Renationaliser les autoroutes, en revenant sur les hausses de prix passées, ainsi que les aéroports stratégiques.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-engager-un-plan-specifique-de-developpement-des",
+      "nature": "reliquat",
+      "objet": "Engager un plan spécifique de développement des transports collectifs en Outre-mer, quasi …",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Engager un plan spécifique de développement des transports collectifs en Outre-mer, quasi inexistants aujourd'hui, sur le modèle du projet de tram-train à La Réunion.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-instaurer-une-agriculture-relocalisee-diversifiee-et-ecologi",
+      "nature": "reliquat",
+      "objet": "Instaurer une agriculture relocalisée, diversifiée et écologique et créer 300 000 emplois …",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Agriculture & alimentation.",
+      "verbatim": "Instaurer une agriculture relocalisée, diversifiée et écologique et créer 300 000 emplois agricoles.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-garantir-des-prix-remunerateurs-aux-producteurs-par",
+      "nature": "reliquat",
+      "objet": "Garantir des prix rémunérateurs aux producteurs par des prix planchers pour les agriculteu…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Agriculture & alimentation.",
+      "verbatim": "Garantir des prix rémunérateurs aux producteurs par des prix planchers pour les agriculteurs, interdire les ventes à perte et mettre en place une caisse de défaisance pour reprendre les dettes agricoles des convertis au 100 % bio.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-garantir-aux-agricultrices-et-agriculteurs-le-droit",
+      "nature": "reliquat",
+      "objet": "Garantir aux agricultrices et agriculteurs le droit à une retraite digne en engageant une …",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Protection sociale.",
+      "verbatim": "Garantir aux agricultrices et agriculteurs le droit à une retraite digne en engageant une réforme du système des retraites agricoles.",
+      "declencheur": "chantier",
+      "chantier": "protection-sociale-solidarites",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-refondre-la-pac-politique-agricole-commune-et",
+      "nature": "reliquat",
+      "objet": "Refondre la PAC (politique agricole commune) et orienter les aides publiques agricoles pou…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Agriculture & alimentation.",
+      "verbatim": "Refondre la PAC (politique agricole commune) et orienter les aides publiques agricoles pour favoriser la production écologiquement soutenable, l'intensité en main d'œuvre des exploitations et le développement des protéines végétales.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-faire-une-reforme-agraire-pour-encourager-l",
+      "nature": "reliquat",
+      "objet": "Faire une réforme agraire pour encourager l'installation de nouveaux agriculteurs et perme…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Agriculture & alimentation.",
+      "verbatim": "Faire une réforme agraire pour encourager l'installation de nouveaux agriculteurs et permettre le développement d'un tissu de nombreuses exploitations à taille humaine.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-limiter-le-prix-final-des-produits-alimentaires",
+      "nature": "reliquat",
+      "objet": "Limiter le prix final des produits alimentaires en fixant des coefficients multiplicateurs…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Europe / international & agriculture.",
+      "verbatim": "Limiter le prix final des produits alimentaires en fixant des coefficients multiplicateurs et en encadrant les marges des industries agro-alimentaires et de la grande distribution.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-developper-les-circuits-courts-pour-reduire-la",
+      "nature": "reliquat",
+      "objet": "Développer les circuits courts pour réduire la circulation des marchandises et l'utilisati…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Europe / international & agriculture.",
+      "verbatim": "Développer les circuits courts pour réduire la circulation des marchandises et l'utilisation d'emballages.",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-proteger-nos-produits-du-terroir-de-la",
+      "nature": "reliquat",
+      "objet": "Protéger nos produits du terroir de la concurrence internationale en garantissant les moye…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Europe / international & agriculture.",
+      "verbatim": "Protéger nos produits du terroir de la concurrence internationale en garantissant les moyens de l'Institut national de l'origine et de la qualité (INAO), qui permet de maintenir l'Appellation d'origine protégée (AOP), l'Appellation d'origine contrôlée (AOC) et l'Indication géographique protégée (IGP)",
+      "declencheur": "chantier",
+      "chantier": "agriculture-alimentation",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-systematiser-le-recours-au-fret-fluvial-des",
+      "nature": "reliquat",
+      "objet": "Systématiser le recours au fret fluvial dès que possible en respectant la biodiversité.",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie). Rattachement proposé par l'extraction : Logement, transports & territoires.",
+      "verbatim": "Systématiser le recours au fret fluvial dès que possible en respectant la biodiversité.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-moderniser-le-droit-minier-pour-ameliorer-et",
+      "nature": "reliquat",
+      "objet": "Moderniser le droit minier pour améliorer et relocaliser les chaînes d'approvisionnement e…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-complement). Rattachement proposé par l'extraction : Ressources / mines.",
+      "verbatim": "Moderniser le droit minier pour améliorer et relocaliser les chaînes d'approvisionnement en France et en Europe. Supprimer les dérogations à la sortie des énergies fossiles (gaz de mines et substances connexes). […]",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-europe-etendre-les-protections-reglementaires-et-douanieres",
+      "nature": "reliquat",
+      "objet": "[EUROPE] Étendre les protections réglementaires et douanières dans les industries stratégi…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-complement). Rattachement proposé par l'extraction : Europe / commerce.",
+      "verbatim": "[EUROPE] Étendre les protections réglementaires et douanières dans les industries stratégiques […]",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-europe-ameliorer-le-protectionnisme-ecologique-et-social",
+      "nature": "reliquat",
+      "objet": "[EUROPE] Améliorer le protectionnisme écologique et social aux frontières de l'Europe. […]…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-complement). Rattachement proposé par l'extraction : Europe / commerce & fiscalité verte.",
+      "verbatim": "[EUROPE] Améliorer le protectionnisme écologique et social aux frontières de l'Europe. […] Étendre le périmètre et accélérer la mise en œuvre du Mécanisme d'ajustement carbone aux frontières (MACF). […]",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-lancer-des-grands-travaux-de-renovation-des",
+      "nature": "reliquat",
+      "objet": "Lancer des grands travaux de rénovation des voies ferrées et de réouverture des lignes et …",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-complement). Rattachement proposé par l'extraction : Europe / commerce & fiscalité verte.",
+      "verbatim": "Lancer des grands travaux de rénovation des voies ferrées et de réouverture des lignes et gares fermées dans les trente dernières années",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-creer-un-tribunal-international-de-justice-economique",
+      "nature": "reliquat",
+      "objet": "Créer un tribunal international de justice économique pour juger les crimes financiers tra…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-complement). Rattachement proposé par l'extraction : Europe / commerce & fiscalité verte.",
+      "verbatim": "Créer un tribunal international de justice économique pour juger les crimes financiers transnationaux",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-elargir-le-dispositif-de-la-licence-d",
+      "nature": "reliquat",
+      "objet": "Élargir le dispositif de la licence d'office et lever les brevets sur les vaccins et autre…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-complement). Rattachement proposé par l'extraction : Europe / commerce & fiscalité verte.",
+      "verbatim": "Élargir le dispositif de la licence d'office et lever les brevets sur les vaccins et autres moyens médicaux de lutte contre les pandémies",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-relocaliser-les-productions-essentielles-a-la-vie",
+      "nature": "reliquat",
+      "objet": "Relocaliser les productions essentielles à la vie de notre pays.",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-industrie). Rattachement proposé par l'extraction : Économie / industrie.",
+      "verbatim": "Relocaliser les productions essentielles à la vie de notre pays.",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-adopter-des-mesures-antidumping-d-urgence-sur",
+      "nature": "reliquat",
+      "objet": "Adopter des mesures antidumping d'urgence sur les industries stratégiques : sidérurgie, au…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-industrie). Rattachement proposé par l'extraction : Économie / commerce.",
+      "verbatim": "Adopter des mesures antidumping d'urgence sur les industries stratégiques : sidérurgie, automobile, pharmaceutique…",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-exiger-un-depot-de-garantie-prealable-aupres",
+      "nature": "reliquat",
+      "objet": "Exiger un dépôt de garantie préalable auprès de la Banque de France en contrepartie d'un i…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-industrie). Rattachement proposé par l'extraction : Économie / finance.",
+      "verbatim": "Exiger un dépôt de garantie préalable auprès de la Banque de France en contrepartie d'un investissement étranger dans le pays.",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-rendre-effectives-les-peines-de-requisition-d",
+      "nature": "reliquat",
+      "objet": "Rendre effectives les peines de réquisition d'intérêt général pour toute délocalisation ou…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-industrie). Rattachement proposé par l'extraction : Économie / emploi.",
+      "verbatim": "Rendre effectives les peines de réquisition d'intérêt général pour toute délocalisation ou fermeture d'activité.",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-instaurer-une-taxe-kilometrique-aux-frontieres-de",
+      "nature": "reliquat",
+      "objet": "Instaurer une taxe kilométrique aux frontières de la France pour dissuader les délocalisat…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-industrie). Rattachement proposé par l'extraction : Fiscalité / commerce.",
+      "verbatim": "Instaurer une taxe kilométrique aux frontières de la France pour dissuader les délocalisations et l'importation de produits trop éloignés.",
+      "declencheur": "chantier",
+      "chantier": "fiscalite-budget-finances",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-renegocier-le-cadre-de-l-organisation-mondiale",
+      "nature": "reliquat",
+      "objet": "Renégocier le cadre de l'Organisation mondiale du commerce (OMC)",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-industrie). Rattachement proposé par l'extraction : Europe / international.",
+      "verbatim": "Renégocier le cadre de l'Organisation mondiale du commerce (OMC)",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-supprimer-les-avantages-fiscaux-sur-l-epargne",
+      "nature": "reliquat",
+      "objet": "Supprimer les avantages fiscaux sur l'épargne française investie à l'étranger, notamment p…",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-industrie). Rattachement proposé par l'extraction : Fiscalité / épargne.",
+      "verbatim": "Supprimer les avantages fiscaux sur l'épargne française investie à l'étranger, notamment pour l'assurance-vie.",
+      "declencheur": "chantier",
+      "chantier": "fiscalite-budget-finances",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-etablir-des-criteres-de-localisation-de-l",
+      "nature": "reliquat",
+      "objet": "Établir des critères de localisation de l'activité pour la commande publique nationale et …",
+      "detail": "Repérée dans le périmètre du chantier Écologie, non extraite (rapport ecologie-industrie). Rattachement proposé par l'extraction : Économie / commande publique.",
+      "verbatim": "Établir des critères de localisation de l'activité pour la commande publique nationale et locale et pour l'accord des aides aux entreprises.",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-ecologistes-ch-3-prop-5-fret-ferroviaire",
+      "nature": "reliquat",
+      "objet": "Écologistes ch. 3 prop. 5 — fret ferroviaire, fluvial et maritime",
+      "detail": "Fiscalité verte réelle, mais enchâssée dans une proposition de fret : l'instrument dominant est la planification modale. Verbatim abrégé — texte complet ch. 3 prop. 5, p. 24.",
+      "verbatim": "Couvrir 35 % du transport de marchandise grâce au fret ferroviaire, fluvial et maritime en 2050. […] en rééquilibrant la fiscalité et les tarifs (suppression progressive des abattements de TICPE, éco-redevance poids lourds sur le réseau routier non-concédé…)",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-ecologistes-ch-3-prop-6-poids-lourds",
+      "nature": "reliquat",
+      "objet": "Écologistes ch. 3 prop. 6 — poids lourds thermiques et gazole",
+      "detail": "Instrument dominant : interdiction et obligation. Verbatim abrégé — texte complet ch. 3 prop. 6, p. 24.",
+      "verbatim": "Interdire la vente de poids lourds thermique neufs en 2040 […] Relever progressivement les taxes sur le gazole des camions au taux normal.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-ecologistes-ch-3-prop-8-fiscalite-des",
+      "nature": "reliquat",
+      "objet": "Écologistes ch. 3 prop. 8 — fiscalité des énergies dans le maritime",
+      "detail": "Verbatim abrégé — texte complet ch. 3 prop. 8, p. 25.",
+      "verbatim": "Verdir le transport de passagers en mer […] Rééquilibrer la fiscalité des énergies entre électricité et carburants fossiles dans le maritime et adapter le forfait mobilité au transport maritime décarboné.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-ecologistes-ch-3-prop-9-fiscalite-du",
+      "nature": "reliquat",
+      "objet": "Écologistes ch. 3 prop. 9 — fiscalité du transport aérien",
+      "detail": "Le reliquat le plus proche de l'axe fiscalité environnementale : prolongement direct d'eco-fisc-verte-1 et de lfi-fisc-verte-06 (kérosène). Laissé au chantier Mobilités par la décision n° 27 (µ-Q2) parce que l'instrument dominant est l'interdiction de vols. Verbatim abrégé — texte complet ch. 3 prop. 9, p. 25.",
+      "verbatim": "Réduire le trafic aérien. […] Augmenter la fiscalité sur les billets d'avion (Taxe sur les Billets d'Avion ou TSBA et taux de TVA) pour compenser les exonérations fiscales sectorielles. […] Organiser une sortie concertée de la Convention de Chicago exemptant de taxe énergétique les vols internationaux.",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-ecologistes-ch-25-prop-8-credit-impot",
+      "nature": "reliquat",
+      "objet": "Écologistes ch. 25 prop. 8 — Crédit impôt recherche verdi",
+      "detail": "À traiter conjointement avec LFI 5.5 (« Supprimer le Crédit impôt recherche ») sur l'axe fisc-aides-entreprises — décision n° 27 (µ-Q1) : ne pas séparer par candidat deux propositions portant le même instrument. Verbatim abrégé — texte complet ch. 25 prop. 8, p. 97.",
+      "verbatim": "Réorienter et verdir le Crédit Impôt Recherche vers l'innovation durable des PME et des ETI. Privilégier une logique de subvention qui cofinance à 50 % tout projet R&D mené conjointement avec un laboratoire académique […] Cofinancer 1000 chaires industrielles et universitaires sur la transition écologique",
+      "declencheur": "chantier",
+      "chantier": "education-recherche-jeunesse",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-lfi-5-5-suppression-du-credit-impot",
+      "nature": "reliquat",
+      "objet": "LFI 5.5 — suppression du Crédit impôt recherche",
+      "detail": "Pendant de l'Écologistes ch. 25 prop. 8 : à traiter avec elle sur fisc-aides-entreprises (décision n° 27, µ-Q1).",
+      "verbatim": "Supprimer le Crédit impôt recherche au profit du financement des universités et instituts de recherche et mettre en place des plans nationaux de recherche",
+      "declencheur": "chantier",
+      "chantier": "education-recherche-jeunesse",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-lfi-17-2-abrogation-des-accords-de",
+      "nature": "reliquat",
+      "objet": "LFI 17.2 — abrogation des accords de libre-échange en vigueur",
+      "detail": "Laissée hors de l'axe commerce par la décision n° 27 (µ-Q3) : sa rubrique (« Désobéir à chaque fois que c'est nécessaire ») ne donne aucun motif écologique, là où le pendant Écologistes invoque le climat et la biodiversité. Conséquence à corriger au chantier Europe : l'axe montre une proposition Écologistes sans réponse LFI alors que LFI en a une.",
+      "verbatim": "Abroger les accords de libre-échange en vigueur (comme avec la Nouvelle-Zélande, le Canada, le Japon)",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-lfi-16-5-refus-du-libre-echange",
+      "nature": "reliquat",
+      "objet": "LFI 16.5 — refus du libre-échange et gouvernance internationale",
+      "detail": "La section porte le titre du sujet mais ses 4 propositions sont institutionnelles, pas douanières ni fiscales. Verbatim abrégé — texte complet ch. 16.5.",
+      "verbatim": "Refuser le libre-échange, instaurer un protectionnisme écologique et la coopération économique (section entière : FMI, Banque mondiale, OMC, CNUCED, normes OIT dans les accords commerciaux, règlement ONU contraignant les multinationales, règlement collectif des dettes)",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-ecologistes-ch-65-prop-9-reforme-du",
+      "nature": "reliquat",
+      "objet": "Écologistes ch. 65 prop. 9 — réforme du système économique mondial",
+      "detail": "Pendant Écologistes de LFI 16.5, écarté pour la même raison : gouvernance internationale, pas d'instrument fiscal ou douanier national. La symétrie tient. Verbatim abrégé — texte complet ch. 65 prop. 9, p. 205.",
+      "verbatim": "Promouvoir une réforme du système économique et financier mondial. Réformer la Banque Mondiale et le Fonds Monétaire International […] Réformer le droit international de la concurrence pour permettre de lutter contre les subventions aux énergies fossiles, en soutenant les discussions à l'Organisation Mondiale du Commerce (OMC)",
+      "declencheur": "chantier",
+      "chantier": "europe-international-defense",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-ecologistes-ch-20-prop-6-droit-minier",
+      "nature": "reliquat",
+      "objet": "Écologistes ch. 20 prop. 6 — droit minier et fiscalité de la rente",
+      "detail": "Contient de la matière écologique (sortie des fossiles, projets miniers durables, eau et déchets) mais aucun axe ne l'accueille : renvoi « Matières premières & mines » ouvert par la 3ᵉ passe. Verbatim abrégé — texte complet ch. 20 prop. 6, p. 78.",
+      "verbatim": "Moderniser le droit minier pour améliorer et relocaliser les chaînes d'approvisionnement en France et en Europe. Supprimer les dérogations à la sortie des énergies fossiles (gaz de mines et substances connexes). […] Renforcer la fiscalisation de l'exploitation minière au bénéfice des populations des pays miniers",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-ecologistes-ch-2-prop-2-tva-sur",
+      "nature": "reliquat",
+      "objet": "Écologistes ch. 2 prop. 2 — TVA sur la construction de logements sociaux",
+      "detail": "TVA, mais sans motif écologique (objectif : production de logements sociaux). Verbatim abrégé — texte complet ch. 2 prop. 2, p. 20.",
+      "verbatim": "Relancer la construction et la rénovation de logements locatifs sociaux (LLS). […] en diminuant la TVA sur la construction",
+      "declencheur": "chantier",
+      "chantier": "logement-transports-territoires",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "reliquat-lfi-92-taxe-kilometrique",
+      "nature": "reliquat",
+      "objet": "LFI 9.2 — taxe kilométrique aux frontières (motif : dissuader les délocalisations)",
+      "detail": "Extraite puis retirée de l'axe fiscalité environnementale par la décision n° 24 : son motif écrit est commercial, là où sa jumelle du ch. 12.3 (bouclier douanier, restée sur l'axe commerce) invoque une faible empreinte écologique. Les réunir aurait été corriger le programme au lieu de le restituer.",
+      "verbatim": "Instaurer une taxe kilométrique aux frontières de la France pour dissuader les délocalisations et l'importation de produits trop éloignés.",
+      "declencheur": "chantier",
+      "chantier": "economie-travail-entreprises",
+      "date_inscription": "2026-08-01"
+    },
+    {
+      "id": "corriger-source-fisc-tva",
+      "nature": "a-revoir",
+      "objet": "fisc-tva : source morte ET hors sujet (découvert au balayage du 2026-08-02)",
+      "detail": "Le balayage des 212 URLs de data/axes.json a trouvé 2 liens morts, tous deux sur des axes stampés baseline_verifiee: 2026-07-29. Celui de fisc-is était un simple déménagement (fiche F23575 passée de la section « particuliers » à « entreprendre »), corrigé après vérification du contenu. Celui de fisc-tva est plus gênant : l'URL est morte (404) et la fiche qu'elle visait (F23567) ne traite en réalité que de la TVA du secteur hygiène-santé, alors que la baseline affirme les quatre taux généraux (20/10/5,5/2,1) et l'absence de taux « grand luxe ». Il faut donc une source de remplacement qui porte réellement le fait affirmé — piste : art. 278 et suivants du CGI sur Légifrance (niveau 1). Non corrigé de ma main : economie.gouv.fr refuse curl ET la récupération de page, et je ne cite pas une URL que je n'ai pas pu ouvrir. À confier à verificateur-sources.",
+      "declencheur": "avant-publication",
+      "date_inscription": "2026-08-02"
     }
   ]
 }

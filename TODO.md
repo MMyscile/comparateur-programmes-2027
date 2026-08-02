@@ -18,6 +18,7 @@
 - ✅ **Unité de comparaison fixée** (2026-07-28) — le postulat « Écologistes sans candidat·e » était périmé : Marine Tondelier est candidate déclarée (22/10/2025) et désignée par le parti (08/12/2025, 86 %), sous réserve de la primaire de la gauche unie du **11/10/2026**. L'unité « programme de candidat » du CLAUDE.md tient donc pour les deux ; réserve primaire documentée dans `etat_programme` (fiche mise à jour). ⏰ Rendez-vous après le 11/10/2026 pour acter le résultat de la primaire.
 - ✅ **Pilote fiscalité étendu** (2026-07-29, 2ᵉ run de l'agent `extracteur`) — 69 mesures fusionnées (LFI 54→97, EELV 48→74), 18 nouveaux axes fiscalité/finances (grain fin conservé après arbitrage éditeur), 7 thématiques fines ajoutées. QC 10/10 par programme + contrôle exhaustif 70/70. Baselines des 18 axes vérifiées par le nouvel agent `verificateur-sources` (rapport `data/rapports/verification-baselines-2026-07-29.md` : 5 ✅ / 10 ⚠️ / 3 ❌ corrigées avant publication). Rapport d'extraction : `data/rapports/fiscalite-2.rapport.md`. Brouillons supprimés après fusion.
 - ⬜ 🟢 **Reliquats fiscalité** — (a) mesure « indicateurs de progrès humain » (LFI 6.3) écartée : à reprendre au chantier **économie** ; (b) confirmer à l'œil nu le chiffre DMTG 21,2 Md€ dans le PDF DGFiP n° 43 (lien dans le rapport de vérification) ; (c) compléter la référence Légifrance de la LFSS 2026 (numéro non retrouvé) ; (d) reste du ch. 3.2 LFI (hors finances locales) non extrait — chantier institutions.
+- ⬜ 🟢 **Limite repérée le 2026-08-02 : `DERNIER_EVENEMENT` est global, pas par domaine.** `scripts/etat-sources.mjs` n'a qu'une seule date de péremption pour les 54 axes. Le lot A des baselines a fait remonter deux textes qui périment les baselines **climat-énergie** (décret SNBC-3 du 16/07/2026, décret PPE3 du 12/02/2026) mais ne disent rien des axes fiscaux, dont l'événement de référence est la loi de finances. Les inscrire comme référence globale afficherait « référence de péremption : SNBC-3 » sur `fisc-ir`, ce qui est faux. Sans effet pratique aujourd'hui (tous les stamps sont postérieurs aux deux décrets), donc **non appliqué** ; à traiter par un événement par méta-thème si le cas se représente.
 - ⬜ 🟢 **Relancer `verificateur-sources`** après chaque loi de finances / LFSS / statistique majeure (prochaine échéance naturelle : PLF 2027, automne 2026) — l'agent vérifie aussi la cohérence chiffres ↔ URL citée. **Suivi** : `npm run etat-sources` affiche l'état de vérification par axe (champ `baseline_verifiee` de `data/axes.json`). Flux : (1) après la loi, mettre à jour `DERNIER_EVENEMENT` dans `scripts/etat-sources.mjs` → les axes plus anciens passent « à re-vérifier » ; (2) relancer l'agent sur ce périmètre ; (3) à l'application du rapport, actualiser `baseline_verifiee` sur les axes traités. Les 28 axes sont stampés `2026-07-29`.
 - ✅ **PR Dependabot Next 15 testée et mergée** (2026-07-29, commit 8e959cb) — testée dans un worktree isolé (merge main + `npm install` + `npm run build` + vérification navigateur : hydratation des filtres OK, console vide, Méthodologie OK). Next 15.5.21 fonctionne avec React 18.3.1 (pas de saut React 19 nécessaire). `eslint-config-next` aligné en 15.x au passage. Les 16 « high » Next sont corrigées ; `npm audit` signale encore 17 « high » mais ce sont d'autres avis (sharp, postcss embarqué, brace-expansion) — outils de build uniquement, rien de servi en prod statique.
 - ✅ **Baselines vérifiées** (2026-07-28) — les 10 axes passés en revue contre l'actualité (dont loi de finances 2026 promulguée le 19/02/2026). 3 corrections : `fisc-fortune` (mention de la nouvelle taxe de 20 % sur les actifs non professionnels des holdings patrimoniales, art. 235 ter C CGI), `fisc-is` (surtaxe grandes entreprises prolongée : taux effectif 30,1 % / 35,3 % au-delà de 1,5 / 3 Md€ de CA), `just-prison` (les chiffres du 01/06/2026 citaient un article sur ceux de février — source remplacée par la statistique mensuelle du ministère de la Justice). `fisc-ir` vérifié exact (181 917 € = indexation +0,9 % LF 2026). Les 6 autres baselines tiennent.
@@ -32,96 +33,66 @@
 
 - ⬜ 🟠 **Réécrire les textes éditoriaux dans la voix de l'éditeur** — le fond des textes publiés le 29/07 est validé, mais la forme est celle d'une IA, pas celle de Michaël. À reprendre par lui, directement dans les fichiers (le site suit au build) : `data/a-propos.md`, `data/regle-mapping.md`, préambule de `data/choix-editoriaux.md`. Règle apprise au passage : pas d'auto-justification (ex. de l'anonymat) — énoncer, ne pas plaider.
 
-## 🔴 REPRISE — état exact du chantier Écologie au 2026-07-31 (fin de séance)
+## 🟠 REPRISE — chantier Écologie livré au 2026-08-02, 4 points ouverts
 
-> À lire en premier pour reprendre. Rédigé avant une remise à zéro du contexte : rien de ce qui suit
-> n'existe ailleurs que dans ce fichier, `data/choix-editoriaux.md` et `data/attente.json`.
+> À lire en premier pour reprendre. Rien de ce qui suit n'existe ailleurs que dans ce fichier,
+> `data/choix-editoriaux.md`, `data/attente.json` et `data/rapports/`.
 
-### ⚠️ Avertissements avant toute manipulation
+### Où en est le chantier
 
-1. **`data/drafts/` n'est PAS suivi sur `main`** (12 fichiers, ~250 mesures et 5 rapports) : un
-   `git clean` les efface de l'arbre de travail. Ils sont **sauvegardés sur la branche
-   `wip/ecologie-brouillons`** (commit `769e3f8`, poussée sur GitHub) — donc récupérables :
-   `git checkout wip/ecologie-brouillons -- data/drafts && git reset data/drafts`.
-   ⚠️ Cette branche **ne doit pas être mergée dans `main`** : son build échoue par construction
-   (voir point 2), et les brouillons ont vocation à être fusionnés puis supprimés, pas versionnés.
-   ⚠️ Passer de cette branche à `main` **retire les brouillons de l'arbre de travail** (git les
-   considère comme suivis d'un côté, absents de l'autre) — les restaurer avec la commande ci-dessus.
-2. **`npm run build` échoue en local tant que les brouillons sont là** : `check-data` tourne en
-   `prebuild` et sort 419 erreurs, **toutes situées dans `data/drafts/`** (axes et thématiques pas
-   encore créés — c'est normal et attendu). Les données publiées sont saines. Pour vérifier un build :
-   écarter temporairement `data/drafts/`, builder, remettre. Vérifié le 31/07 : l'arbre committé build.
-3. **Ne pas committer les brouillons en l'état** — le déploiement Vercel casserait.
+**Le méta-thème « Écologie, climat & énergie » est intégré et le dépôt est sain** :
+`check-data` passe, `npm run build` passe, `npm run etat-sources` affiche 54/54 axes à jour.
 
-### Ce qui est fait
+| | |
+|---|---|
+| Mesures | **437** (LFI 259 / Écologistes 178) |
+| Axes | **54**, tous avec `baseline_reel` sourcé et `baseline_verifiee: 2026-08-02` |
+| Thématiques fines | 56 |
+| Sources de baseline | 225 liens |
+| Liste d'attente | 79 entrées (58 reliquats / 21 à revoir) |
+| Décisions éditoriales | 30 (`data/choix-editoriaux.md`) |
 
-- **5 passes d'extraction rendues**, toutes avec QC de fidélité au vert :
-  | brouillon | contenu | QC |
-  |---|---|---|
-  | `ecologie.rapport.md` + 2 drafts | périmètre initial, 181 mesures (EELV 65 / LFI 116) | LFI 116/116, EELV 65/65 |
-  | `ecologie-complement.*` | 68 mesures (EELV 32 / LFI 36) — comble 7 axes déséquilibrés par le découpage | 36/36 et 32/32 |
-  | `ecologie-industrie.*` | LFI ch. 9.2, 4 mesures + 11 reliquats Économie | 4/4 exhaustif |
-  | `fisc-verte.rapport.md` + draft | 8 mesures douanières/fiscales sur l'axe **existant** `fisc-verte` | 8/8 exhaustif |
-  | `fisc-verte-micro.*` | 5 mesures (chapitres jamais ouverts) | 5/5 exhaustif |
-- **2 commits** : `5b7339d` (glossaire, portée contextuelle, 41 termes) et `121bee2` (décisions 16-26
-  + `npm run attente`). Rien n'est poussé.
-- **26 décisions éditoriales** dans `data/choix-editoriaux.md`, dont 11 prises le 31/07.
+`data/drafts/` n'existe plus ; les brouillons restent récupérables sur `wip/ecologie-brouillons`
+(commit `769e3f8`), branche qui **ne doit toujours pas être mergée dans `main`**.
+Les baselines viennent des 3 rapports `data/rapports/verification-baselines-2026-08-01-lot-*.md`,
+appliqués par parsing (et non recopiés). QC de fidélité brouillon → publié : **265/266 verbatims
+identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
-### Les 4 règles générales posées le 31/07 (elles tranchent la suite)
+### 🔴 Les 4 points ouverts, à traiter un par un
 
-- **n° 16** — le sens de la mesure prime, **jamais** l'équilibre du nombre de mesures entre programmes.
-  Exception : un déséquilibre venu de *notre propre découpage d'extraction* est un artefact, corrigé
-  par une passe complémentaire (3 ont été déclenchées à ce titre), jamais par un choix de classement.
-- **n° 17** — **test de la baseline** : on crée un axe si et seulement si on peut lui écrire UNE
-  baseline chiffrable et sourçable.
-- **n° 24** — la **rubrique d'origine** est une pièce à verser au dossier : deux propositions décrivant
-  le même dispositif ne sont pas la même mesure si le programme les range dans deux chapitres avec
-  deux motifs différents.
-- **n° 25** — **créer plutôt qu'attendre** : une mesure *déjà extraite* se classe toujours, quitte à
-  créer l'axe ou le tag manquant. Le reliquat ne vaut que pour ce qui est *repéré mais non extrait*.
+1. **Agent `glossaire` sur les ~266 nouveaux verbatims** (étape 5 de la boucle, jamais lancée pour ce
+   chantier). Le glossaire compte 41 termes, tous issus des chantiers fiscalité et justice : le
+   vocabulaire de l'écologie (SNBC, PPE, MACF, ZAN, REP, ICPE, TIRUERT, NODU, PCAET…) n'y est pas.
+2. **Deux arbitrages `etat_maturite`** que les baselines ont fait apparaître — c'est de l'éditorial,
+   pas de la donnée : (a) la SNBC-3 a été adoptée par le décret n° 2026-636 du 16/07/2026, ce qui date
+   la proposition écologiste d'en « construire une SNBC-4 » ; (b) la loi n° 2026-554 du 29/06/2026 a
+   supprimé le régime de concession hydroélectrique que la mesure LFI veut protéger de la
+   privatisation. Décider si ces mesures passent en `perime` ou restent `mur` avec mention.
+3. **Découpage d'`eco-ocean` (et d'`eco-biodiversite`) — retour sur la règle n° 17.** Le lot B les
+   classe ⚠️ non pour un défaut de sourçage mais de découpage : `eco-ocean` agrège protection des
+   milieux marins et économie maritime (ports, marine marchande, éolien en mer, formation), et une
+   douzaine de mesures LFI n'y sont situées par aucun chiffre de la baseline ; `eco-biodiversite`
+   porte 3 mesures LFI (brevets sur le vivant, OGM, pôles polaires) étrangères à la sienne. Détail en
+   fin des sections correspondantes du rapport lot B.
+4. **~20 faits laissés ❓** dans les 3 rapports, non comblés (c'est la règle : un fait introuvable est
+   marqué, pas inventé). Trois ne tiennent qu'à des sites publics refusant l'automatisation
+   (`economie.gouv.fr`, `interieur.gouv.fr`, `budget.gouv.fr`) : les ouvrir à la main suffirait.
+   Trois autres pèsent sur la lecture des programmes : la part des cours d'eau en « très bon état »
+   seul (le mot exact des deux programmes, non publié), l'absence de recensement national des
+   retenues de substitution, et la part de forêt en libre évolution (référence du « 25 % » de LFI).
 
-### PROCHAINE ACTION (méthode validée par l'éditeur)
+### Ce que le balayage des URLs a appris (2026-08-02)
 
-Passer les **~28 arbitrages restants** au filtre des règles 16, 17, 24 et 25 :
-inscrire au journal celles que les règles tranchent **en nommant la règle invoquée** (pour que ce
-soit vérifiable), et ne remonter à l'éditeur que celles que les règles ne règlent pas ou sur
-lesquelles elles se contredisent.
+Les 212 URLs de `data/axes.json` ont été testées. **Aucun lien mort issu du travail du jour** ; deux
+liens morts sur des axes stampés `baseline_verifiee: 2026-07-29` — `fisc-is` (fiche déménagée, réparée
+après vérification du contenu) et `fisc-tva` (404 **et** source hors sujet : la fiche ne traitait que
+la TVA du secteur hygiène-santé, la baseline affirme les quatre taux généraux → inscrit en
+`avant-publication`). Avec `fisc-verte`, dont la page Douane citée ne mentionnait ni l'IRICC ni 2027,
+cela fait **3 baselines « vérifiées » dont le sourçage ne tenait pas**.
 
-Où sont ces arbitrages :
-- `data/drafts/ecologie-complement.rapport.md` §6.2 → Q1, Q2, Q4, Q6, Q7, Q8, Q9, Q10, Q14 (les autres sont tranchées) ; §6.1 → 3 anomalies de source
-- `data/drafts/ecologie-industrie.rapport.md` §5 → Q2, Q3, Q4, Q5, Q7 (Q1 et Q6 tranchées)
-- `data/drafts/fisc-verte.rapport.md` §7 et `fisc-verte-micro.rapport.md` §7 → Q1 à Q8 et Q1 à Q7
-
-### Puis la fusion — à créer au moment de fusionner
-
-**Axes** (le bloc copiable des 20 axes du périmètre initial est au §3.b de `ecologie.rapport.md`) :
-- les 3 axes eau : `eco-eau-ressource`, `eco-eau-service`, `eco-eau-outremer` (le 9/0 d'`eco-eau-outremer`
-  est un **silence réel** — ch. 46 EELV lu intégralement, décision n° 21)
-- axe **« Décarbonation de l'industrie »** (nouveau, décision par test de baseline) — `eco-investissement`
-  redevient strictement le financement
-- axe **« Prévention & santé publique »** sous `sante` (nouveau, pour l'antibiorésistance)
-- axe **« Souveraineté productive & relocalisation »** sous `economie-travail-entreprises` (nouveau,
-  pour LFI 9.2 contrôle des investissements étrangers + EELV 20-3)
-- condition animale **scindée en 2 axes** (décision n° 18) : élevage/aquaculture/abattage/transport sous
-  Agriculture ; chasse/corrida/animaux de compagnie/personnalité juridique/expérimentation sous Écologie
-- axe **pesticides sous Agriculture** (décision n° 19), cotags `biodiversite` + `eau`
-
-**Thématiques** — les 21 proposées au §5 de `ecologie.rapport.md`, plus :
-`collectivites-territoriales` (sous `institutions-democratie`, qui n'en a aucune),
-`commerce-exterieur` (sous `europe-international-defense`),
-`recherche` et `formation` (sous `education-recherche-jeunesse`, qui n'en a aucune ;
-« formation professionnelle » écarté car il désigne en France un domaine précis).
-
-**À faire aussi pendant la fusion** :
-- verser les **reliquats dans `data/attente.json`** (nature `reliquat`, verbatim obligatoire) — c'est
-  le seul moment où l'état final est connu, un reliquat se définissant par ce qui n'a pas été fusionné.
-  Les verbatims sont dans les §4/§7 des 5 rapports.
-- déplacer les rapports de `data/drafts/` vers `data/rapports/`, supprimer les `*.draft.json`.
-
-**Ensuite** : `verificateur-sources` sur les nouvelles baselines (dont **`fisc-verte`, dont la baseline
-ne couvre plus 10 des 13 mesures et l'`ecart_synthese` devient faux** — entrée `avant-publication` dans
-`npm run attente`), puis agent `glossaire` sur les nouveaux verbatims, puis `check-data` + build + QC
-navigateur + commit + **tag daté**.
+→ ⬜ 🟠 **Leçon à outiller** : le stamp `baseline_verifiee` atteste qu'un passage a eu lieu, pas que le
+fait affirmé se trouve dans la page citée. Un contrôle de survie des URLs (et, idéalement, de
+cohérence chiffre ↔ source) est à ajouter — même geste que `npm run verif-miroirs` pour les PDF.
 
 ---
 
@@ -129,7 +100,7 @@ navigateur + commit + **tag daté**.
 
 > Objectif : couvrir les **15 méta-thèmes pour les 2 programmes déjà en base**, avec la rigueur des pilotes (fiscalité, justice). Ce n'est PAS encore « éclairer le vote » (cadrage V1) mais **prouver le moteur complet** sur 2 programmes. L'ajout d'autres candidats = versions ultérieures.
 >
-> **État : 2/15 méta-thèmes faits** (171 mesures). **Fondations prêtes** : les 2 programmes normalisés en `.md`, 3 agents projet (`extracteur`, `verificateur-sources`, `glossaire`), suivi `npm run etat-sources`, glossaire + matcher, déploiement Vercel auto.
+> **État : 3/15 méta-thèmes faits** (437 mesures, 54 axes). **Fondations prêtes** : les 2 programmes normalisés en `.md`, 3 agents projet (`extracteur`, `verificateur-sources`, `glossaire`), suivi `npm run etat-sources`, liste d'attente `npm run attente`, glossaire + matcher, déploiement Vercel auto.
 
 **Boucle par méta-thème** (chaîne éprouvée, à répéter pour chacun des 13 restants) :
 1. `extracteur` sur le méta-thème, les 2 programmes, depuis les `.md` → brouillons `data/drafts/`.
@@ -140,7 +111,7 @@ navigateur + commit + **tag daté**.
 6. `check-data` + build + QC navigateur + commit + **tag daté** (versions, pas flux).
 
 **Ordre proposé** (choix éditeur 30/07 : commencer par Écologie) :
-1. 🔄 🔴 Écologie, climat & énergie — **EN COURS, extraction finie, arbitrages en cours** (voir « Reprise » ci-dessous)
+1. ✅ Écologie, climat & énergie — **FAIT** (2026-08-02) : 266 mesures, 26 axes, 26 thématiques, 30 décisions éditoriales. 4 points ouverts en section REPRISE.
 2. ⬜ Protection sociale & solidarités (EELV 31-37,39 / LFI 7)
 3. ⬜ Économie, travail & entreprises (EELV 13-16,19,20 / LFI 2,8,9)
 4. ⬜ Santé (EELV 28-30 / LFI 15)
@@ -173,10 +144,12 @@ navigateur + commit + **tag daté**.
 - ✅ **Programme Écologistes normalisé en markdown** (2026-07-30, agent en tâche de fond) — `data/sources/ecologistes-programme-2026.md` (~58 800 mots : avant-propos + 8 parties + 66 chapitres + 551 propositions), squelette LFI. QC agent (étape 4) au vert : comparaison token-par-token vs `layout.txt` = 0 mot inventé / 0 perte ; 14/14 échantillons fidèles. Rapport : `data/rapports/normalisation-eelv-2026-07-30.md`. Coquille ch46 (Outre-mer numéroté 45) signalée. Ferme le trou de traçabilité (EELV n'existait qu'en PDF) et l'ordre de lecture 2 colonnes. **Relecture éditeur ciblée à faire** : ch23 reconstruit à la main (grille 3 colonnes, pages ~89-91) ; anomalies source conservées telles quelles (ch4 saute la prop 6 ; ch57 a deux « 4 » ; ch11 props 8-9 quasi identiques = doublon probable du PDF) ; badges `[EUROPE]` à sortir en `rubrique_origine` au stade JSON.
 - ⬜ 🟠 **Boucle d'extraction par méta-thème** — après le `.md` EELV, commencer par **Écologie, climat & énergie** (choix éditeur 30/07). Chaîne éprouvée : agent `extracteur` → brouillons → arbitrages éditeur (cas-frontières/cotags) → fusion dans `data/candidats/*` → `verificateur-sources` sur les nouvelles baselines → `check-data` + build + commit + tag daté. 13 méta-thèmes restants au total (2/15 traités : fiscalité, justice).
 - ⬜ 🟢 **Versionner en tags datés** (ex. `justice-detaillee-2026-07`) selon le cadrage « versions, pas flux » — commencer au prochain commit.
+- ⬜ 🟠 **`npm run verif-miroirs` — rendre la traçabilité PDF testée au lieu de déclarée** (piste ouverte le 2026-08-02). Deux propriétés du corpus ont été vérifiées **une seule fois, à la main, le 30/07**, et rien ne les surveille depuis : (a) `data/sources/*.md` correspond toujours au PDF d'origine, (b) chaque `source_url` en `#page=N` pointe bien vers la page qui contient le verbatim. Une coquille corrigée un peu vite dans un miroir, ou un décalage de pagination, passerait aujourd'hui inaperçu — c'est exactement l'angle mort que `check-data`, `npm run attente` et `baseline_verifiee` comblent ailleurs. **Réalisable dès maintenant, sans dépendance nouvelle** : le PDF Écologistes est versionné (`Programmes/VDEF Programme.pdf`), donc la vérité terrain est locale (le PDF en ligne, lui, est derrière un challenge Cloudflare), et `pdftotext` traite ses 208 pages en ~1 s. ⚠️ **Ne pas mettre en `prebuild`** : ce serait revérifier à chaque déploiement Vercel une propriété qui ne bouge que quand une source change. Forme juste = commande à part, comme `npm run etat-sources` et `npm run attente`, lancée à la main ou sur les PR touchant `data/sources/`.
 
 ## Backlog / veille
 
 - ⏸ 🟢 **Surveiller l'arrivée de nouveaux programmes** (autres candidats 2027) et les passer au même socle via l'agent `extracteur`.
+- ⏸ 🟢 **`pdf-inspector` (github.com/firecrawl/pdf-inspector) — candidat pour la procédure de repli PDF** (examiné le 2026-08-02, rien à faire avant). Bibliothèque Rust MIT (~4,6k étoiles), déterministe, **sans modèle de langage et sans OCR** : classification texte/scanné page par page, extraction avec coordonnées X/Y, détection annoncée des colonnes, marqueurs de saut de page. Répond à deux trous connus : l'ordre de lecture multi-colonnes (`pdftotext` a sorti la page 78 du programme Écologistes dans l'ordre 6, 8, 7) et le tri scanné/texte que `PROCESS-extraction.md` suppose fait sans dire comment. **Déclencheur : l'arrivée d'un nouveau programme en PDF — à évaluer AVANT de lancer l'extraction**, pas après un échec. Raison, et c'est l'argument principal : la ressource rare de ce projet n'est pas la seconde CPU, ce sont les **tokens et le budget de session** (démonstration le 02/08 : trois agents `verificateur-sources` morts sur la limite de session sans avoir rien écrit). Or ce qui a coûté cher sur l'extraction EELV n'était pas `pdftotext` — c'était la normalisation de 58 800 mots par un agent, la reconstruction du ch. 23, le recollage des propositions à cheval sur deux pages, le retrait des en-têtes courants, la re-dérivation de l'ordre de lecture quand la sortie semblait douteuse. **Un outil déterministe sort l'agent de cette boucle**, et sa sortie positionnelle rend une partie du QC scriptable au lieu de la faire lire. On économise le mécanique, jamais l'éditorial : le QC de fidélité sur échantillons reste dû. À insérer à l'étape 2 de `PROCESS-extraction.md` si le test passe. **Protocole de test tout prêt, on a la vérité terrain** : le rejouer sur `Programmes/VDEF Programme.pdf` et comparer au miroir validé — page 78, et surtout **ch. 23** (grille 3 colonnes, pages ~89-91), seul passage qu'il a fallu reconstruire à la main. **Réserves à ne pas oublier** : sa conversion Markdown reconstruit les titres par ratio de taille de police et les tableaux par heuristique (donc QC token-par-token obligatoire, le miroir n'est pas la source) ; son ordre de lecture reste une heuristique comme celle de `pdftotext` — **la numérotation imprimée des propositions demeure le repère fiable** ; il n'exécute pas l'OCR, il l'oriente. Outil de dépouillement, **jamais une dépendance du site** (export statique). Ne pas justifier son adoption par la vitesse : `pdftotext` fait déjà le corpus en ~1 s.
 
 ## Fait
 

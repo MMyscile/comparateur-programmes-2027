@@ -1,6 +1,6 @@
 {
   "version": "0.2.0",
-  "date_maj": "2026-07-28",
+  "date_maj": "2026-08-01",
   "note": "Taxonomie à 2 niveaux : méta-thèmes (domaines larges, NEUTRES — test de renversement, garde-fou n°3) et THÉMATIQUES (sous-sujets fins). Les mesures sont taguées au niveau des thématiques (champ 'thematiques'), pas des méta-thèmes : une mesure porte un tag par thématique qui la concerne. Le méta-thème d'une mesure se déduit du méta parent de ses thématiques. Les thématiques ne sont renseignées que pour les métas déjà couverts.",
   "themes": [
     {
@@ -17,6 +17,12 @@
       "voir_aussi": [
         "justice-securite-libertes",
         "logement-transports-territoires"
+      ],
+      "thematiques": [
+        {
+          "id": "collectivites-territoriales",
+          "label": "Collectivités territoriales & décentralisation"
+        }
       ]
     },
     {
@@ -62,6 +68,10 @@
         {
           "id": "drogues-stupefiants",
           "label": "Drogues & stupéfiants"
+        },
+        {
+          "id": "securite-civile",
+          "label": "Sécurité civile & gestion de crise"
         }
       ]
     },
@@ -84,6 +94,10 @@
         {
           "id": "entreprises",
           "label": "Entreprises & compétitivité"
+        },
+        {
+          "id": "emploi-travail",
+          "label": "Emploi, travail & reconversions"
         }
       ]
     },
@@ -185,6 +199,10 @@
         {
           "id": "sante-mentale",
           "label": "Santé mentale"
+        },
+        {
+          "id": "sante-environnementale",
+          "label": "Santé environnementale"
         }
       ]
     },
@@ -201,6 +219,16 @@
       "voir_aussi": [
         "culture-sport-medias",
         "protection-sociale-solidarites"
+      ],
+      "thematiques": [
+        {
+          "id": "recherche",
+          "label": "Recherche & enseignement supérieur"
+        },
+        {
+          "id": "formation",
+          "label": "Formation & apprentissage"
+        }
       ]
     },
     {
@@ -245,6 +273,58 @@
         {
           "id": "justice-environnementale",
           "label": "Justice environnementale"
+        },
+        {
+          "id": "climat-attenuation",
+          "label": "Climat : objectifs & décarbonation"
+        },
+        {
+          "id": "energie-production",
+          "label": "Énergie : production, mix & réseaux"
+        },
+        {
+          "id": "nucleaire",
+          "label": "Nucléaire"
+        },
+        {
+          "id": "energie-prix-marche",
+          "label": "Prix de l'énergie & marché de l'électricité"
+        },
+        {
+          "id": "sobriete-efficacite",
+          "label": "Sobriété & efficacité énergétiques"
+        },
+        {
+          "id": "biodiversite",
+          "label": "Biodiversité & espaces naturels"
+        },
+        {
+          "id": "ocean-littoral",
+          "label": "Océans, littoraux & fonds marins"
+        },
+        {
+          "id": "forets",
+          "label": "Forêts & sylviculture"
+        },
+        {
+          "id": "eau",
+          "label": "Eau & milieux aquatiques"
+        },
+        {
+          "id": "sols-artificialisation",
+          "label": "Sols & artificialisation"
+        },
+        {
+          "id": "dechets-economie-circulaire",
+          "label": "Déchets & économie circulaire"
+        },
+        {
+          "id": "pollutions-toxiques",
+          "label": "Pollutions & substances toxiques"
+        },
+        {
+          "id": "publicite-consommation",
+          "label": "Publicité & sobriété de la consommation"
         }
       ]
     },
@@ -266,6 +346,22 @@
         {
           "id": "condition-animale",
           "label": "Condition animale & bien-être animal"
+        },
+        {
+          "id": "peche-aquaculture",
+          "label": "Pêche & aquaculture (activité)"
+        },
+        {
+          "id": "foncier-agricole",
+          "label": "Foncier agricole"
+        },
+        {
+          "id": "pesticides-intrants",
+          "label": "Pesticides & intrants"
+        },
+        {
+          "id": "alimentation",
+          "label": "Alimentation & nutrition"
         }
       ]
     },
@@ -283,6 +379,16 @@
         "ecologie-climat-energie",
         "egalites-discriminations",
         "institutions-democratie"
+      ],
+      "thematiques": [
+        {
+          "id": "logement",
+          "label": "Logement & habitat"
+        },
+        {
+          "id": "mobilites",
+          "label": "Mobilités & transports"
+        }
       ]
     },
     {
@@ -342,6 +448,10 @@
         {
           "id": "cooperation-europeenne",
           "label": "Coopération européenne"
+        },
+        {
+          "id": "commerce-exterieur",
+          "label": "Commerce extérieur & politique douanière"
         }
       ]
     },
