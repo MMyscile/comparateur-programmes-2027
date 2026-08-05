@@ -124,6 +124,13 @@ publié, et il doit être réglé **avant** de fusionner les 54 nouvelles défin
    sens ou le mien (« renationaliser » = capital, ou marché et statut) ? (iii) le candidat a-t-il
    maintenu la demande **après** le fait invoqué ? Si oui, le fait ne date rien. À inscrire dans
    `data/choix-editoriaux.md` et dans la procédure des agents.
+   ➕ **Quatrième critère, ajouté le 05/08 après le contrôle CVAE** : (iv) une **date de fin n'est pas
+   une abrogation**. Elle borne le plus souvent une *version* d'article, remplacée par la suivante.
+   L'art. 1586 ter du CGI ressort `ABROGE_DIFF` au 01/01/2027 — mais une version suivante court
+   jusqu'au 01/01/2030, et c'est **2030** qui est la vraie fin de la CVAE. Conclure sur la seule
+   version courante aurait avancé de trois ans la disparition d'un impôt. Toujours réinterroger à une
+   date postérieure avant de conclure à la fin d'un dispositif (`npm run legifrance -- vigueur … <date>`
+   le rappelle désormais à chaque réponse portant une date de fin).
 9. 🟢 **[EN PLACE depuis le 2026-08-05] Accès programmé aux sources qui bloquent le scraping.**
    L'API Légifrance fonctionne : compte PISTE créé par l'éditeur, application « comparateur-programmes-2027 »
    abonnée à *API Légifrance v2.4.2*, identifiants OAuth dans `.env.local` (ignoré par git).
@@ -190,6 +197,51 @@ publié, et il doit être réglé **avant** de fusionner les 54 nouvelles défin
     œil humain. **ADEME n'en fait pas partie** : `data.ademe.fr` expose une API Data Fair sans clé
     (600 requêtes/60 s en anonyme) et `territoires-climat.ademe.fr` son propre open data (PCAET) —
     le 403 rencontré ne venait que du site web éditorial.
+
+12. ⬜ 🟠 **Passe ciblée sur les baselines antérieures à l'API — périmètre chiffré le 2026-08-05.**
+    Question de l'éditeur : faut-il re-vérifier tout ce que l'agent a inscrit depuis le début ?
+    **Non — l'infiabilité est concentrée, pas diffuse.** Mesures de terrain : le balayage d'URLs du
+    02/08 avait trouvé 3 baselines défectueuses sur les 27 du lot 29/07 ; le premier appel API du
+    05/08 a trouvé notre rédaction fausse deux fois sur le premier texte contrôlé. Or ces défauts
+    appartiennent tous à **une seule classe : les affirmations sur ce qu'un texte de loi a fait, et
+    depuis quand.** Les chiffres INSEE et budgétaires n'ont rien donné. C'est exactement la classe
+    que l'API tranche désormais. Périmètre à contrôler, repérable mécaniquement :
+    - **7 axes** affirment quelque chose au passé accompli (« a supprimé », « depuis la loi ») :
+      `just-police`, `just-justice`, `fisc-secu`, `eco-dechets`, `agri-condition-animale`,
+      `eco-justice-environnementale`, `sante-toxiques` ;
+    - dont **`fisc-secu`**, seul à ne citer aucune source Légifrance — et dont le reliquat (c)
+      ci-dessus note déjà que la référence LFSS 2026 n'avait jamais été retrouvée. À reprendre
+      ensemble ;
+    - **23 axes** contiennent une affirmation juridique quelconque : second cercle, à n'ouvrir que
+      si le premier rend beaucoup.
+    Soit une dizaine d'items, pas 54. Une séance, pas un chantier.
+
+13. ✅ **Les 2 faits publiés sur presse seule sont corrigés** (2026-08-05) — trouvés en répondant à
+    la question de l'éditeur « l'agent met-il une source bancale pour faire nombre ? ». Réponse
+    mesurée : **non, il n'y a pas de quota**. La règle écrite est « un lien par fait affirmé », aucune
+    consigne chiffrée n'a jamais existé, et le « toujours trois » est un effet de longueur (lot 29/07 :
+    412 signes et 2,48 sources ; lot 02/08 : 1 120 signes et 5,89 sources — densité identique,
+    1 source pour 166 vs 190 signes). Sur 236 sources annotées, **89 % sont de niveau 1-2**, et le
+    dernier fait d'un axe est à 87 % en niveau 1-2 contre 95 % pour le premier : pas de remplissage.
+    Mais 2 faits reposaient bien sur de la presse seule, contre la règle de l'agent :
+    - `fisc-collectivites` (CVAE) : deux sources de niveau 4 (LégiFiscal, FIPECO) → remplacées par
+      l'art. 1586 ter du CGI. **Le fait était juste**, c'est le sourçage qui était faible.
+    - `fisc-aides-entreprises` : la notice Sénat citée en niveau 2 est une **page de métadonnées qui
+      ne porte aucun des deux faits** — ils ne tenaient donc en réalité que sur Public Sénat. Les
+      deux liens remplacés par le rapport lui-même (`r24-808-1`), qui les porte mot pour mot.
+
+    🔴 **Le vrai enseignement, et il porte sur l'outillage, pas sur l'agent.** Pour la CVAE, l'agent
+    **avait signalé le problème lui-même**, en italique dans le rapport, et proposé le correctif :
+    *« Deux sources de niveau 4 concordantes ; l'éditeur peut préférer renvoyer à l'art. 79 de la
+    LF 2025 sur Légifrance s'il veut un niveau 1 (numéro d'article à confirmer). »* Cette réserve
+    n'est jamais sortie du rapport : `appliquer-baselines` parse le texte de baseline et les URLs, et
+    **laisse tomber les commentaires**. Le défaut n'est pas que l'agent glisse une source faible en
+    douce — c'est que ses réserves meurent au moment de l'application.
+    → ⬜ 🟠 **À outiller** : que `appliquer-baselines` refuse d'appliquer en silence un axe portant
+    une réserve, ou au minimum les liste en fin d'exécution. Voir aussi ~38 faits listés dans les
+    rapports **sans niveau de source annoté** (comptage heuristique) : le format se relâche.
+    Et sa prudence était fondée : **l'article 79 de la LF 2025 porte sur la TGAP outre-mer**, pas sur
+    la CVAE. Le bon est l'article 62.
 
 ### Ce que le balayage des URLs a appris (2026-08-02)
 

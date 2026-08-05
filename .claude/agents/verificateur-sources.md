@@ -71,6 +71,15 @@ En module : `import { chercherTexte, texteIntegral, articleADate, enVigueurLe } 
    la réponse : l'article L. 521-1 ressortait `ABROGE_DIFF`, donc **encore applicable**.
 3. **Interroger un article à la date qui compte.** Pour dire ce qui s'appliquait quand un programme
    a été écrit, passer cette date en argument — l'état affiché sans date est celui d'aujourd'hui.
+4. **Une date de fin n'est pas une abrogation.** Elle borne le plus souvent une *version* d'article,
+   remplacée par la suivante. L'art. 1586 ter du CGI (CVAE) se termine au 01/01/2027 — mais une
+   version suivante court jusqu'au 01/01/2030, et c'est 2030 la vraie fin de l'impôt. Réinterroger à
+   une date postérieure **avant** de conclure à la fin d'un dispositif.
+
+L'étiquette d'état (`VIGUEUR`, `ABROGE`, `ABROGE_DIFF`, `VIGUEUR_DIFF`) décrit l'article
+**aujourd'hui**, jamais à la date interrogée : l'art. 885 A (ISF) consulté au 01/06/2017 ressort
+`ABROGE` alors qu'il s'appliquait ce jour-là. Ce sont les **bornes de vigueur** qui répondent, et
+`vigueur` le fait pour toi.
 
 Un article introuvable à une date donnée ne veut pas dire « numéro faux » : le plus souvent il
 n'existait pas encore, ou plus. Trancher entre les deux, ne pas supposer.

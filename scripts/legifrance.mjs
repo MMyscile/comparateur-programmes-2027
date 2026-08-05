@@ -488,10 +488,17 @@ const CLI = {
     console.log(`${v.article.code} — article ${v.article.numero}, au ${date}`);
     console.log(`${v.enVigueur ? "✅ EN VIGUEUR" : "❌ PAS EN VIGUEUR"}  [état actuel : ${v.etat}]`);
     console.log(`vigueur : ${v.article.dateDebut ?? "—"} → ${v.article.dateFin ?? "sans terme"}`);
+    // L'étiquette décrit l'article AUJOURD'HUI ; la réponse porte sur `date`.
+    // Les afficher côte à côte sans le dire produit une contradiction apparente.
     if (v.enVigueur && v.etat === "ABROGE")
       console.log(
-        `\nℹ️ L'étiquette « ABROGE » est l'état d'aujourd'hui, pas celui du ${date} :\n` +
+        `\nℹ️ « ABROGE » est l'état d'aujourd'hui, pas celui du ${date} :\n` +
           `   à cette date l'article s'appliquait, il a été abrogé depuis.`
+      );
+    if (v.enVigueur && v.etat === "VIGUEUR_DIFF")
+      console.log(
+        `\nℹ️ « VIGUEUR_DIFF » est l'état d'aujourd'hui : cette version n'est pas encore entrée\n` +
+          `   en vigueur, mais elle s'appliquera bien au ${date}.`
       );
     if (v.etat === "ABROGE_DIFF")
       console.log(
@@ -499,8 +506,14 @@ const CLI = {
           `   Ne pas écrire « a supprimé » — et vérifier que le décret d'entrée en vigueur est bien paru,\n` +
           `   car cette date peut elle-même en dépendre.`
       );
-    if (v.etat === "VIGUEUR_DIFF")
+    if (!v.enVigueur && v.etat === "VIGUEUR_DIFF")
       console.log(`\n⚠️ Entrée en vigueur différée : l'article existe mais ne s'applique pas encore.`);
+    if (v.dateFin)
+      console.log(
+        `\nℹ️ Une date de fin n'est pas toujours une abrogation : elle borne souvent une VERSION,\n` +
+          `   remplacée par la suivante. Vérifier à une date postérieure avant de conclure à la fin\n` +
+          `   du dispositif (piège rencontré sur la CVAE le 2026-08-05).`
+      );
     console.log(`\n${v.article.url}`);
   },
 };
