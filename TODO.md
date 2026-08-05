@@ -86,12 +86,14 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
 
-**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → ~~6~~ → 7 → 8 → 11.**
-Les 9, 10, 5 et 6 sont **faits**. **Le 7 est donc la prochaine étape** (note d'intention sur
-`lfi-energie-prix-02`, qui demande de trancher entre `contexte_lecture` et l'élargissement de
-`fait_posterieur`), puis le 8 (la règle éditoriale). Le blocage du glossaire est levé : les 54
-nouvelles définitions peuvent être fusionnées — leur source est atteignable (point 5) et la méthode
-de contrôle des sources est éprouvée (point 6).
+**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → ~~6~~ → ~~7~~ → 8 → 11.**
+Les 9, 10, 5, 6 et 7 sont **faits**. **Le 8 est donc la prochaine étape** : écrire la règle
+éditoriale « ne jamais conclure seul qu'une mesure est dépassée ». Elle est mûre — les trois critères
+de l'éditeur, plus les deux tirés des contrôles Légifrance (le texte des articles fait foi, pas le
+titre ; une date de fin n'est pas une abrogation) — et n'attend plus que d'être posée dans
+`data/choix-editoriaux.md` et dans la procédure des agents.
+Le blocage du glossaire est levé : les 54 nouvelles définitions peuvent être fusionnées — leur source
+est atteignable (point 5) et la méthode de contrôle des sources est éprouvée (point 6).
 
 5. ✅ **Bug de l'infobulle corrigé** (2026-08-05) — la source est atteignable à la souris, au clavier
    et au doigt. Deux causes, dont une seule était connue :
@@ -150,16 +152,21 @@ de contrôle des sources est éprouvée (point 6).
      — nom absent — alors qu'« Attal » figure 15 fois dans la page, dont le titre et « *déposée par
      le député Gabriel Attal* », mais dans une section repliée. Toujours chercher dans le HTML
      complet, jamais dans le texte visible. (Même piège que sur le QC des infobulles, point 5.)
-7. ⬜ 🟠 **Note d'intention sur `lfi-energie-prix-02` (renationalisation d'EDF).** Le lecteur qui sait
-   qu'EDF appartient déjà à 100 % à l'État lira la proposition comme absurde ou dépassée — le piège
-   dans lequel l'assistant est tombé le 04/08 (décision n° 31). Il faut le désamorcer **sans
-   interpréter à la place du candidat** : deux faits sourcés, jamais une glose.
-   ⚠️ **Tension de modèle à trancher** : `fait_posterieur` exige une date *postérieure* à la
-   publication (contrôlé par `check-data`), or la nationalisation d'EDF date du 08/06/2023, soit
-   **avant** le programme de janvier 2025. Ce n'est donc pas un fait postérieur mais un **contexte de
-   lecture**. Choisir : (a) un second champ `contexte_lecture` { texte, source_url } sans contrainte
-   de date ; (b) élargir `fait_posterieur` et perdre le garde-fou de date. Préférence : (a) — la
-   contrainte de date est précisément ce qui aurait bloqué l'erreur du 04/08.
+7. ✅ **Note de contexte posée sur `lfi-energie-prix-02`** (2026-08-05, **décision n° 32**). La
+   tension de modèle est tranchée par **(a)** : nouveau champ `contexte_lecture` { texte, source_url }
+   sans contrainte de date, renvoi `†` sous le verbatim (le `*` restant à `fait_posterieur`) ;
+   quand les deux coexistent, l'antérieur s'affiche en premier. Élargir `fait_posterieur` aurait
+   désarmé le contrôle qui attrape l'erreur du 04/08 — **vérifié** : la note fautive, rejouée, est
+   refusée, et le message aiguille maintenant vers `contexte_lecture`.
+   Privé de contrainte de date, le champ repose sur trois autres garde-fous (source obligatoire,
+   pas de verdict, **pas de glose sur l'intention du candidat**), et un `date` y est refusé. Les
+   quatre refus ont été déclenchés à dessein : un garde-fou jamais éprouvé ne protège de rien.
+   🔴 **Trouvé en sourçant la note, et c'est le vrai enseignement du lot.** Le jaune budgétaire
+   « État actionnaire » porte les deux chiffres dans un même tableau — mais il est arrêté au
+   **30/06/2024** et donne Engie à **23,64 %**, quand Engie publie **22,64 % au 31/05/2026**.
+   Reprendre un document officiel sans vérifier sa fraîcheur aurait publié un chiffre faux : le
+   caractère officiel d'une source ne dit rien de son actualité. D'où deux sources, `source_url`
+   acceptant désormais une liste comme `source_baseline` (« un lien par fait affirmé »).
 8. ⬜ 🔴 **Règle éditoriale à écrire : ne jamais conclure seul qu'une mesure est dépassée.** Demande
    explicite de l'éditeur, tirée du cas EDF. Avant toute note d'obsolescence : (i) la demande
    porte-t-elle sur *plusieurs* objets (« EDF **et** Engie ») ? (ii) le mot du candidat a-t-il *son*

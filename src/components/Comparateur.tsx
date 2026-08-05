@@ -332,6 +332,14 @@ export default function Comparateur({
 
                                   <blockquote className="text-sm leading-relaxed text-slate-700">
                                     « <Verbatim texte={m.verbatim} glossaire={glossaire} mesureId={m.id} /> »
+                                    {m.contexte_lecture && (
+                                      <sup
+                                        className="ml-0.5 font-semibold text-reel"
+                                        title="Un fait antérieur à la publication éclaire cette proposition"
+                                      >
+                                        †
+                                      </sup>
+                                    )}
                                     {m.fait_posterieur && (
                                       <sup
                                         className="ml-0.5 font-semibold text-reel"
@@ -341,6 +349,26 @@ export default function Comparateur({
                                       </sup>
                                     )}
                                   </blockquote>
+
+                                  {/* L'antérieur d'abord : il éclaire la phrase, quand le postérieur la rattrape. */}
+                                  {m.contexte_lecture && (
+                                    <p className="mt-2 border-l-2 border-reel/40 pl-2 text-xs leading-relaxed text-slate-500">
+                                      <span className="font-semibold text-reel">† </span>
+                                      Déjà vrai à la publication de ce programme (
+                                      {m.date_publication}) : {m.contexte_lecture.texte}{" "}
+                                      {[].concat(m.contexte_lecture.source_url as never).map((u, i, tab) => (
+                                        <a
+                                          key={u}
+                                          href={u}
+                                          target="_blank"
+                                          rel="noreferrer"
+                                          className="mr-2 text-blue-700 underline"
+                                        >
+                                          {tab.length > 1 ? `Source ${i + 1}` : "Source"}
+                                        </a>
+                                      ))}
+                                    </p>
+                                  )}
 
                                   {m.fait_posterieur && (
                                     <p className="mt-2 border-l-2 border-reel/40 pl-2 text-xs leading-relaxed text-slate-500">

@@ -69,8 +69,16 @@ function verifierMesures(fichier, mesures, { brouillon = false, candidatAttendu 
       err(f, `etat_maturite invalide : "${m.etat_maturite}"`);
     if (brouillon && m.synthese)
       err(f, "synthese:true interdit en sortie d'extraction (PROCESS §5)");
-    // fait_posterieur (optionnel, décision n° 31) : un fait daté et sourcé, postérieur
-    // à la publication. Sans source ni date il redeviendrait le tampon qu'il remplace.
+    // Une note ne doit jamais redevenir le tampon que la décision n° 31 a retiré :
+    // le fait et sa source, jamais le verdict.
+    const VERDICT = /périmé|dépassé|obsolète|caduque?|plus d'actualité/i;
+    // …ni une glose sur ce que le candidat « veut dire » : juger un mot du candidat
+    // contre sa propre définition est ce que le principe fondateur interdit (n° 31).
+    const GLOSE = /en réalité|en fait,|veut dire|entend par|il faut comprendre|autrement dit/i;
+
+    // fait_posterieur (optionnel, décision n° 31) : un fait daté et sourcé, POSTÉRIEUR
+    // à la publication. La contrainte de date n'est pas décorative — c'est elle qui
+    // aurait bloqué l'erreur du 2026-08-04 (un fait de 2023 opposé à un texte de 2025).
     if (m.fait_posterieur != null) {
       const fp = m.fait_posterieur;
       const g = `${f} fait_posterieur`;
@@ -80,9 +88,35 @@ function verifierMesures(fichier, mesures, { brouillon = false, candidatAttendu 
       if (!/^\d{4}-\d{2}-\d{2}$/.test(fp.date ?? ""))
         err(g, `date : AAAA-MM-JJ attendu (reçu : "${fp.date}")`);
       else if (m.date_publication && fp.date <= m.date_publication)
-        err(g, `date ${fp.date} n'est pas postérieure à la publication (${m.date_publication})`);
-      if (/périmé|dépassé|obsolète|caduque?|plus d'actualité/i.test(fp.texte ?? ""))
+        err(
+          g,
+          `date ${fp.date} n'est pas postérieure à la publication (${m.date_publication})` +
+            " — un fait antérieur relève de contexte_lecture (décision n° 32)"
+        );
+      if (VERDICT.test(fp.texte ?? ""))
         err(g, "texte : énoncer le fait, pas le verdict (décision n° 31)");
+    }
+
+    // contexte_lecture (optionnel, décision n° 32) : un fait ANTÉRIEUR sans lequel la
+    // proposition se lit de travers. Pas de contrainte de date — c'est sa raison d'être —
+    // donc les deux autres garde-fous portent seuls : source obligatoire, et ni verdict
+    // ni glose sur l'intention du candidat.
+    if (m.contexte_lecture != null) {
+      const cl = m.contexte_lecture;
+      const g = `${f} contexte_lecture`;
+      if (!cl.texte) err(g, "champ manquant ou vide : texte");
+      // Liste acceptée : « un lien par fait affirmé », comme pour source_baseline.
+      const urls = [].concat(cl.source_url ?? []);
+      if (!urls.length) err(g, "source_url : URL requise — un fait sans source ne s'affiche pas");
+      for (const u of urls)
+        if (typeof u !== "string" || !u.startsWith("http"))
+          err(g, `source_url : URL http(s) attendue (reçu : ${JSON.stringify(u)})`);
+      if ("date" in cl)
+        err(g, "date : champ interdit ici — un fait daté postérieur relève de fait_posterieur");
+      if (VERDICT.test(cl.texte ?? ""))
+        err(g, "texte : énoncer le fait, pas le verdict (décision n° 31)");
+      if (GLOSE.test(cl.texte ?? ""))
+        err(g, "texte : pas de glose sur l'intention du candidat (décision n° 32)");
     }
   }
   return idsVus;

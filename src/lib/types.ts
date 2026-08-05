@@ -17,6 +17,34 @@ export interface FaitPosterieur {
   date: string;
 }
 
+/**
+ * Fait **antérieur** à la publication, sans lequel un lecteur informé
+ * comprendrait la proposition de travers.
+ *
+ * Décision n° 32. Le cas fondateur : « renationaliser EDF et Engie » — qui sait
+ * qu'EDF appartient à 100 % à l'État depuis 2023 lira la demande comme absurde,
+ * alors qu'elle vise aussi Engie, restée cotée. Le fait est antérieur au
+ * programme : ce n'est donc pas un `FaitPosterieur`, et il ne doit surtout pas
+ * en emprunter le champ — la contrainte de date de `FaitPosterieur` est
+ * précisément ce qui aurait bloqué l'erreur d'analyse du 2026-08-04.
+ *
+ * Même discipline que la note datée : **le fait et sa source, jamais le
+ * verdict**, et jamais une explication de ce que le candidat « veut dire ».
+ * Interpréter le mot d'un candidat contre sa propre définition est ce que le
+ * principe fondateur interdit.
+ */
+export interface ContexteLecture {
+  /** Le ou les faits, factuels. Pas de glose sur l'intention du candidat. */
+  texte: string;
+  /**
+   * Source de niveau 1 de préférence. Accepte une liste : la règle « un lien par
+   * fait affirmé » (CLAUDE.md, garde-fou n° 1) vaut ici comme pour les baselines.
+   * Le cas fondateur en affirme deux — le capital d'EDF et celui d'Engie — qui
+   * n'ont ni la même source ni la même date d'arrêté.
+   */
+  source_url: string | string[];
+}
+
 /** Une proposition individuelle d'un candidat (verbatim fidèle, rattachée à un axe). */
 export interface Mesure {
   id: string;
@@ -35,6 +63,8 @@ export interface Mesure {
   etat_maturite: EtatMaturite;
   /** Astérisque : un fait postérieur à la publication touche cette proposition. */
   fait_posterieur?: FaitPosterieur;
+  /** Astérisque : un fait antérieur sans lequel la proposition se lit de travers. */
+  contexte_lecture?: ContexteLecture;
   /** true = résumé d'axe en attente du détail point par point (modèle B en cours). */
   synthese?: boolean;
 }

@@ -552,3 +552,42 @@ Elles sont devenues les décisions **n° 28** (scission de `fisc-verte`), **n° 
   une phrase qui contient plusieurs demandes.
 - **Pour revenir dessus.** Le champ `etat_maturite` est intact dans les données : réafficher le badge
   est un retour en arrière d'une ligne dans `Comparateur.tsx`.
+
+## 32. Un fait *antérieur* peut être nécessaire à la lecture : champ `contexte_lecture` (2026-08-05)
+
+- **Décision.** Un second champ optionnel sur la mesure, `contexte_lecture` : `{ texte, source_url }`,
+  **sans contrainte de date**, affiché sous le verbatim avec un renvoi `†` (le `*` restant réservé à
+  `fait_posterieur`). Quand les deux existent, l'antérieur s'affiche en premier : il éclaire la
+  phrase, quand le postérieur la rattrape.
+- **Le cas fondateur, `lfi-energie-prix-02`.** La proposition demande de « créer un pôle public de
+  l'énergie […] en renationalisant EDF et Engie ». Un lecteur qui sait qu'EDF appartient à 100 % à
+  l'État lira la demande comme absurde ou dépassée — c'est exactement le piège dans lequel
+  l'assistant est tombé le 04/08 (décision n° 31). Le désamorcer demande deux faits, pas une
+  explication.
+- **Pourquoi un nouveau champ plutôt qu'élargir `fait_posterieur`.** La nationalisation d'EDF date du
+  08/06/2023, soit **avant** le programme de janvier 2025 : ce n'est pas un fait postérieur.
+  L'alternative — accepter des dates antérieures dans `fait_posterieur` — a été écartée parce que
+  **la contrainte de date est précisément ce qui aurait bloqué l'erreur du 04/08** : `check-data`
+  refuse d'opposer un fait de 2023 à un texte de 2025. Élargir le champ aurait désarmé le contrôle
+  qui attrape la faute qui motive tout ce chantier. Vérifié en conditions réelles : la note fautive
+  du 04/08, rejouée, est refusée, et le message aiguille désormais vers `contexte_lecture`.
+- **Ce que le champ n'a pas le droit d'être.** Privé de contrainte de date, il repose sur deux
+  garde-fous que `check-data` fait respecter :
+  - **pas de verdict** (*périmé / dépassé / obsolète / caduc / plus d'actualité*), comme pour la note
+    datée ;
+  - **pas de glose sur l'intention du candidat** (*en réalité / veut dire / entend par / il faut
+    comprendre / autrement dit*). Expliquer ce qu'un candidat « veut vraiment dire », c'est juger son
+    mot contre notre définition — ce que le principe fondateur interdit, et l'erreur même du 04/08.
+  - source obligatoire, et un `date` y est **refusé** : un fait daté postérieur relève de l'autre champ.
+  Les quatre refus ont été déclenchés à dessein avant publication ; un garde-fou jamais éprouvé ne
+  protège de rien.
+- **La note retenue**, deux faits, aucune interprétation : « *l'État détient 100 % du capital d'EDF
+  depuis le retrait de la cote de juin 2023 ; Engie reste cotée, l'État en détenant 22,64 % au
+  31 mai 2026.* »
+- **Trouvé en la sourçant.** Le jaune budgétaire « État actionnaire » porte les deux chiffres dans un
+  même tableau, mais il est arrêté au **30/06/2024** et donne Engie à **23,64 %** — Engie publie
+  **22,64 % au 31/05/2026**. Reprendre le document officiel sans vérifier sa fraîcheur aurait publié
+  un chiffre faux. D'où deux sources et non une : `source_url` accepte désormais une liste, comme
+  `source_baseline`, la règle « un lien par fait affirmé » valant ici aussi.
+- **Pour revenir dessus.** Le champ est optionnel et n'est porté que par une mesure : le retirer est
+  sans effet sur le reste.
