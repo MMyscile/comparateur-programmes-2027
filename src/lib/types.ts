@@ -1,5 +1,22 @@
 export type EtatMaturite = "mur" | "ebauche" | "perime" | "pas-encore";
 
+/**
+ * Fait daté, postérieur à la publication du programme, qui touche à ce que
+ * la proposition demande (loi votée, dispositif supprimé, objectif atteint).
+ *
+ * Décision n° 31 : la note énonce **le fait et sa source, jamais le verdict**.
+ * On écrit ce que la loi a changé ; on n'écrit pas que la mesure est dépassée —
+ * c'est au lecteur de conclure, et au candidat de dire si sa demande est satisfaite.
+ */
+export interface FaitPosterieur {
+  /** Le fait, factuel et daté. Pas de qualificatif sur la mesure. */
+  texte: string;
+  /** Source de niveau 1 de préférence (Légifrance, administration compétente). */
+  source_url: string;
+  /** Date du fait (AAAA-MM-JJ), postérieure au `date_publication` de la mesure. */
+  date: string;
+}
+
 /** Une proposition individuelle d'un candidat (verbatim fidèle, rattachée à un axe). */
 export interface Mesure {
   id: string;
@@ -11,7 +28,13 @@ export interface Mesure {
   source_url: string;
   rubrique_origine: string;
   date_publication: string;
+  /**
+   * Conservé dans les données mais **plus affiché** depuis la décision n° 31 :
+   * les quatre états décrivent un programme, pas une phrase.
+   */
   etat_maturite: EtatMaturite;
+  /** Astérisque : un fait postérieur à la publication touche cette proposition. */
+  fait_posterieur?: FaitPosterieur;
   /** true = résumé d'axe en attente du détail point par point (modèle B en cours). */
   synthese?: boolean;
 }

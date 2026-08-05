@@ -69,6 +69,21 @@ function verifierMesures(fichier, mesures, { brouillon = false, candidatAttendu 
       err(f, `etat_maturite invalide : "${m.etat_maturite}"`);
     if (brouillon && m.synthese)
       err(f, "synthese:true interdit en sortie d'extraction (PROCESS §5)");
+    // fait_posterieur (optionnel, décision n° 31) : un fait daté et sourcé, postérieur
+    // à la publication. Sans source ni date il redeviendrait le tampon qu'il remplace.
+    if (m.fait_posterieur != null) {
+      const fp = m.fait_posterieur;
+      const g = `${f} fait_posterieur`;
+      if (!fp.texte) err(g, "champ manquant ou vide : texte");
+      if (typeof fp.source_url !== "string" || !fp.source_url.startsWith("http"))
+        err(g, "source_url : URL http(s) requise — un fait sans source ne s'affiche pas");
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(fp.date ?? ""))
+        err(g, `date : AAAA-MM-JJ attendu (reçu : "${fp.date}")`);
+      else if (m.date_publication && fp.date <= m.date_publication)
+        err(g, `date ${fp.date} n'est pas postérieure à la publication (${m.date_publication})`);
+      if (/périmé|dépassé|obsolète|caduque?|plus d'actualité/i.test(fp.texte ?? ""))
+        err(g, "texte : énoncer le fait, pas le verdict (décision n° 31)");
+    }
   }
   return idsVus;
 }

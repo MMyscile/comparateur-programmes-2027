@@ -2299,7 +2299,12 @@
       "source_url": "https://melenchon2027.fr/programme2025/livre/chapitre13/s3",
       "rubrique_origine": "Chapitre 13.3 — Organiser le 100 % d’énergies renouvelables en 2050 et la rénovation énergétique",
       "date_publication": "2025-01-28",
-      "etat_maturite": "mur"
+      "etat_maturite": "mur",
+      "fait_posterieur": {
+        "texte": "la loi n° 2026-554 du 29 juin 2026 a supprimé le régime de concession hydroélectrique au profit d'un régime d'autorisation pour les installations de plus de 4 500 kW.",
+        "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054340720",
+        "date": "2026-06-29"
+      }
     },
     {
       "id": "lfi-energie-prix-03",

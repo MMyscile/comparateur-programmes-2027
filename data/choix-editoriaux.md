@@ -513,3 +513,42 @@ Elles sont devenues les décisions **n° 28** (scission de `fisc-verte`), **n° 
   le même artefact, inscrit cette fois dans le modèle de données.
 - **Pour revenir dessus.** Réintégrer le badge dans le verbatim, en assumant que le lecteur lit
   « [EUROPE] » comme un mot de la proposition.
+
+## 31. L'étiquette de maturité quitte la mesure ; un fait daté prend sa place (2026-08-04)
+
+- **Décision, en deux temps.**
+  1. L'étiquette `etat_maturite` (mûr / ébauche / périmé / pas-encore) **n'est plus affichée sur la
+     proposition**. Le champ reste dans les données — rien n'est effacé, la décision est réversible.
+  2. Une proposition rattrapée par un fait daté porte désormais une **astérisque** renvoyant à un
+     champ `fait_posterieur` : `{ texte, source_url, date }`, affiché sous le verbatim.
+- **Pourquoi retirer l'étiquette.** Deux défauts distincts.
+  - *Elle ne distinguait rien* : les **437 mesures sur 437** portaient « mûr ». Les quatre états
+    décrivent l'état d'un **programme**, pas d'une phrase — « pas encore de programme » a un sens
+    pour un candidat, aucun pour une proposition isolée. L'information utile existe déjà ailleurs,
+    au bon niveau : `etat_programme`, sur le candidat.
+  - *« Périmé » est un verdict, pas un fait.* Le site n'a pas à tamponner la proposition d'un
+    candidat ; il a à montrer l'écart au réel et à laisser conclure.
+- **Pourquoi la note est plus honnête que l'étiquette.** L'obsolescence est **par clause**, l'étiquette
+  était **par mesure**. Cas d'espèce, `lfi-energie-prix-02` : la phrase empile trois demandes
+  (annuler la libéralisation / stopper la privatisation des barrages / pôle public en renationalisant
+  EDF et Engie) ; seule la deuxième est rattrapée, par la loi n° 2026-554 du 29/06/2026. La marquer
+  « périmée » aurait affirmé que la proposition entière est morte — la trahison que le garde-fou n° 1
+  interdit. Et le précédent aurait mordu sur des dizaines de propositions multi-leviers des deux
+  programmes.
+- **La règle de rédaction, non négociable : le fait, jamais le verdict.** On écrit ce que la loi a
+  changé, avec sa source et sa date. On n'écrit pas « cette mesure est dépassée ». `check-data`
+  refuse une note contenant *périmé / dépassé / obsolète / caduc / plus d'actualité*, comme il refuse
+  une note sans source ou datée d'avant la publication du programme.
+- **Ce que cette décision corrige au passage.** L'analyse qui l'a précédée affirmait que « renationaliser
+  EDF » était sans objet dès la publication (EDF appartient à 100 % à l'État depuis 2023). C'était une
+  erreur d'éditeur : la phrase vise **EDF et Engie** — Engie reste cotée, l'État en détient environ un
+  quart — et LFI porte publiquement cette demande après 2023 (communiqué du 29/02/2024 : loi « vidée de
+  sa substance »), la « renationalisation » désignant chez eux la sortie du marché et le statut, pas le
+  registre des actionnaires. **Juger un mot du candidat contre sa propre définition, puis le déclarer
+  inexact, c'est exactement ce que le principe fondateur interdit.** Aucune note n'a été posée sur ce
+  point.
+- **Alternative écartée.** Garder l'étiquette en renommant « périmé » en quelque chose de plus neutre
+  (« daté », « à actualiser ») : le mot changeait, le défaut de grain restait — un tampon unique sur
+  une phrase qui contient plusieurs demandes.
+- **Pour revenir dessus.** Le champ `etat_maturite` est intact dans les données : réafficher le badge
+  est un retour en arrière d'une ligne dans `Comparateur.tsx`.

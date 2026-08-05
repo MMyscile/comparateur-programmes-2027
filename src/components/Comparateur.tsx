@@ -15,12 +15,14 @@ const COULEUR_CANDIDAT: Record<string, string> = {
   lfi: "border-lfi/50",
 };
 
-const ETAT_LABEL: Record<string, string> = {
-  mur: "Mûr",
-  ebauche: "Ébauche",
-  perime: "Périmé",
-  "pas-encore": "Pas encore",
-};
+/**
+ * Décision n° 31 — l'étiquette de maturité n'est plus affichée sur la mesure.
+ * Les quatre états (mûr / ébauche / périmé / pas-encore) décrivent l'état d'un
+ * *programme*, pas d'une phrase : sur une proposition isolée ils ne distinguaient
+ * rien (437 mesures sur 437 étaient « mûr ») et « périmé » livrait un verdict là
+ * où le site doit livrer un fait. L'information utile reste `etat_programme`,
+ * au niveau du candidat ; ce qui date une proposition passe par `fait_posterieur`.
+ */
 
 interface Props {
   themes: Theme[];
@@ -320,20 +322,41 @@ export default function Comparateur({
                                   key={m.id}
                                   className="border-t border-slate-100 pt-3 first:border-0 first:pt-0"
                                 >
-                                  <div className="mb-1 flex flex-wrap items-center gap-2">
-                                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-500">
-                                      {ETAT_LABEL[m.etat_maturite] ?? m.etat_maturite}
-                                    </span>
-                                    {m.synthese && (
+                                  {m.synthese && (
+                                    <div className="mb-1">
                                       <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800">
                                         synthèse — détail à venir
                                       </span>
-                                    )}
-                                  </div>
+                                    </div>
+                                  )}
 
                                   <blockquote className="text-sm leading-relaxed text-slate-700">
                                     « <Verbatim texte={m.verbatim} glossaire={glossaire} mesureId={m.id} /> »
+                                    {m.fait_posterieur && (
+                                      <sup
+                                        className="ml-0.5 font-semibold text-reel"
+                                        title="Un fait postérieur à la publication touche cette proposition"
+                                      >
+                                        *
+                                      </sup>
+                                    )}
                                   </blockquote>
+
+                                  {m.fait_posterieur && (
+                                    <p className="mt-2 border-l-2 border-reel/40 pl-2 text-xs leading-relaxed text-slate-500">
+                                      <span className="font-semibold text-reel">* </span>
+                                      Depuis la publication de ce programme (
+                                      {m.date_publication}) : {m.fait_posterieur.texte}{" "}
+                                      <a
+                                        href={m.fait_posterieur.source_url}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="text-blue-700 underline"
+                                      >
+                                        Source
+                                      </a>
+                                    </p>
+                                  )}
 
                                   <div className="mt-2 flex flex-wrap gap-1">
                                     {m.thematiques.map((t, i) => {

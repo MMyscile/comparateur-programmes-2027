@@ -60,14 +60,17 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 🔴 Les 4 points ouverts, à traiter un par un
 
-1. **Agent `glossaire` sur les ~266 nouveaux verbatims** (étape 5 de la boucle, jamais lancée pour ce
-   chantier). Le glossaire compte 41 termes, tous issus des chantiers fiscalité et justice : le
-   vocabulaire de l'écologie (SNBC, PPE, MACF, ZAN, REP, ICPE, TIRUERT, NODU, PCAET…) n'y est pas.
-2. **Deux arbitrages `etat_maturite`** que les baselines ont fait apparaître — c'est de l'éditorial,
-   pas de la donnée : (a) la SNBC-3 a été adoptée par le décret n° 2026-636 du 16/07/2026, ce qui date
-   la proposition écologiste d'en « construire une SNBC-4 » ; (b) la loi n° 2026-554 du 29/06/2026 a
-   supprimé le régime de concession hydroélectrique que la mesure LFI veut protéger de la
-   privatisation. Décider si ces mesures passent en `perime` ou restent `mur` avec mention.
+1. 🟠 **Glossaire — l'agent a tourné (2026-08-02), la validation reste à faire.** Rapport :
+   `data/rapports/glossaire-propositions-2026-08-02.md`. **54 définitions prêtes** (JSON revalidé
+   à part : valide, zéro doublon avec les 41 termes publiés, zéro entrée sans source, sources
+   institutionnelles uniquement) + **~90 termes laissés ❓ à sourcer**. Rien n'est fusionné.
+2. ✅ **Deux arbitrages `etat_maturite`** — **RÉGLÉ (2026-08-04, décision n° 31)**. L'étiquette de
+   maturité ne s'affiche plus sur la mesure (elle ne distinguait rien : 437/437 « mûr », et « périmé »
+   est un verdict là où le site doit un fait) ; un champ `fait_posterieur` { texte, source_url, date }
+   pose une astérisque sourcée sous le verbatim. (a) Le cas SNBC-4 **n'en était pas un** : une SNBC-4
+   est par définition celle qui suit la SNBC-3, son objet n'existe pas encore — ma note était fausse.
+   (b) `lfi-energie-prix-02` porte la note (loi n° 2026-554 du 29/06/2026). Voir aussi la correction
+   sur EDF/Engie consignée dans la décision n° 31.
 3. **Découpage d'`eco-ocean` (et d'`eco-biodiversite`) — retour sur la règle n° 17.** Le lot B les
    classe ⚠️ non pour un défaut de sourçage mais de découpage : `eco-ocean` agrège protection des
    milieux marins et économie maritime (ports, marine marchande, éolien en mer, formation), et une
@@ -80,6 +83,52 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
    Trois autres pèsent sur la lecture des programmes : la part des cours d'eau en « très bon état »
    seul (le mot exact des deux programmes, non publié), l'absence de recensement national des
    retenues de substitution, et la part de forêt en libre évolution (référence du « 25 % » de LFI).
+
+### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
+
+Rien de ce qui suit n'est commencé. Ordre indicatif : le 5 est un bug d'affichage qui casse la
+traçabilité, il passe devant le reste.
+
+5. ⬜ 🔴 **Bug — l'infobulle du glossaire n'est pas cliquable.** La définition apparaît au survol et
+   **disparaît dès que le pointeur quitte le mot** : le lien de source est donc inatteignable. Une
+   définition sourcée dont personne ne peut ouvrir la source ne vaut pas mieux qu'une définition non
+   sourcée (garde-fous n° 1 et 2). À corriger **avant** de fusionner 54 nouvelles entrées, sinon le
+   défaut est multiplié par trois. Piste : rendre l'infobulle persistante (clic/`popover`, zone de
+   survol qui englobe la bulle, fermeture au clic extérieur ou `Échap`), et vérifier au doigt sur
+   mobile — le survol n'y existe pas.
+6. ⬜ 🟠 **Deux sources du glossaire publié sont fausses — vérifiées à la main par l'éditeur le
+   04/08**, sur les 10 entrées adossées à `vie-publique.fr` :
+   - `taxe Zucman` : la fiche citée porte sur une **proposition de loi inspirée** du dispositif, pas
+     sur la taxe Zucman elle-même. → citer **l'auteur** (Gabriel Zucman / EU Tax Observatory), qui
+     est la source de premier rang pour un concept qui porte son nom.
+   - `réforme Darmanin` : **le nom de Darmanin n'apparaît nulle part** sur la fiche citée — rien ne
+     permet au lecteur de vérifier que c'est bien le texte désigné par ce surnom. → source qui fait
+     le lien explicite, ou renommer l'entrée par l'intitulé officiel.
+   Les 8 autres n'ont pas été signalées comme fautives. **Leçon** : le défaut n'est pas le lien mort,
+   c'est le lien **hors sujet** — un contrôle automatique de survie des URLs ne l'aurait pas vu.
+7. ⬜ 🟠 **Note d'intention sur `lfi-energie-prix-02` (renationalisation d'EDF).** Le lecteur qui sait
+   qu'EDF appartient déjà à 100 % à l'État lira la proposition comme absurde ou dépassée — le piège
+   dans lequel l'assistant est tombé le 04/08 (décision n° 31). Il faut le désamorcer **sans
+   interpréter à la place du candidat** : deux faits sourcés, jamais une glose.
+   ⚠️ **Tension de modèle à trancher** : `fait_posterieur` exige une date *postérieure* à la
+   publication (contrôlé par `check-data`), or la nationalisation d'EDF date du 08/06/2023, soit
+   **avant** le programme de janvier 2025. Ce n'est donc pas un fait postérieur mais un **contexte de
+   lecture**. Choisir : (a) un second champ `contexte_lecture` { texte, source_url } sans contrainte
+   de date ; (b) élargir `fait_posterieur` et perdre le garde-fou de date. Préférence : (a) — la
+   contrainte de date est précisément ce qui aurait bloqué l'erreur du 04/08.
+8. ⬜ 🔴 **Règle éditoriale à écrire : ne jamais conclure seul qu'une mesure est dépassée.** Demande
+   explicite de l'éditeur, tirée du cas EDF. Avant toute note d'obsolescence : (i) la demande
+   porte-t-elle sur *plusieurs* objets (« EDF **et** Engie ») ? (ii) le mot du candidat a-t-il *son*
+   sens ou le mien (« renationaliser » = capital, ou marché et statut) ? (iii) le candidat a-t-il
+   maintenu la demande **après** le fait invoqué ? Si oui, le fait ne date rien. À inscrire dans
+   `data/choix-editoriaux.md` et dans la procédure des agents.
+9. ⬜ 🟡 **Contourner les sites qui bloquent l'automatisation** (Légifrance 403, `ademe.fr` 403,
+   `vie-publique.fr` 200-sur-tout, `economie.gouv.fr`, `interieur.gouv.fr`, `budget.gouv.fr`) —
+   c'est ce qui laisse ~90 termes du glossaire en ❓ et une partie des 20 faits du point 4. Trois
+   voies, à combiner : navigateur réel (exécute le JS, porte un vrai en-tête) pour les vérifications
+   ponctuelles ; **API Légifrance (DILA/PISTE)** et jeux de données ouverts pour l'accès programmé ;
+   à défaut, vérification humaine. À documenter dans la procédure des agents pour qu'ils cessent de
+   buter dessus à chaque passage.
 
 ### Ce que le balayage des URLs a appris (2026-08-02)
 
