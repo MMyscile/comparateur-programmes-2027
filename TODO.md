@@ -86,18 +86,38 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
 
-**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → 5 → 6 → 7 → 8 → 11.**
-Le 9 et le 10 sont **faits** (accès Légifrance opérationnel, puis outillé en module réutilisable).
-**Le 5 est donc la prochaine étape** : c'est un bug qui casse la traçabilité de tout ce qui est déjà
-publié, et il doit être réglé **avant** de fusionner les 54 nouvelles définitions du glossaire.
+**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → 6 → 7 → 8 → 11.**
+Les 9, 10 et 5 sont **faits**. **Le 6 est donc la prochaine étape** (les deux sources fausses du
+glossaire publié), avant le 7 et le 8. Le blocage est levé : les 54 nouvelles définitions du
+glossaire peuvent être fusionnées, leur source étant désormais atteignable.
 
-5. ⬜ 🔴 **[PROCHAINE ÉTAPE] Bug — l'infobulle du glossaire n'est pas cliquable.** La définition apparaît au survol et
-   **disparaît dès que le pointeur quitte le mot** : le lien de source est donc inatteignable. Une
-   définition sourcée dont personne ne peut ouvrir la source ne vaut pas mieux qu'une définition non
-   sourcée (garde-fous n° 1 et 2). À corriger **avant** de fusionner 54 nouvelles entrées, sinon le
-   défaut est multiplié par trois. Piste : rendre l'infobulle persistante (clic/`popover`, zone de
-   survol qui englobe la bulle, fermeture au clic extérieur ou `Échap`), et vérifier au doigt sur
-   mobile — le survol n'y existe pas.
+5. ✅ **Bug de l'infobulle corrigé** (2026-08-05) — la source est atteignable à la souris, au clavier
+   et au doigt. Deux causes, dont une seule était connue :
+   - la bulle était un **frère** du bouton, séparée par un `mt-1` : aller vers elle traversait un vide
+     et déclenchait `onMouseLeave`. → le survol est écouté sur le conteneur, et le décalage vient
+     d'un `pt-1` **interne** : plus aucun vide (vérifié, `écart vertical = 0` sur les 17 termes
+     affichés) ;
+   - **`onBlur` dépinglait la bulle** : cliquer « Source » la démontait avant que le lien ne
+     s'active. C'était ça, la vraie cause de l'inatteignabilité. → l'épinglage ne se défait plus qu'au
+     clic extérieur, à Échap, ou par un second clic sur le terme.
+
+   **Un troisième défaut trouvé en testant, de la même famille** : sur écran étroit, un terme proche
+   du bord droit ouvrait une bulle sortant de 170 px hors écran, sans défilement horizontal — la
+   source était donc, là encore, inatteignable. La bulle est maintenant ramenée dans le cadre
+   (mesure + `translateX`).
+
+   Corrigé aussi : `role="tooltip"` retiré — une infobulle ne doit pas contenir d'élément
+   focalisable, or celle-ci porte le lien. Remplacé par `aria-expanded` + `aria-describedby`.
+
+   QC navigateur (chrome-devtools, dev server) : survol réel du mot **jusqu'au lien** ✅ ; tabulation
+   depuis le terme atterrit sur « Source », bulle ouverte ✅ ; Échap ferme et rend le focus au terme
+   ✅ ; une seule bulle ouverte à la fois ✅ ; tap pur sans survol (mobile) ✅ ; 17 termes affichés
+   × 2 largeurs (1440 et 500 px) sans débordement, sans zone morte, lien non recouvert ✅ ; console
+   vide ✅.
+   ⚠️ **Piège de méthode, à retenir** : une première sonde annonçait 40 liens « recouverts ». C'était
+   la sonde qui était fausse — **40 des 57 termes sont dans un `<details>` replié**, donc non peints,
+   et `elementFromPoint` y renvoie `null`. Toujours restreindre un balayage aux éléments réellement
+   affichés avant de conclure à un défaut.
 6. ⬜ 🟠 **Deux sources du glossaire publié sont fausses — vérifiées à la main par l'éditeur le
    04/08**, sur les 10 entrées adossées à `vie-publique.fr` :
    - `taxe Zucman` : la fiche citée porte sur une **proposition de loi inspirée** du dispositif, pas

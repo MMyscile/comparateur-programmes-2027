@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useMemo, useState } from "react";
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { TermeGlossaire } from "@/lib/types";
 
 function escapeRegExp(s: string): string {
@@ -8,59 +8,131 @@ function escapeRegExp(s: string): string {
 }
 
 /**
- * Infobulle de glossaire sur un terme technique.
- * Accessible : s'ouvre au survol, au focus clavier ET au tap (bouton),
- * se ferme à Échap. Non bloquante (pas de dialog modal).
+ * Bulle de glossaire sur un terme technique.
+ *
+ * Elle doit être **atteignable**, pas seulement lisible : une définition sourcée
+ * dont personne ne peut ouvrir la source ne vaut pas mieux qu'une définition non
+ * sourcée (garde-fous n°1 et n°2). Deux défauts corrigés le 2026-08-05 :
+ *  - la bulle se fermait dès que le pointeur quittait le mot, un espace la
+ *    séparant du terme → elle est maintenant **dans** la zone de survol, et le
+ *    décalage vient d'un `pt-1` interne, jamais d'un vide entre les deux ;
+ *  - `onBlur` dépinglait la bulle, si bien que cliquer « Source » la démontait
+ *    avant que le lien ne s'active → l'épinglage ne se défait plus qu'au clic
+ *    extérieur, à Échap, ou par un second clic sur le terme.
+ *
+ * Ouverture au survol, au focus clavier et au tap ; sur mobile le survol
+ * n'existe pas, c'est le tap (épinglage) qui rend la source atteignable.
  */
 function TermeInfobulle({ terme, entree }: { terme: string; entree: TermeGlossaire }) {
   const [survol, setSurvol] = useState(false);
   const [focus, setFocus] = useState(false);
   const [epingle, setEpingle] = useState(false);
+  const conteneur = useRef<HTMLSpanElement>(null);
+  const bouton = useRef<HTMLButtonElement>(null);
+  const panneau = useRef<HTMLSpanElement>(null);
+  const [decalage, setDecalage] = useState(0);
   const id = useId();
   const ouvert = survol || focus || epingle;
 
+  // La bulle est ancrée sous le mot ; un terme proche du bord droit la faisait
+  // sortir de l'écran (170 px hors champ sur mobile, mesuré le 2026-08-05), et la
+  // page ne défile pas horizontalement — le lien de source redevenait donc
+  // inatteignable, le défaut même qu'on corrige ici. On la ramène dans le cadre.
+  useLayoutEffect(() => {
+    if (!ouvert) {
+      setDecalage(0);
+      return;
+    }
+    const el = panneau.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const marge = 8;
+    const largeur = document.documentElement.clientWidth;
+    // `r` inclut le décalage déjà appliqué : on raisonne sur la position d'origine.
+    const gauche = r.left - decalage;
+    const droite = r.right - decalage;
+    let d = 0;
+    if (droite > largeur - marge) d = largeur - marge - droite;
+    if (gauche + d < marge) d = marge - gauche;
+    if (d !== decalage) setDecalage(d);
+  }, [ouvert, decalage]);
+
+  const fermer = () => {
+    setEpingle(false);
+    setSurvol(false);
+    setFocus(false);
+  };
+
+  // Clic extérieur et Échap, tant que la bulle est ouverte. Le clic extérieur
+  // ferme aussi `survol` : sur mobile, un tap déclenche `mouseenter` sans jamais
+  // produire le `mouseleave` correspondant, et la bulle resterait ouverte.
+  useEffect(() => {
+    if (!ouvert) return;
+    const dehors = (e: PointerEvent) => {
+      if (!conteneur.current?.contains(e.target as Node)) fermer();
+    };
+    const echap = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      fermer();
+      if (conteneur.current?.contains(document.activeElement)) bouton.current?.focus();
+    };
+    document.addEventListener("pointerdown", dehors);
+    document.addEventListener("keydown", echap);
+    return () => {
+      document.removeEventListener("pointerdown", dehors);
+      document.removeEventListener("keydown", echap);
+    };
+  }, [ouvert]);
+
   return (
-    <span className="relative inline-block">
+    <span
+      ref={conteneur}
+      className="relative inline-block"
+      onMouseEnter={() => setSurvol(true)}
+      onMouseLeave={() => setSurvol(false)}
+      // React propage focus/blur (focusin/focusout) : posés sur le conteneur, ils
+      // couvrent le terme ET le lien de source. Un focus qui reste à l'intérieur
+      // ne ferme donc pas la bulle — c'est ce qui permet d'y accéder au clavier.
+      onFocus={() => setFocus(true)}
+      onBlur={(e) => {
+        if (!conteneur.current?.contains(e.relatedTarget as Node | null)) setFocus(false);
+      }}
+    >
       <button
+        ref={bouton}
         type="button"
         aria-describedby={ouvert ? id : undefined}
-        onMouseEnter={() => setSurvol(true)}
-        onMouseLeave={() => setSurvol(false)}
-        onFocus={() => setFocus(true)}
-        onBlur={() => {
-          setFocus(false);
-          setEpingle(false);
-        }}
+        aria-expanded={ouvert}
         onClick={() => setEpingle((e) => !e)}
-        onKeyDown={(e) => {
-          if (e.key === "Escape") {
-            setEpingle(false);
-            setSurvol(false);
-            e.currentTarget.blur();
-          }
-        }}
         className="cursor-help font-medium text-slate-900 underline decoration-dotted decoration-slate-400 underline-offset-2 hover:decoration-slate-700 focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-blue-500"
       >
         {terme}
       </button>
       {ouvert && (
+        // Pas de `role="tooltip"` : une infobulle ne doit pas contenir d'élément
+        // focalisable, or celle-ci porte le lien de source. Le lien est atteignable
+        // à la tabulation (il suit le terme dans le DOM) et `aria-expanded` annonce
+        // l'ouverture ; `aria-describedby` fait lire la définition.
         <span
-          role="tooltip"
+          ref={panneau}
           id={id}
-          className="absolute left-0 top-full z-30 mt-1 block w-64 rounded-md border border-slate-200 bg-white p-3 text-left text-xs font-normal not-italic leading-relaxed text-slate-700 shadow-lg"
+          style={decalage ? { transform: `translateX(${decalage}px)` } : undefined}
+          className="absolute left-0 top-full z-30 block w-64 max-w-[calc(100vw-1rem)] pt-1 text-left"
         >
-          <span className="mb-0.5 block font-semibold text-slate-900">{entree.terme}</span>
-          {entree.definition}
-          {entree.source_url && (
-            <a
-              href={entree.source_url}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-1 block text-blue-700 underline"
-            >
-              Source
-            </a>
-          )}
+          <span className="block rounded-md border border-slate-200 bg-white p-3 text-xs font-normal not-italic leading-relaxed text-slate-700 shadow-lg">
+            <span className="mb-0.5 block font-semibold text-slate-900">{entree.terme}</span>
+            {entree.definition}
+            {entree.source_url && (
+              <a
+                href={entree.source_url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-1 block text-blue-700 underline"
+              >
+                Source
+              </a>
+            )}
+          </span>
         </span>
       )}
     </span>
