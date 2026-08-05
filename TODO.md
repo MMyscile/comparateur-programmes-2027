@@ -86,10 +86,12 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
 
-**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → 6 → 7 → 8 → 11.**
-Les 9, 10 et 5 sont **faits**. **Le 6 est donc la prochaine étape** (les deux sources fausses du
-glossaire publié), avant le 7 et le 8. Le blocage est levé : les 54 nouvelles définitions du
-glossaire peuvent être fusionnées, leur source étant désormais atteignable.
+**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → ~~6~~ → 7 → 8 → 11.**
+Les 9, 10, 5 et 6 sont **faits**. **Le 7 est donc la prochaine étape** (note d'intention sur
+`lfi-energie-prix-02`, qui demande de trancher entre `contexte_lecture` et l'élargissement de
+`fait_posterieur`), puis le 8 (la règle éditoriale). Le blocage du glossaire est levé : les 54
+nouvelles définitions peuvent être fusionnées — leur source est atteignable (point 5) et la méthode
+de contrôle des sources est éprouvée (point 6).
 
 5. ✅ **Bug de l'infobulle corrigé** (2026-08-05) — la source est atteignable à la souris, au clavier
    et au doigt. Deux causes, dont une seule était connue :
@@ -118,16 +120,36 @@ glossaire peuvent être fusionnées, leur source étant désormais atteignable.
    la sonde qui était fausse — **40 des 57 termes sont dans un `<details>` replié**, donc non peints,
    et `elementFromPoint` y renvoie `null`. Toujours restreindre un balayage aux éléments réellement
    affichés avant de conclure à un défaut.
-6. ⬜ 🟠 **Deux sources du glossaire publié sont fausses — vérifiées à la main par l'éditeur le
-   04/08**, sur les 10 entrées adossées à `vie-publique.fr` :
-   - `taxe Zucman` : la fiche citée porte sur une **proposition de loi inspirée** du dispositif, pas
-     sur la taxe Zucman elle-même. → citer **l'auteur** (Gabriel Zucman / EU Tax Observatory), qui
-     est la source de premier rang pour un concept qui porte son nom.
-   - `réforme Darmanin` : **le nom de Darmanin n'apparaît nulle part** sur la fiche citée — rien ne
-     permet au lecteur de vérifier que c'est bien le texte désigné par ce surnom. → source qui fait
-     le lien explicite, ou renommer l'entrée par l'intitulé officiel.
-   Les 8 autres n'ont pas été signalées comme fautives. **Leçon** : le défaut n'est pas le lien mort,
-   c'est le lien **hors sujet** — un contrôle automatique de survie des URLs ne l'aurait pas vu.
+6. ✅ **Les deux sources fausses du glossaire sont corrigées** (2026-08-05), et les 8 autres entrées
+   `vie-publique.fr` contrôlées dans la foulée.
+   - `réforme Darmanin` : réglé **par l'API**. Le décret existe — n° 2023-1013 du 2 novembre 2023 —
+     et son champ `signers` porte « *Le ministre de l'intérieur et des outre-mer, Gérald Darmanin* ».
+     Le surnom devient donc vérifiable sur le texte officiel lui-même. Source → Légifrance
+     (`JORFTEXT000048306645`) ; la définition cite désormais le numéro du décret et son signataire.
+     `texteIntegral` expose maintenant `signataires` : c'est le champ qui a tranché.
+   - `taxe Zucman` : **l'instruction du 04/08 (« citer l'auteur ») s'est révélée impraticable telle
+     quelle**, et c'est le résultat le plus intéressant du lot. Les textes de Zucman lui-même donnent
+     des paramètres *différents* de ceux de notre définition : 2 % sur les **milliardaires** dans son
+     rapport au G20 (juin 2024), 1,5 % dès **50 M€** sur sa page de campagne européenne. Or notre
+     définition dit **2 % / 100 M€**, qui sont les chiffres du **texte français**. Le sourcer chez
+     l'auteur aurait donc laissé ses deux chiffres sans source. Retenu : le **rapport du Sénat
+     `l24-689`** sur la proposition de loi, qui porte *à la fois* les trois faits affirmés (taux de
+     2 %, seuil de 100 M€, mécanisme de plancher : « *la différence… entre le montant résultant de
+     l'application d'un taux de 2 % et la somme des montants effectivement acquittés* ») **et** le
+     nom de Gabriel Zucman. Ni la fiche vie-publique ni les pages de Zucman ne font les deux.
+   - **Les 8 autres tiennent** (vérifiées en navigateur réel : `quotient conjugal`, `niches
+     fiscales`, `CSG`, `devoir de vigilance`, `comparution immédiate`, `loi Attal`, `Sécurité
+     globale`, `Séparatisme` — le terme figure dans chaque page citée).
+
+   ⚠️ **Deux pièges de méthode, rencontrés le même jour et de même nature** — à retenir avant
+   d'écrire l'outil de contrôle des URLs (voir plus bas) :
+   - `vie-publique.fr` **rend en JavaScript** : `WebFetch` et même un `fetch` depuis la page servent
+     une coquille de ~200 signes. Un contrôle automatique y verrait 8 pages vides et conclurait à
+     8 liens morts. Seule une navigation réelle donne le contenu.
+   - **`innerText` masque le texte replié.** Le contrôle a d'abord déclaré `loi Attal` fautive
+     — nom absent — alors qu'« Attal » figure 15 fois dans la page, dont le titre et « *déposée par
+     le député Gabriel Attal* », mais dans une section repliée. Toujours chercher dans le HTML
+     complet, jamais dans le texte visible. (Même piège que sur le QC des infobulles, point 5.)
 7. ⬜ 🟠 **Note d'intention sur `lfi-energie-prix-02` (renationalisation d'EDF).** Le lecteur qui sait
    qu'EDF appartient déjà à 100 % à l'État lira la proposition comme absurde ou dépassée — le piège
    dans lequel l'assistant est tombé le 04/08 (décision n° 31). Il faut le désamorcer **sans
@@ -275,6 +297,13 @@ cela fait **3 baselines « vérifiées » dont le sourçage ne tenait pas**.
 → ⬜ 🟠 **Leçon à outiller** : le stamp `baseline_verifiee` atteste qu'un passage a eu lieu, pas que le
 fait affirmé se trouve dans la page citée. Un contrôle de survie des URLs (et, idéalement, de
 cohérence chiffre ↔ source) est à ajouter — même geste que `npm run verif-miroirs` pour les PDF.
+⚠️ **Trois contraintes connues avant de l'écrire, toutes trouvées le 05/08** : (a) `legifrance.gouv.fr`
+renvoie 403 aux requêtes automatisées même quand la page existe — passer par `scripts/legifrance.mjs` ;
+(b) `vie-publique.fr` rend en JavaScript et sert une coquille de ~200 signes à `fetch` — un contrôle
+naïf y verrait des liens morts en série ; (c) chercher dans le **HTML complet** et non dans le texte
+visible, `innerText` masquant les sections repliées. Autrement dit : un contrôle de survie d'URL
+naïf produirait surtout des faux positifs, et **ne verrait toujours pas** le vrai défaut, qui est le
+lien hors sujet.
 
 ---
 

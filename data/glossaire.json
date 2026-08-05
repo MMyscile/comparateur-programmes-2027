@@ -19,7 +19,7 @@
     {
       "terme": "taxe Zucman",
       "definition": "Projet d'impôt « plancher » du nom de l'économiste Gabriel Zucman : il vise à ce que les patrimoines supérieurs à 100 millions d'euros acquittent chaque année au moins 2 % de leur valeur en impôts, en versant la différence si les impôts déjà payés sont inférieurs à ce seuil.",
-      "source_url": "https://www.vie-publique.fr/loi/297460-impot-plancher-2-sur-le-patrimoine-des-ultrariches-proposition-de-loi"
+      "source_url": "https://www.senat.fr/rap/l24-689/l24-689_mono.html"
     },
     {
       "terme": "quotient conjugal",
@@ -178,8 +178,8 @@
     },
     {
       "terme": "réforme Darmanin",
-      "definition": "Réorganisation de la police nationale (décret du 2 novembre 2023) plaçant, dans chaque département, l'ensemble des services de police — dont la police judiciaire — sous une direction départementale unique, en remplacement de l'organisation par filières nationales.",
-      "source_url": "https://www.vie-publique.fr/rapport/288825-creation-des-directions-departementales-de-la-police-nationale"
+      "definition": "Réorganisation de la police nationale (décret n° 2023-1013 du 2 novembre 2023, signé par le ministre de l’intérieur Gérald Darmanin) plaçant, dans chaque département, l’ensemble des services de police — dont la police judiciaire — sous une direction départementale unique, en remplacement de l’organisation par filières nationales.",
+      "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048306645"
     },
     {
       "terme": "Bâle V",
@@ -200,13 +200,17 @@
       "terme": "Sécurité globale",
       "definition": "Nom usuel de la loi du 25 mai 2021 « pour une sécurité globale préservant les libertés », portant notamment sur les polices municipales, la sécurité privée et l'usage des caméras et images par les forces de l'ordre.",
       "source_url": "https://www.vie-publique.fr/loi/277157-loi-pour-une-securite-globale-preservant-les-libertes",
-      "contextes": ["eco-police-4"]
+      "contextes": [
+        "eco-police-4"
+      ]
     },
     {
       "terme": "Séparatisme",
       "definition": "Nom usuel de la loi du 24 août 2021 « confortant le respect des principes de la République », qui renforce les obligations de neutralité du service public et le contrôle des associations et des lieux de culte.",
       "source_url": "https://www.vie-publique.fr/loi/277621-loi-separatisme-respect-des-principes-de-la-republique-24-aout-2021",
-      "contextes": ["eco-police-4"]
+      "contextes": [
+        "eco-police-4"
+      ]
     }
   ]
 }

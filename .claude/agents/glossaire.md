@@ -67,10 +67,22 @@ intègre — les définitions sont de la voix éditoriale du site, tu ne les pub
   la source de premier rang — et `article` renvoie l'URL Légifrance stable à citer.
   ⚠️ Vérifie que l'article est **en vigueur** (`vigueur`) : définir un dispositif d'après un article
   abrogé induit le lecteur en erreur.
-- **Un concept qui porte un nom propre se source chez son auteur.** Une fiche pédagogique *inspirée
-  par* un dispositif n'est pas une source sur ce dispositif, et un surnom (« réforme X ») ne se
-  source que par une page où le nom apparaît. Le défaut à traquer n'est pas le lien mort, c'est le
-  lien **hors sujet** : vérifie que le terme défini figure bien dans la page citée.
+- **Un surnom ne se source que par une page où le nom apparaît.** « réforme X », « loi Y » : si le
+  nom propre est absent de la page citée, rien ne permet au lecteur de vérifier que c'est bien le
+  texte désigné. Le défaut à traquer n'est pas le lien mort, c'est le lien **hors sujet**.
+  💡 Pour un décret ou une loi, `texteIntegral()` expose `signataires` : c'est souvent là que se
+  trouve le ministre dont le texte porte familièrement le nom (cas résolu le 05/08 : le décret
+  n° 2023-1013 est signé « *Le ministre de l'intérieur et des outre-mer, Gérald Darmanin* »).
+- **La source doit porter les faits que TA définition affirme, pas seulement le concept.** Piège
+  rencontré le 05/08 sur « taxe Zucman » : sourcer un concept chez son auteur semble évident, mais
+  les textes de Gabriel Zucman donnent 2 % sur les milliardaires (rapport G20) ou 1,5 % dès 50 M€
+  (campagne européenne), quand la définition — et les programmes — parlent de 2 % au-delà de 100 M€,
+  chiffres du texte français. Citer l'auteur aurait laissé les deux chiffres sans source. Choisis la
+  source qui porte **tous** les faits énoncés ; si aucune ne le fait, resserre la définition.
+- **Vérifie dans le HTML complet, jamais dans le texte visible.** `innerText` masque les sections
+  repliées : le contrôle du 05/08 a d'abord déclaré « loi Attal » fautive alors que le nom figure
+  15 fois dans la page. Et `vie-publique.fr` rend en JavaScript — `WebFetch` y renvoie une coquille
+  vide, ce qui n'est **pas** un lien mort : ces pages demandent un navigateur réel.
 - Note, pour chaque terme, **où il apparaît** (au moins un id de mesure) : ça prouve l'utilité et
   aide l'éditeur à vérifier le sens dans son contexte.
 

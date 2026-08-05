@@ -17,3 +17,7 @@ npm-debug.log*
 .vscode/
 .idea/
 .vercel
+
+# Artefact de build TypeScript : régénéré à chaque build, il ne dit rien du projet
+# et polluait chaque diff — or ce dépôt fait de git sa traçabilité.
+tsconfig.tsbuildinfo

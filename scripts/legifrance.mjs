@@ -296,6 +296,12 @@ export async function texteIntegral(texteId, { date = AUJOURDHUI() } = {}) {
     dateTexte: enJour(data.dateTexte), // date de signature — pas la date d'entrée en vigueur non plus
     visa: detagger(data.visa ?? ""),
     nota: detagger(data.nota ?? ""),
+    // Les signataires ne sont pas un détail protocolaire : ils rattachent un texte
+    // au ministre dont il porte familièrement le nom. C'est ce champ qui a permis
+    // de sourcer « réforme Darmanin » (décret n° 2023-1013, signé par le ministre
+    // de l'intérieur Gérald Darmanin) là où la fiche pédagogique citée jusque-là
+    // ne mentionnait ce nom nulle part.
+    signataires: detagger(data.signers ?? ""),
     articles: aplatir(data),
   };
 }
@@ -463,9 +469,14 @@ const CLI = {
     }
     const texte = await texteIntegral(id, date ? { date } : {});
     console.log(`${texte.titre}`);
-    console.log(`${texte.nature} ${texte.etat} — signé le ${texte.dateTexte ?? "?"}, paru au JO le ${texte.dateParution ?? "?"}`);
-    console.log(`⚠️ Ni l'une ni l'autre n'est la date d'entrée en vigueur : la chercher dans les dispositions finales.`);
-    console.log(`${texte.articles.length} articles\n`);
+    // `/consult/lawDecree` laisse `etat` et `dateTexte` vides : ne pas afficher
+    // « null » ni « ? », qui se lisent comme un fait alors qu'ils n'en sont pas.
+    const entete = [texte.nature, texte.etat, texte.dateTexte && `signé le ${texte.dateTexte}`,
+      texte.dateParution && `paru au JO le ${texte.dateParution}`].filter(Boolean);
+    console.log(entete.join(" — "));
+    console.log(`⚠️ La date de parution n'est pas la date d'entrée en vigueur : la chercher dans les dispositions finales.`);
+    if (texte.signataires) console.log(`\nSignataires :\n${texte.signataires}`);
+    console.log(`\n${texte.articles.length} articles\n`);
     for (const a of texte.articles) {
       console.log(`── Article ${a.numero ?? "?"} [${a.etat ?? "—"}]${a.section ? `  (${a.section})` : ""}`);
       console.log(`${a.texte}\n`);
