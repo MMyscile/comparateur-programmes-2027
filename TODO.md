@@ -86,14 +86,14 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
 
-**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → ~~6~~ → ~~7~~ → 8 → 11.**
-Les 9, 10, 5, 6 et 7 sont **faits**. **Le 8 est donc la prochaine étape** : écrire la règle
-éditoriale « ne jamais conclure seul qu'une mesure est dépassée ». Elle est mûre — les trois critères
-de l'éditeur, plus les deux tirés des contrôles Légifrance (le texte des articles fait foi, pas le
-titre ; une date de fin n'est pas une abrogation) — et n'attend plus que d'être posée dans
-`data/choix-editoriaux.md` et dans la procédure des agents.
-Le blocage du glossaire est levé : les 54 nouvelles définitions peuvent être fusionnées — leur source
-est atteignable (point 5) et la méthode de contrôle des sources est éprouvée (point 6).
+**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → ~~6~~ → ~~7~~ → ~~8~~ → 11.**
+**Les sept chantiers de la séance du 05/08 sont faits** ; seul le 11 reste, et il est 🟡.
+
+**La suite naturelle n'est plus dans cette liste, elle est en dessous** : (a) **fusionner les 54
+définitions du glossaire** — le blocage est levé, leur source est atteignable (point 5) et la méthode
+de contrôle est éprouvée (point 6) ; (b) la **passe ciblée du point 12** sur les 7 baselines au passé
+accompli, désormais outillée et cadrée par la décision n° 33 ; (c) reprendre le **plan d'attaque V1**,
+au 3ᵉ méta-thème sur 15.
 
 5. ✅ **Bug de l'infobulle corrigé** (2026-08-05) — la source est atteignable à la souris, au clavier
    et au doigt. Deux causes, dont une seule était connue :
@@ -167,19 +167,23 @@ est atteignable (point 5) et la méthode de contrôle des sources est éprouvée
    Reprendre un document officiel sans vérifier sa fraîcheur aurait publié un chiffre faux : le
    caractère officiel d'une source ne dit rien de son actualité. D'où deux sources, `source_url`
    acceptant désormais une liste comme `source_baseline` (« un lien par fait affirmé »).
-8. ⬜ 🔴 **Règle éditoriale à écrire : ne jamais conclure seul qu'une mesure est dépassée.** Demande
-   explicite de l'éditeur, tirée du cas EDF. Avant toute note d'obsolescence : (i) la demande
-   porte-t-elle sur *plusieurs* objets (« EDF **et** Engie ») ? (ii) le mot du candidat a-t-il *son*
-   sens ou le mien (« renationaliser » = capital, ou marché et statut) ? (iii) le candidat a-t-il
-   maintenu la demande **après** le fait invoqué ? Si oui, le fait ne date rien. À inscrire dans
-   `data/choix-editoriaux.md` et dans la procédure des agents.
-   ➕ **Quatrième critère, ajouté le 05/08 après le contrôle CVAE** : (iv) une **date de fin n'est pas
-   une abrogation**. Elle borne le plus souvent une *version* d'article, remplacée par la suivante.
-   L'art. 1586 ter du CGI ressort `ABROGE_DIFF` au 01/01/2027 — mais une version suivante court
-   jusqu'au 01/01/2030, et c'est **2030** qui est la vraie fin de la CVAE. Conclure sur la seule
-   version courante aurait avancé de trois ans la disparition d'un impôt. Toujours réinterroger à une
-   date postérieure avant de conclure à la fin d'un dispositif (`npm run legifrance -- vigueur … <date>`
-   le rappelle désormais à chaque réponse portant une date de fin).
+8. ✅ **Règle écrite : ne jamais conclure seul qu'une proposition est dépassée** (2026-08-05,
+   **décision n° 33**). Cinq contrôles à passer avant toute note d'obsolescence — un seul échoue,
+   pas de note : (i) combien d'objets la demande vise-t-elle ? (ii) le mot a-t-il son sens ou le
+   mien ? (iii) la demande a-t-elle été maintenue après le fait invoqué ? (iv) le texte dit-il ce
+   que son titre annonce — lire les articles ? (v) est-il en vigueur, et une date de fin n'est-elle
+   pas une simple borne de version ? Plus un corollaire : **le caractère officiel d'une source ne
+   dit rien de son actualité** (vérifier la date d'arrêté).
+   **Distinction posée au passage, et elle décide du vocabulaire des agents** : une *baseline* —
+   notre description du réel — peut être périmée, et le dire est un constat sur notre texte ; une
+   *mesure* — la phrase d'un candidat — ne reçoit jamais ce tampon.
+   Répercutée dans `.claude/agents/verificateur-sources.md`, `.claude/agents/extracteur.md` et
+   `data/PROCESS-extraction.md` (dont le schéma décrivait encore `etat_maturite` sans dire que la
+   décision n° 31 l'a retiré de l'affichage, ni que `fait_posterieur` / `contexte_lecture` ne se
+   remplissent pas en extraction).
+
+   → **Texte de référence : `data/choix-editoriaux.md`, décision n° 33.** Ce TODO n'en garde que le
+   résumé ; les cinq contrôles y sont énoncés au long, avec le cas d'espèce de chacun.
 9. 🟢 **[EN PLACE depuis le 2026-08-05] Accès programmé aux sources qui bloquent le scraping.**
    L'API Légifrance fonctionne : compte PISTE créé par l'éditeur, application « comparateur-programmes-2027 »
    abonnée à *API Légifrance v2.4.2*, identifiants OAuth dans `.env.local` (ignoré par git).

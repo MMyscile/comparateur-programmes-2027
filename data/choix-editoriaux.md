@@ -591,3 +591,50 @@ Elles sont devenues les décisions **n° 28** (scission de `fisc-verte`), **n° 
   `source_baseline`, la règle « un lien par fait affirmé » valant ici aussi.
 - **Pour revenir dessus.** Le champ est optionnel et n'est porté que par une mesure : le retirer est
   sans effet sur le reste.
+
+## 33. Ne jamais conclure seul qu'une proposition est dépassée (2026-08-05)
+
+Demande explicite de l'éditeur, tirée du cas EDF (décisions n° 31 et 32) et de deux contrôles
+Légifrance qui ont pris notre propre rédaction en défaut.
+
+- **La règle.** Le site n'a pas à déclarer la proposition d'un candidat périmée. Il expose des faits
+  sourcés et datés, et laisse conclure. Une note d'obsolescence n'est donc jamais un verdict abrégé :
+  c'est un fait, ou rien.
+- **Distinction à ne pas confondre.** Une **baseline** — notre description du réel — peut parfaitement
+  être périmée, et le dire est un constat sur *notre* texte. Une **mesure** — la phrase d'un candidat
+  — ne reçoit jamais ce tampon. Le verdict porte sur ce que nous écrivons, jamais sur ce qu'il demande.
+
+### Les cinq contrôles, à passer AVANT d'écrire la moindre note d'obsolescence
+
+Un seul échoue → pas de note. Selon le cas : une note de `contexte_lecture` (décision n° 32), une
+note portant sur la seule clause concernée, ou rien.
+
+1. **Combien d'objets ?** La demande en vise-t-elle plusieurs ? « Renationaliser EDF **et** Engie » :
+   EDF appartient à l'État, Engie non. Un fait qui n'atteint qu'un objet ne date pas la phrase.
+   L'obsolescence est **par clause**, jamais par mesure (n° 31).
+2. **Le mot a-t-il son sens, ou le mien ?** « Renationaliser » désigne-t-il le registre des
+   actionnaires, ou la sortie du marché et le statut ? Juger un mot du candidat contre notre propre
+   définition, puis le déclarer inexact, est exactement ce que le principe fondateur interdit.
+3. **La demande a-t-elle été maintenue après le fait invoqué ?** Si le candidat la porte encore
+   publiquement après l'événement, le fait ne date rien — il montre au mieux un désaccord sur ce qui
+   est fait. (Cas EDF : communiqué LFI du 29/02/2024, postérieur à la nationalisation de 2023.)
+4. **Le texte dit-il ce que son titre annonce ?** Le titre et le résumé d'une loi ne disent pas ce
+   qu'elle fait : la note s'écrit **contre le texte des articles**. Contrôle du 05/08 sur la loi
+   n° 2026-554 : nous laissions entendre qu'elle réglait la demande LFI d'arrêter la privatisation
+   des barrages, quand ses articles 6 et 12 organisent l'ouverture d'au moins 40 % des capacités
+   hydroélectriques à des entreprises autres qu'EDF. Le texte disait l'inverse du résumé.
+5. **Le texte est-il en vigueur, et jusqu'à quand ?** La date de signature n'est pas la date d'entrée
+   en vigueur, et **une date de fin n'est pas une abrogation** : elle borne le plus souvent une
+   *version* d'article, remplacée par la suivante. Deux pièges attrapés le 05/08 — l'art. L. 521-1 du
+   code de l'énergie ressortait `ABROGE_DIFF` (donc encore applicable) là où nous écrivions « a
+   supprimé » ; et l'art. 1586 ter du CGI se terminant au 01/01/2027 aurait fait avancer de trois ans
+   la fin de la CVAE, dont une version suivante court jusqu'au 01/01/2030. `npm run legifrance --
+   vigueur <code> <article> [date]` répond par les bornes de vigueur, jamais par l'étiquette d'état —
+   celle-ci décrit l'article *aujourd'hui*, pas à la date interrogée.
+
+### Corollaire sur les sources
+
+Le caractère officiel d'une source ne dit rien de son actualité. Le jaune budgétaire « État
+actionnaire », document parlementaire, donne Engie à 23,64 % — chiffre arrêté au 30/06/2024, quand
+Engie publie 22,64 % au 31/05/2026 (n° 32). Vérifier la **date d'arrêté** d'un document officiel
+avant d'en reprendre un chiffre.

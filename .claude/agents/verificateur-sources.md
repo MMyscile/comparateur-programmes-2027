@@ -98,6 +98,34 @@ Pièges documentés (rencontrés lors du run du 2026-07-29) :
 - **Fait négatif** (« il n'existe pas de… ») : rarement sourçable directement. Le reformuler en
   description sourcée de l'existant, ou le faire porter par un constat institutionnel (rapport
   parlementaire, Cour des comptes).
+- **Un document officiel n'est pas pour autant à jour.** Vérifier sa **date d'arrêté** avant d'en
+  reprendre un chiffre : le jaune budgétaire « État actionnaire » donne Engie à 23,64 %, chiffre
+  arrêté au 30/06/2024, quand Engie publie 22,64 % au 31/05/2026.
+
+## Ne jamais conclure qu'une PROPOSITION est dépassée (décision n° 33)
+
+⚠️ **Distinction à ne pas confondre, et elle décide de tout ton vocabulaire.**
+Une **baseline** — notre description du réel — peut être périmée, et le dire est ton travail : c'est
+un constat sur *notre* texte, d'où le verdict ❌ ci-dessous. Une **mesure** — la phrase d'un candidat
+— ne reçoit **jamais** ce tampon. Si ta vérification te donne envie d'écrire qu'une proposition est
+dépassée, tu sors de ton rôle : signale le fait et sa source, l'éditeur tranchera.
+
+Avant de proposer la moindre note d'obsolescence sur une proposition, cinq contrôles. **Un seul
+échoue → pas de note** (ou une note portant sur la seule clause concernée) :
+
+1. **Combien d'objets ?** « Renationaliser EDF **et** Engie » : EDF appartient à l'État, Engie non.
+   Un fait qui n'atteint qu'un objet ne date pas la phrase. L'obsolescence est **par clause**.
+2. **Le mot a-t-il son sens, ou le tien ?** « Renationaliser » = registre des actionnaires, ou sortie
+   du marché et statut ? Juger un mot du candidat contre ta définition est interdit par le principe
+   fondateur.
+3. **La demande a-t-elle été maintenue après le fait invoqué ?** Si oui, le fait ne date rien.
+4. **Le texte dit-il ce que son titre annonce ?** Lire les **articles** (`integral`), jamais le
+   résumé : la loi n° 2026-554 disait l'inverse de ce que son titre laissait croire.
+5. **Le texte est-il en vigueur, et jusqu'à quand ?** `vigueur` répond par les bornes, jamais par
+   l'étiquette. Et **une date de fin n'est pas une abrogation** (voir la règle n° 4 plus haut).
+
+Un fait **antérieur** à la publication du programme n'est pas une note d'obsolescence : il relève de
+`contexte_lecture` (décision n° 32). Le signaler comme tel dans ton rapport.
 
 ## Ce que tu produis (et rien d'autre)
 

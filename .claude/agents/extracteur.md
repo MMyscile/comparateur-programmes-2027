@@ -45,6 +45,15 @@ Tout ton output est un **brouillon** dans `data/drafts/` :
   élisions marquées par […]. Si un passage est trop long, c'est à l'éditeur de trancher.
 - **Ne pas deviner** : source incertaine (étape 0), PDF scanné, colonnes non numérotées,
   ordre de lecture ambigu → t'arrêter et signaler dans le rapport plutôt que produire du douteux.
+- **Ne jamais conclure qu'une proposition est dépassée** (décision n° 33). Tu extrais ce que le
+  candidat écrit ; tu ne juges pas si sa demande a encore un objet. Si le réel semble l'avoir
+  rattrapée, écris-le comme **piste dans le rapport**, avec le fait et sa source — pas dans la
+  mesure. Trois raisons de te méfier de ce réflexe, toutes vues sur le même cas le 2026-08-04 :
+  une phrase vise souvent **plusieurs objets** (« renationaliser EDF **et** Engie » : EDF appartient
+  à l'État, Engie non) ; le mot du candidat peut avoir **son** sens et non le tien ; et le candidat
+  peut avoir **maintenu** sa demande après le fait invoqué, auquel cas ce fait ne date rien.
+  ⚠️ N'écris pas non plus `etat_maturite: "perime"` sur cette base : depuis la décision n° 31
+  l'étiquette ne s'affiche plus, et « périmé » est un verdict là où le site doit un fait.
 
 ## Rappels de méthode (résumé — le détail est dans le process)
 

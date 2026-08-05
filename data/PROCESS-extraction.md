@@ -137,6 +137,19 @@ Schéma d'une mesure (modèle v0.2) :
 }
 ```
 
+⚠️ **`etat_maturite` n'est plus affiché** (décision n° 31) : les quatre états décrivent l'état d'un
+**programme**, pas d'une phrase, et les 437 mesures portaient toutes « mûr ». Le champ reste au
+schéma — rien n'est effacé — mais **ne mets jamais `perime`** pour signaler qu'une proposition est
+rattrapée par le réel : « périmé » est un verdict là où le site doit un fait (décision n° 33).
+
+Deux champs optionnels portent ce travail, et **aucun des deux ne se remplit en extraction** — ils
+demandent une vérification datée que l'éditeur mène :
+- `fait_posterieur` { texte, source_url, date } — un fait **postérieur** à la publication qui touche
+  la proposition (`check-data` refuse une date antérieure, un texte sans source, ou un verdict) ;
+- `contexte_lecture` { texte, source_url } — un fait **antérieur** sans lequel la proposition se lit
+  de travers (décision n° 32 ; ni verdict, ni glose sur l'intention du candidat).
+En extraction, une piste de ce genre va **dans le rapport**, jamais dans la mesure.
+
 ⚠️ Ne **jamais** produire `synthese: true` en sortie d'extraction : ce champ est un marqueur
 de dette (résumé d'axe en attente de détail), pas un format de livraison. Une extraction
 livre du point-par-point verbatim, ou signale qu'elle n'y arrive pas.
