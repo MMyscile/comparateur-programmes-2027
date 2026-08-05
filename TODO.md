@@ -86,8 +86,11 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
 
-Rien de ce qui suit n'est commencé. Ordre indicatif : le 5 est un bug d'affichage qui casse la
-traçabilité, il passe devant le reste.
+Rien de ce qui suit n'est commencé. **Ordre arrêté avec l'éditeur le 2026-08-05 : 9 → 5 → 6 → 7 → 8.**
+Le 9 passe en tête non parce qu'il est le plus urgent, mais parce que c'est **le seul qui comporte une
+attente hors de nos mains** (création d'un compte PISTE par l'éditeur) : on le lance d'abord et on
+travaille pendant ce temps. Le 5 suit immédiatement — c'est un bug qui casse la traçabilité de tout
+ce qui est déjà publié.
 
 5. ⬜ 🔴 **Bug — l'infobulle du glossaire n'est pas cliquable.** La définition apparaît au survol et
    **disparaît dès que le pointeur quitte le mot** : le lien de source est donc inatteignable. Une
@@ -122,13 +125,23 @@ traçabilité, il passe devant le reste.
    sens ou le mien (« renationaliser » = capital, ou marché et statut) ? (iii) le candidat a-t-il
    maintenu la demande **après** le fait invoqué ? Si oui, le fait ne date rien. À inscrire dans
    `data/choix-editoriaux.md` et dans la procédure des agents.
-9. ⬜ 🟡 **Contourner les sites qui bloquent l'automatisation** (Légifrance 403, `ademe.fr` 403,
-   `vie-publique.fr` 200-sur-tout, `economie.gouv.fr`, `interieur.gouv.fr`, `budget.gouv.fr`) —
-   c'est ce qui laisse ~90 termes du glossaire en ❓ et une partie des 20 faits du point 4. Trois
-   voies, à combiner : navigateur réel (exécute le JS, porte un vrai en-tête) pour les vérifications
-   ponctuelles ; **API Légifrance (DILA/PISTE)** et jeux de données ouverts pour l'accès programmé ;
-   à défaut, vérification humaine. À documenter dans la procédure des agents pour qu'ils cessent de
-   buter dessus à chaque passage.
+9. ⬜ 🟠 **[À FAIRE EN PREMIER] Accès programmé aux sources qui bloquent le scraping.** C'est ce qui
+   laisse ~90 termes du glossaire en ❓ et une partie des 20 faits du point 4. Les sites ne cachent
+   pas l'information, ils la servent **ailleurs** — et une API rend un identifiant stable là où une
+   page déménage (le défaut qui a tué la source de `fisc-is`).
+   - 🔑 **Légifrance — action de l'éditeur requise, à lancer en premier.** API gratuite via la
+     plateforme **PISTE** : créer un compte sur `piste.gouv.fr/registration`, déclarer une
+     application, récupérer les identifiants OAuth. Sans ce compte, rien ne peut avancer côté
+     assistant. Les identifiants vont dans un `.env.local` **non versionné** ; comme le site est en
+     export statique, l'API ne sert qu'à la vérification et au build — **aucune clé ne part dans le
+     navigateur**. Docs : `legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api`.
+   - ✅ **ADEME — aucun blocage, exploitable immédiatement.** `data.ademe.fr` expose une API Data Fair
+     **sans clé** (600 requêtes/60 s en anonyme) ; `territoires-climat.ademe.fr` a son propre open
+     data (utile pour les PCAET). Le 403 rencontré ne concernait que le site web éditorial.
+   - **Reste sans API** : `vie-publique.fr` (200-sur-tout), `economie.gouv.fr`, `interieur.gouv.fr`,
+     `budget.gouv.fr` → navigateur réel pour les vérifications ponctuelles, sinon œil humain.
+   - À documenter ensuite dans la procédure des agents, pour qu'ils cessent de buter dessus à chaque
+     passage et marquent ❓ par défaut alors qu'une voie existe.
 
 ### Ce que le balayage des URLs a appris (2026-08-02)
 
