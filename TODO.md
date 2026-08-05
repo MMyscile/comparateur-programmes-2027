@@ -125,7 +125,40 @@ ce qui est déjà publié.
    sens ou le mien (« renationaliser » = capital, ou marché et statut) ? (iii) le candidat a-t-il
    maintenu la demande **après** le fait invoqué ? Si oui, le fait ne date rien. À inscrire dans
    `data/choix-editoriaux.md` et dans la procédure des agents.
-9. ⬜ 🟠 **[À FAIRE EN PREMIER] Accès programmé aux sources qui bloquent le scraping.** C'est ce qui
+9. 🟢 **[EN PLACE depuis le 2026-08-05] Accès programmé aux sources qui bloquent le scraping.**
+   L'API Légifrance fonctionne : compte PISTE créé par l'éditeur, application « comparateur-programmes-2027 »
+   abonnée à *API Légifrance v2.4.2*, identifiants OAuth dans `.env.local` (ignoré par git).
+   Jeton : `POST https://oauth.piste.gouv.fr/api/oauth/token` (`grant_type=client_credentials`,
+   `scope=openid`) → portée `openid resource.READ`, 1 h. Base : `https://api.piste.gouv.fr/dila/legifrance/lf-engine-app`.
+   Endpoints utiles éprouvés : `/consult/ping`, `/search` (fonds `LODA_DATE` pour lois et décrets,
+   `CODE_DATE` pour les articles de code — facette `DATE_VERSION` pour interroger un article **à une
+   date donnée**), `/consult/lawDecree` (texte intégral article par article).
+   ⚠️ Les URLs `legifrance.gouv.fr` renvoient 403 aux requêtes automatisées **même quand la page
+   existe** : ne jamais conclure au lien mort sur ce domaine. Les identifiants d'article viennent de
+   l'API, ils font foi.
+   → ⬜ Reste à faire : outiller ça en script réutilisable (`scripts/legifrance.mjs`) et le documenter
+   dans la procédure des agents, pour que ~90 termes du glossaire et les faits ❓ du point 4 cessent
+   d'être bloqués.
+
+   🔴 **Ce que le premier appel réel a trouvé, et qui justifie à lui seul le chantier.** Contrôle de
+   la loi n° 2026-554 (citée par la baseline `eco-energie-prix` et par l'astérisque de
+   `lfi-energie-prix-02`) contre le texte officiel : **notre rédaction était fausse deux fois.**
+   - *Temps du verbe.* Nous écrivions que la loi « a supprimé » le régime de concession. Son
+     article 21 fixe l'entrée en vigueur **par décret, au plus tard le 1er septembre 2026**, et
+     l'API donne l'article L. 521-1 du code de l'énergie en statut `ABROGE_DIFF` — **encore en
+     vigueur au 05/08/2026**, abrogation différée au 01/09/2026. Aucun décret d'entrée en vigueur
+     trouvé à ce jour.
+   - *Sens de la loi.* Nous laissions entendre que la demande LFI (« stopper la privatisation des
+     barrages ») était réglée. Or l'article 12 fixe l'objectif d'ouvrir **au moins 40 % des capacités
+     hydroélectriques installées à des entreprises autres qu'EDF** (6 GW de « capacité virtuelle »
+     sur vingt ans) et l'article 6 prévoit une **procédure de sélection** concurrentielle. Un lecteur
+     — et LFI — peut lire ce texte comme l'inverse d'un arrêt de la privatisation.
+   **Leçon, à ajouter à la règle du point 8** : le titre d'une loi et son résumé ne disent pas ce
+   qu'elle fait. Une note d'obsolescence doit être écrite **contre le texte des articles**, et sa date
+   d'effet vérifiée — la date de signature n'est pas la date d'entrée en vigueur. Les deux textes ont
+   été corrigés le 05/08.
+
+9-bis. ⬜ 🟠 **Reste du chantier « accès programmé » :** C'est ce qui
    laisse ~90 termes du glossaire en ❓ et une partie des 20 faits du point 4. Les sites ne cachent
    pas l'information, ils la servent **ailleurs** — et une API rend un identifiant stable là où une
    page déménage (le défaut qui a tué la source de `fisc-is`).
