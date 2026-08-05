@@ -86,11 +86,10 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
 
-Rien de ce qui suit n'est commencé. **Ordre arrêté avec l'éditeur le 2026-08-05 : 9 → 5 → 6 → 7 → 8.**
-Le 9 passe en tête non parce qu'il est le plus urgent, mais parce que c'est **le seul qui comporte une
-attente hors de nos mains** (création d'un compte PISTE par l'éditeur) : on le lance d'abord et on
-travaille pendant ce temps. Le 5 suit immédiatement — c'est un bug qui casse la traçabilité de tout
-ce qui est déjà publié.
+**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → 10 → 5 → 6 → 7 → 8 → 11.**
+Le 9 est **fait** (accès Légifrance opérationnel) ; le 10 en est la suite directe et passe donc en
+tête. Le 5 vient juste après : c'est un bug qui casse la traçabilité de tout ce qui est déjà publié,
+et il doit être réglé **avant** de fusionner les 54 nouvelles définitions du glossaire.
 
 5. ⬜ 🔴 **Bug — l'infobulle du glossaire n'est pas cliquable.** La définition apparaît au survol et
    **disparaît dès que le pointeur quitte le mot** : le lien de source est donc inatteignable. Une
@@ -158,23 +157,27 @@ ce qui est déjà publié.
    d'effet vérifiée — la date de signature n'est pas la date d'entrée en vigueur. Les deux textes ont
    été corrigés le 05/08.
 
-9-bis. ⬜ 🟠 **Reste du chantier « accès programmé » :** C'est ce qui
-   laisse ~90 termes du glossaire en ❓ et une partie des 20 faits du point 4. Les sites ne cachent
-   pas l'information, ils la servent **ailleurs** — et une API rend un identifiant stable là où une
-   page déménage (le défaut qui a tué la source de `fisc-is`).
-   - 🔑 **Légifrance — action de l'éditeur requise, à lancer en premier.** API gratuite via la
-     plateforme **PISTE** : créer un compte sur `piste.gouv.fr/registration`, déclarer une
-     application, récupérer les identifiants OAuth. Sans ce compte, rien ne peut avancer côté
-     assistant. Les identifiants vont dans un `.env.local` **non versionné** ; comme le site est en
-     export statique, l'API ne sert qu'à la vérification et au build — **aucune clé ne part dans le
-     navigateur**. Docs : `legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api`.
-   - ✅ **ADEME — aucun blocage, exploitable immédiatement.** `data.ademe.fr` expose une API Data Fair
-     **sans clé** (600 requêtes/60 s en anonyme) ; `territoires-climat.ademe.fr` a son propre open
-     data (utile pour les PCAET). Le 403 rencontré ne concernait que le site web éditorial.
-   - **Reste sans API** : `vie-publique.fr` (200-sur-tout), `economie.gouv.fr`, `interieur.gouv.fr`,
-     `budget.gouv.fr` → navigateur réel pour les vérifications ponctuelles, sinon œil humain.
-   - À documenter ensuite dans la procédure des agents, pour qu'ils cessent de buter dessus à chaque
-     passage et marquent ❓ par défaut alors qu'une voie existe.
+10. ⬜ 🟠 **[PROCHAINE ÉTAPE] Outiller l'accès Légifrance : `scripts/legifrance.mjs`.** Les appels du
+    05/08 étaient jetables ; il faut un module réutilisable, sinon chaque vérification les réécrit et
+    l'erreur revient. Ce qu'il doit exposer, tiré de ce qui a servi ce jour-là :
+    - `jeton()` — OAuth `client_credentials` + cache mémoire (le jeton vaut 1 h, ne pas en demander un
+      par requête) ; message clair si `.env.local` est vide ou si le retour est 403 (→ consentement CGU).
+    - `chercherTexte(numero)` — fond `LODA_DATE`, facette `NATURE`, retourne l'identifiant `LEGITEXT`.
+    - `texteIntegral(legitext)` — `/consult/lawDecree`, articles aplatis et détaggés (le JSON imbrique
+      `sections`/`articles` récursivement, le HTML est à nettoyer).
+    - `articleADate(code, numero, date)` — fond `CODE_DATE` + facette `DATE_VERSION` : **c'est la
+      fonction qui a attrapé l'erreur du 05/08** (statut `ABROGE_DIFF` sur L. 521-1). Doit renvoyer
+      le statut et les dates de début/fin de vigueur, pas seulement le texte.
+    - `enVigueurLe(...)` — réponse binaire + date d'effet, pour qu'une note d'obsolescence ne puisse
+      plus être écrite au passé sur un texte non entré en vigueur.
+    Puis : documenter le module dans `.claude/agents/verificateur-sources.md` et
+    `.claude/agents/glossaire.md`, pour que les agents cessent de marquer ❓ là où une voie existe
+    (~90 termes du glossaire, une partie des 20 faits du point 4).
+11. ⬜ 🟡 **Sources restantes sans API.** `vie-publique.fr` (200-sur-tout), `economie.gouv.fr`,
+    `interieur.gouv.fr`, `budget.gouv.fr` → navigateur réel pour les vérifications ponctuelles, sinon
+    œil humain. **ADEME n'en fait pas partie** : `data.ademe.fr` expose une API Data Fair sans clé
+    (600 requêtes/60 s en anonyme) et `territoires-climat.ademe.fr` son propre open data (PCAET) —
+    le 403 rencontré ne venait que du site web éditorial.
 
 ### Ce que le balayage des URLs a appris (2026-08-02)
 
