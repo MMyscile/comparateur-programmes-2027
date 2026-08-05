@@ -86,12 +86,12 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
 
-**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → 10 → 5 → 6 → 7 → 8 → 11.**
-Le 9 est **fait** (accès Légifrance opérationnel) ; le 10 en est la suite directe et passe donc en
-tête. Le 5 vient juste après : c'est un bug qui casse la traçabilité de tout ce qui est déjà publié,
-et il doit être réglé **avant** de fusionner les 54 nouvelles définitions du glossaire.
+**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → 5 → 6 → 7 → 8 → 11.**
+Le 9 et le 10 sont **faits** (accès Légifrance opérationnel, puis outillé en module réutilisable).
+**Le 5 est donc la prochaine étape** : c'est un bug qui casse la traçabilité de tout ce qui est déjà
+publié, et il doit être réglé **avant** de fusionner les 54 nouvelles définitions du glossaire.
 
-5. ⬜ 🔴 **Bug — l'infobulle du glossaire n'est pas cliquable.** La définition apparaît au survol et
+5. ⬜ 🔴 **[PROCHAINE ÉTAPE] Bug — l'infobulle du glossaire n'est pas cliquable.** La définition apparaît au survol et
    **disparaît dès que le pointeur quitte le mot** : le lien de source est donc inatteignable. Une
    définition sourcée dont personne ne peut ouvrir la source ne vaut pas mieux qu'une définition non
    sourcée (garde-fous n° 1 et 2). À corriger **avant** de fusionner 54 nouvelles entrées, sinon le
@@ -157,22 +157,34 @@ et il doit être réglé **avant** de fusionner les 54 nouvelles définitions du
    d'effet vérifiée — la date de signature n'est pas la date d'entrée en vigueur. Les deux textes ont
    été corrigés le 05/08.
 
-10. ⬜ 🟠 **[PROCHAINE ÉTAPE] Outiller l'accès Légifrance : `scripts/legifrance.mjs`.** Les appels du
-    05/08 étaient jetables ; il faut un module réutilisable, sinon chaque vérification les réécrit et
-    l'erreur revient. Ce qu'il doit exposer, tiré de ce qui a servi ce jour-là :
-    - `jeton()` — OAuth `client_credentials` + cache mémoire (le jeton vaut 1 h, ne pas en demander un
-      par requête) ; message clair si `.env.local` est vide ou si le retour est 403 (→ consentement CGU).
-    - `chercherTexte(numero)` — fond `LODA_DATE`, facette `NATURE`, retourne l'identifiant `LEGITEXT`.
-    - `texteIntegral(legitext)` — `/consult/lawDecree`, articles aplatis et détaggés (le JSON imbrique
-      `sections`/`articles` récursivement, le HTML est à nettoyer).
-    - `articleADate(code, numero, date)` — fond `CODE_DATE` + facette `DATE_VERSION` : **c'est la
-      fonction qui a attrapé l'erreur du 05/08** (statut `ABROGE_DIFF` sur L. 521-1). Doit renvoyer
-      le statut et les dates de début/fin de vigueur, pas seulement le texte.
-    - `enVigueurLe(...)` — réponse binaire + date d'effet, pour qu'une note d'obsolescence ne puisse
-      plus être écrite au passé sur un texte non entré en vigueur.
-    Puis : documenter le module dans `.claude/agents/verificateur-sources.md` et
-    `.claude/agents/glossaire.md`, pour que les agents cessent de marquer ❓ là où une voie existe
-    (~90 termes du glossaire, une partie des 20 faits du point 4).
+10. ✅ **Accès Légifrance outillé : `scripts/legifrance.mjs`** (2026-08-05). Module + CLI
+    (`npm run legifrance -- <commande>`), éprouvé contre l'API réelle sur trois cas :
+    `acces` · `texte <n°>` · `integral <n°|LEGITEXT>` · `article <code> <n°> [date]` ·
+    `vigueur <code> <n°> [date]`. Exporte `jeton` (cache mémoire 1 h), `chercherTexte`,
+    `texteIntegral`, `articleADate`, `enVigueurLe`, `nomCodeCanonique`, `detagger`.
+    Documenté dans `.claude/agents/verificateur-sources.md` et `.claude/agents/glossaire.md`
+    (règle : ne plus marquer ❓ un fait juridique sans être passé par l'API).
+
+    **Ce que l'écriture du module a appris sur l'API — quatre pièges qui rendent muet, pas bruyant.**
+    Aucun ne lève d'erreur : ils renvoient zéro résultat, ce qui se lit comme un fait juridique.
+    - **`/consult/ping` renvoie 500** alors que tout le reste répond (constaté le 05/08). Il n'est
+      donc pas utilisé : `acces` fait un vrai bout-en-bout (jeton + recherche connue). Un diagnostic
+      qui échoue quand l'accès est bon fait chercher une panne inexistante.
+    - **La facette `NOM_CODE` est strictement exacte** : « Code de l'énergie » passe, « code de
+      l'énergie » et la même chaîne à apostrophe courbe (celle d'un copier-coller depuis le web)
+      renvoient 0. Réglé par `nomCodeCanonique()`, qui demande son nom à `/suggest`.
+    - **Le numéro d'article doit être écrit comme il est indexé**, et l'indexation n'est pas
+      uniforme : « L521-1 » sans espace, mais « 885 A » avec. Normaliser dans un sens casse l'autre →
+      le module essaie les écritures plausibles.
+    - **L'API ne rend pas les articles dans l'ordre du texte** (la loi n° 2026-554 sortait en 18, 19,
+      20, 21, 22, 12…). Ordre rétabli via `intOrdre`. Lire une loi dans le désordre, c'est la citer
+      de travers.
+
+    🔴 **Distinction à retenir, et c'est le cœur du point 8** : l'étiquette d'état d'un article est
+    son état **aujourd'hui**, pas son état à la date interrogée. L'article 885 A (ISF) consulté au
+    01/06/2017 ressort `ABROGE` alors qu'il s'appliquait ce jour-là ; L. 521-1 ressort `ABROGE_DIFF`
+    alors qu'il s'applique encore. `enVigueurLe` répond donc par les **bornes de vigueur**, jamais
+    par l'étiquette — c'est exactement la confusion qui a produit l'erreur du 05/08.
 11. ⬜ 🟡 **Sources restantes sans API.** `vie-publique.fr` (200-sur-tout), `economie.gouv.fr`,
     `interieur.gouv.fr`, `budget.gouv.fr` → navigateur réel pour les vérifications ponctuelles, sinon
     œil humain. **ADEME n'en fait pas partie** : `data.ademe.fr` expose une API Data Fair sans clé

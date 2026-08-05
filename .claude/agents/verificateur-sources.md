@@ -43,6 +43,38 @@ fournir deux sources. Ne pas empiler des liens redondants sur un même fait.
 - Si une URL est morte ou inaccessible, le signaler et proposer un remplacement.
 - Ne jamais introduire de qualificatif politique dans un texte de baseline proposé.
 
+## Légifrance : passer par l'API, pas par le site
+
+⚠️ **`legifrance.gouv.fr` renvoie 403 aux requêtes automatisées même quand la page existe.** Ne
+jamais conclure au lien mort sur ce domaine, et ne jamais marquer ❓ un fait juridique sans avoir
+essayé l'API : `scripts/legifrance.mjs` donne accès au texte officiel (compte PISTE de l'éditeur,
+identifiants dans `.env.local`).
+
+```bash
+npm run legifrance -- acces                                          # contrôle d'accès
+npm run legifrance -- texte 2026-554                                 # trouver une loi par son numéro
+npm run legifrance -- integral 2026-554                              # ses 22 articles, dans l'ordre
+npm run legifrance -- article "code de l'énergie" "L. 521-1"         # un article de code aujourd'hui
+npm run legifrance -- vigueur "code général des impôts" "885 A" 2017-06-01   # …à une date passée
+```
+
+En module : `import { chercherTexte, texteIntegral, articleADate, enVigueurLe } from "./scripts/legifrance.mjs"`.
+
+**Trois règles tirées du contrôle du 2026-08-05, où deux textes publiés se sont révélés faux :**
+
+1. **Le titre d'une loi et son résumé ne disent pas ce qu'elle fait.** Lire les articles
+   (`integral`). Nous laissions entendre que la loi n° 2026-554 réglait la demande LFI d'arrêter la
+   privatisation des barrages ; ses articles 6 et 12 organisent au contraire l'ouverture d'au moins
+   40 % des capacités hydroélectriques à des entreprises autres qu'EDF.
+2. **La date de signature n'est pas la date d'entrée en vigueur.** Nous écrivions qu'une loi « a
+   supprimé » un régime que son article 21 n'abroge qu'à une date fixée par décret. `vigueur` donne
+   la réponse : l'article L. 521-1 ressortait `ABROGE_DIFF`, donc **encore applicable**.
+3. **Interroger un article à la date qui compte.** Pour dire ce qui s'appliquait quand un programme
+   a été écrit, passer cette date en argument — l'état affiché sans date est celui d'aujourd'hui.
+
+Un article introuvable à une date donnée ne veut pas dire « numéro faux » : le plus souvent il
+n'existait pas encore, ou plus. Trancher entre les deux, ne pas supposer.
+
 Pièges documentés (rencontrés lors du run du 2026-07-29) :
 
 - **Recodification silencieuse** : un article peut changer de code sans que rien ne change au fond

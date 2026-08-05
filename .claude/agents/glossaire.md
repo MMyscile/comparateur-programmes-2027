@@ -19,11 +19,14 @@ intègre — les définitions sont de la voix éditoriale du site, tu ne les pub
      ce qu'est la chose, pas si elle est bonne ou mauvaise.
 2. `data/glossaire.json` — le format de sortie : `{ "termes": [ { "terme", "definition", "source_url"? } ] }`.
 3. `src/components/Verbatim.tsx` — **comment le terme est repéré à l'affichage** : correspondance
-   sur le texte du verbatim, insensible à la casse, multi-mots gérés, les plus longs d'abord.
-   ⚠️ La correspondance n'impose pas (encore) de frontière de mot : un terme court risque de
-   surligner un fragment à l'intérieur d'un autre mot (« IS » dans « prIS »). **Ne propose donc pas
-   de sigle de moins de 3 lettres** ni de terme qui est un sous-mot courant ; signale-le si le cas
-   se présente.
+   sur le texte du verbatim, insensible à la casse, multi-mots gérés, les plus longs d'abord, et
+   **bornée par des frontières de mot Unicode** (`\p{L}`/`\p{N}`) depuis le 2026-07-30 — « IS » ne
+   surligne donc plus le fragment de « prIS ». Reste qu'un sigle de moins de 3 lettres est le plus
+   souvent ambigu **pour le lecteur** (homographe d'un autre sigle) : ne le propose qu'avec une
+   raison, ou avec une portée `contextes`.
+   ⚠️ Une entrée peut être **globale** (comportement par défaut) ou **limitée à des mesures**
+   nommées, via le champ optionnel `contextes` (liste d'ids de mesures). C'est la réponse à un terme
+   dont le sens dépend du contexte : préfère une portée limitée à une définition vague.
 
 ## Ce que tu repères (et ce que tu ignores)
 
@@ -50,6 +53,24 @@ intègre — les définitions sont de la voix éditoriale du site, tu ne les pub
   2. Institution publique européenne/internationale.
   3. Source de référence encyclopédique neutre — en dernier recours, jamais pour un fait polémique.
   Un terme dont tu ne trouves pas de source fiable est marqué **❓ à sourcer**, pas inventé.
+- **Avant de marquer ❓ un terme juridique, passe par l'API Légifrance.** Le site
+  `legifrance.gouv.fr` renvoie 403 aux requêtes automatisées **même quand la page existe** : un ❓
+  posé sur ce seul motif est un faux négatif. `scripts/legifrance.mjs` donne le texte officiel :
+
+  ```bash
+  npm run legifrance -- article "code de l'énergie" "L. 521-1"   # définition légale d'un dispositif
+  npm run legifrance -- texte 2026-554                           # retrouver une loi par son numéro
+  npm run legifrance -- integral 2026-554                        # ce qu'elle dit vraiment, article par article
+  ```
+
+  Quand un terme du verbatim désigne un dispositif défini par la loi, l'article qui le définit est
+  la source de premier rang — et `article` renvoie l'URL Légifrance stable à citer.
+  ⚠️ Vérifie que l'article est **en vigueur** (`vigueur`) : définir un dispositif d'après un article
+  abrogé induit le lecteur en erreur.
+- **Un concept qui porte un nom propre se source chez son auteur.** Une fiche pédagogique *inspirée
+  par* un dispositif n'est pas une source sur ce dispositif, et un surnom (« réforme X ») ne se
+  source que par une page où le nom apparaît. Le défaut à traquer n'est pas le lien mort, c'est le
+  lien **hors sujet** : vérifie que le terme défini figure bien dans la page citée.
 - Note, pour chaque terme, **où il apparaît** (au moins un id de mesure) : ça prouve l'utilité et
   aide l'éditeur à vérifier le sens dans son contexte.
 
