@@ -129,12 +129,34 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
    (cycle, coordination, budgétaire, recommandations) y sont. Le 403 était bien un refus
    d'automatisation, exactement comme l'outil le classait.
 
-   → ⬜ 🟠 **Résidu réel : 6 entrées jamais contrôlées**, toutes sur `economie.gouv.fr`, que
-   **Cloudflare bloque même dans un Chrome piloté** (deux tentatives le 06/08, challenge « Un
-   instant… » jamais franchi). Elles demandent le navigateur de l'éditeur :
-   `flat tax` · `quotient familial` · `produits dérivés` · `cotation continue` · `circuit du Trésor`
-   · `abattement Dutreil`. Vérifier que la page cite bien le terme et porte les faits de la
-   définition (pour `flat tax` : les 31,4 % et le détail 12,8 + 18,6).
+   ✅ **Les 6 `economie.gouv.fr` contrôlées par l'éditeur** (2026-08-06), Cloudflare bloquant même
+   un Chrome piloté. **Trois défauts sur six** — un taux de défaut bien plus élevé que sur les
+   sources testables, ce qui confirme que le résidu invérifiable était le bon endroit où chercher :
+
+   | Terme | Verdict de l'éditeur | Suite |
+   |---|---|---|
+   | `quotient familial` | ✅ les mots y sont | — |
+   | `circuit du Trésor` | ✅ « tout y est » | — |
+   | `produits dérivés` | ⚠️ la page porte le terme et « sous-jacent », **pas** « se couvrir / spéculer » | définition **resserrée** au fait sourcé |
+   | `flat tax` | ❌ page écrite en 2025 : elle porte 30 %, pas nos 31,4 % | **multi-sourcée** (voir ci-dessous) |
+   | `cotation continue` | ❌ la page ne parle que du **CAC 40, « cotation assistée en continu »** — le développé d'un sigle, pas un mode de cotation | source remplacée : question écrite Sénat n° 05887 (1989), dont la **réponse du ministère** porte « marché continu, ouvert tout au long de la journée » et « incompatible avec la cotation d'un seul cours par jour » |
+   | `abattement Dutreil` | ❌ « Dutreil » seul, ni les **75 %** ni l'**engagement de conservation** | **art. 787 B du CGI** ajouté (via l'API) : « à concurrence de 75 % de leur valeur », « engagement collectif de conservation d'une durée minimale de deux ans » |
+
+   🔴 **Le cas `flat tax` a imposé une évolution du modèle.** L'éditeur avait raison sur la source
+   (page de 2025, donc 30 % = 12,8 + 17,2) — mais **notre définition, elle, était exacte** :
+   `L. 136-8` interrogé à plusieurs dates montre la CSG sur le capital passer de 9,2 % à 10,6 % avec
+   la version du **31/12/2025**, d'où 17,2 + 1,4 = 18,6 et 12,8 + 18,6 = **31,4 %**. Or **aucune
+   page ne porte à la fois le surnom « flat tax » (rapport du Sénat r19-042-1, 2019) et le taux 2026
+   (fiche `F32963`)** : l'un est ancien, l'autre récent. → **`source_url` du glossaire accepte
+   désormais une liste**, même règle que `source_baseline` et que le `source_url` des mesures depuis
+   la décision n° 32. L'infobulle rend « Source » à un lien, « Source 1 / Source 2 » au-delà ;
+   `verif-liens` n'exige plus le terme dans **chaque** page d'une entrée multi-sourcée — l'exiger
+   rendrait le multi-sourçage impossible.
+
+   ⚠️ **Piège de sonde, à ne pas réapprendre** : chercher « flat tax » dans le HTML du Sénat renvoie
+   0 — le texte écrit `flat&nbsp;tax`. **Une recherche de chaîne brute dans du HTML échoue sur les
+   entités.** `verif-liens` y est immunisé (il compare des mots réduits, ponctuation aplatie) ; les
+   sondes ad hoc ne le sont pas. Même famille que `innerText` masquant les sections repliées.
 
    🔴 **Défaut d'affichage trouvé et corrigé au passage (`Verbatim.tsx`).** 9 termes sont au
    glossaire sous leurs deux formes (sigle + développé), et les programmes les écrivent collés :

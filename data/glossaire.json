@@ -126,13 +126,13 @@
     },
     {
       "terme": "produits dérivés",
-      "definition": "Contrats financiers dont la valeur dépend de l'évolution d'un autre actif appelé « sous-jacent » (action, obligation, matière première, taux, devise…), utilisés pour se couvrir contre un risque ou pour spéculer.",
+      "definition": "Instruments financiers dont l’évolution dépend de celle d’un autre actif, appelé « sous-jacent ».",
       "source_url": "https://www.economie.gouv.fr/facileco/la-bourse-quoi-ca-sert"
     },
     {
       "terme": "cotation continue",
-      "definition": "Mode de fonctionnement d'un marché boursier où le prix d'une action est établi et mis à jour en permanence pendant toute la séance, à chaque transaction (par opposition à une fixation à heures fixes).",
-      "source_url": "https://www.economie.gouv.fr/facileco/dossiers-economiques/la-bourse"
+      "definition": "Mode de fonctionnement d’un marché boursier où les cours sont établis tout au long de la journée, au fil de l’exécution des ordres — par opposition à la cotation d’un seul cours par jour.",
+      "source_url": "https://www.senat.fr/questions/base/1989/qSEQ890705887.html"
     },
     {
       "terme": "caisse de défaisance",
@@ -151,8 +151,11 @@
     },
     {
       "terme": "abattement Dutreil",
-      "definition": "Aussi appelé « pacte Dutreil » : dispositif permettant, sous condition d'engagement de conservation des titres, de réduire de 75 % la valeur taxable lors de la transmission (donation ou succession) d'une entreprise familiale.",
-      "source_url": "https://www.economie.gouv.fr/loi-pacte-transmettre-entreprises"
+      "definition": "Aussi appelé « pacte Dutreil » : dispositif exonérant de droits de mutation à titre gratuit, à concurrence de 75 % de leur valeur, les parts ou actions d’une entreprise transmises par donation ou succession, sous condition d’un engagement collectif de conservation des titres d’une durée minimale de deux ans.",
+      "source_url": [
+        "https://www.economie.gouv.fr/loi-pacte-transmettre-entreprises",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542700"
+      ]
     },
     {
       "terme": "ADF",
