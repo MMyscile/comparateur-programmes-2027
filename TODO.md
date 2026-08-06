@@ -284,7 +284,53 @@ cadrée par la décision n° 33 ; (c) les **~90 termes ❓** du glossaire (agent
     une URL inexistante : son code HTTP ne prouve rien. Règle qui en découle : **une page vide n'est
     pas un lien mort**, et le défaut à traquer reste le lien **hors sujet**.
 
-12. ⬜ 🟠 **Passe ciblée sur les baselines antérieures à l'API — périmètre chiffré le 2026-08-05.**
+12. 🔄 🟠 **Passe ciblée sur les baselines antérieures à l'API — faite le 2026-08-06, deux points restent.**
+
+    **Résultat : zéro erreur sur les 7 axes**, là où le premier texte contrôlé le 05/08 en donnait
+    deux. Vérifié contre le **texte des articles** (contrôle iv de la décision n° 33) :
+    `eco-justice-environnementale` (L. 231-3 : écocide = délit, 10 ans, 4,5 M€, décuple),
+    `eco-dechets` (L. 441-2 obsolescence ; L. 217-13 six mois), `agri-condition-animale`
+    (art. 515-14 code civil, mot pour mot), `sante-toxiques` (L. 171-8 : 45 000 € et astreinte
+    4 500 €/j ; L. 524-1 : interdiction PFAS au 01/01/2026, extension 2030), `fisc-secu`
+    (L. 136-8 : 9,2 % activité, 10,6 % capital), `just-police` (L. 435-1 4° : « *dont les conducteurs
+    n'obtempèrent pas à l'ordre d'arrêt* »).
+
+    ✅ **Reliquat (c) fermé autrement que prévu.** `fisc-secu` était le seul axe sans source
+    Légifrance, et la référence LFSS 2026 n'avait jamais été retrouvée. Inutile : l'**article
+    L. 136-8 du code de la sécurité sociale** porte les deux taux lui-même. Source ajoutée en tête,
+    stamp `2026-08-06`. Chercher la loi modificatrice quand le code consolidé porte le fait est un
+    détour — leçon à garder.
+
+    🔴 **Deux non-défauts qui auraient pu passer pour des défauts.** `CPP art. 30` (interdiction des
+    instructions individuelles) et `CPP art. 706-2-3` (pôles régionaux environnement) ressortent
+    tous deux `ABROGE_DIFF` — mais `enVigueurLe` donne `dateFin: 2029-01-01` et `enVigueur: true` :
+    c'est la **recodification du code de procédure pénale**, différée à 2029, bien au-delà de
+    l'horizon 2027. Les deux baselines tiennent. C'est exactement la confusion étiquette / bornes
+    de vigueur du 05/08 : appliquée correctement, elle dit « rien à corriger ».
+
+    ⚠️ **Piège d'API découvert, à ajouter à la procédure des agents.** Pour une **loi modificative**,
+    `texteIntegral` ne rend que les *instructions* (« A créé les dispositions suivantes : Art.
+    L. 541-10-9-1 »), jamais la substance — qui vit dans l'article de code visé. Lire la loi seule
+    fait conclure « ABSENT » sur des faits parfaitement exacts, et donc douter d'une baseline
+    correcte. **Toujours remonter à l'article de code, à la bonne date.**
+
+    ⬜ 🟠 **Ce qui reste : deux chiffres que le droit ne porte pas là où on le croit.**
+    - `eco-dechets` — le malus « mode ultra-express » (0,25 € à 12 € par article, 1 € à 20 € en
+      2030) est **introuvable** dans la loi n° 2026-602 comme dans les articles qu'elle modifie
+      (L. 541-10-3, L. 541-10-27 interrogés au 02/09/2026 et au 01/06/2030). Le principe et la date
+      d'entrée en vigueur au 1er septembre 2026 sont bien là (art. 5, II) ; les **montants** sont
+      probablement fixés par décret. À retrouver, ou à retirer de la baseline.
+    - `sante-toxiques` — la « redevance de 100 € par 100 g de PFAS rejetés » : l'article
+      L. 213-10-2, modifié par l'art. 4 de la loi PFAS, **ne contient pas le mot « perfluo »**.
+      Même conclusion : soit un décret, soit un chiffre à reprendre.
+    Dans les deux cas, **ne pas conclure que le chiffre est faux** — conclure que la source citée ne
+    le porte pas, ce qui est la règle « un lien par fait affirmé ».
+
+    ⬜ 🟢 Les **23 axes du second cercle** (affirmation juridique quelconque) restent à ouvrir, mais
+    le premier cercle n'ayant rien donné, rien ne presse.
+
+    ---
+    *Périmètre d'origine, chiffré le 2026-08-05 :*
     Question de l'éditeur : faut-il re-vérifier tout ce que l'agent a inscrit depuis le début ?
     **Non — l'infiabilité est concentrée, pas diffuse.** Mesures de terrain : le balayage d'URLs du
     02/08 avait trouvé 3 baselines défectueuses sur les 27 du lot 29/07 ; le premier appel API du

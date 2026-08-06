@@ -76,6 +76,19 @@ En module : `import { chercherTexte, texteIntegral, articleADate, enVigueurLe } 
    version suivante court jusqu'au 01/01/2030, et c'est 2030 la vraie fin de l'impôt. Réinterroger à
    une date postérieure **avant** de conclure à la fin d'un dispositif.
 
+**Deux règles ajoutées le 2026-08-06 (passe sur les 7 baselines au passé accompli) :**
+
+5. **Une loi modificative ne contient pas ce qu'elle fait.** `texteIntegral` en rend les seules
+   *instructions* — « A créé les dispositions suivantes : Code de l'environnement Art. L. 541-10-9-1 »
+   — jamais la substance. Chercher un chiffre dans le texte d'une telle loi renvoie « ABSENT » sur
+   des faits parfaitement exacts, et fait donc douter d'une baseline correcte. **Toujours remonter à
+   l'article de code visé, interrogé à la bonne date** (`articleADate` accepte une date future : une
+   disposition qui entre en vigueur plus tard ressort `VIGUEUR_DIFF`).
+6. **Quand le code consolidé porte le fait, citer le code, pas la loi qui l'a modifié.** `fisc-secu`
+   a cherché des mois la référence de la LFSS 2026 pour sourcer les taux de CSG : l'article
+   L. 136-8 du code de la sécurité sociale les porte lui-même (9,2 % et 10,6 %). Le détour par la
+   loi modificatrice est le plus court chemin vers un ❓ inutile.
+
 L'étiquette d'état (`VIGUEUR`, `ABROGE`, `ABROGE_DIFF`, `VIGUEUR_DIFF`) décrit l'article
 **aujourd'hui**, jamais à la date interrogée : l'art. 885 A (ISF) consulté au 01/06/2017 ressort
 `ABROGE` alors qu'il s'appliquait ce jour-là. Ce sont les **bornes de vigueur** qui répondent, et
