@@ -590,11 +590,45 @@ Quatre pages à ouvrir à la main, puis remplacer.
   « Source » des infobulles est **inatteignable** (corrigé le 05/08), avec les deux sources fausses du
   glossaire et le lien ONU tronqué. Ce n'est pas « trop tôt » : c'est faux sur le point qui *est* le
   garde-fou n° 2.
-  - ⬜ **À faire par l'éditeur** : Vercel → projet → Settings → **Deployment Protection** → activer
-    **Vercel Authentication** sur *Production*. Le site reste déployé et à jour à chaque push, mais
-    seul le compte y accède. Réversible en un clic le jour de la V1. Écarté : supprimer le projet
-    (on perdrait la configuration prouvée, à refaire juste avant la mise en ligne, au pire moment) et
-    débrancher le Git seul (ça figerait publiquement la version défectueuse du 02/08).
+  - ✅ **Projet Vercel supprimé** (2026-08-06). Vérifié : `comparateur-programmes-2027.vercel.app`
+    renvoie `HTTP 404 · DEPLOYMENT_NOT_FOUND`, racine et pages internes.
+    **Il a fallu deux tests pour y arriver, et c'est l'enseignement de la séquence** : la protection
+    d'accès a d'abord été activée (« Vercel Authentication », *Standard Protection*), et le site est
+    **resté public** — l'URL répondait 200 avec le HTML complet. Le libellé de l'option dit pourtant
+    « *Protect all except production **Custom Domains*** », et ce projet n'en avait aucun. En réalité
+    Vercel traite l'alias `projet.vercel.app` comme un domaine de production. La seule option qui
+    couvre tout, « All Deployments », est réservée au plan Pro (**150 $/mois**) → écartée.
+    → **Règle : ne jamais conclure qu'un site est retiré sans avoir interrogé son URL.** Le libellé
+    d'un réglage n'est pas son effet. Deux fois de suite, le test a contredit l'étiquette.
+    Argument de suppression, révisé en cours de route : « on perdrait la configuration prouvée »
+    était **faux** — Vercel détecte Next.js seul, le site est un export statique, et **aucune
+    variable d'environnement n'est nécessaire au build** (`.env.local` ne sert qu'à l'outil
+    Légifrance, en local). Réimporter le dépôt à la V1 prend deux minutes.
+    ⚠️ L'URL `comparateur-programmes-2027.vercel.app` est **redevenue disponible** : si on y tient,
+    la reprendre tôt. Sans objet si un domaine propre est acheté (voir ci-dessous).
+  - ✅ **22 commits poussés** (`60a28dc..798b97e`, 2026-08-06), une fois Vercel supprimé donc sans
+    rien remettre en ligne. Le travail n'existait qu'en local jusque-là.
+    ⬜ 🟢 GitHub signale **4 alertes Dependabot** (3 high, 1 moderate) — l'analyse du 29/07 concluait
+    que les résidus portaient sur l'outillage de build, rien de servi en export statique. À
+    reconfirmer une fois, sans urgence.
+
+- ⬜ 🟠 **Nom de domaine pour la V1 — décision de l'éditeur du 2026-08-06 : pas de `vercel.app` dans
+  l'URL publique.** Faisable et sans surcoût (les domaines personnalisés sont inclus dans le plan
+  Hobby, certificat HTTPS automatique) : acheter le domaine, puis Vercel → Settings → **Domains**.
+  Trois points à traiter **avant** l'achat, pas après :
+  - 🔴 **L'anonymat.** `data/a-propos.md` assume un « je » anonyme. Or l'enregistrement d'un domaine
+    **publie par défaut l'identité du titulaire dans le WHOIS**. L'AFNIC restreint la diffusion pour
+    les particuliers en `.fr`, mais ce n'est ni systématique chez tous les registrars ni vrai pour
+    toutes les extensions. À vérifier avant de payer : une fois publiée, la donnée est archivée par
+    des tiers et ne se reprend pas.
+  - ⚠️ **Ne pas brancher le domaine « pour préparer ».** *Standard Protection* exclut explicitement
+    les Custom Domains de production : le jour où le domaine est branché, le site est public,
+    protection activée ou non. On rebranche Vercel **et** le domaine ensemble, au moment de la mise
+    en ligne.
+  - 📝 **Le nom est un choix éditorial, pas technique.** Le principe fondateur dit que comparer,
+    c'est cadrer, et que le site assume une posture d'éditeur. Un nom à consonance institutionnelle
+    ou véridictionnelle (`observatoire-…`, `verite-…`, `officiel-…`) laisserait croire à une source
+    publique et contredirait ce cadrage. À arbitrer avec la même exigence que le reste.
   - ✅ **`noindex` posé dans `src/app/layout.tsx`** (`robots: { index: false, follow: false }`),
     rendu sur les 3 pages. Ceinture et bretelles : si la protection d'accès saute, l'indexation ne
     repart pas. **Condition de retrait écrite dans le commentaire du code** : les 15 méta-thèmes
