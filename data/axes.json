@@ -284,7 +284,7 @@
       "source_baseline": [
         "https://www.insee.fr/fr/statistiques/9010340",
         "https://www.senat.fr/rap/l25-139-312/l25-139-312_mono.html",
-        "https://eur-lex.europa.eu/eli/treaty/tfeu_2016/art_123/oj/eng"
+        "https://eur-lex.europa.eu/eli/treaty/tfeu_2016/art_123/oj/fra"
       ],
       "ecart_synthese": "Cadrages opposés : LFI veut soustraire la dette aux marchés financiers (rachat par la BCE, circuit du Trésor, audit citoyen de la part illégitime) ; les Écologistes assument une trajectoire négociée et prévisible (« pacte fiscal vert » 2027-2032, stabilisation du ratio). Point de contact : les deux veulent réduire ou supprimer les titres indexés sur l'inflation.",
       "baseline_verifiee": "2026-07-29"
@@ -363,7 +363,7 @@
       "baseline_reel": "L'euro numérique n'existe pas encore : après une phase de préparation (2023-2025), la BCE a décidé le 30 octobre 2025 d'engager la phase suivante du projet, visant un pilote mi-2027 et une éventuelle première émission en 2029, sous réserve de l'adoption du règlement européen ; aucune décision d'émission n'a été prise. L'objectif principal assigné à la BCE par les traités est la stabilité des prix (art. 127 TFUE).",
       "source_baseline": [
         "https://ecb.europa.eu/press/pr/date/2025/html/ecb.pr251030~8c5b5beef0.fr.html",
-        "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12012E/TXT:en:PDF"
+        "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12012E/TXT:fr:PDF"
       ],
       "ecart_synthese": "Écologistes seuls sur l'institution : euro numérique souverain et protecteur de la vie privée, BCE « plus verte et plus démocratique ». Les mesures BCE de LFI visent la dette (voir axe Dette publique), pas l'institution monétaire.",
       "baseline_verifiee": "2026-07-29"
@@ -559,7 +559,7 @@
         "https://www.statistiques.developpement-durable.gouv.fr/les-territoires-francais-couverts-par-les-dispositifs-de-protection-forte-de-la-biodiversite-au-1er",
         "https://www.ecologie.gouv.fr/politiques-publiques/aires-protegees-france",
         "https://www.ifremer.fr/fr/bilan-2025-de-l-etat-des-populations-de-poissons-peches-en-france",
-        "https://eur-lex.europa.eu/eli/reg/2019/1241/oj",
+        "https://eur-lex.europa.eu/eli/reg/2019/1241/oj?locale=fr",
         "https://www.mer.gouv.fr/laccord-des-nations-unies-sur-la-haute-mer-bbnj",
         "https://isa.org.jm/news/the-council-of-the-international-seabed-authority-advanced-negotiations-on-the-mining-code/",
         "https://isa.org.jm/the-mining-code/"
@@ -733,7 +733,7 @@
         "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043961215",
         "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043258442",
         "https://www.ecologie.gouv.fr/politiques-publiques/convention-judiciaire-dinteret-public-cjip",
-        "https://eur-lex.europa.eu/eli/dir/2024/1203/oj",
+        "https://eur-lex.europa.eu/eli/dir/2024/1203/oj?locale=fr",
         "https://legal.un.org/icc/statute/french/rome_statute(f).pdf",
         "https://treaties.un.org/doc/Publication/CN/2025/CN.162.2025-Frn.pdf"
       ],

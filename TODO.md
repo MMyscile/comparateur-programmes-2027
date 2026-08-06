@@ -47,34 +47,33 @@
 > Tout le reste est fait ou outillé. Ces quatre items n'attendent que toi ; le détail de chacun est
 > plus bas, mais l'essentiel tient ici.
 
-1. ⬜ **5 définitions à valider à l'œil** (glossaire OFB, décision n° 35). Ouvrir
-   **https://ofb.gouv.fr/glossaire** — la page ne rend ses définitions qu'avec JavaScript, d'où
-   l'impossibilité de la contrôler autrement. Vérifier que chacun des 5 termes y figure avec un sens
-   compatible : `reméandrage` · `bassins versants` · `pélagique` · `services écosystémiques` ·
-   `convention de Ramsar`. Bloc JSON prêt à fusionner : section **E.2** de
-   `data/rapports/glossaire-sources-2026-08-06.md`. Si l'OFB ne convient pas comme niveau de preuve,
-   dire lesquels et je cherche une source contrôlable.
-2. ⬜ **4 liens EUR-Lex en anglais.** Les variantes françaises se construisent, mais **EUR-Lex répond
-   202 à corps vide à tout accès automatisé, même à `curl`** : impossible de vérifier avant de
-   substituer. Ouvrir les 4 variantes et confirmer qu'elles servent bien le français :
-   | Axe | Actuel (anglais) | Variante FR à tester |
-   |---|---|---|
-   | `eco-ocean` | `…/eli/reg/2019/1241/oj` | `…/eli/reg/2019/1241/oj?locale=fr` |
-   | `eco-justice-environnementale` | `…/eli/dir/2024/1203/oj` | `…/eli/dir/2024/1203/oj?locale=fr` |
-   | `fisc-dette` | `…/eli/treaty/tfeu_2016/art_123/oj/eng` | `…/oj/fra` |
-   | `fin-monnaie-bce` | `…LexUriServ.do?uri=CELEX:12012E/TXT:en:PDF` | `…:fr:PDF` |
-3. ⬜ **Deux découpages à trancher** (règle n° 17 : *un axe existe si et seulement si on peut lui
-   écrire une baseline chiffrable unique*). `npm run appliquer-baselines -- <rapport>` les remonte
-   désormais tout seul.
-   - **`eco-ocean`** (⚠️ ~20 mesures sur 32 couvertes) agrège **deux objets sans recouvrement** : la
-     protection des milieux marins et la pêche d'une part ; l'**économie maritime** d'autre part
-     (ports, marine marchande et sa décarbonation, éolien en mer, formation et recherche maritimes,
-     navires de souveraineté, moyens polaires) — une dizaine de mesures LFI qu'aucun chiffre de la
-     baseline actuelle ne situe. Options : **scinder** en `eco-ocean-protection` /
-     `eco-mer-economie` ; ou rattacher l'éolien en mer à l'axe énergie et **assumer explicitement**
-     que la baseline ne couvre qu'une partie de l'axe.
-   - **`eco-biodiversite`** (⚠️ 6 mesures sur 9) porte 3 mesures LFI étrangères à sa baseline :
-     brevets sur le vivant, OGM, pôles arctique et antarctique.
+1. ✅ **5 définitions OFB validées et intégrées** (2026-08-06). L'éditeur a ouvert
+   `ofb.gouv.fr/glossaire` (page rendue en JavaScript, invérifiable autrement) et **recopié le texte
+   de la source**. Les définitions ont été **récrites d'après ce texte**, pas seulement approuvées :
+   `pélagique` disait « qui concerne la pleine eau, entre la surface et le fond » quand l'OFB définit
+   une **espèce** qui vit en pleine mer loin des fonds et des côtes ; `bassins versants` ne
+   mentionnait ni les reliefs qui délimitent le territoire ni le point d'exutoire. **Glossaire :
+   134 → 139 termes, 195 déclencheurs.**
+2. ✅ **4 liens EUR-Lex basculés en français** (2026-08-06), variantes confirmées par l'éditeur —
+   EUR-Lex répondant 202 à corps vide même à `curl`, elles ne pouvaient pas être testées autrement.
+   `eco-ocean` et `eco-justice-environnementale` en `?locale=fr`, `fisc-dette` en `/oj/fra`,
+   `fin-monnaie-bce` en `:fr:PDF`. **Il ne reste que 3 liens en anglais, tous légitimes** : le
+   `Community Reinvestment Act` (loi **des États-Unis**, la Fed ne publie pas en français) et les
+   2 pages de l'`isa.org.jm` (l'Autorité internationale des fonds marins publie en anglais).
+3. ⬜ 🟠 **Deux découpages à trancher — À RÉEXPLIQUER SIMPLEMENT D'ABORD.**
+   ⚠️ **L'éditeur n'a pas compris la formulation du 06/08 : ne pas la reservir telle quelle.** Le
+   vocabulaire employé (« axe qui agrège deux objets sans recouvrement », « règle n° 17 ») est du
+   jargon interne. Reprendre en partant du lecteur : *sur cette page, en face des propositions des
+   candidats, on affiche « ce qui se fait aujourd'hui ». Pour ces deux rubriques, ce qu'on affiche ne
+   parle pas de tout ce que les candidats y proposent.* Puis montrer **un exemple concret de mesure
+   orpheline** (p. ex. une proposition LFI sur les ports, en regard d'une baseline qui ne parle que
+   de protection des milieux marins), et poser la question en deux options tenables.
+   Les faits, eux : **`eco-ocean`** couvre ~20 mesures sur 32 — la baseline traite la protection des
+   milieux marins et la pêche, mais une dizaine de mesures LFI portent sur les ports, la marine
+   marchande, l'éolien en mer, la formation maritime et les navires de souveraineté, qu'aucun de ses
+   chiffres ne situe. **`eco-biodiversite`** couvre 6 mesures sur 9 : brevets sur le vivant, OGM et
+   pôles arctique/antarctique restent hors baseline.
+   `npm run appliquer-baselines -- <rapport>` remonte désormais ces deux signaux tout seul.
 4. ⏸ **`a-propos.md` et `regle-mapping.md` dans ta voix — à la toute fin** (voir plus bas le motif).
 
 ## 🟠 REPRISE — chantier Écologie livré au 2026-08-02, 4 points ouverts

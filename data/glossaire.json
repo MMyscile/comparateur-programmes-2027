@@ -682,6 +682,31 @@
       "terme": "planification écologique",
       "definition": "Terme employé aussi bien par les programmes que par l'administration : un secrétariat général à la planification écologique, placé sous l'autorité du Premier ministre, coordonne depuis 2022 l'élaboration des stratégies nationales en matière de climat, d'énergie, de biodiversité et d'économie circulaire et veille à leur mise en œuvre.",
       "source_url": "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000046027124"
+    },
+    {
+      "terme": "reméandrage",
+      "definition": "Technique de restauration des cours d’eau consistant à redonner un tracé sinueux, en méandres, à une rivière qui avait été artificiellement rectifiée : le courant ralentit, la biodiversité aquatique est favorisée et le fonctionnement naturel du milieu se rétablit.",
+      "source_url": "https://ofb.gouv.fr/glossaire"
+    },
+    {
+      "terme": "bassins versants",
+      "definition": "Territoire délimité par des reliefs, dans lequel toutes les eaux de pluie ou de fonte s’écoulent vers un même cours d’eau ou un même point d’exutoire (lac, rivière, mer).",
+      "source_url": "https://ofb.gouv.fr/glossaire"
+    },
+    {
+      "terme": "pélagique",
+      "definition": "Se dit d’une espèce marine qui vit en pleine mer, loin des fonds et des côtes, dans la colonne d’eau — comme le thon ou le maquereau, qui se déplacent souvent en bancs.",
+      "source_url": "https://ofb.gouv.fr/glossaire"
+    },
+    {
+      "terme": "services écosystémiques",
+      "definition": "Bénéfices que les humains tirent du fonctionnement des milieux naturels : pollinisation, épuration de l’eau, stockage du carbone, protection contre l’érosion.",
+      "source_url": "https://ofb.gouv.fr/glossaire"
+    },
+    {
+      "terme": "convention de Ramsar",
+      "definition": "Traité international signé en 1971 pour la conservation et l’utilisation durable des zones humides. Les États signataires s’engagent à protéger celles d’importance internationale, appelées « sites Ramsar ».",
+      "source_url": "https://ofb.gouv.fr/glossaire"
     }
   ]
 }
