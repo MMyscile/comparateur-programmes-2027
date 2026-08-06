@@ -31,7 +31,51 @@
   - **Préambule + lexique en tête du journal** (`data/choix-editoriaux.md`) : dit ce qu'est le document (registre brut, non réécrit, historique git), aiguille les lecteurs « démarche » vers À propos/Méthodologie, lexique des termes internes (cotag, axe, LFI 5.2, identifiants…).
   - « À propos » ajouté à la navigation et au pied de page. Contenus éditoriaux dans `data/*.md` (source unique, rendus au build via composant partagé `src/components/Markdown.tsx`).
 
-- ⬜ 🟠 **Réécrire les textes éditoriaux dans la voix de l'éditeur** — le fond des textes publiés le 29/07 est validé, mais la forme est celle d'une IA, pas celle de Michaël. À reprendre par lui, directement dans les fichiers (le site suit au build) : `data/a-propos.md`, `data/regle-mapping.md`, préambule de `data/choix-editoriaux.md`. Règle apprise au passage : pas d'auto-justification (ex. de l'anonymat) — énoncer, ne pas plaider.
+- ⏸ 🟢 **Réécrire les textes éditoriaux dans la voix de l'éditeur — REPORTÉ À LA TOUTE FIN**
+  (décision de l'éditeur, 2026-08-06). Le fond des textes publiés le 29/07 est validé, mais la forme
+  est celle d'une IA, pas celle de Michaël. À reprendre **par lui**, directement dans les fichiers
+  (le site suit au build) : `data/a-propos.md`, `data/regle-mapping.md`, préambule de
+  `data/choix-editoriaux.md`. Règle apprise au passage : pas d'auto-justification (ex. de
+  l'anonymat) — énoncer, ne pas plaider.
+  **Pourquoi à la fin, et pas plus tôt** : ces textes décrivent la méthode et l'état du site. Les
+  réécrire maintenant obligerait à les réécrire encore à chaque chantier — 12 méta-thèmes restants,
+  et la méthode bouge encore (5 décisions éditoriales ajoutées entre le 04 et le 06/08). Le bon
+  moment est quand le périmètre est figé : juste avant le tag de version et la mise en ligne.
+
+## 📋 À FAIRE PAR L'ÉDITEUR — liste courte au 2026-08-06
+
+> Tout le reste est fait ou outillé. Ces quatre items n'attendent que toi ; le détail de chacun est
+> plus bas, mais l'essentiel tient ici.
+
+1. ⬜ **5 définitions à valider à l'œil** (glossaire OFB, décision n° 35). Ouvrir
+   **https://ofb.gouv.fr/glossaire** — la page ne rend ses définitions qu'avec JavaScript, d'où
+   l'impossibilité de la contrôler autrement. Vérifier que chacun des 5 termes y figure avec un sens
+   compatible : `reméandrage` · `bassins versants` · `pélagique` · `services écosystémiques` ·
+   `convention de Ramsar`. Bloc JSON prêt à fusionner : section **E.2** de
+   `data/rapports/glossaire-sources-2026-08-06.md`. Si l'OFB ne convient pas comme niveau de preuve,
+   dire lesquels et je cherche une source contrôlable.
+2. ⬜ **4 liens EUR-Lex en anglais.** Les variantes françaises se construisent, mais **EUR-Lex répond
+   202 à corps vide à tout accès automatisé, même à `curl`** : impossible de vérifier avant de
+   substituer. Ouvrir les 4 variantes et confirmer qu'elles servent bien le français :
+   | Axe | Actuel (anglais) | Variante FR à tester |
+   |---|---|---|
+   | `eco-ocean` | `…/eli/reg/2019/1241/oj` | `…/eli/reg/2019/1241/oj?locale=fr` |
+   | `eco-justice-environnementale` | `…/eli/dir/2024/1203/oj` | `…/eli/dir/2024/1203/oj?locale=fr` |
+   | `fisc-dette` | `…/eli/treaty/tfeu_2016/art_123/oj/eng` | `…/oj/fra` |
+   | `fin-monnaie-bce` | `…LexUriServ.do?uri=CELEX:12012E/TXT:en:PDF` | `…:fr:PDF` |
+3. ⬜ **Deux découpages à trancher** (règle n° 17 : *un axe existe si et seulement si on peut lui
+   écrire une baseline chiffrable unique*). `npm run appliquer-baselines -- <rapport>` les remonte
+   désormais tout seul.
+   - **`eco-ocean`** (⚠️ ~20 mesures sur 32 couvertes) agrège **deux objets sans recouvrement** : la
+     protection des milieux marins et la pêche d'une part ; l'**économie maritime** d'autre part
+     (ports, marine marchande et sa décarbonation, éolien en mer, formation et recherche maritimes,
+     navires de souveraineté, moyens polaires) — une dizaine de mesures LFI qu'aucun chiffre de la
+     baseline actuelle ne situe. Options : **scinder** en `eco-ocean-protection` /
+     `eco-mer-economie` ; ou rattacher l'éolien en mer à l'axe énergie et **assumer explicitement**
+     que la baseline ne couvre qu'une partie de l'axe.
+   - **`eco-biodiversite`** (⚠️ 6 mesures sur 9) porte 3 mesures LFI étrangères à sa baseline :
+     brevets sur le vivant, OGM, pôles arctique et antarctique.
+4. ⏸ **`a-propos.md` et `regle-mapping.md` dans ta voix — à la toute fin** (voir plus bas le motif).
 
 ## 🟠 REPRISE — chantier Écologie livré au 2026-08-02, 4 points ouverts
 
