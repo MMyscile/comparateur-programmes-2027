@@ -128,8 +128,15 @@ export interface Taxonomie {
 export interface TermeGlossaire {
   terme: string;
   definition: string;
-  /** Optionnel : source de la définition (traçabilité). */
-  source_url?: string;
+  /**
+   * Optionnel : source de la définition (traçabilité). Accepte une **liste**,
+   * même règle que `source_baseline` — un lien par fait affirmé. Le cas qui l'a
+   * imposée : « flat tax » affirme un surnom (attesté par un rapport du Sénat de
+   * 2019) et un taux de 31,4 % (en vigueur depuis 2026). Aucune page ne porte les
+   * deux, l'un étant ancien et l'autre récent ; n'en citer qu'une laissait l'autre
+   * fait sans source.
+   */
+  source_url?: string | string[];
   /**
    * Portée de l'entrée. Absent (défaut) = globale : le terme est repéré dans tous
    * les verbatims. Présent = liste d'ids de mesures où la définition s'applique ;

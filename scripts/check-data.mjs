@@ -155,8 +155,16 @@ if (existsSync(join(racine, "data/glossaire.json"))) {
     const cle = (t.terme ?? "").toLowerCase();
     if (vus.has(cle)) err(f, "terme en double");
     vus.add(cle);
-    if (t.source_url != null && (typeof t.source_url !== "string" || !t.source_url.startsWith("http")))
-      err(f, "source_url : URL http(s) attendue si présente");
+    // source_url accepte une liste, même règle que source_baseline : un lien par
+    // fait affirmé. Cas fondateur « flat tax » : le surnom et le taux 2026 n'ont
+    // pas de source commune.
+    if (t.source_url != null) {
+      const urls = [].concat(t.source_url);
+      if (!urls.length) err(f, "source_url : liste vide — retirer le champ ou le renseigner");
+      for (const u of urls)
+        if (typeof u !== "string" || !u.startsWith("http"))
+          err(f, `source_url : URL http(s) attendue (reçu : ${JSON.stringify(u)})`);
+    }
     // contextes (optionnel) : portée de l'entrée = ids de mesures existantes.
     // Une portée qui pointe vers une mesure disparue rendrait le terme invisible
     // sans erreur visible — d'où la vérification référentielle.

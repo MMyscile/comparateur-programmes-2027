@@ -8,8 +8,11 @@
     },
     {
       "terme": "flat tax",
-      "definition": "Surnom du prélèvement forfaitaire unique (PFU) : un impôt à taux fixe (31,4 % depuis le 1er janvier 2026 : 12,8 % d'impôt sur le revenu et 18,6 % de prélèvements sociaux) appliqué depuis 2018 aux revenus du capital (intérêts, dividendes, plus-values), quel que soit le niveau de revenu.",
-      "source_url": "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/comment-fonctionne-le-prelevement"
+      "definition": "Surnom du prélèvement forfaitaire unique (PFU) : un impôt à taux fixe appliqué depuis 2018 aux revenus du capital (intérêts, dividendes, plus-values), quel que soit le niveau de revenu. Il est égal à 31,4 % — 12,8 % au titre de l’impôt sur le revenu et 18,6 % au titre des prélèvements sociaux — depuis le relèvement de la CSG sur les revenus du capital au 1er janvier 2026.",
+      "source_url": [
+        "https://entreprendre.service-public.gouv.fr/vosdroits/F32963",
+        "https://www.senat.fr/rap/r19-042-1/r19-042-110.html"
+      ]
     },
     {
       "terme": "exit tax",

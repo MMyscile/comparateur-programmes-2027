@@ -150,16 +150,18 @@ function TermeInfobulle({ terme, entree }: { terme: string; entree: TermeGlossai
           <span className="block rounded-md border border-slate-200 bg-white p-3 text-xs font-normal not-italic leading-relaxed text-slate-700 shadow-lg">
             <span className="mb-0.5 block font-semibold text-slate-900">{entree.terme}</span>
             {entree.definition}
-            {entree.source_url && (
+            {/* Une liste = un lien par fait affirmé (même règle que source_baseline). */}
+            {[].concat(entree.source_url ?? ([] as never)).map((url, i, liste) => (
               <a
-                href={entree.source_url}
+                key={url}
+                href={url}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-1 block text-blue-700 underline"
               >
-                Source
+                {liste.length > 1 ? `Source ${i + 1}` : "Source"}
               </a>
-            )}
+            ))}
           </span>
         </span>
       )}

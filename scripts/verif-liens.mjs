@@ -142,8 +142,16 @@ if (quoi !== "glossaire") {
 if (quoi !== "axes") {
   const termes = JSON.parse(readFileSync(join(racine, "data/glossaire.json"), "utf8")).termes;
   for (const t of termes)
-    if (t.source_url)
-      cibles.push({ ou: "glossaire", cle: t.terme, url: t.source_url, attendus: [t.terme] });
+    // `source_url` accepte une liste : un lien par fait affirmé. Le terme n'est
+    // alors pas exigé dans CHAQUE page — c'est le principe même du multi-sourçage.
+    for (const url of [].concat(t.source_url ?? []))
+      cibles.push({
+        ou: "glossaire",
+        cle: t.terme,
+        url,
+        attendus: [t.terme],
+        multi: [].concat(t.source_url ?? []).length > 1,
+      });
 }
 const aFaire = filtre ? cibles.filter((c) => c.cle.includes(filtre)) : cibles;
 if (!aFaire.length) {
@@ -186,10 +194,14 @@ async function controler(c) {
       return { ...c, etat: "invérifiable", motif: `corps de ${html.length} signes (rendu JS ?)` };
     if (servDeLAnglais(html))
       return { ...c, etat: "anglais", motif: "page vivante mais servie en anglais" };
-    if (c.ou === "glossaire")
-      return porteLeTerme(html, c.cle)
-        ? { ...c, etat: "ok" }
+    if (c.ou === "glossaire") {
+      if (porteLeTerme(html, c.cle)) return { ...c, etat: "ok" };
+      // Multi-sourcée : chaque lien répond à UN fait, pas au terme entier.
+      // L'exiger partout rendrait le multi-sourçage impossible.
+      return c.multi
+        ? { ...c, etat: "invérifiable", motif: "lien d'une entrée multi-sourcée : répond à un fait, pas au terme" }
         : { ...c, etat: "hors-sujet ?", motif: "le terme défini n'est pas dans la page" };
+    }
     if (!c.attendus.length)
       return { ...c, etat: "invérifiable", motif: "aucun fait chiffré à chercher" };
     return contient(html, c.attendus)
