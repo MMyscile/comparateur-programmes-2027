@@ -35,6 +35,12 @@ function estSigleDe(sigle: string, expression: string): boolean {
 // Entre les deux formes, le verbatim n'a qu'une ouvrante et des espaces.
 const SEPARATEUR_ACCOLE = /^[\s(«"'’,–—-]{0,3}$/;
 
+/** `source_url` accepte une URL ou une liste (un lien par fait affirmé). */
+function sourcesDe(entree: TermeGlossaire): string[] {
+  if (!entree.source_url) return [];
+  return Array.isArray(entree.source_url) ? entree.source_url : [entree.source_url];
+}
+
 /**
  * Bulle de glossaire sur un terme technique.
  *
@@ -151,7 +157,7 @@ function TermeInfobulle({ terme, entree }: { terme: string; entree: TermeGlossai
             <span className="mb-0.5 block font-semibold text-slate-900">{entree.terme}</span>
             {entree.definition}
             {/* Une liste = un lien par fait affirmé (même règle que source_baseline). */}
-            {[].concat(entree.source_url ?? ([] as never)).map((url, i, liste) => (
+            {sourcesDe(entree).map((url, i, liste) => (
               <a
                 key={url}
                 href={url}

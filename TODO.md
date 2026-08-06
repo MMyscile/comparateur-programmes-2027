@@ -581,7 +581,26 @@ Quatre pages à ouvrir à la main, puis remplacer.
   - **✅ Exception contextuelle (contextualisation)** (2026-07-31) — champ optionnel `contextes` (liste d'ids de mesures) livré : une entrée est soit **globale** (champ absent = comportement d'avant), soit **limitée aux mesures listées**. `Verbatim` reçoit désormais `mesureId` et filtre le glossaire avant de construire le matcher ; `check-data` valide que chaque id de `contextes` existe bien parmi les mesures publiées (une portée pointant vers une mesure disparue rendrait le terme invisible sans erreur visible). Fichiers : `src/lib/types.ts`, `src/components/Verbatim.tsx`, `src/components/Comparateur.tsx`, `scripts/check-data.mjs`. **`Séparatisme` et `Sécurité globale` intégrés** avec portée = `eco-police-4` → **41 termes**. QC : `check-data` ✅ (+ test négatif : les 2 branches d'erreur se déclenchent), `lint` ✅, `build` ✅, et vérification sur le HTML rendu **dans les deux sens** — portée sur `eco-police-4` : les 2 termes sont des déclencheurs d'infobulle ; portée basculée ailleurs : plus d'infobulle **mais le mot reste présent dans le texte** (verbatim intact, garde-fou n°1).
     - **Décision prise au passage** : une occurrence répétée d'un même terme se surligne **partout** dans le verbatim (comportement existant conservé — les verbatims sont courts, une seule proposition ; surligner la 1re seulement pénaliserait la lecture en diagonale). À rouvrir si des verbatims longs rendent l'effet bruyant.
 
-- ✅ **Déployé sur Vercel** (2026-07-29) — production : https://comparateur-programmes-2027.vercel.app (compte `midenzer0`, projet connecté au repo GitHub : chaque push sur `main` redéploie automatiquement).
+- 🔄 🟠 **Vercel : le site sort de la vue publique jusqu'à la V1** (décision éditeur du 2026-08-06).
+  Déployé le 29/07 (https://comparateur-programmes-2027.vercel.app, compte `midenzer0`, push sur
+  `main` = redéploiement). Le déploiement a rempli son office — il a **prouvé la chaîne build → prod**,
+  et cette preuve est acquise sans que le site reste debout.
+  **L'argument décisif n'est pas le principe, c'est un fait** : la production est figée au commit
+  `60a28dc` du 02/08, soit 21 commits de retard. Elle sert donc publiquement une version dont le lien
+  « Source » des infobulles est **inatteignable** (corrigé le 05/08), avec les deux sources fausses du
+  glossaire et le lien ONU tronqué. Ce n'est pas « trop tôt » : c'est faux sur le point qui *est* le
+  garde-fou n° 2.
+  - ⬜ **À faire par l'éditeur** : Vercel → projet → Settings → **Deployment Protection** → activer
+    **Vercel Authentication** sur *Production*. Le site reste déployé et à jour à chaque push, mais
+    seul le compte y accède. Réversible en un clic le jour de la V1. Écarté : supprimer le projet
+    (on perdrait la configuration prouvée, à refaire juste avant la mise en ligne, au pire moment) et
+    débrancher le Git seul (ça figerait publiquement la version défectueuse du 02/08).
+  - ✅ **`noindex` posé dans `src/app/layout.tsx`** (`robots: { index: false, follow: false }`),
+    rendu sur les 3 pages. Ceinture et bretelles : si la protection d'accès saute, l'indexation ne
+    repart pas. **Condition de retrait écrite dans le commentaire du code** : les 15 méta-thèmes
+    renseignés pour LFI et EELV + le tag de version daté.
+  - ⚠️ **Retirer le site ≠ rendre le projet privé.** Le dépôt GitHub reste public, et c'est cohérent
+    avec la traçabilité. Les deux décisions sont indépendantes.
 - ✅ **Page publique « règle de mapping »** (2026-07-29, garde-fou n°2) — `data/choix-editoriaux.md` est rendu tel quel (source unique, chargé au build) en bas de la page Méthodologie via `react-markdown` + `remark-gfm` + `@tailwindcss/typography`, avec lien vers le fichier sur GitHub pour l'historique.
 - ⬜ 🟢 **Classification fine** des 66 chapitres EELV et 89 sous-sections LFI → méta-thèmes (multi-étiquetée), alimentant `data/candidats/*.json`.
 - ✅ **Programme Écologistes normalisé en markdown** (2026-07-30, agent en tâche de fond) — `data/sources/ecologistes-programme-2026.md` (~58 800 mots : avant-propos + 8 parties + 66 chapitres + 551 propositions), squelette LFI. QC agent (étape 4) au vert : comparaison token-par-token vs `layout.txt` = 0 mot inventé / 0 perte ; 14/14 échantillons fidèles. Rapport : `data/rapports/normalisation-eelv-2026-07-30.md`. Coquille ch46 (Outre-mer numéroté 45) signalée. Ferme le trou de traçabilité (EELV n'existait qu'en PDF) et l'ordre de lecture 2 colonnes. **Relecture éditeur ciblée à faire** : ch23 reconstruit à la main (grille 3 colonnes, pages ~89-91) ; anomalies source conservées telles quelles (ch4 saute la prop 6 ; ch57 a deux « 4 » ; ch11 props 8-9 quasi identiques = doublon probable du PDF) ; badges `[EUROPE]` à sortir en `rubrique_origine` au stade JSON.

@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   title: "Comparateur de programmes — Présidentielle 2027",
   description:
     "Juxtaposition des programmes des candidats, thème par thème, avec « ce qui est fait aujourd'hui » en regard. Une comparaison éditoriale et traçable, pas prétendument neutre.",
+  // ⛔ À RETIRER AU MOMENT DE LA V1, et à ce moment-là seulement.
+  //
+  // Le site n'est pas encore lisible par un électeur : 3 méta-thèmes sur 15, et
+  // 2 candidats. Un moteur de recherche qui l'indexerait aujourd'hui enverrait
+  // des lecteurs sur une comparaison qu'ils prendraient pour complète — ce que
+  // le cadrage du projet exclut (« V1 = prouver le moteur, pas encore éclairer
+  // l'électeur »). Le `noindex` double la protection d'accès posée côté Vercel :
+  // si elle saute, l'indexation ne repart pas pour autant.
+  //
+  // Condition de retrait : les 15 méta-thèmes renseignés pour LFI et EELV, et le
+  // tag de version daté posé (voir « Définition de fini » dans TODO.md).
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
