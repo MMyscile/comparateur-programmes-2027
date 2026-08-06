@@ -60,10 +60,34 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 🔴 Les 4 points ouverts, à traiter un par un
 
-1. 🟠 **Glossaire — l'agent a tourné (2026-08-02), la validation reste à faire.** Rapport :
-   `data/rapports/glossaire-propositions-2026-08-02.md`. **54 définitions prêtes** (JSON revalidé
-   à part : valide, zéro doublon avec les 41 termes publiés, zéro entrée sans source, sources
-   institutionnelles uniquement) + **~90 termes laissés ❓ à sourcer**. Rien n'est fusionné.
+1. ✅ **Glossaire — les 54 définitions fusionnées** (2026-08-06). `data/glossaire.json` passe de
+   **41 à 95 termes**. Revalidation avant fusion : zéro doublon interne ou avec l'existant, chacune
+   produit au moins une correspondance dans les 437 verbatims avec la regex exacte de
+   `Verbatim.tsx`, aucun faux positif sur les 20 sigles courts (`REP`, `ORE`, `CEE`, `STEP`… tous
+   sur le bon sens, `CEREMA` en capitales compris). **144 déclencheurs sur 91 verbatims.**
+   **3 sources sur 54 étaient hors sujet et ont été remplacées avant publication** — c'est la
+   troisième fois que ce défaut-là, et non le lien mort, est le vrai :
+   - `politique commune de la pêche` (×2) : l'URL `_fr` de la Commission **sert la page anglaise**
+     (« Common fisheries policy », zéro occurrence de « pêche ») → fiche du Parlement européen ;
+   - `écomodulations` : la page REP citée ne contient ni « écomodulation » ni « bonus »/« malus »
+     → art. L. 541-10-3 du code de l'environnement (via l'API), qui donne le mécanisme exact
+     (« prime » / « pénalité ») — la définition a été récrite pour coller au texte ;
+   - `CIGEO` : `andra.fr` est une coquille JavaScript de 227 signes → décret n° 2022-993 du
+     7 juillet 2022. « Environ 500 mètres » et le développé « Centre industriel de stockage
+     géologique » ont été **retirés** : le décret ne les porte pas.
+   Restent **~90 termes ❓ à sourcer** (sections 1.3, 2, 3, 4, 5 du rapport du 02/08) — agent relancé
+   le 2026-08-06 avec l'API Légifrance, livrable attendu : `data/rapports/glossaire-sources-2026-08-06.md`.
+
+   🔴 **Défaut d'affichage trouvé et corrigé au passage (`Verbatim.tsx`).** 9 termes sont au
+   glossaire sous leurs deux formes (sigle + développé), et les programmes les écrivent collés :
+   « Installations classées pour la protection de l'environnement (ICPE) ». **Mesuré : la bulle du
+   développé (256 × 211 px) recouvre intégralement le sigle qui suit.** Et on ne peut pas glisser
+   de l'un à l'autre — le chemin passe *dans* la bulle, qui reste ouverte (c'est voulu, c'est
+   comme ça qu'on atteint « Source »). Règle ajoutée : quand un sigle est **accolé à sa propre
+   forme développée**, un seul des deux déclenche une bulle ; le sigle garde la sienne partout où
+   il apparaît seul. Reconnaissance par initiales (mots vides ignorés), donc sans liste en dur, et
+   dans les deux ordres. **12 déclencheurs muets, exactement les 9 paires attendues**, verbatims
+   intacts (garde-fou n°1). Arbitrage éditeur du 06/08 : publier les deux formes.
 2. ✅ **Deux arbitrages `etat_maturite`** — **RÉGLÉ (2026-08-04, décision n° 31)**. L'étiquette de
    maturité ne s'affiche plus sur la mesure (elle ne distinguait rien : 437/437 « mûr », et « périmé »
    est un verdict là où le site doit un fait) ; un champ `fait_posterieur` { texte, source_url, date }
@@ -91,11 +115,12 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 tout ce qu'elle a produit vit désormais dans les décisions n° 31 à 33 (`data/choix-editoriaux.md`),
 dans la procédure des trois agents, et dans `scripts/legifrance.mjs`.
 
-**La suite naturelle n'est plus dans cette liste, elle est en dessous** : (a) **fusionner les 54
-définitions du glossaire** — le blocage est levé, leur source est atteignable (point 5) et la méthode
-de contrôle est éprouvée (point 6) ; (b) la **passe ciblée du point 12** sur les 7 baselines au passé
-accompli, désormais outillée et cadrée par la décision n° 33 ; (c) reprendre le **plan d'attaque V1**,
-au 3ᵉ méta-thème sur 15.
+**La suite naturelle n'est plus dans cette liste, elle est en dessous.** ~~(a) fusionner les 54
+définitions du glossaire~~ **fait le 2026-08-06** (point 1), en même temps que les deux outillages
+qui restaient ouverts (`verif-liens` et les réserves d'`appliquer-baselines`). Restent :
+(b) la **passe ciblée du point 12** sur les 7 baselines au passé accompli, désormais outillée et
+cadrée par la décision n° 33 ; (c) les **~90 termes ❓** du glossaire (agent lancé le 06/08) ;
+(d) reprendre le **plan d'attaque V1**, au 3ᵉ méta-thème sur 15.
 
 5. ✅ **Bug de l'infobulle corrigé** (2026-08-05) — la source est atteignable à la souris, au clavier
    et au doigt. Deux causes, dont une seule était connue :
@@ -298,9 +323,15 @@ au 3ᵉ méta-thème sur 15.
     n'est jamais sortie du rapport : `appliquer-baselines` parse le texte de baseline et les URLs, et
     **laisse tomber les commentaires**. Le défaut n'est pas que l'agent glisse une source faible en
     douce — c'est que ses réserves meurent au moment de l'application.
-    → ⬜ 🟠 **À outiller** : que `appliquer-baselines` refuse d'appliquer en silence un axe portant
-    une réserve, ou au minimum les liste en fin d'exécution. Voir aussi ~38 faits listés dans les
-    rapports **sans niveau de source annoté** (comptage heuristique) : le format se relâche.
+    → ✅ **Outillé le 2026-08-06.** `appliquer-baselines` extrait désormais les réserves — verdict
+    ⚠️/❌, faits ❓, remarques en italique de l'agent dans le bloc Sources, sources **sans niveau
+    annoté**, tournures d'incertitude — les affiche par axe, et **refuse d'écrire** tant que
+    `--reserves-lues` n'est pas passé. Mesuré sur les rapports existants : **19 / 7 / 27 / 25
+    réserves** sur les lots A / B / C / 29-07. Il fait remonter, entre autres, les deux
+    avertissements de découpage `eco-ocean` et `eco-biodiversite` (point 3 ci-dessus) et le
+    `eco-sols` sans niveau. Deux faux positifs écartés à l'écriture : les **titres d'ouvrages en
+    italique dans les liens markdown** (`[RTE, *Bilan électrique 2025*, …](url)`) et les lignes de
+    tableau récapitulatif.
     Et sa prudence était fondée : **l'article 79 de la LF 2025 porte sur la TGAP outre-mer**, pas sur
     la CVAE. Le bon est l'article 62.
 
@@ -313,16 +344,39 @@ la TVA du secteur hygiène-santé, la baseline affirme les quatre taux générau
 `avant-publication`). Avec `fisc-verte`, dont la page Douane citée ne mentionnait ni l'IRICC ni 2027,
 cela fait **3 baselines « vérifiées » dont le sourçage ne tenait pas**.
 
-→ ⬜ 🟠 **Leçon à outiller** : le stamp `baseline_verifiee` atteste qu'un passage a eu lieu, pas que le
-fait affirmé se trouve dans la page citée. Un contrôle de survie des URLs (et, idéalement, de
-cohérence chiffre ↔ source) est à ajouter — même geste que `npm run verif-miroirs` pour les PDF.
-⚠️ **Trois contraintes connues avant de l'écrire, toutes trouvées le 05/08** : (a) `legifrance.gouv.fr`
-renvoie 403 aux requêtes automatisées même quand la page existe — passer par `scripts/legifrance.mjs` ;
-(b) `vie-publique.fr` rend en JavaScript et sert une coquille de ~200 signes à `fetch` — un contrôle
-naïf y verrait des liens morts en série ; (c) chercher dans le **HTML complet** et non dans le texte
-visible, `innerText` masquant les sections repliées. Autrement dit : un contrôle de survie d'URL
-naïf produirait surtout des faux positifs, et **ne verrait toujours pas** le vrai défaut, qui est le
-lien hors sujet.
+→ ✅ **Outillé le 2026-08-06 : `npm run verif-liens`** (`scripts/verif-liens.mjs`, options `--axes`,
+`--glossaire`, `--seulement=<motif>`). Les trois contraintes du 05/08 sont câblées dès l'écriture,
+sinon l'outil n'aurait produit que des faux positifs : domaines non testables déclarés
+(`legifrance.gouv.fr`, `vie-publique.fr`, `economie.gouv.fr`, `interieur.gouv.fr`, `budget.gouv.fr`),
+recherche dans le **HTML complet**, et comparaison sur des **mots réduits** (sans accent, sans
+pluriel, ponctuation aplatie) — sans quoi « bas-carbone » ne correspond pas à « Bas Carbone ».
+
+**Trois états, pas deux — c'est tout l'intérêt** : `ok` · `mort` · `invérifiable`, plus un signalement
+`hors sujet ?` qui est une piste, pas un verdict. Deux règles apprises en écrivant :
+- **401/403/429 ne sont pas des liens morts**, mais des refus d'automatisation. Seuls **404/410**
+  prouvent une absence.
+- **Un échec de requête n'est jamais un lien mort non plus.** Constaté le jour même : deux PDF
+  Agreste faisaient échouer `fetch` alors que `curl` les sert en 200 — l'outil les avait déclarés
+  morts. Accuser la page d'un défaut du client, c'est envoyer l'éditeur réparer ce qui n'est pas cassé.
+
+**Résultat du premier passage complet (2026-08-06)** — glossaire : 95 liens, **74 ok / 0 mort /
+1 à regarder / 20 invérifiables** ; axes : 224 liens, **104 ok / 0 mort / 1 à regarder /
+119 invérifiables**. Ce que ça a trouvé :
+- `fisc-tva` **404 pour la deuxième fois** (la fiche `F23567` a migré sur
+  `entreprendre.service-public.gouv.fr`) → réparée, la nouvelle page porte bien les quatre taux ;
+- 4 sources de glossaire hors sujet, toutes remplacées : `MACF` et `Mécanisme d'ajustement carbone
+  aux frontières` (l'URL `_fr` de la Commission servait **encore** l'anglais — « CBAM » 89 fois,
+  « MACF » zéro), `énergies marines renouvelables` (la page ne portait que l'éolien en mer quand la
+  définition annonçait aussi hydrolien, houle et thermique — définition **et** source corrigées),
+  `bioénergies` (page « biomasse-énergie »), `niche Copé` (le nom « Copé » n'était pas dans la page
+  citée → Cour des comptes, qui porte le surnom **et** les faits — même leçon que `taxe Zucman`) ;
+- le seul `hors sujet ?` restant du glossaire est **légitime** : `Planification Pluriannuelle de
+  l'Énergie` — la page officielle dit « **programmation** », le verbatim écrit « Planification ».
+  C'est précisément la raison d'être de l'entrée.
+
+⚠️ **Les 119 invérifiables des axes ne sont pas un défaut de données** : PDF (contrôle de contenu à
+faire à part) et domaines publics qui refusent les robots. C'est la limite de l'outil, pas l'état
+du corpus — ne pas la lire comme un taux d'erreur.
 
 ---
 

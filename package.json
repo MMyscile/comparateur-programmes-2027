@@ -12,7 +12,8 @@
     "etat-sources": "node scripts/etat-sources.mjs",
     "attente": "node scripts/attente.mjs",
     "appliquer-baselines": "node scripts/appliquer-baselines.mjs",
-    "legifrance": "node scripts/legifrance.mjs"
+    "legifrance": "node scripts/legifrance.mjs",
+    "verif-liens": "node scripts/verif-liens.mjs"
   },
   "dependencies": {
     "next": "^15.5.21",

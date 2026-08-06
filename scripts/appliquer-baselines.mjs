@@ -27,9 +27,17 @@
  *     après la décision n° 28) : le remplacement doit être un acte nommé.
  *  4. Rien n'est écrit tant que le rapport entier n'est pas parsé : un rapport
  *     tronqué par une interruption échoue sans laisser axes.json à moitié appliqué.
+ *  5. Un axe portant une RÉSERVE de l'agent n'est pas appliqué en silence. Le
+ *     script ne lisait que la baseline et les URLs : les verdicts ⚠️, les faits ❓
+ *     et les remarques en italique mouraient au moment de l'application. C'est ce
+ *     qui a publié la source CVAE de niveau 4 alors que l'agent avait lui-même
+ *     signalé le problème et proposé le correctif (constaté le 2026-08-05). Les
+ *     réserves sont donc extraites, affichées, et bloquent l'écriture tant que
+ *     `--reserves-lues` n'est pas passé.
  *
  * Le script ne vérifie pas les faits — c'est le travail de l'agent — et ne teste
- * pas les URLs. Après application : `npm run check-data` puis `npm run etat-sources`.
+ * pas les URLs (voir `npm run verif-liens`). Après application :
+ * `npm run check-data` puis `npm run etat-sources`.
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -49,8 +57,63 @@ const args = process.argv.slice(2);
 const rapport = args.find((a) => !a.startsWith("--"));
 const opt = (nom) => args.find((a) => a.startsWith(`--${nom}=`))?.split("=").slice(1).join("=");
 const essai = args.includes("--essai");
+const reservesLues = args.includes("--reserves-lues");
 const stamp = opt("date") ?? new Date().toISOString().slice(0, 10);
 const remplacables = new Set((opt("remplacer") ?? "").split(",").filter(Boolean));
+
+// --- réserves ---------------------------------------------------------------
+// Ce que l'agent signale sans que le format ne le range nulle part. Chercher ces
+// marques dans le texte du rapport est ce qui manquait : elles étaient écrites,
+// lues par personne.
+const TOURNURES = [
+  "à confirmer", "l'éditeur peut", "l'éditeur pourra", "sous réserve", "à vérifier",
+  "n'a pas pu", "je n'ai pas pu", "non retrouvé", "non retrouvée", "reste à",
+  "faute de", "je recommande", "à trancher", "prudence",
+];
+
+// Retire le gras (`**Sources :**`) et les liens markdown. Les liens comptent :
+// un titre d'ouvrage y est en italique — `[RTE, *Bilan électrique 2025*, …](url)`
+// — et se ferait prendre pour une remarque de l'agent.
+const sansGrasNiLiens = (s) =>
+  s.replace(/\*\*[^*]*\*\*/g, "").replace(/\[[^\]]*\]\([^)]*\)/g, "");
+
+function reservesDe(bloc, id) {
+  const trouvees = [];
+  const lignes = bloc.split("\n");
+
+  const verdict = lignes.find((l) => /^\*\*Verdict/.test(l));
+  if (verdict && /[⚠️❌]/u.test(verdict))
+    trouvees.push(`verdict : ${verdict.replace(/\*\*/g, "").trim()}`);
+
+  // Bloc « Sources » : niveau annoncé et remarques en italique de l'agent.
+  const titreSources = bloc.match(/^(?:\*\*|#{2,4} )Sources[^\n]*$/m);
+  if (titreSources) {
+    for (const l of bloc.slice(bloc.indexOf(titreSources[0])).split("\n").slice(1)) {
+      if (!l.startsWith("- ")) {
+        if (trouvees.length && l.trim() === "") continue;
+        if (!l.startsWith("- ") && l.trim() !== "" && !l.startsWith(" ")) break;
+      }
+      if (!l.startsWith("- ")) continue;
+      if (!/\((?:[1-4])\)/.test(l))
+        trouvees.push(`source sans niveau annoté : ${l.slice(2, 110).trim()}`);
+      const ital = sansGrasNiLiens(l).match(/(?:^|[^*])\*([^*\n]{15,})\*/);
+      if (ital) trouvees.push(`remarque de l'agent : ${ital[1].trim()}`);
+    }
+  }
+
+  // Faits écartés et tournures d'incertitude, partout dans la section.
+  for (const l of lignes) {
+    const nu = l.trim();
+    // Ni le texte de baseline (`>`) ni le tableau récapitulatif (`|`) ne sont des réserves.
+    if (!nu || nu.startsWith(">") || nu.startsWith("|")) continue;
+    if (nu.includes("❓")) trouvees.push(`fait ❓ : ${nu.replace(/\*\*/g, "").slice(0, 110)}`);
+    else {
+      const t = TOURNURES.find((x) => nu.toLowerCase().includes(x));
+      if (t) trouvees.push(`« ${t} » : ${nu.replace(/\*\*/g, "").slice(0, 110)}`);
+    }
+  }
+  return [...new Set(trouvees)].map((r) => ({ id, texte: r }));
+}
 
 if (!rapport) {
   console.error(`usage : npm run appliquer-baselines -- <rapport.md> [options]
@@ -58,6 +121,7 @@ if (!rapport) {
   --essai                 n'écrit rien, montre ce qui changerait
   --date=AAAA-MM-JJ       date posée dans baseline_verifiee (défaut : aujourd'hui)
   --remplacer=id1,id2     autorise l'écrasement d'une baseline existante différente
+  --reserves-lues         applique malgré les réserves de l'agent (après les avoir lues)
 `);
   process.exit(1);
 }
@@ -97,7 +161,29 @@ for (const bloc of blocs) {
   }
   if (!urls.length) echec(`${id} : aucune URL dans le bloc « Sources »`);
 
-  propositions.push({ id, baseline, urls });
+  propositions.push({ id, baseline, urls, reserves: reservesDe(bloc, id) });
+}
+
+// --- réserves : jamais appliquées en silence --------------------------------
+const reserves = propositions.flatMap((p) => p.reserves);
+if (reserves.length) {
+  const axes = new Set(reserves.map((r) => r.id));
+  console.log(
+    `\n⚠️  ${reserves.length} réserve(s) de l'agent sur ${axes.size} axe(s) — ` +
+      `à lire avant d'appliquer :\n`
+  );
+  for (const id of axes) {
+    console.log(`  ${id}`);
+    for (const r of reserves.filter((x) => x.id === id)) console.log(`    · ${r.texte}`);
+    console.log("");
+  }
+  if (!essai && !reservesLues)
+    echec(
+      `Rien n'a été écrit. Ces réserves sont écrites dans le rapport et le script les\n` +
+        `  laissait tomber : c'est ainsi qu'une source de niveau 4 a été publiée le 29/07\n` +
+        `  alors que l'agent avait signalé le problème (CVAE, corrigé le 05/08).\n` +
+        `  Les lire, corriger le rapport si besoin, puis relancer avec --reserves-lues.`
+    );
 }
 
 // --- application ------------------------------------------------------------

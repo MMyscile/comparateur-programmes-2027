@@ -143,8 +143,8 @@
     },
     {
       "terme": "niche Copé",
-      "definition": "Nom usuel du régime de l'article 219 du code général des impôts qui exonère très largement d'impôt sur les sociétés les plus-values réalisées par une entreprise lors de la vente de titres de participation (filiales) détenus depuis plus de deux ans.",
-      "source_url": "https://www.senat.fr/questions/base/2010/qSEQ100312608.html"
+      "definition": "Nom usuel du régime de l'article 219 du code général des impôts : les plus-values réalisées par une entreprise lors de la vente de titres de participation (filiales) détenus depuis plus de deux ans y sont imposées à taux nul, hormis une quote-part de 12 % réintégrée au résultat et taxée au taux normal.",
+      "source_url": "https://www.ccomptes.fr/fr/publications/la-fiscalite-des-plus-values-de-long-terme-sur-les-cessions-de-titres-de-participation"
     },
     {
       "terme": "abattement Dutreil",
@@ -211,6 +211,276 @@
       "contextes": [
         "eco-police-4"
       ]
+    },
+    {
+      "terme": "Stratégie Nationale Bas Carbone",
+      "definition": "Feuille de route de la France pour réduire ses émissions de gaz à effet de serre. Elle fixe des plafonds d'émissions par période de cinq ans (les « budgets carbone ») et par grand secteur, jusqu'à l'objectif de neutralité carbone en 2050.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/strategie-nationale-bas-carbone-snbc"
+    },
+    {
+      "terme": "SNBC",
+      "definition": "Stratégie nationale bas-carbone : feuille de route de la France pour réduire ses émissions de gaz à effet de serre, qui fixe des plafonds d'émissions par période de cinq ans et par grand secteur.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/strategie-nationale-bas-carbone-snbc"
+    },
+    {
+      "terme": "Planification Pluriannuelle de l’Énergie",
+      "definition": "Document de programmation, adopté par décret, qui fixe pour deux périodes successives les objectifs de production et de consommation de chaque source d'énergie en France et les moyens d'y parvenir. Son nom officiel est « programmation pluriannuelle de l'énergie » (PPE).",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/programmations-pluriannuelles-lenergie-ppe"
+    },
+    {
+      "terme": "ICPE",
+      "definition": "Installation classée pour la protection de l'environnement : usine, élevage, entrepôt ou carrière dont l'activité présente des risques ou des nuisances, et qui est à ce titre soumise à déclaration, enregistrement ou autorisation préfectorale, puis à des inspections.",
+      "source_url": "https://www.service-public.fr/professionnels-entreprises/vosdroits/F33414"
+    },
+    {
+      "terme": "Installations classées pour la protection de l’environnement",
+      "definition": "Usines, élevages, entrepôts ou carrières dont l'activité présente des risques ou des nuisances, et qui sont à ce titre soumis à déclaration, enregistrement ou autorisation préfectorale, puis à des inspections.",
+      "source_url": "https://www.service-public.fr/professionnels-entreprises/vosdroits/F33414"
+    },
+    {
+      "terme": "MACF",
+      "definition": "Mécanisme d'ajustement carbone aux frontières : dispositif de l'Union européenne qui fait payer, à l'importation de certains produits (acier, ciment, aluminium, engrais, électricité, hydrogène), un prix du carbone équivalent à celui supporté par les producteurs européens.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/mecanisme-dajustement-carbone-aux-frontieres-macf"
+    },
+    {
+      "terme": "Mécanisme d’ajustement carbone aux frontières",
+      "definition": "Dispositif de l'Union européenne qui fait payer, à l'importation de certains produits (acier, ciment, aluminium, engrais, électricité, hydrogène), un prix du carbone équivalent à celui supporté par les producteurs européens.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/mecanisme-dajustement-carbone-aux-frontieres-macf"
+    },
+    {
+      "terme": "Certificats d’Economie d’Energie",
+      "definition": "Dispositif qui oblige les vendeurs d'énergie (électricité, gaz, carburants) à financer des économies d'énergie chez leurs clients — isolation, chaudière, éclairage — sous peine de pénalité. Les travaux réalisés donnent des certificats qui attestent l'obligation remplie.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/dispositif-certificats-deconomies-denergie"
+    },
+    {
+      "terme": "CEE",
+      "definition": "Certificats d'économies d'énergie : dispositif qui oblige les vendeurs d'énergie à financer des économies d'énergie chez leurs clients, sous peine de pénalité ; les travaux réalisés donnent des certificats qui attestent l'obligation remplie.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/dispositif-certificats-deconomies-denergie"
+    },
+    {
+      "terme": "diagnostic de performance énergétique",
+      "definition": "Document obligatoire lors de la vente ou de la location d'un logement, qui estime sa consommation d'énergie et ses émissions de gaz à effet de serre et lui attribue une étiquette de A à G.",
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F16096"
+    },
+    {
+      "terme": "DPE",
+      "definition": "Diagnostic de performance énergétique : document obligatoire lors de la vente ou de la location d'un logement, qui estime sa consommation d'énergie et ses émissions de gaz à effet de serre et lui attribue une étiquette de A à G.",
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F16096"
+    },
+    {
+      "terme": "MaPrimeRénov’",
+      "definition": "Aide financière de l'État à la rénovation énergétique des logements, versée par l'Agence nationale de l'habitat ; son montant dépend des revenus du ménage et des travaux réalisés.",
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F35083"
+    },
+    {
+      "terme": "Éco-prêt à taux zéro",
+      "definition": "Prêt sans intérêts, distribué par les banques et pris en charge par l'État, destiné à financer des travaux de rénovation énergétique dans un logement ancien.",
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F19905"
+    },
+    {
+      "terme": "CIGEO",
+      "definition": "Projet de stockage des déchets radioactifs de haute activité et de moyenne activité à vie longue en couche géologique profonde, à Bure (Meuse) et dans les communes voisines, porté par l'Andra. Sa création a été déclarée d'utilité publique par le décret n° 2022-993 du 7 juillet 2022.",
+      "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046026158"
+    },
+    {
+      "terme": "garantie Cat-Nat",
+      "definition": "Garantie « catastrophes naturelles » incluse d'office dans les contrats d'assurance habitation et automobile. Elle indemnise les dommages causés par un phénomène naturel d'intensité anormale une fois l'état de catastrophe naturelle constaté par arrêté.",
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F3076"
+    },
+    {
+      "terme": "REACH",
+      "definition": "Règlement européen sur les produits chimiques (2006). Il impose aux industriels d'enregistrer les substances qu'ils fabriquent ou importent et d'en démontrer la sécurité, et permet d'en restreindre l'usage ou de le soumettre à autorisation.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/reglement-reach"
+    },
+    {
+      "terme": "liste rouge",
+      "definition": "Inventaire mondial de l'état de conservation des espèces animales et végétales, tenu par l'Union internationale pour la conservation de la nature (UICN), qui les classe par degré de menace.",
+      "source_url": "https://uicn.fr/liste-rouge-mondiale/"
+    },
+    {
+      "terme": "UICN",
+      "definition": "Union internationale pour la conservation de la nature : organisation mondiale réunissant États, agences publiques et associations, qui établit notamment la « liste rouge » des espèces menacées.",
+      "source_url": "https://uicn.fr/liste-rouge-mondiale/"
+    },
+    {
+      "terme": "Programme national de la forêt et du bois",
+      "definition": "Document-cadre de la politique forestière française, adopté par décret pour dix ans, qui fixe les orientations de gestion des forêts et de la filière bois et se décline en programmes régionaux.",
+      "source_url": "https://agriculture.gouv.fr/le-programme-national-de-la-foret-et-du-bois-2016-2026"
+    },
+    {
+      "terme": "Copernicus",
+      "definition": "Programme d'observation de la Terre de l'Union européenne : une flotte de satellites et de capteurs au sol dont les données sur le climat, l'atmosphère, les océans et les sols sont diffusées gratuitement.",
+      "source_url": "https://www.copernicus.eu/fr"
+    },
+    {
+      "terme": "REP",
+      "definition": "Responsabilité élargie des producteurs : principe qui rend les fabricants et importateurs d'un produit responsables de sa fin de vie ; ils doivent financer ou organiser la collecte et le traitement des déchets qui en résultent, filière par filière.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/cadre-general-filieres-responsabilite-elargie-producteurs"
+    },
+    {
+      "terme": "Responsabilité Élargie des Producteurs",
+      "definition": "Principe qui rend les fabricants et importateurs d'un produit responsables de sa fin de vie : ils doivent financer ou organiser la collecte et le traitement des déchets qui en résultent, filière par filière (emballages, textiles, meubles, bâtiment…).",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/cadre-general-filieres-responsabilite-elargie-producteurs"
+    },
+    {
+      "terme": "éco-organismes",
+      "definition": "Sociétés créées et financées par les fabricants d'un même secteur pour assumer collectivement leur obligation de gestion des déchets de leurs produits ; elles sont agréées par l'État selon un cahier des charges.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/cadre-general-filieres-responsabilite-elargie-producteurs"
+    },
+    {
+      "terme": "écomodulations",
+      "definition": "Modulation de la contribution financière qu'un fabricant verse à son éco-organisme, selon des critères de performance environnementale du produit (durabilité, réparabilité, incorporation de matière recyclée, empreinte carbone…). Elle prend la forme d'une prime lorsque le produit remplit ces critères, d'une pénalité lorsqu'il s'en éloigne.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054403123"
+    },
+    {
+      "terme": "éco-contributions",
+      "definition": "Somme versée par un fabricant ou un importateur à un éco-organisme pour chaque produit mis sur le marché, destinée à financer la collecte et le traitement des déchets correspondants.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/cadre-general-filieres-responsabilite-elargie-producteurs"
+    },
+    {
+      "terme": "ZAN",
+      "definition": "« Zéro artificialisation nette » : objectif inscrit dans la loi de ramener à zéro, d'ici 2050, le solde entre les sols nouvellement transformés par l'urbanisation et les sols rendus à la nature.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/artificialisation-sols"
+    },
+    {
+      "terme": "zéro artificialisation nette",
+      "definition": "Objectif inscrit dans la loi : ramener à zéro, d'ici 2050, le solde entre les sols nouvellement transformés par l'urbanisation (constructions, routes, parkings) et les sols rendus à la nature.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/artificialisation-sols"
+    },
+    {
+      "terme": "artificialisation",
+      "definition": "Transformation d'un sol naturel, agricole ou forestier en surface construite ou imperméabilisée, qui lui fait perdre tout ou partie de ses fonctions : absorption de l'eau, stockage du carbone, accueil du vivant.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/artificialisation-sols"
+    },
+    {
+      "terme": "ORE",
+      "definition": "Obligation réelle environnementale : contrat par lequel le propriétaire d'un terrain y attache durablement des engagements de protection de la nature, jusqu'à 99 ans. L'obligation suit le terrain et s'impose aux propriétaires suivants.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/obligation-reelle-environnementale"
+    },
+    {
+      "terme": "Obligations réelles environnementales",
+      "definition": "Contrats par lesquels le propriétaire d'un terrain y attache durablement des engagements de protection de la nature (jusqu'à 99 ans). L'obligation suit le terrain : elle s'impose aux propriétaires suivants.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/obligation-reelle-environnementale"
+    },
+    {
+      "terme": "Fonds Barnier",
+      "definition": "Nom usuel du fonds de prévention des risques naturels majeurs, créé en 1995 : il finance des travaux de prévention et le rachat de biens trop exposés, face aux inondations, mouvements de terrain ou submersions.",
+      "source_url": "https://www.georisques.gouv.fr/minformer-sur-la-prevention-des-risques/le-fonds-barnier"
+    },
+    {
+      "terme": "ZFE",
+      "definition": "Zone à faibles émissions : périmètre urbain dans lequel la circulation des véhicules les plus polluants est restreinte ou interdite, selon leur vignette Crit'Air.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/zones-faibles-emissions-zfe"
+    },
+    {
+      "terme": "Crit’air",
+      "definition": "Vignette qui classe un véhicule de 0 à 5 selon ses émissions de polluants, d'après sa motorisation et sa date de mise en circulation ; elle conditionne l'accès aux zones à faibles émissions.",
+      "source_url": "https://www.certificat-air.gouv.fr/"
+    },
+    {
+      "terme": "RGESN",
+      "definition": "Référentiel général d'écoconception de services numériques : liste de critères publiés par l'État pour réduire l'empreinte d'un site web ou d'une application (poids des pages, durée de vie des appareils nécessaires, sobriété des fonctionnalités).",
+      "source_url": "https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/"
+    },
+    {
+      "terme": "paiements pour services environnementaux",
+      "definition": "Rémunération versée à un agriculteur ou à un propriétaire pour des pratiques bénéfiques à l'environnement qui ne sont pas rétribuées par la vente de sa production : entretien de haies, maintien de prairies, protection de la qualité de l'eau.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/paiements-services-environnementaux"
+    },
+    {
+      "terme": "plan Ecophyto",
+      "definition": "Plan public lancé en 2008 et révisé à plusieurs reprises, qui vise à réduire l'usage des produits phytosanitaires en agriculture et suit cette réduction au moyen d'indicateurs chiffrés.",
+      "source_url": "https://agriculture.gouv.fr/le-plan-ecophyto-quest-ce-que-cest"
+    },
+    {
+      "terme": "Haut Conseil pour le Climat",
+      "definition": "Organisme indépendant créé en 2019, composé de scientifiques et d'experts, qui évalue chaque année si l'action de la France est cohérente avec ses objectifs climatiques et rend des avis publics.",
+      "source_url": "https://www.hautconseilclimat.fr/a-propos/"
+    },
+    {
+      "terme": "Cerema",
+      "definition": "Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement : établissement public qui apporte un appui technique à l'État et aux collectivités sur les infrastructures, les risques et l'adaptation des territoires.",
+      "source_url": "https://www.cerema.fr/fr"
+    },
+    {
+      "terme": "ANSES",
+      "definition": "Agence nationale de sécurité sanitaire de l'alimentation, de l'environnement et du travail : établissement public qui évalue les risques sanitaires et délivre ou retire les autorisations de mise sur le marché des pesticides et des biocides.",
+      "source_url": "https://www.anses.fr/fr"
+    },
+    {
+      "terme": "déforestation importée",
+      "definition": "Déforestation qui a lieu à l'étranger mais résulte de la consommation nationale, par l'importation de produits dont la culture ou l'élevage a fait reculer la forêt (soja, huile de palme, cacao, bœuf, bois).",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/lutte-contre-deforestation-importee"
+    },
+    {
+      "terme": "RDUE",
+      "definition": "Règlement européen sur la déforestation : il interdit de mettre sur le marché de l'Union des produits (bois, cacao, café, soja, huile de palme, bœuf, caoutchouc) issus de terres déboisées après le 31 décembre 2020.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/lutte-contre-deforestation-importee"
+    },
+    {
+      "terme": "label bas carbone",
+      "definition": "Label public qui certifie qu'un projet — plantation forestière, changement de pratique agricole… — évite ou stocke une quantité mesurée de gaz à effet de serre, que des entreprises ou des collectivités peuvent ensuite financer.",
+      "source_url": "https://www.ecologie.gouv.fr/label-bas-carbone"
+    },
+    {
+      "terme": "agences de l’eau",
+      "definition": "Six établissements publics, un par grand bassin hydrographique, qui perçoivent des redevances sur les prélèvements et les pollutions d'eau et en redistribuent le produit pour financer l'assainissement, la dépollution et la protection des milieux.",
+      "source_url": "https://www.lesagencesdeleau.fr/"
+    },
+    {
+      "terme": "politique commune de la pêche",
+      "definition": "Politique de l'Union européenne qui fixe en commun les règles de la pêche : conservation et gestion des ressources halieutiques, limites annuelles de captures (« total admissible des captures ») réparties entre les États membres sous forme de quotas, et organisation commune du marché des produits de la pêche.",
+      "source_url": "https://www.europarl.europa.eu/factsheets/fr/sheet/114/la-politique-commune-de-la-peche-instauration-et-evolution"
+    },
+    {
+      "terme": "politique commune des pêches",
+      "definition": "Politique de l'Union européenne qui fixe en commun les règles de la pêche : conservation et gestion des ressources halieutiques, limites annuelles de captures (« total admissible des captures ») réparties entre les États membres sous forme de quotas, et organisation commune du marché des produits de la pêche.",
+      "source_url": "https://www.europarl.europa.eu/factsheets/fr/sheet/114/la-politique-commune-de-la-peche-instauration-et-evolution"
+    },
+    {
+      "terme": "Mercosur",
+      "definition": "Marché commun d'Amérique du Sud réunissant l'Argentine, le Brésil, le Paraguay, l'Uruguay et la Bolivie. L'accord commercial négocié entre l'Union européenne et ce bloc n'est pas ratifié à ce jour.",
+      "source_url": "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/mercosur_fr"
+    },
+    {
+      "terme": "continuités écologiques",
+      "definition": "Ensemble de milieux naturels reliés entre eux — haies, cours d'eau, bandes enherbées — permettant aux espèces de circuler entre leurs zones de vie ; leur mise en réseau s'appelle la « trame verte et bleue ».",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/trame-verte-bleue"
+    },
+    {
+      "terme": "méthanisation",
+      "definition": "Dégradation de matières organiques (effluents d'élevage, résidus de culture, biodéchets) par des micro-organismes en l'absence d'air, qui produit un gaz combustible — le biogaz — et un résidu utilisable comme fertilisant, le digestat.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/biogaz"
+    },
+    {
+      "terme": "stations de transfert d’énergie par pompage",
+      "definition": "Installations hydroélectriques à deux bassins : l'eau est pompée vers le bassin haut quand l'électricité est abondante, puis turbinée vers le bassin bas quand elle manque. C'est le principal moyen de stocker de l'électricité à grande échelle.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/hydroelectricite"
+    },
+    {
+      "terme": "STEP",
+      "definition": "Station de transfert d'énergie par pompage : installation hydroélectrique à deux bassins où l'eau est pompée vers le bassin haut quand l'électricité est abondante, puis turbinée vers le bassin bas quand elle manque.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/hydroelectricite"
+    },
+    {
+      "terme": "agroécologique",
+      "definition": "Qualifie des façons de produire qui s'appuient sur les mécanismes naturels — rotation des cultures, couverture des sols, haies, associations de plantes — pour réduire le recours aux engrais et pesticides de synthèse.",
+      "source_url": "https://agriculture.gouv.fr/quest-ce-que-lagroecologie"
+    },
+    {
+      "terme": "énergies marines renouvelables",
+      "definition": "Électricité produite à partir de la mer : courants de marée (hydrolien), marées (marémotrice), houle, différences de température entre eaux de surface et eaux profondes. L'éolien en mer, le plus mature de ces procédés, fait l'objet d'une politique distincte.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/energies-marines-renouvelables-hors-eolien-mer"
+    },
+    {
+      "terme": "bioénergies",
+      "definition": "Énergies produites à partir de matière organique — bois, déchets verts, cultures, effluents d'élevage — par combustion, fermentation ou méthanisation.",
+      "source_url": "https://www.ecologie.gouv.fr/politiques-publiques/biomasse-energie"
+    },
+    {
+      "terme": "sylviculture",
+      "definition": "Ensemble des pratiques de culture et d'entretien d'une forêt : plantation, éclaircies, choix des essences, organisation des coupes.",
+      "source_url": "https://agriculture.gouv.fr/la-gestion-durable-des-forets"
     }
   ]
 }

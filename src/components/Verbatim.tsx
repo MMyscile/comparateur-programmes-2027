@@ -7,6 +7,34 @@ function escapeRegExp(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+function sansAccents(s: string): string {
+  return s.normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+
+// Mots qui ne fournissent pas d'initiale à un sigle français.
+const MOTS_VIDES = new Set([
+  "de", "du", "des", "la", "le", "les", "l", "d", "a", "au", "aux", "et", "en",
+  "pour", "sur", "par",
+]);
+
+function initiales(expression: string): string {
+  return sansAccents(expression)
+    .split(/[^A-Za-z0-9]+/)
+    .filter((mot) => mot && !MOTS_VIDES.has(mot.toLowerCase()))
+    .map((mot) => mot[0])
+    .join("")
+    .toUpperCase();
+}
+
+/** « ICPE » est-il le sigle de « Installations classées pour la protection de l'environnement » ? */
+function estSigleDe(sigle: string, expression: string): boolean {
+  const s = sansAccents(sigle).toUpperCase();
+  return /^[A-Z0-9]{2,6}$/.test(s) && initiales(expression) === s;
+}
+
+// Entre les deux formes, le verbatim n'a qu'une ouvrante et des espaces.
+const SEPARATEUR_ACCOLE = /^[\s(«"'’,–—-]{0,3}$/;
+
 /**
  * Bulle de glossaire sur un terme technique.
  *
@@ -179,10 +207,27 @@ export default function Verbatim({
 
   // split avec groupe capturant : les termes repérés tombent sur les index impairs.
   const morceaux = texte.split(regex);
+
+  // « Installations classées pour la protection de l'environnement (ICPE) » :
+  // les deux formes sont au glossaire, et le programme les écrit collées. Deux
+  // déclencheurs voisins produiraient deux bulles quasi identiques, dont la
+  // première recouvre le second mot — mesuré : la bulle du développé couvre
+  // intégralement le sigle. On n'en garde qu'un : le sigle reste déclencheur
+  // partout où il apparaît **seul** dans la suite du verbatim.
+  const muets = new Set<number>();
+  for (let i = 3; i < morceaux.length; i += 2) {
+    if (!SEPARATEUR_ACCOLE.test(morceaux[i - 1])) continue;
+    const precedent = morceaux[i - 2];
+    const courant = morceaux[i];
+    if (!index.has(precedent.toLowerCase()) || !index.has(courant.toLowerCase())) continue;
+    if (estSigleDe(courant, precedent)) muets.add(i);
+    else if (estSigleDe(precedent, courant)) muets.add(i - 2);
+  }
+
   return (
     <>
       {morceaux.map((morceau, i) => {
-        const entree = index.get(morceau.toLowerCase());
+        const entree = muets.has(i) ? undefined : index.get(morceau.toLowerCase());
         return entree ? (
           <TermeInfobulle key={i} terme={morceau} entree={entree} />
         ) : (

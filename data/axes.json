@@ -64,7 +64,7 @@
       "label": "TVA (taux réduits / différenciation)",
       "ordre": 5,
       "baseline_reel": "La TVA comporte quatre taux : 20 % (normal), 10 % (intermédiaire), 5,5 % (réduit, produits de première nécessité) et 2,1 % (super-réduit). Il n'existe pas de taux « grand luxe » spécifique ni de modulation généralisée selon l'impact environnemental ou sanitaire.",
-      "source_baseline": "https://www.service-public.gouv.fr/particuliers/vosdroits/F23567",
+      "source_baseline": "https://entreprendre.service-public.gouv.fr/vosdroits/F23567",
       "ecart_synthese": "Convergence sur baisse « première nécessité » + hausse « luxe ». EELV ajoute un critère environnemental et sanitaire ; LFI reste sur l'axe social (luxe).",
       "baseline_verifiee": "2026-07-29"
     },
