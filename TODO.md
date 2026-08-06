@@ -86,8 +86,10 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
 
 ### 📋 Ce qui est prévu, arbitré avec l'éditeur le 2026-08-05
 
-**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → ~~6~~ → ~~7~~ → ~~8~~ → 11.**
-**Les sept chantiers de la séance du 05/08 sont faits** ; seul le 11 reste, et il est 🟡.
+**Ordre arrêté avec l'éditeur le 2026-08-05 : ~~9~~ → ~~10~~ → ~~5~~ → ~~6~~ → ~~7~~ → ~~8~~ → ~~11~~.**
+**Les huit chantiers de la séance sont faits.** Cette section n'a plus qu'une valeur d'archive :
+tout ce qu'elle a produit vit désormais dans les décisions n° 31 à 33 (`data/choix-editoriaux.md`),
+dans la procédure des trois agents, et dans `scripts/legifrance.mjs`.
 
 **La suite naturelle n'est plus dans cette liste, elle est en dessous** : (a) **fusionner les 54
 définitions du glossaire** — le blocage est levé, leur source est atteignable (point 5) et la méthode
@@ -245,11 +247,17 @@ au 3ᵉ méta-thème sur 15.
     01/06/2017 ressort `ABROGE` alors qu'il s'appliquait ce jour-là ; L. 521-1 ressort `ABROGE_DIFF`
     alors qu'il s'applique encore. `enVigueurLe` répond donc par les **bornes de vigueur**, jamais
     par l'étiquette — c'est exactement la confusion qui a produit l'erreur du 05/08.
-11. ⬜ 🟡 **Sources restantes sans API.** `vie-publique.fr` (200-sur-tout), `economie.gouv.fr`,
-    `interieur.gouv.fr`, `budget.gouv.fr` → navigateur réel pour les vérifications ponctuelles, sinon
-    œil humain. **ADEME n'en fait pas partie** : `data.ademe.fr` expose une API Data Fair sans clé
+11. ✅ **Sources restantes sans API — constat consigné là où il sert** (2026-08-06). `vie-publique.fr`,
+    `economie.gouv.fr`, `interieur.gouv.fr`, `budget.gouv.fr` → navigateur réel, sinon œil de
+    l'éditeur. **ADEME n'en fait pas partie** : `data.ademe.fr` expose une API Data Fair sans clé
     (600 requêtes/60 s en anonyme) et `territoires-climat.ademe.fr` son propre open data (PCAET) —
     le 403 rencontré ne venait que du site web éditorial.
+    Ce n'était pas un chantier mais un constat à ne pas réapprendre : il est désormais dans
+    `.claude/agents/verificateur-sources.md` (et déjà dans `glossaire.md`), avec ce que la
+    vérification des 10 fiches du 05/08 a ajouté — **`vie-publique.fr` rend en JavaScript** (`fetch`
+    y renvoie ~200 signes, même depuis sa propre origine) **et répond 200 sur tout**, y compris sur
+    une URL inexistante : son code HTTP ne prouve rien. Règle qui en découle : **une page vide n'est
+    pas un lien mort**, et le défaut à traquer reste le lien **hors sujet**.
 
 12. ⬜ 🟠 **Passe ciblée sur les baselines antérieures à l'API — périmètre chiffré le 2026-08-05.**
     Question de l'éditeur : faut-il re-vérifier tout ce que l'agent a inscrit depuis le début ?

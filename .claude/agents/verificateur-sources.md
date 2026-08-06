@@ -60,7 +60,7 @@ npm run legifrance -- vigueur "code général des impôts" "885 A" 2017-06-01   
 
 En module : `import { chercherTexte, texteIntegral, articleADate, enVigueurLe } from "./scripts/legifrance.mjs"`.
 
-**Trois règles tirées du contrôle du 2026-08-05, où deux textes publiés se sont révélés faux :**
+**Quatre règles tirées des contrôles du 2026-08-05, où deux textes publiés se sont révélés faux :**
 
 1. **Le titre d'une loi et son résumé ne disent pas ce qu'elle fait.** Lire les articles
    (`integral`). Nous laissions entendre que la loi n° 2026-554 réglait la demande LFI d'arrêter la
@@ -83,6 +83,31 @@ L'étiquette d'état (`VIGUEUR`, `ABROGE`, `ABROGE_DIFF`, `VIGUEUR_DIFF`) décri
 
 Un article introuvable à une date donnée ne veut pas dire « numéro faux » : le plus souvent il
 n'existait pas encore, ou plus. Trancher entre les deux, ne pas supposer.
+
+## Les sources qui n'ont pas d'API : une page vide n'est pas un lien mort
+
+Quatre sites publics résistent à la récupération automatique **sans être en panne ni avoir déplacé
+leur page**. Marquer ❓ ou « lien mort » sur ce seul motif est un faux négatif.
+
+| Source | Ce qui se passe | Ce qu'il faut faire |
+|---|---|---|
+| `vie-publique.fr` | **Rend en JavaScript** : `WebFetch` — et même un `fetch` depuis la page elle-même — renvoie une coquille d'environ 200 signes. Le site répond aussi **200 sur tout**, y compris sur une URL inexistante : son code HTTP ne prouve rien. | Navigateur réel. |
+| `economie.gouv.fr` · `interieur.gouv.fr` · `budget.gouv.fr` | Récupération automatique bloquée. | Navigateur réel, sinon œil de l'éditeur — le signaler dans le rapport. |
+
+Deux règles qui vont avec, apprises en vérifiant les 10 fiches `vie-publique.fr` du glossaire le
+2026-08-05 :
+
+- **Chercher dans le HTML complet, jamais dans le texte visible.** `innerText` masque les sections
+  repliées : le contrôle a d'abord déclaré une fiche fautive parce que le nom cherché « n'y était
+  pas », alors qu'il y figurait 15 fois, titre compris.
+- **Le défaut à traquer n'est pas le lien mort, c'est le lien hors sujet.** Une notice de rapport
+  peut être une simple page de métadonnées qui ne porte aucun des faits qu'on lui fait dire (cas
+  réel : `fisc-aides-entreprises`, dont les deux faits ne tenaient en réalité que sur un article de
+  presse). Vérifie que le **fait affirmé** figure dans la page, pas seulement que la page existe.
+
+**L'ADEME n'est pas dans cette liste** : `data.ademe.fr` expose une API Data Fair sans clé
+(600 requêtes / 60 s en anonyme) et `territoires-climat.ademe.fr` son propre open data (PCAET). Le
+403 rencontré ne venait que du site web éditorial.
 
 Pièges documentés (rencontrés lors du run du 2026-07-29) :
 
