@@ -16,7 +16,7 @@
     "verif-liens": "node scripts/verif-liens.mjs"
   },
   "dependencies": {
-    "next": "^15.5.21",
+    "next": "^16.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-markdown": "^10.1.0",
@@ -30,7 +30,7 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-config-next": "^15.5.22",
-    "postcss": "^8.4.41",
+    "postcss": "^8.5.24",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
   }
