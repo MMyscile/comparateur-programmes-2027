@@ -113,6 +113,29 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
    ⬜ 🟢 **Dette à dater** : `partie civile` est sourcé sur un article `ABROGE_DIFF` en vigueur
    jusqu'au **2029-01-01** (recodification du CPP) — publiable, à revoir avant cette date.
 
+   ### Ce que « 48 invérifiables » veut dire, et ce qu'il en reste vraiment (2026-08-06)
+
+   Sur les 134 liens du glossaire, `verif-liens` en classe 48 « invérifiables ». **47 viennent de
+   trois domaines déclarés non testables**, et non de liens douteux :
+
+   | Domaine | Entrées | Contrôlé par quel autre moyen |
+   |---|---|---|
+   | `legifrance.gouv.fr` | 33 | **par l'API** — l'article est lu et son état de vigueur vérifié, plus fort qu'un test HTTP |
+   | `vie-publique.fr` | 8 | **navigateur réel le 05/08** — ce sont exactement les 8 fiches contrôlées ce jour-là |
+   | `economie.gouv.fr` | 6 | ❌ **aucun** |
+
+   Le 48ᵉ était `Semestre européen` (`consilium.europa.eu`, HTTP 403) : **confirmé bon** au navigateur
+   réel — page en français, « semestre européen » 29 fois, et les quatre faits de la définition
+   (cycle, coordination, budgétaire, recommandations) y sont. Le 403 était bien un refus
+   d'automatisation, exactement comme l'outil le classait.
+
+   → ⬜ 🟠 **Résidu réel : 6 entrées jamais contrôlées**, toutes sur `economie.gouv.fr`, que
+   **Cloudflare bloque même dans un Chrome piloté** (deux tentatives le 06/08, challenge « Un
+   instant… » jamais franchi). Elles demandent le navigateur de l'éditeur :
+   `flat tax` · `quotient familial` · `produits dérivés` · `cotation continue` · `circuit du Trésor`
+   · `abattement Dutreil`. Vérifier que la page cite bien le terme et porte les faits de la
+   définition (pour `flat tax` : les 31,4 % et le détail 12,8 + 18,6).
+
    🔴 **Défaut d'affichage trouvé et corrigé au passage (`Verbatim.tsx`).** 9 termes sont au
    glossaire sous leurs deux formes (sigle + développé), et les programmes les écrivent collés :
    « Installations classées pour la protection de l'environnement (ICPE) ». **Mesuré : la bulle du
