@@ -75,8 +75,37 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
    - `CIGEO` : `andra.fr` est une coquille JavaScript de 227 signes → décret n° 2022-993 du
      7 juillet 2022. « Environ 500 mètres » et le développé « Centre industriel de stockage
      géologique » ont été **retirés** : le décret ne les porte pas.
-   Restent **~90 termes ❓ à sourcer** (sections 1.3, 2, 3, 4, 5 du rapport du 02/08) — agent relancé
-   le 2026-08-06 avec l'API Légifrance, livrable attendu : `data/rapports/glossaire-sources-2026-08-06.md`.
+   ✅ **Les ~120 termes ❓ repris le 2026-08-06** (agent `glossaire` + API Légifrance).
+   Rapport : `data/rapports/glossaire-sources-2026-08-06.md`. **44 entrées sourcées**, en trois
+   blocs séparés parce qu'ils n'engagent pas la même décision :
+   - **E.1 (37) — fusionné**, `data/glossaire.json` passe de **95 à 132 termes**. 28 des 37 sont
+     sourcées par l'API sur un article contrôlé *en vigueur* : la section 4 (vocabulaire juridique)
+     n'est plus « entièrement ❓ » — `principe de précaution` et `pollueur-payeur` (L. 110-1),
+     `partie civile` (CPP 418), `travail détaché` (L. 1262-1), `droit de préemption` (L. 210-1),
+     `zones humides` (L. 211-1).
+   - **E.2 (5) — en attente** : glossaire de l'OFB, dont les définitions ne s'affichent qu'en
+     JavaScript. Décision de **niveau de preuve**, pas de contenu.
+   - **E.3 (2) — en attente** : `écocide` et `planification écologique`, sourcés mais dont la
+     publication reste un arbitrage éditorial (section 5).
+
+   Contrôle avant fusion, comme pour le lot précédent : zéro doublon, chaque terme produit au moins
+   une occurrence, **et toutes les URLs testées**. **Une seule source défectueuse sur 44** —
+   `CETA` pointait vers `policy.trade.ec.europa.eu/…canada_fr`, **qui sert de l'anglais**.
+   Quatrième occurrence du même domaine dans la journée ; l'agent ne pouvait pas la voir, l'état
+   `anglais` de `verif-liens` a été écrit après son lancement. Remplacé par le rapport du Sénat
+   `a23-410`, qui porte l'application provisoire, 2017 et la non-ratification.
+   **182 déclencheurs sur 118 verbatims** (max 7 dans un même).
+
+   ⚠️ **Trois motifs de ❓ qui reviennent**, à connaître avant la prochaine passe : (1) *le nom du
+   verbatim n'est pas le nom du droit* — le CGCT ne dit pas « versement mobilité » mais « versement
+   destiné au financement des services de mobilité » (idem `Contribution Climat Énergie`,
+   `tarif bleu`, `débits biologiques` = « débit minimal ») ; (2) le **cas symétrique de la « réforme
+   Darmanin »** : le décret n° 2014-479 dit « décret Montebourg » existe et est en vigueur, mais son
+   champ `signataires` est **vide** — aucune source officielle ne porte le nom ; (3) **EUR-Lex
+   répond 202 à tout**, donc les faits qui n'existent que là restent ❓.
+
+   ⬜ 🟢 **Dette à dater** : `partie civile` est sourcé sur un article `ABROGE_DIFF` en vigueur
+   jusqu'au **2029-01-01** (recodification du CPP) — publiable, à revoir avant cette date.
 
    🔴 **Défaut d'affichage trouvé et corrigé au passage (`Verbatim.tsx`).** 9 termes sont au
    glossaire sous leurs deux formes (sigle + développé), et les programmes les écrivent collés :
