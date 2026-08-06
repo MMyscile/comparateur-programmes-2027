@@ -83,10 +83,16 @@ identiques**, la 266ᵉ étant retirée exprès (décision n° 24).
      n'est plus « entièrement ❓ » — `principe de précaution` et `pollueur-payeur` (L. 110-1),
      `partie civile` (CPP 418), `travail détaché` (L. 1262-1), `droit de préemption` (L. 210-1),
      `zones humides` (L. 211-1).
-   - **E.2 (5) — en attente** : glossaire de l'OFB, dont les définitions ne s'affichent qu'en
-     JavaScript. Décision de **niveau de preuve**, pas de contenu.
-   - **E.3 (2) — en attente** : `écocide` et `planification écologique`, sourcés mais dont la
-     publication reste un arbitrage éditorial (section 5).
+   - **E.3 (2) — fusionné** (**décision n° 34**) : `écocide` et `planification écologique`, les deux
+     termes « au sens disputé » que l'API a rendus publiables parce qu'un **texte officiel les
+     définit** (art. L. 231-3 ; décret n° 2022-990 sur le SGPE). Un fait négatif a été retiré de la
+     proposition de l'agent : « il n'existe pas de crime d'écocide » n'est pas dans l'article — un
+     texte dit ce qu'il institue, pas ce qui n'existe pas ailleurs. **134 termes, 190 déclencheurs.**
+   - ⬜ 🟠 **E.2 (5) — en attente de ta lecture** (**décision n° 35**) : `reméandrage`,
+     `bassins versants`, `pélagique`, `services écosystémiques`, `convention de Ramsar`, sourcés sur
+     `ofb.gouv.fr/glossaire`, qui ne rend ses définitions qu'en JavaScript. La source est légitime
+     (établissement public) ; c'est notre capacité à la contrôler qui manque. Bloc JSON prêt en
+     section E.2 du rapport, à fusionner après lecture à l'œil.
 
    Contrôle avant fusion, comme pour le lot précédent : zéro doublon, chaque terme produit au moins
    une occurrence, **et toutes les URLs testées**. **Une seule source défectueuse sur 44** —

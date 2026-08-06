@@ -638,3 +638,49 @@ Le caractère officiel d'une source ne dit rien de son actualité. Le jaune budg
 actionnaire », document parlementaire, donne Engie à 23,64 % — chiffre arrêté au 30/06/2024, quand
 Engie publie 22,64 % au 31/05/2026 (n° 32). Vérifier la **date d'arrêté** d'un document officiel
 avant d'en reprendre un chiffre.
+
+## 34. Deux termes au sens disputé entrent au glossaire — parce qu'on peut les sourcer sur le texte (2026-08-06)
+
+Le rapport du 02/08 avait mis à part quatre termes « dont le sens est lui-même disputé » (`écocide`,
+`méga-bassines`, `bifurcation écologique`, `planification écologique`) en refusant de trancher :
+définir un mot dont le sens *est* l'enjeu politique, c'est cadrer le débat. Deux d'entre eux sont
+maintenant publiés, et le motif est le même dans les deux cas : **ils ont cessé d'être une affaire
+d'opinion parce qu'un texte officiel les définit.**
+
+- **`écocide`** — l'article L. 231-3 du code de l'environnement dit littéralement « *Constitue un
+  écocide l'infraction prévue à l'article L. 231-1 lorsque les faits sont commis de manière
+  intentionnelle* », et porte la peine à dix ans d'emprisonnement. La définition situe le droit
+  existant sur pièce ; elle ne dit pas si le **crime** d'écocide demandé par LFI est souhaitable.
+  ⚠️ Un mot a été retiré de la proposition de l'agent : « *il n'existe pas de crime d'écocide en
+  droit français* » est un **fait négatif** que l'article ne porte pas — un texte dit ce qu'il
+  institue, jamais ce qui n'existe pas ailleurs. Remplacé par une caractérisation de ce que le texte
+  fait : « *une peine d'emprisonnement, donc un délit et non un crime* », qui dit la même chose et
+  reste dans la source.
+- **`planification écologique`** — décret n° 2022-990 du 7 juillet 2022 : un secrétariat général à
+  la planification écologique existe « *sous l'autorité du Premier ministre* » et « *coordonne
+  l'élaboration des stratégies nationales en matière de climat, d'énergie, de biodiversité et
+  d'économie circulaire* ». Cohérent avec la décision déjà prise sur le **label de l'axe**
+  `eco-planification` : le terme est administratif avant d'être programmatique.
+
+Les deux autres restent dehors, et pour la raison inverse : `méga-bassines` n'a pas de définition
+officielle (l'administration dit « réserve de substitution »), et `bifurcation écologique` n'a
+d'autre source que le programme qui l'emploie — la sourcer reviendrait à faire du vocabulaire d'un
+parti une entrée de dictionnaire.
+
+**Règle qui en sort** : un terme disputé devient publiable quand un texte officiel le définit, et la
+définition doit alors s'en tenir à ce que ce texte institue — sans compléter par ce qu'il n'existe
+pas.
+
+## 35. Le glossaire de l'OFB reste en attente : une décision de niveau de preuve (2026-08-06)
+
+Cinq termes (`reméandrage`, `bassins versants`, `pélagique`, `services écosystémiques`,
+`convention de Ramsar`) sont sourcés sur `ofb.gouv.fr/glossaire`, dont les définitions ne s'affichent
+qu'avec JavaScript. L'Office français de la biodiversité est un établissement public : la source est
+légitime au fond. Ce qui bloque n'est **pas** la qualité de la source mais notre capacité à la
+contrôler — cas déjà rencontré le 05/08 avec `vie-publique.fr`, tranché alors par « une page vide
+n'est pas un lien mort ».
+
+L'éditeur a choisi de **ne pas publier avant lecture à l'œil** dans un navigateur. Le principe posé :
+quand le contrôle automatique est impossible, ce n'est pas à la présomption de bonne foi de trancher,
+c'est à l'éditeur de regarder. La règle du 05/08 dit qu'on n'accuse pas une page invérifiable ; elle
+ne dit pas qu'on la publie sans l'avoir lue.
