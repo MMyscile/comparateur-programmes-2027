@@ -39,7 +39,28 @@ const NON_TESTABLES = [
   ["economie.gouv.fr", "refuse l'automatisation → navigateur réel"],
   ["interieur.gouv.fr", "refuse l'automatisation → navigateur réel"],
   ["budget.gouv.fr", "refuse l'automatisation → navigateur réel"],
+  ["eur-lex.europa.eu", "202 à corps vide sur tout, même à curl → navigateur réel"],
 ];
+
+// Un lien européen peut être vivant, à jour, et servir de l'ANGLAIS : le suffixe
+// `_fr` d'une URL `ec.europa.eu` ne garantit rien. Trois entrées de glossaire en
+// ont été victimes (politique commune de la pêche, MACF, Mercosur), et EUR-Lex
+// sert l'anglais par défaut quand aucune langue n'est demandée.
+const MOTS_FR = ["le", "la", "les", "des", "pour", "dans", "est", "sur", "qui", "aux"];
+const MOTS_EN = ["the", "of", "and", "for", "with", "this", "are", "that", "from"];
+const compteMots = (t, mots) =>
+  mots.reduce((n, m) => n + (t.match(new RegExp(`\\b${m}\\b`, "gi")) || []).length, 0);
+
+/** Renvoie true si la page sert manifestement de l'anglais. */
+function servDeLAnglais(html) {
+  const t = html.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<[^>]+>/g, " ");
+  const fr = compteMots(t, MOTS_FR);
+  const en = compteMots(t, MOTS_EN);
+  return en > 40 && en > fr * 1.3;
+}
+
+/** Les URLs qui demandent explicitement l'anglais, ou n'en demandent aucune. */
+const ANGLAIS_DANS_L_URL = /eur-lex\.europa\.eu\/.*(\/oj\/eng|:en:|\/oj$)/;
 
 const args = process.argv.slice(2);
 const opt = (n) => args.find((a) => a.startsWith(`--${n}=`))?.split("=").slice(1).join("=");
@@ -138,6 +159,8 @@ const ENTETES = {
 };
 
 async function controler(c) {
+  if (ANGLAIS_DANS_L_URL.test(c.url))
+    return { ...c, etat: "anglais", motif: "l'URL demande l'anglais (ou aucune langue)" };
   const bloque = NON_TESTABLES.find(([d]) => c.url.includes(d));
   if (bloque) return { ...c, etat: "invérifiable", motif: bloque[1] };
   try {
@@ -161,6 +184,8 @@ async function controler(c) {
     const html = await r.text();
     if (html.length < 3000)
       return { ...c, etat: "invérifiable", motif: `corps de ${html.length} signes (rendu JS ?)` };
+    if (servDeLAnglais(html))
+      return { ...c, etat: "anglais", motif: "page vivante mais servie en anglais" };
     if (c.ou === "glossaire")
       return porteLeTerme(html, c.cle)
         ? { ...c, etat: "ok" }
@@ -187,7 +212,7 @@ await Promise.all(
       const c = aFaire[curseur++];
       const r = await controler(c);
       resultats.push(r);
-      const marque = { ok: "·", mort: "✗", "hors-sujet ?": "?", invérifiable: "~" }[r.etat];
+      const marque = { ok: "·", mort: "✗", "hors-sujet ?": "?", invérifiable: "~", anglais: "en" }[r.etat];
       process.stdout.write(marque);
     }
   })
@@ -205,6 +230,12 @@ const montrer = (titre, liste, note) => {
 
 montrer("✗ LIENS MORTS", par("mort"), "  Le seul état qui exige une correction.");
 montrer(
+  "en SERVIS EN ANGLAIS — un site en français ne doit pas y renvoyer",
+  par("anglais"),
+  "  Le suffixe `_fr` d'une URL europa.eu ne garantit rien, et EUR-Lex sert\n" +
+    "  l'anglais quand aucune langue n'est demandée (`?locale=fr`, `/oj/fra`, `:fr:`)."
+);
+montrer(
   "? À REGARDER — le fait affirmé n'a pas été retrouvé dans la page",
   par("hors-sujet ?"),
   "  Piste, pas verdict : la page peut porter le fait sous une autre écriture,\n" +
@@ -218,6 +249,7 @@ montrer(
 
 console.log(
   `\n${resultats.length} liens : ${par("ok").length} ok · ${par("mort").length} morts · ` +
-    `${par("hors-sujet ?").length} à regarder · ${par("invérifiable").length} invérifiables`
+    `${par("anglais").length} en anglais · ${par("hors-sujet ?").length} à regarder · ` +
+    `${par("invérifiable").length} invérifiables`
 );
 process.exit(par("mort").length ? 1 : 0);

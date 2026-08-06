@@ -155,7 +155,11 @@ for (const bloc of blocs) {
   const urls = [];
   for (const ligne of bloc.slice(bloc.indexOf(titreSources[0])).split("\n").slice(1)) {
     if (ligne.startsWith("- ")) {
-      for (const m of ligne.matchAll(/\((https?:\/\/[^)\s]+)\)/g))
+      // Les parenthèses INTERNES à l'URL comptent : `…/rome_statute(f).pdf` était
+      // coupé à `rome_statute(f` par un `[^)]+`, et cette URL tronquée répond 200
+      // sur une page anglaise sans rapport — vivante, donc invisible à tout
+      // contrôle de survie (trouvé le 2026-08-06 sur `eco-justice-environnementale`).
+      for (const m of ligne.matchAll(/\((https?:\/\/(?:[^()\s]|\([^()\s]*\))+)\)/g))
         if (!urls.includes(m[1])) urls.push(m[1]);
     } else if (urls.length && ligne.trim() !== "") break;
   }

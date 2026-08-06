@@ -374,9 +374,35 @@ pluriel, ponctuation aplatie) — sans quoi « bas-carbone » ne correspond pas 
   l'Énergie` — la page officielle dit « **programmation** », le verbatim écrit « Planification ».
   C'est précisément la raison d'être de l'entrée.
 
-⚠️ **Les 119 invérifiables des axes ne sont pas un défaut de données** : PDF (contrôle de contenu à
-faire à part) et domaines publics qui refusent les robots. C'est la limite de l'outil, pas l'état
-du corpus — ne pas la lire comme un taux d'erreur.
+⚠️ **Les invérifiables ne sont pas un défaut de données** : PDF (contrôle de contenu à faire à part)
+et domaines publics qui refusent les robots. C'est la limite de l'outil, pas l'état du corpus —
+ne pas la lire comme un taux d'erreur.
+
+**Cinquième état ajouté le 2026-08-06 : `anglais`.** Question de l'éditeur (« les liens en anglais
+ont-ils été corrigés ? ») → contrôle systématique de tous les liens européens, qui a trouvé ce que
+les deux premiers cas laissaient présager : **le suffixe `_fr` d'une URL `europa.eu` ne garantit
+rien.** `Mercosur` (`policy.trade.ec.europa.eu/…_fr`) et `Copernicus` (`copernicus.eu/fr`) servaient
+eux aussi de l'anglais → remplacés par la Représentation en France de la Commission et par le CNES,
+définitions ajustées aux faits que ces pages portent réellement. L'outil détecte désormais les deux
+formes : langue **demandée par l'URL** (`/oj/eng`, `:en:`, `/oj` sans locale) et langue **réellement
+servie** (comptage de mots outils).
+
+🔴 **Et c'est ce contrôle qui a trouvé le plus gros défaut du lot : une URL tronquée par un bug du
+parser.** `eco-justice-environnementale` citait
+`https://legal.un.org/icc/statute/french/rome_statute(f` — le `.pdf` manquant. Cause :
+`appliquer-baselines` extrayait les URLs avec `\((https?://[^)\s]+)\)`, qui s'arrête à la **première**
+parenthèse fermante ; une URL contenant `(f).pdf` était donc coupée. Le rapport, lui, avait la bonne
+URL. Et l'URL tronquée **répond 200**, en anglais, sur une page qui n'est pas le Statut de Rome :
+vivante, donc invisible à tout contrôle de survie — elle a traversé le balayage du 02/08 et le stamp
+`baseline_verifiee`. Corrigé des deux côtés (donnée + regex à parenthèses équilibrées).
+
+⬜ 🟢 **Restent 7 liens en anglais, dont 3 légitimes** : `Community Reinvestment Act` (loi **des
+États-Unis**, la Fed ne publie pas en français) et les 2 pages de l'`isa.org.jm` (l'Autorité
+internationale des fonds marins publie en anglais). Les 4 autres sont des **EUR-Lex**
+(`eco-ocean`, `eco-justice-environnementale`, `fin-monnaie-bce`, `fisc-dette`) : les variantes
+françaises se construisent (`?locale=fr`, `/oj/fra`, `:fr:`) mais **EUR-Lex répond 202 à corps vide
+à tout accès automatisé, même à `curl`** — impossible de les vérifier avant de les substituer.
+Quatre pages à ouvrir à la main, puis remplacer.
 
 ---
 
